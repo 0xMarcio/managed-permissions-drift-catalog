@@ -1,0 +1,471 @@
+{
+  "dataset": "github-token-permissions",
+  "generated_at_utc": "2026-04-17T20:19:16Z",
+  "object_count": 15,
+  "objects": [
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:actions:read",
+        "github:token:actions:write"
+      ],
+      "description": "Work with GitHub Actions. For example, actions: write permits an action to cancel a workflow run. For more information, see Permissions required for GitHub Apps .",
+      "display_name": "actions",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "94ba44e9b97065764e45ab17322584b21409502179a2cfd1b24861ed91b1f16f",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:actions"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:artifact-metadata:read",
+        "github:token:artifact-metadata:write"
+      ],
+      "description": "Work with artifact metadata. For example, artifact-metadata: write permits an action to create storage records on behalf of a build artifact. For more information, see REST API endpoints for artifact metadata .",
+      "display_name": "artifact-metadata",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "63ce46237584314d84f72ca026f3141a84da498d7e47dc3d6f9d21340e822433",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:artifact-metadata"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:attestations:read",
+        "github:token:attestations:write"
+      ],
+      "description": "Work with artifact attestations. For example, attestations: write permits an action to generate an artifact attestation for a build. For more information, see Using artifact attestations to establish provenance for builds",
+      "display_name": "attestations",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "4b9a7db0f856ecde7e2706523ff0bc78a66e857c0a27b367058435ed3b93b929",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:attestations"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:checks:read",
+        "github:token:checks:write"
+      ],
+      "description": "Work with check runs and check suites. For example, checks: write permits an action to create a check run. For more information, see Permissions required for GitHub Apps .",
+      "display_name": "checks",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "ed6be1f4ca6d5926d10b9e4e168e2b2c60f8d894b1edb33db926c93321230c4d",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:checks"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:contents:read",
+        "github:token:contents:write"
+      ],
+      "description": "Work with the contents of the repository. For example, contents: read permits an action to list the commits, and contents: write allows the action to create a release. For more information, see Permissions required for GitHub Apps .",
+      "display_name": "contents",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "f087b35d7d22203dfc366f06652711d7da3c01c7219b7c563cc1372d9e7450a5",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:contents"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:deployments:read",
+        "github:token:deployments:write"
+      ],
+      "description": "Work with deployments. For example, deployments: write permits an action to create a new deployment. For more information, see Permissions required for GitHub Apps .",
+      "display_name": "deployments",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "931051f551df06a7e64b794f50e88f8902c14265af96732e0b7f036fb96b7e48",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:deployments"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:discussions:read",
+        "github:token:discussions:write"
+      ],
+      "description": "Work with GitHub Discussions. For example, discussions: write permits an action to close or delete a discussion. For more information, see Using the GraphQL API for Discussions .",
+      "display_name": "discussions",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "6c78188ac46744308965c3f21064d4e00cf42f04e2b75f2b1d4b77488f2b3be6",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:discussions"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:id-token:write"
+      ],
+      "description": "Fetch an OpenID Connect (OIDC) token. This requires id-token: write . For more information, see OpenID Connect",
+      "display_name": "id-token",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "532cb948c0bf01bb84c74a75cffe3a110c5cdcd8b8bcb849965a3efea76dec52",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:id-token"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:issues:read",
+        "github:token:issues:write"
+      ],
+      "description": "Work with issues. For example, issues: write permits an action to add a comment to an issue. For more information, see Permissions required for GitHub Apps .",
+      "display_name": "issues",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "4b9b1ea9d3c255ea05b7394115c4062313a8030bc32bd9848153e72e9ee3f24d",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:issues"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:models:read"
+      ],
+      "description": "Generate AI inference responses with GitHub Models. For example, models: read permits an action to use the GitHub Models inference API. See Prototyping with AI models .",
+      "display_name": "models",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "6113b27945d44fe275d64ae6328906fe7e3a7a36301f12ad810732a8e7828e66",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:models"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:packages:read",
+        "github:token:packages:write"
+      ],
+      "description": "Work with GitHub Packages. For example, packages: write permits an action to upload and publish packages on GitHub Packages. For more information, see About permissions for GitHub Packages .",
+      "display_name": "packages",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "3d8f5b5a7f15f15ad1acbfe486776b335ec4541a62ce2fe8a20b6a82ddf686e6",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:packages"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:pages:read",
+        "github:token:pages:write"
+      ],
+      "description": "Work with GitHub Pages. For example, pages: write permits an action to request a GitHub Pages build. For more information, see Permissions required for GitHub Apps .",
+      "display_name": "pages",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "96e7168a327045dfdb47bb8565aef1d1a467754a56cb4d8c41a734193e17af9e",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:pages"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:pull-requests:read",
+        "github:token:pull-requests:write"
+      ],
+      "description": "Work with pull requests. For example, pull-requests: write permits an action to add a label to a pull request. For more information, see Permissions required for GitHub Apps .",
+      "display_name": "pull-requests",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "229311c1a6cef92ead2014123f9354bb48b59659c21be521597409d9f495e6df",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:pull-requests"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:security-events:read",
+        "github:token:security-events:write"
+      ],
+      "description": "Work with GitHub code scanning alerts. For example, security-events: read permits an action to list the code scanning alerts for the repository, and security-events: write allows an action to update the status of a code scanning alert. For more information, see Repository permissions for 'Code scanning alerts' . Dependabot and secret scanning alerts cannot be read with this permission and require a GitHub App or a personal access token. For more information, see Repository permissions for 'Dependabot alerts' and Repository permissions for 'Secret scanning alerts' in \"Permissions required for GitHub Apps.\"",
+      "display_name": "security-events",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "9ed974987edac3b55005b60c3eafb41b1cb740d697b18f4e96930b0e7598329e",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:security-events"
+    },
+    {
+      "dataset": "github-token-permissions",
+      "derived_atoms": [
+        "github:token:statuses:read",
+        "github:token:statuses:write"
+      ],
+      "description": "Work with commit statuses. For example, statuses:read permits an action to list the commit statuses for a given reference. For more information, see Permissions required for GitHub Apps .",
+      "display_name": "statuses",
+      "fetched_at_utc": "2026-04-17T20:19:16Z",
+      "grants_by_facet": {
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "allowed_values": [
+          "none",
+          "read",
+          "write"
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "6d44be618753a6556664ae4e1e00d7345bfec9fb856a51c2eca331eda4307fd9",
+      "restrictions_by_facet": {},
+      "source_revision": "",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-token:statuses"
+    }
+  ],
+  "platform": "github",
+  "source_urls": [
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+  ],
+  "warnings": []
+}

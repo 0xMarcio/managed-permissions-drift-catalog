@@ -1,0 +1,69 @@
+{
+  "props": {
+    "pageProps": {
+      "mainContext": {
+        "currentVersion": "free-pro-team@latest"
+      },
+      "restOperations": [
+        {
+          "verb": "get",
+          "requestPath": "/orgs/{org}/actions/permissions/workflow",
+          "title": "Get default workflow permissions for an organization",
+          "descriptionHTML": "<p>Gets default workflow permissions.</p>",
+          "codeExamples": [
+            {
+              "response": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "default_workflow_permissions": {
+                      "type": "string",
+                      "enum": ["read", "write"]
+                    },
+                    "can_approve_pull_request_reviews": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "progAccess": {
+            "fineGrainedPat": true
+          }
+        },
+        {
+          "verb": "get",
+          "requestPath": "/repos/{owner}/{repo}/actions/permissions",
+          "title": "Get GitHub Actions permissions for a repository",
+          "descriptionHTML": "<p>Gets repository actions policy.</p>",
+          "codeExamples": [
+            {
+              "response": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean"
+                    },
+                    "allowed_actions": {
+                      "type": "string",
+                      "enum": ["all", "local_only", "selected"]
+                    },
+                    "sha_pinning_required": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "progAccess": {
+            "fineGrainedPat": true
+          }
+        }
+      ]
+    }
+  }
+}
+

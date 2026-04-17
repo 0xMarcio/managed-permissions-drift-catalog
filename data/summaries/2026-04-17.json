@@ -1,0 +1,144 @@
+{
+  "caveats": [
+    "This score is a heuristic. It tracks documented permission-shape drift, not full effective access.",
+    "AWS scoring does not evaluate conditions, resources, principals, or wildcard expansion.",
+    "Azure and GCP scoring compare listed actions and permissions without tenant-specific scope evaluation.",
+    "GitHub scores schema-level changes in documented permission levels and settings contracts, not your live organization settings."
+  ],
+  "datasets": [
+    {
+      "added_atoms": 50953,
+      "changed_objects": 0,
+      "dataset": "aws-managed-policies",
+      "platform": "aws",
+      "removed_atoms": 0,
+      "score": 47341
+    },
+    {
+      "added_atoms": 6024,
+      "changed_objects": 0,
+      "dataset": "azure-built-in-roles",
+      "platform": "azure",
+      "removed_atoms": 0,
+      "score": 5604
+    },
+    {
+      "added_atoms": 0,
+      "changed_objects": 0,
+      "dataset": "gcp-predefined-roles",
+      "platform": "gcp",
+      "removed_atoms": 0,
+      "score": 0
+    },
+    {
+      "added_atoms": 31,
+      "changed_objects": 0,
+      "dataset": "github-actions-default-workflow-settings",
+      "platform": "github",
+      "removed_atoms": 0,
+      "score": 13
+    },
+    {
+      "added_atoms": 118,
+      "changed_objects": 0,
+      "dataset": "github-fgpat-permissions",
+      "platform": "github",
+      "removed_atoms": 0,
+      "score": 177
+    },
+    {
+      "added_atoms": 28,
+      "changed_objects": 0,
+      "dataset": "github-token-permissions",
+      "platform": "github",
+      "removed_atoms": 0,
+      "score": 42
+    }
+  ],
+  "date": "2026-04-17",
+  "generated_at_utc": "2026-04-17T20:31:03Z",
+  "platforms": [
+    {
+      "added_atoms": 50953,
+      "datasets": [
+        {
+          "added_atoms": 50953,
+          "changed_objects": 0,
+          "dataset": "aws-managed-policies",
+          "platform": "aws",
+          "removed_atoms": 0,
+          "score": 47341
+        }
+      ],
+      "net_score": 47341,
+      "platform": "aws",
+      "removed_atoms": 0
+    },
+    {
+      "added_atoms": 6024,
+      "datasets": [
+        {
+          "added_atoms": 6024,
+          "changed_objects": 0,
+          "dataset": "azure-built-in-roles",
+          "platform": "azure",
+          "removed_atoms": 0,
+          "score": 5604
+        }
+      ],
+      "net_score": 5604,
+      "platform": "azure",
+      "removed_atoms": 0
+    },
+    {
+      "added_atoms": 0,
+      "datasets": [
+        {
+          "added_atoms": 0,
+          "changed_objects": 0,
+          "dataset": "gcp-predefined-roles",
+          "platform": "gcp",
+          "removed_atoms": 0,
+          "score": 0
+        }
+      ],
+      "net_score": 0,
+      "platform": "gcp",
+      "removed_atoms": 0
+    },
+    {
+      "added_atoms": 177,
+      "datasets": [
+        {
+          "added_atoms": 31,
+          "changed_objects": 0,
+          "dataset": "github-actions-default-workflow-settings",
+          "platform": "github",
+          "removed_atoms": 0,
+          "score": 13
+        },
+        {
+          "added_atoms": 118,
+          "changed_objects": 0,
+          "dataset": "github-fgpat-permissions",
+          "platform": "github",
+          "removed_atoms": 0,
+          "score": 177
+        },
+        {
+          "added_atoms": 28,
+          "changed_objects": 0,
+          "dataset": "github-token-permissions",
+          "platform": "github",
+          "removed_atoms": 0,
+          "score": 42
+        }
+      ],
+      "net_score": 232,
+      "platform": "github",
+      "removed_atoms": 0
+    }
+  ],
+  "warnings_by_dataset": {},
+  "winner": "AWS became more privileged today"
+}

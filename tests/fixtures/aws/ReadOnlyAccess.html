@@ -1,0 +1,35 @@
+<div id="main-content">
+  <h1 class="topictitle" id="ReadOnlyAccess">ReadOnlyAccess</h1>
+  <p>Provides read-only access to selected resources.</p>
+  <h2 id="ReadOnlyAccess-details">Policy details</h2>
+  <div class="itemizedlist">
+    <ul class="itemizedlist">
+      <li class="listitem"><p><b>Type</b>: AWS managed policy</p></li>
+      <li class="listitem"><p><b>Creation time</b>: February 06, 2015, 18:39 UTC</p></li>
+      <li class="listitem"><p><b>Edited time:</b> April 03, 2026, 15:27 UTC</p></li>
+      <li class="listitem"><p><b>ARN</b>: <code class="code">arn:aws:iam::aws:policy/ReadOnlyAccess</code></p></li>
+    </ul>
+  </div>
+  <h2 id="ReadOnlyAccess-version">Policy version</h2>
+  <p><b>Policy version:</b> v182 (default)</p>
+  <h2 id="ReadOnlyAccess-json">JSON policy document</h2>
+  <pre class="programlisting"><code>{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "ec2:Describe*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Deny",
+      "Action": "organizations:LeaveOrganization",
+      "Resource": "*"
+    }
+  ]
+}</code></pre>
+</div>
+

@@ -1,0 +1,3452 @@
+ <!DOCTYPE html>
+		<html
+			class="layout layout-holy-grail   show-table-of-contents conceptual show-breadcrumb default-focus"
+			lang="en-us"
+			dir="ltr"
+			data-authenticated="false"
+			data-auth-status-determined="false"
+			data-target="docs"
+			x-ms-format-detection="none"
+		>
+			
+		<head>
+			<title>Azure built-in roles for Internet of Things - Azure RBAC | Microsoft Learn</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="color-scheme" content="light dark" />
+
+			<meta name="description" content="This article lists the Azure built-in roles for Azure role-based access control (Azure RBAC) in the Internet of Things category. It lists Actions, NotActions, DataActions, and NotDataActions." />
+			<link rel="canonical" href="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/internet-of-things" /> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@MicrosoftLearn" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image:alt" content="Microsoft Learn" />
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png" />
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="Azure built-in roles for Internet of Things - Azure RBAC" />
+			<meta property="og:url" content="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/internet-of-things" />
+			<meta property="og:description" content="This article lists the Azure built-in roles for Azure role-based access control (Azure RBAC) in the Internet of Things category. It lists Actions, NotActions, DataActions, and NotDataActions." />
+			<meta name="platform_id" content="16946b84-bedf-08e9-63ae-01cf97ca875e" /> <meta name="scope" content="Azure" />
+			<meta name="locale" content="en-us" />
+			 
+			<meta name="uhfHeaderId" content="azure" />
+
+			<meta name="page_type" content="conceptual" />
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="breadcrumb_path" content="/azure/bread/toc.json" />
+	
+		<meta name="feedback_help_link_url" content="https://learn.microsoft.com/answers/tags/189/azure-rbac/" />
+	
+		<meta name="feedback_help_link_type" content="get-help-at-qna" />
+	
+		<meta name="feedback_product_url" content="https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4" />
+	
+		<meta name="feedback_system" content="Standard" />
+	
+		<meta name="permissioned-type" content="public" />
+	
+		<meta name="recommendations" content="true" />
+	
+		<meta name="recommendation_types" content="Training" />
+	
+		<meta name="recommendation_types" content="Certification" />
+	
+		<meta name="ms.suite" content="office" />
+	
+		<meta name="adobe-target" content="true" />
+	
+		<meta name="learn_banner_products" content="azure" />
+	
+		<meta name="ms.service" content="role-based-access-control" />
+	
+		<meta name="ms.topic" content="generated-reference" />
+	
+		<meta name="ms.workload" content="identity" />
+	
+		<meta name="author" content="rolyon" />
+	
+		<meta name="manager" content="pmwongera" />
+	
+		<meta name="ms.author" content="rolyon" />
+	
+		<meta name="ms.date" content="2026-04-09T00:00:00Z" />
+	
+		<meta name="ms.custom" content="generated" />
+	
+		<meta name="document_id" content="b51df058-a994-da28-fe01-3410c58f3ff1" />
+	
+		<meta name="document_version_independent_id" content="aae4d53d-0e75-9cf5-6cd5-ef838dc06fcf" />
+	
+		<meta name="updated_at" content="2026-04-10T06:11:00Z" />
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/internet-of-things.md" />
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/65b7b384f3e54b4da3ac62dc42afaffe676abea8/articles/role-based-access-control/built-in-roles/internet-of-things.md" />
+	
+		<meta name="git_commit_id" content="65b7b384f3e54b4da3ac62dc42afaffe676abea8" />
+	
+		<meta name="site_name" content="Docs" />
+	
+		<meta name="depot_name" content="Azure.azure-documents" />
+	
+		<meta name="schema" content="Conceptual" />
+	
+		<meta name="toc_rel" content="../toc.json" />
+	
+		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
+	
+		<meta name="word_count" content="2431" />
+	
+		<meta name="asset_id" content="role-based-access-control/built-in-roles/internet-of-things" />
+	
+		<meta name="moniker_range_name" content="" />
+	
+		<meta name="item_type" content="Content" />
+	
+		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/internet-of-things.md" />
+	
+		<meta name="previous_tlsh_hash" content="796FCA62EE168217FB67074FBC17BF006FBC780DF5E8BBC01A36812B55859B1A264E24BFDB11AB6AE627C56B21437CD31452A43FD3CF5850CB0016A9982A9FA77D8E93B54C" />
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/internet-of-things.md" />
+	
+		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/internet-of-things?accept=text/markdown" />
+	 
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d" data-source="generated" />
+	
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03391.7726-67491f8e/styles/site.css" />
+			
+			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+			<script src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
+			<script src="/_themes/docs.theme/master/en-us/_themes/global/deprecation.js"></script>
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": true,
+    "siteName": "learn",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "Conceptual",
+    "brand": "azure",
+    "context": {},
+    "standardFeedback": true,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "get-help-at-qna",
+    "feedbackHelpLinkUrl": "https://learn.microsoft.com/answers/tags/189/azure-rbac/",
+    "feedbackSystem": "Standard",
+    "feedbackGitHubRepo": "MicrosoftDocs/azure-docs",
+    "feedbackProductUrl": "https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": true,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": true,
+    "contributors": [
+      {
+        "name": "rolyon",
+        "url": "https://github.com/rolyon"
+      },
+      {
+        "name": "SoniaLopezBravo",
+        "url": "https://github.com/SoniaLopezBravo"
+      },
+      {
+        "name": "jenniferf-skc",
+        "url": "https://github.com/jenniferf-skc"
+      }
+    ]
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script src="/static/assets/0.4.03391.7726-67491f8e/scripts/en-us/index-docs.js"></script>
+			
+
+			<!-- json-ld -->
+			
+		</head>
+	
+			<body
+				id="body"
+				data-bi-name="body"
+				class="layout-body "
+				lang="en-us"
+				dir="ltr"
+			>
+				<header class="layout-body-header">
+		<div class="header-holder has-default-focus">
+			
+		<a
+			href="#main"
+			
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			
+		>
+			Skip to main content
+		</a>
+	
+		<a
+			href="#"
+			data-skip-to-ask-learn
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			hidden
+		>
+			Skip to Ask Learn chat experience
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div
+				id="unsupported-browser"
+				style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;"
+				hidden
+			>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a
+							href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+							style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;"
+						>
+							Download Microsoft Edge
+						</a>
+						<a
+							href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+							style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;"
+						>
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div
+				id="ms--site-header"
+				data-test-id="site-header-wrapper"
+				itemscope="itemscope"
+				itemtype="http://schema.org/Organization"
+			>
+				<div
+					id="ms--mobile-nav"
+					class="site-header display-none-tablet padding-inline-none gap-none"
+					data-bi-name="mobile-header"
+					data-test-id="mobile-header"
+				></div>
+				<div
+					id="ms--primary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L1-header"
+					data-test-id="primary-header"
+				></div>
+				<div
+					id="ms--secondary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L2-header"
+					data-test-id="secondary-header"
+					
+				></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 <section
+					id="layout-body-menu"
+					class="layout-body-menu display-flex"
+					data-bi-name="menu"
+			  >
+					
+		<div
+			id="left-container"
+			class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full"
+			data-toc-container="true"
+		>
+			<!-- Regular TOC content (default) -->
+			<div id="ms--toc-content" class="height-full">
+				<nav
+					id="affixed-left-container"
+					class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				></nav>
+			</div>
+			<!-- Collapsible TOC content (hidden by default) -->
+			<div id="ms--toc-content-collapsible" class="height-full" hidden>
+				<nav
+					id="affixed-left-container"
+					class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				>
+					<div
+						id="ms--collapsible-toc-header"
+						class="display-flex flex-direction-row-reverse justify-content-space-between align-items-center margin-bottom-xxs"
+					>
+						<button
+							type="button"
+							class="button button-clear inner-focus"
+							data-collapsible-toc-toggle
+							aria-expanded="true"
+							aria-controls="ms--collapsible-toc-content"
+							aria-label="Table of contents"
+						>
+							<span class="icon font-size-xxl" aria-hidden="true">
+								<span class="docon docon-panel-left-contract"></span>
+							</span>
+						</button>
+						<div id="ms--collapsible-toc-moniker-slot" class="flex-grow-1"></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+			  </section>
+
+				<main
+					id="main"
+					role="main"
+					class="layout-body-main "
+					data-bi-name="content"
+					lang="en-us"
+					dir="ltr"
+				>
+					
+			<div
+		id="ms--content-header"
+		class="content-header default-focus border-bottom-none"
+		data-bi-name="content-header"
+	>
+		<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+			<button
+				type="button"
+				class="contents-button button button-sm margin-right-xxs"
+				data-bi-name="contents-expand"
+				aria-haspopup="true"
+				data-contents-button
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-menu"></span></span>
+				<span class="contents-expand-title"> Table of contents </span>
+			</button>
+			<button
+				type="button"
+				class="ap-collapse-behavior ap-expanded button button-sm"
+				data-bi-name="ap-collapse"
+				aria-controls="action-panel"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit editor mode</span>
+			</button>
+		</div>
+	</div>
+			<div data-main-column class="padding-sm padding-top-none padding-top-sm-tablet">
+				<div>
+					
+		<div id="article-header" class="background-color-body margin-bottom-xs display-none-print">
+			<div class="display-flex align-items-center justify-content-space-between">
+				
+		<details
+			id="article-header-breadcrumbs-overflow-popover"
+			class="popover"
+			data-for="article-header-breadcrumbs"
+		>
+			<summary
+				class="button button-clear button-primary button-sm inner-focus"
+				aria-label="All breadcrumbs"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-more"></span>
+				</span>
+			</summary>
+			<div id="article-header-breadcrumbs-overflow" class="popover-content padding-none"></div>
+		</details>
+
+		<bread-crumbs
+			id="article-header-breadcrumbs"
+			role="group"
+			aria-label="Breadcrumbs"
+			data-test-id="article-header-breadcrumbs"
+			class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs"
+		></bread-crumbs>
+	 
+		<div
+			id="article-header-page-actions"
+			class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch"
+		>
+			
+		<button
+			class="button button-sm border-none inner-focus display-none-tablet flex-shrink-0 "
+			data-bi-name="ask-learn-assistant-entry"
+			data-test-id="ask-learn-assistant-modal-entry-mobile"
+			data-ask-learn-modal-entry
+			
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-modal-entry-tablet"
+			data-ask-learn-modal-entry
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-flyout-entry"
+			data-ask-learn-flyout-entry
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	 
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			class="button button-sm flex-shrink-0 margin-right-xxs display-none display-inline-flex-desktop"
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Focus mode</span>
+		</button>
+	 
+
+			<details class="popover popover-right" id="article-header-page-actions-overflow">
+				<summary
+					class="justify-content-flex-start button button-clear button-sm button-primary inner-focus"
+					aria-label="More actions"
+					title="More actions"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-more-vertical"></span>
+					</span>
+				</summary>
+				<div class="popover-content">
+					
+		<button
+			data-page-action-item="overflow-mobile"
+			type="button"
+			class="button-block button-sm inner-focus button button-clear display-none-tablet justify-content-flex-start text-align-left"
+			data-bi-name="contents-expand"
+			data-contents-button
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true"
+				><span class="docon docon-editor-list-bullet"></span
+			></span>
+			<span class="contents-expand-title">Table of contents</span>
+		</button>
+	 
+		<a
+			id="lang-link-overflow"
+			class="button-sm inner-focus button button-clear button-block justify-content-flex-start text-align-left"
+			data-bi-name="language-toggle"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-read-in-link
+			href="#"
+			hidden
+		>
+			<span class="icon" aria-hidden="true" data-read-in-link-icon>
+				<span class="docon docon-locale-globe"></span>
+			</span>
+			<span data-read-in-link-text>Read in English</span>
+		</a>
+	 
+		<button
+			type="button"
+			class="collection button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus"
+			data-list-type="collection"
+			data-bi-name="collection"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="collection-status">Add</span>
+		</button>
+	
+					
+		<button
+			type="button"
+			class="collection button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+			data-list-type="plan"
+			data-bi-name="plan"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="plan-status">Add to plan</span>
+		</button>
+	  
+		<a
+			data-contenteditbtn
+			class="button button-clear button-block button-sm inner-focus justify-content-flex-start text-align-left text-decoration-none"
+			data-bi-name="edit"
+			
+			href="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/internet-of-things.md"
+			data-original_content_git_url="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/internet-of-things.md"
+			data-original_content_git_url_template="{repo}/blob/{branch}/articles/role-based-access-control/built-in-roles/internet-of-things.md"
+			data-pr_repo=""
+			data-pr_branch=""
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-edit-outline"></span>
+			</span>
+			<span>Edit</span>
+		</a>
+	
+					
+		<hr class="margin-block-xxs" />
+		<h4 class="font-size-sm padding-left-xxs">Share via</h4>
+		
+					<a
+						class="button button-clear button-sm inner-focus button-block justify-content-flex-start text-align-left text-decoration-none share-facebook"
+						data-bi-name="facebook"
+						data-page-action-item="overflow-all"
+						href="#"
+					>
+						<span class="icon color-primary" aria-hidden="true">
+							<span class="docon docon-facebook-share"></span>
+						</span>
+						<span>Facebook</span>
+					</a>
+
+					<a
+						href="#"
+						class="button button-clear button-sm inner-focus button-block justify-content-flex-start text-align-left text-decoration-none share-twitter"
+						data-bi-name="twitter"
+						data-page-action-item="overflow-all"
+					>
+						<span class="icon color-text" aria-hidden="true">
+							<span class="docon docon-xlogo-share"></span>
+						</span>
+						<span>x.com</span>
+					</a>
+
+					<a
+						href="#"
+						class="button button-clear button-sm inner-focus button-block justify-content-flex-start text-align-left text-decoration-none share-linkedin"
+						data-bi-name="linkedin"
+						data-page-action-item="overflow-all"
+					>
+						<span class="icon color-primary" aria-hidden="true">
+							<span class="docon docon-linked-in-logo"></span>
+						</span>
+						<span>LinkedIn</span>
+					</a>
+					<a
+						href="#"
+						class="button button-clear button-sm inner-focus button-block justify-content-flex-start text-align-left text-decoration-none share-email"
+						data-bi-name="email"
+						data-page-action-item="overflow-all"
+					>
+						<span class="icon color-primary" aria-hidden="true">
+							<span class="docon docon-mail-message"></span>
+						</span>
+						<span>Email</span>
+					</a>
+			  
+	 
+		<hr class="margin-block-xxs" />
+		
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="copy-markdown"
+					data-page-action-item="overflow-all"
+					data-copy-markdown
+					data-copy-state="idle"
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span data-show-when="idle" class="docon docon-code-lang"></span>
+						<span data-show-when="loading" class="loader" hidden></span>
+						<span data-show-when="success" class="docon docon-check-mark" hidden></span>
+					</span>
+					<span>Copy Markdown</span>
+				</button>
+		   
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="print"
+					data-page-action-item="overflow-all"
+					data-popover-close
+					data-print-page
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span class="docon docon-print"></span>
+					</span>
+					<span>Print</span>
+				</button>
+		  
+	
+				</div>
+			</details>
+		</div>
+	
+			</div>
+		</div>
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
+		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
+			<hr class="hr margin-top-xs margin-bottom-sm" />
+			<div class="notification notification-info">
+				<div class="notification-content">
+					<p class="margin-top-none notification-title">
+						<span class="icon" aria-hidden="true"
+							><span class="docon docon-exclamation-circle-solid"></span
+						></span>
+						<span>Note</span>
+					</p>
+					<p class="margin-top-none authentication-determined not-authenticated">
+						Access to this page requires authorization. You can try <a class="docs-sign-in" href="#" data-bi-name="permission-content-sign-in">signing in</a> or <a  class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+					<p class="margin-top-none authentication-determined authenticated">
+						Access to this page requires authorization. You can try <a class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+					<div class="content"><h1 id="azure-built-in-roles-for-internet-of-things">Azure built-in roles for Internet of Things</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	
+					<div class="content"><p>This article lists the Azure built-in roles in the Internet of Things category.</p>
+<h2 id="azure-device-registry-contributor">Azure Device Registry Contributor</h2>
+<p>Allows for full access to IoT devices within Azure Device Registry Namespace.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/read</td>
+<td>Get a Namespace</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/devices/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/discovereddevices/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/credentials/read</td>
+<td>Get a Credential</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/credentials/policies/read</td>
+<td>List Policy resources by Credential</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">microsoft.devices</a>/iothubs/certificates/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">microsoft.devices</a>/iothubs/read</td>
+<td>Gets the IotHub resource(s)</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/credentials/policies/issueCertificate/action</td>
+<td>Allows certificate issuance using certificate based policies.</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">microsoft.devices</a>/iothubs/devices/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for full access to IoT devices within Azure Device Registry Namespace.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/a5c3590a-3a1a-4cd4-9648-ea0a32b15137",
+  "name": "a5c3590a-3a1a-4cd4-9648-ea0a32b15137",
+  "permissions": [
+    {
+      "actions": [
+        "microsoft.deviceregistry/namespaces/read",
+        "microsoft.deviceregistry/namespaces/devices/*",
+        "microsoft.deviceregistry/namespaces/discovereddevices/*",
+        "microsoft.deviceregistry/namespaces/credentials/read",
+        "microsoft.deviceregistry/namespaces/credentials/policies/read",
+        "microsoft.devices/iothubs/certificates/*",
+        "microsoft.devices/iothubs/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "microsoft.deviceregistry/namespaces/credentials/policies/issueCertificate/action",
+        "microsoft.devices/iothubs/devices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Device Registry Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-device-registry-credentials-contributor">Azure Device Registry Credentials Contributor</h2>
+<p>Allows for full access to manage credentials and policies within Azure Device Registry Namespace.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/credentials/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/credentials/policies/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/devices/revoke/action</td>
+<td>Allows device revocation using device based policies.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for full access to manage credentials and policies within Azure Device Registry Namespace.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/09267e11-2e06-40b5-8fe4-68cea20794c9",
+  "name": "09267e11-2e06-40b5-8fe4-68cea20794c9",
+  "permissions": [
+    {
+      "actions": [
+        "microsoft.deviceregistry/namespaces/credentials/*",
+        "microsoft.deviceregistry/namespaces/credentials/policies/*",
+        "microsoft.deviceregistry/namespaces/devices/revoke/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Device Registry Credentials Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-device-registry-onboarding">Azure Device Registry Onboarding</h2>
+<p>Allows for full access to Azure Device Registry Namespace and X.509 certificate provisioning.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/namespaces/read</td>
+<td>Get a Namespace</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/namespaces/write</td>
+<td>Update a Namespace</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/namespaces/delete</td>
+<td>Delete a Namespace</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/namespaces/credentials/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/namespaces/credentials/policies/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/iothubs/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/provisioningServices/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">microsoft.deviceregistry</a>/namespaces/devices/revoke/action</td>
+<td>Allows device revocation using device based policies.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/provisioningServices/enrollments/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/provisioningServices/enrollmentGroups/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for full access to Azure Device Registry Namespace and X.509 certificate provisioning.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/547f7f0a-69c0-4807-bd9e-0321dfb66a84",
+  "name": "547f7f0a-69c0-4807-bd9e-0321dfb66a84",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DeviceRegistry/namespaces/read",
+        "Microsoft.DeviceRegistry/namespaces/write",
+        "Microsoft.DeviceRegistry/namespaces/delete",
+        "Microsoft.DeviceRegistry/namespaces/credentials/*",
+        "Microsoft.DeviceRegistry/namespaces/credentials/policies/*",
+        "Microsoft.Devices/iothubs/*",
+        "Microsoft.Devices/provisioningServices/*",
+        "microsoft.deviceregistry/namespaces/devices/revoke/action"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/provisioningServices/enrollments/*",
+        "Microsoft.Devices/provisioningServices/enrollmentGroups/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Device Registry Onboarding",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-digital-twins-data-owner">Azure Digital Twins Data Owner</h2>
+<p>Full access role for Digital Twins data-plane</p>
+<p><a href="/en-us/azure/digital-twins/concepts-security" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/digitaltwins/*</td>
+<td>Read, create, update, or delete any Digital Twin</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/digitaltwins/commands/*</td>
+<td>Invoke any Command on a Digital Twin</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/digitaltwins/relationships/*</td>
+<td>Read, create, update, or delete any Digital Twin Relationship</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/eventroutes/*</td>
+<td>Read, delete, create, or update any Event Route</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/jobs/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/models/*</td>
+<td>Read, create, update, or delete any Model</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/query/*</td>
+<td>Query any Digital Twins Graph</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Full access role for Digital Twins data-plane",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/bcd981a7-7f74-457b-83e1-cceb9e632ffe",
+  "name": "bcd981a7-7f74-457b-83e1-cceb9e632ffe",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DigitalTwins/digitaltwins/*",
+        "Microsoft.DigitalTwins/digitaltwins/commands/*",
+        "Microsoft.DigitalTwins/digitaltwins/relationships/*",
+        "Microsoft.DigitalTwins/eventroutes/*",
+        "Microsoft.DigitalTwins/jobs/*",
+        "Microsoft.DigitalTwins/models/*",
+        "Microsoft.DigitalTwins/query/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Digital Twins Data Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-digital-twins-data-reader">Azure Digital Twins Data Reader</h2>
+<p>Read-only role for Digital Twins data-plane properties</p>
+<p><a href="/en-us/azure/digital-twins/concepts-security" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/digitaltwins/read</td>
+<td>Read any Digital Twin</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/digitaltwins/relationships/read</td>
+<td>Read any Digital Twin Relationship</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/eventroutes/read</td>
+<td>Read any Event Route</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/jobs/import/read</td>
+<td>Read any Bulk Import Job</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/jobs/imports/read</td>
+<td>Read any Bulk Import Job</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/jobs/deletions/read</td>
+<td>Read any Bulk Delete Job</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/models/read</td>
+<td>Read any Model</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdigitaltwins" data-linktype="relative-path">Microsoft.DigitalTwins</a>/query/action</td>
+<td>Query any Digital Twins Graph</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Read-only role for Digital Twins data-plane properties",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/d57506d4-4c8d-48b1-8587-93c323f6a5a3",
+  "name": "d57506d4-4c8d-48b1-8587-93c323f6a5a3",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DigitalTwins/digitaltwins/read",
+        "Microsoft.DigitalTwins/digitaltwins/relationships/read",
+        "Microsoft.DigitalTwins/eventroutes/read",
+        "Microsoft.DigitalTwins/jobs/import/read",
+        "Microsoft.DigitalTwins/jobs/imports/read",
+        "Microsoft.DigitalTwins/jobs/deletions/read",
+        "Microsoft.DigitalTwins/models/read",
+        "Microsoft.DigitalTwins/query/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Digital Twins Data Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-iot-operations-administrator">Azure IoT Operations Administrator</h2>
+<p>View, create, edit and delete AIO resources. Manage all resources, including instance and its downstream resources.</p>
+<p><a href="/en-us/azure/iot-operations/secure-iot-ops/built-in-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft.IoTOperations/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/Assets/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/AssetEndpointProfiles/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/Namespaces/Assets/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/Namespaces/Devices/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/Namespaces/DiscoveredAssets/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/Namespaces/DiscoveredDevices/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/SchemaRegistries/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftedge" data-linktype="relative-path">Microsoft.Edge</a>/sites/read</td>
+<td>List Site resources by scope</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "View, create, edit and delete AIO resources. Manage all resources, including instance and its downstream resources.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/5bc02df6-6cd5-43fe-ad3d-4c93cf56cc16",
+  "name": "5bc02df6-6cd5-43fe-ad3d-4c93cf56cc16",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.IoTOperations/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.DeviceRegistry/Assets/*",
+        "Microsoft.DeviceRegistry/AssetEndpointProfiles/*",
+        "Microsoft.DeviceRegistry/Namespaces/Assets/*",
+        "Microsoft.DeviceRegistry/Namespaces/Devices/*",
+        "Microsoft.DeviceRegistry/Namespaces/DiscoveredAssets/*",
+        "Microsoft.DeviceRegistry/Namespaces/DiscoveredDevices/*",
+        "Microsoft.DeviceRegistry/SchemaRegistries/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Edge/sites/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure IoT Operations Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-iot-operations-onboarding">Azure IoT Operations Onboarding</h2>
+<p>User can Azure arc connect and deploy Azure IoT Operations securely.</p>
+<p><a href="/en-us/azure/iot-operations/secure-iot-ops/built-in-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft.IoTOperations/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/register/action</td>
+<td>Register the subscription for Microsoft.DeviceRegistry</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/schemaRegistries/read</td>
+<td>Get a SchemaRegistry</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/schemaRegistries/write</td>
+<td>Update a SchemaRegistry</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/write</td>
+<td>Create a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftedge" data-linktype="relative-path">Microsoft.Edge</a>/sites/read</td>
+<td>List Site resources by scope</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Condition</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, b24988ac-6180-42a0-ab88-20f7382dd24c}))</td>
+<td>Add role assignments for the following roles:<br>Storage Blob Data Contributor<br>Contributor</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "User can Azure arc connect and deploy Azure IoT Operations securely.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/7b7c71ed-33fa-4ed2-a91a-e56d5da260b5",
+  "name": "7b7c71ed-33fa-4ed2-a91a-e56d5da260b5",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.IoTOperations/*",
+        "Microsoft.DeviceRegistry/register/action",
+        "Microsoft.DeviceRegistry/schemaRegistries/read",
+        "Microsoft.DeviceRegistry/schemaRegistries/write",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Edge/sites/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": [],
+      "conditionVersion": "2.0",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, b24988ac-6180-42a0-ab88-20f7382dd24c}))"
+    }
+  ],
+  "roleName": "Azure IoT Operations Onboarding",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="device-provisioning-service-data-contributor">Device Provisioning Service Data Contributor</h2>
+<p>Allows for full access to Device Provisioning Service data-plane operations.</p>
+<p><a href="/en-us/azure/iot-dps/concepts-control-access-dps-azure-ad" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/provisioningServices/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for full access to Device Provisioning Service data-plane operations.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/dfce44e4-17b7-4bd1-a6d1-04996ec95633",
+  "name": "dfce44e4-17b7-4bd1-a6d1-04996ec95633",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/provisioningServices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Provisioning Service Data Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="device-provisioning-service-data-reader">Device Provisioning Service Data Reader</h2>
+<p>Allows for full read access to Device Provisioning Service data-plane properties.</p>
+<p><a href="/en-us/azure/iot-dps/concepts-control-access-dps-azure-ad" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/provisioningServices/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for full read access to Device Provisioning Service data-plane properties.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/10745317-c249-44a1-a5ce-3a4353c0bbd8",
+  "name": "10745317-c249-44a1-a5ce-3a4353c0bbd8",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/provisioningServices/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Provisioning Service Data Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="device-update-administrator">Device Update Administrator</h2>
+<p>Gives you full access to management and content operations</p>
+<p><a href="/en-us/azure/iot-hub-device-update/device-update-control-access" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/read</td>
+<td>Returns the list of Device Update Accounts</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/read</td>
+<td>Returns the list of Device Update Instances</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/read</td>
+<td>Performs a read operation related to updates</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/write</td>
+<td>Performs a write operation related to updates</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/delete</td>
+<td>Performs a delete operation related to updates</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/management/read</td>
+<td>Performs a read operation related to management</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/management/write</td>
+<td>Performs a write operation related to management</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/management/delete</td>
+<td>Performs a delete operation related to management</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you full access to management and content operations",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/02ca0879-e8e4-47a5-a61e-5c618b76e64a",
+  "name": "02ca0879-e8e4-47a5-a61e-5c618b76e64a",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.DeviceUpdate/accounts/read",
+        "Microsoft.DeviceUpdate/accounts/instances/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/write",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/delete",
+        "Microsoft.DeviceUpdate/accounts/instances/management/read",
+        "Microsoft.DeviceUpdate/accounts/instances/management/write",
+        "Microsoft.DeviceUpdate/accounts/instances/management/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="device-update-content-administrator">Device Update Content Administrator</h2>
+<p>Gives you full access to content operations</p>
+<p><a href="/en-us/azure/iot-hub-device-update/device-update-control-access" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/read</td>
+<td>Returns the list of Device Update Accounts</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/read</td>
+<td>Returns the list of Device Update Instances</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/read</td>
+<td>Performs a read operation related to updates</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/write</td>
+<td>Performs a write operation related to updates</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/delete</td>
+<td>Performs a delete operation related to updates</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you full access to content operations",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/0378884a-3af5-44ab-8323-f5b22f9f3c98",
+  "name": "0378884a-3af5-44ab-8323-f5b22f9f3c98",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.DeviceUpdate/accounts/read",
+        "Microsoft.DeviceUpdate/accounts/instances/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/write",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Content Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="device-update-content-reader">Device Update Content Reader</h2>
+<p>Gives you read access to content operations, but does not allow making changes</p>
+<p><a href="/en-us/azure/iot-hub-device-update/device-update-control-access" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/read</td>
+<td>Returns the list of Device Update Accounts</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/read</td>
+<td>Returns the list of Device Update Instances</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/read</td>
+<td>Performs a read operation related to updates</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you read access to content operations, but does not allow making changes",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/d1ee9a80-8b14-47f0-bdc2-f4a351625a7b",
+  "name": "d1ee9a80-8b14-47f0-bdc2-f4a351625a7b",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.DeviceUpdate/accounts/read",
+        "Microsoft.DeviceUpdate/accounts/instances/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Content Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="device-update-deployments-administrator">Device Update Deployments Administrator</h2>
+<p>Gives you full access to management operations</p>
+<p><a href="/en-us/azure/iot-hub-device-update/device-update-control-access" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/read</td>
+<td>Returns the list of Device Update Accounts</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/read</td>
+<td>Returns the list of Device Update Instances</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/management/read</td>
+<td>Performs a read operation related to management</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/management/write</td>
+<td>Performs a write operation related to management</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/management/delete</td>
+<td>Performs a delete operation related to management</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/read</td>
+<td>Performs a read operation related to updates</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you full access to management operations",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/e4237640-0e3d-4a46-8fda-70bc94856432",
+  "name": "e4237640-0e3d-4a46-8fda-70bc94856432",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.DeviceUpdate/accounts/read",
+        "Microsoft.DeviceUpdate/accounts/instances/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/management/read",
+        "Microsoft.DeviceUpdate/accounts/instances/management/write",
+        "Microsoft.DeviceUpdate/accounts/instances/management/delete",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Deployments Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="device-update-deployments-reader">Device Update Deployments Reader</h2>
+<p>Gives you read access to management operations, but does not allow making changes</p>
+<p><a href="/en-us/azure/iot-hub-device-update/device-update-control-access" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/read</td>
+<td>Returns the list of Device Update Accounts</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/read</td>
+<td>Returns the list of Device Update Instances</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/management/read</td>
+<td>Performs a read operation related to management</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/read</td>
+<td>Performs a read operation related to updates</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you read access to management operations, but does not allow making changes",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/49e2f5d2-7741-4835-8efa-19e1fe35e47f",
+  "name": "49e2f5d2-7741-4835-8efa-19e1fe35e47f",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.DeviceUpdate/accounts/read",
+        "Microsoft.DeviceUpdate/accounts/instances/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/management/read",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Deployments Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="device-update-reader">Device Update Reader</h2>
+<p>Gives you read access to management and content operations, but does not allow making changes</p>
+<p><a href="/en-us/azure/iot-hub-device-update/device-update-control-access" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/read</td>
+<td>Returns the list of Device Update Accounts</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/read</td>
+<td>Returns the list of Device Update Instances</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/updates/read</td>
+<td>Performs a read operation related to updates</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceupdate" data-linktype="relative-path">Microsoft.DeviceUpdate</a>/accounts/instances/management/read</td>
+<td>Performs a read operation related to management</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you read access to management and content operations, but does not allow making changes",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/e9dba6fb-3d52-4cf0-bce3-f06ce71b9e0f",
+  "name": "e9dba6fb-3d52-4cf0-bce3-f06ce71b9e0f",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.DeviceUpdate/accounts/read",
+        "Microsoft.DeviceUpdate/accounts/instances/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read",
+        "Microsoft.DeviceUpdate/accounts/instances/management/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="firmware-analysis-admin">Firmware Analysis Admin</h2>
+<p>Administrative user that can upload/view firmwares &amp; configure firmware workspaces</p>
+<p><a href="/en-us/azure/defender-for-iot/device-builders/defender-iot-firmware-analysis-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Administrative user that can upload/view firmwares &amp; configure firmware workspaces",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/9c1607d1-791d-4c68-885d-c7b7aaff7c8a",
+  "name": "9c1607d1-791d-4c68-885d-c7b7aaff7c8a",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.IoTFirmwareDefense/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Firmware Analysis Admin",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="firmware-analysis-reader">Firmware Analysis Reader</h2>
+<p>View firmware images but not upload them or perform any workspace configuration</p>
+<p><a href="/en-us/azure/firmware-analysis/firmware-analysis-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/workspaces/firmwares/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/read</td>
+<td>Gets or lists deployments.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/firmwareGroups/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/workspaces/firmwares/write</td>
+<td>The operation to update firmware.</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/workspaces/firmwares/delete</td>
+<td>The operation to delete a firmware.</td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "View firmware images but not upload them or perform any workspace configuration",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/2a94a2fd-3c4f-45d1-847d-6585ba88af94",
+  "name": "2a94a2fd-3c4f-45d1-847d-6585ba88af94",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.IoTFirmwareDefense/*/read",
+        "Microsoft.IoTFirmwareDefense/workspaces/firmwares/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/read"
+      ],
+      "notActions": [
+        "Microsoft.IoTFirmwareDefense/firmwareGroups/*",
+        "Microsoft.IoTFirmwareDefense/workspaces/firmwares/write",
+        "Microsoft.IoTFirmwareDefense/workspaces/firmwares/delete"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Firmware Analysis Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="firmware-analysis-user">Firmware Analysis User</h2>
+<p>Upload and analyze firmware images but not perform any workspace configuration</p>
+<p><a href="/en-us/azure/firmware-analysis/firmware-analysis-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/read</td>
+<td>Gets or lists deployments.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/firmwareGroups/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/register/action</td>
+<td>Register the subscription for Microsoft.IoTFirmwareDefense</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/unregister/action</td>
+<td>Unregister the subscription for Microsoft.IoTFirmwareDefense</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/workspaces/write</td>
+<td>The operation to update a firmware analysis workspaces.</td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftiotfirmwaredefense" data-linktype="relative-path">Microsoft.IoTFirmwareDefense</a>/workspaces/delete</td>
+<td>The operation to delete a firmware analysis workspace.</td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Upload and analyze firmware images but not perform any workspace configuration",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/53b2724d-1e51-44fa-b586-bcace0c82609",
+  "name": "53b2724d-1e51-44fa-b586-bcace0c82609",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.IoTFirmwareDefense/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/read"
+      ],
+      "notActions": [
+        "Microsoft.IoTFirmwareDefense/firmwareGroups/*",
+        "Microsoft.IoTFirmwareDefense/register/action",
+        "Microsoft.IoTFirmwareDefense/unregister/action",
+        "Microsoft.IoTFirmwareDefense/workspaces/write",
+        "Microsoft.IoTFirmwareDefense/workspaces/delete"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Firmware Analysis User",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="iot-hub-data-contributor">IoT Hub Data Contributor</h2>
+<p>Allows for full access to IoT Hub data plane operations.</p>
+<p><a href="/en-us/azure/iot-hub/iot-hub-dev-guide-azure-ad-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/IotHubs/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for full access to IoT Hub data plane operations.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/4fc6c259-987e-4a07-842e-c321cc9d413f",
+  "name": "4fc6c259-987e-4a07-842e-c321cc9d413f",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/IotHubs/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "IoT Hub Data Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="iot-hub-data-reader">IoT Hub Data Reader</h2>
+<p>Allows for full read access to IoT Hub data-plane properties</p>
+<p><a href="/en-us/azure/iot-hub/iot-hub-dev-guide-azure-ad-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/IotHubs/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/IotHubs/fileUpload/notifications/action</td>
+<td>Receive, complete, or abandon file upload notifications</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for full read access to IoT Hub data-plane properties",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/b447c946-2db7-41ec-983d-d8bf3b1c77e3",
+  "name": "b447c946-2db7-41ec-983d-d8bf3b1c77e3",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/IotHubs/*/read",
+        "Microsoft.Devices/IotHubs/fileUpload/notifications/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "IoT Hub Data Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="iot-hub-registry-contributor">IoT Hub Registry Contributor</h2>
+<p>Allows for full access to IoT Hub device registry.</p>
+<p><a href="/en-us/azure/iot-hub/iot-hub-dev-guide-azure-ad-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/IotHubs/devices/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for full access to IoT Hub device registry.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/4ea46cd5-c1b2-4a8e-910b-273211f9ce47",
+  "name": "4ea46cd5-c1b2-4a8e-910b-273211f9ce47",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/IotHubs/devices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "IoT Hub Registry Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="iot-hub-twin-contributor">IoT Hub Twin Contributor</h2>
+<p>Allows for read and write access to all IoT Hub device and module twins.</p>
+<p><a href="/en-us/azure/iot-hub/iot-hub-dev-guide-azure-ad-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdevices" data-linktype="relative-path">Microsoft.Devices</a>/IotHubs/twins/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for read and write access to all IoT Hub device and module twins.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/494bdba2-168f-4f31-a0a1-191d2f7c028c",
+  "name": "494bdba2-168f-4f31-a0a1-191d2f7c028c",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/IotHubs/twins/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "IoT Hub Twin Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="next-steps">Next steps</h2>
+<ul>
+<li><a href="/en-us/azure/role-based-access-control/role-assignments-portal" data-linktype="absolute-path">Assign Azure roles using the Azure portal</a></li>
+</ul>
+</div>
+					
+		<div
+			id="ms--inline-notifications"
+			class="margin-block-xs"
+			data-bi-name="inline-notification"
+		></div>
+	 
+		<div
+			id="assertive-live-region"
+			role="alert"
+			aria-live="assertive"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+		<div
+			id="polite-live-region"
+			role="status"
+			aria-live="polite"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+	
+					
+		<!-- feedback section -->
+		<section
+			id="site-user-feedback-footer"
+			class="font-size-sm margin-top-md display-none-print display-none-desktop"
+			data-test-id="site-user-feedback-footer"
+			data-bi-name="site-feedback-section"
+		>
+			<hr class="hr" />
+			<h2 id="ms--feedback" class="title is-3">Feedback</h2>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="buttons">
+					<button
+						class="thumb-rating-button like button button-primary button-sm"
+						data-test-id="footer-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+						<span>Yes</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike button button-primary button-sm"
+						id="standard-rating-no-button"
+						hidden
+						data-test-id="footer-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</button>
+					<details
+						class="popover popover-top"
+						id="mobile-help-popover"
+						data-test-id="footer-feedback-popover"
+					>
+						<summary
+							class="thumb-rating-button dislike button button-primary button-sm"
+							data-test-id="details-footer-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+							<span>No</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading"
+							aria-describedby="popover-description"
+						>
+							<p id="popover-heading" class="font-size-lg margin-bottom-xxs font-weight-semibold">
+								Need help with this topic?
+							</p>
+							<p id="popover-description" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<!-- end feedback section -->
+	
+				</div>
+				
+		<div id="ms--additional-resources-mobile" class="display-none-print">
+			<hr class="hr" hidden />
+			<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>
+				Additional resources
+			</h2>
+			
+		<section
+			id="right-rail-recommendations-mobile"
+			class=""
+			data-bi-name="recommendations"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-training-mobile"
+			class=""
+			data-bi-name="learning-resource-card"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-events-mobile"
+			class=""
+			data-bi-name="events-card"
+			hidden
+		></section>
+	
+		</div>
+	 
+		<div
+			id="article-metadata-footer"
+			data-bi-name="article-metadata-footer"
+			data-test-id="article-metadata-footer"
+			class="page-metadata-container"
+		>
+			<hr class="hr" />
+			<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+				<li class="visibility-hidden-visual-diff">
+			<span class="badge badge-sm text-wrap-pretty">
+				<span>Last updated on <local-time format="twoDigitNumeric"
+		datetime="2026-04-10T06:11:00.000Z"
+		data-article-date-source="calculated"
+		class="is-invisible"
+	>
+		2026-04-10
+	</local-time></span>
+			</span>
+		</li>
+			</ul>
+		</div>
+	
+			</div>
+			
+		<div
+			id="action-panel"
+			role="region"
+			aria-label="Action Panel"
+			class="action-panel"
+			tabindex="-1"
+		></div>
+	
+		
+				</main>
+				<aside
+					id="layout-body-aside"
+					class="layout-body-aside "
+					data-bi-name="aside"
+					aria-label="Additional resources"
+			  >
+					
+		<div
+			id="ms--additional-resources"
+			class="right-container padding-sm display-none display-block-desktop height-full"
+			data-bi-name="pageactions"
+		>
+			<div id="affixed-right-container" data-bi-name="right-column">
+				
+		<nav
+			id="side-doc-outline"
+			class="doc-outline border-bottom padding-bottom-xs margin-bottom-xs"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h3>In this article</h3>
+		</nav>
+	
+				<!-- Feedback -->
+				
+		<section
+			id="ms--site-user-feedback-right-rail"
+			class="font-size-sm display-none-print"
+			data-test-id="site-user-feedback-right-rail"
+			data-bi-name="site-feedback-right-rail"
+		>
+			<p class="font-weight-semibold margin-bottom-xs">Was this page helpful?</p>
+			<div class="buttons">
+				<button
+					class="thumb-rating-button like button button-primary button-sm"
+					data-test-id="right-rail-rating-yes"
+					data-binary-rating-response="rating-yes"
+					type="button"
+					title="This article is helpful"
+					data-bi-name="button-rating-yes"
+					aria-pressed="false"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-like"></span>
+					</span>
+					<span>Yes</span>
+				</button>
+				<button
+					class="thumb-rating-button dislike button button-primary button-sm"
+					id="right-rail-no-button"
+					hidden
+					data-test-id="right-rail-rating-no"
+					data-binary-rating-response="rating-no"
+					type="button"
+					title="This article is not helpful"
+					data-bi-name="button-rating-no"
+					aria-pressed="false"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-dislike"></span>
+					</span>
+					<span>No</span>
+				</button>
+				<details class="popover popover-right" id="help-popover" data-test-id="feedback-popover">
+					<summary
+						tabindex="0"
+						class="thumb-rating-button dislike button button-primary button-sm"
+						data-test-id="details-right-rail-rating-no"
+						data-binary-rating-response="rating-no"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+						data-bi-an="feedback-unhelpful-popover"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</summary>
+					<div
+						class="popover-content width-200 width-300-tablet"
+						role="dialog"
+						aria-labelledby="popover-heading"
+						aria-describedby="popover-description"
+					>
+						<p
+							id="popover-heading-right-rail"
+							class="font-size-lg margin-bottom-xxs font-weight-semibold"
+						>
+							Need help with this topic?
+						</p>
+						<p id="popover-description-right-rail" class="font-size-sm margin-bottom-xs">
+							Want to try using Ask Learn to clarify or guide you through this topic?
+						</p>
+						
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+					</div>
+				</details>
+			</div>
+		</section>
+	
+			</div>
+		</div>
+	
+			  </aside> <section
+					id="layout-body-flyout"
+					class="layout-body-flyout "
+					data-bi-name="flyout"
+			  >
+					 <div
+	class="height-full border-left background-color-body-medium"
+	id="ask-learn-flyout"
+></div>
+			  </section> <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer
+			id="footer"
+			data-test-id="footer"
+			data-bi-name="footer"
+			class="footer-layout has-padding has-default-focus border-top  uhf-container"
+			role="contentinfo"
+		>
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a
+			data-mscc-ic="false"
+			href="#"
+			data-bi-name="select-locale"
+			class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator"
+			id=""
+			title=""
+			><span class="icon" aria-hidden="true"
+				><span class="docon docon-world"></span></span
+			><span class="local-selector-link-text">en-us</span></a
+		>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://aka.ms/yourcaliforniaprivacychoices"
+			data-bi-name="your-privacy-choices"
+			class="button button-sm button-clear flex-shrink-0 external-link-indicator"
+			id=""
+			title=""
+			>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 30 14"
+			xml:space="preserve"
+			height="16"
+			width="43"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path
+				d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"
+			></path>
+			<path
+				d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"
+			></path>
+			<path
+				d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+				style="fill:#fff"
+			></path>
+			<path
+				d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+				style="fill:#06f"
+			></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a
+		>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button
+				data-test-id="theme-selector-button"
+				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
+				aria-controls="{{ themeMenuId }}"
+				aria-expanded="false"
+				title="Theme"
+				data-bi-name="theme"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu">
+					<li class="theme display-block">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							data-theme-to="light"
+						>
+							<span class="theme-light margin-right-xxs">
+								<span
+									class="theme-selector-icon border display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span role="menuitem"> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							data-theme-to="dark"
+						>
+							<span class="theme-dark margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span role="menuitem"> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							data-theme-to="high-contrast"
+						>
+							<span class="theme-high-contrast margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span role="menuitem"> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden=""></li>
+				<li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content"
+			data-bi-name="aiDisclaimer"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>AI Disclaimer</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/previous-versions/"
+			data-bi-name="archivelink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Previous Versions</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog"
+			data-bi-name="bloglink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Blog</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/contribute"
+			data-bi-name="contributorGuide"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Contribute</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?LinkId=521839"
+			data-bi-name="privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?linkid=2259814"
+			data-bi-name="consumer-health-privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Consumer Health Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/legal/termsofuse"
+			data-bi-name="termsofuse"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Terms of Use</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+			data-bi-name="trademarks"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Trademarks</a
+		>
+	
+	</li>
+				<li>&copy; Microsoft 2026</li>
+			</ul>
+		</footer>
+	</footer>
+			</body>
+		</html>

@@ -1,0 +1,34 @@
+{
+  "props": {
+    "pageProps": {
+      "currentVersion": "free-pro-team@latest",
+      "appsItems": {
+        "repository_contents": {
+          "title": "Contents",
+          "displayTitle": "Repository permissions for \"Contents\"",
+          "permissions": [
+            {
+              "category": "repos",
+              "slug": "get-repository-content",
+              "subcategory": "contents",
+              "verb": "get",
+              "requestPath": "/repos/{owner}/{repo}/contents/{path}",
+              "additional-permissions": false,
+              "access": "read"
+            },
+            {
+              "category": "repos",
+              "slug": "create-or-update-file-contents",
+              "subcategory": "contents",
+              "verb": "put",
+              "requestPath": "/repos/{owner}/{repo}/contents/{path}",
+              "additional-permissions": false,
+              "access": "write"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+

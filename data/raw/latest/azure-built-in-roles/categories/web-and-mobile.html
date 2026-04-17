@@ -1,0 +1,3255 @@
+ <!DOCTYPE html>
+		<html
+			class="layout layout-holy-grail   show-table-of-contents conceptual show-breadcrumb default-focus"
+			lang="en-us"
+			dir="ltr"
+			data-authenticated="false"
+			data-auth-status-determined="false"
+			data-target="docs"
+			x-ms-format-detection="none"
+		>
+			
+		<head>
+			<title>Azure built-in roles for Web and Mobile - Azure RBAC | Microsoft Learn</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="color-scheme" content="light dark" />
+
+			<meta name="description" content="This article lists the Azure built-in roles for Azure role-based access control (Azure RBAC) in the Web and Mobile category. It lists Actions, NotActions, DataActions, and NotDataActions." />
+			<link rel="canonical" href="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/web-and-mobile" /> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@MicrosoftLearn" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image:alt" content="Microsoft Learn" />
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png" />
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="Azure built-in roles for Web and Mobile - Azure RBAC" />
+			<meta property="og:url" content="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/web-and-mobile" />
+			<meta property="og:description" content="This article lists the Azure built-in roles for Azure role-based access control (Azure RBAC) in the Web and Mobile category. It lists Actions, NotActions, DataActions, and NotDataActions." />
+			<meta name="platform_id" content="e40a4dfe-c274-5988-f647-4812527f2df8" /> <meta name="scope" content="Azure" />
+			<meta name="locale" content="en-us" />
+			 
+			<meta name="uhfHeaderId" content="azure" />
+
+			<meta name="page_type" content="conceptual" />
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="breadcrumb_path" content="/azure/bread/toc.json" />
+	
+		<meta name="feedback_help_link_url" content="https://learn.microsoft.com/answers/tags/189/azure-rbac/" />
+	
+		<meta name="feedback_help_link_type" content="get-help-at-qna" />
+	
+		<meta name="feedback_product_url" content="https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4" />
+	
+		<meta name="feedback_system" content="Standard" />
+	
+		<meta name="permissioned-type" content="public" />
+	
+		<meta name="recommendations" content="true" />
+	
+		<meta name="recommendation_types" content="Training" />
+	
+		<meta name="recommendation_types" content="Certification" />
+	
+		<meta name="ms.suite" content="office" />
+	
+		<meta name="adobe-target" content="true" />
+	
+		<meta name="learn_banner_products" content="azure" />
+	
+		<meta name="ms.service" content="role-based-access-control" />
+	
+		<meta name="ms.topic" content="generated-reference" />
+	
+		<meta name="ms.workload" content="identity" />
+	
+		<meta name="author" content="rolyon" />
+	
+		<meta name="manager" content="pmwongera" />
+	
+		<meta name="ms.author" content="rolyon" />
+	
+		<meta name="ms.date" content="2026-04-09T00:00:00Z" />
+	
+		<meta name="ms.custom" content="generated" />
+	
+		<meta name="document_id" content="76d441f0-5b97-95aa-8d2c-c1431ffc66e1" />
+	
+		<meta name="document_version_independent_id" content="767c8c17-0e3f-7558-2496-e31fa21bdba9" />
+	
+		<meta name="updated_at" content="2026-04-10T06:11:00Z" />
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/web-and-mobile.md" />
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/65b7b384f3e54b4da3ac62dc42afaffe676abea8/articles/role-based-access-control/built-in-roles/web-and-mobile.md" />
+	
+		<meta name="git_commit_id" content="65b7b384f3e54b4da3ac62dc42afaffe676abea8" />
+	
+		<meta name="site_name" content="Docs" />
+	
+		<meta name="depot_name" content="Azure.azure-documents" />
+	
+		<meta name="schema" content="Conceptual" />
+	
+		<meta name="toc_rel" content="../toc.json" />
+	
+		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
+	
+		<meta name="word_count" content="2293" />
+	
+		<meta name="asset_id" content="role-based-access-control/built-in-roles/web-and-mobile" />
+	
+		<meta name="moniker_range_name" content="" />
+	
+		<meta name="item_type" content="Content" />
+	
+		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/web-and-mobile.md" />
+	
+		<meta name="previous_tlsh_hash" content="A9BC9A32C025CA16F656034BDB0F7F052B9494C53998378D1D3C46228080CA287BB976E39F466BA6F977D2232083ADC365C2B63AD3CB99A0F7049DEE8855C9A3B8CCD6714D" />
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/web-and-mobile.md" />
+	
+		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/web-and-mobile?accept=text/markdown" />
+	 
+		<meta name="cmProducts" content="https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/73d288b3-5f0b-439f-9063-286cbe262b41" data-source="generated" />
+	
+		<meta name="spProducts" content="https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/7b0c94d5-593e-4a2e-9007-2f991aa523ef" data-source="generated" />
+	
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03391.7726-67491f8e/styles/site.css" />
+			
+			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+			<script src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
+			<script src="/_themes/docs.theme/master/en-us/_themes/global/deprecation.js"></script>
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": true,
+    "siteName": "learn",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "Conceptual",
+    "brand": "azure",
+    "context": {},
+    "standardFeedback": true,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "get-help-at-qna",
+    "feedbackHelpLinkUrl": "https://learn.microsoft.com/answers/tags/189/azure-rbac/",
+    "feedbackSystem": "Standard",
+    "feedbackGitHubRepo": "MicrosoftDocs/azure-docs",
+    "feedbackProductUrl": "https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": true,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": true,
+    "contributors": [
+      {
+        "name": "rolyon",
+        "url": "https://github.com/rolyon"
+      },
+      {
+        "name": "jenniferf-skc",
+        "url": "https://github.com/jenniferf-skc"
+      }
+    ]
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script src="/static/assets/0.4.03391.7726-67491f8e/scripts/en-us/index-docs.js"></script>
+			
+
+			<!-- json-ld -->
+			
+		</head>
+	
+			<body
+				id="body"
+				data-bi-name="body"
+				class="layout-body "
+				lang="en-us"
+				dir="ltr"
+			>
+				<header class="layout-body-header">
+		<div class="header-holder has-default-focus">
+			
+		<a
+			href="#main"
+			
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			
+		>
+			Skip to main content
+		</a>
+	
+		<a
+			href="#"
+			data-skip-to-ask-learn
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			hidden
+		>
+			Skip to Ask Learn chat experience
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div
+				id="unsupported-browser"
+				style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;"
+				hidden
+			>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a
+							href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+							style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;"
+						>
+							Download Microsoft Edge
+						</a>
+						<a
+							href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+							style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;"
+						>
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div
+				id="ms--site-header"
+				data-test-id="site-header-wrapper"
+				itemscope="itemscope"
+				itemtype="http://schema.org/Organization"
+			>
+				<div
+					id="ms--mobile-nav"
+					class="site-header display-none-tablet padding-inline-none gap-none"
+					data-bi-name="mobile-header"
+					data-test-id="mobile-header"
+				></div>
+				<div
+					id="ms--primary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L1-header"
+					data-test-id="primary-header"
+				></div>
+				<div
+					id="ms--secondary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L2-header"
+					data-test-id="secondary-header"
+					
+				></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 <section
+					id="layout-body-menu"
+					class="layout-body-menu display-flex"
+					data-bi-name="menu"
+			  >
+					
+		<div
+			id="left-container"
+			class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full"
+			data-toc-container="true"
+		>
+			<!-- Regular TOC content (default) -->
+			<div id="ms--toc-content" class="height-full">
+				<nav
+					id="affixed-left-container"
+					class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				></nav>
+			</div>
+			<!-- Collapsible TOC content (hidden by default) -->
+			<div id="ms--toc-content-collapsible" class="height-full" hidden>
+				<nav
+					id="affixed-left-container"
+					class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				>
+					<div
+						id="ms--collapsible-toc-header"
+						class="display-flex flex-direction-row-reverse justify-content-space-between align-items-center margin-bottom-xxs"
+					>
+						<button
+							type="button"
+							class="button button-clear inner-focus"
+							data-collapsible-toc-toggle
+							aria-expanded="true"
+							aria-controls="ms--collapsible-toc-content"
+							aria-label="Table of contents"
+						>
+							<span class="icon font-size-xxl" aria-hidden="true">
+								<span class="docon docon-panel-left-contract"></span>
+							</span>
+						</button>
+						<div id="ms--collapsible-toc-moniker-slot" class="flex-grow-1"></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+			  </section>
+
+				<main
+					id="main"
+					role="main"
+					class="layout-body-main "
+					data-bi-name="content"
+					lang="en-us"
+					dir="ltr"
+				>
+					
+			<div
+		id="ms--content-header"
+		class="content-header default-focus border-bottom-none"
+		data-bi-name="content-header"
+	>
+		<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+			<button
+				type="button"
+				class="contents-button button button-sm margin-right-xxs"
+				data-bi-name="contents-expand"
+				aria-haspopup="true"
+				data-contents-button
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-menu"></span></span>
+				<span class="contents-expand-title"> Table of contents </span>
+			</button>
+			<button
+				type="button"
+				class="ap-collapse-behavior ap-expanded button button-sm"
+				data-bi-name="ap-collapse"
+				aria-controls="action-panel"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit editor mode</span>
+			</button>
+		</div>
+	</div>
+			<div data-main-column class="padding-sm padding-top-none padding-top-sm-tablet">
+				<div>
+					
+		<div id="article-header" class="background-color-body margin-bottom-xs display-none-print">
+			<div class="display-flex align-items-center justify-content-space-between">
+				
+		<details
+			id="article-header-breadcrumbs-overflow-popover"
+			class="popover"
+			data-for="article-header-breadcrumbs"
+		>
+			<summary
+				class="button button-clear button-primary button-sm inner-focus"
+				aria-label="All breadcrumbs"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-more"></span>
+				</span>
+			</summary>
+			<div id="article-header-breadcrumbs-overflow" class="popover-content padding-none"></div>
+		</details>
+
+		<bread-crumbs
+			id="article-header-breadcrumbs"
+			role="group"
+			aria-label="Breadcrumbs"
+			data-test-id="article-header-breadcrumbs"
+			class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs"
+		></bread-crumbs>
+	 
+		<div
+			id="article-header-page-actions"
+			class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch"
+		>
+			
+		<button
+			class="button button-sm border-none inner-focus display-none-tablet flex-shrink-0 "
+			data-bi-name="ask-learn-assistant-entry"
+			data-test-id="ask-learn-assistant-modal-entry-mobile"
+			data-ask-learn-modal-entry
+			
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-modal-entry-tablet"
+			data-ask-learn-modal-entry
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-flyout-entry"
+			data-ask-learn-flyout-entry
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	 
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			class="button button-sm flex-shrink-0 margin-right-xxs display-none display-inline-flex-desktop"
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Focus mode</span>
+		</button>
+	 
+
+			<details class="popover popover-right" id="article-header-page-actions-overflow">
+				<summary
+					class="justify-content-flex-start button button-clear button-sm button-primary inner-focus"
+					aria-label="More actions"
+					title="More actions"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-more-vertical"></span>
+					</span>
+				</summary>
+				<div class="popover-content">
+					
+		<button
+			data-page-action-item="overflow-mobile"
+			type="button"
+			class="button-block button-sm inner-focus button button-clear display-none-tablet justify-content-flex-start text-align-left"
+			data-bi-name="contents-expand"
+			data-contents-button
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true"
+				><span class="docon docon-editor-list-bullet"></span
+			></span>
+			<span class="contents-expand-title">Table of contents</span>
+		</button>
+	 
+		<a
+			id="lang-link-overflow"
+			class="button-sm inner-focus button button-clear button-block justify-content-flex-start text-align-left"
+			data-bi-name="language-toggle"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-read-in-link
+			href="#"
+			hidden
+		>
+			<span class="icon" aria-hidden="true" data-read-in-link-icon>
+				<span class="docon docon-locale-globe"></span>
+			</span>
+			<span data-read-in-link-text>Read in English</span>
+		</a>
+	 
+		<button
+			type="button"
+			class="collection button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus"
+			data-list-type="collection"
+			data-bi-name="collection"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="collection-status">Add</span>
+		</button>
+	
+					
+		<button
+			type="button"
+			class="collection button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+			data-list-type="plan"
+			data-bi-name="plan"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="plan-status">Add to plan</span>
+		</button>
+	  
+		<a
+			data-contenteditbtn
+			class="button button-clear button-block button-sm inner-focus justify-content-flex-start text-align-left text-decoration-none"
+			data-bi-name="edit"
+			
+			href="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/web-and-mobile.md"
+			data-original_content_git_url="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/web-and-mobile.md"
+			data-original_content_git_url_template="{repo}/blob/{branch}/articles/role-based-access-control/built-in-roles/web-and-mobile.md"
+			data-pr_repo=""
+			data-pr_branch=""
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-edit-outline"></span>
+			</span>
+			<span>Edit</span>
+		</a>
+	
+					
+		<hr class="margin-block-xxs" />
+		<h4 class="font-size-sm padding-left-xxs">Share via</h4>
+		
+					<a
+						class="button button-clear button-sm inner-focus button-block justify-content-flex-start text-align-left text-decoration-none share-facebook"
+						data-bi-name="facebook"
+						data-page-action-item="overflow-all"
+						href="#"
+					>
+						<span class="icon color-primary" aria-hidden="true">
+							<span class="docon docon-facebook-share"></span>
+						</span>
+						<span>Facebook</span>
+					</a>
+
+					<a
+						href="#"
+						class="button button-clear button-sm inner-focus button-block justify-content-flex-start text-align-left text-decoration-none share-twitter"
+						data-bi-name="twitter"
+						data-page-action-item="overflow-all"
+					>
+						<span class="icon color-text" aria-hidden="true">
+							<span class="docon docon-xlogo-share"></span>
+						</span>
+						<span>x.com</span>
+					</a>
+
+					<a
+						href="#"
+						class="button button-clear button-sm inner-focus button-block justify-content-flex-start text-align-left text-decoration-none share-linkedin"
+						data-bi-name="linkedin"
+						data-page-action-item="overflow-all"
+					>
+						<span class="icon color-primary" aria-hidden="true">
+							<span class="docon docon-linked-in-logo"></span>
+						</span>
+						<span>LinkedIn</span>
+					</a>
+					<a
+						href="#"
+						class="button button-clear button-sm inner-focus button-block justify-content-flex-start text-align-left text-decoration-none share-email"
+						data-bi-name="email"
+						data-page-action-item="overflow-all"
+					>
+						<span class="icon color-primary" aria-hidden="true">
+							<span class="docon docon-mail-message"></span>
+						</span>
+						<span>Email</span>
+					</a>
+			  
+	 
+		<hr class="margin-block-xxs" />
+		
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="copy-markdown"
+					data-page-action-item="overflow-all"
+					data-copy-markdown
+					data-copy-state="idle"
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span data-show-when="idle" class="docon docon-code-lang"></span>
+						<span data-show-when="loading" class="loader" hidden></span>
+						<span data-show-when="success" class="docon docon-check-mark" hidden></span>
+					</span>
+					<span>Copy Markdown</span>
+				</button>
+		   
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="print"
+					data-page-action-item="overflow-all"
+					data-popover-close
+					data-print-page
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span class="docon docon-print"></span>
+					</span>
+					<span>Print</span>
+				</button>
+		  
+	
+				</div>
+			</details>
+		</div>
+	
+			</div>
+		</div>
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
+		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
+			<hr class="hr margin-top-xs margin-bottom-sm" />
+			<div class="notification notification-info">
+				<div class="notification-content">
+					<p class="margin-top-none notification-title">
+						<span class="icon" aria-hidden="true"
+							><span class="docon docon-exclamation-circle-solid"></span
+						></span>
+						<span>Note</span>
+					</p>
+					<p class="margin-top-none authentication-determined not-authenticated">
+						Access to this page requires authorization. You can try <a class="docs-sign-in" href="#" data-bi-name="permission-content-sign-in">signing in</a> or <a  class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+					<p class="margin-top-none authentication-determined authenticated">
+						Access to this page requires authorization. You can try <a class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+					<div class="content"><h1 id="azure-built-in-roles-for-web-and-mobile">Azure built-in roles for Web and Mobile</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	
+					<div class="content"><p>This article lists the Azure built-in roles in the Web and Mobile category.</p>
+<h2 id="azure-maps-data-contributor">Azure Maps Data Contributor</h2>
+<p>Grants access to read, write, and delete access to map related data from an Azure maps account.</p>
+<p><a href="/en-us/azure/azure-maps/azure-maps-authentication" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftmaps" data-linktype="relative-path">Microsoft.Maps</a>/accounts/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftmaps" data-linktype="relative-path">Microsoft.Maps</a>/accounts/*/write</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftmaps" data-linktype="relative-path">Microsoft.Maps</a>/accounts/*/delete</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftmaps" data-linktype="relative-path">Microsoft.Maps</a>/accounts/*/action</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants access to read, write, and delete access to map related data from an Azure maps account.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/8f5e0ce6-4f7b-4dcf-bddf-e6f48634a204",
+  "name": "8f5e0ce6-4f7b-4dcf-bddf-e6f48634a204",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Maps/accounts/*/read",
+        "Microsoft.Maps/accounts/*/write",
+        "Microsoft.Maps/accounts/*/delete",
+        "Microsoft.Maps/accounts/*/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Maps Data Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-maps-data-reader">Azure Maps Data Reader</h2>
+<p>Grants access to read map related data from an Azure maps account.</p>
+<p><a href="/en-us/azure/azure-maps/azure-maps-authentication" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftmaps" data-linktype="relative-path">Microsoft.Maps</a>/accounts/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants access to read map related data from an Azure maps account.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/423170ca-a8f6-4b0f-8487-9e4eb8f49bfa",
+  "name": "423170ca-a8f6-4b0f-8487-9e4eb8f49bfa",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Maps/accounts/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Maps Data Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-maps-search-and-render-data-reader">Azure Maps Search and Render Data Reader</h2>
+<p>Grants access to very limited set of data APIs for common visual web SDK scenarios. Specifically, render and search data APIs.</p>
+<p><a href="/en-us/azure/azure-maps/azure-maps-authentication" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftmaps" data-linktype="relative-path">Microsoft.Maps</a>/accounts/services/render/read</td>
+<td>Allows reading of data for Render services.</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftmaps" data-linktype="relative-path">Microsoft.Maps</a>/accounts/services/search/read</td>
+<td>Allows reading of data for Search services.</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants access to very limited set of data APIs for common visual web SDK scenarios. Specifically, render and search data APIs.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/6be48352-4f82-47c9-ad5e-0acacefdb005",
+  "name": "6be48352-4f82-47c9-ad5e-0acacefdb005",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Maps/accounts/services/render/read",
+        "Microsoft.Maps/accounts/services/search/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Maps Search and Render Data Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-apps-application-configuration-service-config-file-pattern-reader-role">Azure Spring Apps Application Configuration Service Config File Pattern Reader Role</h2>
+<p>Read content of config file pattern for Application Configuration Service in Azure Spring Apps</p>
+<p><a href="/en-us/azure/spring-apps/enterprise/how-to-enterprise-application-configuration-service" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/read</td>
+<td>Get Azure Spring Apps service instance(s)</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/configurationServices/read</td>
+<td>Get the Application Configuration Services for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/ApplicationConfigurationService/read</td>
+<td>Read the configuration content (for example, application-prod.yaml) pulled by Application Configuration Service for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Read content of config file pattern for Application Configuration Service in Azure Spring Apps",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/25211fc6-dc78-40b6-b205-e4ac934fd9fd",
+  "name": "25211fc6-dc78-40b6-b205-e4ac934fd9fd",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppPlatform/Spring/read",
+        "Microsoft.AppPlatform/Spring/configurationServices/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/ApplicationConfigurationService/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Apps Application Configuration Service Config File Pattern Reader Role",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-apps-application-configuration-service-log-reader-role">Azure Spring Apps Application Configuration Service Log Reader Role</h2>
+<p>Read real-time logs for Application Configuration Service in Azure Spring Apps</p>
+<p><a href="/en-us/azure/spring-apps/enterprise/how-to-managed-component-log-streaming" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/read</td>
+<td>Get Azure Spring Apps service instance(s)</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/configurationServices/read</td>
+<td>Get the Application Configuration Services for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/ApplicationConfigurationService/logstream/action</td>
+<td>Read the streaming log of all subcomponents in Application Configuration Service from a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Read real-time logs for Application Configuration Service in Azure Spring Apps",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/6593e776-2a30-40f9-8a32-4fe28b77655d",
+  "name": "6593e776-2a30-40f9-8a32-4fe28b77655d",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppPlatform/Spring/read",
+        "Microsoft.AppPlatform/Spring/configurationServices/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/ApplicationConfigurationService/logstream/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Apps Application Configuration Service Log Reader Role",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-apps-connect-role">Azure Spring Apps Connect Role</h2>
+<p>Azure Spring Apps Connect Role</p>
+<p><a href="/en-us/azure/spring-apps/enterprise/how-to-connect-to-app-instance-for-troubleshooting" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/apps/deployments/connect/action</td>
+<td>Connect to an instance for a specific application</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Azure Spring Apps Connect Role",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/80558df3-64f9-4c0f-b32d-e5094b036b0b",
+  "name": "80558df3-64f9-4c0f-b32d-e5094b036b0b",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/apps/deployments/connect/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Apps Connect Role",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-apps-job-log-reader-role">Azure Spring Apps Job Log Reader Role</h2>
+<p>Read real-time logs for jobs in Azure Spring Apps</p>
+<p><a href="/en-us/azure/spring-apps/enterprise/how-to-job-log-streaming" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/read</td>
+<td>Get Azure Spring Apps service instance(s)</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/jobs/read</td>
+<td>Get the job for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/jobs/executions/read</td>
+<td>Get the job execution for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/jobs/executions/logstream/action</td>
+<td>Get the streaming log of job executions for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/jobs/executions/listInstances/action</td>
+<td>List instances of a specific job execution for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Read real-time logs for jobs in Azure Spring Apps",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/b459aa1d-e3c8-436f-ae21-c0531140f43e",
+  "name": "b459aa1d-e3c8-436f-ae21-c0531140f43e",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppPlatform/Spring/read",
+        "Microsoft.AppPlatform/Spring/jobs/read",
+        "Microsoft.AppPlatform/Spring/jobs/executions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/jobs/executions/logstream/action",
+        "Microsoft.AppPlatform/Spring/jobs/executions/listInstances/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Apps Job Log Reader Role",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-apps-remote-debugging-role">Azure Spring Apps Remote Debugging Role</h2>
+<p>Azure Spring Apps Remote Debugging Role</p>
+<p><a href="/en-us/azure/spring-apps/enterprise/how-to-remote-debugging-app-instance" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/apps/deployments/remotedebugging/action</td>
+<td>Remote debugging app instance for a specific application</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Azure Spring Apps Remote Debugging Role",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/a99b0159-1064-4c22-a57b-c9b3caa1c054",
+  "name": "a99b0159-1064-4c22-a57b-c9b3caa1c054",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/apps/deployments/remotedebugging/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Apps Remote Debugging Role",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-apps-spring-cloud-gateway-log-reader-role">Azure Spring Apps Spring Cloud Gateway Log Reader Role</h2>
+<p>Read real-time logs for Spring Cloud Gateway in Azure Spring Apps</p>
+<p><a href="/en-us/azure/spring-apps/enterprise/how-to-managed-component-log-streaming" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/read</td>
+<td>Get Azure Spring Apps service instance(s)</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/gateways/read</td>
+<td>Get the Spring Cloud Gateways for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/SpringCloudGateway/logstream/action</td>
+<td>Read the streaming log of Spring Cloud Gateway from a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Read real-time logs for Spring Cloud Gateway in Azure Spring Apps",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/4301dc2a-25a9-44b0-ae63-3636cf7f2bd2",
+  "name": "4301dc2a-25a9-44b0-ae63-3636cf7f2bd2",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppPlatform/Spring/read",
+        "Microsoft.AppPlatform/Spring/gateways/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/SpringCloudGateway/logstream/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Apps Spring Cloud Gateway Log Reader Role",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-cloud-config-server-contributor">Azure Spring Cloud Config Server Contributor</h2>
+<p>Allow read, write and delete access to Azure Spring Cloud Config Server</p>
+<p><a href="/en-us/azure/spring-apps/basic-standard/how-to-access-data-plane-azure-ad-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/configService/read</td>
+<td>Read the configuration content(for example, application.yaml) for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/configService/write</td>
+<td>Write config server content for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/configService/delete</td>
+<td>Delete config server content for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allow read, write and delete access to Azure Spring Cloud Config Server",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/a06f5c24-21a7-4e1a-aa2b-f19eb6684f5b",
+  "name": "a06f5c24-21a7-4e1a-aa2b-f19eb6684f5b",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/configService/read",
+        "Microsoft.AppPlatform/Spring/configService/write",
+        "Microsoft.AppPlatform/Spring/configService/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Cloud Config Server Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-cloud-config-server-reader">Azure Spring Cloud Config Server Reader</h2>
+<p>Allow read access to Azure Spring Cloud Config Server</p>
+<p><a href="/en-us/azure/spring-apps/basic-standard/how-to-access-data-plane-azure-ad-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/configService/read</td>
+<td>Read the configuration content(for example, application.yaml) for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allow read access to Azure Spring Cloud Config Server",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/d04c6db6-4947-4782-9e91-30a88feb7be7",
+  "name": "d04c6db6-4947-4782-9e91-30a88feb7be7",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/configService/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Cloud Config Server Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-cloud-data-reader">Azure Spring Cloud Data Reader</h2>
+<p>Allow read access to Azure Spring Cloud Data</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allow read access to Azure Spring Cloud Data",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/b5537268-8956-4941-a8f0-646150406f0c",
+  "name": "b5537268-8956-4941-a8f0-646150406f0c",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Cloud Data Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-cloud-service-registry-contributor">Azure Spring Cloud Service Registry Contributor</h2>
+<p>Allow read, write and delete access to Azure Spring Cloud Service Registry</p>
+<p><a href="/en-us/azure/spring-apps/basic-standard/how-to-access-data-plane-azure-ad-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/eurekaService/read</td>
+<td>Read the user app(s) registration information for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/eurekaService/write</td>
+<td>Write the user app(s) registration information for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/eurekaService/delete</td>
+<td>Delete the user app registration information for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allow read, write and delete access to Azure Spring Cloud Service Registry",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/f5880b48-c26d-48be-b172-7927bfa1c8f1",
+  "name": "f5880b48-c26d-48be-b172-7927bfa1c8f1",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/eurekaService/read",
+        "Microsoft.AppPlatform/Spring/eurekaService/write",
+        "Microsoft.AppPlatform/Spring/eurekaService/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Cloud Service Registry Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-spring-cloud-service-registry-reader">Azure Spring Cloud Service Registry Reader</h2>
+<p>Allow read access to Azure Spring Cloud Service Registry</p>
+<p><a href="/en-us/azure/spring-apps/basic-standard/how-to-access-data-plane-azure-ad-rbac" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/compute#microsoftappplatform" data-linktype="relative-path">Microsoft.AppPlatform</a>/Spring/eurekaService/read</td>
+<td>Read the user app(s) registration information for a specific Azure Spring Apps service instance</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allow read access to Azure Spring Cloud Service Registry",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/cff1b556-2399-4e7e-856d-a8f754be7b65",
+  "name": "cff1b556-2399-4e7e-856d-a8f754be7b65",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/eurekaService/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Spring Cloud Service Registry Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="signalr-accesskey-reader">SignalR AccessKey Reader</h2>
+<p>Read SignalR Service Access Keys</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/listkeys/action</td>
+<td>View the value of SignalR access keys in the management portal or through API</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Read SignalR Service Access Keys",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/04165923-9d83-45d5-8227-78b77b0a687e",
+  "name": "04165923-9d83-45d5-8227-78b77b0a687e",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.SignalRService/*/read",
+        "Microsoft.SignalRService/SignalR/listkeys/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "SignalR AccessKey Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="signalr-app-server">SignalR App Server</h2>
+<p>Lets your app server access SignalR Service with AAD auth options.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/auth/accessKey/action</td>
+<td>Generate an AccessKey for signing AccessTokens, the key will expire in 90 minutes by default</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/serverConnection/write</td>
+<td>Start a server connection</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/clientConnection/write</td>
+<td>Close client connection</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets your app server access SignalR Service with AAD auth options.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/420fcaa2-552c-430f-98ca-3264be4806c7",
+  "name": "420fcaa2-552c-430f-98ca-3264be4806c7",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.SignalRService/SignalR/auth/accessKey/action",
+        "Microsoft.SignalRService/SignalR/serverConnection/write",
+        "Microsoft.SignalRService/SignalR/clientConnection/write"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "SignalR App Server",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="signalr-rest-api-owner">SignalR REST API Owner</h2>
+<p>Full access to Azure SignalR Service REST APIs</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/auth/clientToken/action</td>
+<td>Generate an AccessToken for client to connect to ASRS, the token will expire in 5 minutes by default</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/hub/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/group/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/clientConnection/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/user/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Full access to Azure SignalR Service REST APIs",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/fd53cd77-2268-407a-8f46-7e7863d0f521",
+  "name": "fd53cd77-2268-407a-8f46-7e7863d0f521",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.SignalRService/SignalR/auth/clientToken/action",
+        "Microsoft.SignalRService/SignalR/hub/*",
+        "Microsoft.SignalRService/SignalR/group/*",
+        "Microsoft.SignalRService/SignalR/clientConnection/*",
+        "Microsoft.SignalRService/SignalR/user/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "SignalR REST API Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="signalr-rest-api-reader">SignalR REST API Reader</h2>
+<p>Read-only access to Azure SignalR Service REST APIs</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/group/read</td>
+<td>Check group existence or user existence in group</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/clientConnection/read</td>
+<td>Check client connection existence</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/user/read</td>
+<td>Check user existence</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Read-only access to Azure SignalR Service REST APIs",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/ddde6b66-c0df-4114-a159-3618637b3035",
+  "name": "ddde6b66-c0df-4114-a159-3618637b3035",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.SignalRService/SignalR/group/read",
+        "Microsoft.SignalRService/SignalR/clientConnection/read",
+        "Microsoft.SignalRService/SignalR/user/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "SignalR REST API Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="signalr-service-owner">SignalR Service Owner</h2>
+<p>Full access to Azure SignalR Service REST APIs</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/SignalR/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Full access to Azure SignalR Service REST APIs",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/7e4f1700-ea5a-4f59-8f37-079cfe29dce3",
+  "name": "7e4f1700-ea5a-4f59-8f37-079cfe29dce3",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.SignalRService/SignalR/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "SignalR Service Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="signalrweb-pubsub-contributor">SignalR/Web PubSub Contributor</h2>
+<p>Create, Read, Update, and Delete SignalR service resources</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Create, Read, Update, and Delete SignalR service resources",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/8cf5e20a-e4b2-4e9d-b3a1-5ceb692c2761",
+  "name": "8cf5e20a-e4b2-4e9d-b3a1-5ceb692c2761",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.SignalRService/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "SignalR/Web PubSub Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="web-plan-contributor">Web Plan Contributor</h2>
+<p>Manage the web plans for websites. Does not allow you to assign roles in Azure RBAC.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
+<td>Gets the availability statuses for all resources in the specified scope</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/serverFarms/*</td>
+<td>Create and manage server farms</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/hostingEnvironments/Join/Action</td>
+<td>Joins an App Service Environment</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/autoscalesettings/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets you manage the web plans for websites, but not access to them.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b",
+  "name": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Web/serverFarms/*",
+        "Microsoft.Web/hostingEnvironments/Join/Action",
+        "Microsoft.Insights/autoscalesettings/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Web Plan Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="web-pubsub-service-owner">Web PubSub Service Owner</h2>
+<p>Full access to Azure Web PubSub Service REST APIs</p>
+<p><a href="/en-us/azure/azure-web-pubsub/howto-authorize-from-application" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/WebPubSub/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Full access to Azure Web PubSub Service REST APIs",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/12cf5a90-567b-43ae-8102-96cf46c7d9b4",
+  "name": "12cf5a90-567b-43ae-8102-96cf46c7d9b4",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.SignalRService/WebPubSub/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Web PubSub Service Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="web-pubsub-service-reader">Web PubSub Service Reader</h2>
+<p>Read-only access to Azure Web PubSub Service REST APIs</p>
+<p><a href="/en-us/azure/azure-web-pubsub/concept-azure-ad-authorization" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftsignalrservice" data-linktype="relative-path">Microsoft.SignalRService</a>/WebPubSub/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Read-only access to Azure Web PubSub Service REST APIs",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/bfb1c7d2-fb1a-466b-b2ba-aee63b92deaf",
+  "name": "bfb1c7d2-fb1a-466b-b2ba-aee63b92deaf",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.SignalRService/WebPubSub/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Web PubSub Service Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="website-contributor">Website Contributor</h2>
+<p>Manage websites, but not web plans. Does not allow you to assign roles in Azure RBAC.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/components/*</td>
+<td>Create and manage Insights components</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
+<td>Gets the availability statuses for all resources in the specified scope</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/certificates/*</td>
+<td>Create and manage website certificates</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/listSitesAssignedToHostName/read</td>
+<td>Get names of sites assigned to hostname.</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/register/action</td>
+<td>Register Microsoft.Web resource provider for the subscription.</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/serverFarms/join/action</td>
+<td>Joins an App Service Plan</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/serverFarms/read</td>
+<td>Get the properties on an App Service Plan</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/sites/*</td>
+<td>Create and manage websites (site creation also requires write permissions to the associated App Service Plan)</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets you manage websites (not web plans), but not access to them.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/de139f84-1756-47ae-9be6-808fbbe84772",
+  "name": "de139f84-1756-47ae-9be6-808fbbe84772",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/components/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Web/certificates/*",
+        "Microsoft.Web/listSitesAssignedToHostName/read",
+        "Microsoft.Web/register/action",
+        "Microsoft.Web/serverFarms/join/action",
+        "Microsoft.Web/serverFarms/read",
+        "Microsoft.Web/sites/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Website Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="next-steps">Next steps</h2>
+<ul>
+<li><a href="/en-us/azure/role-based-access-control/role-assignments-portal" data-linktype="absolute-path">Assign Azure roles using the Azure portal</a></li>
+</ul>
+</div>
+					
+		<div
+			id="ms--inline-notifications"
+			class="margin-block-xs"
+			data-bi-name="inline-notification"
+		></div>
+	 
+		<div
+			id="assertive-live-region"
+			role="alert"
+			aria-live="assertive"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+		<div
+			id="polite-live-region"
+			role="status"
+			aria-live="polite"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+	
+					
+		<!-- feedback section -->
+		<section
+			id="site-user-feedback-footer"
+			class="font-size-sm margin-top-md display-none-print display-none-desktop"
+			data-test-id="site-user-feedback-footer"
+			data-bi-name="site-feedback-section"
+		>
+			<hr class="hr" />
+			<h2 id="ms--feedback" class="title is-3">Feedback</h2>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="buttons">
+					<button
+						class="thumb-rating-button like button button-primary button-sm"
+						data-test-id="footer-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+						<span>Yes</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike button button-primary button-sm"
+						id="standard-rating-no-button"
+						hidden
+						data-test-id="footer-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</button>
+					<details
+						class="popover popover-top"
+						id="mobile-help-popover"
+						data-test-id="footer-feedback-popover"
+					>
+						<summary
+							class="thumb-rating-button dislike button button-primary button-sm"
+							data-test-id="details-footer-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+							<span>No</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading"
+							aria-describedby="popover-description"
+						>
+							<p id="popover-heading" class="font-size-lg margin-bottom-xxs font-weight-semibold">
+								Need help with this topic?
+							</p>
+							<p id="popover-description" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<!-- end feedback section -->
+	
+				</div>
+				
+		<div id="ms--additional-resources-mobile" class="display-none-print">
+			<hr class="hr" hidden />
+			<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>
+				Additional resources
+			</h2>
+			
+		<section
+			id="right-rail-recommendations-mobile"
+			class=""
+			data-bi-name="recommendations"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-training-mobile"
+			class=""
+			data-bi-name="learning-resource-card"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-events-mobile"
+			class=""
+			data-bi-name="events-card"
+			hidden
+		></section>
+	
+		</div>
+	 
+		<div
+			id="article-metadata-footer"
+			data-bi-name="article-metadata-footer"
+			data-test-id="article-metadata-footer"
+			class="page-metadata-container"
+		>
+			<hr class="hr" />
+			<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+				<li class="visibility-hidden-visual-diff">
+			<span class="badge badge-sm text-wrap-pretty">
+				<span>Last updated on <local-time format="twoDigitNumeric"
+		datetime="2026-04-09T08:00:00.000Z"
+		data-article-date-source="calculated"
+		class="is-invisible"
+	>
+		2026-04-09
+	</local-time></span>
+			</span>
+		</li>
+			</ul>
+		</div>
+	
+			</div>
+			
+		<div
+			id="action-panel"
+			role="region"
+			aria-label="Action Panel"
+			class="action-panel"
+			tabindex="-1"
+		></div>
+	
+		
+				</main>
+				<aside
+					id="layout-body-aside"
+					class="layout-body-aside "
+					data-bi-name="aside"
+					aria-label="Additional resources"
+			  >
+					
+		<div
+			id="ms--additional-resources"
+			class="right-container padding-sm display-none display-block-desktop height-full"
+			data-bi-name="pageactions"
+		>
+			<div id="affixed-right-container" data-bi-name="right-column">
+				
+		<nav
+			id="side-doc-outline"
+			class="doc-outline border-bottom padding-bottom-xs margin-bottom-xs"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h3>In this article</h3>
+		</nav>
+	
+				<!-- Feedback -->
+				
+		<section
+			id="ms--site-user-feedback-right-rail"
+			class="font-size-sm display-none-print"
+			data-test-id="site-user-feedback-right-rail"
+			data-bi-name="site-feedback-right-rail"
+		>
+			<p class="font-weight-semibold margin-bottom-xs">Was this page helpful?</p>
+			<div class="buttons">
+				<button
+					class="thumb-rating-button like button button-primary button-sm"
+					data-test-id="right-rail-rating-yes"
+					data-binary-rating-response="rating-yes"
+					type="button"
+					title="This article is helpful"
+					data-bi-name="button-rating-yes"
+					aria-pressed="false"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-like"></span>
+					</span>
+					<span>Yes</span>
+				</button>
+				<button
+					class="thumb-rating-button dislike button button-primary button-sm"
+					id="right-rail-no-button"
+					hidden
+					data-test-id="right-rail-rating-no"
+					data-binary-rating-response="rating-no"
+					type="button"
+					title="This article is not helpful"
+					data-bi-name="button-rating-no"
+					aria-pressed="false"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-dislike"></span>
+					</span>
+					<span>No</span>
+				</button>
+				<details class="popover popover-right" id="help-popover" data-test-id="feedback-popover">
+					<summary
+						tabindex="0"
+						class="thumb-rating-button dislike button button-primary button-sm"
+						data-test-id="details-right-rail-rating-no"
+						data-binary-rating-response="rating-no"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+						data-bi-an="feedback-unhelpful-popover"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</summary>
+					<div
+						class="popover-content width-200 width-300-tablet"
+						role="dialog"
+						aria-labelledby="popover-heading"
+						aria-describedby="popover-description"
+					>
+						<p
+							id="popover-heading-right-rail"
+							class="font-size-lg margin-bottom-xxs font-weight-semibold"
+						>
+							Need help with this topic?
+						</p>
+						<p id="popover-description-right-rail" class="font-size-sm margin-bottom-xs">
+							Want to try using Ask Learn to clarify or guide you through this topic?
+						</p>
+						
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+					</div>
+				</details>
+			</div>
+		</section>
+	
+			</div>
+		</div>
+	
+			  </aside> <section
+					id="layout-body-flyout"
+					class="layout-body-flyout "
+					data-bi-name="flyout"
+			  >
+					 <div
+	class="height-full border-left background-color-body-medium"
+	id="ask-learn-flyout"
+></div>
+			  </section> <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer
+			id="footer"
+			data-test-id="footer"
+			data-bi-name="footer"
+			class="footer-layout has-padding has-default-focus border-top  uhf-container"
+			role="contentinfo"
+		>
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a
+			data-mscc-ic="false"
+			href="#"
+			data-bi-name="select-locale"
+			class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator"
+			id=""
+			title=""
+			><span class="icon" aria-hidden="true"
+				><span class="docon docon-world"></span></span
+			><span class="local-selector-link-text">en-us</span></a
+		>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://aka.ms/yourcaliforniaprivacychoices"
+			data-bi-name="your-privacy-choices"
+			class="button button-sm button-clear flex-shrink-0 external-link-indicator"
+			id=""
+			title=""
+			>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 30 14"
+			xml:space="preserve"
+			height="16"
+			width="43"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path
+				d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"
+			></path>
+			<path
+				d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"
+			></path>
+			<path
+				d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+				style="fill:#fff"
+			></path>
+			<path
+				d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+				style="fill:#06f"
+			></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a
+		>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button
+				data-test-id="theme-selector-button"
+				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
+				aria-controls="{{ themeMenuId }}"
+				aria-expanded="false"
+				title="Theme"
+				data-bi-name="theme"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu">
+					<li class="theme display-block">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							data-theme-to="light"
+						>
+							<span class="theme-light margin-right-xxs">
+								<span
+									class="theme-selector-icon border display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span role="menuitem"> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							data-theme-to="dark"
+						>
+							<span class="theme-dark margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span role="menuitem"> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							data-theme-to="high-contrast"
+						>
+							<span class="theme-high-contrast margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span role="menuitem"> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden=""></li>
+				<li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content"
+			data-bi-name="aiDisclaimer"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>AI Disclaimer</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/previous-versions/"
+			data-bi-name="archivelink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Previous Versions</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog"
+			data-bi-name="bloglink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Blog</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/contribute"
+			data-bi-name="contributorGuide"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Contribute</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?LinkId=521839"
+			data-bi-name="privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?linkid=2259814"
+			data-bi-name="consumer-health-privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Consumer Health Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/legal/termsofuse"
+			data-bi-name="termsofuse"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Terms of Use</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+			data-bi-name="trademarks"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Trademarks</a
+		>
+	
+	</li>
+				<li>&copy; Microsoft 2026</li>
+			</ul>
+		</footer>
+	</footer>
+			</body>
+		</html>

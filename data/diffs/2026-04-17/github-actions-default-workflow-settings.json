@@ -1,0 +1,182 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "github:org-actions-policy:allowed_actions:all",
+        "github:org-actions-policy:allowed_actions:local_only",
+        "github:org-actions-policy:allowed_actions:selected",
+        "github:org-actions-policy:enabled_repositories:all",
+        "github:org-actions-policy:enabled_repositories:none",
+        "github:org-actions-policy:enabled_repositories:selected",
+        "github:org-actions-policy:sha_pinning_required:false",
+        "github:org-actions-policy:sha_pinning_required:true"
+      ],
+      "display_name": "Get GitHub Actions permissions for an organization",
+      "source_url": "https://docs.github.com/en/rest/actions/permissions#get-github-actions-permissions-for-an-organization",
+      "stable_id": "github-actions-settings:org-actions-policy"
+    },
+    {
+      "atoms_added": [
+        "github:org-selected-actions:github_owned_allowed:false",
+        "github:org-selected-actions:github_owned_allowed:true",
+        "github:org-selected-actions:verified_allowed:false",
+        "github:org-selected-actions:verified_allowed:true"
+      ],
+      "display_name": "Get allowed actions and reusable workflows for an organization",
+      "source_url": "https://docs.github.com/en/rest/actions/permissions#get-allowed-actions-and-reusable-workflows-for-an-organization",
+      "stable_id": "github-actions-settings:org-selected-actions"
+    },
+    {
+      "atoms_added": [
+        "github:workflow-default:can_approve_pull_request_reviews:false",
+        "github:workflow-default:can_approve_pull_request_reviews:true",
+        "github:workflow-default:default_workflow_permissions:read",
+        "github:workflow-default:default_workflow_permissions:write"
+      ],
+      "display_name": "Get default workflow permissions for an organization",
+      "source_url": "https://docs.github.com/en/rest/actions/permissions#get-default-workflow-permissions-for-an-organization",
+      "stable_id": "github-actions-settings:org-workflow-defaults"
+    },
+    {
+      "atoms_added": [
+        "github:repo-actions-policy:allowed_actions:all",
+        "github:repo-actions-policy:allowed_actions:local_only",
+        "github:repo-actions-policy:allowed_actions:selected",
+        "github:repo-actions-policy:enabled:false",
+        "github:repo-actions-policy:enabled:true",
+        "github:repo-actions-policy:sha_pinning_required:false",
+        "github:repo-actions-policy:sha_pinning_required:true"
+      ],
+      "display_name": "Get GitHub Actions permissions for a repository",
+      "source_url": "https://docs.github.com/en/rest/actions/permissions#get-github-actions-permissions-for-a-repository",
+      "stable_id": "github-actions-settings:repo-actions-policy"
+    },
+    {
+      "atoms_added": [
+        "github:repo-selected-actions:github_owned_allowed:false",
+        "github:repo-selected-actions:github_owned_allowed:true",
+        "github:repo-selected-actions:verified_allowed:false",
+        "github:repo-selected-actions:verified_allowed:true"
+      ],
+      "display_name": "Get allowed actions and reusable workflows for a repository",
+      "source_url": "https://docs.github.com/en/rest/actions/permissions#get-allowed-actions-and-reusable-workflows-for-a-repository",
+      "stable_id": "github-actions-settings:repo-selected-actions"
+    },
+    {
+      "atoms_added": [
+        "github:workflow-default:can_approve_pull_request_reviews:false",
+        "github:workflow-default:can_approve_pull_request_reviews:true",
+        "github:workflow-default:default_workflow_permissions:read",
+        "github:workflow-default:default_workflow_permissions:write"
+      ],
+      "display_name": "Get default workflow permissions for a repository",
+      "source_url": "https://docs.github.com/en/rest/actions/permissions#get-default-workflow-permissions-for-a-repository",
+      "stable_id": "github-actions-settings:repo-workflow-defaults"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "github:org-actions-policy:allowed_actions:all",
+      "github:org-actions-policy:allowed_actions:local_only",
+      "github:org-actions-policy:allowed_actions:selected",
+      "github:org-actions-policy:enabled_repositories:all",
+      "github:org-actions-policy:enabled_repositories:none",
+      "github:org-actions-policy:enabled_repositories:selected",
+      "github:org-actions-policy:sha_pinning_required:false",
+      "github:org-actions-policy:sha_pinning_required:true",
+      "github:org-selected-actions:github_owned_allowed:false",
+      "github:org-selected-actions:github_owned_allowed:true",
+      "github:org-selected-actions:verified_allowed:false",
+      "github:org-selected-actions:verified_allowed:true",
+      "github:repo-actions-policy:allowed_actions:all",
+      "github:repo-actions-policy:allowed_actions:local_only",
+      "github:repo-actions-policy:allowed_actions:selected",
+      "github:repo-actions-policy:enabled:false",
+      "github:repo-actions-policy:enabled:true",
+      "github:repo-actions-policy:sha_pinning_required:false",
+      "github:repo-actions-policy:sha_pinning_required:true",
+      "github:repo-selected-actions:github_owned_allowed:false",
+      "github:repo-selected-actions:github_owned_allowed:true",
+      "github:repo-selected-actions:verified_allowed:false",
+      "github:repo-selected-actions:verified_allowed:true",
+      "github:workflow-default:can_approve_pull_request_reviews:false",
+      "github:workflow-default:can_approve_pull_request_reviews:false",
+      "github:workflow-default:can_approve_pull_request_reviews:true",
+      "github:workflow-default:can_approve_pull_request_reviews:true",
+      "github:workflow-default:default_workflow_permissions:read",
+      "github:workflow-default:default_workflow_permissions:read",
+      "github:workflow-default:default_workflow_permissions:write",
+      "github:workflow-default:default_workflow_permissions:write"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allowed_actions": [
+          "all",
+          "all",
+          "local_only",
+          "local_only",
+          "selected",
+          "selected"
+        ],
+        "grant:can_approve_pull_request_reviews": [
+          "false",
+          "false",
+          "true",
+          "true"
+        ],
+        "grant:default_workflow_permissions": [
+          "read",
+          "read",
+          "write",
+          "write"
+        ],
+        "grant:enabled": [
+          "false",
+          "true"
+        ],
+        "grant:enabled_repositories": [
+          "all",
+          "none",
+          "selected"
+        ],
+        "grant:github_owned_allowed": [
+          "false",
+          "false",
+          "true",
+          "true"
+        ],
+        "grant:sha_pinning_required": [
+          "false",
+          "false",
+          "true",
+          "true"
+        ],
+        "grant:verified_allowed": [
+          "false",
+          "false",
+          "true",
+          "true"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-04-17T20:17:21Z",
+  "counts": {
+    "added_atoms": 31,
+    "added_objects": 6,
+    "changed_objects": 0,
+    "current_objects": 6,
+    "previous_objects": 0,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-04-17",
+  "dataset": "github-actions-default-workflow-settings",
+  "platform": "github",
+  "previous_snapshot_date": null,
+  "removed_objects": [],
+  "warnings": []
+}
