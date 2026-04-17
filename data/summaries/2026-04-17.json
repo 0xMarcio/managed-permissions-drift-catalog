@@ -1,10 +1,4 @@
 {
-  "caveats": [
-    "This score is a heuristic. It tracks documented permission-shape drift, not full effective access.",
-    "AWS scoring does not evaluate conditions, resources, principals, or wildcard expansion.",
-    "Azure and GCP scoring compare listed actions and permissions without tenant-specific scope evaluation.",
-    "GitHub scores schema-level changes in documented permission levels and settings contracts, not your live organization settings."
-  ],
   "datasets": [
     {
       "added_atoms": 50953,
@@ -23,12 +17,12 @@
       "score": 5604
     },
     {
-      "added_atoms": 0,
+      "added_atoms": 122768,
       "changed_objects": 0,
       "dataset": "gcp-predefined-roles",
       "platform": "gcp",
       "removed_atoms": 0,
-      "score": 0
+      "score": 122768
     },
     {
       "added_atoms": 31,
@@ -56,7 +50,12 @@
     }
   ],
   "date": "2026-04-17",
-  "generated_at_utc": "2026-04-17T20:31:03Z",
+  "generated_at_utc": "2026-04-17T20:32:18Z",
+  "leader": {
+    "direction": "increase",
+    "net_score": 122768,
+    "platform": "gcp"
+  },
   "platforms": [
     {
       "added_atoms": 50953,
@@ -91,18 +90,18 @@
       "removed_atoms": 0
     },
     {
-      "added_atoms": 0,
+      "added_atoms": 122768,
       "datasets": [
         {
-          "added_atoms": 0,
+          "added_atoms": 122768,
           "changed_objects": 0,
           "dataset": "gcp-predefined-roles",
           "platform": "gcp",
           "removed_atoms": 0,
-          "score": 0
+          "score": 122768
         }
       ],
-      "net_score": 0,
+      "net_score": 122768,
       "platform": "gcp",
       "removed_atoms": 0
     },
@@ -138,7 +137,5 @@
       "platform": "github",
       "removed_atoms": 0
     }
-  ],
-  "warnings_by_dataset": {},
-  "winner": "AWS became more privileged today"
+  ]
 }

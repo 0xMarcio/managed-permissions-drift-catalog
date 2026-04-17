@@ -7,12 +7,25 @@ def test_render_daily_report_is_deterministic() -> None:
     summary = {
         "date": "2026-04-17",
         "generated_at_utc": "2026-04-17T12:00:00Z",
-        "winner": "AWS became more privileged today",
         "platforms": [
-            {"platform": "aws", "net_score": 1, "added_atoms": 1, "removed_atoms": 0, "datasets": []}
+            {
+                "platform": "aws",
+                "net_score": 1,
+                "added_atoms": 1,
+                "removed_atoms": 0,
+                "datasets": [
+                    {
+                        "dataset": "aws-managed-policies",
+                        "platform": "aws",
+                        "score": 1,
+                        "added_atoms": 1,
+                        "removed_atoms": 0,
+                        "changed_objects": 1,
+                    }
+                ],
+            }
         ],
-        "warnings_by_dataset": {},
-        "caveats": ["heuristic"],
+        "leader": {"platform": "aws", "direction": "increase", "net_score": 1},
     }
     diffs = [
         {
@@ -27,13 +40,17 @@ def test_render_daily_report_is_deterministic() -> None:
                 "added_atoms": 1,
                 "removed_atoms": 0
             },
-            "warnings": [],
+            "added_objects": [],
+            "removed_objects": [],
             "changed_objects": [{"stable_id": "x", "display_name": "X", "source_url": "u"}]
         }
     ]
     first = render_daily_report("2026-04-17", summary, diffs)
     second = render_daily_report("2026-04-17", summary, diffs)
     assert first == second
+    assert "## Caveats" not in first
+    assert "## Source warnings" not in first
+    assert "## Dataset overview" in first
 
 
 def test_render_readme_surfaces_latest_movement() -> None:
@@ -47,7 +64,7 @@ def test_render_readme_surfaces_latest_movement() -> None:
     latest_summary = {
         "date": "2026-04-17",
         "generated_at_utc": "2026-04-17T20:31:03Z",
-        "winner": "AWS became more privileged today",
+        "leader": {"platform": "aws", "direction": "increase", "net_score": 12},
         "platforms": [
             {
                 "platform": "aws",
@@ -82,22 +99,6 @@ def test_render_readme_surfaces_latest_movement() -> None:
                 ],
             },
         ],
-        "warnings_by_dataset": {},
-        "caveats": [],
-    }
-    snapshots = {
-        "aws-managed-policies": {
-            "dataset": "aws-managed-policies",
-            "platform": "aws",
-            "generated_at_utc": "2026-04-17T20:31:03Z",
-            "object_count": 2,
-        },
-        "github-token-permissions": {
-            "dataset": "github-token-permissions",
-            "platform": "github",
-            "generated_at_utc": "2026-04-17T20:31:03Z",
-            "object_count": 1,
-        },
     }
     diffs = [
         {
@@ -112,7 +113,6 @@ def test_render_readme_surfaces_latest_movement() -> None:
                 "added_atoms": 12,
                 "removed_atoms": 0,
             },
-            "warnings": [],
             "added_objects": [
                 {
                     "stable_id": "a",
@@ -142,7 +142,6 @@ def test_render_readme_surfaces_latest_movement() -> None:
                 "added_atoms": 0,
                 "removed_atoms": 0,
             },
-            "warnings": [],
             "added_objects": [],
             "removed_objects": [],
             "changed_objects": [],
@@ -151,7 +150,6 @@ def test_render_readme_surfaces_latest_movement() -> None:
     readme = render_readme(
         latest_run=latest_run,
         latest_summary=latest_summary,
-        snapshots=snapshots,
         latest_diffs=diffs,
     )
     assert "## Latest drift" in readme
@@ -166,6 +164,8 @@ def test_render_readme_surfaces_latest_movement() -> None:
     assert "Updated at:" not in readme
     assert "Refreshed at:" in readme
     assert "## Browse outputs" not in readme
-    assert "Most privilege growth: AWS (+12 net score), driven by AWS managed policies (+2 objects, +12 atoms)." in readme
+    assert "Leading platform: `AWS` (`+12` net score)" in readme
+    assert "Driver: `AWS managed policies` (+2 objects, +12 atoms)" in readme
+    assert "## Dataset overview" in readme
     assert "- Inventory: `2` objects." in readme
     assert "Biggest additions: `ReadOnlyAccess` (+10 atoms), `SupportPolicy` (+2 atoms)." in readme

@@ -155,7 +155,6 @@ def build_dataset_diff(
         "compared_at_utc": compared_at_utc,
         "previous_snapshot_date": previous_snapshot_date,
         "current_snapshot_date": current_snapshot_date,
-        "warnings": sorted(set(warnings or [])),
         "counts": {
             "previous_objects": len(previous_map),
             "current_objects": len(current_map),
@@ -220,4 +219,3 @@ def build_reverse_index(snapshot: DatasetSnapshot) -> dict[str, Any]:
         "exact": {key: sorted(value, key=lambda item: item["stable_id"]) for key, value in sorted(exact.items())},
         "wildcard_atoms": sorted(wildcard_atoms, key=lambda item: (item["atom"], item["object"]["stable_id"])),
     }
-

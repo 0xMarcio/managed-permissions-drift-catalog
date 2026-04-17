@@ -112,28 +112,27 @@ def summarize_daily_scores(
         }
         for platform, values in sorted(platform_totals.items())
     ]
-    winner = "No platform became more privileged today"
+    leader: dict[str, Any] | None = None
     positives = [item for item in ordered_platforms if item["net_score"] > 0]
     negatives = [item for item in ordered_platforms if item["net_score"] < 0]
     if positives:
         top = sorted(positives, key=lambda item: (-item["net_score"], item["platform"]))[0]
-        winner = f"{top['platform'].upper()} became more privileged today"
+        leader = {
+            "platform": top["platform"],
+            "direction": "increase",
+            "net_score": top["net_score"],
+        }
     elif negatives:
         top = sorted(negatives, key=lambda item: (item["net_score"], item["platform"]))[0]
-        winner = f"{top['platform'].upper()} became less privileged today"
-
-    caveats = [
-        "This score is a heuristic. It tracks documented permission-shape drift, not full effective access.",
-        "AWS scoring does not evaluate conditions, resources, principals, or wildcard expansion.",
-        "Azure and GCP scoring compare listed actions and permissions without tenant-specific scope evaluation.",
-        "GitHub scores schema-level changes in documented permission levels and settings contracts, not your live organization settings.",
-    ]
+        leader = {
+            "platform": top["platform"],
+            "direction": "decrease",
+            "net_score": top["net_score"],
+        }
     return {
         "date": run_date,
         "generated_at_utc": compared_at_utc,
-        "winner": winner,
+        "leader": leader,
         "platforms": ordered_platforms,
         "datasets": sorted(dataset_scores, key=lambda item: item["dataset"]),
-        "warnings_by_dataset": {key: value for key, value in sorted(warnings_by_dataset.items()) if value},
-        "caveats": caveats,
     }

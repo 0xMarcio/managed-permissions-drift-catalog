@@ -38,7 +38,7 @@ def test_summarize_daily_scores_picks_winner() -> None:
         diffs=diffs,
         warnings_by_dataset={},
     )
-    assert summary["winner"] == "AWS became more privileged today"
+    assert summary["leader"] == {"platform": "aws", "direction": "increase", "net_score": 1}
 
 
 def test_summarize_daily_scores_picks_largest_decrease() -> None:
@@ -62,4 +62,4 @@ def test_summarize_daily_scores_picks_largest_decrease() -> None:
         diffs=diffs,
         warnings_by_dataset={},
     )
-    assert summary["winner"] == "GITHUB became less privileged today"
+    assert summary["leader"] == {"platform": "github", "direction": "decrease", "net_score": -2}

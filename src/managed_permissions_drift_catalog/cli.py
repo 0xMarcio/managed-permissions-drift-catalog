@@ -42,22 +42,6 @@ def git_head_sha(root: Path) -> str | None:
     return result.stdout.strip() or None
 
 
-def load_snapshot_summaries(storage: Storage) -> dict[str, dict[str, Any]]:
-    snapshots: dict[str, dict[str, Any]] = {}
-    for dataset in DATASETS:
-        snapshot = storage.read_snapshot(dataset)
-        if snapshot is None:
-            continue
-        snapshot_dict = snapshot.to_dict()
-        snapshots[dataset] = {
-            "dataset": snapshot_dict["dataset"],
-            "platform": snapshot_dict["platform"],
-            "generated_at_utc": snapshot_dict["generated_at_utc"],
-            "object_count": snapshot_dict["object_count"],
-        }
-    return snapshots
-
-
 def load_diffs_for_date(storage: Storage, run_date: str) -> list[dict[str, Any]]:
     diffs: list[dict[str, Any]] = []
     for dataset in DATASETS:
@@ -91,16 +75,20 @@ def write_docs_and_readme(
     latest_diffs: list[dict[str, Any]],
 ) -> bool:
     changed = False
-    snapshots = load_snapshot_summaries(storage)
-    changed |= storage.write_text_if_changed(storage.docs_index_path(), render_docs_index(summary, snapshots))
+    changed |= storage.write_text_if_changed(storage.docs_index_path(), render_docs_index(summary, latest_run, latest_diffs))
     for platform in ("aws", "azure", "gcp", "github"):
         changed |= storage.write_text_if_changed(
             storage.docs_platform_path(platform),
-            render_platform_page(platform, snapshots),
+            render_platform_page(
+                platform,
+                latest_diffs,
+                generated_at_utc=summary["generated_at_utc"] if summary else None,
+                run_date=summary["date"] if summary else None,
+            ),
         )
     changed |= storage.write_text_if_changed(
         settings.root / "README.md",
-        render_readme(latest_run=latest_run, latest_summary=summary, snapshots=snapshots, latest_diffs=latest_diffs),
+        render_readme(latest_run=latest_run, latest_summary=summary, latest_diffs=latest_diffs),
     )
     return changed
 
