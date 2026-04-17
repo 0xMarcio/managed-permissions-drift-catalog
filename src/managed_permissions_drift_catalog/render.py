@@ -49,36 +49,6 @@ def _pick_winner_platform(platforms: list[dict[str, Any]]) -> tuple[dict[str, An
     return None, "none"
 
 
-def _source_health_line(latest_run: dict[str, Any] | None) -> str | None:
-    if not latest_run:
-        return None
-    per_source = latest_run.get("per_source") or {}
-    if not per_source:
-        return None
-    total = len(per_source)
-    ok = sum(1 for item in per_source.values() if item.get("status") == "ok")
-    failures = sorted(dataset for dataset, item in per_source.items() if item.get("status") != "ok")
-    if not failures:
-        return f"`{ok}/{total}` datasets refreshed cleanly."
-    failure_list = ", ".join(f"`{dataset}`" for dataset in failures)
-    return f"`{ok}/{total}` datasets refreshed cleanly; issues: {failure_list}."
-
-
-def _baseline_note(diffs: list[dict[str, Any]]) -> str | None:
-    baseline = [
-        diff
-        for diff in diffs
-        if diff["counts"]["previous_objects"] == 0 and diff["counts"]["current_objects"] > 0
-    ]
-    if not baseline:
-        return None
-    labels = ", ".join(_dataset_label(diff["dataset"]) for diff in baseline)
-    return (
-        f"`{len(baseline)}/{len(diffs)}` datasets were first captured in this report: {labels}. "
-        "Large positive scores on those datasets reflect initial inventory capture, not day-over-day expansion."
-    )
-
-
 def _platform_rollups(diffs: list[dict[str, Any]]) -> dict[str, dict[str, int]]:
     rollups: dict[str, dict[str, int]] = defaultdict(
         lambda: {"added_objects": 0, "changed_objects": 0, "removed_objects": 0}
@@ -127,15 +97,15 @@ def _headline_line(summary: dict[str, Any] | None, diffs: list[dict[str, Any]]) 
     diff_by_dataset = {item["dataset"]: item for item in diffs}
     detail = ""
     if driver and driver["dataset"] in diff_by_dataset:
-        detail = f", driven by {_dataset_label(driver['dataset'])}: {_dataset_today_line(diff_by_dataset[driver['dataset']]).lower()}"
+        detail = f", driven by {_dataset_label(driver['dataset'])} ({_short_change_summary(diff_by_dataset[driver['dataset']])})"
     if direction == "increase":
         return (
-            f"{_platform_label(winner_platform['platform'])} had the largest net privilege increase "
-            f"({_format_delta(winner_platform['net_score'])}){detail}"
+            f"Most privilege growth: {_platform_label(winner_platform['platform'])} "
+            f"({_format_delta(winner_platform['net_score'])} net score){detail}."
         )
     return (
-        f"{_platform_label(winner_platform['platform'])} had the largest net privilege decrease "
-        f"({_format_delta(winner_platform['net_score'])}){detail}"
+        f"Most privilege reduction: {_platform_label(winner_platform['platform'])} "
+        f"({_format_delta(winner_platform['net_score'])} net score){detail}."
     )
 
 
@@ -146,17 +116,29 @@ def _driver_text(platform_entry: dict[str, Any], diff_by_dataset: dict[str, dict
     diff = diff_by_dataset.get(driver["dataset"])
     if not diff:
         return f"{_dataset_label(driver['dataset'])} ({_format_delta(driver['score'])})"
+    return f"{_dataset_label(driver['dataset'])} ({_short_change_summary(diff)})"
+
+
+def _short_change_summary(diff: dict[str, Any]) -> str:
     counts = diff["counts"]
-    if counts["previous_objects"] == 0 and counts["current_objects"] > 0:
-        return (
-            f"{_dataset_label(driver['dataset'])}: initial `{_format_int(counts['current_objects'])}` objects, "
-            f"`+{_format_int(counts['added_atoms'])}` atoms"
-        )
-    return (
-        f"{_dataset_label(driver['dataset'])}: "
-        f"`+{_format_int(counts['added_objects'])} / ~{_format_int(counts['changed_objects'])} / -{_format_int(counts['removed_objects'])}` objects, "
-        f"`+{_format_int(counts['added_atoms'])} / -{_format_int(counts['removed_atoms'])}` atoms"
-    )
+    object_parts = []
+    if counts["added_objects"]:
+        object_parts.append(f"+{_format_int(counts['added_objects'])} objects")
+    if counts["changed_objects"]:
+        object_parts.append(f"~{_format_int(counts['changed_objects'])} changed")
+    if counts["removed_objects"]:
+        object_parts.append(f"-{_format_int(counts['removed_objects'])} removed")
+
+    atom_parts = []
+    if counts["added_atoms"]:
+        atom_parts.append(f"+{_format_int(counts['added_atoms'])} atoms")
+    if counts["removed_atoms"]:
+        atom_parts.append(f"-{_format_int(counts['removed_atoms'])} atoms")
+
+    parts = object_parts + atom_parts
+    if not parts:
+        return "no drift"
+    return ", ".join(parts)
 
 
 def _top_added_objects(diff: dict[str, Any], limit: int = 3) -> list[str]:
@@ -225,43 +207,20 @@ def _top_changed_objects(diff: dict[str, Any], limit: int = 3) -> list[str]:
 
 
 def _dataset_today_line(diff: dict[str, Any]) -> str:
-    counts = diff["counts"]
-    if counts["previous_objects"] == 0 and counts["current_objects"] > 0:
-        atom_parts = []
-        if counts["added_atoms"]:
-            atom_parts.append(f"+{_format_int(counts['added_atoms'])} atoms")
-        if counts["removed_atoms"]:
-            atom_parts.append(f"-{_format_int(counts['removed_atoms'])} atoms")
-        atoms_text = ", ".join(atom_parts) if atom_parts else "no atom-level change"
-        return f"Initial inventory: `{_format_int(counts['current_objects'])}` objects, {atoms_text}."
-
-    object_parts = []
-    if counts["added_objects"]:
-        object_parts.append(f"+{_format_int(counts['added_objects'])} objects")
-    if counts["changed_objects"]:
-        object_parts.append(f"~{_format_int(counts['changed_objects'])} changed")
-    if counts["removed_objects"]:
-        object_parts.append(f"-{_format_int(counts['removed_objects'])} removed")
-
-    atom_parts = []
-    if counts["added_atoms"]:
-        atom_parts.append(f"+{_format_int(counts['added_atoms'])} atoms")
-    if counts["removed_atoms"]:
-        atom_parts.append(f"-{_format_int(counts['removed_atoms'])} atoms")
-
-    if not object_parts and not atom_parts:
+    summary = _short_change_summary(diff)
+    if summary == "no drift":
         return "No drift detected."
-    if object_parts and atom_parts:
-        return f"{', '.join(object_parts)}; {', '.join(atom_parts)}."
-    if object_parts:
-        return f"{', '.join(object_parts)}; no atom-level change."
-    return f"{', '.join(atom_parts)}."
+    if "atoms" not in summary:
+        return f"{summary}; no atom-level change."
+    return f"{summary}."
 
 
 def _dataset_movement_lines(diff: dict[str, Any], run_date: str) -> list[str]:
+    counts = diff["counts"]
     lines = [
         f"### {_dataset_label(diff['dataset'])}",
         "",
+        f"- Inventory: `{_format_int(counts['current_objects'])}` objects.",
         f"- Today: {_dataset_today_line(diff)}",
     ]
     added = _top_added_objects(diff)
@@ -419,22 +378,17 @@ def render_readme(
         "",
         "Daily drift catalog for AWS managed policies, Azure built-in roles, GCP predefined roles, GitHub fine-grained PAT permissions, and GitHub Actions token/settings schemas.",
         "",
-        "## Latest snapshot",
+        "## Latest drift",
         "",
     ]
-    if latest_summary:
-        lines.append(f"- Report date: [`{latest_summary['date']}`](docs/daily/{latest_summary['date']}.md)")
     if latest_run:
-        lines.append(f"- Updated at: `{latest_run['finished_at']}`")
-    source_health = _source_health_line(latest_run)
-    if source_health:
-        lines.append(f"- Source refresh: {source_health}")
+        report_link = ""
+        if latest_summary:
+            report_link = f" · [daily report](docs/daily/{latest_summary['date']}.md)"
+        lines.append(f"- Refreshed at: `{latest_run['finished_at']}`{report_link}")
     headline = _headline_line(latest_summary, latest_diffs)
     if headline:
-        lines.append(f"- Headline: {headline}")
-    baseline_note = _baseline_note(latest_diffs)
-    if baseline_note:
-        lines.append(f"- Baseline note: {baseline_note}")
+        lines.append(f"- {headline}")
 
     lines.extend(["", "## Platform overview", "", "| Platform | Net score | Objects (+/~/-) | Atoms (+/-) | Main driver |", "| --- | ---: | ---: | ---: | --- |"])
     platform_rollups = _platform_rollups(latest_diffs)
@@ -456,14 +410,4 @@ def render_readme(
         if diff is None:
             continue
         lines.extend(_dataset_movement_lines(diff, latest_summary["date"] if latest_summary else "latest"))
-
-    lines.extend(
-        [
-            "## Browse outputs",
-            "",
-            "- [Full daily reports](docs/daily)",
-            "- [Platform pages](docs/platforms)",
-            "- [Docs index](docs/index.md)",
-        ]
-    )
     return "\n".join(lines).rstrip() + "\n"

@@ -154,11 +154,18 @@ def test_render_readme_surfaces_latest_movement() -> None:
         snapshots=snapshots,
         latest_diffs=diffs,
     )
-    assert "## Latest snapshot" in readme
+    assert "## Latest drift" in readme
     assert "## Platform overview" in readme
     assert "## Latest dataset movement" in readme
     assert "Local usage" not in readme
     assert "## Caveats" not in readme
-    assert "AWS had the largest net privilege increase" in readme
+    assert "## Latest snapshot" not in readme
+    assert "Source refresh:" not in readme
+    assert "Baseline note:" not in readme
+    assert "Report date:" not in readme
+    assert "Updated at:" not in readme
+    assert "Refreshed at:" in readme
+    assert "## Browse outputs" not in readme
+    assert "Most privilege growth: AWS (+12 net score), driven by AWS managed policies (+2 objects, +12 atoms)." in readme
+    assert "- Inventory: `2` objects." in readme
     assert "Biggest additions: `ReadOnlyAccess` (+10 atoms), `SupportPolicy` (+2 atoms)." in readme
-    assert "Baseline note:" in readme
