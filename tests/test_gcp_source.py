@@ -61,6 +61,25 @@ def test_parse_gcp_service_page_with_empty_permissions() -> None:
     ]
 
 
+def test_sanitize_gcp_service_html_redacts_public_client_tokens() -> None:
+    google_token = "AIza" + ("A" * 35)
+    stripe_token = "pk_live_" + ("A" * 40)
+    html = """
+    <script>
+    const config = {
+      google: "__GOOGLE_TOKEN__",
+      stripe: "__STRIPE_TOKEN__"
+    };
+    </script>
+    """
+    html = html.replace("__GOOGLE_TOKEN__", google_token).replace("__STRIPE_TOKEN__", stripe_token)
+    sanitized = gcp.sanitize_service_html(html)
+    assert google_token not in sanitized
+    assert stripe_token not in sanitized
+    assert "GOOGLE_API_KEY_REDACTED" in sanitized
+    assert "STRIPE_PUBLISHABLE_KEY_REDACTED" in sanitized
+
+
 def test_normalize_gcp_snapshot(tmp_path: Path) -> None:
     root = ensure_repo_layout(tmp_path)
     storage = Storage(root)

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
@@ -18,12 +19,20 @@ from ..utils import isoformat_utc, normalize_whitespace, sha256_json, stable_jso
 INDEX_URL = "https://docs.cloud.google.com/iam/docs/roles-permissions"
 FILTER_JSON_URL = "https://docs.cloud.google.com/iam/json/role-permission-filter.json"
 ROLES_API_URL = "https://iam.googleapis.com/v1/roles?view=FULL&pageSize=1000"
+GOOGLE_API_KEY_PATTERN = re.compile(r"AIza[0-9A-Za-z_-]{20,}")
+STRIPE_PUBLISHABLE_KEY_PATTERN = re.compile(r"pk_(?:live|test)_[0-9A-Za-z]+")
 
 
 def parse_filter_index(payload: dict[str, Any]) -> dict[str, Any]:
     if "roles" not in payload or "services" not in payload:
         raise ValueError("Unexpected GCP role filter JSON shape")
     return payload
+
+
+def sanitize_service_html(html: str) -> str:
+    sanitized = GOOGLE_API_KEY_PATTERN.sub("GOOGLE_API_KEY_REDACTED", html)
+    sanitized = STRIPE_PUBLISHABLE_KEY_PATTERN.sub("STRIPE_PUBLISHABLE_KEY_REDACTED", sanitized)
+    return sanitized
 
 
 def parse_service_page(html: str, source_url: str) -> list[dict[str, Any]]:
@@ -122,7 +131,11 @@ def fetch(settings: Settings, storage: Storage, client: Any) -> dict[str, Any]:
 
     def fetch_service(url: str) -> None:
         filename = f"{Path(url).name}.html"
-        client.get_text(url, cache_path=raw_dir / "services" / filename)
+        client.get_text(
+            url,
+            cache_path=raw_dir / "services" / filename,
+            text_transform=sanitize_service_html,
+        )
 
     with ThreadPoolExecutor(max_workers=settings.max_workers) as pool:
         futures = [pool.submit(fetch_service, url) for url in service_urls]

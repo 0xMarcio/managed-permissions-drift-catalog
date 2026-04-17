@@ -3,7 +3,7 @@ from __future__ import annotations
 import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 import requests
 
@@ -31,7 +31,13 @@ class HttpClient:
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": user_agent})
 
-    def get_text(self, url: str, *, cache_path: Path | None = None) -> CachedResponse:
+    def get_text(
+        self,
+        url: str,
+        *,
+        cache_path: Path | None = None,
+        text_transform: Callable[[str], str] | None = None,
+    ) -> CachedResponse:
         conditional_headers: dict[str, str] = {}
         meta_path = cache_path.with_suffix(cache_path.suffix + ".http.json") if cache_path else None
         cached_meta = maybe_read_json(meta_path) if meta_path else None
@@ -50,15 +56,23 @@ class HttpClient:
                     timeout=self.timeout_seconds,
                 )
                 if response.status_code == 304 and cache_path and cache_path.exists():
+                    cached_text = cache_path.read_text(encoding="utf-8")
+                    if text_transform is not None:
+                        transformed_text = text_transform(cached_text)
+                        if transformed_text != cached_text:
+                            cache_path.write_text(transformed_text, encoding="utf-8")
+                        cached_text = transformed_text
                     return CachedResponse(
                         url=url,
-                        text=cache_path.read_text(encoding="utf-8"),
+                        text=cached_text,
                         status_code=304,
                         headers=dict(response.headers),
                         from_cache=True,
                     )
                 response.raise_for_status()
                 text = response.text
+                if text_transform is not None:
+                    text = text_transform(text)
                 if cache_path:
                     cache_path.parent.mkdir(parents=True, exist_ok=True)
                     cache_path.write_text(text, encoding="utf-8")
@@ -84,4 +98,3 @@ class HttpClient:
                 time.sleep(2**attempt)
 
         raise HttpError(f"Failed to fetch {url}: {last_error}") from last_error
-
