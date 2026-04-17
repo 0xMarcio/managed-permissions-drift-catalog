@@ -58,6 +58,16 @@ def load_snapshot_summaries(storage: Storage) -> dict[str, dict[str, Any]]:
     return snapshots
 
 
+def load_diffs_for_date(storage: Storage, run_date: str) -> list[dict[str, Any]]:
+    diffs: list[dict[str, Any]] = []
+    for dataset in DATASETS:
+        path = storage.diff_path(run_date, dataset)
+        if not path.exists():
+            continue
+        diffs.append(json.loads(path.read_text(encoding="utf-8")))
+    return diffs
+
+
 def snapshot_semantic_signature(snapshot: DatasetSnapshot) -> dict[str, Any]:
     data = snapshot.to_dict()
     data["generated_at_utc"] = ""
@@ -78,6 +88,7 @@ def write_docs_and_readme(
     storage: Storage,
     latest_run: dict[str, Any] | None,
     summary: dict[str, Any] | None,
+    latest_diffs: list[dict[str, Any]],
 ) -> bool:
     changed = False
     snapshots = load_snapshot_summaries(storage)
@@ -89,7 +100,7 @@ def write_docs_and_readme(
         )
     changed |= storage.write_text_if_changed(
         settings.root / "README.md",
-        render_readme(latest_run=latest_run, latest_summary=summary, snapshots=snapshots),
+        render_readme(latest_run=latest_run, latest_summary=summary, snapshots=snapshots, latest_diffs=latest_diffs),
     )
     return changed
 
@@ -302,7 +313,13 @@ def orchestrate_update(settings: Settings, selected_datasets: list[str] | None =
         "warnings_by_dataset": warnings_by_dataset,
     }
     outputs_changed |= storage.write_json_if_changed(storage.run_manifest_path(settings.today_utc), run_manifest)
-    outputs_changed |= write_docs_and_readme(settings=settings, storage=storage, latest_run=run_manifest, summary=summary)
+    outputs_changed |= write_docs_and_readme(
+        settings=settings,
+        storage=storage,
+        latest_run=run_manifest,
+        summary=summary,
+        latest_diffs=diffs,
+    )
     return 0
 
 
@@ -362,11 +379,18 @@ def command_diff(args: argparse.Namespace) -> int:
 def command_render(args: argparse.Namespace) -> int:
     settings = Settings.from_root(repo_root())
     storage = Storage(settings.root)
-    summary_path = storage.summary_path(args.date or settings.today_utc)
+    render_date = args.date or settings.today_utc
+    summary_path = storage.summary_path(render_date)
     summary = json.loads(summary_path.read_text(encoding="utf-8")) if summary_path.exists() else None
-    latest_run_path = storage.run_manifest_path(args.date or settings.today_utc)
+    latest_run_path = storage.run_manifest_path(render_date)
     latest_run = json.loads(latest_run_path.read_text(encoding="utf-8")) if latest_run_path.exists() else None
-    write_docs_and_readme(settings=settings, storage=storage, latest_run=latest_run, summary=summary)
+    write_docs_and_readme(
+        settings=settings,
+        storage=storage,
+        latest_run=latest_run,
+        summary=summary,
+        latest_diffs=load_diffs_for_date(storage, render_date),
+    )
     return 0
 
 

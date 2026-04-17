@@ -113,12 +113,14 @@ def summarize_daily_scores(
         for platform, values in sorted(platform_totals.items())
     ]
     winner = "No platform became more privileged today"
-    if ordered_platforms:
-        top = max(ordered_platforms, key=lambda item: item["net_score"])
-        if top["net_score"] > 0:
-            winner = f"{top['platform'].upper()} became more privileged today"
-        elif top["net_score"] < 0:
-            winner = f"{top['platform'].upper()} became less privileged today"
+    positives = [item for item in ordered_platforms if item["net_score"] > 0]
+    negatives = [item for item in ordered_platforms if item["net_score"] < 0]
+    if positives:
+        top = sorted(positives, key=lambda item: (-item["net_score"], item["platform"]))[0]
+        winner = f"{top['platform'].upper()} became more privileged today"
+    elif negatives:
+        top = sorted(negatives, key=lambda item: (item["net_score"], item["platform"]))[0]
+        winner = f"{top['platform'].upper()} became less privileged today"
 
     caveats = [
         "This score is a heuristic. It tracks documented permission-shape drift, not full effective access.",

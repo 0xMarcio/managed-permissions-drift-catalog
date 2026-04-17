@@ -1,61 +1,64 @@
 # managed-permissions-drift-catalog
 
-Tracks documented permission drift in AWS managed policies, Azure built-in roles, GCP predefined roles, GitHub fine-grained PAT permissions, and GitHub Actions token/settings schemas.
+Daily drift catalog for AWS managed policies, Azure built-in roles, GCP predefined roles, GitHub fine-grained PAT permissions, and GitHub Actions token/settings schemas.
 
-## Supported datasets
+## Latest snapshot
 
-- `aws-managed-policies`
-- `azure-built-in-roles`
-- `gcp-predefined-roles`
-- `github-fgpat-permissions`
-- `github-token-permissions`
-- `github-actions-default-workflow-settings`
+- Report date: [`2026-04-17`](docs/daily/2026-04-17.md)
+- Updated at: `2026-04-17T20:32:18Z`
+- Source refresh: `6/6` datasets refreshed cleanly.
+- Headline: AWS had the largest net privilege increase (+47,341), driven by AWS managed policies: initial inventory: `1,498` objects, +50,953 atoms.
+- Baseline note: `5/6` datasets were first captured in this report: AWS managed policies, Azure built-in roles, GitHub fine-grained PAT permissions, GitHub GITHUB_TOKEN permissions, GitHub Actions default workflow settings. Large positive scores on those datasets reflect initial inventory capture, not day-over-day expansion.
 
-Last successful run: `2026-04-17T20:32:18Z`
-Latest summary: **AWS became more privileged today** on `2026-04-17`.
+## Platform overview
 
-## Local usage
+| Platform | Net score | Objects (+/~/-) | Atoms (+/-) | Main driver |
+| --- | ---: | ---: | ---: | --- |
+| AWS | `+47,341` | `+1,498 / ~0 / -0` | `+50,953 / -0` | AWS managed policies: initial `1,498` objects, `+50,953` atoms |
+| Azure | `+5,604` | `+498 / ~0 / -0` | `+6,024 / -0` | Azure built-in roles: initial `498` objects, `+6,024` atoms |
+| GCP | `0` | `+10 / ~0 / -0` | `+0 / -0` | GCP predefined roles: `+10 / ~0 / -0` objects, `+0 / -0` atoms |
+| GitHub | `+232` | `+87 / ~0 / -0` | `+177 / -0` | GitHub fine-grained PAT permissions: initial `66` objects, `+118` atoms |
 
-```bash
-python -m pip install -r requirements.txt
-python -m pip install -e .
-python -m managed_permissions_drift_catalog.cli update
-```
+## Latest dataset movement
 
-Other commands:
+### AWS managed policies
 
-```bash
-python -m managed_permissions_drift_catalog.cli fetch --dataset aws-managed-policies
-python -m managed_permissions_drift_catalog.cli normalize --dataset aws-managed-policies
-python -m managed_permissions_drift_catalog.cli diff
-python -m managed_permissions_drift_catalog.cli render
-python -m managed_permissions_drift_catalog.cli query --permission s3:GetObject
-python -m managed_permissions_drift_catalog.cli validate
-```
+- Today: Initial inventory: `1,498` objects, +50,953 atoms.
+- Biggest additions: `AWSSupportServiceRolePolicy` (+4,054 atoms), `ReadOnlyAccess` (+2,744 atoms), `AWSConfigServiceRolePolicy` (+2,262 atoms).
+- Files: [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-04-17/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json)
 
-## Reverse-index queries
+### Azure built-in roles
 
-Query by concrete permission and the CLI will return exact matches plus wildcard-bearing objects that match the query.
+- Today: Initial inventory: `498` objects, +6,024 atoms.
+- Biggest additions: `Azure Stack HCI Administrator` (+101 atoms), `Backup Operator` (+98 atoms), `Azure AI Enterprise Network Connection Approver` (+89 atoms).
+- Files: [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-04-17/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json)
 
-Examples:
+### GCP predefined roles
 
-```bash
-python -m managed_permissions_drift_catalog.cli query --permission s3:GetObject
-python -m managed_permissions_drift_catalog.cli query --permission Microsoft.Authorization/*/Delete
-python -m managed_permissions_drift_catalog.cli query --permission contents:write
-```
+- Today: +10 objects; no atom-level change.
+- Biggest additions: `Backup for GKE Cross Project Service Agent`, `Cloud Spanner Database Role User`, `Gemini Data Analytics Query Data User Beta`.
+- Files: [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-04-17/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json)
 
-## Caveats
+### GitHub fine-grained PAT permissions
 
-- Privilege scoring is a documented heuristic, not a proof of effective runtime access.
-- AWS wildcard actions are not expanded, and conditions/resource scope are only preserved as metadata.
-- Source fetch failures leave the existing platform snapshot in place and are reported as stale-source warnings.
+- Today: Initial inventory: `66` objects, +118 atoms.
+- Biggest additions: `Custom properties` (+3 atoms), `Actions` (+2 atoms), `Administration` (+2 atoms).
+- Files: [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-04-17/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json)
 
-## Repository outputs
+### GitHub GITHUB_TOKEN permissions
 
-- `data/latest/` stores latest normalized snapshots.
-- `data/snapshots/` stores daily gzipped historical snapshots.
-- `data/diffs/` stores per-day JSON diffs.
-- `data/reverse-index/` stores atom reverse indexes.
-- `data/summaries/` stores daily privilege-drift summaries.
-- `docs/` stores browseable Markdown reports.
+- Today: Initial inventory: `15` objects, +28 atoms.
+- Biggest additions: `actions` (+2 atoms), `artifact-metadata` (+2 atoms), `attestations` (+2 atoms).
+- Files: [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-04-17/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json)
+
+### GitHub Actions default workflow settings
+
+- Today: Initial inventory: `6` objects, +31 atoms.
+- Biggest additions: `Get GitHub Actions permissions for an organization` (+8 atoms), `Get GitHub Actions permissions for a repository` (+7 atoms), `Get allowed actions and reusable workflows for a repository` (+4 atoms).
+- Files: [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-04-17/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json)
+
+## Browse outputs
+
+- [Full daily reports](docs/daily)
+- [Platform pages](docs/platforms)
+- [Docs index](docs/index.md)

@@ -40,3 +40,26 @@ def test_summarize_daily_scores_picks_winner() -> None:
     )
     assert summary["winner"] == "AWS became more privileged today"
 
+
+def test_summarize_daily_scores_picks_largest_decrease() -> None:
+    diffs = [
+        {
+            "dataset": "aws-managed-policies",
+            "platform": "aws",
+            "atom_changes": {"added": [], "removed": ["aws:allow_action:s3:GetObject"]},
+            "counts": {"changed_objects": 1},
+        },
+        {
+            "dataset": "github-token-permissions",
+            "platform": "github",
+            "atom_changes": {"added": [], "removed": ["github:token:contents:write"]},
+            "counts": {"changed_objects": 1},
+        },
+    ]
+    summary = summarize_daily_scores(
+        run_date="2026-04-17",
+        compared_at_utc="2026-04-17T12:00:00Z",
+        diffs=diffs,
+        warnings_by_dataset={},
+    )
+    assert summary["winner"] == "GITHUB became less privileged today"
