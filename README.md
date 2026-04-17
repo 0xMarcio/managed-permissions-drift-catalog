@@ -1,0 +1,1 @@
+# managed-permissions-drift-catalog
