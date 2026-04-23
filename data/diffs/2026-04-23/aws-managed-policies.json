@@ -1,0 +1,412 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aws-marketplace:GetInvoiceSubmissionTask",
+      "aws:allow_action:aws-marketplace:ListInvoiceSubmissionTasks",
+      "aws:allow_action:aws-marketplace:ListPayables",
+      "aws:allow_action:aws-marketplace:StartInvoiceSubmissionTask",
+      "aws:allow_action:ec2:DescribeInstanceStatus",
+      "aws:allow_action:elasticloadbalancing:DescribeCapacityReservation",
+      "aws:allow_action:iam:ListInstanceProfiles",
+      "aws:allow_action:invoicing:CreateProcurementPortalPreference",
+      "aws:allow_action:invoicing:GetProcurementPortalPreference",
+      "aws:allow_action:invoicing:ListProcurementPortalPreferences",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeOrganizationalUnit",
+      "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:organizations:ListAccountsForParent",
+      "aws:allow_action:organizations:ListChildren",
+      "aws:allow_action:organizations:ListOrganizationalUnitsForParent",
+      "aws:allow_action:organizations:ListRoots",
+      "aws:allow_action:security-ir:*",
+      "aws:allow_action:security-ir:ListInvestigations",
+      "aws:allow_action:security-ir:ListInvestigations",
+      "aws:allow_action:security-ir:SendFeedback"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aws-marketplace:GetInvoiceSubmissionTask",
+          "aws-marketplace:ListInvoiceSubmissionTasks",
+          "aws-marketplace:ListPayables",
+          "aws-marketplace:StartInvoiceSubmissionTask",
+          "ec2:DescribeInstanceStatus",
+          "elasticloadbalancing:DescribeCapacityReservation",
+          "iam:ListInstanceProfiles",
+          "invoicing:CreateProcurementPortalPreference",
+          "invoicing:GetProcurementPortalPreference",
+          "invoicing:ListProcurementPortalPreferences",
+          "organizations:DescribeAccount",
+          "organizations:DescribeOrganizationalUnit",
+          "organizations:ListAWSServiceAccessForOrganization",
+          "organizations:ListAccounts",
+          "organizations:ListAccountsForParent",
+          "organizations:ListChildren",
+          "organizations:ListOrganizationalUnitsForParent",
+          "organizations:ListRoots",
+          "security-ir:*",
+          "security-ir:ListInvestigations",
+          "security-ir:ListInvestigations",
+          "security-ir:SendFeedback"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "security-ir:BatchGetMemberAccountDetails",
+          "security-ir:CancelMembership",
+          "security-ir:CloseCase",
+          "security-ir:CreateCase",
+          "security-ir:CreateCaseComment",
+          "security-ir:CreateMembership",
+          "security-ir:GetCase",
+          "security-ir:GetCaseAttachmentDownloadUrl",
+          "security-ir:GetCaseAttachmentUploadUrl",
+          "security-ir:GetMembership",
+          "security-ir:ListCaseEdits",
+          "security-ir:ListCases",
+          "security-ir:ListComments",
+          "security-ir:ListMemberships",
+          "security-ir:ListTagsForResource",
+          "security-ir:TagResource",
+          "security-ir:UntagResource",
+          "security-ir:UpdateCase",
+          "security-ir:UpdateCaseComment",
+          "security-ir:UpdateCaseStatus",
+          "security-ir:UpdateMembership",
+          "security-ir:UpdateResolverType"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:security-ir:BatchGetMemberAccountDetails",
+      "aws:allow_action:security-ir:CancelMembership",
+      "aws:allow_action:security-ir:CloseCase",
+      "aws:allow_action:security-ir:CreateCase",
+      "aws:allow_action:security-ir:CreateCaseComment",
+      "aws:allow_action:security-ir:CreateMembership",
+      "aws:allow_action:security-ir:GetCase",
+      "aws:allow_action:security-ir:GetCaseAttachmentDownloadUrl",
+      "aws:allow_action:security-ir:GetCaseAttachmentUploadUrl",
+      "aws:allow_action:security-ir:GetMembership",
+      "aws:allow_action:security-ir:ListCaseEdits",
+      "aws:allow_action:security-ir:ListCases",
+      "aws:allow_action:security-ir:ListComments",
+      "aws:allow_action:security-ir:ListMemberships",
+      "aws:allow_action:security-ir:ListTagsForResource",
+      "aws:allow_action:security-ir:TagResource",
+      "aws:allow_action:security-ir:UntagResource",
+      "aws:allow_action:security-ir:UpdateCase",
+      "aws:allow_action:security-ir:UpdateCaseComment",
+      "aws:allow_action:security-ir:UpdateCaseStatus",
+      "aws:allow_action:security-ir:UpdateMembership",
+      "aws:allow_action:security-ir:UpdateResolverType"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSMarketplaceProcurementSystemAdminFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "invoicing:CreateProcurementPortalPreference",
+              "invoicing:GetProcurementPortalPreference",
+              "invoicing:ListProcurementPortalPreferences"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 21, 2026, 22:27 UTC",
+          "before": "June 25, 2019, 13:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 21, 2026, 22:27 UTC",
+          "before": "June 25, 2019, 13:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceProcurementSystemAdminFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceProcurementSystemAdminFullAccess"
+    },
+    {
+      "display_name": "AWSMarketplaceSellerFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-marketplace:GetInvoiceSubmissionTask",
+              "aws-marketplace:ListInvoiceSubmissionTasks",
+              "aws-marketplace:ListPayables",
+              "aws-marketplace:StartInvoiceSubmissionTask"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v27 (default)",
+          "before": "v26 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 21, 2026, 18:12 UTC",
+          "before": "March 31, 2026, 17:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 21, 2026, 18:12 UTC",
+          "before": "March 31, 2026, 17:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 15,
+          "before": 14,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+    },
+    {
+      "display_name": "AWSSecurityIncidentResponseCaseFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "security-ir:ListInvestigations",
+              "security-ir:SendFeedback"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 22, 2026, 15:57 UTC",
+          "before": "February 12, 2026, 18:03 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 22, 2026, 15:57 UTC",
+          "before": "February 12, 2026, 18:03 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": false,
+          "before": true,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 2,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityIncidentResponseCaseFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSSecurityIncidentResponseCaseFullAccess"
+    },
+    {
+      "display_name": "AWSSecurityIncidentResponseFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "organizations:DescribeAccount",
+              "organizations:DescribeOrganizationalUnit",
+              "organizations:ListAWSServiceAccessForOrganization",
+              "organizations:ListAccounts",
+              "organizations:ListAccountsForParent",
+              "organizations:ListChildren",
+              "organizations:ListOrganizationalUnitsForParent",
+              "organizations:ListRoots",
+              "security-ir:*"
+            ],
+            "removed": [
+              "security-ir:BatchGetMemberAccountDetails",
+              "security-ir:CancelMembership",
+              "security-ir:CloseCase",
+              "security-ir:CreateCase",
+              "security-ir:CreateCaseComment",
+              "security-ir:CreateMembership",
+              "security-ir:GetCase",
+              "security-ir:GetCaseAttachmentDownloadUrl",
+              "security-ir:GetCaseAttachmentUploadUrl",
+              "security-ir:GetMembership",
+              "security-ir:ListCaseEdits",
+              "security-ir:ListCases",
+              "security-ir:ListComments",
+              "security-ir:ListMemberships",
+              "security-ir:ListTagsForResource",
+              "security-ir:TagResource",
+              "security-ir:UntagResource",
+              "security-ir:UpdateCase",
+              "security-ir:UpdateCaseComment",
+              "security-ir:UpdateCaseStatus",
+              "security-ir:UpdateMembership",
+              "security-ir:UpdateResolverType"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 22, 2026, 16:12 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 22, 2026, 16:12 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityIncidentResponseFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSSecurityIncidentResponseFullAccess"
+    },
+    {
+      "display_name": "AWSSecurityIncidentResponseReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "security-ir:ListInvestigations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 22, 2026, 16:12 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 22, 2026, 16:12 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityIncidentResponseReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSSecurityIncidentResponseReadOnlyAccess"
+    },
+    {
+      "display_name": "BedrockAgentCoreFullAccess",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v17 (default)",
+          "before": "v16 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 21, 2026, 17:42 UTC",
+          "before": "March 27, 2026, 21:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 21, 2026, 17:42 UTC",
+          "before": "March 27, 2026, 21:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BedrockAgentCoreFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess"
+    },
+    {
+      "display_name": "AmazonEKSServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeInstanceStatus",
+              "elasticloadbalancing:DescribeCapacityReservation",
+              "iam:ListInstanceProfiles"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v25 (default)",
+          "before": "v24 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 21, 2026, 22:57 UTC",
+          "before": "April 15, 2026, 18:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 21, 2026, 22:57 UTC",
+          "before": "April 15, 2026, 18:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-04-23T04:21:41Z",
+  "counts": {
+    "added_atoms": 22,
+    "added_objects": 0,
+    "changed_objects": 7,
+    "current_objects": 1498,
+    "previous_objects": 1498,
+    "removed_atoms": 22,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-04-23",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-04-22",
+  "removed_objects": []
+}

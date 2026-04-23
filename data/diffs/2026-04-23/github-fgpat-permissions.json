@@ -1,0 +1,96 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values/{issue_field_id} -> write + additional permissions",
+          "DELETE /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values/{issue_field_id} -> write + additional permissions",
+          "DELETE /repos/{owner}/{repo}/pulls/{pull_number}/archive -> write",
+          "POST /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+          "POST /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+          "PUT /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+          "PUT /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+          "PUT /repos/{owner}/{repo}/pulls/{pull_number}/archive -> write"
+        ]
+      },
+      "removed": {
+        "grant:endpoints": [
+          "DELETE /repositories/{repository_id}/issues/{issue_number}/issue-field-values/{issue_field_id} -> write + additional permissions",
+          "DELETE /repositories/{repository_id}/issues/{issue_number}/issue-field-values/{issue_field_id} -> write + additional permissions",
+          "POST /repositories/{repository_id}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+          "POST /repositories/{repository_id}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+          "PUT /repositories/{repository_id}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+          "PUT /repositories/{repository_id}/issues/{issue_number}/issue-field-values -> write + additional permissions"
+        ]
+      }
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Issues",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "DELETE /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values/{issue_field_id} -> write + additional permissions",
+              "POST /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+              "PUT /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values -> write + additional permissions"
+            ],
+            "removed": [
+              "DELETE /repositories/{repository_id}/issues/{issue_number}/issue-field-values/{issue_field_id} -> write + additional permissions",
+              "POST /repositories/{repository_id}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+              "PUT /repositories/{repository_id}/issues/{issue_number}/issue-field-values -> write + additional permissions"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-issues",
+      "stable_id": "github-fgpat:repository:issues"
+    },
+    {
+      "display_name": "Pull requests",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "DELETE /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values/{issue_field_id} -> write + additional permissions",
+              "DELETE /repos/{owner}/{repo}/pulls/{pull_number}/archive -> write",
+              "POST /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+              "PUT /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+              "PUT /repos/{owner}/{repo}/pulls/{pull_number}/archive -> write"
+            ],
+            "removed": [
+              "DELETE /repositories/{repository_id}/issues/{issue_number}/issue-field-values/{issue_field_id} -> write + additional permissions",
+              "POST /repositories/{repository_id}/issues/{issue_number}/issue-field-values -> write + additional permissions",
+              "PUT /repositories/{repository_id}/issues/{issue_number}/issue-field-values -> write + additional permissions"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-pull-requests",
+      "stable_id": "github-fgpat:repository:pull-requests"
+    }
+  ],
+  "compared_at_utc": "2026-04-23T04:21:41Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 66,
+    "previous_objects": 66,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-04-23",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-04-17",
+  "removed_objects": []
+}

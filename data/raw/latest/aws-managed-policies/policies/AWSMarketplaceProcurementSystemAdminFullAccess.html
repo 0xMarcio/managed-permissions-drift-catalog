@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: June 25, 2019, 13:07 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 25, 2019, 13:07 UTC</p>
+                <p><b>Edited time:</b>  April 21, 2026, 22:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceProcurementSystemAdminFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceProcurementSystemAdminFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -77,7 +77,10 @@
         "aws-marketplace:PutProcurementSystemConfiguration",
         "aws-marketplace:DescribeProcurementSystemConfiguration",
         "organizations:Describe*",
-        "organizations:List*"
+        "organizations:List*",
+        "invoicing:CreateProcurementPortalPreference",
+        "invoicing:GetProcurementPortalPreference",
+        "invoicing:ListProcurementPortalPreferences"
       ],
       "Resource" : [
         "*"

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 16, 2025, 13:37 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 27, 2026, 21:12 UTC</p>
+                <p><b>Edited time:</b>  April 21, 2026, 17:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="BedrockAgentCoreFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v16 (default)</p>
+        <p><b>Policy version:</b> v17 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -337,6 +337,17 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "iam:AWSServiceName" : "network.bedrock-agentcore.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreateBedrockAgentCoreGatewayNetworkServiceLinkedRolePermissions",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreGatewayNetwork",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "bedrock-agentcore.amazonaws.com"
         }
       }
     },

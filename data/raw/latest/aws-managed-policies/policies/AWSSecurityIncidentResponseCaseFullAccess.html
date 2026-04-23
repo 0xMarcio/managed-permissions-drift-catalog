@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: December 01, 2024, 23:21 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:03 UTC</p>
+                <p><b>Edited time:</b>  April 22, 2026, 15:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSSecurityIncidentResponseCaseFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSSecurityIncidentResponseCaseFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -72,29 +72,14 @@
   "Version" : "2012-10-17",
   "Statement" : [
     <span>{</span>
-      "Sid" : "SecurityIRCaseReadAccess",
+      "Sid" : "SecurityIRCaseFullAccess",
       "Effect" : "Allow",
       "Action" : [
         "security-ir:GetCase",
         "security-ir:ListCases",
         "security-ir:GetCaseAttachmentDownloadUrl",
         "security-ir:ListComments",
-        "security-ir:ListCaseEdits"
-      ],
-      "Resource" : "*"
-    },
-    <span>{</span>
-      "Sid" : "SecurityIRCaseTagReadAccess",
-      "Effect" : "Allow",
-      "Action" : [
-        "security-ir:ListTagsForResource"
-      ],
-      "Resource" : "arn:aws:security-ir:*:*:case/*"
-    },
-    <span>{</span>
-      "Sid" : "SecurityIRCaseWriteAccess",
-      "Effect" : "Allow",
-      "Action" : [
+        "security-ir:ListCaseEdits",
         "security-ir:CreateCase",
         "security-ir:UpdateCase",
         "security-ir:CloseCase",
@@ -102,28 +87,21 @@
         "security-ir:UpdateResolverType",
         "security-ir:GetCaseAttachmentUploadUrl",
         "security-ir:CreateCaseComment",
-        "security-ir:UpdateCaseComment"
+        "security-ir:UpdateCaseComment",
+        "security-ir:SendFeedback",
+        "security-ir:ListInvestigations"
       ],
-      "Resource" : "*",
-      "Condition" : <span>{</span>
-        "Bool" : <span>{</span>
-          "aws:MultiFactorAuthPresent" : "true"
-        }
-      }
+      "Resource" : "*"
     },
     <span>{</span>
-      "Sid" : "SecurityIRCaseTagWriteAccess",
+      "Sid" : "SecurityIRCaseTagFullAccess",
       "Effect" : "Allow",
       "Action" : [
+        "security-ir:ListTagsForResource",
         "security-ir:TagResource",
         "security-ir:UntagResource"
       ],
-      "Resource" : "arn:aws:security-ir:*:*:case/*",
-      "Condition" : <span>{</span>
-        "Bool" : <span>{</span>
-          "aws:MultiFactorAuthPresent" : "true"
-        }
-      }
+      "Resource" : "arn:aws:security-ir:*:*:case/*"
     }
   ]
 }</code></pre>

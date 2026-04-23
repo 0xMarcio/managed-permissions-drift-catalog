@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 02, 2019, 20:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 31, 2026, 17:42 UTC</p>
+                <p><b>Edited time:</b>  April 21, 2026, 18:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceSellerFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v26 (default)</p>
+        <p><b>Policy version:</b> v27 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -156,7 +156,10 @@
         "aws-marketplace:UntagResource",
         "aws-marketplace:ListTagsForResource"
       ],
-      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace/*"
+      "Resource" : [
+        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/*",
+        "arn:aws:aws-marketplace:*:*:catalog/AWSMarketplace*/*"
+      ]
     },
     <span>{</span>
       "Sid" : "SellerSettings",
@@ -178,9 +181,20 @@
         "tax:ListSupplementalTaxRegistrations",
         "tax:PutSupplementalTaxRegistration",
         "tax:DeleteSupplementalTaxRegistration",
-        "tax:GetTaxRegistration"
+        "tax:GetTaxRegistration",
+        "aws-marketplace:ListPayables"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "InvoiceSubmissionManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:StartInvoiceSubmissionTask",
+        "aws-marketplace:GetInvoiceSubmissionTask",
+        "aws-marketplace:ListInvoiceSubmissionTasks"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:catalog/AWSMarketplace*/invoice-submission-task/*"
     },
     <span>{</span>
       "Sid" : "Support",
@@ -198,7 +212,10 @@
         "aws-marketplace:PutResourcePolicy",
         "aws-marketplace:DeleteResourcePolicy"
       ],
-      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace/*"
+      "Resource" : [
+        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/*",
+        "arn:aws:aws-marketplace:*:*:catalog/AWSMarketplace*/*"
+      ]
     },
     <span>{</span>
       "Sid" : "CreateServiceLinkedRole",

@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: February 21, 2020, 20:10 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 15, 2026, 18:42 UTC</p>
+                <p><b>Edited time:</b>  April 21, 2026, 22:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonEKSServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v24 (default)</p>
+        <p><b>Policy version:</b> v25 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -95,6 +95,7 @@
         "ec2:DescribeInstances",
         "ec2:DescribeInstanceTypeOfferings",
         "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstanceStatus",
         "ec2:DescribeInternetGateways",
         "ec2:DescribeLaunchTemplates",
         "ec2:DescribeNetworkInterfaces",
@@ -127,6 +128,7 @@
         "elasticloadbalancing:DescribeTargetHealth",
         "elasticloadbalancing:DeregisterTargets",
         "elasticloadbalancing:DescribeTrustStores",
+        "elasticloadbalancing:DescribeCapacityReservation",
         "iam:ListAttachedRolePolicies",
         "pricing:GetProducts",
         "shield:GetSubscriptionState",
@@ -317,7 +319,8 @@
       "Action" : [
         "iam:CreateInstanceProfile",
         "iam:DeleteInstanceProfile",
-        "iam:RemoveRoleFromInstanceProfile"
+        "iam:RemoveRoleFromInstanceProfile",
+        "iam:ListInstanceProfiles"
       ],
       "Resource" : "arn:aws:iam::*:instance-profile/eks*"
     },
