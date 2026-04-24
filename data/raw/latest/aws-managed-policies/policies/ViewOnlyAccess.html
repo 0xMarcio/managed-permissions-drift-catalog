@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 10, 2016, 17:20 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 31, 2026, 19:27 UTC</p>
+                <p><b>Edited time:</b>  April 22, 2026, 18:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/job-function/ViewOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="ViewOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v44 (default)</p>
+        <p><b>Policy version:</b> v45 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -431,6 +431,8 @@
         "storagegateway:ListVolumes",
         "swf:List*",
         "trustedadvisor:Describe*",
+        "uxc:GetAccountCustomizations",
+        "uxc:ListServices",
         "waf-regional:List*",
         "waf:List*",
         "wafv2:List*",
@@ -449,8 +451,8 @@
       "Resource" : "*"
     },
     <span>{</span>
-      "Effect" : "Allow",
       "Sid" : "APIGatewayAccess",
+      "Effect" : "Allow",
       "Action" : [
         "apigateway:GET"
       ],

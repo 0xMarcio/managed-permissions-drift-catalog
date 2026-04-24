@@ -1,0 +1,59 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "github:token:vulnerability-alerts:read"
+      ],
+      "display_name": "vulnerability-alerts",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "stable_id": "github-token:vulnerability-alerts"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "github:token:vulnerability-alerts:read"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:levels": [
+          "read"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "security-events",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Work with GitHub code scanning alerts. For example, security-events: read permits an action to list the code scanning alerts for the repository, and security-events: write allows an action to update the status of a code scanning alert. For more information, see Repository permissions for \"Code scanning alerts\" . For Dependabot alerts, use the vulnerability-alerts permission. Secret scanning alerts cannot be read with this permission and require a GitHub App or a personal access token. For more information, see Repository permissions for \"Secret scanning alerts\" in \"Permissions required for GitHub Apps.\"",
+          "before": "Work with GitHub code scanning alerts. For example, security-events: read permits an action to list the code scanning alerts for the repository, and security-events: write allows an action to update the status of a code scanning alert. For more information, see Repository permissions for 'Code scanning alerts' . Dependabot and secret scanning alerts cannot be read with this permission and require a GitHub App or a personal access token. For more information, see Repository permissions for 'Dependabot alerts' and Repository permissions for 'Secret scanning alerts' in \"Permissions required for GitHub Apps.\"",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#defining-access-for-the-github_token-scopes",
+      "stable_id": "github-token:security-events"
+    }
+  ],
+  "compared_at_utc": "2026-04-24T04:24:54Z",
+  "counts": {
+    "added_atoms": 1,
+    "added_objects": 1,
+    "changed_objects": 1,
+    "current_objects": 16,
+    "previous_objects": 15,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-04-24",
+  "dataset": "github-token-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-04-17",
+  "removed_objects": []
+}
