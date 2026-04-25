@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:59 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 07, 2026, 21:12 UTC</p>
+                <p><b>Edited time:</b>  April 23, 2026, 22:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectUserRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v65 (default)</p>
+        <p><b>Policy version:</b> v66 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -157,16 +157,16 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : [
-            "codecommit.*.amazonaws.com"
-          ]
+        "Null" : <span>{</span>
+          "kms:EncryptionContext:aws:codecommit:id" : "false"
         },
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
-        "Null" : <span>{</span>
-          "kms:EncryptionContext:aws:codecommit:id" : "false"
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : [
+            "codecommit.*.amazonaws.com"
+          ]
         }
       }
     },
@@ -186,11 +186,11 @@
       ],
       "Resource" : "arn:aws:ec2:*:*:network-interface/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "glue:RoleAssumedBy" : "glue.amazonaws.com"
-        },
         "Null" : <span>{</span>
           "aws:TagKeys" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "glue:RoleAssumedBy" : "glue.amazonaws.com"
         }
       }
     },
@@ -203,9 +203,9 @@
       "Resource" : "arn:aws:ec2:*:*:security-group/*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "glue:RoleAssumedBy" : "glue.amazonaws.com",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
+          "glue:RoleAssumedBy" : "glue.amazonaws.com"
         }
       }
     },
@@ -231,12 +231,12 @@
       ],
       "Resource" : "arn:aws:ec2:*:*:network-interface/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "glue:RoleAssumedBy" : "glue.amazonaws.com",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/aws-glue-service-resource" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "glue:RoleAssumedBy" : "glue.amazonaws.com"
         }
       }
     },
@@ -279,9 +279,9 @@
       "Resource" : "*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "glue:RoleAssumedBy" : "glue.amazonaws.com",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
+          "glue:RoleAssumedBy" : "glue.amazonaws.com"
         }
       }
     },
@@ -317,20 +317,20 @@
         "arn:aws:glue:*:*:workflow/*"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
             "ProjectUserTag*"
           ]
         },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
+        },
         "StringEquals" : <span>{</span>
+          "aws:PrincipalTag/EnableGlueWorkloadsPermissions" : "true",
           "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
-          "aws:PrincipalTag/EnableGlueWorkloadsPermissions" : "true"
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -349,20 +349,20 @@
         "arn:aws:glue:*:*:workflow/*"
       ],
       "Condition" : <span>{</span>
-        "ForAllValues:StringNotLike" : <span>{</span>
-          "aws:TagKeys" : [
-            "AmazonDataZone*"
-          ]
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "ProjectUserTag*"
           ]
         },
+        "ForAllValues:StringNotLike" : <span>{</span>
+          "aws:TagKeys" : [
+            "AmazonDataZone*"
+          ]
+        },
         "StringEquals" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
+          "aws:PrincipalTag/EnableGlueWorkloadsPermissions" : "true",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
-          "aws:PrincipalTag/EnableGlueWorkloadsPermissions" : "true"
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -425,9 +425,9 @@
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
+          "aws:PrincipalTag/EnableGlueWorkloadsPermissions" : "true",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
-          "aws:PrincipalTag/EnableGlueWorkloadsPermissions" : "true"
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -440,8 +440,8 @@
       "Resource" : "*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
-          "aws:PrincipalTag/EnableGlueWorkloadsPermissions" : "true"
+          "aws:PrincipalTag/EnableGlueWorkloadsPermissions" : "true",
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -486,17 +486,17 @@
         "arn:aws:ec2:*:*:network-interface/*"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "aws-glue-*"
           ]
         },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
+        },
         "StringEquals" : <span>{</span>
-          "glue:RoleAssumedBy" : "glue.amazonaws.com",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "glue:RoleAssumedBy" : "glue.amazonaws.com"
         }
       }
     },
@@ -513,13 +513,13 @@
         "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}"
       ],
       "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "kms:EncryptionContext:glue_catalog_id" : "$<span>{</span>aws:PrincipalAccount}"
+        },
         "StringLike" : <span>{</span>
           "kms:ViaService" : [
             "glue.*.amazonaws.com"
           ]
-        },
-        "StringEquals" : <span>{</span>
-          "kms:EncryptionContext:glue_catalog_id" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -717,11 +717,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringNotEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "StringLike" : <span>{</span>
           "kms:ViaService" : "s3.*.amazonaws.com"
+        },
+        "StringNotEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -733,14 +733,14 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringNotEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "kms:EncryptionContextKeys" : "aws:s3:arn"
         },
         "StringLike" : <span>{</span>
           "kms:ViaService" : "s3.*.amazonaws.com"
         },
-        "ForAnyValue:StringEquals" : <span>{</span>
-          "kms:EncryptionContextKeys" : "aws:s3:arn"
+        "StringNotEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -753,6 +753,9 @@
       ],
       "Resource" : "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}",
       "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
         "StringLike" : <span>{</span>
           "s3:prefix" : [
             "$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
@@ -760,12 +763,9 @@
           ]
         },
         "StringNotEquals" : <span>{</span>
-          "aws:PrincipalTag/DomainBucketName" : "",
           "aws:PrincipalTag/AmazonDataZoneDomain" : "",
-          "aws:PrincipalTag/AmazonDataZoneProject" : ""
-        },
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          "aws:PrincipalTag/AmazonDataZoneProject" : "",
+          "aws:PrincipalTag/DomainBucketName" : ""
         }
       }
     },
@@ -777,11 +777,11 @@
       ],
       "Resource" : "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}",
       "Condition" : <span>{</span>
-        "StringNotEquals" : <span>{</span>
-          "aws:PrincipalTag/DomainBucketName" : ""
-        },
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
+        "StringNotEquals" : <span>{</span>
+          "aws:PrincipalTag/DomainBucketName" : ""
         }
       }
     },
@@ -819,13 +819,13 @@
       ],
       "Resource" : "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}/*",
       "Condition" : <span>{</span>
-        "StringNotEquals" : <span>{</span>
-          "aws:PrincipalTag/DomainBucketName" : "",
-          "aws:PrincipalTag/AmazonDataZoneDomain" : "",
-          "aws:PrincipalTag/AmazonDataZoneProject" : ""
-        },
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
+        "StringNotEquals" : <span>{</span>
+          "aws:PrincipalTag/AmazonDataZoneDomain" : "",
+          "aws:PrincipalTag/AmazonDataZoneProject" : "",
+          "aws:PrincipalTag/DomainBucketName" : ""
         }
       }
     },
@@ -846,10 +846,11 @@
       "Action" : "s3:PutObjectTagging",
       "Resource" : "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}/genAI/assets/evaluations/*",
       "Condition" : <span>{</span>
-        "StringNotEquals" : <span>{</span>
-          "aws:PrincipalTag/DomainBucketName" : "",
-          "aws:PrincipalTag/AmazonDataZoneDomain" : "",
-          "aws:PrincipalTag/AmazonDataZoneProject" : ""
+        "ForAllValues:StringEquals" : <span>{</span>
+          "s3:RequestObjectTagKeys" : [
+            "BasicValidationStatus",
+            "ContainsReferenceResponseForAllPrompts"
+          ]
         },
         "StringEquals" : <span>{</span>
           "s3:RequestObjectTag/BasicValidationStatus" : [
@@ -861,11 +862,10 @@
             "false"
           ]
         },
-        "ForAllValues:StringEquals" : <span>{</span>
-          "s3:RequestObjectTagKeys" : [
-            "BasicValidationStatus",
-            "ContainsReferenceResponseForAllPrompts"
-          ]
+        "StringNotEquals" : <span>{</span>
+          "aws:PrincipalTag/AmazonDataZoneDomain" : "",
+          "aws:PrincipalTag/AmazonDataZoneProject" : "",
+          "aws:PrincipalTag/DomainBucketName" : ""
         }
       }
     },
@@ -878,24 +878,24 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "s3.*.amazonaws.com"
-        },
         "ArnLike" : <span>{</span>
           "kms:EncryptionContext:aws:s3:arn" : [
             "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}",
             "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/*"
           ]
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "s3.*.amazonaws.com"
         }
       }
     },
     <span>{</span>
       "Sid" : "DZDomainKMSKeyXAcctPerm",
+      "Effect" : "Allow",
       "Action" : [
         "kms:GenerateDataKey",
         "kms:Decrypt"
       ],
-      "Effect" : "Allow",
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/DomainKmsKeyId}",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
@@ -1093,13 +1093,13 @@
     },
     <span>{</span>
       "Sid" : "GlueFileUploadPermissions",
+      "Effect" : "Allow",
       "Action" : [
         "glue:GetClassifier",
         "glue:GetClassifiers",
         "glue:UseGlueStudio"
       ],
-      "Resource" : "*",
-      "Effect" : "Allow"
+      "Resource" : "*"
     },
     <span>{</span>
       "Sid" : "GlueProjectConnectionPermissions",
@@ -1241,8 +1241,8 @@
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "glue:LakeFormationPermissions" : "Enabled",
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
+          "glue:LakeFormationPermissions" : "Enabled"
         }
       }
     },
@@ -1326,8 +1326,8 @@
           ]
         },
         "StringEquals" : <span>{</span>
-          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
-          "aws:RequestTag/AmazonDataZoneDomain" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}"
+          "aws:RequestTag/AmazonDataZoneDomain" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}",
+          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -1407,6 +1407,7 @@
       "Resource" : "arn:aws:iam::*:role/$<span>{</span>aws:PrincipalTag/RoleName}",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "iam:PassedToService" : [
             "airflow-serverless.amazonaws.com",
             "sagemaker.amazonaws.com",
@@ -1415,8 +1416,7 @@
             "emr-serverless.amazonaws.com",
             "scheduler.amazonaws.com",
             "access-grants.s3.amazonaws.com"
-          ],
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          ]
         }
       }
     },
@@ -1519,11 +1519,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/for-use-with-all-datazone-projects" : "true"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneEnvironment" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/for-use-with-all-datazone-projects" : "true"
         }
       }
     },
@@ -1617,14 +1617,14 @@
       ],
       "Resource" : "arn:aws:redshift-serverless:*:*:workgroup/*",
       "Condition" : <span>{</span>
+        "Bool" : <span>{</span>
+          "aws:ViaAWSService" : "true"
+        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "redshift-data.amazonaws.com",
             "sqlworkbench.amazonaws.com"
           ]
-        },
-        "Bool" : <span>{</span>
-          "aws:ViaAWSService" : "true"
         }
       }
     },
@@ -1715,11 +1715,11 @@
         "arn:aws:elasticmapreduce:*:*:cluster/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
-        },
         "ArnLike" : <span>{</span>
           "elasticmapreduce:ExecutionRoleArn" : "arn:aws:iam::*:role/$<span>{</span>aws:PrincipalTag/RoleName}"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -1741,10 +1741,10 @@
     <span>{</span>
       "Sid" : "EMRPersistentAppUI",
       "Effect" : "Allow",
-      "Resource" : "*",
       "Action" : [
         "elasticmapreduce:GetPersistentAppUIPresignedURL"
       ],
+      "Resource" : "*",
       "Condition" : <span>{</span>
         "ArnLike" : <span>{</span>
           "elasticmapreduce:ExecutionRoleArn" : "arn:aws:iam::*:role/$<span>{</span>aws:PrincipalTag/RoleName}"
@@ -1765,8 +1765,15 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "kms:EncryptionContextKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
         "StringLike" : <span>{</span>
           "kms:ViaService" : [
+            "datazone.*.amazonaws.com",
             "sqs.*.amazonaws.com",
             "sagemaker.*.amazonaws.com",
             "bedrock.*.amazonaws.com",
@@ -1775,12 +1782,6 @@
             "glue.*.amazonaws.com",
             "secretsmanager.*.amazonaws.com"
           ]
-        },
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "kms:EncryptionContextKeys" : "false"
         }
       }
     },
@@ -1810,17 +1811,17 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "kms:EncryptionContextKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
         "StringLike" : <span>{</span>
           "kms:ViaService" : [
             "emr-serverless.*.amazonaws.com",
             "redshift.*.amazonaws.com"
           ]
-        },
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "kms:EncryptionContextKeys" : "false"
         }
       }
     },
@@ -1834,6 +1835,9 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
         "StringLike" : <span>{</span>
           "kms:ViaService" : [
             "sqs.*.amazonaws.com",
@@ -1844,14 +1848,12 @@
             "codecommit.*.amazonaws.com",
             "scheduler.*.amazonaws.com"
           ]
-        },
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
     <span>{</span>
       "Sid" : "AwsOwnedKmsKeyPermissions",
+      "Effect" : "Allow",
       "Action" : [
         "kms:CreateGrant",
         "kms:Decrypt",
@@ -1859,11 +1861,13 @@
         "kms:GenerateDataKey",
         "kms:GenerateDataKeyWithoutPlaintext"
       ],
-      "Effect" : "Allow",
       "Resource" : [
         "arn:aws:kms:*:*:key/*"
       ],
       "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "kms:EncryptionContextKeys" : "false"
+        },
         "StringLike" : <span>{</span>
           "kms:ViaService" : [
             "s3.*.amazonaws.com",
@@ -1873,18 +1877,15 @@
         },
         "StringNotEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "kms:EncryptionContextKeys" : "false"
         }
       }
     },
     <span>{</span>
       "Sid" : "AwsOwnedKmsManagement",
+      "Effect" : "Allow",
       "Action" : [
         "kms:DescribeKey"
       ],
-      "Effect" : "Allow",
       "Resource" : [
         "arn:aws:kms:*:*:key/*"
       ],
@@ -1934,11 +1935,11 @@
         "arn:aws:bedrock:*:*:provisioned-model/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:PrincipalTag/EnableAmazonBedrockIDEPermissions" : "true"
-        },
         "Null" : <span>{</span>
           "bedrock:InferenceProfileArn" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:PrincipalTag/EnableAmazonBedrockIDEPermissions" : "true"
         }
       }
     },
@@ -1955,11 +1956,11 @@
         "arn:aws:bedrock:*:*:provisioned-model/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:PrincipalTag/EnableAmazonBedrockPermissions" : "true"
-        },
         "ArnLike" : <span>{</span>
           "bedrock:InferenceProfileArn" : "arn:aws:bedrock:*:*:application-inference-profile/*"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:PrincipalTag/EnableAmazonBedrockPermissions" : "true"
         }
       }
     },
@@ -2229,17 +2230,17 @@
       "Action" : "bedrock:TagResource",
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:PrincipalTag/EnableAmazonBedrockIDEPermissions" : "true",
-          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
             "AmazonBedrockManaged",
             "ProjectUserTag*"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:PrincipalTag/EnableAmazonBedrockIDEPermissions" : "true",
+          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -2249,19 +2250,19 @@
       "Action" : "bedrock:TagResource",
       "Resource" : "arn:aws:bedrock:*:*:*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:PrincipalTag/EnableAmazonBedrockPermissions" : "true",
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
-        },
-        "StringEqualsIfExists" : <span>{</span>
-          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonBedrockManaged",
             "AmazonDataZone*",
             "ProjectUserTag*"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:PrincipalTag/EnableAmazonBedrockPermissions" : "true",
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+        },
+        "StringEqualsIfExists" : <span>{</span>
+          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -2274,15 +2275,15 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "kms:EncryptionContext:aws:bedrock:arn" : "false"
+        },
         "StringEquals" : <span>{</span>
           "aws:PrincipalTag/EnableAmazonBedrockIDEPermissions" : "true",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
         "StringLike" : <span>{</span>
           "kms:ViaService" : "bedrock.*.amazonaws.com"
-        },
-        "Null" : <span>{</span>
-          "kms:EncryptionContext:aws:bedrock:arn" : "false"
         }
       }
     },
@@ -2295,18 +2296,18 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
+        "ForAllValues:StringLike" : <span>{</span>
+          "kms:EncryptionContextKeys" : [
+            "aws:bedrock*:arn",
+            "aws:bedrock:guardrail-id"
+          ]
+        },
         "StringEquals" : <span>{</span>
           "aws:PrincipalTag/EnableAmazonBedrockPermissions" : "true",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
         "StringLike" : <span>{</span>
           "kms:ViaService" : "bedrock.*.amazonaws.com"
-        },
-        "ForAllValues:StringLike" : <span>{</span>
-          "kms:EncryptionContextKeys" : [
-            "aws:bedrock*:arn",
-            "aws:bedrock:guardrail-id"
-          ]
         }
       }
     },
@@ -2349,15 +2350,15 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
+        "ArnLike" : <span>{</span>
+          "kms:EncryptionContext:SecretARN" : "arn:aws:secretsmanager:*:*:secret:amazon-bedrock-ide/*"
+        },
         "StringEquals" : <span>{</span>
           "aws:PrincipalTag/EnableAmazonBedrockIDEPermissions" : "true",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
         "StringLike" : <span>{</span>
           "kms:ViaService" : "secretsmanager.*.amazonaws.com"
-        },
-        "ArnLike" : <span>{</span>
-          "kms:EncryptionContext:SecretARN" : "arn:aws:secretsmanager:*:*:secret:amazon-bedrock-ide/*"
         }
       }
     },
@@ -2370,15 +2371,15 @@
       ],
       "Resource" : "arn:aws:kms:*:*:key/$<span>{</span>aws:PrincipalTag/KmsKeyId}",
       "Condition" : <span>{</span>
+        "ArnLike" : <span>{</span>
+          "kms:EncryptionContext:SecretARN" : "arn:aws:secretsmanager:*:*:secret:amazon-bedrock*"
+        },
         "StringEquals" : <span>{</span>
           "aws:PrincipalTag/EnableAmazonBedrockPermissions" : "true",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
         "StringLike" : <span>{</span>
           "kms:ViaService" : "secretsmanager.*.amazonaws.com"
-        },
-        "ArnLike" : <span>{</span>
-          "kms:EncryptionContext:SecretARN" : "arn:aws:secretsmanager:*:*:secret:amazon-bedrock*"
         }
       }
     },
@@ -2389,9 +2390,9 @@
       "Resource" : "arn:aws:lambda:*:*:function:amazon-bedrock-ide-*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
+          "aws:CalledViaFirst" : "bedrock.amazonaws.com",
           "aws:PrincipalTag/EnableAmazonBedrockIDEPermissions" : "true",
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
-          "aws:CalledViaFirst" : "bedrock.amazonaws.com"
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -2402,9 +2403,9 @@
       "Resource" : "arn:aws:lambda:*:*:function:amazon-bedrock*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
+          "aws:CalledViaFirst" : "bedrock.amazonaws.com",
           "aws:PrincipalTag/EnableAmazonBedrockPermissions" : "true",
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
-          "aws:CalledViaFirst" : "bedrock.amazonaws.com"
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },
@@ -2637,16 +2638,16 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "lakeformation.amazonaws.com"
+          ]
+        },
         "StringEqualsIfExists" : <span>{</span>
           "ram:RequestedResourceType" : [
             "glue:Table",
             "glue:Database",
             "glue:Catalog"
-          ]
-        },
-        "ForAnyValue:StringEquals" : <span>{</span>
-          "aws:CalledVia" : [
-            "lakeformation.amazonaws.com"
           ]
         }
       }
@@ -2684,14 +2685,14 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "ram:ResourceShareName" : [
-            "LakeFormation*"
-          ]
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "lakeformation.amazonaws.com"
+          ]
+        },
+        "StringLike" : <span>{</span>
+          "ram:ResourceShareName" : [
+            "LakeFormation*"
           ]
         }
       }
@@ -2830,13 +2831,13 @@
       ],
       "Resource" : "arn:aws:quicksight:*:*:dataset/*",
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
         },
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
@@ -2855,8 +2856,8 @@
       "Resource" : "arn:aws:quicksight:*:*:folder/sagemaker-*-assets",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
-          "aws:ResourceTag/AmazonDataZoneAssetsFolder" : "true"
+          "aws:ResourceTag/AmazonDataZoneAssetsFolder" : "true",
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
         }
       }
     },

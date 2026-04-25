@@ -1,0 +1,93 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ec2:DescribeVpcEncryptionControls"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ec2:DescribeVpcEncryptionControls"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSLambdaManagedEC2ResourceOperator",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeVpcEncryptionControls"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 23, 2026, 20:42 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 23, 2026, 20:42 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSLambdaManagedEC2ResourceOperator.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSLambdaManagedEC2ResourceOperator"
+    },
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v66 (default)",
+          "before": "v65 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 23, 2026, 22:12 UTC",
+          "before": "April 07, 2026, 21:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 23, 2026, 22:12 UTC",
+          "before": "April 07, 2026, 21:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-04-25T04:14:53Z",
+  "counts": {
+    "added_atoms": 1,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1498,
+    "previous_objects": 1498,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-04-25",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-04-24",
+  "removed_objects": []
+}

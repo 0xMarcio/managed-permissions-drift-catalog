@@ -1,14 +1,14 @@
 # GitHub
 
-- Refreshed at: `2026-04-24T04:24:54Z`
+- Refreshed at: `2026-04-25T04:14:53Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| GitHub Actions default workflow settings | `6` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/github-actions-default-workflow-settings.json) · [diff](../../data/diffs/2026-04-24/github-actions-default-workflow-settings.json) · [reverse index](../../data/reverse-index/github-actions-default-workflow-settings.json) |
-| GitHub fine-grained PAT permissions | `66` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/github-fgpat-permissions.json) · [diff](../../data/diffs/2026-04-24/github-fgpat-permissions.json) · [reverse index](../../data/reverse-index/github-fgpat-permissions.json) |
-| GitHub GITHUB_TOKEN permissions | `16` | `+1 / ~1 / -0` | `+1 / -0` | [snapshot](../../data/latest/github-token-permissions.json) · [diff](../../data/diffs/2026-04-24/github-token-permissions.json) · [reverse index](../../data/reverse-index/github-token-permissions.json) |
+| GitHub Actions default workflow settings | `6` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/github-actions-default-workflow-settings.json) · [diff](../../data/diffs/2026-04-25/github-actions-default-workflow-settings.json) · [reverse index](../../data/reverse-index/github-actions-default-workflow-settings.json) |
+| GitHub fine-grained PAT permissions | `66` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/github-fgpat-permissions.json) · [diff](../../data/diffs/2026-04-25/github-fgpat-permissions.json) · [reverse index](../../data/reverse-index/github-fgpat-permissions.json) |
+| GitHub GITHUB_TOKEN permissions | `16` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/github-token-permissions.json) · [diff](../../data/diffs/2026-04-25/github-token-permissions.json) · [reverse index](../../data/reverse-index/github-token-permissions.json) |
 
 ## Dataset details
 
@@ -16,18 +16,16 @@
 
 - Inventory: `6` objects.
 - Today: No drift detected.
-- Files: [snapshot](../../data/latest/github-actions-default-workflow-settings.json) · [diff](../../data/diffs/2026-04-24/github-actions-default-workflow-settings.json) · [reverse index](../../data/reverse-index/github-actions-default-workflow-settings.json)
+- Files: [snapshot](../../data/latest/github-actions-default-workflow-settings.json) · [diff](../../data/diffs/2026-04-25/github-actions-default-workflow-settings.json) · [reverse index](../../data/reverse-index/github-actions-default-workflow-settings.json)
 
 ### GitHub fine-grained PAT permissions
 
 - Inventory: `66` objects.
 - Today: No drift detected.
-- Files: [snapshot](../../data/latest/github-fgpat-permissions.json) · [diff](../../data/diffs/2026-04-24/github-fgpat-permissions.json) · [reverse index](../../data/reverse-index/github-fgpat-permissions.json)
+- Files: [snapshot](../../data/latest/github-fgpat-permissions.json) · [diff](../../data/diffs/2026-04-25/github-fgpat-permissions.json) · [reverse index](../../data/reverse-index/github-fgpat-permissions.json)
 
 ### GitHub GITHUB_TOKEN permissions
 
 - Inventory: `16` objects.
-- Today: +1 objects, ~1 changed, +1 atoms.
-- Biggest additions: `vulnerability-alerts` (+1 atoms).
-- Biggest changes: `security-events` (metadata only).
-- Files: [snapshot](../../data/latest/github-token-permissions.json) · [diff](../../data/diffs/2026-04-24/github-token-permissions.json) · [reverse index](../../data/reverse-index/github-token-permissions.json)
+- Today: No drift detected.
+- Files: [snapshot](../../data/latest/github-token-permissions.json) · [diff](../../data/diffs/2026-04-25/github-token-permissions.json) · [reverse index](../../data/reverse-index/github-token-permissions.json)
