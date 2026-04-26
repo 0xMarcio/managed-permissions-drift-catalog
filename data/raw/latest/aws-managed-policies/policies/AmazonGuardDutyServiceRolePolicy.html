@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 28, 2017, 20:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 25, 2026, 20:57 UTC</p>
+                <p><b>Edited time:</b>  April 24, 2026, 20:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonGuardDutyServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonGuardDutyServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v11 (default)</p>
+        <p><b>Policy version:</b> v12 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -90,6 +90,7 @@
         "s3:GetBucketTagging",
         "s3:GetAccountPublicAccessBlock",
         "s3:ListAllMyBuckets",
+        "s3:ListBucket",
         "s3:GetBucketAcl",
         "s3:GetBucketPolicy",
         "s3:GetBucketPolicyStatus",
@@ -101,7 +102,9 @@
         "ec2:DescribeVpcs",
         "ec2:DescribeSecurityGroups",
         "ecs:ListClusters",
-        "ecs:DescribeClusters"
+        "ecs:DescribeClusters",
+        "ecs:DescribeTasks",
+        "ecs:DescribeTaskDefinition"
       ],
       "Resource" : "*"
     },

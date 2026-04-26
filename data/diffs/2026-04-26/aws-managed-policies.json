@@ -1,0 +1,73 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ecs:DescribeTaskDefinition",
+      "aws:allow_action:ecs:DescribeTasks",
+      "aws:allow_action:s3:ListBucket"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ecs:DescribeTaskDefinition",
+          "ecs:DescribeTasks",
+          "s3:ListBucket"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonGuardDutyServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ecs:DescribeTaskDefinition",
+              "ecs:DescribeTasks",
+              "s3:ListBucket"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v12 (default)",
+          "before": "v11 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 24, 2026, 20:12 UTC",
+          "before": "March 25, 2026, 20:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 24, 2026, 20:12 UTC",
+          "before": "March 25, 2026, 20:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonGuardDutyServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonGuardDutyServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-04-26T04:27:07Z",
+  "counts": {
+    "added_atoms": 3,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1498,
+    "previous_objects": 1498,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-04-26",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-04-25",
+  "removed_objects": []
+}
