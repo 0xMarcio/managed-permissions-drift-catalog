@@ -4,7 +4,7 @@ Daily drift catalog for AWS managed policies, Azure built-in roles, GCP predefin
 
 ## Latest drift
 
-- Refreshed at: `2026-04-27T04:31:37Z` · [daily report](docs/daily/2026-04-27.md)
+- Refreshed at: `2026-04-28T04:32:57Z` · [daily report](docs/daily/2026-04-28.md)
 - Leading platform: none
 
 ## Platform overview
@@ -20,12 +20,12 @@ Daily drift catalog for AWS managed policies, Azure built-in roles, GCP predefin
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | `1,498` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-04-27/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json) |
-| Azure built-in roles | `498` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-04-27/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json) |
-| GCP predefined roles | `2,293` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-04-27/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json) |
-| GitHub Actions default workflow settings | `6` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-04-27/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json) |
-| GitHub fine-grained PAT permissions | `66` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-04-27/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json) |
-| GitHub GITHUB_TOKEN permissions | `16` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-04-27/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json) |
+| AWS managed policies | `1,498` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-04-28/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json) |
+| Azure built-in roles | `498` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-04-28/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json) |
+| GCP predefined roles | `2,293` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-04-28/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json) |
+| GitHub Actions default workflow settings | `6` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-04-28/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json) |
+| GitHub fine-grained PAT permissions | `66` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-04-28/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json) |
+| GitHub GITHUB_TOKEN permissions | `16` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-04-28/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json) |
 
 ## Latest dataset movement
 
@@ -33,34 +33,34 @@ Daily drift catalog for AWS managed policies, Azure built-in roles, GCP predefin
 
 - Inventory: `1,498` objects.
 - Today: No drift detected.
-- Files: [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-04-27/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json)
+- Files: [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-04-28/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json)
 
 ### Azure built-in roles
 
 - Inventory: `498` objects.
 - Today: No drift detected.
-- Files: [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-04-27/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json)
+- Files: [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-04-28/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json)
 
 ### GCP predefined roles
 
 - Inventory: `2,293` objects.
 - Today: No drift detected.
-- Files: [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-04-27/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json)
+- Files: [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-04-28/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json)
 
 ### GitHub fine-grained PAT permissions
 
 - Inventory: `66` objects.
 - Today: No drift detected.
-- Files: [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-04-27/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json)
+- Files: [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-04-28/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json)
 
 ### GitHub GITHUB_TOKEN permissions
 
 - Inventory: `16` objects.
 - Today: No drift detected.
-- Files: [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-04-27/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json)
+- Files: [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-04-28/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json)
 
 ### GitHub Actions default workflow settings
 
 - Inventory: `6` objects.
 - Today: No drift detected.
-- Files: [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-04-27/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json)
+- Files: [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-04-28/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json)
