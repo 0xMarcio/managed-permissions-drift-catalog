@@ -1,0 +1,193 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:DeleteNetworkInterface",
+        "aws:allow_action:ec2:DescribeInstances",
+        "aws:allow_action:ec2:DescribeNetworkInterfaces",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets"
+      ],
+      "display_name": "EC2ApplicationStatusChecksServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ApplicationStatusChecksServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/EC2ApplicationStatusChecksServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:DeleteNetworkInterface",
+      "aws:allow_action:ec2:DescribeInstances",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:CreateServiceLinkedRole"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ec2:CreateNetworkInterface",
+          "ec2:DeleteNetworkInterface",
+          "ec2:DescribeInstances",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "elasticloadbalancing:DescribeLoadBalancers",
+          "iam:CreateServiceLinkedRole",
+          "iam:CreateServiceLinkedRole"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSTransformCustomExecuteTransformations",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:CreateServiceLinkedRole"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 27, 2026, 19:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 27, 2026, 19:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformCustomExecuteTransformations.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformCustomExecuteTransformations"
+    },
+    {
+      "display_name": "AWSTransformCustomManageTransformations",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:CreateServiceLinkedRole"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 27, 2026, 19:27 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 27, 2026, 19:27 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformCustomManageTransformations.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformCustomManageTransformations"
+    },
+    {
+      "display_name": "AmazonEKSLoadBalancingPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticloadbalancing:DescribeLoadBalancers"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "April 27, 2026, 22:12 UTC",
+          "before": "April 14, 2026, 20:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "April 27, 2026, 22:12 UTC",
+          "before": "April 14, 2026, 20:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-04-29T04:28:59Z",
+  "counts": {
+    "added_atoms": 9,
+    "added_objects": 1,
+    "changed_objects": 3,
+    "current_objects": 1499,
+    "previous_objects": 1498,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-04-29",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-04-26",
+  "removed_objects": []
+}

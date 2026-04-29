@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: December 05, 2025, 15:49 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:57 UTC</p>
+                <p><b>Edited time:</b>  April 27, 2026, 19:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSTransformCustomManageTransformations</code></p>
             </li></ul></div>
      
         <h2 id="AWSTransformCustomManageTransformations-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -97,6 +97,21 @@
       "Resource" : [
         "*"
       ]
+    },
+    <span>{</span>
+      "Sid" : "AllowCreateServiceLinkedRole",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/transform-custom.amazonaws.com/AWSServiceRoleForAWSTransformCustom"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "transform-custom.amazonaws.com"
+        }
+      }
     }
   ]
 }</code></pre>
