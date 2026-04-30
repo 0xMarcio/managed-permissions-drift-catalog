@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 27, 2018, 23:47 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 27, 2023, 03:46 UTC</p>
+                <p><b>Edited time:</b>  April 29, 2026, 14:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSSecurityHubServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v14 (default)</p>
+        <p><b>Policy version:</b> v15 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -146,6 +146,32 @@
           "organizations:ServicePrincipal" : [
             "securityhub.amazonaws.com"
           ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubCSPMServiceRoleConfig",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:PutServiceLinkedConfigurationRecorder",
+        "config:DeleteServiceLinkedConfigurationRecorder",
+        "config:DescribeConfigurationRecorders",
+        "config:DescribeConfigurationRecorderStatus"
+      ],
+      "Resource" : [
+        "arn:aws:config:*:*:configuration-recorder/*ConfigurationRecorderForSecurityHubCSPM*"
+      ]
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubCSPMServiceRoleIamPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "config.amazonaws.com"
         }
       }
     }
