@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 02, 2019, 20:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 21, 2026, 18:12 UTC</p>
+                <p><b>Edited time:</b>  April 29, 2026, 21:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceSellerFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v27 (default)</p>
+        <p><b>Policy version:</b> v28 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -182,7 +182,8 @@
         "tax:PutSupplementalTaxRegistration",
         "tax:DeleteSupplementalTaxRegistration",
         "tax:GetTaxRegistration",
-        "aws-marketplace:ListPayables"
+        "aws-marketplace:ListPayables",
+        "aws-marketplace:ListInvoiceSubmissionTasks"
       ],
       "Resource" : "*"
     },
@@ -191,10 +192,19 @@
       "Effect" : "Allow",
       "Action" : [
         "aws-marketplace:StartInvoiceSubmissionTask",
-        "aws-marketplace:GetInvoiceSubmissionTask",
-        "aws-marketplace:ListInvoiceSubmissionTasks"
+        "aws-marketplace:GetInvoiceSubmissionTask"
       ],
       "Resource" : "arn:aws:aws-marketplace:*:*:catalog/AWSMarketplace*/invoice-submission-task/*"
+    },
+    <span>{</span>
+      "Sid" : "MarketplaceEphemeralWriteS3Access",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:PutObject"
+      ],
+      "Resource" : [
+        "arn:aws:s3:::aws-partner-central-marketplace-ephemeral-writeonly-files/$<span>{</span>aws:PrincipalAccount}/*"
+      ]
     },
     <span>{</span>
       "Sid" : "Support",

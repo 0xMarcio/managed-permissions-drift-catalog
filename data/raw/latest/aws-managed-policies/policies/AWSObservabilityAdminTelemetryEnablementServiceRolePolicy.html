@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: August 01, 2025, 18:04 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 16, 2026, 17:42 UTC</p>
+                <p><b>Edited time:</b>  April 29, 2026, 21:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSObservabilityAdminTelemetryEnablementServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v9 (default)</p>
+        <p><b>Policy version:</b> v10 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -99,13 +99,13 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws:TagKeys" : "CloudWatchTelemetryRuleManaged"
+        },
         "StringEquals" : <span>{</span>
           "aws:RequestTag/CloudWatchTelemetryRuleManaged" : "true",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "ec2:CreateAction" : "CreateFlowLogs"
-        },
-        "ForAllValues:StringEquals" : <span>{</span>
-          "aws:TagKeys" : "CloudWatchTelemetryRuleManaged"
         }
       }
     },
@@ -117,12 +117,12 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CloudWatchTelemetryRuleManaged" : "true",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "ForAllValues:StringEquals" : <span>{</span>
           "aws:TagKeys" : "CloudWatchTelemetryRuleManaged"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "aws:ResourceTag/CloudWatchTelemetryRuleManaged" : "true"
         }
       }
     },
@@ -147,12 +147,12 @@
       ],
       "Resource" : "arn:aws:ec2:*:*:vpc-flow-log/*",
       "Condition" : <span>{</span>
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws:TagKeys" : "CloudWatchTelemetryRuleManaged"
+        },
         "StringEquals" : <span>{</span>
           "aws:RequestTag/CloudWatchTelemetryRuleManaged" : "true",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "ForAllValues:StringEquals" : <span>{</span>
-          "aws:TagKeys" : "CloudWatchTelemetryRuleManaged"
         }
       }
     },
@@ -173,8 +173,8 @@
       "Resource" : "*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CloudWatchTelemetryRuleManaged" : "true",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "aws:ResourceTag/CloudWatchTelemetryRuleManaged" : "true"
         }
       }
     },
@@ -186,11 +186,11 @@
       ],
       "Resource" : "arn:aws:eks:*:*:cluster/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Bool" : <span>{</span>
           "eks:loggingType/api" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -202,11 +202,11 @@
       ],
       "Resource" : "arn:aws:eks:*:*:cluster/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Bool" : <span>{</span>
           "eks:loggingType/audit" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -218,11 +218,11 @@
       ],
       "Resource" : "arn:aws:eks:*:*:cluster/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Bool" : <span>{</span>
           "eks:loggingType/authenticator" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -234,11 +234,11 @@
       ],
       "Resource" : "arn:aws:eks:*:*:cluster/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Bool" : <span>{</span>
           "eks:loggingType/controllerManager" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -250,11 +250,11 @@
       ],
       "Resource" : "arn:aws:eks:*:*:cluster/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Bool" : <span>{</span>
           "eks:loggingType/scheduler" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -264,14 +264,14 @@
       "Action" : [
         "wafv2:PutLoggingConfiguration"
       ],
-      "Resource" : "arn:aws:wafv2:*:*:regional/webacl/*",
+      "Resource" : "arn:aws:wafv2:*:*:*/webacl/*",
       "Condition" : <span>{</span>
         "ArnLike" : <span>{</span>
           "wafv2:LogDestinationResource" : "arn:aws:logs:*:*:log-group:*"
         },
         "StringEquals" : <span>{</span>
-          "wafv2:LogScope" : "CloudwatchTelemetryRuleManaged",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "wafv2:LogScope" : "CloudwatchTelemetryRuleManaged"
         }
       }
     },
@@ -404,8 +404,8 @@
       "Resource" : "*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CloudWatchTelemetryRuleManaged" : "true",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "aws:ResourceTag/CloudWatchTelemetryRuleManaged" : "true"
         }
       }
     },
@@ -433,8 +433,8 @@
       "Resource" : "*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CloudWatchTelemetryRuleManaged" : "true",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "aws:ResourceTag/CloudWatchTelemetryRuleManaged" : "true"
         }
       }
     },
@@ -446,14 +446,14 @@
       ],
       "Resource" : "arn:*:iam::*:role/aws-service-role/route53resolver.amazonaws.com/AWSServiceRoleForRoute53Resolver",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "iam:AWSServiceName" : [
-            "route53resolver.amazonaws.com"
-          ],
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "BoolIfExists" : <span>{</span>
           "aws:ViaAWSService" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:AWSServiceName" : [
+            "route53resolver.amazonaws.com"
+          ]
         }
       }
     },
@@ -475,14 +475,14 @@
         "arn:aws:iam::*:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "iam:AWSServiceName" : [
-            "config.amazonaws.com"
-          ],
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "BoolIfExists" : <span>{</span>
           "aws:ViaAWSService" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:AWSServiceName" : [
+            "config.amazonaws.com"
+          ]
         }
       }
     },
@@ -515,10 +515,88 @@
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "config:ConfigurationRecorderServicePrincipal" : [
             "telemetry-enablement.observabilityadmin.amazonaws.com"
-          ],
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TelemetryOperationsForKafka",
+      "Effect" : "Allow",
+      "Action" : [
+        "kafka:UpdateMonitoring",
+        "kafka:DescribeCluster"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TelemetryOperationsForOTelEnrichmentSimba",
+      "Effect" : "Allow",
+      "Action" : [
+        "observabilityadmin:GetTelemetryEnrichmentStatus",
+        "observabilityadmin:StartTelemetryEnrichment",
+        "observabilityadmin:StopTelemetryEnrichment"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TelemetryOperationsForOTelEnrichmentResourceExplorer",
+      "Effect" : "Allow",
+      "Action" : [
+        "resource-explorer-2:CreateIndex",
+        "resource-explorer-2:CreateManagedView",
+        "resource-explorer-2:CreateStreamingAccessForService",
+        "resource-explorer-2:DeleteStreamingAccessForService"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "Bool" : <span>{</span>
+          "aws:ViaAWSService" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TelemetryOperationsForOTelEnrichmentCloudWatch",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudwatch:GetOTelEnrichment",
+        "cloudwatch:StartOTelEnrichment"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TelemetryOperationsForOTelEnrichmentSLR",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/resource-explorer-2.amazonaws.com/*",
+      "Condition" : <span>{</span>
+        "Bool" : <span>{</span>
+          "aws:ViaAWSService" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "resource-explorer-2.amazonaws.com"
         }
       }
     }

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 08, 2016, 23:08 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 12, 2026, 14:27 UTC</p>
+                <p><b>Edited time:</b>  April 29, 2026, 19:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSElasticBeanstalkWebTier</code></p>
             </li></ul></div>
      
         <h2 id="AWSElasticBeanstalkWebTier-version">Policy version</h2>
-        <p><b>Policy version:</b> v8 (default)</p>
+        <p><b>Policy version:</b> v9 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -124,13 +124,19 @@
       "Sid" : "AIEnvironmentAnalysisInvokeFoundationModel",
       "Effect" : "Allow",
       "Action" : "bedrock:InvokeModel",
-      "Resource" : "arn:aws:bedrock:*::foundation-model/anthropic.claude-*"
+      "Resource" : [
+        "arn:aws:bedrock:*::foundation-model/anthropic.claude-*",
+        "arn:aws:bedrock:*::foundation-model/amazon.nova-*"
+      ]
     },
     <span>{</span>
       "Sid" : "AIEnvironmentAnalysisInvokeInferenceProfile",
       "Effect" : "Allow",
       "Action" : "bedrock:InvokeModel",
-      "Resource" : "arn:aws:bedrock:*:*:inference-profile/*anthropic.claude-*",
+      "Resource" : [
+        "arn:aws:bedrock:*:*:inference-profile/*anthropic.claude-*",
+        "arn:aws:bedrock:*:*:inference-profile/*amazon.nova-*"
+      ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
@@ -144,6 +150,16 @@
         "bedrock:ListFoundationModels",
         "elasticbeanstalk:DescribeEvents",
         "elasticbeanstalk:DescribeEnvironmentHealth"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "MarketplaceOperationsFromBedrock",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:Subscribe",
+        "aws-marketplace:ViewSubscriptions",
+        "aws-marketplace:Unsubscribe"
       ],
       "Resource" : "*"
     }

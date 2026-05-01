@@ -1,0 +1,55 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /orgs/{org}/copilot-spaces/{space_number}/collaborators/{actor_type}/{actor_identifier} -> write",
+          "GET /orgs/{org}/copilot-spaces/{space_number}/collaborators -> read",
+          "POST /orgs/{org}/copilot-spaces/{space_number}/collaborators -> write",
+          "PUT /orgs/{org}/copilot-spaces/{space_number}/collaborators/{actor_type}/{actor_identifier} -> write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "GitHub Copilot Business",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "DELETE /orgs/{org}/copilot-spaces/{space_number}/collaborators/{actor_type}/{actor_identifier} -> write",
+              "GET /orgs/{org}/copilot-spaces/{space_number}/collaborators -> read",
+              "POST /orgs/{org}/copilot-spaces/{space_number}/collaborators -> write",
+              "PUT /orgs/{org}/copilot-spaces/{space_number}/collaborators/{actor_type}/{actor_identifier} -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-github-copilot-business",
+      "stable_id": "github-fgpat:organization:github-copilot-business"
+    }
+  ],
+  "compared_at_utc": "2026-05-01T04:39:12Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 66,
+    "previous_objects": 66,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-01",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-04-23",
+  "removed_objects": []
+}

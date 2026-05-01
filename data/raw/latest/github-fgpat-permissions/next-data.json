@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "jGDA5hRJrLjiCfKTqvo7y",
+  "buildId": "CqURZo1WBWN55Wom9xU74",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -6373,7 +6373,7 @@
               "additional-permissions": false,
               "category": "copilot",
               "requestPath": "/orgs/{org}/copilot/coding-agent/permissions",
-              "slug": "get-copilot-coding-agent-permissions-for-an-organization",
+              "slug": "get-copilot-cloud-agent-permissions-for-an-organization",
               "subcategory": "copilot-coding-agent-management",
               "verb": "get"
             },
@@ -6382,7 +6382,7 @@
               "additional-permissions": false,
               "category": "copilot",
               "requestPath": "/orgs/{org}/copilot/coding-agent/permissions",
-              "slug": "set-copilot-coding-agent-permissions-for-an-organization",
+              "slug": "set-copilot-cloud-agent-permissions-for-an-organization",
               "subcategory": "copilot-coding-agent-management",
               "verb": "put"
             },
@@ -6391,7 +6391,7 @@
               "additional-permissions": false,
               "category": "copilot",
               "requestPath": "/orgs/{org}/copilot/coding-agent/permissions/repositories",
-              "slug": "list-repositories-enabled-for-copilot-coding-agent-in-an-organization",
+              "slug": "list-repositories-enabled-for-copilot-cloud-agent-in-an-organization",
               "subcategory": "copilot-coding-agent-management",
               "verb": "get"
             },
@@ -6400,7 +6400,7 @@
               "additional-permissions": false,
               "category": "copilot",
               "requestPath": "/orgs/{org}/copilot/coding-agent/permissions/repositories",
-              "slug": "set-selected-repositories-for-copilot-coding-agent-in-an-organization",
+              "slug": "set-selected-repositories-for-copilot-cloud-agent-in-an-organization",
               "subcategory": "copilot-coding-agent-management",
               "verb": "put"
             },
@@ -6409,7 +6409,7 @@
               "additional-permissions": true,
               "category": "copilot",
               "requestPath": "/orgs/{org}/copilot/coding-agent/permissions/repositories/{repository_id}",
-              "slug": "enable-a-repository-for-copilot-coding-agent-in-an-organization",
+              "slug": "enable-a-repository-for-copilot-cloud-agent-in-an-organization",
               "subcategory": "copilot-coding-agent-management",
               "verb": "put"
             },
@@ -6418,7 +6418,7 @@
               "additional-permissions": true,
               "category": "copilot",
               "requestPath": "/orgs/{org}/copilot/coding-agent/permissions/repositories/{repository_id}",
-              "slug": "disable-a-repository-for-copilot-coding-agent-in-an-organization",
+              "slug": "disable-a-repository-for-copilot-cloud-agent-in-an-organization",
               "subcategory": "copilot-coding-agent-management",
               "verb": "delete"
             }
@@ -6470,6 +6470,42 @@
         "organization_copilot_seat_management": {
           "displayTitle": "Organization permissions for \"GitHub Copilot Business\"",
           "permissions": [
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "copilot-spaces",
+              "requestPath": "/orgs/{org}/copilot-spaces/{space_number}/collaborators",
+              "slug": "list-collaborators-for-an-organization-copilot-space",
+              "subcategory": "collaborators",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "copilot-spaces",
+              "requestPath": "/orgs/{org}/copilot-spaces/{space_number}/collaborators",
+              "slug": "add-a-collaborator-to-an-organization-copilot-space",
+              "subcategory": "collaborators",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "copilot-spaces",
+              "requestPath": "/orgs/{org}/copilot-spaces/{space_number}/collaborators/{actor_type}/{actor_identifier}",
+              "slug": "set-a-collaborator-role-for-an-organization-copilot-space",
+              "subcategory": "collaborators",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "copilot-spaces",
+              "requestPath": "/orgs/{org}/copilot-spaces/{space_number}/collaborators/{actor_type}/{actor_identifier}",
+              "slug": "remove-a-collaborator-from-an-organization-copilot-space",
+              "subcategory": "collaborators",
+              "verb": "delete"
+            },
             {
               "access": "read",
               "additional-permissions": true,
@@ -9722,7 +9758,7 @@
         },
         "enterpriseServerReleases": {
           "isOldestReleaseDeprecated": true,
-          "nextDeprecationDate": "2026-04-09",
+          "nextDeprecationDate": "2026-04-23",
           "oldestSupported": "3.14",
           "releasesWithOldestDeprecationDate": [
             "3.14",
@@ -10299,6 +10335,27 @@
               ],
               "href": "/en/rest/copilot",
               "title": "Copilot"
+            },
+            {
+              "childPages": [
+                {
+                  "childPages": [],
+                  "href": "/en/rest/copilot-spaces/collaborators",
+                  "title": "Collaborators"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/copilot-spaces/copilot-spaces",
+                  "title": "Copilot Spaces"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/copilot-spaces/resources",
+                  "title": "Copilot Spaces"
+                }
+              ],
+              "href": "/en/rest/copilot-spaces",
+              "title": "Copilot Spaces"
             },
             {
               "childPages": [
