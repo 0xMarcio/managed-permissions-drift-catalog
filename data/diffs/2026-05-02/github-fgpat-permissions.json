@@ -1,0 +1,57 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "github:fgpat:organization:copilot-spaces:read",
+        "github:fgpat:organization:copilot-spaces:write"
+      ],
+      "display_name": "Copilot Spaces",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-copilot-spaces",
+      "stable_id": "github-fgpat:organization:copilot-spaces"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "github:fgpat:organization:copilot-spaces:read",
+      "github:fgpat:organization:copilot-spaces:write"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /orgs/{org}/copilot-spaces/{space_number} -> write",
+          "DELETE /orgs/{org}/copilot-spaces/{space_number}/resources/{space_resource_id} -> write",
+          "GET /orgs/{org}/copilot-spaces -> read",
+          "GET /orgs/{org}/copilot-spaces/{space_number} -> read",
+          "GET /orgs/{org}/copilot-spaces/{space_number}/resources -> read",
+          "GET /orgs/{org}/copilot-spaces/{space_number}/resources/{space_resource_id} -> read",
+          "POST /orgs/{org}/copilot-spaces -> write",
+          "POST /orgs/{org}/copilot-spaces/{space_number}/resources -> write",
+          "PUT /orgs/{org}/copilot-spaces/{space_number} -> write",
+          "PUT /orgs/{org}/copilot-spaces/{space_number}/resources/{space_resource_id} -> write"
+        ],
+        "grant:levels": [
+          "read",
+          "write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-05-02T04:25:13Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 1,
+    "changed_objects": 0,
+    "current_objects": 67,
+    "previous_objects": 66,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-02",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-05-01",
+  "removed_objects": []
+}
