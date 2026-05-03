@@ -1,0 +1,67 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:geo:ListMaps"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "geo:ListMaps"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonCognitoUnAuthedIdentitiesSessionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "geo:ListMaps"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 01, 2026, 19:57 UTC",
+          "before": "November 01, 2024, 18:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 01, 2026, 19:57 UTC",
+          "before": "November 01, 2024, 18:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonCognitoUnAuthedIdentitiesSessionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonCognitoUnAuthedIdentitiesSessionPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-03T04:33:47Z",
+  "counts": {
+    "added_atoms": 1,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1499,
+    "previous_objects": 1499,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-03",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-02",
+  "removed_objects": []
+}
