@@ -1,6 +1,6 @@
 # Managed Permissions Drift Catalog
 
-- Refreshed at: `2026-05-04T04:35:48Z` · [daily report](daily/2026-05-04.md)
+- Refreshed: May 4, 2026 · [daily report](daily/2026-05-04.md)
 
 ## Platform overview
 

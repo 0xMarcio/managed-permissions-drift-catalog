@@ -162,7 +162,7 @@ def test_render_readme_surfaces_latest_movement() -> None:
     assert "Baseline note:" not in readme
     assert "Report date:" not in readme
     assert "Updated at:" not in readme
-    assert "Refreshed at:" in readme
+    assert "Refreshed: April 17, 2026" in readme
     assert "## Browse outputs" not in readme
     assert "Leading platform:" not in readme
     assert "## Dataset overview" in readme
@@ -309,8 +309,8 @@ def test_render_readme_uses_weekly_activity_when_recent_diffs_are_available() ->
     assert "Today: No drift detected." not in readme
     assert "+0 / ~0 / -0" not in readme
     assert "Recent windows:" not in readme
-    assert "AWS managed policies (7d, last changed [2026-05-03]" in readme
-    assert "GCP predefined roles (30d, last changed [2026-04-21]" in readme
+    assert "AWS managed policies (7d, last changed [May 3, 2026]" in readme
+    assert "GCP predefined roles (30d, last changed [April 21, 2026]" in readme
     assert "| Azure built-in roles | `3` | No movement | No movement | No movement |" in readme
     assert "- Last 7 days: `+2` net · `~1` object · `+2` atoms · 1 active day." in readme
-    assert "2026-05-03: ~1 changed, +2 atoms (`Changed item` (+2))" in readme
+    assert "May 3, 2026: ~1 changed, +2 atoms (`Changed item` (+2))" in readme

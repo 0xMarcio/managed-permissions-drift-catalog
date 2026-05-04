@@ -21,6 +21,20 @@ PLATFORM_LABELS = {
     "gcp": "GCP",
     "github": "GitHub",
 }
+MONTH_NAMES = (
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+)
 RECENT_ACTIVITY_WINDOWS = (7, 30)
 MOVEMENT_COUNT_KEYS = ("added_objects", "changed_objects", "removed_objects", "added_atoms", "removed_atoms")
 
@@ -49,9 +63,16 @@ def _parse_iso_date(value: str | None) -> date | None:
     if not value:
         return None
     try:
-        return date.fromisoformat(value)
+        return date.fromisoformat(value[:10])
     except ValueError:
         return None
+
+
+def _format_date(value: str | None) -> str:
+    parsed = _parse_iso_date(value)
+    if parsed is None:
+        return value or ""
+    return f"{MONTH_NAMES[parsed.month - 1]} {parsed.day}, {parsed.year}"
 
 
 def _has_movement(diff: dict[str, Any]) -> bool:
@@ -320,7 +341,7 @@ def _recent_driver_text(platform: str, recent_activity: dict[str, Any] | None, d
         dataset = winner["dataset"]
         return (
             f"{_dataset_label(dataset)} ({days}d, last changed "
-            f"[{changed_date}]({data_prefix}/diffs/{changed_date}/{dataset}.json))"
+            f"[{_format_date(changed_date)}]({data_prefix}/diffs/{changed_date}/{dataset}.json))"
         )
     return "No movement"
 
@@ -329,7 +350,7 @@ def _last_changed_text(activity: dict[str, Any], data_prefix: str = "data") -> s
     changed_date = activity.get("last_changed_date")
     dataset = activity.get("dataset")
     if changed_date and dataset:
-        return f"[{changed_date}]({data_prefix}/diffs/{changed_date}/{dataset}.json)"
+        return f"[{_format_date(changed_date)}]({data_prefix}/diffs/{changed_date}/{dataset}.json)"
     return "No movement"
 
 
@@ -342,7 +363,7 @@ def _recent_highlight_text(activity: dict[str, Any], limit: int = 3) -> str:
         diff = event["diff"]
         objects = (_top_added_objects(diff, 1) + _top_changed_objects(diff, 1) + _top_removed_objects(diff, 1))[:2]
         detail = f" ({', '.join(objects)})" if objects else ""
-        highlights.append(f"{event['date']}: {event['summary']}{detail}")
+        highlights.append(f"{_format_date(event['date'])}: {event['summary']}{detail}")
     return "; ".join(highlights)
 
 
@@ -639,7 +660,7 @@ def render_docs_index(
         report_link = ""
         if latest_summary:
             report_link = f" · [daily report](daily/{latest_summary['date']}.md)"
-        lines.append(f"- Refreshed at: `{latest_run['finished_at']}`{report_link}")
+        lines.append(f"- Refreshed: {_format_date(latest_run['finished_at'])}{report_link}")
     lines.extend(_leader_lines(latest_summary, diffs))
     lines.extend([
         "",
@@ -711,7 +732,7 @@ def render_readme(
         report_link = ""
         if latest_summary:
             report_link = f" · [daily report](docs/daily/{latest_summary['date']}.md)"
-        lines.append(f"- Refreshed at: `{latest_run['finished_at']}`{report_link}")
+        lines.append(f"- Refreshed: {_format_date(latest_run['finished_at'])}{report_link}")
 
     lines.extend([
         "",
