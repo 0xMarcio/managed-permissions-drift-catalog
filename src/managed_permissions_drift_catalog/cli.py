@@ -5,6 +5,7 @@ import json
 import re
 import subprocess
 import sys
+from datetime import date, timedelta
 from fnmatch import fnmatch
 from pathlib import Path
 from typing import Any
@@ -52,6 +53,31 @@ def load_diffs_for_date(storage: Storage, run_date: str) -> list[dict[str, Any]]
     return diffs
 
 
+def load_recent_diffs(storage: Storage, end_date: str, *, days: int = 30) -> list[dict[str, Any]]:
+    try:
+        end_day = date.fromisoformat(end_date)
+    except ValueError:
+        return []
+    start_day = end_day - timedelta(days=days - 1)
+    diff_root = storage.data_dir / "diffs"
+    if not diff_root.exists():
+        return []
+
+    diffs: list[dict[str, Any]] = []
+    for date_dir in sorted(path for path in diff_root.iterdir() if path.is_dir()):
+        try:
+            run_day = date.fromisoformat(date_dir.name)
+        except ValueError:
+            continue
+        if run_day < start_day or run_day > end_day:
+            continue
+        for dataset in DATASETS:
+            path = date_dir / f"{dataset}.json"
+            if path.exists():
+                diffs.append(json.loads(path.read_text(encoding="utf-8")))
+    return diffs
+
+
 def snapshot_semantic_signature(snapshot: DatasetSnapshot) -> dict[str, Any]:
     data = snapshot.to_dict()
     data["generated_at_utc"] = ""
@@ -88,7 +114,12 @@ def write_docs_and_readme(
         )
     changed |= storage.write_text_if_changed(
         settings.root / "README.md",
-        render_readme(latest_run=latest_run, latest_summary=summary, latest_diffs=latest_diffs),
+        render_readme(
+            latest_run=latest_run,
+            latest_summary=summary,
+            latest_diffs=latest_diffs,
+            recent_diffs=load_recent_diffs(storage, summary["date"]) if summary else None,
+        ),
     )
     return changed
 
