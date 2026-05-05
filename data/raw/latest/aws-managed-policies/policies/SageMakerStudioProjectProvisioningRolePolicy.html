@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:58 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 11, 2026, 16:27 UTC</p>
+                <p><b>Edited time:</b>  May 04, 2026, 16:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectProvisioningRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v78 (default)</p>
+        <p><b>Policy version:</b> v79 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -82,17 +82,17 @@
         "arn:aws:cloudformation:*:*:stack/DataZone*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        "ForAllValues:StringLike" : <span>{</span>
+          "aws:TagKeys" : [
+            "AmazonDataZone*"
+          ]
         },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false",
           "aws:TagKeys" : "false"
         },
-        "ForAllValues:StringLike" : <span>{</span>
-          "aws:TagKeys" : [
-            "AmazonDataZone*"
-          ]
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -108,11 +108,11 @@
         "arn:aws:cloudformation:*:*:stack/DataZone*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -187,11 +187,11 @@
       "Action" : "s3:GetObject",
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringNotEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "StringEquals" : <span>{</span>
           "aws:CalledViaFirst" : "cloudformation.amazonaws.com"
+        },
+        "StringNotEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -210,17 +210,17 @@
       ],
       "Resource" : "arn:aws:codecommit:*:*:datazone*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        "ForAllValues:StringLike" : <span>{</span>
+          "aws:TagKeys" : [
+            "AmazonDataZone*"
+          ]
         },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false",
           "aws:TagKeys" : "false"
         },
-        "ForAllValues:StringLike" : <span>{</span>
-          "aws:TagKeys" : [
-            "AmazonDataZone*"
-          ]
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -235,11 +235,11 @@
       ],
       "Resource" : "arn:aws:codecommit:*:*:datazone*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -270,6 +270,9 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "kms:EncryptionContext:aws:codecommit:id" : "false"
+        },
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
@@ -277,9 +280,6 @@
           "kms:ViaService" : [
             "codecommit.*.amazonaws.com"
           ]
-        },
-        "Null" : <span>{</span>
-          "kms:EncryptionContext:aws:codecommit:id" : "false"
         }
       }
     },
@@ -313,11 +313,11 @@
         "arn:aws:iam::*:role/AmazonBedrockEvaluation*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "iam:PermissionsBoundary" : "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "iam:PermissionsBoundary" : "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
         }
       }
     },
@@ -332,11 +332,11 @@
         "arn:aws:iam::*:role/datazone*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "iam:PermissionsBoundary" : "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "iam:PermissionsBoundary" : "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
         }
       }
     },
@@ -367,9 +367,6 @@
         "arn:aws:iam::*:role/datazone*"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false"
-        },
         "ArnEquals" : <span>{</span>
           "iam:PolicyARN" : [
             "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy",
@@ -382,6 +379,9 @@
             "arn:aws:iam::aws:policy/AmazonSageMakerPartnerAppsFullAccess",
             "arn:aws:iam::aws:policy/service-role/SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false"
         }
       }
     },
@@ -396,13 +396,13 @@
         "arn:aws:iam::*:role/datazone*"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneAdminProject" : "false"
-        },
         "ArnEquals" : <span>{</span>
           "iam:PolicyARN" : [
             "arn:aws:iam::aws:policy/SageMakerStudioAdminProjectUserRolePolicy"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneAdminProject" : "false"
         }
       }
     },
@@ -415,9 +415,6 @@
       ],
       "Resource" : "arn:aws:iam::*:role/AmazonBedrock*",
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false"
-        },
         "ArnEquals" : <span>{</span>
           "iam:PolicyARN" : [
             "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
@@ -430,6 +427,9 @@
             "arn:aws:iam::aws:policy/service-role/SageMakerStudioBedrockPromptUserRolePolicy",
             "arn:aws:iam::aws:policy/service-role/SageMakerStudioBedrockEvaluationJobServiceRolePolicy"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false"
         }
       }
     },
@@ -450,10 +450,6 @@
         "arn:aws:iam::*:role/SageMakerStudioQueryExecutionRole"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false",
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
@@ -475,6 +471,10 @@
             "CreatedForUseWithSageMakerStudio",
             "SageMakerStudioQueryExecutionRole"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false",
+          "aws:TagKeys" : "false"
         }
       }
     },
@@ -489,15 +489,15 @@
         "arn:aws:iam::*:role/datazone_usr_role_*"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZoneScopeName",
             "BootstrappedServices",
             "AmazonDataZoneAdminProject"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false"
         }
       }
     },
@@ -510,9 +510,6 @@
       ],
       "Resource" : "arn:aws:iam::*:role/AmazonBedrock*",
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
@@ -528,6 +525,9 @@
             "PromptDefinitionPath",
             "OpenSearchServerlessCollectionId"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false"
         }
       }
     },
@@ -539,14 +539,14 @@
         "arn:aws:iam::*:role/datazone_usr_role_*"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false",
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "RedshiftDb*"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false",
+          "aws:TagKeys" : "false"
         }
       }
     },
@@ -563,10 +563,6 @@
         "arn:aws:iam::*:role/datazone_emr_containers_system_namespace_role_*"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false",
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
@@ -576,6 +572,10 @@
             "KmsKeyId",
             "VpcId"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false",
+          "aws:TagKeys" : "false"
         }
       }
     },
@@ -585,11 +585,11 @@
       "Action" : "iam:UntagRole",
       "Resource" : "arn:aws:iam::*:role/datazone_usr_role_*",
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : "EnableAmazonBedrockIDEPermissions"
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false"
         }
       }
     },
@@ -894,16 +894,16 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -940,6 +940,7 @@
     },
     <span>{</span>
       "Sid" : "GlueConnections",
+      "Effect" : "Allow",
       "Action" : [
         "glue:PassConnection",
         "glue:GetConnections",
@@ -949,7 +950,6 @@
         "arn:aws:glue:*:*:connection/*",
         "arn:aws:glue:*:*:catalog/*"
       ],
-      "Effect" : "Allow",
       "Condition" : <span>{</span>
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
@@ -958,11 +958,11 @@
     },
     <span>{</span>
       "Sid" : "AthenaConnection",
+      "Effect" : "Allow",
       "Action" : [
         "athena:CreateDataCatalog"
       ],
       "Resource" : "*",
-      "Effect" : "Allow",
       "Condition" : <span>{</span>
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
@@ -988,15 +988,15 @@
       ],
       "Resource" : "arn:aws:athena:*:*:datacatalog/*",
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false",
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
             "federated_athena*"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false",
+          "aws:TagKeys" : "false"
         }
       }
     },
@@ -1011,11 +1011,11 @@
         "arn:aws:glue:*:*:connection/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:RequestTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1030,11 +1030,11 @@
         "arn:aws:glue:*:*:connection/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1077,8 +1077,8 @@
     },
     <span>{</span>
       "Sid" : "GetDataCatalogEncSett",
-      "Action" : "glue:GetDataCatalogEncryptionSettings",
       "Effect" : "Allow",
+      "Action" : "glue:GetDataCatalogEncryptionSettings",
       "Resource" : "arn:aws:glue:*:*:catalog",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
@@ -1141,11 +1141,11 @@
         "arn:aws:lambda:*:*:function:athenafederatedcatalog*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1160,11 +1160,11 @@
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "aws:CalledViaLast" : [
             "athena.amazonaws.com",
             "cloudformation.amazonaws.com"
-          ]
+          ],
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1178,13 +1178,6 @@
         "arn:aws:lambda:*:*:function:athenafederatedcatalog*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false",
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
@@ -1192,6 +1185,13 @@
             "federated_athena*",
             "lambda:createdBy"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false",
+          "aws:TagKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1222,11 +1222,11 @@
         "arn:aws:s3:::*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "s3:prefix" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1295,6 +1295,7 @@
     },
     <span>{</span>
       "Sid" : "GetRole",
+      "Effect" : "Allow",
       "Action" : [
         "iam:GetRole"
       ],
@@ -1302,8 +1303,7 @@
         "arn:aws:iam::*:role/SageMakerStudioQueryExecutionRole",
         "arn:aws:iam::*:role/service-role/AmazonSageMakerQueryExecution",
         "arn:aws:iam::*:role/datazone_s3tables_*"
-      ],
-      "Effect" : "Allow"
+      ]
     },
     <span>{</span>
       "Sid" : "S3tPassConn",
@@ -1329,8 +1329,8 @@
       "Resource" : "*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "lakeformation:EnabledOnlyForMetaDataAccess" : "true",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "lakeformation:EnabledOnlyForMetaDataAccess" : "true"
         }
       }
     },
@@ -1345,11 +1345,11 @@
         "arn:aws:glue:*:*:catalog/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:RequestTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1449,16 +1449,16 @@
         "arn:aws:redshift-serverless:*:*:workgroup/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1489,11 +1489,11 @@
         "arn:aws:ec2:*:*:security-group/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1532,18 +1532,18 @@
         "arn:aws:ec2:*:*:security-group/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
             "for-use-with-amazon-emr-managed-policies",
             "aws:cloudformation:*"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1573,17 +1573,17 @@
         "arn:aws:logs:*:*:log-group:/aws/lambda/amazon-bedrock-ide-*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
             "AmazonBedrockManaged"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1620,11 +1620,11 @@
         "arn:aws:logs:*:*:log-group:/aws/lambda/amazon-bedrock-ide-*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1637,17 +1637,18 @@
       ],
       "Resource" : "arn:aws:athena:*:*:workgroup/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        "ForAllValues:StringLike" : <span>{</span>
+          "aws:TagKeys" : [
+            "AmazonDataZone*",
+            "aws:cloudformation:*"
+          ]
         },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false",
           "aws:TagKeys" : "false"
         },
-        "ForAllValues:StringLike" : <span>{</span>
-          "aws:TagKeys" : [
-            "AmazonDataZone*"
-          ]
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1662,11 +1663,11 @@
       ],
       "Resource" : "arn:aws:athena:*:*:workgroup/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1683,17 +1684,17 @@
         "arn:aws:redshift-serverless:*:*:workgroup/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        "ForAllValues:StringLike" : <span>{</span>
+          "aws:TagKeys" : [
+            "AmazonDataZone*"
+          ]
         },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false",
           "aws:TagKeys" : "false"
         },
-        "ForAllValues:StringLike" : <span>{</span>
-          "aws:TagKeys" : [
-            "AmazonDataZone*"
-          ]
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1766,16 +1767,16 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false",
-          "aws:ResourceTag/CreatedBy" : "false",
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
             "CreatedBy"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false",
+          "aws:ResourceTag/CreatedBy" : "false",
+          "aws:TagKeys" : "false"
         }
       }
     },
@@ -1788,16 +1789,16 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : [
-            "secretsmanager.*.amazonaws.com"
-          ]
+        "Null" : <span>{</span>
+          "kms:EncryptionContext:SecretARN" : "false"
         },
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
-        "Null" : <span>{</span>
-          "kms:EncryptionContext:SecretARN" : "false"
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : [
+            "secretsmanager.*.amazonaws.com"
+          ]
         }
       }
     },
@@ -1859,11 +1860,11 @@
         "arn:aws:redshift-serverless:*:*:workgroup/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1877,16 +1878,16 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : [
-            "redshift-serverless.*.amazonaws.com"
-          ]
+        "Null" : <span>{</span>
+          "kms:EncryptionContext:aws:redshift-serverless:arn" : "false"
         },
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
-        "Null" : <span>{</span>
-          "kms:EncryptionContext:aws:redshift-serverless:arn" : "false"
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : [
+            "redshift-serverless.*.amazonaws.com"
+          ]
         }
       }
     },
@@ -1905,11 +1906,11 @@
       ],
       "Resource" : "arn:aws:secretsmanager:*:*:secret:amazon-bedrock-ide/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1938,9 +1939,6 @@
       ],
       "Resource" : "arn:aws:secretsmanager:*:*:secret:redshift!*",
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "Redshift",
@@ -1949,6 +1947,9 @@
             "AmazonDataZone*",
             "datazone.rs.workgroup"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
         },
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
@@ -1967,11 +1968,11 @@
         "arn:aws:sagemaker:*:*:mlflow-app/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1988,11 +1989,11 @@
         "arn:aws:sagemaker:*:*:mlflow-app/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:RequestTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2005,11 +2006,11 @@
       ],
       "Resource" : "arn:aws:sagemaker:*:*:domain/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2024,11 +2025,11 @@
         "arn:aws:sagemaker:*:*:app/*/*/JupyterLab/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2038,11 +2039,11 @@
       "Action" : "sagemaker:DeleteSpace",
       "Resource" : "arn:aws:sagemaker:*:*:space/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2052,11 +2053,11 @@
       "Action" : "sagemaker:DeleteUserProfile",
       "Resource" : "arn:aws:sagemaker:*:*:user-profile/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2071,17 +2072,17 @@
         "*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        "ForAllValues:StringLike" : <span>{</span>
+          "aws:TagKeys" : [
+            "AmazonDataZone*"
+          ]
         },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false",
           "aws:TagKeys" : "false"
         },
-        "ForAllValues:StringLike" : <span>{</span>
-          "aws:TagKeys" : [
-            "AmazonDataZone*"
-          ]
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2096,11 +2097,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2141,11 +2142,11 @@
       ],
       "Resource" : "arn:aws:sagemaker:*:*:mlflow-tracking-server/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:RequestTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2163,11 +2164,11 @@
       ],
       "Resource" : "arn:aws:sagemaker:*:*:mlflow-tracking-server/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2253,11 +2254,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2306,14 +2307,14 @@
       ],
       "Resource" : "arn:aws:neptune-graph:*:*:graph/*",
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
             "AmazonDataZone*",
             "AmazonBedrock*"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false"
         }
       }
     },
@@ -2410,11 +2411,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2427,11 +2428,11 @@
         "arn:aws:bedrock:*:*:flow/*/alias/TSTALIASID"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:RequestTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2441,11 +2442,11 @@
       "Action" : "bedrock:BatchDeleteEvaluationJob",
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2467,11 +2468,11 @@
       ],
       "Resource" : "arn:aws:lambda:*:*:function:amazon-bedrock-ide-*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2574,18 +2575,18 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "kms:EncryptionContextKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
         "StringLike" : <span>{</span>
           "kms:ViaService" : [
             "airflow.*.amazonaws.com",
             "neptune-graph.*.amazonaws.com",
             "s3vectors.*.amazonaws.com"
           ]
-        },
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "kms:EncryptionContextKeys" : "false"
         }
       }
     },
@@ -2728,11 +2729,11 @@
       ],
       "Resource" : "arn:aws:scheduler:*:*:schedule-group/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2742,15 +2743,15 @@
       "Action" : "scheduler:CreateScheduleGroup",
       "Resource" : "arn:aws:scheduler:*:*:schedule-group/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        "ForAllValues:StringLike" : <span>{</span>
+          "aws:TagKeys" : "AmazonDataZone*"
         },
         "Null" : <span>{</span>
           "aws:RequestTag/AmazonDataZoneProject" : "false",
           "aws:TagKeys" : "false"
         },
-        "ForAllValues:StringLike" : <span>{</span>
-          "aws:TagKeys" : "AmazonDataZone*"
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2760,15 +2761,15 @@
       "Action" : "scheduler:TagResource",
       "Resource" : "arn:aws:scheduler:*:*:schedule-group/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
-        "Null" : <span>{</span>
-          "aws:TagKeys" : "false",
-          "aws:ResourceTag/AmazonDataZoneProject" : "false"
-        },
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : "AmazonDataZone*"
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false",
+          "aws:TagKeys" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2782,11 +2783,11 @@
         "arn:aws:scheduler:*:*:schedule/SageMakerUnifiedStudio-*-*/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2816,11 +2817,11 @@
         "*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2898,16 +2899,16 @@
           ]
         },
         "Null" : <span>{</span>
-          "events:source" : "false",
-          "events:detail-type" : "false"
+          "events:detail-type" : "false",
+          "events:source" : "false"
         },
         "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "events:ManagedBy" : "datazone.amazonaws.com",
           "events:detail-type" : [
             "AWS Service Event via CloudTrail",
             "CodeCommit Repository State Change"
-          ],
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          ]
         }
       }
     },
@@ -2924,8 +2925,8 @@
       "Resource" : "arn:aws:events:*:*:rule/Managed.SageMaker*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "events:ManagedBy" : "datazone.amazonaws.com",
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "events:ManagedBy" : "datazone.amazonaws.com"
         }
       }
     },
@@ -2937,11 +2938,11 @@
       ],
       "Resource" : "arn:aws:secretsmanager:*:*:secret:*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -2976,11 +2977,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
