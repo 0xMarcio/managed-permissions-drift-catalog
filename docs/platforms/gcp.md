@@ -1,12 +1,12 @@
 # GCP
 
-- Refreshed at: `2026-05-05T04:24:26Z`
+- Refreshed at: `2026-05-06T04:30:16Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| GCP predefined roles | `2,293` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/gcp-predefined-roles.json) · [diff](../../data/diffs/2026-05-05/gcp-predefined-roles.json) · [reverse index](../../data/reverse-index/gcp-predefined-roles.json) |
+| GCP predefined roles | `2,293` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/gcp-predefined-roles.json) · [diff](../../data/diffs/2026-05-06/gcp-predefined-roles.json) · [reverse index](../../data/reverse-index/gcp-predefined-roles.json) |
 
 ## Dataset details
 
@@ -14,4 +14,4 @@
 
 - Inventory: `2,293` objects.
 - Today: No drift detected.
-- Files: [snapshot](../../data/latest/gcp-predefined-roles.json) · [diff](../../data/diffs/2026-05-05/gcp-predefined-roles.json) · [reverse index](../../data/reverse-index/gcp-predefined-roles.json)
+- Files: [snapshot](../../data/latest/gcp-predefined-roles.json) · [diff](../../data/diffs/2026-05-06/gcp-predefined-roles.json) · [reverse index](../../data/reverse-index/gcp-predefined-roles.json)
