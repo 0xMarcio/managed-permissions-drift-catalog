@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: June 10, 2025, 17:37 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:57 UTC</p>
+                <p><b>Edited time:</b>  May 05, 2026, 20:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubV2ServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSSecurityHubV2ServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v6 (default)</p>
+        <p><b>Policy version:</b> v7 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -190,6 +190,64 @@
         "iam:GetAccountSummary"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubV2ServiceRoleIA2IamPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : [
+            "access-analyzer.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubV2ServiceRoleIA2ResAPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "access-analyzer:CreateServiceLinkedAnalyzer",
+        "access-analyzer:DeleteServiceLinkedAnalyzer"
+      ],
+      "Resource" : "arn:*:access-analyzer:*:*:analyzer/*"
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubV2ServiceRoleIA2ResAListPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "access-analyzer:ListAnalyzers"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubV2ServiceRoleIA2APIPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "access-analyzer:GetFindingRecommendation",
+        "access-analyzer:GenerateFindingRecommendation"
+      ],
+      "Resource" : "arn:*:access-analyzer:*:*:analyzer/_AccessAnalyzerForSecurityHubV2*"
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubV2ServiceRoleAPIPolicyPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:GetPolicy",
+        "iam:GetPolicyVersion",
+        "iam:GetRolePolicy",
+        "iam:GetUserPolicy"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:policy/*",
+        "arn:aws:iam::*:role/*",
+        "arn:aws:iam::*:user/*"
+      ]
     }
   ]
 }</code></pre>

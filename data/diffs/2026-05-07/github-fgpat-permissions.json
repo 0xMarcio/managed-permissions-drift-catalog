@@ -1,0 +1,53 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "GET /repos/{owner}/{repo}/actions/concurrency_groups -> read",
+          "GET /repos/{owner}/{repo}/actions/concurrency_groups/{concurrency_group_name} -> read",
+          "GET /repos/{owner}/{repo}/actions/runs/{run_id}/concurrency_groups -> read"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Actions",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /repos/{owner}/{repo}/actions/concurrency_groups -> read",
+              "GET /repos/{owner}/{repo}/actions/concurrency_groups/{concurrency_group_name} -> read",
+              "GET /repos/{owner}/{repo}/actions/runs/{run_id}/concurrency_groups -> read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-actions",
+      "stable_id": "github-fgpat:repository:actions"
+    }
+  ],
+  "compared_at_utc": "2026-05-07T04:30:20Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 67,
+    "previous_objects": 67,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-07",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-05-02",
+  "removed_objects": []
+}

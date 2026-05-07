@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:39 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 03, 2026, 15:27 UTC</p>
+                <p><b>Edited time:</b>  May 05, 2026, 20:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/ReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="ReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v182 (default)</p>
+        <p><b>Policy version:</b> v183 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -483,6 +483,7 @@
         "braket:SearchDevices",
         "braket:SearchJobs",
         "braket:SearchQuantumTasks",
+        "braket:SearchSpendingLimits",
         "budgets:Describe*",
         "budgets:ListTagsForResource",
         "budgets:View*",
@@ -967,6 +968,8 @@
         "dms:Describe*",
         "dms:List*",
         "dms:Test*",
+        "docdb-elastic:GetCluster",
+        "docdb-elastic:GetClusterSnapshot",
         "docdb-elastic:ListClusters",
         "docdb-elastic:ListClusterSnapshots",
         "docdb-elastic:ListPendingMaintenanceActions",
@@ -1028,6 +1031,7 @@
         "ecr:List*",
         "ecs:Describe*",
         "ecs:List*",
+        "eks:AccessKubernetesApi",
         "eks:Describe*",
         "eks:List*",
         "elasticache:Describe*",
@@ -1186,6 +1190,13 @@
         "gamelift:List*",
         "gamelift:ResolveAlias",
         "gamelift:Search*",
+        "gameliftstreams:GetApplication",
+        "gameliftstreams:GetStreamGroup",
+        "gameliftstreams:ListApplications",
+        "gameliftstreams:ListStreamGroups",
+        "gameliftstreams:ListStreamSessions",
+        "gameliftstreams:ListStreamSessionsByAccount",
+        "gameliftstreams:ListTagsForResource",
         "glacier:Describe*",
         "glacier:Get*",
         "glacier:List*",
@@ -1362,6 +1373,13 @@
         "internetmonitor:ListInternetEvents",
         "internetmonitor:ListMonitors",
         "internetmonitor:ListTagsForResource",
+        "interconnect:DescribeConnectionProposal",
+        "interconnect:GetConnection",
+        "interconnect:GetEnvironment",
+        "interconnect:ListAttachPoints",
+        "interconnect:ListTagsForResource",
+        "interconnect:ListEnvironments",
+        "interconnect:ListConnections",
         "invoicing:GetInvoiceEmailDeliveryPreferences",
         "invoicing:GetInvoicePDF",
         "invoicing:ListInvoiceSummaries",
@@ -2488,6 +2506,36 @@
         "secretsmanager:Describe*",
         "secretsmanager:GetResourcePolicy",
         "secretsmanager:List*",
+        "securityagent:BatchGetAgentSpaces",
+        "securityagent:BatchGetTargetDomains",
+        "securityagent:BatchGetArtifactMetadata",
+        "securityagent:BatchGetFindings",
+        "securityagent:BatchGetPentestJobs",
+        "securityagent:BatchGetPentests",
+        "securityagent:BatchGetPentestJobContentMetadata",
+        "securityagent:BatchGetPentestJobTasks",
+        "securityagent:GetApplication",
+        "securityagent:GetArtifact",
+        "securityagent:GetDesignReview",
+        "securityagent:GetDesignReviewArtifact",
+        "securityagent:GetDesignReviewFeedback",
+        "securityagent:GetIntegration",
+        "securityagent:ListAgentSpaces",
+        "securityagent:ListTargetDomains",
+        "securityagent:ListApplications",
+        "securityagent:ListArtifacts",
+        "securityagent:ListSecurityRequirements",
+        "securityagent:ListDiscoveredEndpoints",
+        "securityagent:ListDesignReviewComments",
+        "securityagent:ListDesignReviews",
+        "securityagent:ListFindings",
+        "securityagent:ListIntegratedResources",
+        "securityagent:ListIntegrations",
+        "securityagent:ListMemberships",
+        "securityagent:ListPentestJobsForPentest",
+        "securityagent:ListPentests",
+        "securityagent:ListResourcesFromIntegration",
+        "securityagent:ListPentestJobTasks",
         "securityhub:BatchGetAutomationRules",
         "securityhub:BatchGetConfigurationPolicyAssociations",
         "securityhub:BatchGetControlEvaluations",
@@ -2704,6 +2752,14 @@
         "transfer:Describe*",
         "transfer:List*",
         "transfer:TestIdentityProvider",
+        "transform:GetAccountSettings",
+        "transform:GetAgent",
+        "transform:GetAgentRuntimeConfiguration",
+        "transform:GetConnector",
+        "transform:ListAgents",
+        "transform:ListConnectors",
+        "transform:ListProfiles",
+        "transform:ListTagsForResource",
         "transform-custom:GetCampaign",
         "transform-custom:GetKnowledgeItem",
         "transform-custom:ListKnowledgeItems",

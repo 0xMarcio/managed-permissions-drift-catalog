@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "DJp5WdLIjDSUn7H-bNn2m",
+  "buildId": "mkeMgdbio6K18a6IO3X8T",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -159,6 +159,24 @@
               "access": "read",
               "additional-permissions": false,
               "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/concurrency_groups",
+              "slug": "list-concurrency-groups-for-a-repository",
+              "subcategory": "concurrency-groups",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/concurrency_groups/{concurrency_group_name}",
+              "slug": "get-a-concurrency-group-for-a-repository",
+              "subcategory": "concurrency-groups",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "actions",
               "requestPath": "/repos/{owner}/{repo}/actions/jobs/{job_id}",
               "slug": "get-a-job-for-a-workflow-run",
               "subcategory": "workflow-jobs",
@@ -289,6 +307,15 @@
               "slug": "cancel-a-workflow-run",
               "subcategory": "workflow-runs",
               "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/runs/{run_id}/concurrency_groups",
+              "slug": "list-concurrency-groups-for-a-workflow-run",
+              "subcategory": "concurrency-groups",
+              "verb": "get"
             },
             {
               "access": "write",
@@ -10104,6 +10131,11 @@
                 },
                 {
                   "childPages": [],
+                  "href": "/en/rest/actions/concurrency-groups",
+                  "title": "Actions concurrency groups"
+                },
+                {
+                  "childPages": [],
                   "href": "/en/rest/actions/hosted-runners",
                   "title": "GitHub-hosted runners"
                 },
@@ -10186,6 +10218,17 @@
               ],
               "href": "/en/rest/activity",
               "title": "Activity"
+            },
+            {
+              "childPages": [
+                {
+                  "childPages": [],
+                  "href": "/en/rest/agent-tasks/agent-tasks",
+                  "title": "Agent tasks"
+                }
+              ],
+              "href": "/en/rest/agent-tasks",
+              "title": "Agent tasks"
             },
             {
               "childPages": [

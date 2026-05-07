@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: March 25, 2026, 02:57 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 25, 2026, 02:57 UTC</p>
+                <p><b>Edited time:</b>  May 05, 2026, 19:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAWSTransformCustom</code></p>
             </li></ul></div>
      
         <h2 id="AWSServiceRoleForAWSTransformCustom-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -73,7 +73,6 @@
   "Version" : "2012-10-17",
   "Statement" : [
     <span>{</span>
-      "Sid" : "PublishCloudWatchMetrics",
       "Effect" : "Allow",
       "Action" : [
         "cloudwatch:PutMetricData"
@@ -82,6 +81,24 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "cloudwatch:namespace" : "AWS/TransformCustom"
+        }
+      }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "logs:PutRetentionPolicy"
+      ],
+      "Resource" : [
+        "arn:aws:logs:*:*:log-group:/aws/TransformCustom",
+        "arn:aws:logs:*:*:log-group:/aws/TransformCustom:log-stream:*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     }
