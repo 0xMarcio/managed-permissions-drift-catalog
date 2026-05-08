@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:58 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 04, 2026, 16:42 UTC</p>
+                <p><b>Edited time:</b>  May 07, 2026, 00:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectProvisioningRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v79 (default)</p>
+        <p><b>Policy version:</b> v80 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -398,7 +398,8 @@
       "Condition" : <span>{</span>
         "ArnEquals" : <span>{</span>
           "iam:PolicyARN" : [
-            "arn:aws:iam::aws:policy/SageMakerStudioAdminProjectUserRolePolicy"
+            "arn:aws:iam::aws:policy/SageMakerStudioAdminProjectUserRolePolicy",
+            "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
           ]
         },
         "Null" : <span>{</span>
@@ -1125,7 +1126,7 @@
         "cloudformation:DeleteChangeSet"
       ],
       "Resource" : [
-        "arn:aws:cloudformation:*:*:transform/Serverless*"
+        "arn:aws:cloudformation:*:*:transform/*"
       ]
     },
     <span>{</span>

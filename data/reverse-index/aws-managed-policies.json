@@ -2652,6 +2652,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
       }
     ],
+    "aws:allow_action:aidevops:DescribeServices": [
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
     "aws:allow_action:aidevops:DescribeSupportLevel": [
       {
         "display_name": "AIDevOpsAgentFullAccess",
@@ -17523,6 +17530,41 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
       }
     ],
+    "aws:allow_action:aws-marketplace:GetListing": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:GetOffer": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:GetOfferSet": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:GetOfferTerms": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:GetProduct": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      }
+    ],
     "aws:allow_action:aws-marketplace:GetResourcePolicy": [
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
@@ -17841,6 +17883,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonTimestreamConsoleFullAccess"
       }
     ],
+    "aws:allow_action:aws-marketplace:ListFulfillmentOptions": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      }
+    ],
     "aws:allow_action:aws-marketplace:ListInvoiceSubmissionTasks": [
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
@@ -17902,6 +17951,13 @@
         "display_name": "AWSPrivateMarketplaceRequests",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceRequests.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceRequests"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:ListPurchaseOptions": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
       }
     ],
     "aws:allow_action:aws-marketplace:ListTagsForResource": [
@@ -18060,6 +18116,20 @@
         "display_name": "PartnerCentralIncentiveBenefitManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PartnerCentralIncentiveBenefitManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/PartnerCentralIncentiveBenefitManagement"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:SearchFacets": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:SearchListings": [
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
       }
     ],
     "aws:allow_action:aws-marketplace:SendAgreementCancellationRequest": [
@@ -21211,6 +21281,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21231,6 +21306,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -21267,6 +21347,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21282,6 +21367,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       }
     ],
     "aws:allow_action:bedrock-agentcore:GetBrowserSession": [
@@ -21296,6 +21386,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -21346,6 +21441,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21363,6 +21463,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21373,11 +21478,23 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
       }
     ],
+    "aws:allow_action:bedrock-agentcore:GetHarness": [
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      }
+    ],
     "aws:allow_action:bedrock-agentcore:GetMemory": [
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -21438,6 +21555,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21455,6 +21577,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21470,6 +21597,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       }
     ],
     "aws:allow_action:bedrock-agentcore:GetTokenVault": [
@@ -21534,6 +21666,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21549,6 +21686,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       }
     ],
     "aws:allow_action:bedrock-agentcore:ListAgentRuntimes": [
@@ -21556,6 +21698,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -21595,6 +21742,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       }
     ],
     "aws:allow_action:bedrock-agentcore:ListBrowserSessions": [
@@ -21609,6 +21761,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -21633,6 +21790,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -21676,6 +21838,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21693,6 +21860,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21703,11 +21875,23 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
       }
     ],
+    "aws:allow_action:bedrock-agentcore:ListHarnesses": [
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      }
+    ],
     "aws:allow_action:bedrock-agentcore:ListMemories": [
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -21768,6 +21952,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21785,6 +21974,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -21800,6 +21994,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       }
     ],
     "aws:allow_action:bedrock-agentcore:ListPolicyGenerations": [
@@ -21807,6 +22006,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "SecurityAudit",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+        "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       }
     ],
     "aws:allow_action:bedrock-agentcore:ListTagsForResource": [
@@ -103511,6 +103715,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSRefactoringToolkitFullAccess"
       }
     ],
+    "aws:allow_action:ecs:GetTaskProtection": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:ecs:List*": [
       {
         "display_name": "AIDevOpsAgentAccessPolicy",
@@ -125608,6 +125819,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonRedshiftFederatedAuthorization"
       },
       {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
         "display_name": "SageMakerStudioAdminIAMConsolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMConsolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMConsolePolicy"
@@ -125707,6 +125923,11 @@
         "display_name": "AmazonRedshiftFederatedAuthorization",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRedshiftFederatedAuthorization.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonRedshiftFederatedAuthorization"
+      },
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
         "display_name": "SageMakerStudioAdminProjectUserRolePolicy",
@@ -132505,6 +132726,20 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
+    "aws:allow_action:groundstation:DescribeContactVersion": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:groundstation:DescribeEphemeris": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:groundstation:GetAgentConfiguration": [
       {
         "display_name": "AWSGroundStationAgentInstancePolicy",
@@ -132626,6 +132861,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
       }
     ],
+    "aws:allow_action:groundstation:ListAntennas": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:groundstation:ListConfigs": [
       {
         "display_name": "ReadOnlyAccess",
@@ -132646,6 +132888,13 @@
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
+      }
+    ],
+    "aws:allow_action:groundstation:ListContactVersions": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
     "aws:allow_action:groundstation:ListContacts": [
@@ -132675,6 +132924,20 @@
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
+      }
+    ],
+    "aws:allow_action:groundstation:ListEphemerides": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:groundstation:ListGroundStationReservations": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
     "aws:allow_action:groundstation:ListGroundStations": [
@@ -248580,6 +248843,11 @@
     ],
     "aws:allow_action:servicequotas:ListServiceQuotas": [
       {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
         "display_name": "AmazonLaunchWizardFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizardFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2"
@@ -266349,6 +266617,11 @@
       }
     ],
     "aws:allow_action:support:DescribeServices": [
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -289117,7 +289390,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-07T04:30:20Z",
+  "generated_at_utc": "2026-05-08T04:23:49Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

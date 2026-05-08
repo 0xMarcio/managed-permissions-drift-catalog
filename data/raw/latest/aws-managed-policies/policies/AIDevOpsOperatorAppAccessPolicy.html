@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 29, 2026, 03:57 UTC</p>
+                <p><b>Edited time:</b>  May 07, 2026, 00:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsOperatorAppAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -102,7 +102,8 @@
         "aidevops:DescribeSupportLevel",
         "aidevops:ListChats",
         "aidevops:CreateChat",
-        "aidevops:SendMessage"
+        "aidevops:SendMessage",
+        "aidevops:DescribeServices"
       ],
       "Resource" : "arn:aws:aidevops:*:*:agentspace/$<span>{</span>aws:PrincipalTag/AgentSpaceId}",
       "Condition" : <span>{</span>
@@ -129,6 +130,7 @@
       "Effect" : "Allow",
       "Action" : [
         "support:DescribeCases",
+        "support:DescribeServices",
         "support:InitiateChatForCase",
         "support:DescribeSupportLevel"
       ],
