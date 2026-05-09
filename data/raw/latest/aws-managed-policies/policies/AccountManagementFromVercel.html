@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: December 11, 2025, 16:34 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:00 UTC</p>
+                <p><b>Edited time:</b>  May 07, 2026, 18:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AccountManagementFromVercel</code></p>
             </li></ul></div>
      
         <h2 id="AccountManagementFromVercel-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -94,6 +94,41 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/VercelInstallId" : "$<span>{</span>aws:PrincipalTag/VercelInstallId}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ManageServiceRole",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:GetRole",
+        "iam:CreateRole",
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:DeleteRolePolicy",
+        "iam:DeleteRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/Vercel/Service_2026_04_16",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/VercelInstallId" : "$<span>{</span>aws:PrincipalTag/VercelInstallId}",
+          "iam:PermissionsBoundary" : [
+            "arn:aws:iam::partner:policy/permissions-boundary/vercel.com/VercelMarketplaceServiceRoleBoundary_2026_04_16"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TagManageServiceRole",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:TagRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/Vercel/Service_2026_04_16",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/VercelInstallId" : "$<span>{</span>aws:PrincipalTag/VercelInstallId}"
         }
       }
     }

@@ -17530,39 +17530,96 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
       }
     ],
+    "aws:allow_action:aws-marketplace:GetIssuedTaxInvoice": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
     "aws:allow_action:aws-marketplace:GetListing": [
+      {
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
       {
         "display_name": "AWSMarketplaceManageSubscriptions",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
       }
     ],
     "aws:allow_action:aws-marketplace:GetOffer": [
       {
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
+      {
         "display_name": "AWSMarketplaceManageSubscriptions",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
       }
     ],
     "aws:allow_action:aws-marketplace:GetOfferSet": [
       {
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
+      {
         "display_name": "AWSMarketplaceManageSubscriptions",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
       }
     ],
     "aws:allow_action:aws-marketplace:GetOfferTerms": [
       {
-        "display_name": "AWSMarketplaceManageSubscriptions",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
-        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
-      }
-    ],
-    "aws:allow_action:aws-marketplace:GetProduct": [
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
       {
         "display_name": "AWSMarketplaceManageSubscriptions",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:GetProduct": [
+      {
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
       }
     ],
     "aws:allow_action:aws-marketplace:GetResourcePolicy": [
@@ -17885,12 +17942,29 @@
     ],
     "aws:allow_action:aws-marketplace:ListFulfillmentOptions": [
       {
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
+      {
         "display_name": "AWSMarketplaceManageSubscriptions",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
       }
     ],
     "aws:allow_action:aws-marketplace:ListInvoiceSubmissionTasks": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:ListIssuedTaxInvoices": [
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
@@ -17955,9 +18029,19 @@
     ],
     "aws:allow_action:aws-marketplace:ListPurchaseOptions": [
       {
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
+      {
         "display_name": "AWSMarketplaceManageSubscriptions",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
       }
     ],
     "aws:allow_action:aws-marketplace:ListTagsForResource": [
@@ -18120,16 +18204,36 @@
     ],
     "aws:allow_action:aws-marketplace:SearchFacets": [
       {
-        "display_name": "AWSMarketplaceManageSubscriptions",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
-        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
-      }
-    ],
-    "aws:allow_action:aws-marketplace:SearchListings": [
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
       {
         "display_name": "AWSMarketplaceManageSubscriptions",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:SearchListings": [
+      {
+        "display_name": "AWSMarketplaceDiscoveryFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+      },
+      {
+        "display_name": "AWSMarketplaceManageSubscriptions",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      },
+      {
+        "display_name": "AWSMarketplaceRead-only",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
       }
     ],
     "aws:allow_action:aws-marketplace:SendAgreementCancellationRequest": [
@@ -38354,6 +38458,13 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       }
     ],
+    "aws:allow_action:cloudwatch:CallWithBearerToken": [
+      {
+        "display_name": "CloudWatchAPIKeyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAPIKeyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchAPIKeyAccess"
+      }
+    ],
     "aws:allow_action:cloudwatch:DeleteAlarms": [
       {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
@@ -41097,6 +41208,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "CloudWatchAPIKeyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAPIKeyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchAPIKeyAccess"
       },
       {
         "display_name": "CloudWatchAgentAdminPolicy",
@@ -134634,6 +134750,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupSSMManageResourcesExecutionPolicy"
       },
       {
+        "display_name": "AccountManagementFromVercel",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+        "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
+      },
+      {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-AWSElasticBeanstalk.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk"
@@ -134884,6 +135005,11 @@
         "display_name": "AWSQuickSetupSSMManageResourcesExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupSSMManageResourcesExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupSSMManageResourcesExecutionPolicy"
+      },
+      {
+        "display_name": "AccountManagementFromVercel",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+        "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
       },
       {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
@@ -136120,6 +136246,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupSSMManageResourcesExecutionPolicy"
       },
       {
+        "display_name": "AccountManagementFromVercel",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+        "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
+      },
+      {
         "display_name": "AdministratorAccess-Amplify",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-Amplify.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
@@ -136227,6 +136358,11 @@
         "display_name": "AWSQuickSetupPatchPolicyDeploymentRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupPatchPolicyDeploymentRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupPatchPolicyDeploymentRolePolicy"
+      },
+      {
+        "display_name": "AccountManagementFromVercel",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+        "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -136457,6 +136593,11 @@
         "display_name": "AWSQuickSetupSSMManageResourcesExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupSSMManageResourcesExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupSSMManageResourcesExecutionPolicy"
+      },
+      {
+        "display_name": "AccountManagementFromVercel",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+        "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -137744,6 +137885,11 @@
         "display_name": "AWSThinkboxDeadlineSpotEventPluginAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxDeadlineSpotEventPluginAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineSpotEventPluginAdminPolicy"
+      },
+      {
+        "display_name": "AccountManagementFromVercel",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+        "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
       },
       {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
@@ -142327,6 +142473,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupPatchPolicyDeploymentRolePolicy"
       },
       {
+        "display_name": "AccountManagementFromVercel",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+        "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
+      },
+      {
         "display_name": "AdministratorAccess-Amplify",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-Amplify.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
@@ -142557,6 +142708,11 @@
         "display_name": "AWSQuickSetupSSMManageResourcesExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupSSMManageResourcesExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupSSMManageResourcesExecutionPolicy"
+      },
+      {
+        "display_name": "AccountManagementFromVercel",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+        "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -146233,6 +146389,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSBillingReadOnlyAccess"
       },
       {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      },
+      {
         "display_name": "AWSPurchaseOrdersServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPurchaseOrdersServiceRolePolicy"
@@ -146294,6 +146455,11 @@
         "display_name": "AWSBillingReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSBillingReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -289390,7 +289556,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-08T04:23:49Z",
+  "generated_at_utc": "2026-05-09T04:27:29Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

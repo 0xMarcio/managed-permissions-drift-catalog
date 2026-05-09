@@ -1,0 +1,264 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:aws-marketplace:GetListing",
+        "aws:allow_action:aws-marketplace:GetOffer",
+        "aws:allow_action:aws-marketplace:GetOfferSet",
+        "aws:allow_action:aws-marketplace:GetOfferTerms",
+        "aws:allow_action:aws-marketplace:GetProduct",
+        "aws:allow_action:aws-marketplace:ListFulfillmentOptions",
+        "aws:allow_action:aws-marketplace:ListPurchaseOptions",
+        "aws:allow_action:aws-marketplace:SearchFacets",
+        "aws:allow_action:aws-marketplace:SearchListings"
+      ],
+      "display_name": "AWSMarketplaceDiscoveryFullAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDiscoveryFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceDiscoveryFullAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:cloudwatch:CallWithBearerToken",
+        "aws:allow_action:cloudwatch:PutMetricData"
+      ],
+      "display_name": "CloudWatchAPIKeyAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAPIKeyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/CloudWatchAPIKeyAccess"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aws-marketplace:GetIssuedTaxInvoice",
+      "aws:allow_action:aws-marketplace:GetListing",
+      "aws:allow_action:aws-marketplace:GetListing",
+      "aws:allow_action:aws-marketplace:GetOffer",
+      "aws:allow_action:aws-marketplace:GetOffer",
+      "aws:allow_action:aws-marketplace:GetOfferSet",
+      "aws:allow_action:aws-marketplace:GetOfferSet",
+      "aws:allow_action:aws-marketplace:GetOfferTerms",
+      "aws:allow_action:aws-marketplace:GetOfferTerms",
+      "aws:allow_action:aws-marketplace:GetProduct",
+      "aws:allow_action:aws-marketplace:GetProduct",
+      "aws:allow_action:aws-marketplace:ListFulfillmentOptions",
+      "aws:allow_action:aws-marketplace:ListFulfillmentOptions",
+      "aws:allow_action:aws-marketplace:ListIssuedTaxInvoices",
+      "aws:allow_action:aws-marketplace:ListPurchaseOptions",
+      "aws:allow_action:aws-marketplace:ListPurchaseOptions",
+      "aws:allow_action:aws-marketplace:SearchFacets",
+      "aws:allow_action:aws-marketplace:SearchFacets",
+      "aws:allow_action:aws-marketplace:SearchListings",
+      "aws:allow_action:aws-marketplace:SearchListings",
+      "aws:allow_action:cloudwatch:CallWithBearerToken",
+      "aws:allow_action:cloudwatch:PutMetricData",
+      "aws:allow_action:iam:AttachRolePolicy",
+      "aws:allow_action:iam:CreateRole",
+      "aws:allow_action:iam:DeleteRole",
+      "aws:allow_action:iam:DeleteRolePolicy",
+      "aws:allow_action:iam:DetachRolePolicy",
+      "aws:allow_action:iam:GetRole",
+      "aws:allow_action:iam:PutRolePolicy",
+      "aws:allow_action:iam:TagRole",
+      "aws:allow_action:invoicing:GetInvoicePDF",
+      "aws:allow_action:invoicing:ListInvoiceSummaries"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aws-marketplace:GetIssuedTaxInvoice",
+          "aws-marketplace:GetListing",
+          "aws-marketplace:GetListing",
+          "aws-marketplace:GetOffer",
+          "aws-marketplace:GetOffer",
+          "aws-marketplace:GetOfferSet",
+          "aws-marketplace:GetOfferSet",
+          "aws-marketplace:GetOfferTerms",
+          "aws-marketplace:GetOfferTerms",
+          "aws-marketplace:GetProduct",
+          "aws-marketplace:GetProduct",
+          "aws-marketplace:ListFulfillmentOptions",
+          "aws-marketplace:ListFulfillmentOptions",
+          "aws-marketplace:ListIssuedTaxInvoices",
+          "aws-marketplace:ListPurchaseOptions",
+          "aws-marketplace:ListPurchaseOptions",
+          "aws-marketplace:SearchFacets",
+          "aws-marketplace:SearchFacets",
+          "aws-marketplace:SearchListings",
+          "aws-marketplace:SearchListings",
+          "cloudwatch:CallWithBearerToken",
+          "cloudwatch:PutMetricData",
+          "iam:AttachRolePolicy",
+          "iam:CreateRole",
+          "iam:DeleteRole",
+          "iam:DeleteRolePolicy",
+          "iam:DetachRolePolicy",
+          "iam:GetRole",
+          "iam:PutRolePolicy",
+          "iam:TagRole",
+          "invoicing:GetInvoicePDF",
+          "invoicing:ListInvoiceSummaries"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSMarketplaceRead-only",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-marketplace:GetListing",
+              "aws-marketplace:GetOffer",
+              "aws-marketplace:GetOfferSet",
+              "aws-marketplace:GetOfferTerms",
+              "aws-marketplace:GetProduct",
+              "aws-marketplace:ListFulfillmentOptions",
+              "aws-marketplace:ListPurchaseOptions",
+              "aws-marketplace:SearchFacets",
+              "aws-marketplace:SearchListings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 07, 2026, 17:12 UTC",
+          "before": "March 31, 2026, 16:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 07, 2026, 17:12 UTC",
+          "before": "March 31, 2026, 16:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 6,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceRead-only"
+    },
+    {
+      "display_name": "AWSMarketplaceSellerFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-marketplace:GetIssuedTaxInvoice",
+              "aws-marketplace:ListIssuedTaxInvoices",
+              "invoicing:GetInvoicePDF",
+              "invoicing:ListInvoiceSummaries"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v29 (default)",
+          "before": "v28 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 07, 2026, 18:27 UTC",
+          "before": "April 29, 2026, 21:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 07, 2026, 18:27 UTC",
+          "before": "April 29, 2026, 21:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 17,
+          "before": 16,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+    },
+    {
+      "display_name": "AccountManagementFromVercel",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:AttachRolePolicy",
+              "iam:CreateRole",
+              "iam:DeleteRole",
+              "iam:DeleteRolePolicy",
+              "iam:DetachRolePolicy",
+              "iam:GetRole",
+              "iam:PutRolePolicy",
+              "iam:TagRole"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 07, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 07, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 4,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
+      "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
+    }
+  ],
+  "compared_at_utc": "2026-05-09T04:27:29Z",
+  "counts": {
+    "added_atoms": 32,
+    "added_objects": 2,
+    "changed_objects": 3,
+    "current_objects": 1501,
+    "previous_objects": 1499,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-09",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-08",
+  "removed_objects": []
+}

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 31, 2026, 16:42 UTC</p>
+                <p><b>Edited time:</b>  May 07, 2026, 17:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceRead-only</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceRead-only-version">Policy version</h2>
-        <p><b>Policy version:</b> v12 (default)</p>
+        <p><b>Policy version:</b> v13 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -113,6 +113,27 @@
         "aws-marketplace:ListPrivateListings"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetListing",
+        "aws-marketplace:GetProduct",
+        "aws-marketplace:GetOffer",
+        "aws-marketplace:GetOfferTerms",
+        "aws-marketplace:GetOfferSet",
+        "aws-marketplace:ListPurchaseOptions",
+        "aws-marketplace:ListFulfillmentOptions",
+        "aws-marketplace:SearchFacets",
+        "aws-marketplace:SearchListings"
+      ],
+      "Resource" : [
+        "arn:aws:aws-marketplace:::catalog/AWSMarketplace*/product/*",
+        "arn:aws:aws-marketplace:::catalog/AWSMarketplace*/listing/*",
+        "arn:aws:aws-marketplace:::catalog/AWSMarketplace*/offer/*",
+        "arn:aws:aws-marketplace:::catalog/AWSMarketplace*/offerSet/*",
+        "arn:aws:aws-marketplace:::catalog/AWSMarketplace*/purchaseOption/*"
+      ]
     },
     <span>{</span>
       "Effect" : "Allow",
