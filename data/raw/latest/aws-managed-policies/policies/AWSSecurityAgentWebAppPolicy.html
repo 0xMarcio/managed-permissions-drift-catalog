@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 05, 2026, 23:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 20, 2026, 17:27 UTC</p>
+                <p><b>Edited time:</b>  May 08, 2026, 17:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSSecurityAgentWebAppPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -93,15 +93,20 @@
       "Action" : [
         "securityagent:AddArtifact",
         "securityagent:BatchDeletePentests",
+        "securityagent:BatchDeleteCodeReviews",
         "securityagent:BatchGetAgentSpaces",
         "securityagent:BatchGetArtifactMetadata",
         "securityagent:BatchGetFindings",
         "securityagent:BatchGetPentestJobs",
+        "securityagent:BatchGetCodeReviewJobs",
         "securityagent:BatchGetPentests",
+        "securityagent:BatchGetCodeReviews",
         "securityagent:BatchGetPentestJobContentMetadata",
         "securityagent:BatchGetPentestJobTasks",
+        "securityagent:BatchGetCodeReviewJobTasks",
         "securityagent:CreateDesignReview",
         "securityagent:CreatePentest",
+        "securityagent:CreateCodeReview",
         "securityagent:DeleteArtifact",
         "securityagent:GetArtifact",
         "securityagent:DeleteDesignReview",
@@ -114,13 +119,19 @@
         "securityagent:ListFindings",
         "securityagent:ListIntegratedResources",
         "securityagent:ListPentestJobsForPentest",
+        "securityagent:ListCodeReviewJobsForCodeReview",
         "securityagent:ListPentests",
+        "securityagent:ListCodeReviews",
         "securityagent:ListPentestJobTasks",
+        "securityagent:ListCodeReviewJobTasks",
         "securityagent:StartCodeRemediation",
         "securityagent:StartPentestJob",
+        "securityagent:StartCodeReviewJob",
         "securityagent:StopPentestJob",
+        "securityagent:StopCodeReviewJob",
         "securityagent:UpdateFinding",
         "securityagent:UpdatePentest",
+        "securityagent:UpdateCodeReview",
         "securityagent:GetDesignReviewFeedback",
         "securityagent:PutDesignReviewFeedback"
       ],

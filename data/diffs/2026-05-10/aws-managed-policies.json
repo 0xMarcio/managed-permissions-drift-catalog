@@ -1,0 +1,205 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:cloudwatch:PutMetricData"
+      ],
+      "display_name": "AWSAppConfigServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppConfigServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAppConfigServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aws-external-anthropic:ArchiveAgent",
+      "aws:allow_action:aws-external-anthropic:ArchiveEnvironment",
+      "aws:allow_action:aws-external-anthropic:ArchiveMemoryStore",
+      "aws:allow_action:aws-external-anthropic:ArchiveSession",
+      "aws:allow_action:aws-external-anthropic:ArchiveVault",
+      "aws:allow_action:aws-external-anthropic:AssumeConsole",
+      "aws:allow_action:aws-external-anthropic:CreateAgent",
+      "aws:allow_action:aws-external-anthropic:CreateEnvironment",
+      "aws:allow_action:aws-external-anthropic:CreateMemoryStore",
+      "aws:allow_action:aws-external-anthropic:CreateSession",
+      "aws:allow_action:aws-external-anthropic:CreateVault",
+      "aws:allow_action:aws-external-anthropic:DeleteEnvironment",
+      "aws:allow_action:aws-external-anthropic:DeleteMemoryStore",
+      "aws:allow_action:aws-external-anthropic:DeleteSession",
+      "aws:allow_action:aws-external-anthropic:DeleteVault",
+      "aws:allow_action:aws-external-anthropic:UpdateAgent",
+      "aws:allow_action:aws-external-anthropic:UpdateEnvironment",
+      "aws:allow_action:aws-external-anthropic:UpdateMemoryStore",
+      "aws:allow_action:aws-external-anthropic:UpdateSession",
+      "aws:allow_action:aws-external-anthropic:UpdateVault",
+      "aws:allow_action:cloudwatch:PutMetricData",
+      "aws:allow_action:securityagent:BatchDeleteCodeReviews",
+      "aws:allow_action:securityagent:BatchGetCodeReviewJobTasks",
+      "aws:allow_action:securityagent:BatchGetCodeReviewJobs",
+      "aws:allow_action:securityagent:BatchGetCodeReviews",
+      "aws:allow_action:securityagent:CreateCodeReview",
+      "aws:allow_action:securityagent:ListCodeReviewJobTasks",
+      "aws:allow_action:securityagent:ListCodeReviewJobsForCodeReview",
+      "aws:allow_action:securityagent:ListCodeReviews",
+      "aws:allow_action:securityagent:StartCodeReviewJob",
+      "aws:allow_action:securityagent:StopCodeReviewJob",
+      "aws:allow_action:securityagent:UpdateCodeReview"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aws-external-anthropic:ArchiveAgent",
+          "aws-external-anthropic:ArchiveEnvironment",
+          "aws-external-anthropic:ArchiveMemoryStore",
+          "aws-external-anthropic:ArchiveSession",
+          "aws-external-anthropic:ArchiveVault",
+          "aws-external-anthropic:AssumeConsole",
+          "aws-external-anthropic:CreateAgent",
+          "aws-external-anthropic:CreateEnvironment",
+          "aws-external-anthropic:CreateMemoryStore",
+          "aws-external-anthropic:CreateSession",
+          "aws-external-anthropic:CreateVault",
+          "aws-external-anthropic:DeleteEnvironment",
+          "aws-external-anthropic:DeleteMemoryStore",
+          "aws-external-anthropic:DeleteSession",
+          "aws-external-anthropic:DeleteVault",
+          "aws-external-anthropic:UpdateAgent",
+          "aws-external-anthropic:UpdateEnvironment",
+          "aws-external-anthropic:UpdateMemoryStore",
+          "aws-external-anthropic:UpdateSession",
+          "aws-external-anthropic:UpdateVault",
+          "cloudwatch:PutMetricData",
+          "securityagent:BatchDeleteCodeReviews",
+          "securityagent:BatchGetCodeReviewJobTasks",
+          "securityagent:BatchGetCodeReviewJobs",
+          "securityagent:BatchGetCodeReviews",
+          "securityagent:CreateCodeReview",
+          "securityagent:ListCodeReviewJobTasks",
+          "securityagent:ListCodeReviewJobsForCodeReview",
+          "securityagent:ListCodeReviews",
+          "securityagent:StartCodeReviewJob",
+          "securityagent:StopCodeReviewJob",
+          "securityagent:UpdateCodeReview"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AnthropicLimitedAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-external-anthropic:ArchiveAgent",
+              "aws-external-anthropic:ArchiveEnvironment",
+              "aws-external-anthropic:ArchiveMemoryStore",
+              "aws-external-anthropic:ArchiveSession",
+              "aws-external-anthropic:ArchiveVault",
+              "aws-external-anthropic:AssumeConsole",
+              "aws-external-anthropic:CreateAgent",
+              "aws-external-anthropic:CreateEnvironment",
+              "aws-external-anthropic:CreateMemoryStore",
+              "aws-external-anthropic:CreateSession",
+              "aws-external-anthropic:CreateVault",
+              "aws-external-anthropic:DeleteEnvironment",
+              "aws-external-anthropic:DeleteMemoryStore",
+              "aws-external-anthropic:DeleteSession",
+              "aws-external-anthropic:DeleteVault",
+              "aws-external-anthropic:UpdateAgent",
+              "aws-external-anthropic:UpdateEnvironment",
+              "aws-external-anthropic:UpdateMemoryStore",
+              "aws-external-anthropic:UpdateSession",
+              "aws-external-anthropic:UpdateVault"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 08, 2026, 22:27 UTC",
+          "before": "April 02, 2026, 20:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 08, 2026, 22:27 UTC",
+          "before": "April 02, 2026, 20:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+    },
+    {
+      "display_name": "AWSSecurityAgentWebAppPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "securityagent:BatchDeleteCodeReviews",
+              "securityagent:BatchGetCodeReviewJobTasks",
+              "securityagent:BatchGetCodeReviewJobs",
+              "securityagent:BatchGetCodeReviews",
+              "securityagent:CreateCodeReview",
+              "securityagent:ListCodeReviewJobTasks",
+              "securityagent:ListCodeReviewJobsForCodeReview",
+              "securityagent:ListCodeReviews",
+              "securityagent:StartCodeReviewJob",
+              "securityagent:StopCodeReviewJob",
+              "securityagent:UpdateCodeReview"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 08, 2026, 17:57 UTC",
+          "before": "March 20, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 08, 2026, 17:57 UTC",
+          "before": "March 20, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-10T04:36:08Z",
+  "counts": {
+    "added_atoms": 32,
+    "added_objects": 1,
+    "changed_objects": 2,
+    "current_objects": 1502,
+    "previous_objects": 1501,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-10",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-09",
+  "removed_objects": []
+}
