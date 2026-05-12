@@ -1,7 +1,7 @@
 {
   "dataset": "github-fgpat-permissions",
-  "generated_at_utc": "2026-05-07T04:32:39Z",
-  "object_count": 67,
+  "generated_at_utc": "2026-05-12T04:32:56Z",
+  "object_count": 71,
   "objects": [
     {
       "dataset": "github-fgpat-permissions",
@@ -11,7 +11,7 @@
       ],
       "description": "Organization permissions for \"Administration\" permission schema",
       "display_name": "Administration",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /organizations/{org}/settings/billing/budgets/{budget_id} -> write",
@@ -1029,11 +1029,257 @@
     {
       "dataset": "github-fgpat-permissions",
       "derived_atoms": [
+        "github:fgpat:organization:agent-secrets:read",
+        "github:fgpat:organization:agent-secrets:write"
+      ],
+      "description": "Organization permissions for \"Agent secrets\" permission schema",
+      "display_name": "Agent secrets",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
+      "grants_by_facet": {
+        "endpoints": [
+          "DELETE /orgs/{org}/agents/secrets/{secret_name} -> write",
+          "DELETE /orgs/{org}/agents/secrets/{secret_name}/repositories/{repository_id} -> write + additional permissions",
+          "GET /orgs/{org}/agents/secrets -> read",
+          "GET /orgs/{org}/agents/secrets/public-key -> read",
+          "GET /orgs/{org}/agents/secrets/{secret_name} -> read",
+          "GET /orgs/{org}/agents/secrets/{secret_name}/repositories -> read",
+          "PUT /orgs/{org}/agents/secrets/{secret_name} -> write",
+          "PUT /orgs/{org}/agents/secrets/{secret_name}/repositories -> write",
+          "PUT /orgs/{org}/agents/secrets/{secret_name}/repositories/{repository_id} -> write + additional permissions"
+        ],
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "additional_permissions_required": true,
+        "display_title": "Organization permissions for \"Agent secrets\"",
+        "domain": "organization",
+        "endpoint_records": [
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets",
+            "slug": "list-organization-secrets",
+            "subcategory": "secrets",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets/public-key",
+            "slug": "get-an-organization-public-key",
+            "subcategory": "secrets",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets/{secret_name}",
+            "slug": "get-an-organization-secret",
+            "subcategory": "secrets",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets/{secret_name}/repositories",
+            "slug": "list-selected-repositories-for-an-organization-secret",
+            "subcategory": "secrets",
+            "verb": "get"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets/{secret_name}",
+            "slug": "create-or-update-an-organization-secret",
+            "subcategory": "secrets",
+            "verb": "put"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets/{secret_name}",
+            "slug": "delete-an-organization-secret",
+            "subcategory": "secrets",
+            "verb": "delete"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets/{secret_name}/repositories",
+            "slug": "set-selected-repositories-for-an-organization-secret",
+            "subcategory": "secrets",
+            "verb": "put"
+          },
+          {
+            "access": "write",
+            "additional-permissions": true,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets/{secret_name}/repositories/{repository_id}",
+            "slug": "add-selected-repository-to-an-organization-secret",
+            "subcategory": "secrets",
+            "verb": "put"
+          },
+          {
+            "access": "write",
+            "additional-permissions": true,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/secrets/{secret_name}/repositories/{repository_id}",
+            "slug": "remove-selected-repository-from-an-organization-secret",
+            "subcategory": "secrets",
+            "verb": "delete"
+          }
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "2020097b3f1530e094a152218398288fb101ae247f6f455b5754ad2465b70c6e",
+      "restrictions_by_facet": {},
+      "source_revision": null,
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-agent-secrets",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-fgpat:organization:agent-secrets"
+    },
+    {
+      "dataset": "github-fgpat-permissions",
+      "derived_atoms": [
+        "github:fgpat:organization:agent-variables:read",
+        "github:fgpat:organization:agent-variables:write"
+      ],
+      "description": "Organization permissions for \"Agent variables\" permission schema",
+      "display_name": "Agent variables",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
+      "grants_by_facet": {
+        "endpoints": [
+          "DELETE /orgs/{org}/agents/variables/{name} -> write",
+          "DELETE /orgs/{org}/agents/variables/{name}/repositories/{repository_id} -> write + additional permissions",
+          "GET /orgs/{org}/agents/variables -> read",
+          "GET /orgs/{org}/agents/variables/{name} -> read",
+          "GET /orgs/{org}/agents/variables/{name}/repositories -> read",
+          "PATCH /orgs/{org}/agents/variables/{name} -> write",
+          "POST /orgs/{org}/agents/variables -> write",
+          "PUT /orgs/{org}/agents/variables/{name}/repositories -> write",
+          "PUT /orgs/{org}/agents/variables/{name}/repositories/{repository_id} -> write + additional permissions"
+        ],
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "additional_permissions_required": true,
+        "display_title": "Organization permissions for \"Agent variables\"",
+        "domain": "organization",
+        "endpoint_records": [
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables",
+            "slug": "list-organization-variables",
+            "subcategory": "variables",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables/{name}",
+            "slug": "get-an-organization-variable",
+            "subcategory": "variables",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables/{name}/repositories",
+            "slug": "list-selected-repositories-for-an-organization-variable",
+            "subcategory": "variables",
+            "verb": "get"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables",
+            "slug": "create-an-organization-variable",
+            "subcategory": "variables",
+            "verb": "post"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables/{name}",
+            "slug": "delete-an-organization-variable",
+            "subcategory": "variables",
+            "verb": "delete"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables/{name}",
+            "slug": "update-an-organization-variable",
+            "subcategory": "variables",
+            "verb": "patch"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables/{name}/repositories",
+            "slug": "set-selected-repositories-for-an-organization-variable",
+            "subcategory": "variables",
+            "verb": "put"
+          },
+          {
+            "access": "write",
+            "additional-permissions": true,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables/{name}/repositories/{repository_id}",
+            "slug": "add-selected-repository-to-an-organization-variable",
+            "subcategory": "variables",
+            "verb": "put"
+          },
+          {
+            "access": "write",
+            "additional-permissions": true,
+            "category": "agents",
+            "requestPath": "/orgs/{org}/agents/variables/{name}/repositories/{repository_id}",
+            "slug": "remove-selected-repository-from-an-organization-variable",
+            "subcategory": "variables",
+            "verb": "delete"
+          }
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "fcea3c938ddcefb7de775d0a4b9080c73b3e532de8eacb62fe4336a703a0044a",
+      "restrictions_by_facet": {},
+      "source_revision": null,
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-agent-variables",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-fgpat:organization:agent-variables"
+    },
+    {
+      "dataset": "github-fgpat-permissions",
+      "derived_atoms": [
         "github:fgpat:organization:api-insights:read"
       ],
       "description": "Organization permissions for \"API Insights\" permission schema",
       "display_name": "API Insights",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/insights/api/route-stats/{actor_type}/{actor_id} -> read",
@@ -1155,7 +1401,7 @@
       ],
       "description": "Organization permissions for \"Blocking users\" permission schema",
       "display_name": "Blocking users",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/blocks/{username} -> write",
@@ -1228,7 +1474,7 @@
       ],
       "description": "Organization permissions for \"Campaigns\" permission schema",
       "display_name": "Campaigns",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/campaigns/{campaign_number} -> write",
@@ -1311,7 +1557,7 @@
       ],
       "description": "Organization permissions for \"Copilot agent settings\" permission schema",
       "display_name": "Copilot agent settings",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/copilot/coding-agent/permissions/repositories/{repository_id} -> write + additional permissions",
@@ -1404,7 +1650,7 @@
       ],
       "description": "Organization permissions for \"Copilot content exclusion\" permission schema",
       "display_name": "Copilot content exclusion",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/copilot/content_exclusion -> read",
@@ -1457,7 +1703,7 @@
       ],
       "description": "Organization permissions for \"Copilot Spaces\" permission schema",
       "display_name": "Copilot Spaces",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/copilot-spaces/{space_number} -> write",
@@ -1589,7 +1835,7 @@
       ],
       "description": "Organization permissions for \"Custom organization roles\" permission schema",
       "display_name": "Custom organization roles",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/organization-roles -> read",
@@ -1642,7 +1888,7 @@
       ],
       "description": "Organization permissions for \"Custom properties\" permission schema",
       "display_name": "Custom properties",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/properties/schema/{custom_property_name} -> admin",
@@ -1745,7 +1991,7 @@
       ],
       "description": "Organization permissions for \"Events\" permission schema",
       "display_name": "Events",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /users/{username}/events/orgs/{org} -> read"
@@ -1787,7 +2033,7 @@
       ],
       "description": "Organization permissions for \"GitHub Copilot Business\" permission schema",
       "display_name": "GitHub Copilot Business",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/copilot-spaces/{space_number}/collaborators/{actor_type}/{actor_identifier} -> write",
@@ -1950,7 +2196,7 @@
       ],
       "description": "Organization permissions for \"Hosted runner custom images\" permission schema",
       "display_name": "Hosted runner custom images",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id} -> write",
@@ -2043,7 +2289,7 @@
       ],
       "description": "Organization permissions for \"Issue Fields\" permission schema",
       "display_name": "Issue Fields",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/issue-fields/{issue_field_id} -> write",
@@ -2116,7 +2362,7 @@
       ],
       "description": "Organization permissions for \"Issue Types\" permission schema",
       "display_name": "Issue Types",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/issue-types/{issue_type_id} -> write",
@@ -2189,7 +2435,7 @@
       ],
       "description": "Organization permissions for \"Members\" permission schema",
       "display_name": "Members",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/invitations/{invitation_id} -> write",
@@ -2812,7 +3058,7 @@
       ],
       "description": "Organization permissions for \"Network configurations\" permission schema",
       "display_name": "Network configurations",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/settings/network-configurations/{network_configuration_id} -> write",
@@ -2905,7 +3151,7 @@
       ],
       "description": "Organization permissions for \"Organization codespaces\" permission schema",
       "display_name": "Organization codespaces",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/members/{username}/codespaces/{codespace_name} -> write + additional permissions",
@@ -2978,7 +3224,7 @@
       ],
       "description": "Organization permissions for \"Organization codespaces secrets\" permission schema",
       "display_name": "Organization codespaces secrets",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/codespaces/secrets/{secret_name} -> write",
@@ -3100,7 +3346,7 @@
       ],
       "description": "Organization permissions for \"Organization codespaces settings\" permission schema",
       "display_name": "Organization codespaces settings",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/codespaces/access/selected_users -> write",
@@ -3161,7 +3407,7 @@
       ],
       "description": "Organization permissions for \"Organization Copilot metrics\" permission schema",
       "display_name": "Organization Copilot metrics",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/copilot/metrics/reports/organization-1-day -> read",
@@ -3233,7 +3479,7 @@
       ],
       "description": "Organization permissions for \"Organization dependabot secrets\" permission schema",
       "display_name": "Organization dependabot secrets",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/dependabot/secrets/{secret_name} -> write",
@@ -3356,7 +3602,7 @@
       ],
       "description": "Organization permissions for \"Organization private registries\" permission schema",
       "display_name": "Organization private registries",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/private-registries/{secret_name} -> write",
@@ -3449,7 +3695,7 @@
       ],
       "description": "Organization permissions for \"Projects\" permission schema",
       "display_name": "Projects",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/projectsV2/{project_number}/items/{item_id} -> write",
@@ -3612,7 +3858,7 @@
       ],
       "description": "Organization permissions for \"Secrets\" permission schema",
       "display_name": "Secrets",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/actions/secrets/{secret_name} -> write",
@@ -3735,7 +3981,7 @@
       ],
       "description": "Organization permissions for \"Self-hosted runners\" permission schema",
       "display_name": "Self-hosted runners",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/actions/runner-groups/{runner_group_id} -> write",
@@ -4028,7 +4274,7 @@
       ],
       "description": "Organization permissions for \"Variables\" permission schema",
       "display_name": "Variables",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/actions/variables/{name} -> write",
@@ -4151,7 +4397,7 @@
       ],
       "description": "Organization permissions for \"Webhooks\" permission schema",
       "display_name": "Webhooks",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/hooks/{hook_id} -> write",
@@ -4294,7 +4540,7 @@
       ],
       "description": "Repository permissions for \"Actions\" permission schema",
       "display_name": "Actions",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/actions/artifacts/{artifact_id} -> write",
@@ -4807,7 +5053,7 @@
       ],
       "description": "Repository permissions for \"Administration\" permission schema",
       "display_name": "Administration",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo} -> write + additional permissions",
@@ -6135,12 +6381,198 @@
     {
       "dataset": "github-fgpat-permissions",
       "derived_atoms": [
+        "github:fgpat:repository:agent-secrets:read",
+        "github:fgpat:repository:agent-secrets:write"
+      ],
+      "description": "Repository permissions for \"Agent secrets\" permission schema",
+      "display_name": "Agent secrets",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
+      "grants_by_facet": {
+        "endpoints": [
+          "DELETE /repos/{owner}/{repo}/agents/secrets/{secret_name} -> write",
+          "GET /repos/{owner}/{repo}/agents/organization-secrets -> read",
+          "GET /repos/{owner}/{repo}/agents/secrets -> read",
+          "GET /repos/{owner}/{repo}/agents/secrets/public-key -> read",
+          "GET /repos/{owner}/{repo}/agents/secrets/{secret_name} -> read",
+          "PUT /repos/{owner}/{repo}/agents/secrets/{secret_name} -> write"
+        ],
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "additional_permissions_required": false,
+        "display_title": "Repository permissions for \"Agent secrets\"",
+        "domain": "repository",
+        "endpoint_records": [
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/organization-secrets",
+            "slug": "list-repository-organization-secrets",
+            "subcategory": "secrets",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/secrets",
+            "slug": "list-repository-secrets",
+            "subcategory": "secrets",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/secrets/public-key",
+            "slug": "get-a-repository-public-key",
+            "subcategory": "secrets",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/secrets/{secret_name}",
+            "slug": "get-a-repository-secret",
+            "subcategory": "secrets",
+            "verb": "get"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/secrets/{secret_name}",
+            "slug": "create-or-update-a-repository-secret",
+            "subcategory": "secrets",
+            "verb": "put"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/secrets/{secret_name}",
+            "slug": "delete-a-repository-secret",
+            "subcategory": "secrets",
+            "verb": "delete"
+          }
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "1c75d9a8538b0b188faef193420a15d6a3ec821897b1e83f7825fe3794025a62",
+      "restrictions_by_facet": {},
+      "source_revision": null,
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-agent-secrets",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-fgpat:repository:agent-secrets"
+    },
+    {
+      "dataset": "github-fgpat-permissions",
+      "derived_atoms": [
+        "github:fgpat:repository:agent-variables:read",
+        "github:fgpat:repository:agent-variables:write"
+      ],
+      "description": "Repository permissions for \"Agent variables\" permission schema",
+      "display_name": "Agent variables",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
+      "grants_by_facet": {
+        "endpoints": [
+          "DELETE /repos/{owner}/{repo}/agents/variables/{name} -> write",
+          "GET /repos/{owner}/{repo}/agents/organization-variables -> read",
+          "GET /repos/{owner}/{repo}/agents/variables -> read",
+          "GET /repos/{owner}/{repo}/agents/variables/{name} -> read",
+          "PATCH /repos/{owner}/{repo}/agents/variables/{name} -> write",
+          "POST /repos/{owner}/{repo}/agents/variables -> write"
+        ],
+        "levels": [
+          "read",
+          "write"
+        ]
+      },
+      "kind": "permission_schema",
+      "metadata": {
+        "additional_permissions_required": false,
+        "display_title": "Repository permissions for \"Agent variables\"",
+        "domain": "repository",
+        "endpoint_records": [
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/organization-variables",
+            "slug": "list-repository-organization-variables",
+            "subcategory": "variables",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/variables",
+            "slug": "list-repository-variables",
+            "subcategory": "variables",
+            "verb": "get"
+          },
+          {
+            "access": "read",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/variables/{name}",
+            "slug": "get-a-repository-variable",
+            "subcategory": "variables",
+            "verb": "get"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/variables",
+            "slug": "create-a-repository-variable",
+            "subcategory": "variables",
+            "verb": "post"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/variables/{name}",
+            "slug": "delete-a-repository-variable",
+            "subcategory": "variables",
+            "verb": "delete"
+          },
+          {
+            "access": "write",
+            "additional-permissions": false,
+            "category": "agents",
+            "requestPath": "/repos/{owner}/{repo}/agents/variables/{name}",
+            "slug": "update-a-repository-variable",
+            "subcategory": "variables",
+            "verb": "patch"
+          }
+        ]
+      },
+      "platform": "github",
+      "raw_hash": "b47719365167df0280d3a70366c9d173b59ef18e7d75a495dd722373588b242a",
+      "restrictions_by_facet": {},
+      "source_revision": null,
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-agent-variables",
+      "source_version": "free-pro-team@latest",
+      "stable_id": "github-fgpat:repository:agent-variables"
+    },
+    {
+      "dataset": "github-fgpat-permissions",
+      "derived_atoms": [
         "github:fgpat:repository:artifact-metadata:read",
         "github:fgpat:repository:artifact-metadata:write"
       ],
       "description": "Repository permissions for \"Artifact metadata\" permission schema",
       "display_name": "Artifact metadata",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records -> read + additional permissions",
@@ -6223,7 +6655,7 @@
       ],
       "description": "Repository permissions for \"Attestations\" permission schema",
       "display_name": "Attestations",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/attestations/digest/{subject_digest} -> write",
@@ -6346,7 +6778,7 @@
       ],
       "description": "Repository permissions for \"Code scanning alerts\" permission schema",
       "display_name": "Code scanning alerts",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/code-scanning/analyses/{analysis_id} -> write",
@@ -6499,7 +6931,7 @@
       ],
       "description": "Repository permissions for \"Codespaces\" permission schema",
       "display_name": "Codespaces",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /orgs/{org}/members/{username}/codespaces/{codespace_name} -> write + additional permissions",
@@ -6672,7 +7104,7 @@
       ],
       "description": "Repository permissions for \"Codespaces lifecycle admin\" permission schema",
       "display_name": "Codespaces lifecycle admin",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /user/codespaces/{codespace_name}/exports/{export_id} -> read",
@@ -6754,7 +7186,7 @@
       ],
       "description": "Repository permissions for \"Codespaces metadata\" permission schema",
       "display_name": "Codespaces metadata",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /repos/{owner}/{repo}/codespaces/devcontainers -> read",
@@ -6815,7 +7247,7 @@
       ],
       "description": "Repository permissions for \"Codespaces secrets\" permission schema",
       "display_name": "Codespaces secrets",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/codespaces/secrets/{secret_name} -> write",
@@ -6897,7 +7329,7 @@
       ],
       "description": "Repository permissions for \"Commit statuses\" permission schema",
       "display_name": "Commit statuses",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /repos/{owner}/{repo}/commits/{ref}/status -> read",
@@ -6960,7 +7392,7 @@
       ],
       "description": "Repository permissions for \"Contents\" permission schema",
       "display_name": "Contents",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/code-scanning/codeql/databases/{language} -> write",
@@ -7847,7 +8279,7 @@
       ],
       "description": "Repository permissions for \"Custom properties\" permission schema",
       "display_name": "Custom properties",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "PATCH /repos/{owner}/{repo}/properties/values -> write"
@@ -7889,7 +8321,7 @@
       ],
       "description": "Repository permissions for \"Dependabot alerts\" permission schema",
       "display_name": "Dependabot alerts",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/dependabot/alerts -> read",
@@ -7962,7 +8394,7 @@
       ],
       "description": "Repository permissions for \"Dependabot secrets\" permission schema",
       "display_name": "Dependabot secrets",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/dependabot/secrets/{secret_name} -> write",
@@ -8045,7 +8477,7 @@
       ],
       "description": "Repository permissions for \"Deployments\" permission schema",
       "display_name": "Deployments",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/deployments/{deployment_id} -> write",
@@ -8158,7 +8590,7 @@
       ],
       "description": "Repository permissions for \"Environments\" permission schema",
       "display_name": "Environments",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/environments/{environment_name}/secrets/{secret_name} -> write",
@@ -8291,7 +8723,7 @@
       ],
       "description": "Repository permissions for \"Issues\" permission schema",
       "display_name": "Issues",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/issues/comments/{comment_id} -> write + additional permissions",
@@ -8903,7 +9335,7 @@
       ],
       "description": "Repository permissions for \"Metadata\" permission schema",
       "display_name": "Metadata",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/repos -> read",
@@ -9255,7 +9687,7 @@
       ],
       "description": "Repository permissions for \"Pages\" permission schema",
       "display_name": "Pages",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/pages -> write + additional permissions",
@@ -9408,7 +9840,7 @@
       ],
       "description": "Repository permissions for \"Pull requests\" permission schema",
       "display_name": "Pull requests",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/issues/comments/{comment_id} -> write + additional permissions",
@@ -10121,7 +10553,7 @@
       ],
       "description": "Repository permissions for \"Repository security advisories\" permission schema",
       "display_name": "Repository security advisories",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/security-advisories -> write",
@@ -10234,7 +10666,7 @@
       ],
       "description": "Repository permissions for \"Secret scanning alerts\" permission schema",
       "display_name": "Secret scanning alerts",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /orgs/{org}/secret-scanning/alerts -> read",
@@ -10327,7 +10759,7 @@
       ],
       "description": "Repository permissions for \"Secrets\" permission schema",
       "display_name": "Secrets",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/actions/secrets/{secret_name} -> write",
@@ -10420,7 +10852,7 @@
       ],
       "description": "Repository permissions for \"Variables\" permission schema",
       "display_name": "Variables",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/actions/variables/{name} -> write",
@@ -10513,7 +10945,7 @@
       ],
       "description": "Repository permissions for \"Webhooks\" permission schema",
       "display_name": "Webhooks",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/hooks/{hook_id} -> write",
@@ -10665,7 +11097,7 @@
       ],
       "description": "Repository permissions for \"Workflows\" permission schema",
       "display_name": "Workflows",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /repos/{owner}/{repo}/contents/{path} -> write + additional permissions",
@@ -10747,7 +11179,7 @@
       ],
       "description": "User permissions for \"Block another user\" permission schema",
       "display_name": "Block another user",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/blocks/{username} -> write",
@@ -10820,7 +11252,7 @@
       ],
       "description": "User permissions for \"Codespaces user secrets\" permission schema",
       "display_name": "Codespaces user secrets",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/codespaces/secrets/{secret_name} -> write",
@@ -10943,7 +11375,7 @@
       ],
       "description": "User permissions for \"Email addresses\" permission schema",
       "display_name": "Email addresses",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/emails -> write",
@@ -11026,7 +11458,7 @@
       ],
       "description": "User permissions for \"Followers\" permission schema",
       "display_name": "Followers",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/following/{username} -> write",
@@ -11108,7 +11540,7 @@
       ],
       "description": "User permissions for \"Gists\" permission schema",
       "display_name": "Gists",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /gists/{gist_id} -> write",
@@ -11230,7 +11662,7 @@
       ],
       "description": "User permissions for \"Git SSH keys\" permission schema",
       "display_name": "Git SSH keys",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/keys/{key_id} -> write",
@@ -11313,7 +11745,7 @@
       ],
       "description": "User permissions for \"GPG keys\" permission schema",
       "display_name": "GPG keys",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/gpg_keys/{gpg_key_id} -> write",
@@ -11386,7 +11818,7 @@
       ],
       "description": "User permissions for \"Interaction limits\" permission schema",
       "display_name": "Interaction limits",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/interaction-limits -> write",
@@ -11448,7 +11880,7 @@
       ],
       "description": "User permissions for \"Plan\" permission schema",
       "display_name": "Plan",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /users/{username}/settings/billing/premium_request/usage -> read",
@@ -11509,7 +11941,7 @@
       ],
       "description": "User permissions for \"Private repository invitations\" permission schema",
       "display_name": "Private repository invitations",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /repos/{owner}/{repo}/invitations -> read + additional permissions"
@@ -11550,7 +11982,7 @@
       ],
       "description": "User permissions for \"Profile\" permission schema",
       "display_name": "Profile",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/social_accounts -> write",
@@ -11612,7 +12044,7 @@
       ],
       "description": "User permissions for \"SSH signing keys\" permission schema",
       "display_name": "SSH signing keys",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/ssh_signing_keys/{ssh_signing_key_id} -> write",
@@ -11685,7 +12117,7 @@
       ],
       "description": "User permissions for \"Starring\" permission schema",
       "display_name": "Starring",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "DELETE /user/starred/{owner}/{repo} -> write + additional permissions",
@@ -11767,7 +12199,7 @@
       ],
       "description": "User permissions for \"Watching\" permission schema",
       "display_name": "Watching",
-      "fetched_at_utc": "2026-05-07T04:32:39Z",
+      "fetched_at_utc": "2026-05-12T04:32:56Z",
       "grants_by_facet": {
         "endpoints": [
           "GET /user/subscriptions -> read",

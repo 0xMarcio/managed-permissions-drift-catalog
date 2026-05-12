@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "Ug_KBtJ80uAlOxzLy0axY",
+  "buildId": "mXbXtPiSBztdBrmSqsrI4",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -1744,6 +1744,126 @@
             }
           ],
           "title": "Administration"
+        },
+        "agent_secrets": {
+          "displayTitle": "Repository permissions for \"Agent secrets\"",
+          "permissions": [
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/organization-secrets",
+              "slug": "list-repository-organization-secrets",
+              "subcategory": "secrets",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/secrets",
+              "slug": "list-repository-secrets",
+              "subcategory": "secrets",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/secrets/public-key",
+              "slug": "get-a-repository-public-key",
+              "subcategory": "secrets",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/secrets/{secret_name}",
+              "slug": "get-a-repository-secret",
+              "subcategory": "secrets",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/secrets/{secret_name}",
+              "slug": "create-or-update-a-repository-secret",
+              "subcategory": "secrets",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/secrets/{secret_name}",
+              "slug": "delete-a-repository-secret",
+              "subcategory": "secrets",
+              "verb": "delete"
+            }
+          ],
+          "title": "Agent secrets"
+        },
+        "agent_variables": {
+          "displayTitle": "Repository permissions for \"Agent variables\"",
+          "permissions": [
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/organization-variables",
+              "slug": "list-repository-organization-variables",
+              "subcategory": "variables",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/variables",
+              "slug": "list-repository-variables",
+              "subcategory": "variables",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/variables",
+              "slug": "create-a-repository-variable",
+              "subcategory": "variables",
+              "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/variables/{name}",
+              "slug": "get-a-repository-variable",
+              "subcategory": "variables",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/variables/{name}",
+              "slug": "update-a-repository-variable",
+              "subcategory": "variables",
+              "verb": "patch"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/repos/{owner}/{repo}/agents/variables/{name}",
+              "slug": "delete-a-repository-variable",
+              "subcategory": "variables",
+              "verb": "delete"
+            }
+          ],
+          "title": "Agent variables"
         },
         "artifact_metadata": {
           "displayTitle": "Repository permissions for \"Artifact metadata\"",
@@ -6092,6 +6212,180 @@
           ],
           "title": "Administration"
         },
+        "organization_agent_secrets": {
+          "displayTitle": "Organization permissions for \"Agent secrets\"",
+          "permissions": [
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets",
+              "slug": "list-organization-secrets",
+              "subcategory": "secrets",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets/public-key",
+              "slug": "get-an-organization-public-key",
+              "subcategory": "secrets",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets/{secret_name}",
+              "slug": "get-an-organization-secret",
+              "subcategory": "secrets",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets/{secret_name}",
+              "slug": "create-or-update-an-organization-secret",
+              "subcategory": "secrets",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets/{secret_name}",
+              "slug": "delete-an-organization-secret",
+              "subcategory": "secrets",
+              "verb": "delete"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets/{secret_name}/repositories",
+              "slug": "list-selected-repositories-for-an-organization-secret",
+              "subcategory": "secrets",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets/{secret_name}/repositories",
+              "slug": "set-selected-repositories-for-an-organization-secret",
+              "subcategory": "secrets",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets/{secret_name}/repositories/{repository_id}",
+              "slug": "add-selected-repository-to-an-organization-secret",
+              "subcategory": "secrets",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/secrets/{secret_name}/repositories/{repository_id}",
+              "slug": "remove-selected-repository-from-an-organization-secret",
+              "subcategory": "secrets",
+              "verb": "delete"
+            }
+          ],
+          "title": "Agent secrets"
+        },
+        "organization_agent_variables": {
+          "displayTitle": "Organization permissions for \"Agent variables\"",
+          "permissions": [
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables",
+              "slug": "list-organization-variables",
+              "subcategory": "variables",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables",
+              "slug": "create-an-organization-variable",
+              "subcategory": "variables",
+              "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables/{name}",
+              "slug": "get-an-organization-variable",
+              "subcategory": "variables",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables/{name}",
+              "slug": "update-an-organization-variable",
+              "subcategory": "variables",
+              "verb": "patch"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables/{name}",
+              "slug": "delete-an-organization-variable",
+              "subcategory": "variables",
+              "verb": "delete"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables/{name}/repositories",
+              "slug": "list-selected-repositories-for-an-organization-variable",
+              "subcategory": "variables",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables/{name}/repositories",
+              "slug": "set-selected-repositories-for-an-organization-variable",
+              "subcategory": "variables",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables/{name}/repositories/{repository_id}",
+              "slug": "add-selected-repository-to-an-organization-variable",
+              "subcategory": "variables",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "agents",
+              "requestPath": "/orgs/{org}/agents/variables/{name}/repositories/{repository_id}",
+              "slug": "remove-selected-repository-from-an-organization-variable",
+              "subcategory": "variables",
+              "verb": "delete"
+            }
+          ],
+          "title": "Agent variables"
+        },
         "organization_api_insights": {
           "displayTitle": "Organization permissions for \"API Insights\"",
           "permissions": [
@@ -9165,6 +9459,18 @@
           },
           {
             "contents": {
+              "href": "#organization-permissions-for-agent-secrets",
+              "title": "Organization permissions for \"Agent secrets\""
+            }
+          },
+          {
+            "contents": {
+              "href": "#organization-permissions-for-agent-variables",
+              "title": "Organization permissions for \"Agent variables\""
+            }
+          },
+          {
+            "contents": {
               "href": "#organization-permissions-for-blocking-users",
               "title": "Organization permissions for \"Blocking users\""
             }
@@ -9323,6 +9629,18 @@
             "contents": {
               "href": "#repository-permissions-for-administration",
               "title": "Repository permissions for \"Administration\""
+            }
+          },
+          {
+            "contents": {
+              "href": "#repository-permissions-for-agent-secrets",
+              "title": "Repository permissions for \"Agent secrets\""
+            }
+          },
+          {
+            "contents": {
+              "href": "#repository-permissions-for-agent-variables",
+              "title": "Repository permissions for \"Agent variables\""
             }
           },
           {
@@ -10216,6 +10534,22 @@
               ],
               "href": "/en/rest/agent-tasks",
               "title": "Agent tasks"
+            },
+            {
+              "childPages": [
+                {
+                  "childPages": [],
+                  "href": "/en/rest/agents/secrets",
+                  "title": "Secrets"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/agents/variables",
+                  "title": "Variables"
+                }
+              ],
+              "href": "/en/rest/agents",
+              "title": "REST endpoints for agents"
             },
             {
               "childPages": [

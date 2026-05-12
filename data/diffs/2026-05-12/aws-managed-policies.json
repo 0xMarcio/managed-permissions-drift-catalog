@@ -1,0 +1,88 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:AttachVolume",
+        "aws:allow_action:ec2:CreateSnapshot",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:CreateVolume",
+        "aws:allow_action:ec2:DetachVolume",
+        "aws:allow_action:ec2:EnableFastSnapshotRestores",
+        "aws:allow_action:ec2:ModifyVolume"
+      ],
+      "display_name": "AmazonEKSBlockStoragePolicyV2",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSBlockStoragePolicyV2.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEKSBlockStoragePolicyV2"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:autoscaling:DescribeTags",
+        "aws:allow_action:events:DeleteRule",
+        "aws:allow_action:events:DescribeRule",
+        "aws:allow_action:events:PutRule",
+        "aws:allow_action:events:PutTargets",
+        "aws:allow_action:events:RemoveTargets",
+        "aws:allow_action:tag:GetResources"
+      ],
+      "display_name": "AWSVPCFlowLogsServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSVPCFlowLogsServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSVPCFlowLogsServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:autoscaling:DescribeTags",
+      "aws:allow_action:ec2:AttachVolume",
+      "aws:allow_action:ec2:CreateSnapshot",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:CreateVolume",
+      "aws:allow_action:ec2:DetachVolume",
+      "aws:allow_action:ec2:EnableFastSnapshotRestores",
+      "aws:allow_action:ec2:ModifyVolume",
+      "aws:allow_action:events:DeleteRule",
+      "aws:allow_action:events:DescribeRule",
+      "aws:allow_action:events:PutRule",
+      "aws:allow_action:events:PutTargets",
+      "aws:allow_action:events:RemoveTargets",
+      "aws:allow_action:tag:GetResources"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "autoscaling:DescribeTags",
+          "ec2:AttachVolume",
+          "ec2:CreateSnapshot",
+          "ec2:CreateTags",
+          "ec2:CreateVolume",
+          "ec2:DetachVolume",
+          "ec2:EnableFastSnapshotRestores",
+          "ec2:ModifyVolume",
+          "events:DeleteRule",
+          "events:DescribeRule",
+          "events:PutRule",
+          "events:PutTargets",
+          "events:RemoveTargets",
+          "tag:GetResources"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-05-12T04:30:40Z",
+  "counts": {
+    "added_atoms": 14,
+    "added_objects": 2,
+    "changed_objects": 0,
+    "current_objects": 1504,
+    "previous_objects": 1502,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-12",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-10",
+  "removed_objects": []
+}

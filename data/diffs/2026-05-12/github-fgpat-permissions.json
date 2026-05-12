@@ -1,0 +1,116 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "github:fgpat:organization:agent-secrets:read",
+        "github:fgpat:organization:agent-secrets:write"
+      ],
+      "display_name": "Agent secrets",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-agent-secrets",
+      "stable_id": "github-fgpat:organization:agent-secrets"
+    },
+    {
+      "atoms_added": [
+        "github:fgpat:organization:agent-variables:read",
+        "github:fgpat:organization:agent-variables:write"
+      ],
+      "display_name": "Agent variables",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-agent-variables",
+      "stable_id": "github-fgpat:organization:agent-variables"
+    },
+    {
+      "atoms_added": [
+        "github:fgpat:repository:agent-secrets:read",
+        "github:fgpat:repository:agent-secrets:write"
+      ],
+      "display_name": "Agent secrets",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-agent-secrets",
+      "stable_id": "github-fgpat:repository:agent-secrets"
+    },
+    {
+      "atoms_added": [
+        "github:fgpat:repository:agent-variables:read",
+        "github:fgpat:repository:agent-variables:write"
+      ],
+      "display_name": "Agent variables",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-agent-variables",
+      "stable_id": "github-fgpat:repository:agent-variables"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "github:fgpat:organization:agent-secrets:read",
+      "github:fgpat:organization:agent-secrets:write",
+      "github:fgpat:organization:agent-variables:read",
+      "github:fgpat:organization:agent-variables:write",
+      "github:fgpat:repository:agent-secrets:read",
+      "github:fgpat:repository:agent-secrets:write",
+      "github:fgpat:repository:agent-variables:read",
+      "github:fgpat:repository:agent-variables:write"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /orgs/{org}/agents/secrets/{secret_name} -> write",
+          "DELETE /orgs/{org}/agents/secrets/{secret_name}/repositories/{repository_id} -> write + additional permissions",
+          "DELETE /orgs/{org}/agents/variables/{name} -> write",
+          "DELETE /orgs/{org}/agents/variables/{name}/repositories/{repository_id} -> write + additional permissions",
+          "DELETE /repos/{owner}/{repo}/agents/secrets/{secret_name} -> write",
+          "DELETE /repos/{owner}/{repo}/agents/variables/{name} -> write",
+          "GET /orgs/{org}/agents/secrets -> read",
+          "GET /orgs/{org}/agents/secrets/public-key -> read",
+          "GET /orgs/{org}/agents/secrets/{secret_name} -> read",
+          "GET /orgs/{org}/agents/secrets/{secret_name}/repositories -> read",
+          "GET /orgs/{org}/agents/variables -> read",
+          "GET /orgs/{org}/agents/variables/{name} -> read",
+          "GET /orgs/{org}/agents/variables/{name}/repositories -> read",
+          "GET /repos/{owner}/{repo}/agents/organization-secrets -> read",
+          "GET /repos/{owner}/{repo}/agents/organization-variables -> read",
+          "GET /repos/{owner}/{repo}/agents/secrets -> read",
+          "GET /repos/{owner}/{repo}/agents/secrets/public-key -> read",
+          "GET /repos/{owner}/{repo}/agents/secrets/{secret_name} -> read",
+          "GET /repos/{owner}/{repo}/agents/variables -> read",
+          "GET /repos/{owner}/{repo}/agents/variables/{name} -> read",
+          "PATCH /orgs/{org}/agents/variables/{name} -> write",
+          "PATCH /repos/{owner}/{repo}/agents/variables/{name} -> write",
+          "POST /orgs/{org}/agents/variables -> write",
+          "POST /repos/{owner}/{repo}/agents/variables -> write",
+          "PUT /orgs/{org}/agents/secrets/{secret_name} -> write",
+          "PUT /orgs/{org}/agents/secrets/{secret_name}/repositories -> write",
+          "PUT /orgs/{org}/agents/secrets/{secret_name}/repositories/{repository_id} -> write + additional permissions",
+          "PUT /orgs/{org}/agents/variables/{name}/repositories -> write",
+          "PUT /orgs/{org}/agents/variables/{name}/repositories/{repository_id} -> write + additional permissions",
+          "PUT /repos/{owner}/{repo}/agents/secrets/{secret_name} -> write"
+        ],
+        "grant:levels": [
+          "read",
+          "read",
+          "read",
+          "read",
+          "write",
+          "write",
+          "write",
+          "write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-05-12T04:30:40Z",
+  "counts": {
+    "added_atoms": 8,
+    "added_objects": 4,
+    "changed_objects": 0,
+    "current_objects": 71,
+    "previous_objects": 67,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-12",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-05-07",
+  "removed_objects": []
+}

@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="3171ff9d-8a7a-d86b-26f6-44e1af975c17" />
 	
-		<meta name="updated_at" content="2026-04-10T06:11:00Z" />
+		<meta name="updated_at" content="2026-05-11T17:19:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/storage.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/65b7b384f3e54b4da3ac62dc42afaffe676abea8/articles/role-based-access-control/built-in-roles/storage.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/8609a0d8e0c13f482781ebb0489da675dbbdad44/articles/role-based-access-control/built-in-roles/storage.md" />
 	
-		<meta name="git_commit_id" content="65b7b384f3e54b4da3ac62dc42afaffe676abea8" />
+		<meta name="git_commit_id" content="8609a0d8e0c13f482781ebb0489da675dbbdad44" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="9405" />
+		<meta name="word_count" content="9434" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/storage" />
 	
@@ -170,6 +170,10 @@
         "url": "https://github.com/rolyon"
       },
       {
+        "name": "codefinite-vri",
+        "url": "https://github.com/codefinite-vri"
+      },
+      {
         "name": "msmbaldwin",
         "url": "https://github.com/msmbaldwin"
       },
@@ -180,10 +184,6 @@
       {
         "name": "microzchang",
         "url": "https://github.com/microzchang"
-      },
-      {
-        "name": "codefinite-vri",
-        "url": "https://github.com/codefinite-vri"
       },
       {
         "name": "ArieHein",
@@ -1012,8 +1012,7 @@
 }
 </code></pre>
 <h2 id="azure-file-sync-administrator">Azure File Sync Administrator</h2>
-<p>Provides full access to manage all Azure File Sync (Storage Sync Service) resources.</p>
-<p>Includes an ABAC condition to constrain role assignments.</p>
+<p>Provides full access to manage all Azure File Sync (Storage Sync Service) resources. Also allows read/write access to all data contained in a storage account via access to storage account keys. Includes an ABAC condition to constrain role assignments.</p>
 <p><a href="/en-us/azure/storage/file-sync/file-sync-deployment-guide" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
 <table>
@@ -1113,8 +1112,8 @@
 <td></td>
 </tr>
 <tr>
-<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {c12c1c16-33a1-487b-954d-41c89c60f349, 69566ab7-960f-475b-8e7c-b3118f30c6bd, 17d1049b-9a84-46fb-8f53-869881c3d3ab}))</td>
-<td>Add role assignments for the following roles:<br>Reader and Data Access<br>Storage File Data Privileged Contributor<br>Storage Account Contributor</td>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR ((@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {c12c1c16-33a1-487b-954d-41c89c60f349, 69566ab7-960f-475b-8e7c-b3118f30c6bd, 17d1049b-9a84-46fb-8f53-869881c3d3ab}) AND (@Request[Microsoft.Authorization/roleAssignments:PrincipalType] StringEqualsIgnoreCase 'ServicePrincipal')))</td>
+<td>Add role assignments to service principals for the following roles:<br>Reader and Data Access<br>Storage File Data Privileged Contributor<br>Storage Account Contributor</td>
 </tr>
 </tbody>
 </table>
@@ -1149,7 +1148,7 @@
       "dataActions": [],
       "notDataActions": [],
       "conditionVersion": "2.0",
-      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {c12c1c16-33a1-487b-954d-41c89c60f349, 69566ab7-960f-475b-8e7c-b3118f30c6bd, 17d1049b-9a84-46fb-8f53-869881c3d3ab}))"
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR ((@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {c12c1c16-33a1-487b-954d-41c89c60f349, 69566ab7-960f-475b-8e7c-b3118f30c6bd, 17d1049b-9a84-46fb-8f53-869881c3d3ab}) AND (@Request[Microsoft.Authorization/roleAssignments:PrincipalType] StringEqualsIgnoreCase 'ServicePrincipal')))"
     }
   ],
   "roleName": "Azure File Sync Administrator",
