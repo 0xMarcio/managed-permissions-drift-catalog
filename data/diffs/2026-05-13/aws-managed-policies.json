@@ -1,0 +1,597 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aidevops:DescribeServices",
+      "aws:allow_action:airflow:*",
+      "aws:allow_action:airflow:CreateWebLoginToken",
+      "aws:allow_action:airflow:CreateWebLoginToken",
+      "aws:allow_action:airflow:GetEnvironment",
+      "aws:allow_action:airflow:GetEnvironment",
+      "aws:allow_action:airflow:InvokeRestApi",
+      "aws:allow_action:airflow:InvokeRestApi",
+      "aws:allow_action:airflow:ListEnvironments",
+      "aws:allow_action:airflow:ListEnvironments",
+      "aws:allow_action:ce:Get*",
+      "aws:allow_action:datazone:*Notebook*",
+      "aws:allow_action:datazone:CancelMessage",
+      "aws:allow_action:emr-serverless:*Resource",
+      "aws:allow_action:emr-serverless:*Resource",
+      "aws:allow_action:emr-serverless:*Session*",
+      "aws:allow_action:emr-serverless:Access*",
+      "aws:allow_action:emr-serverless:Access*Endpoints",
+      "aws:allow_action:emr-serverless:Get*",
+      "aws:allow_action:emr-serverless:Get*",
+      "aws:allow_action:emr-serverless:GetResourceDashboard",
+      "aws:allow_action:emr-serverless:List*",
+      "aws:allow_action:emr-serverless:List*",
+      "aws:allow_action:emr-serverless:Start*",
+      "aws:allow_action:emr-serverless:Start*",
+      "aws:allow_action:emr-serverless:TagResource",
+      "aws:allow_action:emr-serverless:Terminate*",
+      "aws:allow_action:emr-serverless:Terminate*",
+      "aws:allow_action:glue:*DataQuality*",
+      "aws:allow_action:glue:*DataQuality*",
+      "aws:allow_action:glue:*Resource",
+      "aws:allow_action:glue:*Resource",
+      "aws:allow_action:glue:ListDataQuality*",
+      "aws:allow_action:ram:AssociateResourceShare",
+      "aws:allow_action:ram:AssociateResourceShare",
+      "aws:allow_action:ram:AssociateResourceSharePermission",
+      "aws:allow_action:ram:AssociateResourceSharePermission",
+      "aws:allow_action:ram:CreateResourceShare",
+      "aws:allow_action:ram:CreateResourceShare",
+      "aws:allow_action:ram:DeleteResourceShare",
+      "aws:allow_action:ram:DeleteResourceShare",
+      "aws:allow_action:ram:DisassociateResourceShare",
+      "aws:allow_action:ram:DisassociateResourceShare",
+      "aws:allow_action:ram:Get*",
+      "aws:allow_action:ram:Get*",
+      "aws:allow_action:ram:List*",
+      "aws:allow_action:ram:List*",
+      "aws:deny_action:emr-serverless:*Dashboard*",
+      "aws:deny_action:emr-serverless:*Dashboard*",
+      "aws:deny_action:emr-serverless:*Dashboard*",
+      "aws:deny_action:emr-serverless:*Dashboard*",
+      "aws:deny_action:emr-serverless:*Resource",
+      "aws:deny_action:emr-serverless:*Resource",
+      "aws:deny_action:emr-serverless:*Resource",
+      "aws:deny_action:emr-serverless:*Resource",
+      "aws:deny_action:emr-serverless:*Session*",
+      "aws:deny_action:emr-serverless:*Session*",
+      "aws:deny_action:emr-serverless:*Session*",
+      "aws:deny_action:emr-serverless:*Session*"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aidevops:DescribeServices",
+          "airflow:*",
+          "airflow:CreateWebLoginToken",
+          "airflow:CreateWebLoginToken",
+          "airflow:GetEnvironment",
+          "airflow:GetEnvironment",
+          "airflow:InvokeRestApi",
+          "airflow:InvokeRestApi",
+          "airflow:ListEnvironments",
+          "airflow:ListEnvironments",
+          "ce:Get*",
+          "datazone:*Notebook*",
+          "datazone:CancelMessage",
+          "emr-serverless:*Resource",
+          "emr-serverless:*Resource",
+          "emr-serverless:*Session*",
+          "emr-serverless:Access*",
+          "emr-serverless:Access*Endpoints",
+          "emr-serverless:Get*",
+          "emr-serverless:Get*",
+          "emr-serverless:GetResourceDashboard",
+          "emr-serverless:List*",
+          "emr-serverless:List*",
+          "emr-serverless:Start*",
+          "emr-serverless:Start*",
+          "emr-serverless:TagResource",
+          "emr-serverless:Terminate*",
+          "emr-serverless:Terminate*",
+          "glue:*DataQuality*",
+          "glue:*DataQuality*",
+          "glue:*Resource",
+          "glue:*Resource",
+          "glue:ListDataQuality*",
+          "ram:AssociateResourceShare",
+          "ram:AssociateResourceShare",
+          "ram:AssociateResourceSharePermission",
+          "ram:AssociateResourceSharePermission",
+          "ram:CreateResourceShare",
+          "ram:CreateResourceShare",
+          "ram:DeleteResourceShare",
+          "ram:DeleteResourceShare",
+          "ram:DisassociateResourceShare",
+          "ram:DisassociateResourceShare",
+          "ram:Get*",
+          "ram:Get*",
+          "ram:List*",
+          "ram:List*"
+        ],
+        "restriction:deny_actions": [
+          "emr-serverless:*Dashboard*",
+          "emr-serverless:*Dashboard*",
+          "emr-serverless:*Dashboard*",
+          "emr-serverless:*Dashboard*",
+          "emr-serverless:*Resource",
+          "emr-serverless:*Resource",
+          "emr-serverless:*Resource",
+          "emr-serverless:*Resource",
+          "emr-serverless:*Session*",
+          "emr-serverless:*Session*",
+          "emr-serverless:*Session*",
+          "emr-serverless:*Session*"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "ce:GetAnomalyMonitors",
+          "ce:GetAnomalySubscriptions",
+          "datazone:CreateNotebook",
+          "datazone:DeleteNotebook",
+          "datazone:StartNotebookCompute",
+          "datazone:StartNotebookExport",
+          "datazone:StartNotebookImport",
+          "datazone:StopNotebookCompute",
+          "datazone:UpdateNotebook",
+          "emr-serverless:AccessLivyEndpoints",
+          "emr-serverless:AccessLivyEndpoints",
+          "emr-serverless:GetApplication",
+          "emr-serverless:GetApplication",
+          "emr-serverless:GetDashboardForJobRun",
+          "emr-serverless:GetDashboardForJobRun",
+          "emr-serverless:GetJobRun",
+          "emr-serverless:GetJobRun",
+          "emr-serverless:ListApplications",
+          "emr-serverless:ListApplications",
+          "emr-serverless:ListJobRunAttempts",
+          "emr-serverless:ListJobRunAttempts",
+          "emr-serverless:ListJobRuns",
+          "emr-serverless:ListJobRuns",
+          "emr-serverless:ListTagsForResource",
+          "emr-serverless:ListTagsForResource",
+          "emr-serverless:StartApplication",
+          "emr-serverless:StartApplication",
+          "emr-serverless:StartJobRun",
+          "emr-serverless:StartJobRun",
+          "glue:ListDataQualityResults",
+          "glue:ListDataQualityRuleRecommendationRuns",
+          "glue:ListDataQualityRulesetEvaluationRuns",
+          "glue:ListDataQualityRulesets",
+          "glue:TagResource",
+          "glue:TagResource",
+          "glue:UntagResource",
+          "glue:UntagResource"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:ce:GetAnomalyMonitors",
+      "aws:allow_action:ce:GetAnomalySubscriptions",
+      "aws:allow_action:datazone:CreateNotebook",
+      "aws:allow_action:datazone:DeleteNotebook",
+      "aws:allow_action:datazone:StartNotebookCompute",
+      "aws:allow_action:datazone:StartNotebookExport",
+      "aws:allow_action:datazone:StartNotebookImport",
+      "aws:allow_action:datazone:StopNotebookCompute",
+      "aws:allow_action:datazone:UpdateNotebook",
+      "aws:allow_action:emr-serverless:AccessLivyEndpoints",
+      "aws:allow_action:emr-serverless:AccessLivyEndpoints",
+      "aws:allow_action:emr-serverless:GetApplication",
+      "aws:allow_action:emr-serverless:GetApplication",
+      "aws:allow_action:emr-serverless:GetDashboardForJobRun",
+      "aws:allow_action:emr-serverless:GetDashboardForJobRun",
+      "aws:allow_action:emr-serverless:GetJobRun",
+      "aws:allow_action:emr-serverless:GetJobRun",
+      "aws:allow_action:emr-serverless:ListApplications",
+      "aws:allow_action:emr-serverless:ListApplications",
+      "aws:allow_action:emr-serverless:ListJobRunAttempts",
+      "aws:allow_action:emr-serverless:ListJobRunAttempts",
+      "aws:allow_action:emr-serverless:ListJobRuns",
+      "aws:allow_action:emr-serverless:ListJobRuns",
+      "aws:allow_action:emr-serverless:ListTagsForResource",
+      "aws:allow_action:emr-serverless:ListTagsForResource",
+      "aws:allow_action:emr-serverless:StartApplication",
+      "aws:allow_action:emr-serverless:StartApplication",
+      "aws:allow_action:emr-serverless:StartJobRun",
+      "aws:allow_action:emr-serverless:StartJobRun",
+      "aws:allow_action:glue:ListDataQualityResults",
+      "aws:allow_action:glue:ListDataQualityRuleRecommendationRuns",
+      "aws:allow_action:glue:ListDataQualityRulesetEvaluationRuns",
+      "aws:allow_action:glue:ListDataQualityRulesets",
+      "aws:allow_action:glue:TagResource",
+      "aws:allow_action:glue:TagResource",
+      "aws:allow_action:glue:UntagResource",
+      "aws:allow_action:glue:UntagResource"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ce:Get*"
+            ],
+            "removed": [
+              "ce:GetAnomalyMonitors",
+              "ce:GetAnomalySubscriptions"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 11, 2026, 21:12 UTC",
+          "before": "May 07, 2026, 00:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 11, 2026, 21:12 UTC",
+          "before": "May 07, 2026, 00:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "AIDevOpsAgentFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:DescribeServices"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 11, 2026, 21:12 UTC",
+          "before": "March 26, 2026, 03:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 11, 2026, 21:12 UTC",
+          "before": "March 26, 2026, 03:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "airflow:CreateWebLoginToken",
+              "airflow:GetEnvironment",
+              "airflow:InvokeRestApi",
+              "airflow:ListEnvironments",
+              "emr-serverless:*Resource",
+              "emr-serverless:Access*",
+              "emr-serverless:Get*",
+              "emr-serverless:List*",
+              "emr-serverless:Start*",
+              "emr-serverless:Terminate*",
+              "glue:*DataQuality*",
+              "glue:*Resource",
+              "ram:AssociateResourceShare",
+              "ram:AssociateResourceSharePermission",
+              "ram:CreateResourceShare",
+              "ram:DeleteResourceShare",
+              "ram:DisassociateResourceShare",
+              "ram:Get*",
+              "ram:List*"
+            ],
+            "removed": [
+              "emr-serverless:AccessLivyEndpoints",
+              "emr-serverless:GetApplication",
+              "emr-serverless:GetDashboardForJobRun",
+              "emr-serverless:GetJobRun",
+              "emr-serverless:ListApplications",
+              "emr-serverless:ListJobRunAttempts",
+              "emr-serverless:ListJobRuns",
+              "emr-serverless:ListTagsForResource",
+              "emr-serverless:StartApplication",
+              "emr-serverless:StartJobRun",
+              "glue:TagResource",
+              "glue:UntagResource"
+            ]
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-serverless:*Dashboard*",
+              "emr-serverless:*Resource",
+              "emr-serverless:*Session*"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v21 (default)",
+          "before": "v20 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 11, 2026, 20:42 UTC",
+          "before": "March 27, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 11, 2026, 20:42 UTC",
+          "before": "March 27, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 70,
+          "before": 66,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "airflow:*",
+              "ram:AssociateResourceShare",
+              "ram:AssociateResourceSharePermission",
+              "ram:CreateResourceShare",
+              "ram:DeleteResourceShare",
+              "ram:DisassociateResourceShare",
+              "ram:Get*",
+              "ram:List*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-serverless:*Dashboard*",
+              "emr-serverless:*Resource",
+              "emr-serverless:*Session*"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v18 (default)",
+          "before": "v17 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 11, 2026, 20:42 UTC",
+          "before": "March 27, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 11, 2026, 20:42 UTC",
+          "before": "March 27, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 49,
+          "before": 46,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "emr-serverless:*Session*",
+              "emr-serverless:GetResourceDashboard",
+              "emr-serverless:TagResource",
+              "glue:ListDataQuality*"
+            ],
+            "removed": [
+              "glue:ListDataQualityResults",
+              "glue:ListDataQualityRuleRecommendationRuns",
+              "glue:ListDataQualityRulesetEvaluationRuns",
+              "glue:ListDataQualityRulesets"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v67 (default)",
+          "before": "v66 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 11, 2026, 20:42 UTC",
+          "before": "April 23, 2026, 22:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 11, 2026, 20:42 UTC",
+          "before": "April 23, 2026, 22:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 162,
+          "before": 161,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "airflow:CreateWebLoginToken",
+              "airflow:GetEnvironment",
+              "airflow:InvokeRestApi",
+              "airflow:ListEnvironments",
+              "datazone:*Notebook*",
+              "datazone:CancelMessage",
+              "emr-serverless:*Resource",
+              "emr-serverless:Access*Endpoints",
+              "emr-serverless:Get*",
+              "emr-serverless:List*",
+              "emr-serverless:Start*",
+              "emr-serverless:Terminate*",
+              "glue:*DataQuality*",
+              "glue:*Resource"
+            ],
+            "removed": [
+              "datazone:CreateNotebook",
+              "datazone:DeleteNotebook",
+              "datazone:StartNotebookCompute",
+              "datazone:StartNotebookExport",
+              "datazone:StartNotebookImport",
+              "datazone:StopNotebookCompute",
+              "datazone:UpdateNotebook",
+              "emr-serverless:AccessLivyEndpoints",
+              "emr-serverless:GetApplication",
+              "emr-serverless:GetDashboardForJobRun",
+              "emr-serverless:GetJobRun",
+              "emr-serverless:ListApplications",
+              "emr-serverless:ListJobRunAttempts",
+              "emr-serverless:ListJobRuns",
+              "emr-serverless:ListTagsForResource",
+              "emr-serverless:StartApplication",
+              "emr-serverless:StartJobRun",
+              "glue:TagResource",
+              "glue:UntagResource"
+            ]
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-serverless:*Dashboard*",
+              "emr-serverless:*Resource",
+              "emr-serverless:*Session*"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v24 (default)",
+          "before": "v23 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 11, 2026, 20:42 UTC",
+          "before": "March 27, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 11, 2026, 20:42 UTC",
+          "before": "March 27, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 57,
+          "before": 58,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-serverless:*Dashboard*",
+              "emr-serverless:*Resource",
+              "emr-serverless:*Session*"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v18 (default)",
+          "before": "v17 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 11, 2026, 21:42 UTC",
+          "before": "March 27, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 11, 2026, 21:42 UTC",
+          "before": "March 27, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 34,
+          "before": 36,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-13T04:35:32Z",
+  "counts": {
+    "added_atoms": 59,
+    "added_objects": 0,
+    "changed_objects": 7,
+    "current_objects": 1504,
+    "previous_objects": 1504,
+    "removed_atoms": 37,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-13",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-12",
+  "removed_objects": []
+}

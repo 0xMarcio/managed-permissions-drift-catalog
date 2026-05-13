@@ -4,52 +4,52 @@ Daily drift catalog for AWS managed policies, Azure built-in roles, GCP predefin
 
 ## Latest drift
 
-- Refreshed: May 12, 2026 · [daily report](docs/daily/2026-05-12.md)
+- Refreshed: May 13, 2026 · [daily report](docs/daily/2026-05-13.md)
 
 ## Platform overview
 
 | Platform | Last 7 days | Last 30 days | Main recent driver |
 | --- | --- | --- | --- |
-| AWS | `+292` net · `+5` objects · `~16` objects · `+292` atoms · 5 active days | `+447` net · `+6` objects · `~45` objects · `+505` atoms · `-58` atoms · 17 active days | AWS managed policies (7d, last changed [May 12, 2026](data/diffs/2026-05-12/aws-managed-policies.json)) |
+| AWS | `+290` net · `+5` objects · `~23` objects · `+351` atoms · `-37` atoms · 6 active days | `+445` net · `+6` objects · `~52` objects · `+564` atoms · `-95` atoms · 18 active days | AWS managed policies (7d, last changed [May 13, 2026](data/diffs/2026-05-13/aws-managed-policies.json)) |
 | Azure | No movement | No movement | No movement |
-| GCP | `-19,893` net · `~1` object · `-9` objects · `-19,893` atoms · 1 active day | `-17,244` net · `+51` objects · `~172` objects · `-11` objects · `+2,697` atoms · `-19,941` atoms · 2 active days | GCP predefined roles (7d, last changed [May 8, 2026](data/diffs/2026-05-08/gcp-predefined-roles.json)) |
+| GCP | `-18,600` net · `+26` objects · `~202` objects · `-10` objects · `+1,355` atoms · `-19,955` atoms · 2 active days | `-15,951` net · `+77` objects · `~373` objects · `-12` objects · `+4,052` atoms · `-20,003` atoms · 3 active days | GCP predefined roles (7d, last changed [May 13, 2026](data/diffs/2026-05-13/gcp-predefined-roles.json)) |
 | GitHub | `+15` net · `+5` objects · `~1` object · `+10` atoms · 2 active days | `+19` net · `+7` objects · `~5` objects · `+13` atoms · 6 active days | GitHub fine-grained PAT permissions (7d, last changed [May 12, 2026](data/diffs/2026-05-12/github-fgpat-permissions.json)) |
 
 ## Dataset overview
 
 | Dataset | Inventory | Last changed | Last 7 days | Last 30 days | Files |
 | --- | ---: | --- | --- | --- | --- |
-| AWS managed policies | `1,504` | [May 12, 2026](data/diffs/2026-05-12/aws-managed-policies.json) | `+292` net · `+5` objects · `~16` objects · `+292` atoms · 5 active days | `+447` net · `+6` objects · `~45` objects · `+505` atoms · `-58` atoms · 17 active days | [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-05-12/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json) |
-| Azure built-in roles | `498` | No movement | No movement | No movement | [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-05-12/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json) |
-| GCP predefined roles | `2,284` | [May 8, 2026](data/diffs/2026-05-08/gcp-predefined-roles.json) | `-19,893` net · `~1` object · `-9` objects · `-19,893` atoms · 1 active day | `-17,244` net · `+51` objects · `~172` objects · `-11` objects · `+2,697` atoms · `-19,941` atoms · 2 active days | [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-05-12/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json) |
-| GitHub Actions default workflow settings | `6` | No movement | No movement | No movement | [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-05-12/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json) |
-| GitHub fine-grained PAT permissions | `71` | [May 12, 2026](data/diffs/2026-05-12/github-fgpat-permissions.json) | `+12` net · `+4` objects · `~1` object · `+8` atoms · 2 active days | `+15` net · `+5` objects · `~4` objects · `+10` atoms · 5 active days | [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-05-12/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json) |
-| GitHub GITHUB_TOKEN permissions | `17` | [May 12, 2026](data/diffs/2026-05-12/github-token-permissions.json) | `+3` net · `+1` object · `+2` atoms · 1 active day | `+4` net · `+2` objects · `~1` object · `+3` atoms · 2 active days | [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-05-12/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json) |
+| AWS managed policies | `1,504` | [May 13, 2026](data/diffs/2026-05-13/aws-managed-policies.json) | `+290` net · `+5` objects · `~23` objects · `+351` atoms · `-37` atoms · 6 active days | `+445` net · `+6` objects · `~52` objects · `+564` atoms · `-95` atoms · 18 active days | [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-05-13/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json) |
+| Azure built-in roles | `498` | No movement | No movement | No movement | [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-05-13/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json) |
+| GCP predefined roles | `2,309` | [May 13, 2026](data/diffs/2026-05-13/gcp-predefined-roles.json) | `-18,600` net · `+26` objects · `~202` objects · `-10` objects · `+1,355` atoms · `-19,955` atoms · 2 active days | `-15,951` net · `+77` objects · `~373` objects · `-12` objects · `+4,052` atoms · `-20,003` atoms · 3 active days | [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-05-13/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json) |
+| GitHub Actions default workflow settings | `6` | No movement | No movement | No movement | [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-05-13/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json) |
+| GitHub fine-grained PAT permissions | `71` | [May 12, 2026](data/diffs/2026-05-12/github-fgpat-permissions.json) | `+12` net · `+4` objects · `~1` object · `+8` atoms · 2 active days | `+15` net · `+5` objects · `~4` objects · `+10` atoms · 5 active days | [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-05-13/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json) |
+| GitHub GITHUB_TOKEN permissions | `17` | [May 12, 2026](data/diffs/2026-05-12/github-token-permissions.json) | `+3` net · `+1` object · `+2` atoms · 1 active day | `+4` net · `+2` objects · `~1` object · `+3` atoms · 2 active days | [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-05-13/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json) |
 
 ## Latest dataset movement
 
 ### AWS managed policies
 
 - Inventory: `1,504` objects.
-- Last 7 days: `+292` net · `+5` objects · `~16` objects · `+292` atoms · 5 active days.
-- Last 30 days: `+447` net · `+6` objects · `~45` objects · `+505` atoms · `-58` atoms · 17 active days.
-- Recent highlights: May 12, 2026: +2 objects, +14 atoms (`AWSVPCFlowLogsServiceRolePolicy` (+7 atoms)); May 10, 2026: +1 objects, ~2 changed, +32 atoms (`AWSAppConfigServiceRolePolicy` (+1 atoms), `AnthropicLimitedAccess` (+20)); May 9, 2026: +2 objects, ~3 changed, +32 atoms (`AWSMarketplaceDiscoveryFullAccess` (+9 atoms), `AWSMarketplaceRead-only` (+9)).
-- Files: [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-05-12/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json)
+- Last 7 days: `+290` net · `+5` objects · `~23` objects · `+351` atoms · `-37` atoms · 6 active days.
+- Last 30 days: `+445` net · `+6` objects · `~52` objects · `+564` atoms · `-95` atoms · 18 active days.
+- Recent highlights: May 13, 2026: ~7 changed, +59 atoms, -37 atoms (`SageMakerStudioUserIAMDefaultExecutionPolicy` (+17, -19)); May 12, 2026: +2 objects, +14 atoms (`AWSVPCFlowLogsServiceRolePolicy` (+7 atoms)); May 10, 2026: +1 objects, ~2 changed, +32 atoms (`AWSAppConfigServiceRolePolicy` (+1 atoms), `AnthropicLimitedAccess` (+20)).
+- Files: [snapshot](data/latest/aws-managed-policies.json) · [diff](data/diffs/2026-05-13/aws-managed-policies.json) · [reverse index](data/reverse-index/aws-managed-policies.json)
 
 ### Azure built-in roles
 
 - Inventory: `498` objects.
 - Last 7 days: No movement.
 - Last 30 days: No movement.
-- Files: [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-05-12/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json)
+- Files: [snapshot](data/latest/azure-built-in-roles.json) · [diff](data/diffs/2026-05-13/azure-built-in-roles.json) · [reverse index](data/reverse-index/azure-built-in-roles.json)
 
 ### GCP predefined roles
 
-- Inventory: `2,284` objects.
-- Last 7 days: `-19,893` net · `~1` object · `-9` objects · `-19,893` atoms · 1 active day.
-- Last 30 days: `-17,244` net · `+51` objects · `~172` objects · `-11` objects · `+2,697` atoms · `-19,941` atoms · 2 active days.
-- Recent highlights: May 8, 2026: ~1 changed, -9 removed, -19,893 atoms (`IAM Workforce Pool Editor` (metadata only), `Support User` (-6,286 atoms)).
-- Files: [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-05-12/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json)
+- Inventory: `2,309` objects.
+- Last 7 days: `-18,600` net · `+26` objects · `~202` objects · `-10` objects · `+1,355` atoms · `-19,955` atoms · 2 active days.
+- Last 30 days: `-15,951` net · `+77` objects · `~373` objects · `-12` objects · `+4,052` atoms · `-20,003` atoms · 3 active days.
+- Recent highlights: May 13, 2026: +26 objects, ~201 changed, -1 removed, +1,355 atoms, -62 atoms (`Gemini for Google Cloud Admin` (+100 atoms), `Security Admin` (+44)); May 8, 2026: ~1 changed, -9 removed, -19,893 atoms (`IAM Workforce Pool Editor` (metadata only), `Support User` (-6,286 atoms)).
+- Files: [snapshot](data/latest/gcp-predefined-roles.json) · [diff](data/diffs/2026-05-13/gcp-predefined-roles.json) · [reverse index](data/reverse-index/gcp-predefined-roles.json)
 
 ### GitHub fine-grained PAT permissions
 
@@ -57,7 +57,7 @@ Daily drift catalog for AWS managed policies, Azure built-in roles, GCP predefin
 - Last 7 days: `+12` net · `+4` objects · `~1` object · `+8` atoms · 2 active days.
 - Last 30 days: `+15` net · `+5` objects · `~4` objects · `+10` atoms · 5 active days.
 - Recent highlights: May 12, 2026: +4 objects, +8 atoms (`Agent secrets` (+2 atoms)); May 7, 2026: ~1 changed (`Actions` (+3)).
-- Files: [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-05-12/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json)
+- Files: [snapshot](data/latest/github-fgpat-permissions.json) · [diff](data/diffs/2026-05-13/github-fgpat-permissions.json) · [reverse index](data/reverse-index/github-fgpat-permissions.json)
 
 ### GitHub GITHUB_TOKEN permissions
 
@@ -65,11 +65,11 @@ Daily drift catalog for AWS managed policies, Azure built-in roles, GCP predefin
 - Last 7 days: `+3` net · `+1` object · `+2` atoms · 1 active day.
 - Last 30 days: `+4` net · `+2` objects · `~1` object · `+3` atoms · 2 active days.
 - Recent highlights: May 12, 2026: +1 objects, +2 atoms (`code-quality` (+2 atoms)).
-- Files: [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-05-12/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json)
+- Files: [snapshot](data/latest/github-token-permissions.json) · [diff](data/diffs/2026-05-13/github-token-permissions.json) · [reverse index](data/reverse-index/github-token-permissions.json)
 
 ### GitHub Actions default workflow settings
 
 - Inventory: `6` objects.
 - Last 7 days: No movement.
 - Last 30 days: No movement.
-- Files: [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-05-12/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json)
+- Files: [snapshot](data/latest/github-actions-default-workflow-settings.json) · [diff](data/diffs/2026-05-13/github-actions-default-workflow-settings.json) · [reverse index](data/reverse-index/github-actions-default-workflow-settings.json)

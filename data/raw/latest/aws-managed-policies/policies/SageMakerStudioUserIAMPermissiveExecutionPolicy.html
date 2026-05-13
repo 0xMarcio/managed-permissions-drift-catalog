@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 18, 2025, 17:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 27, 2026, 17:27 UTC</p>
+                <p><b>Edited time:</b>  May 11, 2026, 21:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioUserIAMPermissiveExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v17 (default)</p>
+        <p><b>Policy version:</b> v18 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -105,19 +105,29 @@
       "Resource" : "*"
     },
     <span>{</span>
-      "Sid" : "GlueSessionIsolation",
+      "Sid" : "DenyForeignSessionAccess",
       "Effect" : "Deny",
       "Action" : [
+        "athena:GetResourceDashboard",
+        "athena:GetSession",
+        "athena:GetSessionEndpoint",
+        "athena:GetSessionStatus",
+        "athena:StartSession",
+        "athena:TerminateSession",
+        "emr-serverless:*Session*",
+        "emr-serverless:*Dashboard*",
         "glue:CancelStatement",
         "glue:CreateSession",
         "glue:DeleteSession",
+        "glue:GetDashboardUrl",
         "glue:GetSession",
         "glue:GetStatement",
         "glue:RunStatement",
-        "glue:StopSession",
-        "glue:GetDashboardUrl"
+        "glue:StopSession"
       ],
       "Resource" : [
+        "arn:aws:athena:*:*:workgroup/*/session/*",
+        "arn:aws:emr-serverless:*:*:/applications/*/sessions/*",
         "arn:aws:glue:*:*:session/*"
       ],
       "Condition" : <span>{</span>
@@ -131,10 +141,17 @@
       "Sid" : "DenyTaggingUntaggingForeignSessions",
       "Effect" : "Deny",
       "Action" : [
+        "athena:TagResource",
+        "athena:UntagResource",
+        "emr-serverless:*Resource",
         "glue:TagResource",
         "glue:UntagResource"
       ],
-      "Resource" : "arn:aws:glue:*:*:session/*",
+      "Resource" : [
+        "arn:aws:athena:*:*:workgroup/*/session/*",
+        "arn:aws:emr-serverless:*:*:/applications/*/sessions/*",
+        "arn:aws:glue:*:*:session/*"
+      ],
       "Condition" : <span>{</span>
         "StringNotEquals" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneSessionOwner" : "$<span>{</span>aws:SourceIdentity}"
@@ -420,11 +437,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "datazone.*.amazonaws.com"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "kms:EncryptionContextKeys" : "aws:datazone:domainId"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "datazone.*.amazonaws.com"
         }
       }
     },
@@ -437,11 +454,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "s3.*.amazonaws.com"
-        },
         "Null" : <span>{</span>
           "kms:EncryptionContext:aws:s3:arn" : "false"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "s3.*.amazonaws.com"
         }
       }
     },
@@ -469,11 +486,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "secretsmanager.*.amazonaws.com"
-        },
         "Null" : <span>{</span>
           "kms:EncryptionContext:SecretARN" : "false"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "secretsmanager.*.amazonaws.com"
         }
       }
     },
@@ -490,11 +507,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "sagemaker.*.amazonaws.com"
-        },
         "Null" : <span>{</span>
           "kms:EncryptionContextKeys" : "false"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "sagemaker.*.amazonaws.com"
         }
       }
     },
@@ -519,9 +536,6 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "datazone.*.amazonaws.com"
-        },
         "ForAllValues:StringEquals" : <span>{</span>
           "kms:GrantOperations" : [
             "Encrypt",
@@ -534,6 +548,9 @@
             "RetireGrant",
             "CreateGrant"
           ]
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "datazone.*.amazonaws.com"
         }
       }
     },
@@ -548,11 +565,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "glue.*.amazonaws.com"
-        },
         "Null" : <span>{</span>
           "kms:EncryptionContextKeys" : "false"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "glue.*.amazonaws.com"
         }
       }
     },
@@ -566,11 +583,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "bedrock.*.amazonaws.com"
-        },
         "Null" : <span>{</span>
           "kms:EncryptionContextKeys" : "false"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "bedrock.*.amazonaws.com"
         }
       }
     },
@@ -582,12 +599,6 @@
       ],
       "Resource" : "arn:*:kms:*:*:key/*",
       "Condition" : <span>{</span>
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : "airflow-serverless.*.amazonaws.com"
-        },
-        "ForAnyValue:StringEquals" : <span>{</span>
-          "kms:EncryptionContextKeys" : "aws:airflow-serverless:workflow-arn"
-        },
         "ForAllValues:StringEquals" : <span>{</span>
           "kms:GrantOperations" : [
             "Decrypt",
@@ -596,6 +607,12 @@
             "GenerateDataKeyWithoutPlaintext",
             "RetireGrant"
           ]
+        },
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "kms:EncryptionContextKeys" : "aws:airflow-serverless:workflow-arn"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "airflow-serverless.*.amazonaws.com"
         }
       }
     },
@@ -642,41 +659,6 @@
       "Resource" : [
         "arn:aws:ec2:*:*:network-interface/*"
       ]
-    },
-    <span>{</span>
-      "Sid" : "AthenaSessionIsolation",
-      "Effect" : "Deny",
-      "Action" : [
-        "athena:StartSession",
-        "athena:GetSession",
-        "athena:TerminateSession",
-        "athena:GetSessionStatus",
-        "athena:GetSessionEndpoint",
-        "athena:GetResourceDashboard"
-      ],
-      "Resource" : [
-        "arn:aws:athena:*:*:workgroup/*/session/*"
-      ],
-      "Condition" : <span>{</span>
-        "StringNotEquals" : <span>{</span>
-          "aws:RequestTag/AmazonDataZoneSessionOwner" : "$<span>{</span>aws:SourceIdentity}",
-          "aws:ResourceTag/AmazonDataZoneSessionOwner" : "$<span>{</span>aws:SourceIdentity}"
-        }
-      }
-    },
-    <span>{</span>
-      "Sid" : "DenyTaggingUntaggingForeignAthenaSessions",
-      "Effect" : "Deny",
-      "Action" : [
-        "athena:TagResource",
-        "athena:UntagResource"
-      ],
-      "Resource" : "arn:aws:athena:*:*:workgroup/*/session/*",
-      "Condition" : <span>{</span>
-        "StringNotEquals" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneSessionOwner" : "$<span>{</span>aws:SourceIdentity}"
-        }
-      }
     }
   ]
 }</code></pre>
