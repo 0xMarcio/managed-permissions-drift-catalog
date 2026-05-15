@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: December 03, 2024, 15:36 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:59 UTC</p>
+                <p><b>Edited time:</b>  May 13, 2026, 18:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonAuroraDSQLFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonAuroraDSQLFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v15 (default)</p>
+        <p><b>Policy version:</b> v16 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -99,7 +99,12 @@
         "dsql:StartRestoreJob",
         "dsql:GetRestoreJob",
         "dsql:StopRestoreJob",
-        "dsql:InjectError"
+        "dsql:InjectError",
+        "dsql:CreateStream",
+        "dsql:DeleteStream",
+        "dsql:GetStream",
+        "dsql:ListStreams",
+        "dsql:UpdateStream"
       ],
       "Resource" : "*"
     },
@@ -134,6 +139,17 @@
           "kms:ViaService" : [
             "dsql.*.amazonaws.com"
           ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "PassRoleForChangeStreams",
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:PassedToService" : "dsql.amazonaws.com"
         }
       }
     },

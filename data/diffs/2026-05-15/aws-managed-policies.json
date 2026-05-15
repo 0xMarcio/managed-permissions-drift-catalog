@@ -1,0 +1,273 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudwatch:ListMetrics",
+      "aws:allow_action:datazone:*Message*",
+      "aws:allow_action:datazone:List*",
+      "aws:allow_action:datazone:Search*",
+      "aws:allow_action:dsql:CreateStream",
+      "aws:allow_action:dsql:CreateStream",
+      "aws:allow_action:dsql:DeleteStream",
+      "aws:allow_action:dsql:DeleteStream",
+      "aws:allow_action:dsql:GetStream",
+      "aws:allow_action:dsql:GetStream",
+      "aws:allow_action:dsql:GetStream",
+      "aws:allow_action:dsql:ListStreams",
+      "aws:allow_action:dsql:ListStreams",
+      "aws:allow_action:dsql:ListStreams",
+      "aws:allow_action:dsql:UpdateStream",
+      "aws:allow_action:dsql:UpdateStream",
+      "aws:allow_action:ec2:DescribeInstanceTypes",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:kinesis:DescribeStreamSummary",
+      "aws:allow_action:kinesis:ListStreams"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudwatch:ListMetrics",
+          "datazone:*Message*",
+          "datazone:List*",
+          "datazone:Search*",
+          "dsql:CreateStream",
+          "dsql:CreateStream",
+          "dsql:DeleteStream",
+          "dsql:DeleteStream",
+          "dsql:GetStream",
+          "dsql:GetStream",
+          "dsql:GetStream",
+          "dsql:ListStreams",
+          "dsql:ListStreams",
+          "dsql:ListStreams",
+          "dsql:UpdateStream",
+          "dsql:UpdateStream",
+          "ec2:DescribeInstanceTypes",
+          "iam:PassRole",
+          "iam:PassRole",
+          "kinesis:DescribeStreamSummary",
+          "kinesis:ListStreams"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "datazone:SendMessage"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:datazone:SendMessage"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:ListMetrics",
+              "dsql:CreateStream",
+              "dsql:DeleteStream",
+              "dsql:GetStream",
+              "dsql:ListStreams",
+              "dsql:UpdateStream",
+              "iam:PassRole",
+              "kinesis:DescribeStreamSummary",
+              "kinesis:ListStreams"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 13, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 13, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+    },
+    {
+      "display_name": "AmazonAuroraDSQLFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "dsql:CreateStream",
+              "dsql:DeleteStream",
+              "dsql:GetStream",
+              "dsql:ListStreams",
+              "dsql:UpdateStream",
+              "iam:PassRole"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 13, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 13, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 6,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLFullAccess"
+    },
+    {
+      "display_name": "AmazonAuroraDSQLReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "dsql:GetStream",
+              "dsql:ListStreams"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 13, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 13, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLReadOnlyAccess"
+    },
+    {
+      "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:*Message*",
+              "datazone:List*",
+              "datazone:Search*"
+            ],
+            "removed": [
+              "datazone:SendMessage"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v39 (default)",
+          "before": "v38 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 13, 2026, 20:12 UTC",
+          "before": "February 26, 2026, 21:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 13, 2026, 20:12 UTC",
+          "before": "February 26, 2026, 21:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+    },
+    {
+      "display_name": "AmazonEBSCSIDriverPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeInstanceTypes"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 13, 2026, 17:42 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 13, 2026, 17:42 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEBSCSIDriverPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-15T04:38:54Z",
+  "counts": {
+    "added_atoms": 21,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 1504,
+    "previous_objects": 1504,
+    "removed_atoms": 1,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-15",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-14",
+  "removed_objects": []
+}

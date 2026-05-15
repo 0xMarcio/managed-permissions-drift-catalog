@@ -40790,6 +40790,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk"
       },
       {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+      },
+      {
         "display_name": "AmazonCloudWatchRUMFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonCloudWatchRUMFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonCloudWatchRUMFullAccess"
@@ -56849,6 +56854,13 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
       }
     ],
+    "aws:allow_action:datazone:*Message*": [
+      {
+        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      }
+    ],
     "aws:allow_action:datazone:*Notebook*": [
       {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
@@ -58904,6 +58916,11 @@
     ],
     "aws:allow_action:datazone:List*": [
       {
+        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      },
+      {
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
@@ -59944,6 +59961,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
       }
     ],
+    "aws:allow_action:datazone:Search*": [
+      {
+        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      }
+    ],
     "aws:allow_action:datazone:SearchGroupProfiles": [
       {
         "display_name": "AmazonDataZoneFullUserAccess",
@@ -60130,11 +60154,6 @@
       }
     ],
     "aws:allow_action:datazone:SendMessage": [
-      {
-        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
-      },
       {
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
@@ -68425,6 +68444,18 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForRestores"
       }
     ],
+    "aws:allow_action:dsql:CreateStream": [
+      {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLFullAccess"
+      }
+    ],
     "aws:allow_action:dsql:DbConnect": [
       {
         "display_name": "AmazonAuroraDSQLConsoleFullAccess",
@@ -68472,6 +68503,18 @@
       }
     ],
     "aws:allow_action:dsql:DeleteClusterPolicy": [
+      {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLFullAccess"
+      }
+    ],
+    "aws:allow_action:dsql:DeleteStream": [
       {
         "display_name": "AmazonAuroraDSQLConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
@@ -68611,6 +68654,23 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForRestores"
       }
     ],
+    "aws:allow_action:dsql:GetStream": [
+      {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLFullAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:dsql:GetVpcEndpointServiceName": [
       {
         "display_name": "AmazonAuroraDSQLConsoleFullAccess",
@@ -68715,6 +68775,23 @@
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
+      }
+    ],
+    "aws:allow_action:dsql:ListStreams": [
+      {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLFullAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLReadOnlyAccess"
       }
     ],
     "aws:allow_action:dsql:ListTagsForResource": [
@@ -68959,6 +69036,18 @@
         "display_name": "AWSBackupServiceRolePolicyForRestores",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForRestores"
+      }
+    ],
+    "aws:allow_action:dsql:UpdateStream": [
+      {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLFullAccess"
       }
     ],
     "aws:allow_action:dsql:getCluster": [
@@ -82645,6 +82734,11 @@
         "display_name": "AWSElasticDisasterRecoveryRecoveryInstancePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticDisasterRecoveryRecoveryInstancePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSElasticDisasterRecoveryRecoveryInstancePolicy"
+      },
+      {
+        "display_name": "AmazonEBSCSIDriverPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEBSCSIDriverPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy"
       },
       {
         "display_name": "ROSACloudNetworkConfigOperatorPolicy",
@@ -141875,6 +141969,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonAugmentedAIIntegratedAPIAccess"
       },
       {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLFullAccess"
+      },
+      {
         "display_name": "AmazonBedrockFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockFullAccess"
@@ -157080,6 +157184,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
       },
       {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
+      },
+      {
         "display_name": "AmazonDynamoDBFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDynamoDBFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
@@ -157254,6 +157363,11 @@
         "display_name": "AWSResourceGroupsReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceGroupsReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSResourceGroupsReadOnlyAccess"
+      },
+      {
+        "display_name": "AmazonAuroraDSQLConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
       },
       {
         "display_name": "AmazonChimeFullAccess",
@@ -289990,7 +290104,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-14T04:34:05Z",
+  "generated_at_utc": "2026-05-15T04:38:54Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -299342,6 +299456,18 @@
       ]
     },
     {
+      "atom": "aws:allow_action:datazone:*Message*",
+      "object": {
+        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      },
+      "terms": [
+        "datazone:*Message*",
+        "aws:allow_action:datazone:*Message*"
+      ]
+    },
+    {
       "atom": "aws:allow_action:datazone:*Notebook*",
       "object": {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
@@ -299440,6 +299566,18 @@
     {
       "atom": "aws:allow_action:datazone:List*",
       "object": {
+        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      },
+      "terms": [
+        "datazone:List*",
+        "aws:allow_action:datazone:List*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:datazone:List*",
+      "object": {
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
@@ -299459,6 +299597,18 @@
       "terms": [
         "datazone:List*",
         "aws:allow_action:datazone:List*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:datazone:Search*",
+      "object": {
+        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      },
+      "terms": [
+        "datazone:Search*",
+        "aws:allow_action:datazone:Search*"
       ]
     },
     {
