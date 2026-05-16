@@ -1,0 +1,76 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ecs:DescribeTasks",
+      "aws:allow_action:ecs:ListClusters",
+      "aws:allow_action:ecs:ListTaskDefinitionFamilies",
+      "aws:allow_action:ecs:ListTasks"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ecs:DescribeTasks",
+          "ecs:ListClusters",
+          "ecs:ListTaskDefinitionFamilies",
+          "ecs:ListTasks"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSTrustedAdvisorServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ecs:DescribeTasks",
+              "ecs:ListClusters",
+              "ecs:ListTaskDefinitionFamilies",
+              "ecs:ListTasks"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 14, 2026, 21:42 UTC",
+          "before": "October 30, 2024, 16:52 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 14, 2026, 21:42 UTC",
+          "before": "October 30, 2024, 16:52 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTrustedAdvisorServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-16T04:28:44Z",
+  "counts": {
+    "added_atoms": 4,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1504,
+    "previous_objects": 1504,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-16",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-15",
+  "removed_objects": []
+}

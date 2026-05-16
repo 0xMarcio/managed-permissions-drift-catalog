@@ -1,0 +1,126 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "github:fgpat:repository:copilot-agent-settings:read"
+      ],
+      "display_name": "Copilot agent settings",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-copilot-agent-settings",
+      "stable_id": "github-fgpat:repository:copilot-agent-settings"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "github:fgpat:repository:copilot-agent-settings:read"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "GET /orgs/{org}/copilot/metrics/reports/user-teams-1-day -> read",
+          "GET /repos/{owner}/{repo}/copilot/cloud-agent/configuration -> read",
+          "PATCH /repos/{owner}/{repo}/releases/{release_id} -> write + additional permissions",
+          "PATCH /repos/{owner}/{repo}/releases/{release_id} -> write + additional permissions"
+        ],
+        "grant:levels": [
+          "read"
+        ]
+      },
+      "removed": {
+        "grant:endpoints": [
+          "DELETE /repos/{owner}/{repo}/pulls/{pull_number}/archive -> write",
+          "PATCH /repos/{owner}/{repo}/releases/{release_id} -> write",
+          "PUT /repos/{owner}/{repo}/pulls/{pull_number}/archive -> write"
+        ]
+      }
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Organization Copilot metrics",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /orgs/{org}/copilot/metrics/reports/user-teams-1-day -> read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-organization-copilot-metrics",
+      "stable_id": "github-fgpat:organization:organization-copilot-metrics"
+    },
+    {
+      "display_name": "Contents",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "PATCH /repos/{owner}/{repo}/releases/{release_id} -> write + additional permissions"
+            ],
+            "removed": [
+              "PATCH /repos/{owner}/{repo}/releases/{release_id} -> write"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-contents",
+      "stable_id": "github-fgpat:repository:contents"
+    },
+    {
+      "display_name": "Pull requests",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [],
+            "removed": [
+              "DELETE /repos/{owner}/{repo}/pulls/{pull_number}/archive -> write",
+              "PUT /repos/{owner}/{repo}/pulls/{pull_number}/archive -> write"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-pull-requests",
+      "stable_id": "github-fgpat:repository:pull-requests"
+    },
+    {
+      "display_name": "Workflows",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "PATCH /repos/{owner}/{repo}/releases/{release_id} -> write + additional permissions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-workflows",
+      "stable_id": "github-fgpat:repository:workflows"
+    }
+  ],
+  "compared_at_utc": "2026-05-16T04:28:44Z",
+  "counts": {
+    "added_atoms": 1,
+    "added_objects": 1,
+    "changed_objects": 4,
+    "current_objects": 72,
+    "previous_objects": 71,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-16",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-05-12",
+  "removed_objects": []
+}

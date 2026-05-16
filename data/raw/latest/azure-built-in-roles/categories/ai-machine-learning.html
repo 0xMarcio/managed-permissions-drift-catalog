@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="05bc9d15-de20-5a1d-6fd6-cb4fb443a5b3" />
 	
-		<meta name="updated_at" content="2026-04-10T06:11:00Z" />
+		<meta name="updated_at" content="2026-05-15T22:17:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/65b7b384f3e54b4da3ac62dc42afaffe676abea8/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/1e193179d0491e7f59fd31f85313780ef43b632b/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="git_commit_id" content="65b7b384f3e54b4da3ac62dc42afaffe676abea8" />
+		<meta name="git_commit_id" content="1e193179d0491e7f59fd31f85313780ef43b632b" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="7979" />
+		<meta name="word_count" content="7966" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/ai-machine-learning" />
 	
@@ -120,15 +120,15 @@
 	 
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/d6f38669-3d05-40f2-afd8-e49f7dd20884" data-source="generated" />
 	
-		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated" />
-	
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/16cd61cd-9ecf-429b-b494-91576c41f8e4" data-source="generated" />
+	
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated" />
 	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/55265cca-de9b-48dc-a77a-9047cc39a575" data-source="generated" />
 	
-		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d" data-source="generated" />
-	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/c4bdb33a-5524-4b66-b162-03f5621d7902" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d" data-source="generated" />
 	
 
 			<!-- assets and js globals -->
@@ -176,6 +176,10 @@
       {
         "name": "rolyon",
         "url": "https://github.com/rolyon"
+      },
+      {
+        "name": "sdgilley",
+        "url": "https://github.com/sdgilley"
       },
       {
         "name": "jenniferf-skc",
@@ -711,8 +715,8 @@
 		</nav>
 	
 					<div class="content"><p>This article lists the Azure built-in roles in the AI + machine learning category.</p>
-<h2 id="azure-ai-account-owner">Azure AI Account Owner</h2>
-<p>Grants full access to manage AI projects and accounts. Includes an ABAC condition to constrain role assignments. Grants conditional assignment of the Azure AI User role to other user principles. Applies for new Foundry resources.</p>
+<h2 id="foundry-account-owner">Foundry Account Owner</h2>
+<p>Grants full access to manage AI projects and accounts. Includes an ABAC condition to constrain role assignments. Grants conditional assignment of the Foundry User role to other user principles. Applies for new Foundry resources.</p>
 <p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
 <table>
@@ -833,7 +837,7 @@
 </tr>
 <tr>
 <td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))</td>
-<td>Add or remove role assignments for the following roles:<br>Azure AI User</td>
+<td>Add or remove role assignments for the following roles:<br>Foundry User</td>
 </tr>
 </tbody>
 </table>
@@ -842,7 +846,7 @@
   "assignableScopes": [
     "/"
   ],
-  "description": "Grants full access to manage AI projects and accounts. Grants conditional assignment of the Azure AI User role to other user principles.",
+  "description": "Grants full access to manage AI projects and accounts. Grants conditional assignment of the Foundry User role to other user principles.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/e47c6f54-e4a2-4754-9501-8e0985b135e1",
   "name": "e47c6f54-e4a2-4754-9501-8e0985b135e1",
   "permissions": [
@@ -876,7 +880,7 @@
       "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
     }
   ],
-  "roleName": "Azure AI Account Owner",
+  "roleName": "Foundry Account Owner",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
@@ -1875,7 +1879,7 @@
   "type": "Microsoft.Authorization/roleDefinitions"
 }
 </code></pre>
-<h2 id="azure-ai-owner">Azure AI Owner</h2>
+<h2 id="foundry-owner">Foundry Owner</h2>
 <p>Grants full to manage AI project and accounts. Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project. Applies for new Foundry resources.</p>
 <p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
@@ -2022,13 +2026,13 @@
       "notDataActions": []
     }
   ],
-  "roleName": "Azure AI Owner",
+  "roleName": "Foundry Owner",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
 </code></pre>
-<h2 id="azure-ai-project-manager">Azure AI Project Manager</h2>
-<p>Lets you perform developer actions and management actions on Foundry Projects. Includes an ABAC condition to constrain role assignments. Allows for making role assignments, but limited to Azure AI User role. Applies for new Foundry resources.</p>
+<h2 id="foundry-project-manager">Foundry Project Manager</h2>
+<p>Lets you perform developer actions and management actions on Foundry Projects. Includes an ABAC condition to constrain role assignments. Allows for making role assignments, but limited to Foundry User role. Applies for new Foundry resources.</p>
 <p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
 <table>
@@ -2105,7 +2109,7 @@
 </tr>
 <tr>
 <td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))</td>
-<td>Add or remove role assignments for the following roles:<br>Azure AI User</td>
+<td>Add or remove role assignments for the following roles:<br>Foundry User</td>
 </tr>
 </tbody>
 </table>
@@ -2139,12 +2143,12 @@
       "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
     }
   ],
-  "roleName": "Azure AI Project Manager",
+  "roleName": "Foundry Project Manager",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
 </code></pre>
-<h2 id="azure-ai-user">Azure AI User</h2>
+<h2 id="foundry-user">Foundry User</h2>
 <p>Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project.</p>
 <p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
@@ -2271,7 +2275,7 @@
       "notDataActions": []
     }
   ],
-  "roleName": "Azure AI User",
+  "roleName": "Foundry User",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
