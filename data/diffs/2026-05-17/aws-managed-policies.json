@@ -1,0 +1,75 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:GenerateDataKey"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "kms:Decrypt",
+          "kms:GenerateDataKey"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSServiceRoleForLogDeliveryPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "kms:Decrypt",
+              "kms:GenerateDataKey"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 15, 2026, 21:57 UTC",
+          "before": "January 16, 2025, 21:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 15, 2026, 21:57 UTC",
+          "before": "January 16, 2025, 21:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForLogDeliveryPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForLogDeliveryPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-17T04:41:17Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1504,
+    "previous_objects": 1504,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-17",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-16",
+  "removed_objects": []
+}
