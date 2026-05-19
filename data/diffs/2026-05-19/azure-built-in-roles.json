@@ -1,0 +1,100 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "azure:action:Microsoft.Authorization/*/read",
+        "azure:action:Microsoft.Cache/locations/checknameavailability/action",
+        "azure:action:Microsoft.Cache/locations/operationsStatus/read",
+        "azure:action:Microsoft.Cache/operations/read",
+        "azure:action:Microsoft.Cache/redisEnterprise/*",
+        "azure:action:Microsoft.Insights/alertRules/*",
+        "azure:action:Microsoft.ResourceHealth/availabilityStatuses/read",
+        "azure:action:Microsoft.Resources/deployments/*",
+        "azure:action:Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "display_name": "Azure Managed Redis Contributor",
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+      "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+    },
+    {
+      "atoms_added": [
+        "azure:action:Microsoft.Authorization/*/read",
+        "azure:action:Microsoft.Cache/locations/operationsStatus/read",
+        "azure:action:Microsoft.Cache/operations/read",
+        "azure:action:Microsoft.Cache/redisEnterprise/*/read",
+        "azure:action:Microsoft.Cache/redisEnterprise/read",
+        "azure:action:Microsoft.Insights/alertRules/read",
+        "azure:action:Microsoft.ResourceHealth/availabilityStatuses/read",
+        "azure:action:Microsoft.Resources/deployments/read",
+        "azure:action:Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "display_name": "Azure Managed Redis Reader",
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+      "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "azure:action:Microsoft.Authorization/*/read",
+      "azure:action:Microsoft.Authorization/*/read",
+      "azure:action:Microsoft.Cache/locations/checknameavailability/action",
+      "azure:action:Microsoft.Cache/locations/operationsStatus/read",
+      "azure:action:Microsoft.Cache/locations/operationsStatus/read",
+      "azure:action:Microsoft.Cache/operations/read",
+      "azure:action:Microsoft.Cache/operations/read",
+      "azure:action:Microsoft.Cache/redisEnterprise/*",
+      "azure:action:Microsoft.Cache/redisEnterprise/*/read",
+      "azure:action:Microsoft.Cache/redisEnterprise/read",
+      "azure:action:Microsoft.Insights/alertRules/*",
+      "azure:action:Microsoft.Insights/alertRules/read",
+      "azure:action:Microsoft.ResourceHealth/availabilityStatuses/read",
+      "azure:action:Microsoft.ResourceHealth/availabilityStatuses/read",
+      "azure:action:Microsoft.Resources/deployments/*",
+      "azure:action:Microsoft.Resources/deployments/read",
+      "azure:action:Microsoft.Resources/subscriptions/resourceGroups/read",
+      "azure:action:Microsoft.Resources/subscriptions/resourceGroups/read"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Cache/locations/checknameavailability/action",
+          "Microsoft.Cache/locations/operationsStatus/read",
+          "Microsoft.Cache/locations/operationsStatus/read",
+          "Microsoft.Cache/operations/read",
+          "Microsoft.Cache/operations/read",
+          "Microsoft.Cache/redisEnterprise/*",
+          "Microsoft.Cache/redisEnterprise/*/read",
+          "Microsoft.Cache/redisEnterprise/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Insights/alertRules/read",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-05-19T04:43:24Z",
+  "counts": {
+    "added_atoms": 18,
+    "added_objects": 2,
+    "changed_objects": 0,
+    "current_objects": 500,
+    "previous_objects": 498,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-19",
+  "dataset": "azure-built-in-roles",
+  "platform": "azure",
+  "previous_snapshot_date": "2026-05-16",
+  "removed_objects": []
+}

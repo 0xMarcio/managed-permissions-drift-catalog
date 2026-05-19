@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="b0b88386-5164-ad86-c007-f97bf4e9b82b" />
 	
-		<meta name="updated_at" content="2026-04-10T06:11:00Z" />
+		<meta name="updated_at" content="2026-05-18T17:10:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/databases.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/65b7b384f3e54b4da3ac62dc42afaffe676abea8/articles/role-based-access-control/built-in-roles/databases.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/634d71f82080d69202dcff0cafdca4e987c7cd72/articles/role-based-access-control/built-in-roles/databases.md" />
 	
-		<meta name="git_commit_id" content="65b7b384f3e54b4da3ac62dc42afaffe676abea8" />
+		<meta name="git_commit_id" content="634d71f82080d69202dcff0cafdca4e987c7cd72" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="2671" />
+		<meta name="word_count" content="3034" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/databases" />
 	
@@ -118,17 +118,17 @@
 	
 		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases?accept=text/markdown" />
 	 
-		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/cd668c2f-f5b3-4573-8ad1-019570e3e2db" data-source="generated" />
-	
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/cbe4ca68-43ac-4375-aba5-5945a6394c20" data-source="generated" />
 	
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated" />
 	
-		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/cc82e69d-afbe-4554-9f4c-6705fc860c42" data-source="generated" />
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/cd668c2f-f5b3-4573-8ad1-019570e3e2db" data-source="generated" />
 	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/ced846cc-6a3c-4c8f-9dfb-3de0e90e2742" data-source="generated" />
 	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/cc82e69d-afbe-4554-9f4c-6705fc860c42" data-source="generated" />
 	
 
 			<!-- assets and js globals -->
@@ -777,6 +777,214 @@
   "type": "Microsoft.Authorization/roleDefinitions"
 }
 </code></pre>
+<h2 id="azure-managed-redis-contributor">Azure Managed Redis Contributor</h2>
+<p>Create and manage Azure Managed Redis resources. Cannot read or write data stored in the cache.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/locations/operationsStatus/read</td>
+<td>View the status of a long running operation for which the 'AzureAsync' header was previously returned to the client</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/locations/checknameavailability/action</td>
+<td>Checks if a name is available for use with a new Redis Enterprise cache</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/operations/read</td>
+<td>Lists the operations that 'Microsoft.Cache' provider supports.</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/redisEnterprise/*</td>
+<td>Create and manage Azure Managed Redis resources</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
+<td>Gets the availability statuses for all resources in the specified scope</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets you manage Azure Managed Redis resources, but not access the data stored in them.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/3015e5ed-6856-4ab3-b2f0-b8492aa30ca6",
+  "name": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Cache/locations/operationsStatus/read",
+        "Microsoft.Cache/locations/checknameavailability/action",
+        "Microsoft.Cache/operations/read",
+        "Microsoft.Cache/redisEnterprise/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Managed Redis Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-managed-redis-reader">Azure Managed Redis Reader</h2>
+<p>Read Azure Managed Redis resources and their configuration. Cannot modify resources, retrieve access keys, or read data stored in the cache.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/locations/operationsStatus/read</td>
+<td>View the status of a long running operation for which the 'AzureAsync' header was previously returned to the client</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/operations/read</td>
+<td>Lists the operations that 'Microsoft.Cache' provider supports.</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/redisEnterprise/read</td>
+<td>View Azure Managed Redis resourceâs settings and configurations</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/redisEnterprise/*/read</td>
+<td>Gets or lists Azure Managed Redis resources</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/read</td>
+<td>Read a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
+<td>Gets the availability statuses for all resources in the specified scope</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/read</td>
+<td>Gets or lists deployments.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets you view Azure Managed Redis resources, but not modify them or access keys or access to the data stored in them.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/f287ba2f-f923-4464-a5bd-721c3951d32d",
+  "name": "f287ba2f-f923-4464-a5bd-721c3951d32d",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Cache/locations/operationsStatus/read",
+        "Microsoft.Cache/operations/read",
+        "Microsoft.Cache/redisEnterprise/read",
+        "Microsoft.Cache/redisEnterprise/*/read",
+        "Microsoft.Insights/alertRules/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Managed Redis Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
 <h2 id="cosmos-db-account-reader-role">Cosmos DB Account Reader Role</h2>
 <p>Can read Azure Cosmos DB account data. See <a href="#documentdb-account-contributor" data-linktype="self-bookmark">DocumentDB Account Contributor</a> for managing Azure Cosmos DB accounts.</p>
 <p><a href="/en-us/azure/cosmos-db/role-based-access-control" data-linktype="absolute-path">Learn more</a></p>
@@ -1414,7 +1622,7 @@
 }
 </code></pre>
 <h2 id="redis-cache-contributor">Redis Cache Contributor</h2>
-<p>Lets you manage Redis caches, but not access to them.</p>
+<p>Create and manage Azure Cache for Redis resources. Cannot read or write data stored in the cache.</p>
 <div class="mx-tableFixed">
 <table>
 <thead>
@@ -1434,7 +1642,7 @@
 </tr>
 <tr>
 <td><a href="../permissions/databases#microsoftcache" data-linktype="relative-path">Microsoft.Cache</a>/redis/*</td>
-<td>Create and manage Redis caches</td>
+<td>Create and manage Azure Cache for Redis resources</td>
 </tr>
 <tr>
 <td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>

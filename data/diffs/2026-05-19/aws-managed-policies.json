@@ -1,0 +1,195 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aidevops:DescribePrivateConnection",
+      "aws:allow_action:aidevops:DescribeServices",
+      "aws:allow_action:aidevops:GetAccountUsage",
+      "aws:allow_action:aidevops:GetAgentSpace",
+      "aws:allow_action:aidevops:GetAssociation",
+      "aws:allow_action:aidevops:GetBacklogTask",
+      "aws:allow_action:aidevops:GetKnowledgeItem",
+      "aws:allow_action:aidevops:GetOperatorApp",
+      "aws:allow_action:aidevops:GetRecommendation",
+      "aws:allow_action:aidevops:GetService",
+      "aws:allow_action:aidevops:ListAgentSpaces",
+      "aws:allow_action:aidevops:ListAssociations",
+      "aws:allow_action:aidevops:ListBacklogTasks",
+      "aws:allow_action:aidevops:ListChats",
+      "aws:allow_action:aidevops:ListExecutions",
+      "aws:allow_action:aidevops:ListGoals",
+      "aws:allow_action:aidevops:ListJournalRecords",
+      "aws:allow_action:aidevops:ListKnowledgeItemVersions",
+      "aws:allow_action:aidevops:ListKnowledgeItems",
+      "aws:allow_action:aidevops:ListPendingMessages",
+      "aws:allow_action:aidevops:ListPrivateConnections",
+      "aws:allow_action:aidevops:ListRecommendations",
+      "aws:allow_action:aidevops:ListServices",
+      "aws:allow_action:aidevops:ListTagsForResource",
+      "aws:allow_action:aidevops:ListWebhooks",
+      "aws:allow_action:aidevops:SearchServiceAccessibleResource",
+      "aws:allow_action:s3vectors:GetIndex",
+      "aws:allow_action:s3vectors:GetVectorBucket",
+      "aws:allow_action:s3vectors:GetVectorBucketPolicy",
+      "aws:allow_action:s3vectors:GetVectors",
+      "aws:allow_action:s3vectors:ListIndexes",
+      "aws:allow_action:s3vectors:ListVectorBuckets",
+      "aws:allow_action:s3vectors:ListVectors"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aidevops:DescribePrivateConnection",
+          "aidevops:DescribeServices",
+          "aidevops:GetAccountUsage",
+          "aidevops:GetAgentSpace",
+          "aidevops:GetAssociation",
+          "aidevops:GetBacklogTask",
+          "aidevops:GetKnowledgeItem",
+          "aidevops:GetOperatorApp",
+          "aidevops:GetRecommendation",
+          "aidevops:GetService",
+          "aidevops:ListAgentSpaces",
+          "aidevops:ListAssociations",
+          "aidevops:ListBacklogTasks",
+          "aidevops:ListChats",
+          "aidevops:ListExecutions",
+          "aidevops:ListGoals",
+          "aidevops:ListJournalRecords",
+          "aidevops:ListKnowledgeItemVersions",
+          "aidevops:ListKnowledgeItems",
+          "aidevops:ListPendingMessages",
+          "aidevops:ListPrivateConnections",
+          "aidevops:ListRecommendations",
+          "aidevops:ListServices",
+          "aidevops:ListTagsForResource",
+          "aidevops:ListWebhooks",
+          "aidevops:SearchServiceAccessibleResource",
+          "s3vectors:GetIndex",
+          "s3vectors:GetVectorBucket",
+          "s3vectors:GetVectorBucketPolicy",
+          "s3vectors:GetVectors",
+          "s3vectors:ListIndexes",
+          "s3vectors:ListVectorBuckets",
+          "s3vectors:ListVectors"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "ReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:DescribePrivateConnection",
+              "aidevops:DescribeServices",
+              "aidevops:GetAccountUsage",
+              "aidevops:GetAgentSpace",
+              "aidevops:GetAssociation",
+              "aidevops:GetBacklogTask",
+              "aidevops:GetKnowledgeItem",
+              "aidevops:GetOperatorApp",
+              "aidevops:GetRecommendation",
+              "aidevops:GetService",
+              "aidevops:ListAgentSpaces",
+              "aidevops:ListAssociations",
+              "aidevops:ListBacklogTasks",
+              "aidevops:ListChats",
+              "aidevops:ListExecutions",
+              "aidevops:ListGoals",
+              "aidevops:ListJournalRecords",
+              "aidevops:ListKnowledgeItemVersions",
+              "aidevops:ListKnowledgeItems",
+              "aidevops:ListPendingMessages",
+              "aidevops:ListPrivateConnections",
+              "aidevops:ListRecommendations",
+              "aidevops:ListServices",
+              "aidevops:ListTagsForResource",
+              "aidevops:ListWebhooks",
+              "aidevops:SearchServiceAccessibleResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v185 (default)",
+          "before": "v184 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 18, 2026, 15:42 UTC",
+          "before": "May 07, 2026, 16:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 18, 2026, 15:42 UTC",
+          "before": "May 07, 2026, 16:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+    },
+    {
+      "display_name": "SecurityAudit",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "s3vectors:GetIndex",
+              "s3vectors:GetVectorBucket",
+              "s3vectors:GetVectorBucketPolicy",
+              "s3vectors:GetVectors",
+              "s3vectors:ListIndexes",
+              "s3vectors:ListVectorBuckets",
+              "s3vectors:ListVectors"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v88 (default)",
+          "before": "v87 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 18, 2026, 15:42 UTC",
+          "before": "May 07, 2026, 16:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 18, 2026, 15:42 UTC",
+          "before": "May 07, 2026, 16:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+      "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+    }
+  ],
+  "compared_at_utc": "2026-05-19T04:43:24Z",
+  "counts": {
+    "added_atoms": 33,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1504,
+    "previous_objects": 1504,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-19",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-17",
+  "removed_objects": []
+}

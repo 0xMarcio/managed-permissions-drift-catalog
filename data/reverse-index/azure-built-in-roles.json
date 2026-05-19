@@ -1674,6 +1674,11 @@
         "stable_id": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
       },
       {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      },
+      {
         "display_name": "Azure Kubernetes Fleet Manager RBAC Reader",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/containers#azure-kubernetes-fleet-manager-rbac-reader",
         "stable_id": "30b27cfc-9c84-438e-b0ce-70e35255df80"
@@ -2612,6 +2617,11 @@
         "display_name": "Key Vault Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/security#key-vault-contributor",
         "stable_id": "f25e0fa2-a7c8-4377-a976-54943a77a395"
+      },
+      {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
       },
       {
         "display_name": "Automation Contributor",
@@ -4065,6 +4075,37 @@
         "stable_id": "41077137-e803-4205-871c-5a86e6a753b4"
       }
     ],
+    "azure:action:Microsoft.Cache/locations/checknameavailability/action": [
+      {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      }
+    ],
+    "azure:action:Microsoft.Cache/locations/operationsStatus/read": [
+      {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      },
+      {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
+      }
+    ],
+    "azure:action:Microsoft.Cache/operations/read": [
+      {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      },
+      {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
+      }
+    ],
     "azure:action:Microsoft.Cache/redis/*": [
       {
         "display_name": "Redis Cache Contributor",
@@ -4107,6 +4148,20 @@
         "stable_id": "b556d68e-0be0-4f35-a333-ad7ee1ce17ea"
       }
     ],
+    "azure:action:Microsoft.Cache/redisEnterprise/*": [
+      {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      }
+    ],
+    "azure:action:Microsoft.Cache/redisEnterprise/*/read": [
+      {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
+      }
+    ],
     "azure:action:Microsoft.Cache/redisEnterprise/privateEndpointConnections/read": [
       {
         "display_name": "Azure AI Enterprise Network Connection Approver",
@@ -4140,6 +4195,11 @@
         "display_name": "Azure AI Enterprise Network Connection Approver",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#azure-ai-enterprise-network-connection-approver",
         "stable_id": "b556d68e-0be0-4f35-a333-ad7ee1ce17ea"
+      },
+      {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
       }
     ],
     "azure:action:Microsoft.Cache/register/action": [
@@ -12422,6 +12482,11 @@
         "stable_id": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
       },
       {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      },
+      {
         "display_name": "API Management Service Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration#api-management-service-contributor",
         "stable_id": "312a565d-c81f-4fd8-895a-4e21e48d571c"
@@ -13094,6 +13159,11 @@
         "display_name": "Desktop Virtualization Host Pool Reader",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute#desktop-virtualization-host-pool-reader",
         "stable_id": "ceadfde2-b300-400a-ab7b-6143895aa822"
+      },
+      {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
       }
     ],
     "azure:action:Microsoft.Insights/autoscalesettings/*": [
@@ -20344,6 +20414,11 @@
         "stable_id": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b"
       },
       {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      },
+      {
         "display_name": "API Management Service Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration#api-management-service-contributor",
         "stable_id": "312a565d-c81f-4fd8-895a-4e21e48d571c"
@@ -20577,6 +20652,11 @@
         "display_name": "Azure Arc ScVmm VM Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/hybrid-multicloud#azure-arc-scvmm-vm-contributor",
         "stable_id": "e582369a-e17b-42a5-b10c-874c387c530b"
+      },
+      {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
       },
       {
         "display_name": "HDInsight on AKS Cluster Admin",
@@ -20872,6 +20952,11 @@
         "display_name": "Web Plan Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/web-and-mobile#web-plan-contributor",
         "stable_id": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b"
+      },
+      {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
       },
       {
         "display_name": "API Management Service Contributor",
@@ -22043,6 +22128,11 @@
         "stable_id": "eeaeda52-9324-47f6-8069-5d5bade478b2"
       },
       {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
+      },
+      {
         "display_name": "HDInsight on AKS Cluster Admin",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/analytics#hdinsight-on-aks-cluster-admin",
         "stable_id": "fd036e6b-1266-47a0-b0bb-a05d04831731"
@@ -23029,6 +23119,11 @@
         "stable_id": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b"
       },
       {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      },
+      {
         "display_name": "Azure Kubernetes Fleet Manager RBAC Reader",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/containers#azure-kubernetes-fleet-manager-rbac-reader",
         "stable_id": "30b27cfc-9c84-438e-b0ce-70e35255df80"
@@ -23932,6 +24027,11 @@
         "display_name": "Key Vault Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/security#key-vault-contributor",
         "stable_id": "f25e0fa2-a7c8-4377-a976-54943a77a395"
+      },
+      {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
       },
       {
         "display_name": "Automation Contributor",
@@ -35540,7 +35640,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-16T04:29:25Z",
+  "generated_at_utc": "2026-05-19T04:43:49Z",
   "platform": "azure",
   "wildcard_atoms": [
     {
@@ -37601,6 +37701,18 @@
         "display_name": "SRE Agent Standard User",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-standard-user",
         "stable_id": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
+      },
+      "terms": [
+        "Microsoft.Authorization/*/read",
+        "azure:action:Microsoft.Authorization/*/read"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.Authorization/*/read",
+      "object": {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
       },
       "terms": [
         "Microsoft.Authorization/*/read",
@@ -39866,6 +39978,18 @@
     {
       "atom": "azure:action:Microsoft.Authorization/*/read",
       "object": {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
+      },
+      "terms": [
+        "Microsoft.Authorization/*/read",
+        "azure:action:Microsoft.Authorization/*/read"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.Authorization/*/read",
+      "object": {
         "display_name": "Automation Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#automation-contributor",
         "stable_id": "f353d9bd-d4a6-484e-a77a-8050b599b867"
@@ -40485,6 +40609,30 @@
       "terms": [
         "Microsoft.Cache/redis/*",
         "azure:action:Microsoft.Cache/redis/*"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.Cache/redisEnterprise/*",
+      "object": {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
+      },
+      "terms": [
+        "Microsoft.Cache/redisEnterprise/*",
+        "azure:action:Microsoft.Cache/redisEnterprise/*"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.Cache/redisEnterprise/*/read",
+      "object": {
+        "display_name": "Azure Managed Redis Reader",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+        "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
+      },
+      "terms": [
+        "Microsoft.Cache/redisEnterprise/*/read",
+        "azure:action:Microsoft.Cache/redisEnterprise/*/read"
       ]
     },
     {
@@ -43241,6 +43389,18 @@
         "display_name": "SRE Agent Standard User",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-standard-user",
         "stable_id": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
+      },
+      "terms": [
+        "Microsoft.Insights/alertRules/*",
+        "azure:action:Microsoft.Insights/alertRules/*"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.Insights/alertRules/*",
+      "object": {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
       },
       "terms": [
         "Microsoft.Insights/alertRules/*",
@@ -47705,6 +47865,18 @@
         "display_name": "Web Plan Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/web-and-mobile#web-plan-contributor",
         "stable_id": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b"
+      },
+      "terms": [
+        "Microsoft.Resources/deployments/*",
+        "azure:action:Microsoft.Resources/deployments/*"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.Resources/deployments/*",
+      "object": {
+        "display_name": "Azure Managed Redis Contributor",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
+        "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
       },
       "terms": [
         "Microsoft.Resources/deployments/*",
