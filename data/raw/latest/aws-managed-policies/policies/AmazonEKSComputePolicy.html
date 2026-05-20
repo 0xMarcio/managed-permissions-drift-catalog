@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 01, 2024, 21:46 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 17, 2026, 21:27 UTC</p>
+                <p><b>Edited time:</b>  May 18, 2026, 21:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonEKSComputePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonEKSComputePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v6 (default)</p>
+        <p><b>Policy version:</b> v7 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -169,6 +169,11 @@
           "iam:AWSServiceName" : "spot.amazonaws.com"
         }
       }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "ec2:DescribeCapacityReservations",
+      "Resource" : "*"
     }
   ]
 }</code></pre>

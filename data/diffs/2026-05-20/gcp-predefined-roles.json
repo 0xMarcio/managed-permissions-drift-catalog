@@ -1,0 +1,1312 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "gcp:permission:alloydb.clusters.create",
+        "gcp:permission:alloydb.clusters.get",
+        "gcp:permission:alloydb.clusters.list",
+        "gcp:permission:alloydb.instances.create",
+        "gcp:permission:alloydb.instances.get",
+        "gcp:permission:alloydb.instances.list",
+        "gcp:permission:alloydb.operations.get",
+        "gcp:permission:backupdr.backupPlanAssociations.createForAlloydbCluster",
+        "gcp:permission:backupdr.backupPlanAssociations.deleteForAlloydbCluster",
+        "gcp:permission:backupdr.backupPlanAssociations.fetchForAlloydbCluster",
+        "gcp:permission:backupdr.backupPlanAssociations.getForAlloydbCluster",
+        "gcp:permission:backupdr.backupPlanAssociations.triggerBackupForAlloydbCluster",
+        "gcp:permission:backupdr.backupPlanAssociations.updateForAlloydbCluster",
+        "gcp:permission:backupdr.backupPlans.get",
+        "gcp:permission:backupdr.backupPlans.list",
+        "gcp:permission:backupdr.backupPlans.useForAlloydbCluster",
+        "gcp:permission:backupdr.backupVaults.get",
+        "gcp:permission:backupdr.backupVaults.list",
+        "gcp:permission:backupdr.bvbackups.useReadOnlyForAlloydbCluster",
+        "gcp:permission:backupdr.bvdataSources.useReadOnlyForAlloydbCluster",
+        "gcp:permission:backupdr.dataSourceReferences.fetchForAlloydbCluster",
+        "gcp:permission:backupdr.dataSourceReferences.getForAlloydbCluster",
+        "gcp:permission:backupdr.locations.list",
+        "gcp:permission:backupdr.operations.get",
+        "gcp:permission:backupdr.serviceConfig.initialize"
+      ],
+      "display_name": "AlloyDB Admin for BackupDR",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/alloydb#alloydb.backupDrAdmin",
+      "stable_id": "roles/alloydb.backupDrAdmin"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "gcp:permission:alloydb.clusters.create",
+      "gcp:permission:alloydb.clusters.get",
+      "gcp:permission:alloydb.clusters.list",
+      "gcp:permission:alloydb.instances.create",
+      "gcp:permission:alloydb.instances.get",
+      "gcp:permission:alloydb.instances.list",
+      "gcp:permission:alloydb.operations.get",
+      "gcp:permission:backupdr.backupPlanAssociations.createForAlloydbCluster",
+      "gcp:permission:backupdr.backupPlanAssociations.deleteForAlloydbCluster",
+      "gcp:permission:backupdr.backupPlanAssociations.fetchForAlloydbCluster",
+      "gcp:permission:backupdr.backupPlanAssociations.getForAlloydbCluster",
+      "gcp:permission:backupdr.backupPlanAssociations.triggerBackupForAlloydbCluster",
+      "gcp:permission:backupdr.backupPlanAssociations.updateForAlloydbCluster",
+      "gcp:permission:backupdr.backupPlans.get",
+      "gcp:permission:backupdr.backupPlans.list",
+      "gcp:permission:backupdr.backupPlans.useForAlloydbCluster",
+      "gcp:permission:backupdr.backupVaults.get",
+      "gcp:permission:backupdr.backupVaults.list",
+      "gcp:permission:backupdr.bvbackups.useReadOnlyForAlloydbCluster",
+      "gcp:permission:backupdr.bvdataSources.useReadOnlyForAlloydbCluster",
+      "gcp:permission:backupdr.dataSourceReferences.fetchForAlloydbCluster",
+      "gcp:permission:backupdr.dataSourceReferences.getForAlloydbCluster",
+      "gcp:permission:backupdr.locations.list",
+      "gcp:permission:backupdr.operations.get",
+      "gcp:permission:backupdr.serviceConfig.initialize",
+      "gcp:permission:chronicle.investigations.transitionReviewState",
+      "gcp:permission:chronicle.investigations.transitionReviewState",
+      "gcp:permission:compute.instances.resume",
+      "gcp:permission:compute.instances.suspend",
+      "gcp:permission:compute.orgRolloutPlans.create",
+      "gcp:permission:compute.orgRolloutPlans.create",
+      "gcp:permission:compute.orgRolloutPlans.create",
+      "gcp:permission:compute.orgRolloutPlans.delete",
+      "gcp:permission:compute.orgRolloutPlans.delete",
+      "gcp:permission:compute.orgRolloutPlans.delete",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.get",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRolloutPlans.list",
+      "gcp:permission:compute.orgRollouts.cancel",
+      "gcp:permission:compute.orgRollouts.cancel",
+      "gcp:permission:compute.orgRollouts.cancel",
+      "gcp:permission:compute.orgRollouts.delete",
+      "gcp:permission:compute.orgRollouts.delete",
+      "gcp:permission:compute.orgRollouts.delete",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.get",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.list",
+      "gcp:permission:compute.orgRollouts.pause",
+      "gcp:permission:compute.orgRollouts.pause",
+      "gcp:permission:compute.orgRollouts.pause",
+      "gcp:permission:compute.orgRollouts.resume",
+      "gcp:permission:compute.orgRollouts.resume",
+      "gcp:permission:compute.orgRollouts.resume",
+      "gcp:permission:dataplex.entryGroups.useGraphProfileAspect",
+      "gcp:permission:dataplex.entryGroups.useGraphProfileAspect",
+      "gcp:permission:dataplex.entryGroups.useGraphProfileAspect",
+      "gcp:permission:dataplex.entryGroups.useGraphProfileAspect",
+      "gcp:permission:dataplex.entryGroups.useGraphProfileAspect",
+      "gcp:permission:dataplex.entryGroups.useGraphProfileAspect",
+      "gcp:permission:dataplex.entryGroups.useGraphProfileAspect",
+      "gcp:permission:modelarmor.templates.useToStreamSanitizeModelResponse",
+      "gcp:permission:modelarmor.templates.useToStreamSanitizeModelResponse",
+      "gcp:permission:modelarmor.templates.useToStreamSanitizeModelResponse",
+      "gcp:permission:modelarmor.templates.useToStreamSanitizeModelResponse",
+      "gcp:permission:modelarmor.templates.useToStreamSanitizeUserPrompt",
+      "gcp:permission:modelarmor.templates.useToStreamSanitizeUserPrompt",
+      "gcp:permission:modelarmor.templates.useToStreamSanitizeUserPrompt",
+      "gcp:permission:modelarmor.templates.useToStreamSanitizeUserPrompt",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.create",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.delete",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.get",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.list",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update",
+      "gcp:permission:storage.featureConfigs.update"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:included_permissions": [
+          "alloydb.clusters.create",
+          "alloydb.clusters.get",
+          "alloydb.clusters.list",
+          "alloydb.instances.create",
+          "alloydb.instances.get",
+          "alloydb.instances.list",
+          "alloydb.operations.get",
+          "backupdr.backupPlanAssociations.createForAlloydbCluster",
+          "backupdr.backupPlanAssociations.deleteForAlloydbCluster",
+          "backupdr.backupPlanAssociations.fetchForAlloydbCluster",
+          "backupdr.backupPlanAssociations.getForAlloydbCluster",
+          "backupdr.backupPlanAssociations.triggerBackupForAlloydbCluster",
+          "backupdr.backupPlanAssociations.updateForAlloydbCluster",
+          "backupdr.backupPlans.get",
+          "backupdr.backupPlans.list",
+          "backupdr.backupPlans.useForAlloydbCluster",
+          "backupdr.backupVaults.get",
+          "backupdr.backupVaults.list",
+          "backupdr.bvbackups.useReadOnlyForAlloydbCluster",
+          "backupdr.bvdataSources.useReadOnlyForAlloydbCluster",
+          "backupdr.dataSourceReferences.fetchForAlloydbCluster",
+          "backupdr.dataSourceReferences.getForAlloydbCluster",
+          "backupdr.locations.list",
+          "backupdr.operations.get",
+          "backupdr.serviceConfig.initialize",
+          "chronicle.investigations.transitionReviewState",
+          "chronicle.investigations.transitionReviewState",
+          "compute.instances.resume",
+          "compute.instances.suspend",
+          "compute.orgRolloutPlans.create",
+          "compute.orgRolloutPlans.create",
+          "compute.orgRolloutPlans.create",
+          "compute.orgRolloutPlans.delete",
+          "compute.orgRolloutPlans.delete",
+          "compute.orgRolloutPlans.delete",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.get",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRolloutPlans.list",
+          "compute.orgRollouts.cancel",
+          "compute.orgRollouts.cancel",
+          "compute.orgRollouts.cancel",
+          "compute.orgRollouts.delete",
+          "compute.orgRollouts.delete",
+          "compute.orgRollouts.delete",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.get",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.list",
+          "compute.orgRollouts.pause",
+          "compute.orgRollouts.pause",
+          "compute.orgRollouts.pause",
+          "compute.orgRollouts.resume",
+          "compute.orgRollouts.resume",
+          "compute.orgRollouts.resume",
+          "dataplex.entryGroups.useGraphProfileAspect",
+          "dataplex.entryGroups.useGraphProfileAspect",
+          "dataplex.entryGroups.useGraphProfileAspect",
+          "dataplex.entryGroups.useGraphProfileAspect",
+          "dataplex.entryGroups.useGraphProfileAspect",
+          "dataplex.entryGroups.useGraphProfileAspect",
+          "dataplex.entryGroups.useGraphProfileAspect",
+          "modelarmor.templates.useToStreamSanitizeModelResponse",
+          "modelarmor.templates.useToStreamSanitizeModelResponse",
+          "modelarmor.templates.useToStreamSanitizeModelResponse",
+          "modelarmor.templates.useToStreamSanitizeModelResponse",
+          "modelarmor.templates.useToStreamSanitizeUserPrompt",
+          "modelarmor.templates.useToStreamSanitizeUserPrompt",
+          "modelarmor.templates.useToStreamSanitizeUserPrompt",
+          "modelarmor.templates.useToStreamSanitizeUserPrompt",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.create",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.delete",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.get",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.list",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update",
+          "storage.featureConfigs.update"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Chronicle API Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "chronicle.investigations.transitionReviewState"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#chronicle.admin",
+      "stable_id": "roles/chronicle.admin"
+    },
+    {
+      "display_name": "Chronicle API Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "chronicle.investigations.transitionReviewState"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#chronicle.editor",
+      "stable_id": "roles/chronicle.editor"
+    },
+    {
+      "display_name": "Cloud Composer API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/composer#composer.serviceAgent",
+      "stable_id": "roles/composer.serviceAgent"
+    },
+    {
+      "display_name": "Compute Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.create",
+              "compute.orgRolloutPlans.delete",
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.cancel",
+              "compute.orgRollouts.delete",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list",
+              "compute.orgRollouts.pause",
+              "compute.orgRollouts.resume"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/compute#compute.admin",
+      "stable_id": "roles/compute.admin"
+    },
+    {
+      "display_name": "Compute Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.create",
+              "compute.orgRolloutPlans.delete",
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.cancel",
+              "compute.orgRollouts.delete",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list",
+              "compute.orgRollouts.pause",
+              "compute.orgRollouts.resume"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/compute#compute.editor",
+      "stable_id": "roles/compute.editor"
+    },
+    {
+      "display_name": "Compute Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/compute#compute.viewer",
+      "stable_id": "roles/compute.viewer"
+    },
+    {
+      "display_name": "Data Catalog Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.useGraphProfileAspect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.admin",
+      "stable_id": "roles/datacatalog.admin"
+    },
+    {
+      "display_name": "DataCatalog EntryGroup Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.useGraphProfileAspect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner",
+      "stable_id": "roles/datacatalog.entryGroupOwner"
+    },
+    {
+      "display_name": "DataCatalog Entry Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.useGraphProfileAspect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.entryOwner",
+      "stable_id": "roles/datacatalog.entryOwner"
+    },
+    {
+      "display_name": "Cloud Dataflow Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent",
+      "stable_id": "roles/dataflow.serviceAgent"
+    },
+    {
+      "display_name": "Cloud Data Fusion API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datafusion#datafusion.serviceAgent",
+      "stable_id": "roles/datafusion.serviceAgent"
+    },
+    {
+      "display_name": "Datapipelines Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datapipelines#datapipelines.serviceAgent",
+      "stable_id": "roles/datapipelines.serviceAgent"
+    },
+    {
+      "display_name": "Dataplex Catalog Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.useGraphProfileAspect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.catalogAdmin",
+      "stable_id": "roles/dataplex.catalogAdmin"
+    },
+    {
+      "display_name": "Dataplex Catalog Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.useGraphProfileAspect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.catalogEditor",
+      "stable_id": "roles/dataplex.catalogEditor"
+    },
+    {
+      "display_name": "Dataplex Entry Group Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.useGraphProfileAspect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.entryGroupOwner",
+      "stable_id": "roles/dataplex.entryGroupOwner"
+    },
+    {
+      "display_name": "Dataplex Entry and EntryLink Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.useGraphProfileAspect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.entryOwner",
+      "stable_id": "roles/dataplex.entryOwner"
+    },
+    {
+      "display_name": "Cloud Dataplex Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.serviceAgent",
+      "stable_id": "roles/dataplex.serviceAgent"
+    },
+    {
+      "display_name": "Dataprep Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataprep#dataprep.serviceAgent",
+      "stable_id": "roles/dataprep.serviceAgent"
+    },
+    {
+      "display_name": "Dataproc Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent",
+      "stable_id": "roles/dataproc.serviceAgent"
+    },
+    {
+      "display_name": "DLP API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dlp#dlp.serviceAgent",
+      "stable_id": "roles/dlp.serviceAgent"
+    },
+    {
+      "display_name": "Firebase Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/firebase#firebase.admin",
+      "stable_id": "roles/firebase.admin"
+    },
+    {
+      "display_name": "Firebase Develop Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/firebase#firebase.developAdmin",
+      "stable_id": "roles/firebase.developAdmin"
+    },
+    {
+      "display_name": "Google Health API Admin",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Google Health API Admin",
+          "before": "Health Admin",
+          "field": "display_name"
+        },
+        {
+          "after": "Admin access to Google Health API resources.",
+          "before": "Admin access to Health resources.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/health#health.admin",
+      "stable_id": "roles/health.admin"
+    },
+    {
+      "display_name": "Google Health API Editor",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Google Health API Editor",
+          "before": "Health Editor",
+          "field": "display_name"
+        },
+        {
+          "after": "Edit access to Google Health API resources.",
+          "before": "Edit access to Health resources.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/health#health.editor",
+      "stable_id": "roles/health.editor"
+    },
+    {
+      "display_name": "Google Health API Viewer",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Google Health API Viewer",
+          "before": "Health Viewer",
+          "field": "display_name"
+        },
+        {
+          "after": "Read-only access to Google Health API resources.",
+          "before": "Read-only access to Health resources.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/health#health.viewer",
+      "stable_id": "roles/health.viewer"
+    },
+    {
+      "display_name": "Security Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.list",
+              "storage.featureConfigs.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityAdmin",
+      "stable_id": "roles/iam.securityAdmin"
+    },
+    {
+      "display_name": "Security Reviewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.list",
+              "storage.featureConfigs.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityReviewer",
+      "stable_id": "roles/iam.securityReviewer"
+    },
+    {
+      "display_name": "IAM Workforce Pool Editor",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Gives permission to edit workforce pools.",
+          "before": "Rights to edit a particular instance of a workforce pool.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.workforcePoolEditor",
+      "stable_id": "roles/iam.workforcePoolEditor"
+    },
+    {
+      "display_name": "AI Platform Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/ml#ml.serviceAgent",
+      "stable_id": "roles/ml.serviceAgent"
+    },
+    {
+      "display_name": "Model Armor Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.templates.useToStreamSanitizeModelResponse",
+              "modelarmor.templates.useToStreamSanitizeUserPrompt"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/modelarmor#modelarmor.admin",
+      "stable_id": "roles/modelarmor.admin"
+    },
+    {
+      "display_name": "Model Armor Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.templates.useToStreamSanitizeModelResponse",
+              "modelarmor.templates.useToStreamSanitizeUserPrompt"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/modelarmor#modelarmor.editor",
+      "stable_id": "roles/modelarmor.editor"
+    },
+    {
+      "display_name": "Model Armor User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.templates.useToStreamSanitizeModelResponse",
+              "modelarmor.templates.useToStreamSanitizeUserPrompt"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/modelarmor#modelarmor.user",
+      "stable_id": "roles/modelarmor.user"
+    },
+    {
+      "display_name": "Notebooks Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.admin",
+      "stable_id": "roles/notebooks.admin"
+    },
+    {
+      "display_name": "Notebooks Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.editor",
+      "stable_id": "roles/notebooks.editor"
+    },
+    {
+      "display_name": "Notebooks Legacy Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.create",
+              "compute.orgRolloutPlans.delete",
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.cancel",
+              "compute.orgRollouts.delete",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list",
+              "compute.orgRollouts.pause",
+              "compute.orgRollouts.resume"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin",
+      "stable_id": "roles/notebooks.legacyAdmin"
+    },
+    {
+      "display_name": "Notebooks Legacy Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.legacyViewer",
+      "stable_id": "roles/notebooks.legacyViewer"
+    },
+    {
+      "display_name": "Notebooks Runner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.runner",
+      "stable_id": "roles/notebooks.runner"
+    },
+    {
+      "display_name": "AI Platform Notebooks Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.serviceAgent",
+      "stable_id": "roles/notebooks.serviceAgent"
+    },
+    {
+      "display_name": "Notebooks Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.orgRolloutPlans.get",
+              "compute.orgRolloutPlans.list",
+              "compute.orgRollouts.get",
+              "compute.orgRollouts.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.viewer",
+      "stable_id": "roles/notebooks.viewer"
+    },
+    {
+      "display_name": "Security Center Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.templates.useToStreamSanitizeModelResponse",
+              "modelarmor.templates.useToStreamSanitizeUserPrompt"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/securitycenter#securitycenter.admin",
+      "stable_id": "roles/securitycenter.admin"
+    },
+    {
+      "display_name": "Storage Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/storage#storage.admin",
+      "stable_id": "roles/storage.admin"
+    },
+    {
+      "display_name": "Storage Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/storage#storage.editor",
+      "stable_id": "roles/storage.editor"
+    },
+    {
+      "display_name": "Storage Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/storage#storage.viewer",
+      "stable_id": "roles/storage.viewer"
+    },
+    {
+      "display_name": "Visual Inspection AI Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.featureConfigs.create",
+              "storage.featureConfigs.delete",
+              "storage.featureConfigs.get",
+              "storage.featureConfigs.list",
+              "storage.featureConfigs.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent",
+      "stable_id": "roles/visualinspection.serviceAgent"
+    },
+    {
+      "display_name": "Workstations Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.instances.resume",
+              "compute.instances.suspend"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/workstations#workstations.serviceAgent",
+      "stable_id": "roles/workstations.serviceAgent"
+    }
+  ],
+  "compared_at_utc": "2026-05-20T04:44:27Z",
+  "counts": {
+    "added_atoms": 179,
+    "added_objects": 1,
+    "changed_objects": 45,
+    "current_objects": 2310,
+    "previous_objects": 2309,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-20",
+  "dataset": "gcp-predefined-roles",
+  "platform": "gcp",
+  "previous_snapshot_date": "2026-05-13",
+  "removed_objects": []
+}

@@ -1,0 +1,396 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ec2:DescribeCapacityReservations",
+      "aws:allow_action:logs:DescribeLogGroups",
+      "aws:allow_action:logs:DescribeLogStreams",
+      "aws:allow_action:logs:GetLogEvents",
+      "aws:allow_action:wisdom:*",
+      "aws:deny_action:wisdom:DeleteAssistant",
+      "aws:deny_action:wisdom:DeleteKnowledgeBase"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ec2:DescribeCapacityReservations",
+          "logs:DescribeLogGroups",
+          "logs:DescribeLogStreams",
+          "logs:GetLogEvents",
+          "wisdom:*"
+        ],
+        "restriction:deny_actions": [
+          "wisdom:DeleteAssistant",
+          "wisdom:DeleteKnowledgeBase"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "wisdom:ActivateMessageTemplate",
+          "wisdom:CreateAIAgent",
+          "wisdom:CreateAIAgentVersion",
+          "wisdom:CreateAIGuardrail",
+          "wisdom:CreateAIGuardrailVersion",
+          "wisdom:CreateAIPrompt",
+          "wisdom:CreateAIPromptVersion",
+          "wisdom:CreateAssistant",
+          "wisdom:CreateContent",
+          "wisdom:CreateKnowledgeBase",
+          "wisdom:CreateMessageTemplate",
+          "wisdom:CreateMessageTemplateAttachment",
+          "wisdom:CreateMessageTemplateVersion",
+          "wisdom:CreateQuickResponse",
+          "wisdom:CreateSession",
+          "wisdom:DeactivateMessageTemplate",
+          "wisdom:DeleteAIAgent",
+          "wisdom:DeleteAIAgentVersion",
+          "wisdom:DeleteAIGuardrail",
+          "wisdom:DeleteAIGuardrailVersion",
+          "wisdom:DeleteAIPrompt",
+          "wisdom:DeleteAIPromptVersion",
+          "wisdom:DeleteContent",
+          "wisdom:DeleteMessageTemplate",
+          "wisdom:DeleteMessageTemplateAttachment",
+          "wisdom:DeleteQuickResponse",
+          "wisdom:GetAIAgent",
+          "wisdom:GetAIGuardrail",
+          "wisdom:GetAIPrompt",
+          "wisdom:GetAssistant",
+          "wisdom:GetContent",
+          "wisdom:GetImportJob",
+          "wisdom:GetKnowledgeBase",
+          "wisdom:GetMessageTemplate",
+          "wisdom:GetNextMessage",
+          "wisdom:GetQuickResponse",
+          "wisdom:GetRecommendations",
+          "wisdom:GetSession",
+          "wisdom:ListAIAgentVersions",
+          "wisdom:ListAIAgents",
+          "wisdom:ListAIGuardrailVersions",
+          "wisdom:ListAIGuardrails",
+          "wisdom:ListAIPromptVersions",
+          "wisdom:ListAIPrompts",
+          "wisdom:ListAssistantAssociations",
+          "wisdom:ListContentAssociations",
+          "wisdom:ListImportJobs",
+          "wisdom:ListMessageTemplateVersions",
+          "wisdom:ListMessageTemplates",
+          "wisdom:ListMessages",
+          "wisdom:ListQuickResponses",
+          "wisdom:ListTagsForResource",
+          "wisdom:NotifyRecommendationsReceived",
+          "wisdom:PutFeedback",
+          "wisdom:QueryAssistant",
+          "wisdom:RemoveAssistantAIAgent",
+          "wisdom:RenderMessageTemplate",
+          "wisdom:Retrieve",
+          "wisdom:SearchMessageTemplates",
+          "wisdom:SearchQuickResponses",
+          "wisdom:SendMessage",
+          "wisdom:StartContentUpload",
+          "wisdom:StartImportJob",
+          "wisdom:TagResource",
+          "wisdom:UntagResource",
+          "wisdom:UpdateAIAgent",
+          "wisdom:UpdateAIGuardrail",
+          "wisdom:UpdateAIPrompt",
+          "wisdom:UpdateAssistantAIAgent",
+          "wisdom:UpdateContent",
+          "wisdom:UpdateMessageTemplate",
+          "wisdom:UpdateMessageTemplateMetadata",
+          "wisdom:UpdateQuickResponse"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:wisdom:ActivateMessageTemplate",
+      "aws:allow_action:wisdom:CreateAIAgent",
+      "aws:allow_action:wisdom:CreateAIAgentVersion",
+      "aws:allow_action:wisdom:CreateAIGuardrail",
+      "aws:allow_action:wisdom:CreateAIGuardrailVersion",
+      "aws:allow_action:wisdom:CreateAIPrompt",
+      "aws:allow_action:wisdom:CreateAIPromptVersion",
+      "aws:allow_action:wisdom:CreateAssistant",
+      "aws:allow_action:wisdom:CreateContent",
+      "aws:allow_action:wisdom:CreateKnowledgeBase",
+      "aws:allow_action:wisdom:CreateMessageTemplate",
+      "aws:allow_action:wisdom:CreateMessageTemplateAttachment",
+      "aws:allow_action:wisdom:CreateMessageTemplateVersion",
+      "aws:allow_action:wisdom:CreateQuickResponse",
+      "aws:allow_action:wisdom:CreateSession",
+      "aws:allow_action:wisdom:DeactivateMessageTemplate",
+      "aws:allow_action:wisdom:DeleteAIAgent",
+      "aws:allow_action:wisdom:DeleteAIAgentVersion",
+      "aws:allow_action:wisdom:DeleteAIGuardrail",
+      "aws:allow_action:wisdom:DeleteAIGuardrailVersion",
+      "aws:allow_action:wisdom:DeleteAIPrompt",
+      "aws:allow_action:wisdom:DeleteAIPromptVersion",
+      "aws:allow_action:wisdom:DeleteContent",
+      "aws:allow_action:wisdom:DeleteMessageTemplate",
+      "aws:allow_action:wisdom:DeleteMessageTemplateAttachment",
+      "aws:allow_action:wisdom:DeleteQuickResponse",
+      "aws:allow_action:wisdom:GetAIAgent",
+      "aws:allow_action:wisdom:GetAIGuardrail",
+      "aws:allow_action:wisdom:GetAIPrompt",
+      "aws:allow_action:wisdom:GetAssistant",
+      "aws:allow_action:wisdom:GetContent",
+      "aws:allow_action:wisdom:GetImportJob",
+      "aws:allow_action:wisdom:GetKnowledgeBase",
+      "aws:allow_action:wisdom:GetMessageTemplate",
+      "aws:allow_action:wisdom:GetNextMessage",
+      "aws:allow_action:wisdom:GetQuickResponse",
+      "aws:allow_action:wisdom:GetRecommendations",
+      "aws:allow_action:wisdom:GetSession",
+      "aws:allow_action:wisdom:ListAIAgentVersions",
+      "aws:allow_action:wisdom:ListAIAgents",
+      "aws:allow_action:wisdom:ListAIGuardrailVersions",
+      "aws:allow_action:wisdom:ListAIGuardrails",
+      "aws:allow_action:wisdom:ListAIPromptVersions",
+      "aws:allow_action:wisdom:ListAIPrompts",
+      "aws:allow_action:wisdom:ListAssistantAssociations",
+      "aws:allow_action:wisdom:ListContentAssociations",
+      "aws:allow_action:wisdom:ListImportJobs",
+      "aws:allow_action:wisdom:ListMessageTemplateVersions",
+      "aws:allow_action:wisdom:ListMessageTemplates",
+      "aws:allow_action:wisdom:ListMessages",
+      "aws:allow_action:wisdom:ListQuickResponses",
+      "aws:allow_action:wisdom:ListTagsForResource",
+      "aws:allow_action:wisdom:NotifyRecommendationsReceived",
+      "aws:allow_action:wisdom:PutFeedback",
+      "aws:allow_action:wisdom:QueryAssistant",
+      "aws:allow_action:wisdom:RemoveAssistantAIAgent",
+      "aws:allow_action:wisdom:RenderMessageTemplate",
+      "aws:allow_action:wisdom:Retrieve",
+      "aws:allow_action:wisdom:SearchMessageTemplates",
+      "aws:allow_action:wisdom:SearchQuickResponses",
+      "aws:allow_action:wisdom:SendMessage",
+      "aws:allow_action:wisdom:StartContentUpload",
+      "aws:allow_action:wisdom:StartImportJob",
+      "aws:allow_action:wisdom:TagResource",
+      "aws:allow_action:wisdom:UntagResource",
+      "aws:allow_action:wisdom:UpdateAIAgent",
+      "aws:allow_action:wisdom:UpdateAIGuardrail",
+      "aws:allow_action:wisdom:UpdateAIPrompt",
+      "aws:allow_action:wisdom:UpdateAssistantAIAgent",
+      "aws:allow_action:wisdom:UpdateContent",
+      "aws:allow_action:wisdom:UpdateMessageTemplate",
+      "aws:allow_action:wisdom:UpdateMessageTemplateMetadata",
+      "aws:allow_action:wisdom:UpdateQuickResponse"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSElasticBeanstalkReadOnly",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "logs:DescribeLogGroups",
+              "logs:DescribeLogStreams",
+              "logs:GetLogEvents"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 19, 2026, 13:27 UTC",
+          "before": "January 22, 2021, 19:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 19, 2026, 13:27 UTC",
+          "before": "January 22, 2021, 19:02 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkReadOnly.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkReadOnly"
+    },
+    {
+      "display_name": "AmazonEKSComputePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeCapacityReservations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 18, 2026, 21:12 UTC",
+          "before": "April 17, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 18, 2026, 21:12 UTC",
+          "before": "April 17, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 8,
+          "before": 7,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSComputePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEKSComputePolicy"
+    },
+    {
+      "display_name": "AmazonConnectServiceLinkedRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "wisdom:*"
+            ],
+            "removed": [
+              "wisdom:ActivateMessageTemplate",
+              "wisdom:CreateAIAgent",
+              "wisdom:CreateAIAgentVersion",
+              "wisdom:CreateAIGuardrail",
+              "wisdom:CreateAIGuardrailVersion",
+              "wisdom:CreateAIPrompt",
+              "wisdom:CreateAIPromptVersion",
+              "wisdom:CreateAssistant",
+              "wisdom:CreateContent",
+              "wisdom:CreateKnowledgeBase",
+              "wisdom:CreateMessageTemplate",
+              "wisdom:CreateMessageTemplateAttachment",
+              "wisdom:CreateMessageTemplateVersion",
+              "wisdom:CreateQuickResponse",
+              "wisdom:CreateSession",
+              "wisdom:DeactivateMessageTemplate",
+              "wisdom:DeleteAIAgent",
+              "wisdom:DeleteAIAgentVersion",
+              "wisdom:DeleteAIGuardrail",
+              "wisdom:DeleteAIGuardrailVersion",
+              "wisdom:DeleteAIPrompt",
+              "wisdom:DeleteAIPromptVersion",
+              "wisdom:DeleteContent",
+              "wisdom:DeleteMessageTemplate",
+              "wisdom:DeleteMessageTemplateAttachment",
+              "wisdom:DeleteQuickResponse",
+              "wisdom:GetAIAgent",
+              "wisdom:GetAIGuardrail",
+              "wisdom:GetAIPrompt",
+              "wisdom:GetAssistant",
+              "wisdom:GetContent",
+              "wisdom:GetImportJob",
+              "wisdom:GetKnowledgeBase",
+              "wisdom:GetMessageTemplate",
+              "wisdom:GetNextMessage",
+              "wisdom:GetQuickResponse",
+              "wisdom:GetRecommendations",
+              "wisdom:GetSession",
+              "wisdom:ListAIAgentVersions",
+              "wisdom:ListAIAgents",
+              "wisdom:ListAIGuardrailVersions",
+              "wisdom:ListAIGuardrails",
+              "wisdom:ListAIPromptVersions",
+              "wisdom:ListAIPrompts",
+              "wisdom:ListAssistantAssociations",
+              "wisdom:ListContentAssociations",
+              "wisdom:ListImportJobs",
+              "wisdom:ListMessageTemplateVersions",
+              "wisdom:ListMessageTemplates",
+              "wisdom:ListMessages",
+              "wisdom:ListQuickResponses",
+              "wisdom:ListTagsForResource",
+              "wisdom:NotifyRecommendationsReceived",
+              "wisdom:PutFeedback",
+              "wisdom:QueryAssistant",
+              "wisdom:RemoveAssistantAIAgent",
+              "wisdom:RenderMessageTemplate",
+              "wisdom:Retrieve",
+              "wisdom:SearchMessageTemplates",
+              "wisdom:SearchQuickResponses",
+              "wisdom:SendMessage",
+              "wisdom:StartContentUpload",
+              "wisdom:StartImportJob",
+              "wisdom:TagResource",
+              "wisdom:UntagResource",
+              "wisdom:UpdateAIAgent",
+              "wisdom:UpdateAIGuardrail",
+              "wisdom:UpdateAIPrompt",
+              "wisdom:UpdateAssistantAIAgent",
+              "wisdom:UpdateContent",
+              "wisdom:UpdateMessageTemplate",
+              "wisdom:UpdateMessageTemplateMetadata",
+              "wisdom:UpdateQuickResponse"
+            ]
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "wisdom:DeleteAssistant",
+              "wisdom:DeleteKnowledgeBase"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v54 (default)",
+          "before": "v53 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 18, 2026, 21:12 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 18, 2026, 21:12 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 36,
+          "before": 35,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-20T04:44:27Z",
+  "counts": {
+    "added_atoms": 7,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1504,
+    "previous_objects": 1504,
+    "removed_atoms": 73,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-20",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-19",
+  "removed_objects": []
+}

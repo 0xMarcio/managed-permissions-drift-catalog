@@ -82,7 +82,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "meshconfig.googleapis.com, anthosservicemesh.googleapis.com, trafficdirector.googleapis.com, meshdataplane.googleapis.com",
+      "name": "meshdataplane.googleapis.com, trafficdirector.googleapis.com, meshconfig.googleapis.com, anthosservicemesh.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "title": "Google Workspace Marketplace",
-      "name": "appmetadata.googleapis.com, workspacemarketplace.googleapis.com",
+      "name": "workspacemarketplace.googleapis.com, appmetadata.googleapis.com",
       "url": "/iam/docs/roles-permissions/workspacemarketplace"
     },
     {
@@ -402,7 +402,7 @@
     },
     {
       "title": "Cloud IoT",
-      "name": "cloudiot.googleapis.com, cloudiottoken.googleapis.com",
+      "name": "cloudiottoken.googleapis.com, cloudiot.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudiot"
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "title": "Cloud Key Management Service",
-      "name": "cloudkmskacls.googleapis.com, cloudkms.googleapis.com",
+      "name": "cloudkms.googleapis.com, cloudkmskacls.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudkms"
     },
     {
@@ -702,7 +702,7 @@
     },
     {
       "title": "Firestore",
-      "name": "datastore.googleapis.com, firestore.googleapis.com",
+      "name": "firestore.googleapis.com, datastore.googleapis.com",
       "url": "/iam/docs/roles-permissions/firestore"
     },
     {
@@ -877,12 +877,12 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "cloudmessaging.googleapis.com, firebasenotifications.googleapis.com, firebasecloudmessaging.googleapis.com",
+      "name": "cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com, firebasenotifications.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
       "title": "Firebase Crashlytics",
-      "name": "firebasecrash.googleapis.com, firebasecrashlytics.googleapis.com",
+      "name": "firebasecrashlytics.googleapis.com, firebasecrash.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecrash"
     },
     {
@@ -951,7 +951,7 @@
       "url": "/iam/docs/roles-permissions/firebasestorage"
     },
     {
-      "title": "Vertex AI in Firebase",
+      "title": "Firebase AI Logic",
       "name": "firebasevertexai.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasevertexai"
     },
@@ -1002,7 +1002,7 @@
     },
     {
       "title": "Cloud Life Sciences",
-      "name": "lifesciences.googleapis.com, genomics.googleapis.com",
+      "name": "genomics.googleapis.com, lifesciences.googleapis.com",
       "url": "/iam/docs/roles-permissions/lifesciences"
     },
     {
@@ -1222,7 +1222,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "opsconfigmonitoring.googleapis.com, stackdriver.googleapis.com, monitoring.googleapis.com",
+      "name": "monitoring.googleapis.com, stackdriver.googleapis.com, opsconfigmonitoring.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1252,7 +1252,7 @@
     },
     {
       "title": "NetApp Cloud Volumes Service",
-      "name": "cloudvolumesgcp.api.netapp.com, netappcloudvolumes.googleapis.com",
+      "name": "netappcloudvolumes.googleapis.com, cloudvolumesgcp.api.netapp.com",
       "url": "/iam/docs/roles-permissions/netappcloudvolumes"
     },
     {
@@ -1387,7 +1387,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
+      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1412,7 +1412,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
+      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -1442,7 +1442,7 @@
     },
     {
       "title": "RISC Configuration Service",
-      "name": "riscconfigurationservice.googleapis.com, riscconfigs.googleapis.com",
+      "name": "riscconfigs.googleapis.com, riscconfigurationservice.googleapis.com",
       "url": "/iam/docs/roles-permissions/riscconfigurationservice"
     },
     {
@@ -2216,6 +2216,12 @@
       "name": "roles/alloydb.viewer",
       "url": "/iam/docs/roles-permissions/alloydb#alloydb.viewer",
       "priority": 1
+    },
+    {
+      "title": "AlloyDB Admin for BackupDR",
+      "name": "roles/alloydb.backupDrAdmin",
+      "url": "/iam/docs/roles-permissions/alloydb#alloydb.backupDrAdmin",
+      "priority": 2
     },
     {
       "title": "AlloyDB Client",
@@ -9454,19 +9460,19 @@
       "priority": 2
     },
     {
-      "title": "Health Admin",
+      "title": "Google Health API Admin",
       "name": "roles/health.admin",
       "url": "/iam/docs/roles-permissions/health#health.admin",
       "priority": 1
     },
     {
-      "title": "Health Editor",
+      "title": "Google Health API Editor",
       "name": "roles/health.editor",
       "url": "/iam/docs/roles-permissions/health#health.editor",
       "priority": 1
     },
     {
-      "title": "Health Viewer",
+      "title": "Google Health API Viewer",
       "name": "roles/health.viewer",
       "url": "/iam/docs/roles-permissions/health#health.viewer",
       "priority": 1
@@ -25948,6 +25954,10 @@
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.investigations.list"
     },
     {
+      "title": "chronicle.investigations.transitionReviewState",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.investigations.transitionReviewState"
+    },
+    {
       "title": "chronicle.investigations.trigger",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.investigations.trigger"
     },
@@ -35180,6 +35190,46 @@
       "url": "/iam/docs/roles-permissions/compute#compute.nodeTypes.list"
     },
     {
+      "title": "compute.orgRolloutPlans.create",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRolloutPlans.create"
+    },
+    {
+      "title": "compute.orgRolloutPlans.delete",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRolloutPlans.delete"
+    },
+    {
+      "title": "compute.orgRolloutPlans.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRolloutPlans.get"
+    },
+    {
+      "title": "compute.orgRolloutPlans.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRolloutPlans.list"
+    },
+    {
+      "title": "compute.orgRollouts.cancel",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRollouts.cancel"
+    },
+    {
+      "title": "compute.orgRollouts.delete",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRollouts.delete"
+    },
+    {
+      "title": "compute.orgRollouts.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRollouts.get"
+    },
+    {
+      "title": "compute.orgRollouts.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRollouts.list"
+    },
+    {
+      "title": "compute.orgRollouts.pause",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRollouts.pause"
+    },
+    {
+      "title": "compute.orgRollouts.resume",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgRollouts.resume"
+    },
+    {
       "title": "compute.organizations.disableXpnHost",
       "url": "/iam/docs/roles-permissions/compute#compute.organizations.disableXpnHost"
     },
@@ -42850,6 +42900,10 @@
     {
       "title": "dataplex.entryGroups.useGenericEntry",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useGenericEntry"
+    },
+    {
+      "title": "dataplex.entryGroups.useGraphProfileAspect",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useGraphProfileAspect"
     },
     {
       "title": "dataplex.entryGroups.useMySQLConnectorTypes",
@@ -55860,6 +55914,14 @@
       "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.templates.useToSanitizeUserPrompt"
     },
     {
+      "title": "modelarmor.templates.useToStreamSanitizeModelResponse",
+      "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.templates.useToStreamSanitizeModelResponse"
+    },
+    {
+      "title": "modelarmor.templates.useToStreamSanitizeUserPrompt",
+      "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.templates.useToStreamSanitizeUserPrompt"
+    },
+    {
       "title": "monitoring.alertPolicies.create",
       "url": "/iam/docs/roles-permissions/monitoring#monitoring.alertPolicies.create"
     },
@@ -66026,6 +66088,26 @@
     {
       "title": "storage.buckets.viewIntelligenceDetails",
       "url": "/iam/docs/roles-permissions/storage#storage.buckets.viewIntelligenceDetails"
+    },
+    {
+      "title": "storage.featureConfigs.create",
+      "url": "/iam/docs/roles-permissions/storage#storage.featureConfigs.create"
+    },
+    {
+      "title": "storage.featureConfigs.delete",
+      "url": "/iam/docs/roles-permissions/storage#storage.featureConfigs.delete"
+    },
+    {
+      "title": "storage.featureConfigs.get",
+      "url": "/iam/docs/roles-permissions/storage#storage.featureConfigs.get"
+    },
+    {
+      "title": "storage.featureConfigs.list",
+      "url": "/iam/docs/roles-permissions/storage#storage.featureConfigs.list"
+    },
+    {
+      "title": "storage.featureConfigs.update",
+      "url": "/iam/docs/roles-permissions/storage#storage.featureConfigs.update"
     },
     {
       "title": "storage.folders.create",
