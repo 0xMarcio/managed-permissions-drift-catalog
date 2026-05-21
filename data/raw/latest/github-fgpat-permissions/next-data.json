@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "lJeQIFb3ZBg9BtGiRMNwX",
+  "buildId": "M9zZ2Wt-zwfm4x_bdWzrl",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -1237,6 +1237,24 @@
               "slug": "remove-user-access-restrictions",
               "subcategory": "branch-protection",
               "verb": "delete"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "code-quality",
+              "requestPath": "/repos/{owner}/{repo}/code-quality/setup",
+              "slug": "get-a-code-quality-setup-configuration",
+              "subcategory": "code-quality",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "code-quality",
+              "requestPath": "/repos/{owner}/{repo}/code-quality/setup",
+              "slug": "update-a-code-quality-setup-configuration",
+              "subcategory": "code-quality",
+              "verb": "patch"
             },
             {
               "access": "read",
@@ -10696,6 +10714,17 @@
               ],
               "href": "/en/rest/classroom",
               "title": "Classroom"
+            },
+            {
+              "childPages": [
+                {
+                  "childPages": [],
+                  "href": "/en/rest/code-quality/code-quality",
+                  "title": "Code quality"
+                }
+              ],
+              "href": "/en/rest/code-quality",
+              "title": "code-quality"
             },
             {
               "childPages": [
