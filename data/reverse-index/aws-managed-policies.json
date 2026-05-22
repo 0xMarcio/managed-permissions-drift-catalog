@@ -31534,6 +31534,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
+        "display_name": "AWSControlTowerAccountServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSControlTowerAccountServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSControlTowerAccountServiceRolePolicy"
+      },
+      {
         "display_name": "AWSControlTowerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSControlTowerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSControlTowerServiceRolePolicy"
@@ -57219,6 +57224,11 @@
       }
     ],
     "aws:allow_action:datazone:CreateAsset*": [
+      {
+        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      },
       {
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
@@ -104051,6 +104061,13 @@
         "display_name": "AWSFaultInjectionSimulatorECSAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSFaultInjectionSimulatorECSAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSFaultInjectionSimulatorECSAccess"
+      }
+    ],
+    "aws:allow_action:ecs:DescribeServiceRevisions": [
+      {
+        "display_name": "AWSApplicationAutoscalingECSServicePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationAutoscalingECSServicePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingECSServicePolicy"
       }
     ],
     "aws:allow_action:ecs:DescribeServices": [
@@ -159171,6 +159188,21 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonSageMakerNotebooksServiceRolePolicy"
       },
       {
+        "display_name": "WAFLoggingServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFLoggingServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFLoggingServiceRolePolicy"
+      },
+      {
+        "display_name": "WAFRegionalLoggingServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFRegionalLoggingServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFRegionalLoggingServiceRolePolicy"
+      },
+      {
+        "display_name": "WAFV2LoggingServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFV2LoggingServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFV2LoggingServiceRolePolicy"
+      },
+      {
         "display_name": "AWSBackupServiceRolePolicyForBackup",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForBackup.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForBackup"
@@ -160233,6 +160265,21 @@
         "display_name": "DynamoDBKinesisReplicationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DynamoDBKinesisReplicationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/DynamoDBKinesisReplicationServiceRolePolicy"
+      },
+      {
+        "display_name": "WAFLoggingServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFLoggingServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFLoggingServiceRolePolicy"
+      },
+      {
+        "display_name": "WAFRegionalLoggingServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFRegionalLoggingServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFRegionalLoggingServiceRolePolicy"
+      },
+      {
+        "display_name": "WAFV2LoggingServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFV2LoggingServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFV2LoggingServiceRolePolicy"
       },
       {
         "display_name": "AWSBackupServiceRolePolicyForBackup",
@@ -198118,6 +198165,18 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
+    "aws:allow_action:q:CreateArtifact": [
+      {
+        "display_name": "AmazonQDeveloperAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQDeveloperAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonQDeveloperAccess"
+      },
+      {
+        "display_name": "AmazonQFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonQFullAccess"
+      }
+    ],
     "aws:allow_action:q:CreateAssignment": [
       {
         "display_name": "AmazonQFullAccess",
@@ -198228,6 +198287,30 @@
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      }
+    ],
+    "aws:allow_action:q:GetArtifact": [
+      {
+        "display_name": "AmazonQDeveloperAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQDeveloperAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonQDeveloperAccess"
+      },
+      {
+        "display_name": "AmazonQFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonQFullAccess"
+      }
+    ],
+    "aws:allow_action:q:GetArtifactActionResult": [
+      {
+        "display_name": "AmazonQDeveloperAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQDeveloperAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonQDeveloperAccess"
+      },
+      {
+        "display_name": "AmazonQFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonQFullAccess"
       }
     ],
     "aws:allow_action:q:GetConversation": [
@@ -198520,6 +198603,18 @@
         "display_name": "SageMakerStudioDomainExecutionRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
+      }
+    ],
+    "aws:allow_action:q:PerformArtifactAction": [
+      {
+        "display_name": "AmazonQDeveloperAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQDeveloperAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonQDeveloperAccess"
+      },
+      {
+        "display_name": "AmazonQFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonQFullAccess"
       }
     ],
     "aws:allow_action:q:SendEvent": [
@@ -289850,7 +289945,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-21T04:48:45Z",
+  "generated_at_utc": "2026-05-22T04:43:48Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -299235,6 +299330,18 @@
       "terms": [
         "datazone:*Notebook*",
         "aws:allow_action:datazone:*Notebook*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:datazone:CreateAsset*",
+      "object": {
+        "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      },
+      "terms": [
+        "datazone:CreateAsset*",
+        "aws:allow_action:datazone:CreateAsset*"
       ]
     },
     {

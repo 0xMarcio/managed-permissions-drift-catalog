@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: June 05, 2023, 22:04 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:01 UTC</p>
+                <p><b>Edited time:</b>  May 20, 2026, 19:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSControlTowerAccountServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSControlTowerAccountServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v10 (default)</p>
+        <p><b>Policy version:</b> v11 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -283,6 +283,12 @@
         "cloudformation:ActivateType"
       ],
       "Resource" : "arn:aws:cloudformation:*:*:type/hook/AWS-ControlTower*"
+    },
+    <span>{</span>
+      "Sid" : "AllowBatchDescribeTypeConfigurationsForHookConfigFetch",
+      "Effect" : "Allow",
+      "Action" : "cloudformation:BatchDescribeTypeConfigurations",
+      "Resource" : "*"
     }
   ]
 }</code></pre>

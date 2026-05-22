@@ -1,0 +1,415 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:BatchDescribeTypeConfigurations",
+      "aws:allow_action:datazone:CreateAsset*",
+      "aws:allow_action:ecs:DescribeServiceRevisions",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:q:CreateArtifact",
+      "aws:allow_action:q:CreateArtifact",
+      "aws:allow_action:q:GetArtifact",
+      "aws:allow_action:q:GetArtifact",
+      "aws:allow_action:q:GetArtifactActionResult",
+      "aws:allow_action:q:GetArtifactActionResult",
+      "aws:allow_action:q:PerformArtifactAction",
+      "aws:allow_action:q:PerformArtifactAction"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:BatchDescribeTypeConfigurations",
+          "datazone:CreateAsset*",
+          "ecs:DescribeServiceRevisions",
+          "kms:Decrypt",
+          "kms:Decrypt",
+          "kms:Decrypt",
+          "kms:GenerateDataKey",
+          "kms:GenerateDataKey",
+          "kms:GenerateDataKey",
+          "q:CreateArtifact",
+          "q:CreateArtifact",
+          "q:GetArtifact",
+          "q:GetArtifact",
+          "q:GetArtifactActionResult",
+          "q:GetArtifactActionResult",
+          "q:PerformArtifactAction",
+          "q:PerformArtifactAction"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonQDeveloperAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "q:CreateArtifact",
+              "q:GetArtifact",
+              "q:GetArtifactActionResult",
+              "q:PerformArtifactAction"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 20, 2026, 23:12 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 20, 2026, 23:12 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQDeveloperAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonQDeveloperAccess"
+    },
+    {
+      "display_name": "AmazonQFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "q:CreateArtifact",
+              "q:GetArtifact",
+              "q:GetArtifactActionResult",
+              "q:PerformArtifactAction"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v12 (default)",
+          "before": "v11 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 20, 2026, 22:27 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 20, 2026, 22:27 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonQFullAccess"
+    },
+    {
+      "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:CreateAsset*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v40 (default)",
+          "before": "v39 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 21, 2026, 16:57 UTC",
+          "before": "May 13, 2026, 20:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 21, 2026, 16:57 UTC",
+          "before": "May 13, 2026, 20:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+    },
+    {
+      "display_name": "AWSApplicationAutoscalingECSServicePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ecs:DescribeServiceRevisions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 20, 2026, 21:27 UTC",
+          "before": "October 24, 2024, 20:05 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 20, 2026, 21:27 UTC",
+          "before": "October 24, 2024, 20:05 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationAutoscalingECSServicePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingECSServicePolicy"
+    },
+    {
+      "display_name": "AWSControlTowerAccountServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:BatchDescribeTypeConfigurations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 20, 2026, 19:27 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 20, 2026, 19:27 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 18,
+          "before": 17,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSControlTowerAccountServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSControlTowerAccountServiceRolePolicy"
+    },
+    {
+      "display_name": "WAFLoggingServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "kms:Decrypt",
+              "kms:GenerateDataKey"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 20, 2026, 19:12 UTC",
+          "before": "August 24, 2018, 21:05 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 20, 2026, 19:12 UTC",
+          "before": "August 24, 2018, 21:05 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFLoggingServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFLoggingServiceRolePolicy"
+    },
+    {
+      "display_name": "WAFRegionalLoggingServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "kms:Decrypt",
+              "kms:GenerateDataKey"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 20, 2026, 18:42 UTC",
+          "before": "August 24, 2018, 18:40 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 20, 2026, 18:42 UTC",
+          "before": "August 24, 2018, 18:40 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFRegionalLoggingServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFRegionalLoggingServiceRolePolicy"
+    },
+    {
+      "display_name": "WAFV2LoggingServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "kms:Decrypt",
+              "kms:GenerateDataKey"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 20, 2026, 18:12 UTC",
+          "before": "June 03, 2024, 17:29 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 20, 2026, 18:12 UTC",
+          "before": "June 03, 2024, 17:29 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFV2LoggingServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/WAFV2LoggingServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSControlTowerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v21 (default)",
+          "before": "v20 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 20, 2026, 20:12 UTC",
+          "before": "March 23, 2026, 18:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 20, 2026, 20:12 UTC",
+          "before": "March 23, 2026, 18:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 15,
+          "before": 14,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSControlTowerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSControlTowerServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-22T04:43:48Z",
+  "counts": {
+    "added_atoms": 17,
+    "added_objects": 0,
+    "changed_objects": 9,
+    "current_objects": 1504,
+    "previous_objects": 1504,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-22",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-21",
+  "removed_objects": []
+}
