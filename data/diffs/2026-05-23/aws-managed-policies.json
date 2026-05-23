@@ -1,0 +1,75 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:secretsmanager:CreateSecret",
+      "aws:allow_action:secretsmanager:ListSecrets"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "secretsmanager:CreateSecret",
+          "secretsmanager:ListSecrets"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsOperatorAppAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "secretsmanager:CreateSecret",
+              "secretsmanager:ListSecrets"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 22, 2026, 00:12 UTC",
+          "before": "May 07, 2026, 00:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 22, 2026, 00:12 UTC",
+          "before": "May 07, 2026, 00:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-23T04:30:55Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1504,
+    "previous_objects": 1504,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-23",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-22",
+  "removed_objects": []
+}
