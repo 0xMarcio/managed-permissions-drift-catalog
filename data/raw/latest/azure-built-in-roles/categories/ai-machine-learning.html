@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="05bc9d15-de20-5a1d-6fd6-cb4fb443a5b3" />
 	
-		<meta name="updated_at" content="2026-05-15T22:17:00Z" />
+		<meta name="updated_at" content="2026-05-24T05:16:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/1e193179d0491e7f59fd31f85313780ef43b632b/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/a1a0143026d11d0c61521c5dfd813041c68288d3/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="git_commit_id" content="1e193179d0491e7f59fd31f85313780ef43b632b" />
+		<meta name="git_commit_id" content="a1a0143026d11d0c61521c5dfd813041c68288d3" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="7966" />
+		<meta name="word_count" content="7984" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/ai-machine-learning" />
 	
@@ -715,176 +715,6 @@
 		</nav>
 	
 					<div class="content"><p>This article lists the Azure built-in roles in the AI + machine learning category.</p>
-<h2 id="foundry-account-owner">Foundry Account Owner</h2>
-<p>Grants full access to manage AI projects and accounts. Includes an ABAC condition to constrain role assignments. Grants conditional assignment of the Foundry User role to other user principles. Applies for new Foundry resources.</p>
-<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
-<div class="mx-tableFixed">
-<table>
-<thead>
-<tr>
-<th>Actions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
-<td>Read roles and role assignments</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/write</td>
-<td>Create a role assignment at the specified scope.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/delete</td>
-<td>Delete a role assignment at the specified scope.</td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftfeatures" data-linktype="relative-path">Microsoft.Features</a>/features/read</td>
-<td>Gets the features of a subscription.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftfeatures" data-linktype="relative-path">Microsoft.Features</a>/providers/features/read</td>
-<td>Gets the feature of a subscription in a given resource provider.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftfeatures" data-linktype="relative-path">Microsoft.Features</a>/providers/features/register/action</td>
-<td>Registers the feature for a subscription in a given resource provider.</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
-<td>Create and manage a classic metric alert</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/diagnosticSettings/*</td>
-<td>Creates, updates, or reads the diagnostic setting for Analysis Server</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/logDefinitions/read</td>
-<td>Read log definitions</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metricdefinitions/read</td>
-<td>Read metric definitions</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metrics/read</td>
-<td>Read metrics</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
-<td>Gets the availability statuses for all resources in the specified scope</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
-<td>Create and manage a deployment</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/operations/read</td>
-<td>Gets or lists deployment operations.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/operationresults/read</td>
-<td>Get the subscription operation results.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/read</td>
-<td>Gets the list of subscriptions.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourcegroups/deployments/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
-<td>Gets or lists resource groups.</td>
-</tr>
-<tr>
-<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
-<td>Create and update a support ticket</td>
-</tr>
-<tr>
-<td><strong>NotActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>DataActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>NotDataActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Condition</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))</td>
-<td>Add or remove role assignments for the following roles:<br>Foundry User</td>
-</tr>
-</tbody>
-</table>
-</div>
-<pre><code class="lang-json">{
-  "assignableScopes": [
-    "/"
-  ],
-  "description": "Grants full access to manage AI projects and accounts. Grants conditional assignment of the Foundry User role to other user principles.",
-  "id": "/providers/Microsoft.Authorization/roleDefinitions/e47c6f54-e4a2-4754-9501-8e0985b135e1",
-  "name": "e47c6f54-e4a2-4754-9501-8e0985b135e1",
-  "permissions": [
-    {
-      "actions": [
-        "Microsoft.Authorization/*/read",
-        "Microsoft.Authorization/roleAssignments/write",
-        "Microsoft.Authorization/roleAssignments/delete",
-        "Microsoft.CognitiveServices/*",
-        "Microsoft.Features/features/read",
-        "Microsoft.Features/providers/features/read",
-        "Microsoft.Features/providers/features/register/action",
-        "Microsoft.Insights/alertRules/*",
-        "Microsoft.Insights/diagnosticSettings/*",
-        "Microsoft.Insights/logDefinitions/read",
-        "Microsoft.Insights/metricdefinitions/read",
-        "Microsoft.Insights/metrics/read",
-        "Microsoft.ResourceHealth/availabilityStatuses/read",
-        "Microsoft.Resources/deployments/*",
-        "Microsoft.Resources/deployments/operations/read",
-        "Microsoft.Resources/subscriptions/operationresults/read",
-        "Microsoft.Resources/subscriptions/read",
-        "Microsoft.Resources/subscriptions/resourcegroups/deployments/*",
-        "Microsoft.Resources/subscriptions/resourceGroups/read",
-        "Microsoft.Support/*"
-      ],
-      "notActions": [],
-      "dataActions": [],
-      "notDataActions": [],
-      "conditionVersion": "2.0",
-      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
-    }
-  ],
-  "roleName": "Foundry Account Owner",
-  "roleType": "BuiltInRole",
-  "type": "Microsoft.Authorization/roleDefinitions"
-}
-</code></pre>
 <h2 id="azure-ai-administrator">Azure AI Administrator</h2>
 <p>A Built-In Role that has all control plane permissions to work with Azure AI and its dependencies. Applies to Azure Machine Learning and Foundry hubs only.</p>
 <p><a href="/en-us/azure/machine-learning/how-to-assign-roles" data-linktype="absolute-path">Learn more</a></p>
@@ -1141,7 +971,7 @@
 }
 </code></pre>
 <h2 id="azure-ai-developer">Azure AI Developer</h2>
-<p>Can perform all actions within an Azure AI resource besides managing the resource itself. Applies to Azure Machine Learning and Foundry hubs only.</p>
+<p>Can perform all actions within an Azure Machine Learning workspace besides managing the workspace itself. For Foundry project access, use the Foundry User or Foundry Owner roles instead.</p>
 <p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
 <table>
@@ -1259,7 +1089,7 @@
   "assignableScopes": [
     "/"
   ],
-  "description": "Can perform all actions within an Azure AI resource besides managing the resource itself.",
+  "description": "Can perform all actions within an Azure Machine Learning workspace besides managing the workspace itself. For Foundry project access, use the Foundry User or Foundry Owner roles instead.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/64702f94-c441-49e6-a78b-ef80e0188fee",
   "name": "64702f94-c441-49e6-a78b-ef80e0188fee",
   "permissions": [
@@ -1875,407 +1705,6 @@
     }
   ],
   "roleName": "Azure AI Inference Deployment Operator",
-  "roleType": "BuiltInRole",
-  "type": "Microsoft.Authorization/roleDefinitions"
-}
-</code></pre>
-<h2 id="foundry-owner">Foundry Owner</h2>
-<p>Grants full to manage AI project and accounts. Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project. Applies for new Foundry resources.</p>
-<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
-<div class="mx-tableFixed">
-<table>
-<thead>
-<tr>
-<th>Actions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/actionRules/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/alerts/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/issues/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/prometheusRuleGroups/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/smartDetectorAlertRules/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
-<td>Read roles and role assignments</td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/activityLogAlerts/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metricalerts/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/scheduledqueryrules/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
-<td>Gets the availability statuses for all resources in the specified scope</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
-<td>Create and manage a deployment</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/operations/read</td>
-<td>Gets or lists deployment operations.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/operationresults/read</td>
-<td>Get the subscription operation results.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/read</td>
-<td>Gets the list of subscriptions.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourcegroups/deployments/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
-<td>Gets or lists resource groups.</td>
-</tr>
-<tr>
-<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
-<td>Create and update a support ticket</td>
-</tr>
-<tr>
-<td><strong>NotActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>DataActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>NotDataActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<pre><code class="lang-json">{
-  "assignableScopes": [
-    "/"
-  ],
-  "description": "Grants full to manage AI project and accounts. Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project.",
-  "id": "/providers/Microsoft.Authorization/roleDefinitions/c883944f-8b7b-4483-af10-35834be79c4a",
-  "name": "c883944f-8b7b-4483-af10-35834be79c4a",
-  "permissions": [
-    {
-      "actions": [
-        "Microsoft.AlertsManagement/actionRules/*",
-        "Microsoft.AlertsManagement/alerts/*",
-        "Microsoft.AlertsManagement/issues/*",
-        "Microsoft.AlertsManagement/prometheusRuleGroups/*",
-        "Microsoft.AlertsManagement/smartDetectorAlertRules/*",
-        "Microsoft.Authorization/*/read",
-        "Microsoft.CognitiveServices/*",
-        "Microsoft.Insights/activityLogAlerts/*",
-        "Microsoft.Insights/metricalerts/*",
-        "Microsoft.Insights/scheduledqueryrules/*",
-        "Microsoft.ResourceHealth/availabilityStatuses/read",
-        "Microsoft.Resources/deployments/*",
-        "Microsoft.Resources/deployments/operations/read",
-        "Microsoft.Resources/subscriptions/operationresults/read",
-        "Microsoft.Resources/subscriptions/read",
-        "Microsoft.Resources/subscriptions/resourcegroups/deployments/*",
-        "Microsoft.Resources/subscriptions/resourceGroups/read",
-        "Microsoft.Support/*"
-      ],
-      "notActions": [],
-      "dataActions": [
-        "Microsoft.CognitiveServices/*"
-      ],
-      "notDataActions": []
-    }
-  ],
-  "roleName": "Foundry Owner",
-  "roleType": "BuiltInRole",
-  "type": "Microsoft.Authorization/roleDefinitions"
-}
-</code></pre>
-<h2 id="foundry-project-manager">Foundry Project Manager</h2>
-<p>Lets you perform developer actions and management actions on Foundry Projects. Includes an ABAC condition to constrain role assignments. Allows for making role assignments, but limited to Foundry User role. Applies for new Foundry resources.</p>
-<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
-<div class="mx-tableFixed">
-<table>
-<thead>
-<tr>
-<th>Actions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/write</td>
-<td>Create a role assignment at the specified scope.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/delete</td>
-<td>Delete a role assignment at the specified scope.</td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/*/read</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/projects/*</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/locations/*/read</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
-<td>Read roles and role assignments</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
-<td>Create and manage a classic metric alert</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
-<td>Create and manage a deployment</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
-<td>Gets or lists resource groups.</td>
-</tr>
-<tr>
-<td><strong>NotActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>DataActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>NotDataActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Condition</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))</td>
-<td>Add or remove role assignments for the following roles:<br>Foundry User</td>
-</tr>
-</tbody>
-</table>
-</div>
-<pre><code class="lang-json">{
-  "assignableScopes": [
-    "/"
-  ],
-  "description": "Lets you perform developer actions and management actions on Azure AI Foundry Projects. Allows for making role assignments, but limited to Cognitive Service User role.",
-  "id": "/providers/Microsoft.Authorization/roleDefinitions/eadc314b-1a2d-4efa-be10-5d325db5065e",
-  "name": "eadc314b-1a2d-4efa-be10-5d325db5065e",
-  "permissions": [
-    {
-      "actions": [
-        "Microsoft.Authorization/roleAssignments/write",
-        "Microsoft.Authorization/roleAssignments/delete",
-        "Microsoft.CognitiveServices/accounts/*/read",
-        "Microsoft.CognitiveServices/accounts/projects/*",
-        "Microsoft.CognitiveServices/locations/*/read",
-        "Microsoft.Authorization/*/read",
-        "Microsoft.Insights/alertRules/*",
-        "Microsoft.Resources/deployments/*",
-        "Microsoft.Resources/subscriptions/resourceGroups/read"
-      ],
-      "notActions": [],
-      "dataActions": [
-        "Microsoft.CognitiveServices/*"
-      ],
-      "notDataActions": [],
-      "conditionVersion": "2.0",
-      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
-    }
-  ],
-  "roleName": "Foundry Project Manager",
-  "roleType": "BuiltInRole",
-  "type": "Microsoft.Authorization/roleDefinitions"
-}
-</code></pre>
-<h2 id="foundry-user">Foundry User</h2>
-<p>Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project.</p>
-<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
-<div class="mx-tableFixed">
-<table>
-<thead>
-<tr>
-<th>Actions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
-<td>Read roles and role assignments</td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*/read</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/listkeys/action</td>
-<td>List keys</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/read</td>
-<td>Read a classic metric alert</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/diagnosticSettings/read</td>
-<td>Read a resource diagnostic setting</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/logDefinitions/read</td>
-<td>Read log definitions</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metricdefinitions/read</td>
-<td>Read metric definitions</td>
-</tr>
-<tr>
-<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metrics/read</td>
-<td>Read metrics</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
-<td>Gets the availability statuses for all resources in the specified scope</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
-<td>Create and manage a deployment</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/operationresults/read</td>
-<td>Get the subscription operation results.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/read</td>
-<td>Gets the list of subscriptions.</td>
-</tr>
-<tr>
-<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
-<td>Gets or lists resource groups.</td>
-</tr>
-<tr>
-<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
-<td>Create and update a support ticket</td>
-</tr>
-<tr>
-<td><strong>NotActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>DataActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>NotDataActions</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><em>none</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<pre><code class="lang-json">{
-  "assignableScopes": [
-    "/"
-  ],
-  "description": "Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project.",
-  "id": "/providers/Microsoft.Authorization/roleDefinitions/53ca6127-db72-4b80-b1b0-d745d6d5456d",
-  "name": "53ca6127-db72-4b80-b1b0-d745d6d5456d",
-  "permissions": [
-    {
-      "actions": [
-        "Microsoft.Authorization/*/read",
-        "Microsoft.CognitiveServices/*/read",
-        "Microsoft.CognitiveServices/accounts/listkeys/action",
-        "Microsoft.Insights/alertRules/read",
-        "Microsoft.Insights/diagnosticSettings/read",
-        "Microsoft.Insights/logDefinitions/read",
-        "Microsoft.Insights/metricdefinitions/read",
-        "Microsoft.Insights/metrics/read",
-        "Microsoft.ResourceHealth/availabilityStatuses/read",
-        "Microsoft.Resources/deployments/*",
-        "Microsoft.Resources/subscriptions/operationresults/read",
-        "Microsoft.Resources/subscriptions/read",
-        "Microsoft.Resources/subscriptions/resourceGroups/read",
-        "Microsoft.Support/*"
-      ],
-      "notActions": [],
-      "dataActions": [
-        "Microsoft.CognitiveServices/*"
-      ],
-      "notDataActions": []
-    }
-  ],
-  "roleName": "Foundry User",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
@@ -5401,6 +4830,577 @@
     }
   ],
   "roleName": "Cognitive Services User",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="foundry-account-owner">Foundry Account Owner</h2>
+<p>Grants full access to manage AI projects and accounts. Includes an ABAC condition to constrain role assignments. Grants conditional assignment of the Foundry User role to other user principles. Applies for new Foundry resources.</p>
+<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/write</td>
+<td>Create a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/delete</td>
+<td>Delete a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftfeatures" data-linktype="relative-path">Microsoft.Features</a>/features/read</td>
+<td>Gets the features of a subscription.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftfeatures" data-linktype="relative-path">Microsoft.Features</a>/providers/features/read</td>
+<td>Gets the feature of a subscription in a given resource provider.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftfeatures" data-linktype="relative-path">Microsoft.Features</a>/providers/features/register/action</td>
+<td>Registers the feature for a subscription in a given resource provider.</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/diagnosticSettings/*</td>
+<td>Creates, updates, or reads the diagnostic setting for Analysis Server</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/logDefinitions/read</td>
+<td>Read log definitions</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metricdefinitions/read</td>
+<td>Read metric definitions</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metrics/read</td>
+<td>Read metrics</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
+<td>Gets the availability statuses for all resources in the specified scope</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/operations/read</td>
+<td>Gets or lists deployment operations.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/operationresults/read</td>
+<td>Get the subscription operation results.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/read</td>
+<td>Gets the list of subscriptions.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourcegroups/deployments/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Condition</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))</td>
+<td>Add or remove role assignments for the following roles:<br>Foundry User</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants full access to manage Foundry projects and accounts. Grants conditional assignment of the Foundry User role to other user principles.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/e47c6f54-e4a2-4754-9501-8e0985b135e1",
+  "name": "e47c6f54-e4a2-4754-9501-8e0985b135e1",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete",
+        "Microsoft.CognitiveServices/*",
+        "Microsoft.Features/features/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.Features/providers/features/register/action",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/diagnosticSettings/*",
+        "Microsoft.Insights/logDefinitions/read",
+        "Microsoft.Insights/metricdefinitions/read",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": [],
+      "conditionVersion": "2.0",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
+    }
+  ],
+  "roleName": "Foundry Account Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="foundry-owner">Foundry Owner</h2>
+<p>Grants full to manage AI project and accounts. Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project. Applies for new Foundry resources.</p>
+<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/actionRules/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/alerts/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/issues/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/prometheusRuleGroups/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftalertsmanagement" data-linktype="relative-path">Microsoft.AlertsManagement</a>/smartDetectorAlertRules/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/activityLogAlerts/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metricalerts/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/scheduledqueryrules/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
+<td>Gets the availability statuses for all resources in the specified scope</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/operations/read</td>
+<td>Gets or lists deployment operations.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/operationresults/read</td>
+<td>Get the subscription operation results.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/read</td>
+<td>Gets the list of subscriptions.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourcegroups/deployments/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants full to manage Foundry project and accounts. Grants reader access to Foundry projects, reader access to Foundry accounts, and data actions for a Foundry project.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/c883944f-8b7b-4483-af10-35834be79c4a",
+  "name": "c883944f-8b7b-4483-af10-35834be79c4a",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AlertsManagement/actionRules/*",
+        "Microsoft.AlertsManagement/alerts/*",
+        "Microsoft.AlertsManagement/issues/*",
+        "Microsoft.AlertsManagement/prometheusRuleGroups/*",
+        "Microsoft.AlertsManagement/smartDetectorAlertRules/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.CognitiveServices/*",
+        "Microsoft.Insights/activityLogAlerts/*",
+        "Microsoft.Insights/metricalerts/*",
+        "Microsoft.Insights/scheduledqueryrules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Foundry Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="foundry-project-manager">Foundry Project Manager</h2>
+<p>Lets you perform developer actions and management actions on Foundry Projects. Includes an ABAC condition to constrain role assignments. Allows for making role assignments, but limited to Foundry User role. Applies for new Foundry resources.</p>
+<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/write</td>
+<td>Create a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/delete</td>
+<td>Delete a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/projects/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/locations/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Condition</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))</td>
+<td>Add or remove role assignments for the following roles:<br>Foundry User</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets you perform developer actions and management actions on Microsoft Foundry Projects. Allows for making role assignments, but limited to Cognitive Service User role.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/eadc314b-1a2d-4efa-be10-5d325db5065e",
+  "name": "eadc314b-1a2d-4efa-be10-5d325db5065e",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete",
+        "Microsoft.CognitiveServices/accounts/*/read",
+        "Microsoft.CognitiveServices/accounts/projects/*",
+        "Microsoft.CognitiveServices/locations/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/*"
+      ],
+      "notDataActions": [],
+      "conditionVersion": "2.0",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
+    }
+  ],
+  "roleName": "Foundry Project Manager",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="foundry-user">Foundry User</h2>
+<p>Grants reader access to Foundry projects, reader access to Foundry accounts, and data actions for an Foundry project.</p>
+<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/listkeys/action</td>
+<td>List keys</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/read</td>
+<td>Read a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/diagnosticSettings/read</td>
+<td>Read a resource diagnostic setting</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/logDefinitions/read</td>
+<td>Read log definitions</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metricdefinitions/read</td>
+<td>Read metric definitions</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metrics/read</td>
+<td>Read metrics</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
+<td>Gets the availability statuses for all resources in the specified scope</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/operationresults/read</td>
+<td>Get the subscription operation results.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/read</td>
+<td>Gets the list of subscriptions.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants reader access to Foundry projects, reader access to Foundry accounts, and data actions for an Foundry project.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/53ca6127-db72-4b80-b1b0-d745d6d5456d",
+  "name": "53ca6127-db72-4b80-b1b0-d745d6d5456d",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.CognitiveServices/accounts/listkeys/action",
+        "Microsoft.Insights/alertRules/read",
+        "Microsoft.Insights/diagnosticSettings/read",
+        "Microsoft.Insights/logDefinitions/read",
+        "Microsoft.Insights/metricdefinitions/read",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Foundry User",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }

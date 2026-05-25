@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="f1a5bf89-9e54-aede-3a9a-70788a95927b" />
 	
-		<meta name="updated_at" content="2026-05-18T17:10:00Z" />
+		<meta name="updated_at" content="2026-05-24T05:16:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/634d71f82080d69202dcff0cafdca4e987c7cd72/articles/role-based-access-control/built-in-roles.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/a1a0143026d11d0c61521c5dfd813041c68288d3/articles/role-based-access-control/built-in-roles.md" />
 	
-		<meta name="git_commit_id" content="634d71f82080d69202dcff0cafdca4e987c7cd72" />
+		<meta name="git_commit_id" content="a1a0143026d11d0c61521c5dfd813041c68288d3" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="10805" />
+		<meta name="word_count" content="10810" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles" />
 	
@@ -2259,18 +2259,13 @@
 </thead>
 <tbody>
 <tr>
-<td><a name="azure-ai-account-owner"></a><a href="built-in-roles/ai-machine-learning#foundry-account-owner" data-linktype="relative-path">Foundry Account Owner</a></td>
-<td>Grants full access to manage AI projects and accounts. Includes an ABAC condition to constrain role assignments. Grants conditional assignment of the Foundry User role to other user principles. Applies for new Foundry resources.</td>
-<td>e47c6f54-e4a2-4754-9501-8e0985b135e1</td>
-</tr>
-<tr>
 <td><a name="azure-ai-administrator"></a><a href="built-in-roles/ai-machine-learning#azure-ai-administrator" data-linktype="relative-path">Azure AI Administrator</a></td>
 <td>A Built-In Role that has all control plane permissions to work with Azure AI and its dependencies. Applies to Azure Machine Learning and Foundry hubs only.</td>
 <td>b78c5d69-af96-48a3-bf8d-a8b4d589de94</td>
 </tr>
 <tr>
 <td><a name="azure-ai-developer"></a><a href="built-in-roles/ai-machine-learning#azure-ai-developer" data-linktype="relative-path">Azure AI Developer</a></td>
-<td>Can perform all actions within an Azure AI resource besides managing the resource itself. Applies to Azure Machine Learning and Foundry hubs only.</td>
+<td>Can perform all actions within an Azure Machine Learning workspace besides managing the workspace itself. For Foundry project access, use the Foundry User or Foundry Owner roles instead.</td>
 <td>64702f94-c441-49e6-a78b-ef80e0188fee</td>
 </tr>
 <tr>
@@ -2282,21 +2277,6 @@
 <td><a name="azure-ai-inference-deployment-operator"></a><a href="built-in-roles/ai-machine-learning#azure-ai-inference-deployment-operator" data-linktype="relative-path">Azure AI Inference Deployment Operator</a></td>
 <td>Can perform all actions required to create a resource deployment within a resource group.</td>
 <td>3afb7f49-54cb-416e-8c09-6dc049efa503</td>
-</tr>
-<tr>
-<td><a name="azure-ai-owner"></a><a href="built-in-roles/ai-machine-learning#foundry-owner" data-linktype="relative-path">Foundry Owner</a></td>
-<td>Grants full to manage AI project and accounts. Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project. Applies for new Foundry resources.</td>
-<td>c883944f-8b7b-4483-af10-35834be79c4a</td>
-</tr>
-<tr>
-<td><a name="azure-ai-project-manager"></a><a href="built-in-roles/ai-machine-learning#foundry-project-manager" data-linktype="relative-path">Foundry Project Manager</a></td>
-<td>Lets you perform developer actions and management actions on Foundry Projects. Includes an ABAC condition to constrain role assignments. Allows for making role assignments, but limited to Foundry User role. Applies for new Foundry resources.</td>
-<td>eadc314b-1a2d-4efa-be10-5d325db5065e</td>
-</tr>
-<tr>
-<td><a name="azure-ai-user"></a><a href="built-in-roles/ai-machine-learning#foundry-user" data-linktype="relative-path">Foundry User</a></td>
-<td>Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project.</td>
-<td>53ca6127-db72-4b80-b1b0-d745d6d5456d</td>
 </tr>
 <tr>
 <td><a name="azureml-compute-operator"></a><a href="built-in-roles/ai-machine-learning#azureml-compute-operator" data-linktype="relative-path">AzureML Compute Operator</a></td>
@@ -2442,6 +2422,26 @@
 <td><a name="cognitive-services-user"></a><a href="built-in-roles/ai-machine-learning#cognitive-services-user" data-linktype="relative-path">Cognitive Services User</a></td>
 <td>Lets you read and list keys of Cognitive Services.</td>
 <td>a97b65f3-24c7-4388-baec-2e87135dc908</td>
+</tr>
+<tr>
+<td><a name="foundry-account-owner"></a><a href="built-in-roles/ai-machine-learning#foundry-account-owner" data-linktype="relative-path">Foundry Account Owner</a></td>
+<td>Grants full access to manage AI projects and accounts. Includes an ABAC condition to constrain role assignments. Grants conditional assignment of the Foundry User role to other user principles. Applies for new Foundry resources.</td>
+<td>e47c6f54-e4a2-4754-9501-8e0985b135e1</td>
+</tr>
+<tr>
+<td><a name="foundry-owner"></a><a href="built-in-roles/ai-machine-learning#foundry-owner" data-linktype="relative-path">Foundry Owner</a></td>
+<td>Grants full to manage AI project and accounts. Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project. Applies for new Foundry resources.</td>
+<td>c883944f-8b7b-4483-af10-35834be79c4a</td>
+</tr>
+<tr>
+<td><a name="foundry-project-manager"></a><a href="built-in-roles/ai-machine-learning#foundry-project-manager" data-linktype="relative-path">Foundry Project Manager</a></td>
+<td>Lets you perform developer actions and management actions on Foundry Projects. Includes an ABAC condition to constrain role assignments. Allows for making role assignments, but limited to Foundry User role. Applies for new Foundry resources.</td>
+<td>eadc314b-1a2d-4efa-be10-5d325db5065e</td>
+</tr>
+<tr>
+<td><a name="foundry-user"></a><a href="built-in-roles/ai-machine-learning#foundry-user" data-linktype="relative-path">Foundry User</a></td>
+<td>Grants reader access to Foundry projects, reader access to Foundry accounts, and data actions for an Foundry project.</td>
+<td>53ca6127-db72-4b80-b1b0-d745d6d5456d</td>
 </tr>
 <tr>
 <td><a name="healthcare-agent-admin"></a><a href="built-in-roles/ai-machine-learning#healthcare-agent-admin" data-linktype="relative-path">Healthcare Agent Admin</a></td>

@@ -1,0 +1,108 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {},
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Foundry User",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Grants reader access to Foundry projects, reader access to Foundry accounts, and data actions for an Foundry project.",
+          "before": "Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-user",
+      "stable_id": "53ca6127-db72-4b80-b1b0-d745d6d5456d"
+    },
+    {
+      "display_name": "Azure AI Developer",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Can perform all actions within an Azure Machine Learning workspace besides managing the workspace itself. For Foundry project access, use the Foundry User or Foundry Owner roles instead.",
+          "before": "Can perform all actions within an Azure AI resource besides managing the resource itself.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#azure-ai-developer",
+      "stable_id": "64702f94-c441-49e6-a78b-ef80e0188fee"
+    },
+    {
+      "display_name": "Foundry Owner",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Grants full to manage Foundry project and accounts. Grants reader access to Foundry projects, reader access to Foundry accounts, and data actions for a Foundry project.",
+          "before": "Grants full to manage AI project and accounts. Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-owner",
+      "stable_id": "c883944f-8b7b-4483-af10-35834be79c4a"
+    },
+    {
+      "display_name": "Foundry Account Owner",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Grants full access to manage Foundry projects and accounts. Grants conditional assignment of the Foundry User role to other user principles.",
+          "before": "Grants full access to manage AI projects and accounts. Grants conditional assignment of the Foundry User role to other user principles.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-account-owner",
+      "stable_id": "e47c6f54-e4a2-4754-9501-8e0985b135e1"
+    },
+    {
+      "display_name": "Foundry Project Manager",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Lets you perform developer actions and management actions on Microsoft Foundry Projects. Allows for making role assignments, but limited to Cognitive Service User role.",
+          "before": "Lets you perform developer actions and management actions on Azure AI Foundry Projects. Allows for making role assignments, but limited to Cognitive Service User role.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-project-manager",
+      "stable_id": "eadc314b-1a2d-4efa-be10-5d325db5065e"
+    }
+  ],
+  "compared_at_utc": "2026-05-25T04:51:09Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 500,
+    "previous_objects": 500,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-25",
+  "dataset": "azure-built-in-roles",
+  "platform": "azure",
+  "previous_snapshot_date": "2026-05-19",
+  "removed_objects": []
+}
