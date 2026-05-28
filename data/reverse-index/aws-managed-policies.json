@@ -3800,6 +3800,11 @@
         "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
     "aws:allow_action:airflow:CreateEnvironment": [
@@ -7355,6 +7360,11 @@
         "display_name": "AmazonSageMakerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerReadOnly",
@@ -23059,6 +23069,13 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
       }
     ],
+    "aws:allow_action:bedrock:CreateCustomModel": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      }
+    ],
     "aws:allow_action:bedrock:CreateDataAutomationProject": [
       {
         "display_name": "SageMakerStudioProjectUserRolePolicy",
@@ -23078,6 +23095,11 @@
         "display_name": "AmazonBedrockLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockLimitedAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
@@ -23202,6 +23224,11 @@
         "display_name": "AmazonBedrockLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockLimitedAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       }
     ],
     "aws:allow_action:bedrock:CreateModelInvocationJob": [
@@ -23827,6 +23854,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasAIServicesAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -23899,6 +23931,11 @@
       }
     ],
     "aws:allow_action:bedrock:GetEvaluationJob": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -24045,6 +24082,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -24098,6 +24140,11 @@
       }
     ],
     "aws:allow_action:bedrock:GetImportedModel": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
@@ -24291,6 +24338,11 @@
       }
     ],
     "aws:allow_action:bedrock:GetModelImportJob": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
@@ -24540,6 +24592,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasAIServicesAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "BedrockAgentCoreFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BedrockAgentCoreFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess"
@@ -24600,6 +24657,11 @@
         "display_name": "AmazonSageMakerCanvasAIServicesAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasAIServicesAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasAIServicesAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "BedrockAgentCoreFullAccess",
@@ -24900,7 +24962,19 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
       }
     ],
+    "aws:allow_action:bedrock:ListCustomModelDeployments": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      }
+    ],
     "aws:allow_action:bedrock:ListCustomModels": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -25128,6 +25202,11 @@
         "display_name": "AmazonSageMakerCanvasAIServicesAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasAIServicesAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasAIServicesAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -25362,6 +25441,11 @@
     ],
     "aws:allow_action:bedrock:ListModelImportJobs": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
@@ -25444,6 +25528,11 @@
       }
     ],
     "aws:allow_action:bedrock:ListProvisionedModelThroughputs": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -53761,7 +53850,21 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
       }
     ],
+    "aws:allow_action:connect:SendOutboundChatMessage": [
+      {
+        "display_name": "AmazonConnectCampaignsServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectCampaignsServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy"
+      }
+    ],
     "aws:allow_action:connect:SendOutboundEmail": [
+      {
+        "display_name": "AmazonConnectCampaignsServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectCampaignsServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:allow_action:connect:SendOutboundWebNotification": [
       {
         "display_name": "AmazonConnectCampaignsServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectCampaignsServiceLinkedRolePolicy.html",
@@ -57010,6 +57113,11 @@
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
     "aws:allow_action:datazone:AcceptPredictions": [
@@ -57150,6 +57258,11 @@
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
     "aws:allow_action:datazone:CancelMetadataGenerationRun": [
@@ -57542,13 +57655,6 @@
         "display_name": "SageMakerStudioDomainExecutionRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
-      }
-    ],
-    "aws:allow_action:datazone:CreateNotebook": [
-      {
-        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
     "aws:allow_action:datazone:CreateProject": [
@@ -57968,13 +58074,6 @@
         "display_name": "SageMakerStudioDomainExecutionRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
-      }
-    ],
-    "aws:allow_action:datazone:DeleteNotebook": [
-      {
-        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
     "aws:allow_action:datazone:DeleteProject": [
@@ -59948,6 +60047,16 @@
     ],
     "aws:allow_action:datazone:QueryGraph": [
       {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      },
+      {
         "display_name": "AmazonDataZoneDomainExecutionRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneDomainExecutionRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonDataZoneDomainExecutionRolePolicy"
@@ -60365,34 +60474,6 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
       }
     ],
-    "aws:allow_action:datazone:StartNotebookCompute": [
-      {
-        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
-      }
-    ],
-    "aws:allow_action:datazone:StartNotebookExport": [
-      {
-        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
-      }
-    ],
-    "aws:allow_action:datazone:StartNotebookImport": [
-      {
-        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
-      }
-    ],
-    "aws:allow_action:datazone:StopNotebookCompute": [
-      {
-        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
-      }
-    ],
     "aws:allow_action:datazone:UpdateAssetFilter": [
       {
         "display_name": "AmazonDataZoneFullUserAccess",
@@ -60610,13 +60691,6 @@
         "display_name": "SageMakerStudioDomainExecutionRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
-      }
-    ],
-    "aws:allow_action:datazone:UpdateNotebook": [
-      {
-        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
     "aws:allow_action:datazone:UpdateProject": [
@@ -92475,6 +92549,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonTimestreamInfluxDBFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonTimestreamInfluxDBFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonTimestreamInfluxDBFullAccess"
@@ -101850,6 +101929,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -102024,6 +102108,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
@@ -102717,6 +102806,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -102857,6 +102951,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -141128,6 +141227,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSecurityLakeAdministrator",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSecurityLakeAdministrator.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSecurityLakeAdministrator"
@@ -142433,6 +142537,11 @@
         "display_name": "AmazonSageMakerHyperPodObservabilityAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodObservabilityAdminAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodObservabilityAdminAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
@@ -159664,6 +159773,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelRegistryFullAccess"
@@ -160890,6 +161004,11 @@
         "display_name": "AmazonSageMakerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
@@ -162915,6 +163034,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerPipelinesIntegrations",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerPipelinesIntegrations.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerPipelinesIntegrations"
@@ -163071,6 +163195,11 @@
         "display_name": "AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerPipelinesIntegrations",
@@ -163380,6 +163509,11 @@
         "display_name": "AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerPipelinesIntegrations",
@@ -163783,6 +163917,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "CloudWatchSyntheticsFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchSyntheticsFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchSyntheticsFullAccess"
@@ -164063,6 +164202,11 @@
         "display_name": "AmazonSageMakerGroundTruthExecution",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerGroundTruthExecution.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerGroundTruthExecution"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerPipelinesIntegrations",
@@ -164484,6 +164628,11 @@
         "display_name": "AmazonSageMakerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonWorkMailFullAccess",
@@ -169531,6 +169680,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -170146,6 +170300,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -171272,6 +171431,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -171702,6 +171866,11 @@
         "display_name": "AmazonSageMakerGroundTruthExecution",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerGroundTruthExecution.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerGroundTruthExecution"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -172860,6 +173029,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -173768,6 +173942,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -223605,6 +223784,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelGovernanceUseAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelGovernanceUseAccess"
@@ -225873,6 +226057,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerGroundTruthExecution"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelGovernanceUseAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelGovernanceUseAccess"
@@ -227974,6 +228163,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
@@ -230609,12 +230803,22 @@
     ],
     "aws:allow_action:sagemaker-mlflow:AccessUI": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       }
     ],
     "aws:allow_action:sagemaker-mlflow:CreateExperiment": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230636,6 +230840,11 @@
       }
     ],
     "aws:allow_action:sagemaker-mlflow:CreateRun": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230707,12 +230916,22 @@
     ],
     "aws:allow_action:sagemaker-mlflow:GetExperiment": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       }
     ],
     "aws:allow_action:sagemaker-mlflow:GetExperimentByName": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230726,7 +230945,19 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       }
     ],
+    "aws:allow_action:sagemaker-mlflow:GetLoggedModel": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      }
+    ],
     "aws:allow_action:sagemaker-mlflow:GetMetricHistory": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230756,12 +230987,22 @@
     ],
     "aws:allow_action:sagemaker-mlflow:GetRun": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       }
     ],
     "aws:allow_action:sagemaker-mlflow:ListArtifacts": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230770,12 +231011,22 @@
     ],
     "aws:allow_action:sagemaker-mlflow:LogBatch": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       }
     ],
     "aws:allow_action:sagemaker-mlflow:LogInputs": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230784,6 +231035,11 @@
     ],
     "aws:allow_action:sagemaker-mlflow:LogMetric": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
@@ -230791,12 +231047,22 @@
     ],
     "aws:allow_action:sagemaker-mlflow:LogModel": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       }
     ],
     "aws:allow_action:sagemaker-mlflow:LogParam": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230826,6 +231092,11 @@
     ],
     "aws:allow_action:sagemaker-mlflow:SearchExperiments": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
@@ -230846,6 +231117,11 @@
       }
     ],
     "aws:allow_action:sagemaker-mlflow:SearchRuns": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230874,6 +231150,11 @@
       }
     ],
     "aws:allow_action:sagemaker-mlflow:SetTag": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -230909,6 +231190,11 @@
       }
     ],
     "aws:allow_action:sagemaker-mlflow:UpdateRun": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
@@ -231248,6 +231534,11 @@
     ],
     "aws:allow_action:sagemaker:AddAssociation": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -231323,6 +231614,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
@@ -231539,6 +231835,11 @@
     ],
     "aws:allow_action:sagemaker:CallMlflowAppApi": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
@@ -231557,6 +231858,11 @@
       }
     ],
     "aws:allow_action:sagemaker:CreateAction": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
@@ -231660,6 +231966,11 @@
       }
     ],
     "aws:allow_action:sagemaker:CreateArtifact": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
@@ -231803,6 +232114,11 @@
     ],
     "aws:allow_action:sagemaker:CreateContext": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -231938,6 +232254,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelRegistryFullAccess"
@@ -231998,6 +232319,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
@@ -232183,6 +232509,11 @@
     ],
     "aws:allow_action:sagemaker:CreateInferenceComponent": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
@@ -232310,6 +232641,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelRegistryFullAccess"
@@ -232395,6 +232731,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelRegistryFullAccess"
@@ -232430,6 +232771,11 @@
         "display_name": "AmazonSageMakerCanvasFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
@@ -232569,6 +232915,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasDataPrepFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -232642,6 +232993,11 @@
       }
     ],
     "aws:allow_action:sagemaker:CreatePresignedMlflowAppUrl": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
@@ -232810,6 +233166,11 @@
         "display_name": "AmazonSageMakerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -233320,6 +233681,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -233443,6 +233809,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy"
       }
     ],
+    "aws:allow_action:sagemaker:DeleteHubContent": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      }
+    ],
     "aws:allow_action:sagemaker:DeleteHumanLoop": [
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -233517,6 +233890,11 @@
       }
     ],
     "aws:allow_action:sagemaker:DeleteInferenceComponent": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
@@ -233649,6 +234027,11 @@
     ],
     "aws:allow_action:sagemaker:DeleteModelPackage": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelRegistryFullAccess"
@@ -233680,6 +234063,11 @@
       }
     ],
     "aws:allow_action:sagemaker:DeleteModelPackageGroup": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
@@ -234186,6 +234574,11 @@
     ],
     "aws:allow_action:sagemaker:DescribeAction": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelRegistryFullAccess"
@@ -234328,6 +234721,11 @@
       }
     ],
     "aws:allow_action:sagemaker:DescribeArtifact": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
@@ -234782,6 +235180,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -234867,6 +235270,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -235037,6 +235445,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       }
     ],
     "aws:allow_action:sagemaker:DescribeHumanLoop": [
@@ -235211,6 +235624,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockReadOnly"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
@@ -235326,6 +235744,11 @@
     ],
     "aws:allow_action:sagemaker:DescribeMlflowApp": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
@@ -235393,6 +235816,11 @@
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
@@ -235555,6 +235983,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelGovernanceUseAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelGovernanceUseAccess"
@@ -235610,6 +236043,11 @@
         "display_name": "AmazonSageMakerCanvasFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
@@ -235831,6 +236269,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasDataPrepFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelRegistryFullAccess"
@@ -235873,6 +236316,11 @@
     ],
     "aws:allow_action:sagemaker:DescribePipelineDefinitionForExecution": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -235903,6 +236351,11 @@
         "display_name": "AmazonSageMakerCanvasDataPrepFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasDataPrepFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasDataPrepFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
@@ -236099,6 +236552,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelGovernanceUseAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelGovernanceUseAccess"
@@ -236236,6 +236694,11 @@
       }
     ],
     "aws:allow_action:sagemaker:DescribeTrialComponent": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
@@ -236645,6 +237108,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy"
       }
     ],
+    "aws:allow_action:sagemaker:ImportHubContent": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      }
+    ],
     "aws:allow_action:sagemaker:InvokeEndpoint": [
       {
         "display_name": "AmazonBedrockFullAccess",
@@ -236670,6 +237140,11 @@
         "display_name": "AmazonSageMakerCanvasFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -236804,6 +237279,11 @@
       }
     ],
     "aws:allow_action:sagemaker:ListActions": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
@@ -236953,6 +237433,11 @@
     ],
     "aws:allow_action:sagemaker:ListArtifacts": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelRegistryFullAccess"
@@ -236999,6 +237484,11 @@
       }
     ],
     "aws:allow_action:sagemaker:ListAssociations": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
@@ -237456,6 +237946,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -237597,6 +238092,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy"
       }
     ],
+    "aws:allow_action:sagemaker:ListHubContentVersions": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      }
+    ],
     "aws:allow_action:sagemaker:ListHubContents": [
       {
         "display_name": "AmazonBedrockFullAccess",
@@ -237612,6 +238114,11 @@
         "display_name": "AmazonBedrockReadOnly",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockReadOnly.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockReadOnly"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
@@ -237630,6 +238137,11 @@
       }
     ],
     "aws:allow_action:sagemaker:ListHubs": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
@@ -237818,6 +238330,11 @@
     ],
     "aws:allow_action:sagemaker:ListInferenceComponents": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
@@ -237935,12 +238452,22 @@
     ],
     "aws:allow_action:sagemaker:ListMlflowApps": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
       }
     ],
     "aws:allow_action:sagemaker:ListMlflowTrackingServers": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
@@ -238131,6 +238658,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -238181,6 +238713,11 @@
         "display_name": "AmazonSageMakerCanvasFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
@@ -238523,6 +239060,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasDataPrepFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -238549,6 +239091,11 @@
       }
     ],
     "aws:allow_action:sagemaker:ListPipelineExecutions": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
@@ -238841,6 +239388,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelGovernanceUseAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelGovernanceUseAccess"
@@ -238897,6 +239449,11 @@
       }
     ],
     "aws:allow_action:sagemaker:ListTrainingJobs": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelGovernanceUseAccess.html",
@@ -239134,6 +239691,11 @@
     ],
     "aws:allow_action:sagemaker:ListWorkforces": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -239261,6 +239823,11 @@
     ],
     "aws:allow_action:sagemaker:QueryLineage": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerReadOnly",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerReadOnly.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerReadOnly"
@@ -239352,6 +239919,11 @@
         "display_name": "AmazonDataZoneSageMakerManageAccessRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneSageMakerManageAccessRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneSageMakerManageAccessRolePolicy"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerModelGovernanceUseAccess",
@@ -239590,6 +240162,11 @@
         "display_name": "AmazonSageMakerCanvasDataPrepFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasDataPrepFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasDataPrepFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -239930,6 +240507,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
@@ -240042,6 +240624,11 @@
       }
     ],
     "aws:allow_action:sagemaker:UpdateArtifact": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
@@ -240309,6 +240896,11 @@
     ],
     "aws:allow_action:sagemaker:UpdateMlflowApp": [
       {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
+      {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
@@ -240334,6 +240926,11 @@
       }
     ],
     "aws:allow_action:sagemaker:UpdateModelPackage": [
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+      },
       {
         "display_name": "AmazonSageMakerModelRegistryFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelRegistryFullAccess.html",
@@ -240443,6 +241040,11 @@
         "display_name": "AmazonSageMakerCanvasDataPrepFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasDataPrepFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasDataPrepFullAccess"
+      },
+      {
+        "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
@@ -252480,6 +253082,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSNSFullAccess"
       },
       {
+        "display_name": "AmazonConnectCampaignsServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectCampaignsServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy"
+      },
+      {
         "display_name": "AmazonConnectServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
@@ -254810,6 +255417,11 @@
     ],
     "aws:allow_action:social-messaging:GetWhatsAppMessageTemplate": [
       {
+        "display_name": "AmazonConnectCampaignsServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectCampaignsServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy"
+      },
+      {
         "display_name": "AmazonConnectServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
@@ -254837,6 +255449,11 @@
       }
     ],
     "aws:allow_action:social-messaging:SendWhatsAppMessage": [
+      {
+        "display_name": "AmazonConnectCampaignsServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectCampaignsServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy"
+      },
       {
         "display_name": "AmazonConnectServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
@@ -289955,7 +290572,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-23T04:30:55Z",
+  "generated_at_utc": "2026-05-28T04:47:09Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -290696,6 +291313,18 @@
         "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+      },
+      "terms": [
+        "airflow:*",
+        "aws:allow_action:airflow:*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:airflow:*",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       },
       "terms": [
         "airflow:*",
@@ -299336,6 +299965,18 @@
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "datazone:*Notebook*",
+        "aws:allow_action:datazone:*Notebook*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:datazone:*Notebook*",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       },
       "terms": [
         "datazone:*Notebook*",

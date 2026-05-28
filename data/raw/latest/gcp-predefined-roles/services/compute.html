@@ -1479,13 +1479,13 @@
       
         track-metadata-position="nav"
       
-        track-metadata-eventDetail="nav"
+        track-type="globalNav"
       
         track-name="console"
       
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-type="globalNav"
+        track-metadata-eventDetail="nav"
       
     >
   Console
@@ -1674,15 +1674,15 @@
     
     
       
+        track-metadata-eventDetail="nav"
+      
         referrerpolicy="no-referrer-when-downgrade"
       
         track-type="freeTrial"
       
-        track-metadata-position="nav"
-      
-        track-metadata-eventDetail="nav"
-      
         track-name="gcpCta"
+      
+        track-metadata-position="nav"
       
     
     >Start free</a>
@@ -2309,13 +2309,13 @@
       
         track-metadata-position="nav"
       
-        track-metadata-eventDetail="nav"
+        track-type="globalNav"
       
         track-name="console"
       
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-type="globalNav"
+        track-metadata-eventDetail="nav"
       
     
      data-category="Site-Wide Custom Events"
@@ -5907,6 +5907,9 @@ Snapshot
       <li><code translate="no" dir="ltr">compute.healthChecks.update</code></li>
       <li><code translate="no" dir="ltr">compute.healthChecks.use</code></li>
       <li><code translate="no" dir="ltr">compute.<wbr>healthChecks.<wbr>useReadOnly</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.get</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.getVersion</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.list</code></li>
       <li><code translate="no" dir="ltr">compute.<wbr>httpHealthChecks.<wbr>create</code></li>
       <li><code translate="no" dir="ltr">compute.<wbr>httpHealthChecks.<wbr>createTagBinding</code></li>
       <li><code translate="no" dir="ltr">compute.<wbr>httpHealthChecks.<wbr>delete</code></li>
@@ -6988,6 +6991,16 @@ Editor role for compute
   <p><code translate="no" dir="ltr">compute.healthChecks.update</code></p>
   <p><code translate="no" dir="ltr">compute.healthChecks.use</code></p>
   <p><code translate="no" dir="ltr">compute.<wbr>healthChecks.<wbr>useReadOnly</code></p>
+  <devsite-expandable id="expandable-compute.editor-compute.hosts.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">compute.hosts.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">compute.hosts.get</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.getVersion</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.list</code></li>
+    </ul>
+  </devsite-expandable>
   <p><code translate="no" dir="ltr">compute.<wbr>httpHealthChecks.<wbr>create</code></p>
   <p><code translate="no" dir="ltr">compute.<wbr>httpHealthChecks.<wbr>delete</code></p>
   <p><code translate="no" dir="ltr">compute.httpHealthChecks.get</code></p>
@@ -8081,6 +8094,16 @@ Snapshot
   </devsite-expandable>
   <p><code translate="no" dir="ltr">compute.globalOperations.get</code></p>
   <p><code translate="no" dir="ltr">compute.globalOperations.list</code></p>
+  <devsite-expandable id="expandable-compute.instanceAdmin-compute.hosts.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">compute.hosts.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">compute.hosts.get</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.getVersion</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.list</code></li>
+    </ul>
+  </devsite-expandable>
   <p><code translate="no" dir="ltr">compute.images.get</code></p>
   <p><code translate="no" dir="ltr">compute.images.getFromFamily</code></p>
   <p><code translate="no" dir="ltr">compute.images.list</code></p>
@@ -8540,6 +8563,16 @@ Read access to all Compute Engine networking resources.</p>
   <p><code translate="no" dir="ltr">compute.healthChecks.list</code></p>
   <p><code translate="no" dir="ltr">compute.<wbr>healthChecks.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">compute.<wbr>healthChecks.<wbr>listTagBindings</code></p>
+  <devsite-expandable id="expandable-compute.instanceAdmin.v1-compute.hosts.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">compute.hosts.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">compute.hosts.get</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.getVersion</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.list</code></li>
+    </ul>
+  </devsite-expandable>
   <p><code translate="no" dir="ltr">compute.httpHealthChecks.get</code></p>
   <p><code translate="no" dir="ltr">compute.httpHealthChecks.list</code></p>
   <p><code translate="no" dir="ltr">compute.<wbr>httpHealthChecks.<wbr>listEffectiveTags</code></p>
@@ -11253,6 +11286,11 @@ Instance
       <li><code translate="no" dir="ltr">networkservices.<wbr>gateways.<wbr>listTagBindings</code></li>
       <li><code translate="no" dir="ltr">networkservices.<wbr>gateways.<wbr>update</code></li>
       <li><code translate="no" dir="ltr">networkservices.gateways.use</code></li>
+      <li><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>list</code></li>
+      <li><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>update</code></li>
       <li><code translate="no" dir="ltr">networkservices.<wbr>grpcRoutes.<wbr>create</code></li>
       <li><code translate="no" dir="ltr">networkservices.<wbr>grpcRoutes.<wbr>delete</code></li>
       <li><code translate="no" dir="ltr">networkservices.grpcRoutes.get</code></li>
@@ -11643,6 +11681,8 @@ Subnetwork
   <p><code translate="no" dir="ltr">networkservices.gateways.get</code></p>
   <p><code translate="no" dir="ltr">networkservices.gateways.list</code></p>
   <p><code translate="no" dir="ltr">networkservices.gateways.use</code></p>
+  <p><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">networkservices.grpcRoutes.get</code></p>
   <p><code translate="no" dir="ltr">networkservices.<wbr>grpcRoutes.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">networkservices.<wbr>httpFilters.<wbr>get</code></p>
@@ -12088,6 +12128,8 @@ Instance
   <p><code translate="no" dir="ltr">networkservices.<wbr>endpointPolicies.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">networkservices.gateways.get</code></p>
   <p><code translate="no" dir="ltr">networkservices.gateways.list</code></p>
+  <p><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">networkservices.<wbr>googleTagGatewayPolicies.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">networkservices.grpcRoutes.get</code></p>
   <p><code translate="no" dir="ltr">networkservices.<wbr>grpcRoutes.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">networkservices.<wbr>httpFilters.<wbr>get</code></p>
@@ -12986,6 +13028,16 @@ Snapshot
   <p><code translate="no" dir="ltr">compute.healthChecks.list</code></p>
   <p><code translate="no" dir="ltr">compute.<wbr>healthChecks.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">compute.<wbr>healthChecks.<wbr>listTagBindings</code></p>
+  <devsite-expandable id="expandable-compute.viewer-compute.hosts.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">compute.hosts.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">compute.hosts.get</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.getVersion</code></li>
+      <li><code translate="no" dir="ltr">compute.hosts.list</code></li>
+    </ul>
+  </devsite-expandable>
   <p><code translate="no" dir="ltr">compute.httpHealthChecks.get</code></p>
   <p><code translate="no" dir="ltr">compute.httpHealthChecks.list</code></p>
   <p><code translate="no" dir="ltr">compute.<wbr>httpHealthChecks.<wbr>listEffectiveTags</code></p>
@@ -34134,6 +34186,336 @@ Gives Compute Engine Service Account access to assert service account authority.
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/vpcaccess#vpcaccess.serviceAgent">Serverless VPC Access Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>vpcaccess.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="compute.hosts.get" data-text="compute.hosts.get" tabindex="-1"><code translate="no" dir="ltr">compute.hosts.get</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.admin">Compute Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.editor">Compute Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin">Compute Instance Admin (beta)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin.v1">Compute Instance Admin (v1)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin.v1</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.viewer">Compute Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.admin">Notebooks Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.editor">Notebooks Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.viewer">Notebooks Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.databasesAdmin">Databases Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.databasesAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.infrastructureAdmin">Infrastructure Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.infrastructureAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.networkAdmin">Network Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.siteReliabilityEngineer">Site Reliability Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.siteReliabilityEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyViewer">Notebooks Legacy Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.runner">Notebooks Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.runner</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="compute.hosts.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/batch#batch.serviceAgent">Google Batch Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>batch.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/tpu#cloudtpu.serviceAgent">Cloud TPU V2 API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudtpu.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/composer#composer.serviceAgent">Cloud Composer API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/container#container.serviceAgent">Kubernetes Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>container.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent">Cloud Dataflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataflow.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataprep#dataprep.serviceAgent">Dataprep Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent">Dataproc Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataproc.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#genomics.serviceAgent">Genomics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>genomics.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#lifesciences.serviceAgent">Cloud Life Sciences Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>lifesciences.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/notebooks#notebooks.serviceAgent">AI Platform Notebooks Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="compute.hosts.getVersion" data-text="compute.hosts.getVersion" tabindex="-1"><code translate="no" dir="ltr">compute.hosts.getVersion</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.admin">Compute Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.editor">Compute Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin">Compute Instance Admin (beta)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin.v1">Compute Instance Admin (v1)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin.v1</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.viewer">Compute Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.admin">Notebooks Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.editor">Notebooks Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.viewer">Notebooks Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.databasesAdmin">Databases Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.databasesAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.infrastructureAdmin">Infrastructure Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.infrastructureAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.networkAdmin">Network Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.siteReliabilityEngineer">Site Reliability Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.siteReliabilityEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyViewer">Notebooks Legacy Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.runner">Notebooks Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.runner</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="compute.hosts.getVersion-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/batch#batch.serviceAgent">Google Batch Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>batch.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/tpu#cloudtpu.serviceAgent">Cloud TPU V2 API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudtpu.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/composer#composer.serviceAgent">Cloud Composer API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/container#container.serviceAgent">Kubernetes Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>container.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent">Cloud Dataflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataflow.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataprep#dataprep.serviceAgent">Dataprep Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent">Dataproc Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataproc.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#genomics.serviceAgent">Genomics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>genomics.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#lifesciences.serviceAgent">Cloud Life Sciences Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>lifesciences.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/notebooks#notebooks.serviceAgent">AI Platform Notebooks Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="compute.hosts.list" data-text="compute.hosts.list" tabindex="-1"><code translate="no" dir="ltr">compute.hosts.list</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.admin">Compute Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.editor">Compute Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin">Compute Instance Admin (beta)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin.v1">Compute Instance Admin (v1)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin.v1</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.viewer">Compute Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.admin">Notebooks Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.editor">Notebooks Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.viewer">Notebooks Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.databasesAdmin">Databases Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.databasesAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.infrastructureAdmin">Infrastructure Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.infrastructureAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.networkAdmin">Network Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.siteReliabilityEngineer">Site Reliability Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.siteReliabilityEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyViewer">Notebooks Legacy Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.runner">Notebooks Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.runner</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="compute.hosts.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/batch#batch.serviceAgent">Google Batch Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>batch.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/tpu#cloudtpu.serviceAgent">Cloud TPU V2 API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudtpu.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/composer#composer.serviceAgent">Cloud Composer API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/container#container.serviceAgent">Kubernetes Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>container.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent">Cloud Dataflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataflow.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataprep#dataprep.serviceAgent">Dataprep Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent">Dataproc Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataproc.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#genomics.serviceAgent">Genomics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>genomics.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#lifesciences.serviceAgent">Cloud Life Sciences Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>lifesciences.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/notebooks#notebooks.serviceAgent">AI Platform Notebooks Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.serviceAgent</code>)
             </li>
           </ul>
         </devsite-expandable>
@@ -60078,6 +60460,9 @@ Gives Compute Engine Service Account access to assert service account authority.
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/vmwareengine#vmwareengine.serviceAgent">VMware Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>vmwareengine.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/vpcaccess#vpcaccess.serviceAgent">Serverless VPC Access Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>vpcaccess.serviceAgent</code>)
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/workstations#workstations.serviceAgent">Workstations Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workstations.serviceAgent</code>)
@@ -89326,6 +89711,9 @@ Gives Compute Engine Service Account access to assert service account authority.
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.GoogleTagGatewayPolicyAdmin">Google Tag Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.GoogleTagGatewayPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -89459,6 +89847,9 @@ Gives Compute Engine Service Account access to assert service account authority.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.GoogleTagGatewayPolicyAdmin">Google Tag Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.GoogleTagGatewayPolicyAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
@@ -95703,6 +96094,9 @@ Gives Compute Engine Service Account access to assert service account authority.
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.GoogleTagGatewayPolicyAdmin">Google Tag Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.GoogleTagGatewayPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -95848,6 +96242,9 @@ Gives Compute Engine Service Account access to assert service account authority.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.GoogleTagGatewayPolicyAdmin">Google Tag Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.GoogleTagGatewayPolicyAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
@@ -102078,6 +102475,9 @@ Gives Compute Engine Service Account access to assert service account authority.
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.GoogleTagGatewayPolicyAdmin">Google Tag Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.GoogleTagGatewayPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -102289,6 +102689,9 @@ Gives Compute Engine Service Account access to assert service account authority.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.GoogleTagGatewayPolicyAdmin">Google Tag Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.GoogleTagGatewayPolicyAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
@@ -106178,7 +106581,7 @@ Gives Compute Engine Service Account access to assert service account authority.
 
   
     <devsite-hats-survey class="nocontent" data-nosnippet
-      hats-id="Nd7nTix2o0eU5NUYprb0ThtUc5jf"
+      hats-id="mwETRvWii0eU5NUYprb0Y9z5GVbc"
       listnr-id="83405"></devsite-hats-survey>
   
 
@@ -106234,7 +106637,7 @@ Gives Compute Engine Service Account access to assert service account authority.
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-05-21 UTC.</p>
+  <p>Last updated 2026-05-27 UTC.</p>
 </devsite-content-footer>
 
 
@@ -106283,7 +106686,7 @@ Gives Compute Engine Service Account access to assert service account authority.
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-05-21 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-05-27 UTC."],[],[]]
     </template>
   
 </div>
@@ -106315,7 +106718,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-eventDetail="cloud.google.com/products/"track-name="see all products"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="products and pricing"track-metadata-module="footer">
+            track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/products/"track-name="see all products"track-type="footer link"track-metadata-module="footer">
             
           
             See all products
@@ -106332,7 +106735,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-name="google cloud pricing"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="products and pricing"track-metadata-module="footer">
+            track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-type="footer link"track-name="google cloud pricing"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/pricing/">
             
           
             Google Cloud pricing
@@ -106349,7 +106752,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="google cloud marketplace"track-metadata-eventDetail="cloud.google.com/marketplace/">
+            track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-module="footer"track-type="footer link"track-name="google cloud marketplace"track-metadata-eventDetail="cloud.google.com/marketplace/">
             
           
             Google Cloud Marketplace
@@ -106366,7 +106769,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-name="contact sales"track-metadata-eventDetail="cloud.google.com/contact/"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="engage"track-metadata-module="footer">
+            track-metadata-position="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/contact/"track-metadata-module="footer"track-type="footer link"track-name="contact sales">
             
               
               
@@ -106393,7 +106796,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"track-metadata-eventDetail="www.googlecloudcommunity.com"track-name="google cloud community"track-type="footer link"target="_blank"track-metadata-module="footer"track-metadata-child_headline="engage"rel="noopener">
+            track-metadata-child_headline="engage"track-metadata-position="footer"target="_blank"track-metadata-eventDetail="www.googlecloudcommunity.com"track-type="footer link"track-name="google cloud community"rel="noopener"track-metadata-module="footer">
             
           
             Community forums
@@ -106410,7 +106813,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/support-hub/"track-name="support"track-metadata-position="footer">
+            track-type="footer link"track-name="support"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-child_headline="resources"track-metadata-position="footer">
             
           
             Support
@@ -106427,7 +106830,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/release-notes/"track-name="release notes"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources">
+            track-type="footer link"track-name="release notes"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-child_headline="resources"track-metadata-position="footer">
             
           
             Release Notes
@@ -106444,7 +106847,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-position="footer"track-metadata-eventDetail="status.cloud.google.com"track-name="system status"track-metadata-module="footer"track-metadata-child_headline="resources"track-type="footer link"target="_blank">
+            track-name="system status"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="status.cloud.google.com"target="_blank"track-metadata-child_headline="resources"track-metadata-position="footer">
             
               
               
@@ -106471,7 +106874,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-child_headline="resources"track-metadata-module="footer"track-type="footer link"track-name="github"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-position="footer">
+            track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-module="footer"track-name="github"track-type="footer link">
             
           
             GitHub
@@ -106488,7 +106891,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="resources"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="google cloud quickstarts"track-metadata-eventDetail="cloud.google.com/docs/get-started/">
+            track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-type="footer link"track-name="google cloud quickstarts"track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-position="footer">
             
           
             Getting Started with Google Cloud
@@ -106505,7 +106908,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="code samples"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-module="footer"track-type="footer link">
+            track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/docs/samples"track-type="footer link"track-name="code samples"track-metadata-module="footer">
             
           
             Code samples
@@ -106522,7 +106925,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-metadata-child_headline="resources"track-metadata-module="footer"track-name="cloud architecture center"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-position="footer">
+            track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/architecture/"track-type="footer link"track-name="cloud architecture center"track-metadata-module="footer">
             
           
             Cloud Architecture Center
@@ -106539,7 +106942,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-position="footer"track-name="training"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-child_headline="resources"track-metadata-module="footer"track-type="footer link">
+            track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-module="footer"track-name="training"track-type="footer link"track-metadata-eventDetail="cloud.google.com/learn/training/">
             
               
               
@@ -106566,7 +106969,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-module="footer"track-metadata-child_headline="engage"track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/blog/"track-name="blog">
+            track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-module="footer"track-type="footer link"track-name="blog">
             
           
             Blog
@@ -106583,7 +106986,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-metadata-child_headline="engage"track-metadata-module="footer"track-name="events"track-metadata-eventDetail="cloud.google.com/events/"track-metadata-position="footer">
+            track-metadata-position="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/events/"track-name="events"track-type="footer link"track-metadata-module="footer">
             
           
             Events
@@ -106600,7 +107003,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="follow on x"track-metadata-eventDetail="x.com/googlecloud"track-metadata-position="footer"track-metadata-module="footer"rel="noopener"track-metadata-child_headline="engage"track-type="footer link"target="_blank">
+            track-metadata-position="footer"track-metadata-child_headline="engage"target="_blank"track-metadata-eventDetail="x.com/googlecloud"track-type="footer link"track-name="follow on x"rel="noopener"track-metadata-module="footer">
             
           
             X (Twitter)
@@ -106617,7 +107020,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-module="footer"track-metadata-child_headline="engage"rel="noopener"target="_blank"track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="www.youtube.com/googlecloud"track-name="google cloud on youtube">
+            track-metadata-eventDetail="www.youtube.com/googlecloud"rel="noopener"track-metadata-module="footer"track-type="footer link"track-name="google cloud on youtube"track-metadata-child_headline="engage"track-metadata-position="footer"target="_blank">
             
           
             Google Cloud on YouTube
@@ -106634,7 +107037,7 @@ Gives Compute Engine Service Account access to assert service account authority.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-name="google cloud tech on youtube"track-metadata-position="footer"track-type="footer link"target="_blank"track-metadata-module="footer"track-metadata-child_headline="engage"rel="noopener">
+            target="_blank"track-metadata-position="footer"track-metadata-child_headline="engage"track-metadata-module="footer"rel="noopener"track-type="footer link"track-name="google cloud tech on youtube"track-metadata-eventDetail="www.youtube.com/googlecloudplatform">
             
               
               
@@ -106676,15 +107079,15 @@ Gives Compute Engine Service Account access to assert service account authority.
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-name="about google"
-         
            track-metadata-eventDetail="//about.google/"
          
-           track-metadata-position="footer"
+           track-name="about google"
+         
+           track-type="footer link"
          
            track-metadata-module="utility footer"
          
-           track-type="footer link"
+           track-metadata-position="footer"
          
            target="_blank"
          >
@@ -106702,17 +107105,17 @@ Gives Compute Engine Service Account access to assert service account authority.
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           track-metadata-module="utility footer"
-         
-           target="_blank"
-         
            track-type="footer link"
          
-           track-metadata-position="footer"
+           track-name="privacy"
+         
+           track-metadata-module="utility footer"
          
            track-metadata-eventDetail="//policies.google.com/privacy"
          
-           track-name="privacy"
+           target="_blank"
+         
+           track-metadata-position="footer"
          >
           Privacy
         </a>
@@ -106728,17 +107131,17 @@ Gives Compute Engine Service Account access to assert service account authority.
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           track-metadata-module="utility footer"
-         
-           track-type="footer link"
-         
            target="_blank"
          
            track-metadata-position="footer"
          
-           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
+           track-type="footer link"
          
            track-name="site terms"
+         
+           track-metadata-module="utility footer"
+         
+           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
          >
           Site terms
         </a>
@@ -106754,15 +107157,15 @@ Gives Compute Engine Service Account access to assert service account authority.
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-name="google cloud terms"
-         
            track-metadata-eventDetail="//cloud.google.com/product-terms"
-         
-           track-metadata-position="footer"
          
            track-metadata-module="utility footer"
          
            track-type="footer link"
+         
+           track-name="google cloud terms"
+         
+           track-metadata-position="footer"
          >
           Google Cloud terms
         </a>
@@ -106778,17 +107181,17 @@ Gives Compute Engine Service Account access to assert service account authority.
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-metadata-module="utility footer"
+           track-metadata-position="footer"
+         
+           track-metadata-eventDetail="#"
          
            track-type="footer link"
          
-           aria-hidden="true"
-         
-           track-metadata-position="footer"
-         
            track-name="Manage cookies"
          
-           track-metadata-eventDetail="#"
+           aria-hidden="true"
+         
+           track-metadata-module="utility footer"
          >
           Manage cookies
         </a>
@@ -106804,13 +107207,13 @@ Gives Compute Engine Service Account access to assert service account authority.
            data-category="Site-Wide Custom Events"
            data-label="Footer Our third decade of climate action: join us link"
          
-           track-metadata-module="utility footer"
+           track-metadata-eventDetail="/sustainability/"
          
            track-type="footer link"
          
-           track-metadata-eventDetail="/sustainability/"
-         
            track-name="Our third decade of climate action: join us"
+         
+           track-metadata-module="utility footer"
          
            track-metadata-position="footer"
          >
@@ -106832,9 +107235,9 @@ Gives Compute Engine Service Account access to assert service account authority.
          
            track-type="footer link"
          
-           track-metadata-module="utility footer"
-         
            track-name="subscribe"
+         
+           track-metadata-module="utility footer"
          
            track-metadata-eventDetail="/newsletter/"
          
@@ -106926,12 +107329,12 @@ Gives Compute Engine Service Account access to assert service account authority.
   <cloudx-free-trial-eligible-store freeTrialEligible="true"></cloudx-free-trial-eligible-store>
 
     
-<script nonce="P1mdvdF3q2MdcSLFt7p5ghS9dUXtzB">
+<script nonce="Lg6OQQMitZ0ki4d8oMiQS9RXAdx0YR">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/clouddocs/images/lockup.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Cloud__enable_cloud_shell_fte_user_flow","MiscFeatureFlags__enable_view_transitions","MiscFeatureFlags__enable_explicit_template_dependencies","DevPro__enable_free_benefits","OnSwitch__enable","MiscFeatureFlags__enable_project_variables","Profiles__enable_developer_profile_benefits_ui_redesign","Search__enable_page_map","Cloud__cache_serialized_dynamic_content","Concierge__enable_pushui","Profiles__enable_auto_apply_credits","Profiles__enable_callout_notifications","Profiles__enable_awarding_url","CloudShell__cloud_shell_button","DevPro__enable_developer_subscriptions","DevPro__enable_vertex_credit_card","Search__enable_ai_eligibility_checks","Profiles__enable_purchase_prompts","MiscFeatureFlags__fix_lower_breadcrumbs","DevPro__enable_enterprise","DevPro__enable_credits_banner","Profiles__enable_profile_collections","DevPro__enable_g1_integration","Cloud__enable_cloud_dlp_service","MiscFeatureFlags__enable_variable_operator_index_yaml","DevPro__enable_devsite_captcha","TpcFeatures__enable_unmirrored_page_left_nav","BookNav__enable_tenant_cache_key","Profiles__enable_completequiz_endpoint","CloudShell__cloud_code_overflow_menu","Cloud__enable_legacy_calculator_redirect","DevPro__enable_nvidia_credits_card","DevPro__enable_google_payments","EngEduTelemetry__enable_engedu_telemetry","MiscFeatureFlags__enable_appearance_cookies","DevPro__enable_code_assist","Profiles__enable_targeted_hero","DevPro__enable_firebase_workspaces_card","MiscFeatureFlags__enable_framebox_badge_methods","Profiles__enable_complete_playlist_endpoint","MiscFeatureFlags__enable_variable_operator","DevPro__enable_google_one_card","Profiles__enable_public_developer_profiles","MiscFeatureFlags__developers_footer_image","MiscFeatureFlags__remove_cross_domain_tracking_params","Profiles__enable_join_program_group_endpoint","Profiles__enable_page_saving","DevPro__enable_devpro_offers","SignIn__enable_l1_signup_flow","Profiles__enable_recognition_badges","Cloud__enable_llm_concierge_chat","Cloud__fast_free_trial","DevPro__enable_google_payments_buyflow","Profiles__enable_stripe_subscription_management","DevPro__remove_eu_tax_intake_form","Profiles__enable_completecodelab_endpoint","DevPro__enable_cloud_innovators_plus","Concierge__enable_devsite_llm_tools","Profiles__enable_developer_profiles_callout","Search__enable_suggestions_from_borg","Cloud__enable_cloudx_experiment_ids","Concierge__enable_concierge_restricted","Analytics__enable_devpro_interaction_logging","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__enable_explain_this_code","Concierge__enable_actions_menu","Profiles__enable_playlist_community_acl","TpcFeatures__proxy_prod_host","Cloud__enable_free_trial_server_call","Profiles__require_profile_eligibility_for_signin","Analytics__enable_clearcut_logging","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Cloud__enable_cloud_shell","Search__enable_ai_search_summaries_for_all","Experiments__reqs_query_experiments","MiscFeatureFlags__developers_footer_dark_image","MiscFeatureFlags__enable_firebase_utm","MiscFeatureFlags__enable_dark_theme","Profiles__enable_developer_profile_pages_as_content","Search__enable_dynamic_content_confidential_banner","DevPro__enable_embed_profile_creation","Profiles__enable_user_type","Profiles__enable_dashboard_curated_recommendations"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup-dark-theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v6ae673272608590539f8a06b3f3271c0f5688cde07499d1c9e644aeb66c8c060/clouddocs/images/lockup.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Cloud__enable_llm_concierge_chat","Cloud__fast_free_trial","MiscFeatureFlags__enable_firebase_utm","DevPro__remove_eu_tax_intake_form","DevPro__enable_google_payments_buyflow","DevPro__enable_devpro_offers","Profiles__enable_complete_playlist_endpoint","DevPro__enable_code_assist","MiscFeatureFlags__developers_footer_image","Profiles__enable_developer_profiles_callout","DevPro__enable_enterprise","DevPro__enable_developer_subscriptions","Profiles__enable_targeted_hero","Profiles__enable_public_developer_profiles","Profiles__require_profile_eligibility_for_signin","Concierge__enable_pushui","MiscFeatureFlags__enable_project_variables","MiscFeatureFlags__enable_variable_operator","Profiles__enable_recognition_badges","MiscFeatureFlags__enable_explicit_template_dependencies","Concierge__enable_concierge_restricted","MiscFeatureFlags__enable_variable_operator_index_yaml","MiscFeatureFlags__enable_framebox_badge_methods","Search__enable_page_map","Concierge__enable_actions_menu","Profiles__enable_stripe_subscription_management","Profiles__enable_page_saving","MiscFeatureFlags__fix_lower_breadcrumbs","Search__enable_ai_search_summaries_for_all","BookNav__enable_tenant_cache_key","CloudShell__cloud_code_overflow_menu","Profiles__enable_completequiz_endpoint","Cloud__enable_legacy_calculator_redirect","DevPro__enable_vertex_credit_card","MiscFeatureFlags__developers_footer_dark_image","TpcFeatures__enable_unmirrored_page_left_nav","Search__enable_dynamic_content_confidential_banner","MiscFeatureFlags__remove_cross_domain_tracking_params","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__enable_dark_theme","Profiles__enable_purchase_prompts","Concierge__enable_remove_info_panel_tags","DevPro__enable_free_benefits","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_completecodelab_endpoint","Search__enable_ai_eligibility_checks","Cloud__cache_serialized_dynamic_content","Cloud__enable_cloud_shell","CloudShell__cloud_shell_button","Profiles__enable_dashboard_curated_recommendations","Profiles__enable_user_type","Profiles__enable_developer_profile_pages_as_content","Concierge__enable_devsite_llm_tools","DevPro__enable_firebase_workspaces_card","DevPro__enable_nvidia_credits_card","DevPro__enable_credits_banner","DevPro__enable_embed_profile_creation","Search__enable_suggestions_from_borg","DevPro__enable_devsite_captcha","Profiles__enable_profile_collections","Analytics__enable_devpro_interaction_logging","Cloud__enable_free_trial_server_call","Profiles__enable_playlist_community_acl","OnSwitch__enable","Analytics__enable_clearcut_logging","SignIn__enable_l1_signup_flow","Cloud__enable_cloud_dlp_service","Cloud__enable_cloud_shell_fte_user_flow","Profiles__enable_developer_profile_benefits_ui_redesign","DevPro__enable_g1_integration","Profiles__enable_join_program_group_endpoint","Profiles__enable_auto_apply_credits","Profiles__enable_awarding_url","DevPro__enable_google_payments","DevPro__enable_google_one_card","Experiments__reqs_query_experiments","TpcFeatures__proxy_prod_host","MiscFeatureFlags__enable_view_transitions","DevPro__enable_cloud_innovators_plus","EngEduTelemetry__enable_engedu_telemetry","Profiles__enable_callout_notifications","MiscFeatureFlags__enable_appearance_cookies","MiscFeatureFlags__enable_explain_this_code"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup-dark-theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 

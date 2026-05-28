@@ -82,7 +82,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "meshdataplane.googleapis.com, trafficdirector.googleapis.com, meshconfig.googleapis.com, anthosservicemesh.googleapis.com",
+      "name": "anthosservicemesh.googleapis.com, meshdataplane.googleapis.com, trafficdirector.googleapis.com, meshconfig.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "title": "Google Workspace Marketplace",
-      "name": "workspacemarketplace.googleapis.com, appmetadata.googleapis.com",
+      "name": "appmetadata.googleapis.com, workspacemarketplace.googleapis.com",
       "url": "/iam/docs/roles-permissions/workspacemarketplace"
     },
     {
@@ -437,7 +437,7 @@
     },
     {
       "title": "Service Catalog",
-      "name": "cloudprivatecatalog.googleapis.com, cloudprivatecatalogproducer.googleapis.com",
+      "name": "cloudprivatecatalogproducer.googleapis.com, cloudprivatecatalog.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudprivatecatalog"
     },
     {
@@ -487,7 +487,7 @@
     },
     {
       "title": "Cloud TPU",
-      "name": "cloudtpu.googleapis.com, tpu.googleapis.com",
+      "name": "tpu.googleapis.com, cloudtpu.googleapis.com",
       "url": "/iam/docs/roles-permissions/tpu"
     },
     {
@@ -712,12 +712,12 @@
     },
     {
       "title": "Data Studio",
-      "name": "datastudio.googleapis.com, lookerstudio.googleapis.com",
+      "name": "lookerstudio.googleapis.com, datastudio.googleapis.com",
       "url": "/iam/docs/roles-permissions/datastudio"
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
+      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -877,7 +877,7 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com, firebasenotifications.googleapis.com",
+      "name": "firebasenotifications.googleapis.com, cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
@@ -1442,7 +1442,7 @@
     },
     {
       "title": "RISC Configuration Service",
-      "name": "riscconfigs.googleapis.com, riscconfigurationservice.googleapis.com",
+      "name": "riscconfigurationservice.googleapis.com, riscconfigs.googleapis.com",
       "url": "/iam/docs/roles-permissions/riscconfigurationservice"
     },
     {
@@ -4111,6 +4111,12 @@
       "title": "Chronicle API Limited Viewer",
       "name": "roles/chronicle.limitedViewer",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.limitedViewer",
+      "priority": 2
+    },
+    {
+      "title": "Chronicle Organization Service Agent",
+      "name": "roles/chronicle.orgServiceAgent",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.orgServiceAgent",
       "priority": 2
     },
     {
@@ -11594,6 +11600,12 @@
       "name": "roles/networkservices.viewer",
       "url": "/iam/docs/roles-permissions/networkservices#networkservices.viewer",
       "priority": 1
+    },
+    {
+      "title": "Google Tag Gateway Admin",
+      "name": "roles/networkservices.GoogleTagGatewayPolicyAdmin",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.GoogleTagGatewayPolicyAdmin",
+      "priority": 2
     },
     {
       "title": "Service Extensions Admin",
@@ -24494,6 +24506,10 @@
       "url": "/iam/docs/roles-permissions/ces#ces.evaluations.delete"
     },
     {
+      "title": "ces.evaluations.export",
+      "url": "/iam/docs/roles-permissions/ces#ces.evaluations.export"
+    },
+    {
       "title": "ces.evaluations.get",
       "url": "/iam/docs/roles-permissions/ces#ces.evaluations.get"
     },
@@ -31842,6 +31858,26 @@
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.backupRuns.update"
     },
     {
+      "title": "cloudsql.blueGreenDeployments.create",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.blueGreenDeployments.create"
+    },
+    {
+      "title": "cloudsql.blueGreenDeployments.delete",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.blueGreenDeployments.delete"
+    },
+    {
+      "title": "cloudsql.blueGreenDeployments.get",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.blueGreenDeployments.get"
+    },
+    {
+      "title": "cloudsql.blueGreenDeployments.list",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.blueGreenDeployments.list"
+    },
+    {
+      "title": "cloudsql.blueGreenDeployments.switchover",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.blueGreenDeployments.switchover"
+    },
+    {
       "title": "cloudsql.databases.create",
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.databases.create"
     },
@@ -34012,6 +34048,18 @@
     {
       "title": "compute.healthChecks.useReadOnly",
       "url": "/iam/docs/roles-permissions/compute#compute.healthChecks.useReadOnly"
+    },
+    {
+      "title": "compute.hosts.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.hosts.get"
+    },
+    {
+      "title": "compute.hosts.getVersion",
+      "url": "/iam/docs/roles-permissions/compute#compute.hosts.getVersion"
+    },
+    {
+      "title": "compute.hosts.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.hosts.list"
     },
     {
       "title": "compute.httpHealthChecks.create",
@@ -57956,6 +58004,26 @@
     {
       "title": "networkservices.gateways.use",
       "url": "/iam/docs/roles-permissions/networkservices#networkservices.gateways.use"
+    },
+    {
+      "title": "networkservices.googleTagGatewayPolicies.create",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleTagGatewayPolicies.create"
+    },
+    {
+      "title": "networkservices.googleTagGatewayPolicies.delete",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleTagGatewayPolicies.delete"
+    },
+    {
+      "title": "networkservices.googleTagGatewayPolicies.get",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleTagGatewayPolicies.get"
+    },
+    {
+      "title": "networkservices.googleTagGatewayPolicies.list",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleTagGatewayPolicies.list"
+    },
+    {
+      "title": "networkservices.googleTagGatewayPolicies.update",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleTagGatewayPolicies.update"
     },
     {
       "title": "networkservices.grpcRoutes.create",
