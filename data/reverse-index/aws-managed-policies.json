@@ -69985,6 +69985,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CloudwatchApplicationInsightsServiceLinkedRolePolicy"
       },
       {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
+      },
+      {
         "display_name": "DynamoDBReplicationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DynamoDBReplicationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/DynamoDBReplicationServiceRolePolicy"
@@ -70503,6 +70508,11 @@
         "display_name": "CloudwatchApplicationInsightsServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudwatchApplicationInsightsServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CloudwatchApplicationInsightsServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
       },
       {
         "display_name": "Route53RecoveryReadinessServiceRolePolicy",
@@ -107184,6 +107194,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -107320,6 +107335,11 @@
         "display_name": "AWSResilienceHubAsssessmentExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResilienceHubAsssessmentExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSResilienceHubAsssessmentExecutionPolicy"
+      },
+      {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
       }
     ],
     "aws:allow_action:elasticache:DescribeServiceUpdates": [
@@ -130106,6 +130126,11 @@
         "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioProjectUserRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
       },
       {
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
@@ -161503,6 +161528,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSElasticDisasterRecoveryServiceRolePolicy"
       },
       {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      },
+      {
         "display_name": "EC2FastLaunchServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/EC2FastLaunchServiceRolePolicy"
@@ -180273,6 +180303,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -196468,42 +196503,25 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
       }
     ],
+    "aws:allow_action:profile:*": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
     "aws:allow_action:profile:AddProfileKey": [
       {
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:BatchGetCalculatedAttributeForProfile": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:BatchGetProfile": [
       {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
-      {
         "display_name": "CustomerProfilesServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CustomerProfilesServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CustomerProfilesServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:CreateCalculatedAttributeDefinition": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:CreateDomain": [
@@ -196513,72 +196531,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
       }
     ],
-    "aws:allow_action:profile:CreateDomainLayout": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:CreateEventTrigger": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
     "aws:allow_action:profile:CreateProfile": [
       {
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:CreateRecommender": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:CreateSegmentDefinition": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:CreateSegmentEstimate": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:CreateSegmentSnapshot": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:CreateUploadJob": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:DeleteCalculatedAttributeDefinition": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:DeleteDomain": [
@@ -196588,30 +196545,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
       }
     ],
-    "aws:allow_action:profile:DeleteDomainLayout": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:DeleteEventTrigger": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
     "aws:allow_action:profile:DeleteIntegration": [
       {
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:DeleteProfile": [
@@ -196642,40 +196580,7 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
       }
     ],
-    "aws:allow_action:profile:DeleteRecommender": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:DeleteSegmentDefinition": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:DetectProfileObjectType": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetCalculatedAttributeDefinition": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
     "aws:allow_action:profile:GetCalculatedAttributeForProfile": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
       {
         "display_name": "CustomerProfilesServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CustomerProfilesServiceLinkedRolePolicy.html",
@@ -196704,28 +196609,9 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
-      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
-      }
-    ],
-    "aws:allow_action:profile:GetDomainLayout": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetEventTrigger": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:GetIntegration": [
@@ -196740,11 +196626,6 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
-      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -196755,13 +196636,6 @@
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      }
-    ],
-    "aws:allow_action:profile:GetProfileInsights": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:GetProfileObjectType": [
@@ -196776,29 +196650,12 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
-      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
       }
     ],
-    "aws:allow_action:profile:GetProfileObjectTypeTemplate": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
     "aws:allow_action:profile:GetProfileRecommendations": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
       {
         "display_name": "CustomerProfilesServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CustomerProfilesServiceLinkedRolePolicy.html",
@@ -196807,63 +196664,9 @@
     ],
     "aws:allow_action:profile:GetRecommender": [
       {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
-      {
         "display_name": "CustomerProfilesServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CustomerProfilesServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CustomerProfilesServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetSegmentDefinition": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetSegmentEstimate": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetSegmentMembership": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetSegmentSnapshot": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetSimilarProfiles": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetUploadJob": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:GetUploadJobPath": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:ListAccountIntegrations": [
@@ -196877,27 +196680,6 @@
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
       },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:ListCalculatedAttributeDefinitions": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:ListCalculatedAttributesForProfile": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:ListDomainLayouts": [
       {
         "display_name": "AmazonConnectServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
@@ -196931,6 +196713,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      },
+      {
         "display_name": "ViewOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ViewOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
@@ -196939,13 +196726,6 @@
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
-      }
-    ],
-    "aws:allow_action:profile:ListEventTriggers": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:ListIntegrations": [
@@ -196975,11 +196755,6 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
-      {
         "display_name": "ViewOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ViewOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
@@ -196990,37 +196765,11 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
       }
     ],
-    "aws:allow_action:profile:ListObjectTypeAttributeValues": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:ListObjectTypeAttributes": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:ListProfileAttributeValues": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
     "aws:allow_action:profile:ListProfileObjectTypeTemplates": [
       {
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:ListProfileObjectTypes": [
@@ -197045,11 +196794,6 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      },
-      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -197060,28 +196804,9 @@
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:ListRecommenderRecipes": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:ListRecommenders": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:ListSegmentDefinitions": [
       {
         "display_name": "AmazonConnectServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
@@ -197105,13 +196830,6 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
       }
     ],
-    "aws:allow_action:profile:ListUploadJobs": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
     "aws:allow_action:profile:MergeProfiles": [
       {
         "display_name": "AmazonConnect_FullAccess",
@@ -197124,11 +196842,6 @@
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:PutProfileObject": [
@@ -197136,11 +196849,6 @@
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:PutProfileObjectType": [
@@ -197160,39 +196868,6 @@
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:StartRecommender": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:StartUploadJob": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:StopRecommender": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:StopUploadJob": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:profile:TagResource": [
@@ -197209,13 +196884,6 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
       }
     ],
-    "aws:allow_action:profile:UpdateCalculatedAttributeDefinition": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
     "aws:allow_action:profile:UpdateDomain": [
       {
         "display_name": "AmazonConnect_FullAccess",
@@ -197223,37 +196891,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
       }
     ],
-    "aws:allow_action:profile:UpdateDomainLayout": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:UpdateEventTrigger": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
     "aws:allow_action:profile:UpdateProfile": [
       {
         "display_name": "AmazonConnect_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnect_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess"
-      },
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
-      }
-    ],
-    "aws:allow_action:profile:UpdateRecommender": [
-      {
-        "display_name": "AmazonConnectServiceLinkedRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:allow_action:proton:*": [
@@ -204548,6 +204190,11 @@
         "display_name": "CloudwatchApplicationInsightsServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudwatchApplicationInsightsServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CloudwatchApplicationInsightsServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
       },
       {
         "display_name": "Route53RecoveryReadinessServiceRolePolicy",
@@ -235220,6 +234867,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -237979,6 +237631,11 @@
         "display_name": "AWSResourceExplorerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -277974,6 +277631,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -277984,6 +277646,11 @@
         "display_name": "AmazonWorkSpacesAdmin",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonWorkSpacesAdmin.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonWorkSpacesAdmin"
+      },
+      {
+        "display_name": "ComputeOptimizerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
       }
     ],
     "aws:allow_action:workspaces:DescribeWorkspacesPoolSessions": [
@@ -281105,6 +280772,76 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      }
+    ],
+    "aws:deny_action:profile:CreateDomain": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:CreateEventStream": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:CreateIntegrationWorkflow": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:DeleteDomain": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:DeleteEventStream": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:DeleteProfileKey": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:DeleteWorkflow": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:TagResource": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:UntagResource": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:profile:UpdateDomain": [
+      {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
     "aws:deny_action:redshift:CreateClusterUser": [
@@ -290572,7 +290309,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-28T04:47:09Z",
+  "generated_at_utc": "2026-05-29T04:48:02Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -313913,6 +313650,18 @@
       "terms": [
         "pricing:*",
         "aws:allow_action:pricing:*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:profile:*",
+      "object": {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      },
+      "terms": [
+        "profile:*",
+        "aws:allow_action:profile:*"
       ]
     },
     {

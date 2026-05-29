@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="b0b88386-5164-ad86-c007-f97bf4e9b82b" />
 	
-		<meta name="updated_at" content="2026-05-18T17:10:00Z" />
+		<meta name="updated_at" content="2026-05-28T05:20:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/databases.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/634d71f82080d69202dcff0cafdca4e987c7cd72/articles/role-based-access-control/built-in-roles/databases.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/36027ef8a846c957598d132c4be571698e10cfcf/articles/role-based-access-control/built-in-roles/databases.md" />
 	
-		<meta name="git_commit_id" content="634d71f82080d69202dcff0cafdca4e987c7cd72" />
+		<meta name="git_commit_id" content="36027ef8a846c957598d132c4be571698e10cfcf" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="3034" />
+		<meta name="word_count" content="3163" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/databases" />
 	
@@ -1716,6 +1716,79 @@
     }
   ],
   "roleName": "Redis Cache Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="semantic-reranker-user">Semantic Reranker User</h2>
+<p>Execute semantic reranking operations against registered inference accounts. This role should be assigned to users who need to run semantic reranking workloads but do not need to manage the accounts themselves.</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/databases#microsoftinferenceservice" data-linktype="relative-path">Microsoft.InferenceService</a>/inferenceAccounts/read</td>
+<td>Reads an inference service.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftinferenceservice" data-linktype="relative-path">Microsoft.InferenceService</a>/inferenceAccounts/write</td>
+<td>Creates or updates an inference service.</td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftinferenceservice" data-linktype="relative-path">Microsoft.InferenceService</a>/inferenceAccounts/delete</td>
+<td>Deletes an inference service.</td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/databases#microsoftinferenceservice" data-linktype="relative-path">Microsoft.InferenceService</a>/inferenceAccounts/invoke/semanticReranker/action</td>
+<td>Invokes the semantic reranker on an inference account.</td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Execute semantic reranking operations against registered inference accounts. This role should be assigned to users who need to run semantic reranking workloads but do not need to manage the accounts themselves.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/6c74a7c5-4a87-40f9-bb03-61e49aecbc78",
+  "name": "6c74a7c5-4a87-40f9-bb03-61e49aecbc78",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.InferenceService/inferenceAccounts/read"
+      ],
+      "notActions": [
+        "Microsoft.InferenceService/inferenceAccounts/write",
+        "Microsoft.InferenceService/inferenceAccounts/delete"
+      ],
+      "dataActions": [
+        "Microsoft.InferenceService/inferenceAccounts/invoke/semanticReranker/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Semantic Reranker User",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }

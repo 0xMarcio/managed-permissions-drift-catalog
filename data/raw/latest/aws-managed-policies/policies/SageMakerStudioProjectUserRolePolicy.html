@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:59 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 11, 2026, 20:42 UTC</p>
+                <p><b>Edited time:</b>  May 28, 2026, 16:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectUserRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v67 (default)</p>
+        <p><b>Policy version:</b> v68 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -2514,7 +2514,8 @@
       "Effect" : "Allow",
       "Action" : [
         "dynamodb:ListTables",
-        "glue:ManagedConnector"
+        "glue:ManagedConnector",
+        "glue:TestConnection"
       ],
       "Resource" : "*"
     },

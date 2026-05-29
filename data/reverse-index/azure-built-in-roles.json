@@ -11623,6 +11623,13 @@
         "stable_id": "5d3f1697-4507-4d08-bb4a-477695db5f82"
       }
     ],
+    "azure:action:Microsoft.InferenceService/inferenceAccounts/read": [
+      {
+        "display_name": "Semantic Reranker User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#semantic-reranker-user",
+        "stable_id": "6c74a7c5-4a87-40f9-bb03-61e49aecbc78"
+      }
+    ],
     "azure:action:Microsoft.Insights/ActionGroups/*": [
       {
         "display_name": "Automation Contributor",
@@ -32702,6 +32709,13 @@
         "stable_id": "1c0163c0-47e6-4577-8991-ea5c82e286e4"
       }
     ],
+    "azure:data_action:Microsoft.InferenceService/inferenceAccounts/invoke/semanticReranker/action": [
+      {
+        "display_name": "Semantic Reranker User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#semantic-reranker-user",
+        "stable_id": "6c74a7c5-4a87-40f9-bb03-61e49aecbc78"
+      }
+    ],
     "azure:data_action:Microsoft.Insights/Metrics/Write": [
       {
         "display_name": "Monitoring Metrics Publisher",
@@ -34647,6 +34661,20 @@
         "stable_id": "230815da-be43-4aae-9cb4-875f7bd000aa"
       }
     ],
+    "azure:not_action:Microsoft.InferenceService/inferenceAccounts/delete": [
+      {
+        "display_name": "Semantic Reranker User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#semantic-reranker-user",
+        "stable_id": "6c74a7c5-4a87-40f9-bb03-61e49aecbc78"
+      }
+    ],
+    "azure:not_action:Microsoft.InferenceService/inferenceAccounts/write": [
+      {
+        "display_name": "Semantic Reranker User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#semantic-reranker-user",
+        "stable_id": "6c74a7c5-4a87-40f9-bb03-61e49aecbc78"
+      }
+    ],
     "azure:not_action:Microsoft.IoTFirmwareDefense/firmwareGroups/*": [
       {
         "display_name": "Firmware Analysis Reader",
@@ -35640,7 +35668,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-25T04:51:45Z",
+  "generated_at_utc": "2026-05-29T04:48:39Z",
   "platform": "azure",
   "wildcard_atoms": [
     {

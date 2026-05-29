@@ -1,0 +1,412 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:dynamodb:DescribeTable",
+      "aws:allow_action:dynamodb:ListTables",
+      "aws:allow_action:elasticache:DescribeCacheClusters",
+      "aws:allow_action:elasticache:DescribeServerlessCaches",
+      "aws:allow_action:glue:TestConnection",
+      "aws:allow_action:kms:ListRetirableGrants",
+      "aws:allow_action:memorydb:DescribeClusters",
+      "aws:allow_action:profile:*",
+      "aws:allow_action:profile:ListDomains",
+      "aws:allow_action:rds:DescribeDBClusters",
+      "aws:allow_action:sagemaker:DescribeEndpoint",
+      "aws:allow_action:sagemaker:ListEndpoints",
+      "aws:allow_action:workspaces:DescribeWorkspaces",
+      "aws:allow_action:workspaces:DescribeWorkspacesConnectionStatus",
+      "aws:deny_action:profile:CreateDomain",
+      "aws:deny_action:profile:CreateEventStream",
+      "aws:deny_action:profile:CreateIntegrationWorkflow",
+      "aws:deny_action:profile:DeleteDomain",
+      "aws:deny_action:profile:DeleteEventStream",
+      "aws:deny_action:profile:DeleteProfileKey",
+      "aws:deny_action:profile:DeleteWorkflow",
+      "aws:deny_action:profile:TagResource",
+      "aws:deny_action:profile:UntagResource",
+      "aws:deny_action:profile:UpdateDomain"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "dynamodb:DescribeTable",
+          "dynamodb:ListTables",
+          "elasticache:DescribeCacheClusters",
+          "elasticache:DescribeServerlessCaches",
+          "glue:TestConnection",
+          "kms:ListRetirableGrants",
+          "memorydb:DescribeClusters",
+          "profile:*",
+          "profile:ListDomains",
+          "rds:DescribeDBClusters",
+          "sagemaker:DescribeEndpoint",
+          "sagemaker:ListEndpoints",
+          "workspaces:DescribeWorkspaces",
+          "workspaces:DescribeWorkspacesConnectionStatus"
+        ],
+        "restriction:deny_actions": [
+          "profile:CreateDomain",
+          "profile:CreateEventStream",
+          "profile:CreateIntegrationWorkflow",
+          "profile:DeleteDomain",
+          "profile:DeleteEventStream",
+          "profile:DeleteProfileKey",
+          "profile:DeleteWorkflow",
+          "profile:TagResource",
+          "profile:UntagResource",
+          "profile:UpdateDomain"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "profile:AddProfileKey",
+          "profile:BatchGetCalculatedAttributeForProfile",
+          "profile:BatchGetProfile",
+          "profile:CreateCalculatedAttributeDefinition",
+          "profile:CreateDomainLayout",
+          "profile:CreateEventTrigger",
+          "profile:CreateProfile",
+          "profile:CreateRecommender",
+          "profile:CreateSegmentDefinition",
+          "profile:CreateSegmentEstimate",
+          "profile:CreateSegmentSnapshot",
+          "profile:CreateUploadJob",
+          "profile:DeleteCalculatedAttributeDefinition",
+          "profile:DeleteDomainLayout",
+          "profile:DeleteEventTrigger",
+          "profile:DeleteIntegration",
+          "profile:DeleteRecommender",
+          "profile:DeleteSegmentDefinition",
+          "profile:DetectProfileObjectType",
+          "profile:GetCalculatedAttributeDefinition",
+          "profile:GetCalculatedAttributeForProfile",
+          "profile:GetDomain",
+          "profile:GetDomainLayout",
+          "profile:GetEventTrigger",
+          "profile:GetIntegration",
+          "profile:GetProfileInsights",
+          "profile:GetProfileObjectType",
+          "profile:GetProfileObjectTypeTemplate",
+          "profile:GetProfileRecommendations",
+          "profile:GetRecommender",
+          "profile:GetSegmentDefinition",
+          "profile:GetSegmentEstimate",
+          "profile:GetSegmentMembership",
+          "profile:GetSegmentSnapshot",
+          "profile:GetSimilarProfiles",
+          "profile:GetUploadJob",
+          "profile:GetUploadJobPath",
+          "profile:ListCalculatedAttributeDefinitions",
+          "profile:ListCalculatedAttributesForProfile",
+          "profile:ListDomainLayouts",
+          "profile:ListEventTriggers",
+          "profile:ListIntegrations",
+          "profile:ListObjectTypeAttributeValues",
+          "profile:ListObjectTypeAttributes",
+          "profile:ListProfileAttributeValues",
+          "profile:ListProfileObjectTypeTemplates",
+          "profile:ListProfileObjectTypes",
+          "profile:ListProfileObjects",
+          "profile:ListRecommenders",
+          "profile:ListSegmentDefinitions",
+          "profile:ListUploadJobs",
+          "profile:PutIntegration",
+          "profile:PutProfileObject",
+          "profile:SearchProfiles",
+          "profile:StartRecommender",
+          "profile:StartUploadJob",
+          "profile:StopRecommender",
+          "profile:StopUploadJob",
+          "profile:UpdateCalculatedAttributeDefinition",
+          "profile:UpdateDomainLayout",
+          "profile:UpdateEventTrigger",
+          "profile:UpdateProfile",
+          "profile:UpdateRecommender"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:profile:AddProfileKey",
+      "aws:allow_action:profile:BatchGetCalculatedAttributeForProfile",
+      "aws:allow_action:profile:BatchGetProfile",
+      "aws:allow_action:profile:CreateCalculatedAttributeDefinition",
+      "aws:allow_action:profile:CreateDomainLayout",
+      "aws:allow_action:profile:CreateEventTrigger",
+      "aws:allow_action:profile:CreateProfile",
+      "aws:allow_action:profile:CreateRecommender",
+      "aws:allow_action:profile:CreateSegmentDefinition",
+      "aws:allow_action:profile:CreateSegmentEstimate",
+      "aws:allow_action:profile:CreateSegmentSnapshot",
+      "aws:allow_action:profile:CreateUploadJob",
+      "aws:allow_action:profile:DeleteCalculatedAttributeDefinition",
+      "aws:allow_action:profile:DeleteDomainLayout",
+      "aws:allow_action:profile:DeleteEventTrigger",
+      "aws:allow_action:profile:DeleteIntegration",
+      "aws:allow_action:profile:DeleteRecommender",
+      "aws:allow_action:profile:DeleteSegmentDefinition",
+      "aws:allow_action:profile:DetectProfileObjectType",
+      "aws:allow_action:profile:GetCalculatedAttributeDefinition",
+      "aws:allow_action:profile:GetCalculatedAttributeForProfile",
+      "aws:allow_action:profile:GetDomain",
+      "aws:allow_action:profile:GetDomainLayout",
+      "aws:allow_action:profile:GetEventTrigger",
+      "aws:allow_action:profile:GetIntegration",
+      "aws:allow_action:profile:GetProfileInsights",
+      "aws:allow_action:profile:GetProfileObjectType",
+      "aws:allow_action:profile:GetProfileObjectTypeTemplate",
+      "aws:allow_action:profile:GetProfileRecommendations",
+      "aws:allow_action:profile:GetRecommender",
+      "aws:allow_action:profile:GetSegmentDefinition",
+      "aws:allow_action:profile:GetSegmentEstimate",
+      "aws:allow_action:profile:GetSegmentMembership",
+      "aws:allow_action:profile:GetSegmentSnapshot",
+      "aws:allow_action:profile:GetSimilarProfiles",
+      "aws:allow_action:profile:GetUploadJob",
+      "aws:allow_action:profile:GetUploadJobPath",
+      "aws:allow_action:profile:ListCalculatedAttributeDefinitions",
+      "aws:allow_action:profile:ListCalculatedAttributesForProfile",
+      "aws:allow_action:profile:ListDomainLayouts",
+      "aws:allow_action:profile:ListEventTriggers",
+      "aws:allow_action:profile:ListIntegrations",
+      "aws:allow_action:profile:ListObjectTypeAttributeValues",
+      "aws:allow_action:profile:ListObjectTypeAttributes",
+      "aws:allow_action:profile:ListProfileAttributeValues",
+      "aws:allow_action:profile:ListProfileObjectTypeTemplates",
+      "aws:allow_action:profile:ListProfileObjectTypes",
+      "aws:allow_action:profile:ListProfileObjects",
+      "aws:allow_action:profile:ListRecommenders",
+      "aws:allow_action:profile:ListSegmentDefinitions",
+      "aws:allow_action:profile:ListUploadJobs",
+      "aws:allow_action:profile:PutIntegration",
+      "aws:allow_action:profile:PutProfileObject",
+      "aws:allow_action:profile:SearchProfiles",
+      "aws:allow_action:profile:StartRecommender",
+      "aws:allow_action:profile:StartUploadJob",
+      "aws:allow_action:profile:StopRecommender",
+      "aws:allow_action:profile:StopUploadJob",
+      "aws:allow_action:profile:UpdateCalculatedAttributeDefinition",
+      "aws:allow_action:profile:UpdateDomainLayout",
+      "aws:allow_action:profile:UpdateEventTrigger",
+      "aws:allow_action:profile:UpdateProfile",
+      "aws:allow_action:profile:UpdateRecommender"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "glue:TestConnection"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v68 (default)",
+          "before": "v67 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 28, 2026, 16:27 UTC",
+          "before": "May 11, 2026, 20:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 28, 2026, 16:27 UTC",
+          "before": "May 11, 2026, 20:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    },
+    {
+      "display_name": "AmazonConnectServiceLinkedRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "kms:ListRetirableGrants",
+              "profile:*",
+              "profile:ListDomains"
+            ],
+            "removed": [
+              "profile:AddProfileKey",
+              "profile:BatchGetCalculatedAttributeForProfile",
+              "profile:BatchGetProfile",
+              "profile:CreateCalculatedAttributeDefinition",
+              "profile:CreateDomainLayout",
+              "profile:CreateEventTrigger",
+              "profile:CreateProfile",
+              "profile:CreateRecommender",
+              "profile:CreateSegmentDefinition",
+              "profile:CreateSegmentEstimate",
+              "profile:CreateSegmentSnapshot",
+              "profile:CreateUploadJob",
+              "profile:DeleteCalculatedAttributeDefinition",
+              "profile:DeleteDomainLayout",
+              "profile:DeleteEventTrigger",
+              "profile:DeleteIntegration",
+              "profile:DeleteRecommender",
+              "profile:DeleteSegmentDefinition",
+              "profile:DetectProfileObjectType",
+              "profile:GetCalculatedAttributeDefinition",
+              "profile:GetCalculatedAttributeForProfile",
+              "profile:GetDomain",
+              "profile:GetDomainLayout",
+              "profile:GetEventTrigger",
+              "profile:GetIntegration",
+              "profile:GetProfileInsights",
+              "profile:GetProfileObjectType",
+              "profile:GetProfileObjectTypeTemplate",
+              "profile:GetProfileRecommendations",
+              "profile:GetRecommender",
+              "profile:GetSegmentDefinition",
+              "profile:GetSegmentEstimate",
+              "profile:GetSegmentMembership",
+              "profile:GetSegmentSnapshot",
+              "profile:GetSimilarProfiles",
+              "profile:GetUploadJob",
+              "profile:GetUploadJobPath",
+              "profile:ListCalculatedAttributeDefinitions",
+              "profile:ListCalculatedAttributesForProfile",
+              "profile:ListDomainLayouts",
+              "profile:ListEventTriggers",
+              "profile:ListIntegrations",
+              "profile:ListObjectTypeAttributeValues",
+              "profile:ListObjectTypeAttributes",
+              "profile:ListProfileAttributeValues",
+              "profile:ListProfileObjectTypeTemplates",
+              "profile:ListProfileObjectTypes",
+              "profile:ListProfileObjects",
+              "profile:ListRecommenders",
+              "profile:ListSegmentDefinitions",
+              "profile:ListUploadJobs",
+              "profile:PutIntegration",
+              "profile:PutProfileObject",
+              "profile:SearchProfiles",
+              "profile:StartRecommender",
+              "profile:StartUploadJob",
+              "profile:StopRecommender",
+              "profile:StopUploadJob",
+              "profile:UpdateCalculatedAttributeDefinition",
+              "profile:UpdateDomainLayout",
+              "profile:UpdateEventTrigger",
+              "profile:UpdateProfile",
+              "profile:UpdateRecommender"
+            ]
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "profile:CreateDomain",
+              "profile:CreateEventStream",
+              "profile:CreateIntegrationWorkflow",
+              "profile:DeleteDomain",
+              "profile:DeleteEventStream",
+              "profile:DeleteProfileKey",
+              "profile:DeleteWorkflow",
+              "profile:TagResource",
+              "profile:UntagResource",
+              "profile:UpdateDomain"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v55 (default)",
+          "before": "v54 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 27, 2026, 21:57 UTC",
+          "before": "May 18, 2026, 21:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 27, 2026, 21:57 UTC",
+          "before": "May 18, 2026, 21:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 28,
+          "before": 36,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+    },
+    {
+      "display_name": "ComputeOptimizerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "dynamodb:DescribeTable",
+              "dynamodb:ListTables",
+              "elasticache:DescribeCacheClusters",
+              "elasticache:DescribeServerlessCaches",
+              "memorydb:DescribeClusters",
+              "rds:DescribeDBClusters",
+              "sagemaker:DescribeEndpoint",
+              "sagemaker:ListEndpoints",
+              "workspaces:DescribeWorkspaces",
+              "workspaces:DescribeWorkspacesConnectionStatus"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 27, 2026, 17:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 27, 2026, 17:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 11,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-29T04:48:01Z",
+  "counts": {
+    "added_atoms": 24,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1505,
+    "previous_objects": 1505,
+    "removed_atoms": 63,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-29",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-28",
+  "removed_objects": []
+}

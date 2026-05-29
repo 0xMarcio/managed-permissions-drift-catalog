@@ -1,0 +1,55 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "azure:action:Microsoft.InferenceService/inferenceAccounts/read",
+        "azure:data_action:Microsoft.InferenceService/inferenceAccounts/invoke/semanticReranker/action",
+        "azure:not_action:Microsoft.InferenceService/inferenceAccounts/delete",
+        "azure:not_action:Microsoft.InferenceService/inferenceAccounts/write"
+      ],
+      "display_name": "Semantic Reranker User",
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#semantic-reranker-user",
+      "stable_id": "6c74a7c5-4a87-40f9-bb03-61e49aecbc78"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "azure:action:Microsoft.InferenceService/inferenceAccounts/read",
+      "azure:data_action:Microsoft.InferenceService/inferenceAccounts/invoke/semanticReranker/action",
+      "azure:not_action:Microsoft.InferenceService/inferenceAccounts/delete",
+      "azure:not_action:Microsoft.InferenceService/inferenceAccounts/write"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:actions": [
+          "Microsoft.InferenceService/inferenceAccounts/read"
+        ],
+        "grant:data_actions": [
+          "Microsoft.InferenceService/inferenceAccounts/invoke/semanticReranker/action"
+        ],
+        "restriction:not_actions": [
+          "Microsoft.InferenceService/inferenceAccounts/delete",
+          "Microsoft.InferenceService/inferenceAccounts/write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-05-29T04:48:01Z",
+  "counts": {
+    "added_atoms": 4,
+    "added_objects": 1,
+    "changed_objects": 0,
+    "current_objects": 501,
+    "previous_objects": 500,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-29",
+  "dataset": "azure-built-in-roles",
+  "platform": "azure",
+  "previous_snapshot_date": "2026-05-25",
+  "removed_objects": []
+}
