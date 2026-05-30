@@ -1,0 +1,92 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:organizations:DescribeOrganization",
+        "aws:allow_action:organizations:DescribeOrganizationalUnit",
+        "aws:allow_action:organizations:ListAccounts",
+        "aws:allow_action:organizations:ListChildren",
+        "aws:allow_action:organizations:ListOrganizationalUnitsForParent",
+        "aws:allow_action:organizations:ListParents",
+        "aws:allow_action:organizations:ListRoots"
+      ],
+      "display_name": "AWSResilienceHubServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResilienceHubServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResilienceHubServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:DescribeOrganizationalUnit",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:organizations:ListChildren",
+      "aws:allow_action:organizations:ListOrganizationalUnitsForParent",
+      "aws:allow_action:organizations:ListParents",
+      "aws:allow_action:organizations:ListRoots"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "organizations:DescribeOrganization",
+          "organizations:DescribeOrganizationalUnit",
+          "organizations:ListAccounts",
+          "organizations:ListChildren",
+          "organizations:ListOrganizationalUnitsForParent",
+          "organizations:ListParents",
+          "organizations:ListRoots"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonEBSCSIDriverEKSClusterScopedPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 28, 2026, 17:27 UTC",
+          "before": "April 16, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 28, 2026, 17:27 UTC",
+          "before": "April 16, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 13,
+          "before": 12,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEBSCSIDriverEKSClusterScopedPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEBSCSIDriverEKSClusterScopedPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-30T04:38:37Z",
+  "counts": {
+    "added_atoms": 7,
+    "added_objects": 1,
+    "changed_objects": 1,
+    "current_objects": 1506,
+    "previous_objects": 1505,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-30",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-29",
+  "removed_objects": []
+}
