@@ -62107,6 +62107,18 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
+    "aws:allow_action:deadline:GetVolume": [
+      {
+        "display_name": "AWSDeadlineCloud-UserAccessFarms",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessFarms.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessFarms"
+      },
+      {
+        "display_name": "AWSDeadlineCloud-UserAccessFleets",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessFleets.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessFleets"
+      }
+    ],
     "aws:allow_action:deadline:GetWorker": [
       {
         "display_name": "AWSDeadlineCloud-UserAccessFarms",
@@ -62663,6 +62675,18 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:deadline:ListVolumes": [
+      {
+        "display_name": "AWSDeadlineCloud-UserAccessFarms",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessFarms.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessFarms"
+      },
+      {
+        "display_name": "AWSDeadlineCloud-UserAccessFleets",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessFleets.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessFleets"
       }
     ],
     "aws:allow_action:deadline:ListWorkers": [
@@ -245278,6 +245302,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
       },
       {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      },
+      {
         "display_name": "AWSMarketplaceDeploymentServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceDeploymentServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSMarketplaceDeploymentServiceRolePolicy"
@@ -290344,7 +290373,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-05-30T04:38:37Z",
+  "generated_at_utc": "2026-05-31T04:51:20Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

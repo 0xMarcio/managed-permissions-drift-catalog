@@ -1,0 +1,143 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:deadline:GetVolume",
+      "aws:allow_action:deadline:GetVolume",
+      "aws:allow_action:deadline:ListVolumes",
+      "aws:allow_action:deadline:ListVolumes",
+      "aws:allow_action:secretsmanager:PutSecretValue"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "deadline:GetVolume",
+          "deadline:GetVolume",
+          "deadline:ListVolumes",
+          "deadline:ListVolumes",
+          "secretsmanager:PutSecretValue"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSDeadlineCloud-UserAccessFarms",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "deadline:GetVolume",
+              "deadline:ListVolumes"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 29, 2026, 20:27 UTC",
+          "before": "April 08, 2026, 16:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 29, 2026, 20:27 UTC",
+          "before": "April 08, 2026, 16:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessFarms.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessFarms"
+    },
+    {
+      "display_name": "AWSDeadlineCloud-UserAccessFleets",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "deadline:GetVolume",
+              "deadline:ListVolumes"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 29, 2026, 21:27 UTC",
+          "before": "April 01, 2024, 17:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 29, 2026, 21:27 UTC",
+          "before": "April 01, 2024, 17:01 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessFleets.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessFleets"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "secretsmanager:PutSecretValue"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v20 (default)",
+          "before": "v19 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 29, 2026, 20:27 UTC",
+          "before": "May 26, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 29, 2026, 20:27 UTC",
+          "before": "May 26, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-05-31T04:51:20Z",
+  "counts": {
+    "added_atoms": 5,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1506,
+    "previous_objects": 1506,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-05-31",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-30",
+  "removed_objects": []
+}
