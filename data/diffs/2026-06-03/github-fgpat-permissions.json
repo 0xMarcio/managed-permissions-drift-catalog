@@ -1,0 +1,85 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "GET /organizations/{org}/settings/billing/ai_credit/usage -> read",
+          "GET /repos/{owner}/{repo}/hash-algorithm -> read",
+          "GET /users/{username}/settings/billing/ai_credit/usage -> read"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Administration",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /organizations/{org}/settings/billing/ai_credit/usage -> read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-administration",
+      "stable_id": "github-fgpat:organization:administration"
+    },
+    {
+      "display_name": "Metadata",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /repos/{owner}/{repo}/hash-algorithm -> read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-metadata",
+      "stable_id": "github-fgpat:repository:metadata"
+    },
+    {
+      "display_name": "Plan",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /users/{username}/settings/billing/ai_credit/usage -> read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#user-permissions-for-plan",
+      "stable_id": "github-fgpat:user:plan"
+    }
+  ],
+  "compared_at_utc": "2026-06-03T04:57:24Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 72,
+    "previous_objects": 72,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-03",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-05-21",
+  "removed_objects": []
+}

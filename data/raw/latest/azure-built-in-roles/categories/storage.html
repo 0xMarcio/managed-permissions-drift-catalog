@@ -76,7 +76,7 @@
 	
 		<meta name="ms.author" content="rolyon" />
 	
-		<meta name="ms.date" content="2026-04-09T00:00:00Z" />
+		<meta name="ms.date" content="2026-05-25T00:00:00Z" />
 	
 		<meta name="ms.custom" content="generated" />
 	
@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="3171ff9d-8a7a-d86b-26f6-44e1af975c17" />
 	
-		<meta name="updated_at" content="2026-05-11T17:19:00Z" />
+		<meta name="updated_at" content="2026-06-02T22:37:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/storage.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/8609a0d8e0c13f482781ebb0489da675dbbdad44/articles/role-based-access-control/built-in-roles/storage.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/6ce5e13533d37ee861c9447fd8e1fe7f49b496cc/articles/role-based-access-control/built-in-roles/storage.md" />
 	
-		<meta name="git_commit_id" content="8609a0d8e0c13f482781ebb0489da675dbbdad44" />
+		<meta name="git_commit_id" content="6ce5e13533d37ee861c9447fd8e1fe7f49b496cc" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="9434" />
+		<meta name="word_count" content="9417" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/storage" />
 	
@@ -112,7 +112,7 @@
 	
 		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/storage.md" />
 	
-		<meta name="previous_tlsh_hash" content="FB2701634169C236FB342B4F798BBF019788B84971746C812E31425690C7172D2AA62C67CA49BB57F133C943214FB853D981B9BFD18BB47CD600A996C899DBDBFC8D7130AD" />
+		<meta name="previous_tlsh_hash" content="880B3F733169C236FB341B4F798BBF019788B84971746C812E31425690C7172D2AA62C67CA49BB57F133C943224FB853D981B9BFD18BB47CD600A996C899DBDBFC8D7130AD" />
 	
 		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/storage.md" />
 	
@@ -1015,7 +1015,8 @@
 }
 </code></pre>
 <h2 id="azure-file-sync-administrator">Azure File Sync Administrator</h2>
-<p>Provides full access to manage all Azure File Sync (Storage Sync Service) resources. Also allows read/write access to all data contained in a storage account via access to storage account keys. Includes an ABAC condition to constrain role assignments.</p>
+<p>Provides full access to manage all Azure File Sync (Storage Sync Service) resources. Also allows read/write access to all data contained in a storage account via access to storage account keys.</p>
+<p>Includes an ABAC condition to constrain role assignments.</p>
 <p><a href="/en-us/azure/storage/file-sync/file-sync-deployment-guide" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
 <table>
@@ -2594,6 +2595,10 @@
 <td>Returns status of the operation</td>
 </tr>
 <tr>
+<td><a href="../permissions/management-and-governance#microsoftrecoveryservices" data-linktype="relative-path">Microsoft.RecoveryServices</a>/Vaults/backupFabrics/operationsStatus/read</td>
+<td>Returns status of the operation</td>
+</tr>
+<tr>
 <td><a href="../permissions/management-and-governance#microsoftrecoveryservices" data-linktype="relative-path">Microsoft.RecoveryServices</a>/Vaults/backupFabrics/protectionContainers/operationResults/read</td>
 <td>Gets result of Operation performed on Protection Container.</td>
 </tr>
@@ -2873,6 +2878,7 @@
         "Microsoft.Authorization/*/read",
         "Microsoft.RecoveryServices/locations/allocatedStamp/read",
         "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/read",
+        "Microsoft.RecoveryServices/Vaults/backupFabrics/operationsStatus/read",
         "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/operationResults/read",
         "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/operationResults/read",
         "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/operationsStatus/read",
@@ -2960,8 +2966,8 @@
 <td>Read roles and role assignments</td>
 </tr>
 <tr>
-<td><a href="../permissions/storage#microsoftclassicstorage" data-linktype="relative-path">Microsoft.ClassicStorage</a>/storageAccounts/*</td>
-<td>Create and manage storage accounts</td>
+<td>Microsoft.ClassicStorage/storageAccounts/*</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
@@ -3051,12 +3057,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../permissions/storage#microsoftclassicstorage" data-linktype="relative-path">Microsoft.ClassicStorage</a>/storageAccounts/listkeys/action</td>
-<td>Lists the access keys for the storage accounts.</td>
+<td>Microsoft.ClassicStorage/storageAccounts/listkeys/action</td>
+<td></td>
 </tr>
 <tr>
-<td><a href="../permissions/storage#microsoftclassicstorage" data-linktype="relative-path">Microsoft.ClassicStorage</a>/storageAccounts/regeneratekey/action</td>
-<td>Regenerates the existing access keys for the storage account.</td>
+<td>Microsoft.ClassicStorage/storageAccounts/regeneratekey/action</td>
+<td></td>
 </tr>
 <tr>
 <td><strong>NotActions</strong></td>
@@ -6807,11 +6813,11 @@
 				<li class="visibility-hidden-visual-diff">
 			<span class="badge badge-sm text-wrap-pretty">
 				<span>Last updated on <local-time format="twoDigitNumeric"
-		datetime="2026-04-09T08:00:00.000Z"
+		datetime="2026-05-25T08:00:00.000Z"
 		data-article-date-source="calculated"
 		class="is-invisible"
 	>
-		2026-04-09
+		2026-05-25
 	</local-time></span>
 			</span>
 		</li>

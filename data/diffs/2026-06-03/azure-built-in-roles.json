@@ -1,0 +1,281 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "azure:action:Microsoft.RecoveryServices/Vaults/backupFabrics/operationsStatus/read",
+      "azure:action:Microsoft.Resources/deployments/read",
+      "azure:action:Microsoft.Resources/deployments/read",
+      "azure:action:Microsoft.Resources/deployments/read",
+      "azure:data_action:Microsoft.OperationalInsights/workspaces/jobs/export/action",
+      "azure:data_action:Microsoft.OperationalInsights/workspaces/jobs/export/action",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/cassandraRoleAssignments/delete",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/cassandraRoleAssignments/write",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/cassandraRoleDefinitions/delete",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/cassandraRoleDefinitions/write",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/gremlinRoleAssignments/delete",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/gremlinRoleAssignments/write",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/gremlinRoleDefinitions/delete",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/gremlinRoleDefinitions/write",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/mongoMIRoleAssignments/delete",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/mongoMIRoleAssignments/write",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/mongoMIRoleDefinitions/delete",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/mongoMIRoleDefinitions/write",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/tableRoleAssignments/delete",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/tableRoleAssignments/write",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/tableRoleDefinitions/delete",
+      "azure:not_action:Microsoft.DocumentDB/databaseAccounts/tableRoleDefinitions/write"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:actions": [
+          "Microsoft.RecoveryServices/Vaults/backupFabrics/operationsStatus/read",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/deployments/read"
+        ],
+        "grant:data_actions": [
+          "Microsoft.OperationalInsights/workspaces/jobs/export/action",
+          "Microsoft.OperationalInsights/workspaces/jobs/export/action"
+        ],
+        "restriction:not_actions": [
+          "Microsoft.DocumentDB/databaseAccounts/cassandraRoleAssignments/delete",
+          "Microsoft.DocumentDB/databaseAccounts/cassandraRoleAssignments/write",
+          "Microsoft.DocumentDB/databaseAccounts/cassandraRoleDefinitions/delete",
+          "Microsoft.DocumentDB/databaseAccounts/cassandraRoleDefinitions/write",
+          "Microsoft.DocumentDB/databaseAccounts/gremlinRoleAssignments/delete",
+          "Microsoft.DocumentDB/databaseAccounts/gremlinRoleAssignments/write",
+          "Microsoft.DocumentDB/databaseAccounts/gremlinRoleDefinitions/delete",
+          "Microsoft.DocumentDB/databaseAccounts/gremlinRoleDefinitions/write",
+          "Microsoft.DocumentDB/databaseAccounts/mongoMIRoleAssignments/delete",
+          "Microsoft.DocumentDB/databaseAccounts/mongoMIRoleAssignments/write",
+          "Microsoft.DocumentDB/databaseAccounts/mongoMIRoleDefinitions/delete",
+          "Microsoft.DocumentDB/databaseAccounts/mongoMIRoleDefinitions/write",
+          "Microsoft.DocumentDB/databaseAccounts/tableRoleAssignments/delete",
+          "Microsoft.DocumentDB/databaseAccounts/tableRoleAssignments/write",
+          "Microsoft.DocumentDB/databaseAccounts/tableRoleDefinitions/delete",
+          "Microsoft.DocumentDB/databaseAccounts/tableRoleDefinitions/write"
+        ]
+      },
+      "removed": {
+        "grant:actions": [
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/deployments/*"
+        ]
+      }
+    },
+    "removed": [
+      "azure:action:Microsoft.Resources/deployments/*",
+      "azure:action:Microsoft.Resources/deployments/*",
+      "azure:action:Microsoft.Resources/deployments/*",
+      "azure:action:Microsoft.Resources/deployments/*"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "Key Vault Reader",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [],
+            "removed": [
+              "Microsoft.Resources/deployments/*"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/security#key-vault-reader",
+      "stable_id": "21090545-7ca7-4776-b22c-e363652d74d2"
+    },
+    {
+      "display_name": "Cosmos DB Operator",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "not_actions": {
+            "added": [
+              "Microsoft.DocumentDB/databaseAccounts/cassandraRoleAssignments/delete",
+              "Microsoft.DocumentDB/databaseAccounts/cassandraRoleAssignments/write",
+              "Microsoft.DocumentDB/databaseAccounts/cassandraRoleDefinitions/delete",
+              "Microsoft.DocumentDB/databaseAccounts/cassandraRoleDefinitions/write",
+              "Microsoft.DocumentDB/databaseAccounts/gremlinRoleAssignments/delete",
+              "Microsoft.DocumentDB/databaseAccounts/gremlinRoleAssignments/write",
+              "Microsoft.DocumentDB/databaseAccounts/gremlinRoleDefinitions/delete",
+              "Microsoft.DocumentDB/databaseAccounts/gremlinRoleDefinitions/write",
+              "Microsoft.DocumentDB/databaseAccounts/mongoMIRoleAssignments/delete",
+              "Microsoft.DocumentDB/databaseAccounts/mongoMIRoleAssignments/write",
+              "Microsoft.DocumentDB/databaseAccounts/mongoMIRoleDefinitions/delete",
+              "Microsoft.DocumentDB/databaseAccounts/mongoMIRoleDefinitions/write",
+              "Microsoft.DocumentDB/databaseAccounts/tableRoleAssignments/delete",
+              "Microsoft.DocumentDB/databaseAccounts/tableRoleAssignments/write",
+              "Microsoft.DocumentDB/databaseAccounts/tableRoleDefinitions/delete",
+              "Microsoft.DocumentDB/databaseAccounts/tableRoleDefinitions/write"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#cosmos-db-operator",
+      "stable_id": "230815da-be43-4aae-9cb4-875f7bd000aa"
+    },
+    {
+      "display_name": "EventGrid TopicSpaces Subscriber",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Resources/deployments/read"
+            ],
+            "removed": [
+              "Microsoft.Resources/deployments/*"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration#eventgrid-topicspaces-subscriber",
+      "stable_id": "4b0f2fd7-60b4-4eca-896f-4435034f8bf5"
+    },
+    {
+      "display_name": "API Management Service Reader Role",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Resources/deployments/read"
+            ],
+            "removed": [
+              "Microsoft.Resources/deployments/*"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration#api-management-service-reader-role",
+      "stable_id": "71522526-b88f-4d52-b57f-d31fc3546d0d"
+    },
+    {
+      "display_name": "Log Analytics Reader",
+      "facet_changes": {
+        "grants": {
+          "data_actions": {
+            "added": [
+              "Microsoft.OperationalInsights/workspaces/jobs/export/action"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor#log-analytics-reader",
+      "stable_id": "73c42c96-874c-492b-b04d-ab87d138a893"
+    },
+    {
+      "display_name": "Log Analytics Contributor",
+      "facet_changes": {
+        "grants": {
+          "data_actions": {
+            "added": [
+              "Microsoft.OperationalInsights/workspaces/jobs/export/action"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor#log-analytics-contributor",
+      "stable_id": "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
+    },
+    {
+      "display_name": "EventGrid TopicSpaces Publisher",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Resources/deployments/read"
+            ],
+            "removed": [
+              "Microsoft.Resources/deployments/*"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration#eventgrid-topicspaces-publisher",
+      "stable_id": "a12b0b94-b317-4dcd-84a8-502ce99884c6"
+    },
+    {
+      "display_name": "Backup Reader",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.RecoveryServices/Vaults/backupFabrics/operationsStatus/read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/storage#backup-reader",
+      "stable_id": "a795c7a0-d4a2-40c1-ae25-d81f01202912"
+    },
+    {
+      "display_name": "Redis Cache Contributor",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Create and manage Azure Cache for Redis resources. Cannot read or write data stored in the cache.",
+          "before": "Lets you manage Redis caches, but not access to them.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#redis-cache-contributor",
+      "stable_id": "e0f68234-74aa-48ed-b826-c38b57376e17"
+    },
+    {
+      "display_name": "Azure Managed Redis Reader",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Read Azure Managed Redis resources and their configuration. Cannot modify resources, retrieve access keys, or read data stored in the cache.",
+          "before": "Lets you view Azure Managed Redis resources, but not modify them or access keys or access to the data stored in them.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-reader",
+      "stable_id": "f287ba2f-f923-4464-a5bd-721c3951d32d"
+    }
+  ],
+  "compared_at_utc": "2026-06-03T04:57:24Z",
+  "counts": {
+    "added_atoms": 22,
+    "added_objects": 0,
+    "changed_objects": 10,
+    "current_objects": 501,
+    "previous_objects": 501,
+    "removed_atoms": 4,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-03",
+  "dataset": "azure-built-in-roles",
+  "platform": "azure",
+  "previous_snapshot_date": "2026-05-29",
+  "removed_objects": []
+}

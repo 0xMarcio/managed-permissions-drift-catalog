@@ -76,7 +76,7 @@
 	
 		<meta name="ms.author" content="rolyon" />
 	
-		<meta name="ms.date" content="2026-04-09T00:00:00Z" />
+		<meta name="ms.date" content="2026-05-25T00:00:00Z" />
 	
 		<meta name="ms.custom" content="generated" />
 	
@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="9ad127c3-22cb-e1cc-1be0-d0be1cc59b82" />
 	
-		<meta name="updated_at" content="2026-04-10T06:11:00Z" />
+		<meta name="updated_at" content="2026-06-02T22:37:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/monitor.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/65b7b384f3e54b4da3ac62dc42afaffe676abea8/articles/role-based-access-control/built-in-roles/monitor.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/6ce5e13533d37ee861c9447fd8e1fe7f49b496cc/articles/role-based-access-control/built-in-roles/monitor.md" />
 	
-		<meta name="git_commit_id" content="65b7b384f3e54b4da3ac62dc42afaffe676abea8" />
+		<meta name="git_commit_id" content="6ce5e13533d37ee861c9447fd8e1fe7f49b496cc" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="2878" />
+		<meta name="word_count" content="2899" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/monitor" />
 	
@@ -112,7 +112,7 @@
 	
 		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/monitor.md" />
 	
-		<meta name="previous_tlsh_hash" content="1749B2920F0AC322FE25478A7E07FF051BA4B088B6743A810A3E85168DC15A2D779E1576DF06FB49F637D2373253A58A6D42B97FD6CF3550EB00088A8D19D6A37D8C73768E" />
+		<meta name="previous_tlsh_hash" content="24E51092FE06C322FE25478A7E07FF052BA4B048B6703A810A3E85168DC15A2D779A1676DF06FB49F637D1373253A58A6D42B97FD6CB3550EB00088A8D19D6A37D8C737A8E" />
 	
 		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/monitor.md" />
 	
@@ -1530,8 +1530,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="../permissions/storage#microsoftclassicstorage" data-linktype="relative-path">Microsoft.ClassicStorage</a>/storageAccounts/listKeys/action</td>
-<td>Lists the access keys for the storage accounts.</td>
+<td>Microsoft.ClassicStorage/storageAccounts/listKeys/action</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="../permissions/compute#microsoftcompute" data-linktype="relative-path">Microsoft.Compute</a>/virtualMachines/extensions/*</td>
@@ -1586,8 +1586,8 @@
 <td></td>
 </tr>
 <tr>
-<td><em>none</em></td>
-<td></td>
+<td><a href="../permissions/monitor#microsoftoperationalinsights" data-linktype="relative-path">Microsoft.OperationalInsights</a>/workspaces/jobs/export/action</td>
+<td>Lets you export data from Log Analytics workspace per query and time range</td>
 </tr>
 <tr>
 <td><strong>NotDataActions</strong></td>
@@ -1625,7 +1625,9 @@
         "Microsoft.Support/*"
       ],
       "notActions": [],
-      "dataActions": [],
+      "dataActions": [
+        "Microsoft.OperationalInsights/workspaces/jobs/export/action"
+      ],
       "notDataActions": []
     }
   ],
@@ -1750,8 +1752,8 @@
 <td></td>
 </tr>
 <tr>
-<td><em>none</em></td>
-<td></td>
+<td><a href="../permissions/monitor#microsoftoperationalinsights" data-linktype="relative-path">Microsoft.OperationalInsights</a>/workspaces/jobs/export/action</td>
+<td>Lets you export data from Log Analytics workspace per query and time range</td>
 </tr>
 <tr>
 <td><strong>NotDataActions</strong></td>
@@ -1782,7 +1784,9 @@
       "notActions": [
         "Microsoft.OperationalInsights/workspaces/sharedKeys/read"
       ],
-      "dataActions": [],
+      "dataActions": [
+        "Microsoft.OperationalInsights/workspaces/jobs/export/action"
+      ],
       "notDataActions": []
     }
   ],
@@ -3051,11 +3055,11 @@
 				<li class="visibility-hidden-visual-diff">
 			<span class="badge badge-sm text-wrap-pretty">
 				<span>Last updated on <local-time format="twoDigitNumeric"
-		datetime="2026-04-09T08:00:00.000Z"
+		datetime="2026-05-25T08:00:00.000Z"
 		data-article-date-source="calculated"
 		class="is-invisible"
 	>
-		2026-04-09
+		2026-05-25
 	</local-time></span>
 			</span>
 		</li>

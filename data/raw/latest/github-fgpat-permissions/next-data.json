@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "YtbWx1IfMc4z7lAXabfLi",
+  "buildId": "_k5mVXQ2yc2OlMj8EfNz3",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -5067,6 +5067,15 @@
               "access": "read",
               "additional-permissions": false,
               "category": "repos",
+              "requestPath": "/repos/{owner}/{repo}/hash-algorithm",
+              "slug": "get-the-hash-algorithm-for-a-repository",
+              "subcategory": "repos",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "repos",
               "requestPath": "/repos/{owner}/{repo}/languages",
               "slug": "list-repository-languages",
               "subcategory": "repos",
@@ -5395,6 +5404,15 @@
               "slug": "set-github-actions-cache-storage-limit-for-an-organization",
               "subcategory": "cache",
               "verb": "put"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "billing",
+              "requestPath": "/organizations/{org}/settings/billing/ai_credit/usage",
+              "slug": "get-billing-ai-credit-usage-report-for-an-organization",
+              "subcategory": "usage",
+              "verb": "get"
             },
             {
               "access": "read",
@@ -8151,6 +8169,15 @@
               "access": "read",
               "additional-permissions": false,
               "category": "billing",
+              "requestPath": "/users/{username}/settings/billing/ai_credit/usage",
+              "slug": "get-billing-ai-credit-usage-report-for-a-user",
+              "subcategory": "usage",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "billing",
               "requestPath": "/users/{username}/settings/billing/premium_request/usage",
               "slug": "get-billing-premium-request-usage-report-for-a-user",
               "subcategory": "usage",
@@ -10245,7 +10272,7 @@
           }
         },
         "enterpriseServerReleases": {
-          "isOldestReleaseDeprecated": false,
+          "isOldestReleaseDeprecated": true,
           "nextDeprecationDate": "2026-06-02",
           "oldestSupported": "3.16",
           "releasesWithOldestDeprecationDate": [
