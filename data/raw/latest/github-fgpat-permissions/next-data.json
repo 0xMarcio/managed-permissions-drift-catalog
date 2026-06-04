@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "_k5mVXQ2yc2OlMj8EfNz3",
+  "buildId": "Hfk4ItGtWMx1Ku4mQQvdx",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -5422,6 +5422,15 @@
               "slug": "get-all-budgets-for-an-organization",
               "subcategory": "budgets",
               "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "billing",
+              "requestPath": "/organizations/{org}/settings/billing/budgets",
+              "slug": "create-a-budget-for-an-organization",
+              "subcategory": "budgets",
+              "verb": "post"
             },
             {
               "access": "read",

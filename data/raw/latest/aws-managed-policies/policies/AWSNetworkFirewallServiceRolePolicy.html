@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 17, 2020, 17:17 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 30, 2023, 17:19 UTC</p>
+                <p><b>Edited time:</b>  June 01, 2026, 21:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSNetworkFirewallServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSNetworkFirewallServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -128,6 +128,20 @@
           "aws:ResourceTag/AWSNetworkFirewallManaged" : "true"
         }
       }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "ecs:ListContainerInstances",
+        "ecs:ListTasks",
+        "ecs:DescribeTasks",
+        "ecs:DescribeContainerInstances"
+      ],
+      "Resource" : [
+        "arn:aws:ecs:*:*:cluster/*",
+        "arn:aws:ecs:*:*:container-instance/*/*",
+        "arn:aws:ecs:*:*:task/*/*"
+      ]
     }
   ]
 }</code></pre>

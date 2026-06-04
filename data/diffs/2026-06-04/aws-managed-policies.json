@@ -1,0 +1,732 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:iam:PassRole",
+        "aws:allow_action:ssm:DescribeAssociation",
+        "aws:allow_action:ssm:DescribeAssociationExecutions",
+        "aws:allow_action:ssm:UpdateAssociation"
+      ],
+      "display_name": "AWSQuickSetupPatchPolicyLambdaExecutionPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupPatchPolicyLambdaExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupPatchPolicyLambdaExecutionPolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteTags",
+        "aws:allow_action:ssm:AddTagsToResource",
+        "aws:allow_action:ssm:GetInventory",
+        "aws:allow_action:ssm:RemoveTagsFromResource"
+      ],
+      "display_name": "AWSQuickSetupPatchPolicyTagManagementExecutionPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupPatchPolicyTagManagementExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupPatchPolicyTagManagementExecutionPolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:bedrock-agentcore:GetAgentRuntime",
+        "aws:allow_action:bedrock-agentcore:InvokeAgentRuntime",
+        "aws:allow_action:bedrock-agentcore:StopRuntimeSession",
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteNetworkInterface",
+        "aws:allow_action:ec2:DeleteNetworkInterfacePermission",
+        "aws:allow_action:ec2:DescribeDhcpOptions",
+        "aws:allow_action:ec2:DescribeNetworkInterfaces",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:kms:Decrypt",
+        "aws:allow_action:kms:DescribeKey",
+        "aws:allow_action:kms:GenerateDataKey",
+        "aws:allow_action:lambda:InvokeFunction",
+        "aws:allow_action:logs:CreateLogGroup",
+        "aws:allow_action:logs:CreateLogStream",
+        "aws:allow_action:logs:DescribeLogStreams",
+        "aws:allow_action:logs:PutLogEvents",
+        "aws:allow_action:s3:GetObject",
+        "aws:allow_action:s3:ListBucket",
+        "aws:allow_action:s3:PutObject",
+        "aws:allow_action:sagemaker-mlflow:CreateExperiment",
+        "aws:allow_action:sagemaker-mlflow:CreateRun",
+        "aws:allow_action:sagemaker-mlflow:EndTrace",
+        "aws:allow_action:sagemaker-mlflow:GetExperimentByName",
+        "aws:allow_action:sagemaker-mlflow:GetMetricHistory",
+        "aws:allow_action:sagemaker-mlflow:GetRun",
+        "aws:allow_action:sagemaker-mlflow:ListArtifacts",
+        "aws:allow_action:sagemaker-mlflow:LogBatch",
+        "aws:allow_action:sagemaker-mlflow:SearchTraces",
+        "aws:allow_action:sagemaker-mlflow:StartTrace",
+        "aws:allow_action:sagemaker-mlflow:UpdateRun",
+        "aws:allow_action:sagemaker:AccessModelPackage",
+        "aws:allow_action:sagemaker:CallMlflowAppApi",
+        "aws:allow_action:sagemaker:CreateModelPackage",
+        "aws:allow_action:sagemaker:DescribeHubContent",
+        "aws:allow_action:sagemaker:DescribeMlflowApp",
+        "aws:allow_action:sagemaker:DescribeModelPackage",
+        "aws:allow_action:sagemaker:DescribeModelPackageGroup"
+      ],
+      "display_name": "AmazonSageMakerJobFullAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerJobFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerJobFullAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:sagemaker:CallWithBearerToken",
+        "aws:allow_action:sagemaker:CompleteRollout",
+        "aws:allow_action:sagemaker:Sample",
+        "aws:allow_action:sagemaker:SampleWithResponseStream",
+        "aws:allow_action:sagemaker:UpdateReward"
+      ],
+      "display_name": "AmazonSageMakerJobRuntimeAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerJobRuntimeAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerJobRuntimeAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:fsx:CreateVolume",
+        "aws:allow_action:fsx:DeleteVolume",
+        "aws:allow_action:fsx:DescribeStorageVirtualMachines",
+        "aws:allow_action:fsx:DescribeVolumes",
+        "aws:allow_action:fsx:TagResource",
+        "aws:allow_action:fsx:UntagResource",
+        "aws:allow_action:fsx:UpdateVolume",
+        "aws:allow_action:secretsmanager:GetSecretValue"
+      ],
+      "display_name": "AWSApplicationMigrationFSxProxyPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFSxProxyPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSApplicationMigrationFSxProxyPolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:AcceptVpcEndpointConnections",
+        "aws:allow_action:ec2:AuthorizeSecurityGroupIngress",
+        "aws:allow_action:ec2:CreateSecurityGroup",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:CreateVpcEndpointServiceConfiguration",
+        "aws:allow_action:ec2:DeleteSecurityGroup",
+        "aws:allow_action:ec2:DeleteVpcEndpointServiceConfigurations",
+        "aws:allow_action:ec2:DescribeAccountAttributes",
+        "aws:allow_action:ec2:DescribeAvailabilityZones",
+        "aws:allow_action:ec2:DescribeInternetGateways",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcEndpointConnections",
+        "aws:allow_action:ec2:DescribeVpcEndpointServiceConfigurations",
+        "aws:allow_action:ec2:DescribeVpcEndpoints",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:ec2:GetSecurityGroupsForVpc",
+        "aws:allow_action:ec2:ModifyVpcEndpointServicePermissions",
+        "aws:allow_action:elasticloadbalancing:AddTags",
+        "aws:allow_action:elasticloadbalancing:CreateListener",
+        "aws:allow_action:elasticloadbalancing:CreateLoadBalancer",
+        "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+        "aws:allow_action:elasticloadbalancing:DeleteLoadBalancer",
+        "aws:allow_action:elasticloadbalancing:DeleteTargetGroup",
+        "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+        "aws:allow_action:elasticloadbalancing:DescribeTags",
+        "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+        "aws:allow_action:elasticloadbalancing:ModifyLoadBalancerAttributes",
+        "aws:allow_action:elasticloadbalancing:RegisterTargets",
+        "aws:allow_action:fsx:DescribeFileSystems",
+        "aws:allow_action:fsx:DescribeStorageVirtualMachines",
+        "aws:allow_action:iam:CreateServiceLinkedRole"
+      ],
+      "display_name": "AWSApplicationMigrationFSxProxyVPCPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFSxProxyVPCPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSApplicationMigrationFSxProxyVPCPolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:bedrock-agentcore:GetAgentRuntime",
+      "aws:allow_action:bedrock-agentcore:InvokeAgentRuntime",
+      "aws:allow_action:bedrock-agentcore:StopRuntimeSession",
+      "aws:allow_action:ec2:AcceptVpcEndpointConnections",
+      "aws:allow_action:ec2:AuthorizeSecurityGroupIngress",
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+      "aws:allow_action:ec2:CreateSecurityGroup",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:CreateVpcEndpointServiceConfiguration",
+      "aws:allow_action:ec2:DeleteNetworkInterface",
+      "aws:allow_action:ec2:DeleteNetworkInterfacePermission",
+      "aws:allow_action:ec2:DeleteSecurityGroup",
+      "aws:allow_action:ec2:DeleteTags",
+      "aws:allow_action:ec2:DeleteVpcEndpointServiceConfigurations",
+      "aws:allow_action:ec2:DescribeAccountAttributes",
+      "aws:allow_action:ec2:DescribeAvailabilityZones",
+      "aws:allow_action:ec2:DescribeDhcpOptions",
+      "aws:allow_action:ec2:DescribeInternetGateways",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcEndpointConnections",
+      "aws:allow_action:ec2:DescribeVpcEndpointServiceConfigurations",
+      "aws:allow_action:ec2:DescribeVpcEndpoints",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ec2:GetSecurityGroupsForVpc",
+      "aws:allow_action:ec2:ModifyVpcEndpointServicePermissions",
+      "aws:allow_action:ecs:DescribeContainerInstances",
+      "aws:allow_action:ecs:DescribeTasks",
+      "aws:allow_action:ecs:ListContainerInstances",
+      "aws:allow_action:ecs:ListTasks",
+      "aws:allow_action:elasticloadbalancing:AddTags",
+      "aws:allow_action:elasticloadbalancing:CreateListener",
+      "aws:allow_action:elasticloadbalancing:CreateLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+      "aws:allow_action:elasticloadbalancing:DeleteLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:DeleteTargetGroup",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+      "aws:allow_action:elasticloadbalancing:DescribeTags",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+      "aws:allow_action:elasticloadbalancing:ModifyLoadBalancerAttributes",
+      "aws:allow_action:elasticloadbalancing:RegisterTargets",
+      "aws:allow_action:fsx:CreateVolume",
+      "aws:allow_action:fsx:DeleteVolume",
+      "aws:allow_action:fsx:DescribeFileSystems",
+      "aws:allow_action:fsx:DescribeStorageVirtualMachines",
+      "aws:allow_action:fsx:DescribeStorageVirtualMachines",
+      "aws:allow_action:fsx:DescribeStorageVirtualMachines",
+      "aws:allow_action:fsx:DescribeVolumes",
+      "aws:allow_action:fsx:TagResource",
+      "aws:allow_action:fsx:TagResource",
+      "aws:allow_action:fsx:UntagResource",
+      "aws:allow_action:fsx:UpdateVolume",
+      "aws:allow_action:health:DescribeAffectedEntities",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:iam:TagRole",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:lambda:InvokeFunction",
+      "aws:allow_action:logs:CreateLogGroup",
+      "aws:allow_action:logs:CreateLogStream",
+      "aws:allow_action:logs:DescribeLogStreams",
+      "aws:allow_action:logs:PutLogEvents",
+      "aws:allow_action:mgn:StartSnapshotGroupForMgn",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:s3:GetObject",
+      "aws:allow_action:s3:ListBucket",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:sagemaker-mlflow:CreateExperiment",
+      "aws:allow_action:sagemaker-mlflow:CreateRun",
+      "aws:allow_action:sagemaker-mlflow:EndTrace",
+      "aws:allow_action:sagemaker-mlflow:GetExperimentByName",
+      "aws:allow_action:sagemaker-mlflow:GetMetricHistory",
+      "aws:allow_action:sagemaker-mlflow:GetRun",
+      "aws:allow_action:sagemaker-mlflow:ListArtifacts",
+      "aws:allow_action:sagemaker-mlflow:LogBatch",
+      "aws:allow_action:sagemaker-mlflow:SearchTraces",
+      "aws:allow_action:sagemaker-mlflow:StartTrace",
+      "aws:allow_action:sagemaker-mlflow:UpdateRun",
+      "aws:allow_action:sagemaker:AccessModelPackage",
+      "aws:allow_action:sagemaker:CallMlflowAppApi",
+      "aws:allow_action:sagemaker:CallWithBearerToken",
+      "aws:allow_action:sagemaker:CompleteRollout",
+      "aws:allow_action:sagemaker:CreateModelPackage",
+      "aws:allow_action:sagemaker:DescribeHubContent",
+      "aws:allow_action:sagemaker:DescribeMlflowApp",
+      "aws:allow_action:sagemaker:DescribeModelPackage",
+      "aws:allow_action:sagemaker:DescribeModelPackageGroup",
+      "aws:allow_action:sagemaker:Sample",
+      "aws:allow_action:sagemaker:SampleWithResponseStream",
+      "aws:allow_action:sagemaker:UpdateReward",
+      "aws:allow_action:secretsmanager:BatchGetSecretValue",
+      "aws:allow_action:secretsmanager:GetSecretValue",
+      "aws:allow_action:secretsmanager:ListSecrets",
+      "aws:allow_action:securityhub:GetFindings",
+      "aws:allow_action:ssm:AddTagsToResource",
+      "aws:allow_action:ssm:DescribeAssociation",
+      "aws:allow_action:ssm:DescribeAssociationExecutions",
+      "aws:allow_action:ssm:DescribeInstanceInformation",
+      "aws:allow_action:ssm:GetInventory",
+      "aws:allow_action:ssm:RemoveTagsFromResource",
+      "aws:allow_action:ssm:UpdateAssociation",
+      "aws:allow_action:ssm:UpdateManagedInstanceRole",
+      "aws:allow_action:transcribe:StartStreamTranscriptionWebSocket",
+      "aws:deny_action:iam:AttachRolePolicy",
+      "aws:deny_action:iam:TagRole"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "bedrock-agentcore:GetAgentRuntime",
+          "bedrock-agentcore:InvokeAgentRuntime",
+          "bedrock-agentcore:StopRuntimeSession",
+          "ec2:AcceptVpcEndpointConnections",
+          "ec2:AuthorizeSecurityGroupIngress",
+          "ec2:CreateNetworkInterface",
+          "ec2:CreateNetworkInterfacePermission",
+          "ec2:CreateSecurityGroup",
+          "ec2:CreateTags",
+          "ec2:CreateTags",
+          "ec2:CreateTags",
+          "ec2:CreateVpcEndpointServiceConfiguration",
+          "ec2:DeleteNetworkInterface",
+          "ec2:DeleteNetworkInterfacePermission",
+          "ec2:DeleteSecurityGroup",
+          "ec2:DeleteTags",
+          "ec2:DeleteVpcEndpointServiceConfigurations",
+          "ec2:DescribeAccountAttributes",
+          "ec2:DescribeAvailabilityZones",
+          "ec2:DescribeDhcpOptions",
+          "ec2:DescribeInternetGateways",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcEndpointConnections",
+          "ec2:DescribeVpcEndpointServiceConfigurations",
+          "ec2:DescribeVpcEndpoints",
+          "ec2:DescribeVpcs",
+          "ec2:DescribeVpcs",
+          "ec2:GetSecurityGroupsForVpc",
+          "ec2:ModifyVpcEndpointServicePermissions",
+          "ecs:DescribeContainerInstances",
+          "ecs:DescribeTasks",
+          "ecs:ListContainerInstances",
+          "ecs:ListTasks",
+          "elasticloadbalancing:AddTags",
+          "elasticloadbalancing:CreateListener",
+          "elasticloadbalancing:CreateLoadBalancer",
+          "elasticloadbalancing:CreateTargetGroup",
+          "elasticloadbalancing:DeleteLoadBalancer",
+          "elasticloadbalancing:DeleteTargetGroup",
+          "elasticloadbalancing:DescribeLoadBalancers",
+          "elasticloadbalancing:DescribeTags",
+          "elasticloadbalancing:DescribeTargetGroups",
+          "elasticloadbalancing:ModifyLoadBalancerAttributes",
+          "elasticloadbalancing:RegisterTargets",
+          "fsx:CreateVolume",
+          "fsx:DeleteVolume",
+          "fsx:DescribeFileSystems",
+          "fsx:DescribeStorageVirtualMachines",
+          "fsx:DescribeStorageVirtualMachines",
+          "fsx:DescribeStorageVirtualMachines",
+          "fsx:DescribeVolumes",
+          "fsx:TagResource",
+          "fsx:TagResource",
+          "fsx:UntagResource",
+          "fsx:UpdateVolume",
+          "health:DescribeAffectedEntities",
+          "iam:CreateServiceLinkedRole",
+          "iam:PassRole",
+          "iam:TagRole",
+          "kms:Decrypt",
+          "kms:DescribeKey",
+          "kms:GenerateDataKey",
+          "lambda:InvokeFunction",
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:DescribeLogStreams",
+          "logs:PutLogEvents",
+          "mgn:StartSnapshotGroupForMgn",
+          "organizations:DescribeAccount",
+          "s3:GetObject",
+          "s3:ListBucket",
+          "s3:PutObject",
+          "sagemaker-mlflow:CreateExperiment",
+          "sagemaker-mlflow:CreateRun",
+          "sagemaker-mlflow:EndTrace",
+          "sagemaker-mlflow:GetExperimentByName",
+          "sagemaker-mlflow:GetMetricHistory",
+          "sagemaker-mlflow:GetRun",
+          "sagemaker-mlflow:ListArtifacts",
+          "sagemaker-mlflow:LogBatch",
+          "sagemaker-mlflow:SearchTraces",
+          "sagemaker-mlflow:StartTrace",
+          "sagemaker-mlflow:UpdateRun",
+          "sagemaker:AccessModelPackage",
+          "sagemaker:CallMlflowAppApi",
+          "sagemaker:CallWithBearerToken",
+          "sagemaker:CompleteRollout",
+          "sagemaker:CreateModelPackage",
+          "sagemaker:DescribeHubContent",
+          "sagemaker:DescribeMlflowApp",
+          "sagemaker:DescribeModelPackage",
+          "sagemaker:DescribeModelPackageGroup",
+          "sagemaker:Sample",
+          "sagemaker:SampleWithResponseStream",
+          "sagemaker:UpdateReward",
+          "secretsmanager:BatchGetSecretValue",
+          "secretsmanager:GetSecretValue",
+          "secretsmanager:ListSecrets",
+          "securityhub:GetFindings",
+          "ssm:AddTagsToResource",
+          "ssm:DescribeAssociation",
+          "ssm:DescribeAssociationExecutions",
+          "ssm:DescribeInstanceInformation",
+          "ssm:GetInventory",
+          "ssm:RemoveTagsFromResource",
+          "ssm:UpdateAssociation",
+          "ssm:UpdateManagedInstanceRole",
+          "transcribe:StartStreamTranscriptionWebSocket"
+        ],
+        "restriction:deny_actions": [
+          "iam:AttachRolePolicy",
+          "iam:TagRole"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "health:DescribeAffectedEntities",
+              "securityhub:GetFindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 01, 2026, 22:42 UTC",
+          "before": "May 11, 2026, 21:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 01, 2026, 22:42 UTC",
+          "before": "May 11, 2026, 21:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "AIDevOpsOperatorAppAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "transcribe:StartStreamTranscriptionWebSocket"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 01, 2026, 22:42 UTC",
+          "before": "May 22, 2026, 00:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 01, 2026, 22:42 UTC",
+          "before": "May 22, 2026, 00:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+    },
+    {
+      "display_name": "AWSApplicationMigrationFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "fsx:DescribeStorageVirtualMachines",
+              "fsx:TagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v12 (default)",
+          "before": "v11 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 31, 2026, 13:12 UTC",
+          "before": "February 12, 2026, 18:03 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 31, 2026, 13:12 UTC",
+          "before": "February 12, 2026, 18:03 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 23,
+          "before": 21,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess"
+    },
+    {
+      "display_name": "AWSQuickSetupManagedInstanceProfileExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:TagRole",
+              "ssm:DescribeInstanceInformation",
+              "ssm:UpdateManagedInstanceRole"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "iam:AttachRolePolicy",
+              "iam:TagRole"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 03, 2026, 14:12 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 03, 2026, 14:12 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 15,
+          "before": 12,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupManagedInstanceProfileExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupManagedInstanceProfileExecutionPolicy"
+    },
+    {
+      "display_name": "AWSSecretsManagerClientReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "secretsmanager:BatchGetSecretValue",
+              "secretsmanager:ListSecrets"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 02, 2026, 20:42 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 02, 2026, 20:42 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecretsManagerClientReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess"
+    },
+    {
+      "display_name": "AWSAuditManagerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "organizations:DescribeAccount"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 02, 2026, 20:12 UTC",
+          "before": "September 24, 2024, 23:22 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 02, 2026, 20:12 UTC",
+          "before": "September 24, 2024, 23:22 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSNetworkFirewallServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ecs:DescribeContainerInstances",
+              "ecs:DescribeTasks",
+              "ecs:ListContainerInstances",
+              "ecs:ListTasks"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 01, 2026, 21:57 UTC",
+          "before": "March 30, 2023, 17:19 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 01, 2026, 21:57 UTC",
+          "before": "March 30, 2023, 17:19 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 7,
+          "before": 6,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSNetworkFirewallServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSNetworkFirewallServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSApplicationMigrationReplicationServerPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "mgn:StartSnapshotGroupForMgn"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "May 31, 2026, 13:27 UTC",
+          "before": "April 07, 2021, 07:21 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "May 31, 2026, 13:27 UTC",
+          "before": "April 07, 2021, 07:21 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReplicationServerPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSApplicationMigrationReplicationServerPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioEMRInstanceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 01, 2026, 23:27 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 01, 2026, 23:27 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioEMRInstanceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioEMRInstanceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-04T04:57:10Z",
+  "counts": {
+    "added_atoms": 114,
+    "added_objects": 6,
+    "changed_objects": 9,
+    "current_objects": 1512,
+    "previous_objects": 1506,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-04",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-05-31",
+  "removed_objects": []
+}

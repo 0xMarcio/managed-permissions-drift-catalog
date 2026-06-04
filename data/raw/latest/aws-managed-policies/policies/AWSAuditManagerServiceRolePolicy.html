@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: December 08, 2020, 15:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  September 24, 2024, 23:22 UTC</p>
+                <p><b>Edited time:</b>  June 02, 2026, 20:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSAuditManagerServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v10 (default)</p>
+        <p><b>Policy version:</b> v11 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -217,6 +217,7 @@
         "es:ListDomainNames",
         "organizations:DescribeOrganization",
         "organizations:DescribePolicy",
+        "organizations:DescribeAccount",
         "rds:DescribeCertificates",
         "rds:DescribeDBClusterEndpoints",
         "rds:DescribeDBClusterParameterGroups",
@@ -331,16 +332,15 @@
       ],
       "Resource" : "arn:aws:events:*:*:rule/AuditManagerSecurityHubFindingsReceiver",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "events:detail-type" : "Security Hub Findings - Imported"
-        },
-        "Null" : <span>{</span>
-          "events:source" : "false"
-        },
         "ForAllValues:StringEquals" : <span>{</span>
+          "events:detail-type" : "Security Hub Findings - Imported",
           "events:source" : [
             "aws.securityhub"
           ]
+        },
+        "Null" : <span>{</span>
+          "events:source" : "false",
+          "events:detail-type" : "false"
         }
       }
     },

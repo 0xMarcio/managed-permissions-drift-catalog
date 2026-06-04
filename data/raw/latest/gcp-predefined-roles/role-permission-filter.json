@@ -82,7 +82,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "anthosservicemesh.googleapis.com, meshdataplane.googleapis.com, trafficdirector.googleapis.com, meshconfig.googleapis.com",
+      "name": "meshconfig.googleapis.com, meshdataplane.googleapis.com, trafficdirector.googleapis.com, anthosservicemesh.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "title": "Google Workspace Marketplace",
-      "name": "appmetadata.googleapis.com, workspacemarketplace.googleapis.com",
+      "name": "workspacemarketplace.googleapis.com, appmetadata.googleapis.com",
       "url": "/iam/docs/roles-permissions/workspacemarketplace"
     },
     {
@@ -402,7 +402,7 @@
     },
     {
       "title": "Cloud IoT",
-      "name": "cloudiottoken.googleapis.com, cloudiot.googleapis.com",
+      "name": "cloudiot.googleapis.com, cloudiottoken.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudiot"
     },
     {
@@ -437,7 +437,7 @@
     },
     {
       "title": "Service Catalog",
-      "name": "cloudprivatecatalogproducer.googleapis.com, cloudprivatecatalog.googleapis.com",
+      "name": "cloudprivatecatalog.googleapis.com, cloudprivatecatalogproducer.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudprivatecatalog"
     },
     {
@@ -462,7 +462,7 @@
     },
     {
       "title": "Web Security Scanner",
-      "name": "cloudsecurityscanner.googleapis.com, websecurityscanner.googleapis.com",
+      "name": "websecurityscanner.googleapis.com, cloudsecurityscanner.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudsecurityscanner"
     },
     {
@@ -522,7 +522,7 @@
     },
     {
       "title": "Commerce Price Management",
-      "name": "commercepricemanagement.googleapis.com, commerceprice.googleapis.com",
+      "name": "commerceprice.googleapis.com, commercepricemanagement.googleapis.com",
       "url": "/iam/docs/roles-permissions/commercepricemanagement"
     },
     {
@@ -712,7 +712,7 @@
     },
     {
       "title": "Data Studio",
-      "name": "lookerstudio.googleapis.com, datastudio.googleapis.com",
+      "name": "datastudio.googleapis.com, lookerstudio.googleapis.com",
       "url": "/iam/docs/roles-permissions/datastudio"
     },
     {
@@ -757,7 +757,7 @@
     },
     {
       "title": "Document AI",
-      "name": "documentai.googleapis.com, documentaicore.googleapis.com",
+      "name": "documentaicore.googleapis.com, documentai.googleapis.com",
       "url": "/iam/docs/roles-permissions/clouddocumentai"
     },
     {
@@ -882,7 +882,7 @@
     },
     {
       "title": "Firebase Crashlytics",
-      "name": "firebasecrashlytics.googleapis.com, firebasecrash.googleapis.com",
+      "name": "firebasecrash.googleapis.com, firebasecrashlytics.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecrash"
     },
     {
@@ -1002,7 +1002,7 @@
     },
     {
       "title": "Cloud Life Sciences",
-      "name": "genomics.googleapis.com, lifesciences.googleapis.com",
+      "name": "lifesciences.googleapis.com, genomics.googleapis.com",
       "url": "/iam/docs/roles-permissions/lifesciences"
     },
     {
@@ -1222,7 +1222,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "monitoring.googleapis.com, stackdriver.googleapis.com, opsconfigmonitoring.googleapis.com",
+      "name": "stackdriver.googleapis.com, opsconfigmonitoring.googleapis.com, monitoring.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1387,7 +1387,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
+      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1412,7 +1412,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
+      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -1562,7 +1562,7 @@
     },
     {
       "title": "Cloud Source Repositories",
-      "name": "sourcerepo.googleapis.com, source.googleapis.com",
+      "name": "source.googleapis.com, sourcerepo.googleapis.com",
       "url": "/iam/docs/roles-permissions/source"
     },
     {
@@ -2968,6 +2968,12 @@
       "priority": 1
     },
     {
+      "title": "Auditmanager Viewer",
+      "name": "roles/auditmanager.viewer",
+      "url": "/iam/docs/roles-permissions/auditmanager#auditmanager.viewer",
+      "priority": 1
+    },
+    {
       "title": "Audit Manager Auditor",
       "name": "roles/auditmanager.auditor",
       "url": "/iam/docs/roles-permissions/auditmanager#auditmanager.auditor",
@@ -3448,6 +3454,18 @@
       "priority": 1
     },
     {
+      "title": "Cloud BeyondCorp SecurityGateway Service Discovery User",
+      "name": "roles/beyondcorp.serviceDiscoveryUser",
+      "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.serviceDiscoveryUser",
+      "priority": 2
+    },
+    {
+      "title": "Cloud BeyondCorp SecurityGateway Application resource User",
+      "name": "roles/beyondcorp.sgApplicationUser",
+      "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.sgApplicationUser",
+      "priority": 2
+    },
+    {
       "title": "Cloud BeyondCorp Subscription Admin",
       "name": "roles/beyondcorp.subscriptionAdmin",
       "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.subscriptionAdmin",
@@ -3457,6 +3475,12 @@
       "title": "Cloud BeyondCorp Subscription Viewer",
       "name": "roles/beyondcorp.subscriptionViewer",
       "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.subscriptionViewer",
+      "priority": 2
+    },
+    {
+      "title": "Cloud BeyondCorp SecurityGateway Upstream Access",
+      "name": "roles/beyondcorp.upstreamAccess",
+      "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.upstreamAccess",
       "priority": 2
     },
     {
@@ -3697,6 +3721,12 @@
       "title": "Task Orchestrator",
       "name": "roles/bigquerymigration.orchestrator",
       "url": "/iam/docs/roles-permissions/bigquerymigration#bigquerymigration.orchestrator",
+      "priority": 2
+    },
+    {
+      "title": "BigQuery Migration Service Agent",
+      "name": "roles/bigquerymigration.serviceAgent",
+      "url": "/iam/docs/roles-permissions/bigquerymigration#bigquerymigration.serviceAgent",
       "priority": 2
     },
     {
@@ -5905,6 +5935,12 @@
       "title": "Connector Admin",
       "name": "roles/connectors.admin",
       "url": "/iam/docs/roles-permissions/connectors#connectors.admin",
+      "priority": 1
+    },
+    {
+      "title": "Connectors Editor",
+      "name": "roles/connectors.editor",
+      "url": "/iam/docs/roles-permissions/connectors#connectors.editor",
       "priority": 1
     },
     {
@@ -8860,7 +8896,7 @@
       "priority": 1
     },
     {
-      "title": "Firebase Machine Learning Service Agent",
+      "title": "Firebase AI Logic Service Agent",
       "name": "roles/firebaseml.serviceAgent",
       "url": "/iam/docs/roles-permissions/firebaseml#firebaseml.serviceAgent",
       "priority": 2
@@ -8942,6 +8978,12 @@
       "name": "roles/firewallinsights.serviceAgent",
       "url": "/iam/docs/roles-permissions/firewallinsights#firewallinsights.serviceAgent",
       "priority": 2
+    },
+    {
+      "title": "Fleetengine Viewer",
+      "name": "roles/fleetengine.viewer",
+      "url": "/iam/docs/roles-permissions/fleetengine#fleetengine.viewer",
+      "priority": 1
     },
     {
       "title": "Fleet Engine Consumer SDK User",
@@ -9110,6 +9152,18 @@
       "name": "roles/geminicodeassistmanagement.serviceAgent",
       "url": "/iam/docs/roles-permissions/geminicodeassistmanagement#geminicodeassistmanagement.serviceAgent",
       "priority": 2
+    },
+    {
+      "title": "Gemini Data Analytics Admin",
+      "name": "roles/geminidataanalytics.admin",
+      "url": "/iam/docs/roles-permissions/geminidataanalytics#geminidataanalytics.admin",
+      "priority": 1
+    },
+    {
+      "title": "Gemini Data Analytics Viewer",
+      "name": "roles/geminidataanalytics.viewer",
+      "url": "/iam/docs/roles-permissions/geminidataanalytics#geminidataanalytics.viewer",
+      "priority": 1
     },
     {
       "title": "Gemini Data Analytics Data Agent Creator",
@@ -10622,6 +10676,18 @@
       "name": "roles/managedkafka.topicEditor",
       "url": "/iam/docs/roles-permissions/managedkafka#managedkafka.topicEditor",
       "priority": 2
+    },
+    {
+      "title": "Mandiant Admin",
+      "name": "roles/mandiant.admin",
+      "url": "/iam/docs/roles-permissions/mandiant#mandiant.admin",
+      "priority": 1
+    },
+    {
+      "title": "Mandiant Viewer",
+      "name": "roles/mandiant.viewer",
+      "url": "/iam/docs/roles-permissions/mandiant#mandiant.viewer",
+      "priority": 1
     },
     {
       "title": "Mandiant Attack Surface Management Editor",
@@ -56538,12 +56604,24 @@
       "url": "/iam/docs/roles-permissions/netapp#netapp.storagePools.list"
     },
     {
+      "title": "netapp.storagePools.listBackupConfigs",
+      "url": "/iam/docs/roles-permissions/netapp#netapp.storagePools.listBackupConfigs"
+    },
+    {
+      "title": "netapp.storagePools.restoreVolume",
+      "url": "/iam/docs/roles-permissions/netapp#netapp.storagePools.restoreVolume"
+    },
+    {
       "title": "netapp.storagePools.switch",
       "url": "/iam/docs/roles-permissions/netapp#netapp.storagePools.switch"
     },
     {
       "title": "netapp.storagePools.update",
       "url": "/iam/docs/roles-permissions/netapp#netapp.storagePools.update"
+    },
+    {
+      "title": "netapp.storagePools.updateBackupConfig",
+      "url": "/iam/docs/roles-permissions/netapp#netapp.storagePools.updateBackupConfig"
     },
     {
       "title": "netapp.storagePools.validateDirectoryService",
@@ -57466,12 +57544,20 @@
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.list"
     },
     {
+      "title": "networksecurity.firewallEndpoints.submitVerdictChangeRequest",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.submitVerdictChangeRequest"
+    },
+    {
       "title": "networksecurity.firewallEndpoints.update",
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.update"
     },
     {
       "title": "networksecurity.firewallEndpoints.use",
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.use"
+    },
+    {
+      "title": "networksecurity.firewallEndpoints.useWildfire",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.useWildfire"
     },
     {
       "title": "networksecurity.gatewaySecurityPolicies.create",
