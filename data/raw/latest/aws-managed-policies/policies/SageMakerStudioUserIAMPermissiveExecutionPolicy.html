@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 18, 2025, 17:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 29, 2026, 20:27 UTC</p>
+                <p><b>Edited time:</b>  June 04, 2026, 21:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioUserIAMPermissiveExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v20 (default)</p>
+        <p><b>Policy version:</b> v21 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -94,6 +94,7 @@
         "bedrock:*",
         "codewhisperer:*",
         "sagemaker-unified-studio-mcp:*",
+        "elasticmapreduce:*",
         "q:*",
         "sagemaker:*",
         "sagemaker-mlflow:*",
@@ -117,11 +118,13 @@
         "athena:TerminateSession",
         "emr-serverless:*Session*",
         "emr-serverless:*Dashboard*",
+        "elasticmapreduce:*Session*",
         "glue:CancelStatement",
         "glue:CreateSession",
         "glue:DeleteSession",
         "glue:GetDashboardUrl",
         "glue:GetSession",
+        "glue:GetSessionEndpoint",
         "glue:GetStatement",
         "glue:RunStatement",
         "glue:StopSession"
@@ -129,6 +132,7 @@
       "Resource" : [
         "arn:aws:athena:*:*:workgroup/*/session/*",
         "arn:aws:emr-serverless:*:*:/applications/*/sessions/*",
+        "arn:aws:elasticmapreduce:*:*:cluster/*/session/*",
         "arn:aws:glue:*:*:session/*"
       ],
       "Condition" : <span>{</span>
@@ -145,12 +149,15 @@
         "athena:TagResource",
         "athena:UntagResource",
         "emr-serverless:*Resource",
+        "elasticmapreduce:AddTags",
+        "elasticmapreduce:RemoveTags",
         "glue:TagResource",
         "glue:UntagResource"
       ],
       "Resource" : [
         "arn:aws:athena:*:*:workgroup/*/session/*",
         "arn:aws:emr-serverless:*:*:/applications/*/sessions/*",
+        "arn:aws:elasticmapreduce:*:*:cluster/*/session/*",
         "arn:aws:glue:*:*:session/*"
       ],
       "Condition" : <span>{</span>
@@ -290,6 +297,7 @@
             "redshift.amazonaws.com",
             "scheduler.amazonaws.com",
             "emr-serverless.amazonaws.com",
+            "elasticmapreduce.amazonaws.com",
             "airflow-serverless.amazonaws.com"
           ]
         }

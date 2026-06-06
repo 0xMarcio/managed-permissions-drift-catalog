@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: May 08, 2026, 08:57 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 08, 2026, 08:57 UTC</p>
+                <p><b>Edited time:</b>  June 04, 2026, 20:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchAPIKeyAccess</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchAPIKeyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -72,12 +72,27 @@
   "Version" : "2012-10-17",
   "Statement" : [
     <span>{</span>
+      "Sid" : "CloudWatchMetricsAPIs",
       "Effect" : "Allow",
       "Action" : [
         "cloudwatch:CallWithBearerToken",
         "cloudwatch:PutMetricData"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "KMSDecryptForCMKDatasets",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "cloudwatch.*.amazonaws.com",
+          "kms:EncryptionContext:aws:cloudwatch:arn" : "arn:aws:cloudwatch:*:*:dataset/*"
+        }
+      }
     }
   ]
 }</code></pre>

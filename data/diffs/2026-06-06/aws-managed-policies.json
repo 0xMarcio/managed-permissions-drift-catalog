@@ -1,0 +1,1028 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CancelExportTask",
+        "aws:allow_action:ec2:CopyImage",
+        "aws:allow_action:ec2:CreateImage",
+        "aws:allow_action:ec2:CreateLaunchTemplateVersion",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeregisterImage",
+        "aws:allow_action:ec2:DescribeExportImageTasks",
+        "aws:allow_action:ec2:DescribeHosts",
+        "aws:allow_action:ec2:DescribeImages",
+        "aws:allow_action:ec2:DescribeImportImageTasks",
+        "aws:allow_action:ec2:DescribeInstanceAttribute",
+        "aws:allow_action:ec2:DescribeInstanceStatus",
+        "aws:allow_action:ec2:DescribeInstanceTypeOfferings",
+        "aws:allow_action:ec2:DescribeInstanceTypes",
+        "aws:allow_action:ec2:DescribeInstances",
+        "aws:allow_action:ec2:DescribeLaunchTemplateVersions",
+        "aws:allow_action:ec2:DescribeLaunchTemplates",
+        "aws:allow_action:ec2:DescribeSnapshots",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeTags",
+        "aws:allow_action:ec2:EnableFastLaunch",
+        "aws:allow_action:ec2:ExportImage",
+        "aws:allow_action:ec2:ModifyImageAttribute",
+        "aws:allow_action:ec2:ModifyLaunchTemplate",
+        "aws:allow_action:ec2:ModifySnapshotAttribute",
+        "aws:allow_action:ec2:RegisterImage",
+        "aws:allow_action:ec2:RunInstances",
+        "aws:allow_action:ec2:StartInstances",
+        "aws:allow_action:ec2:StopInstances",
+        "aws:allow_action:ec2:TerminateInstances",
+        "aws:allow_action:ecr:BatchDeleteImage",
+        "aws:allow_action:ecr:CreateRepository",
+        "aws:allow_action:ecr:TagResource",
+        "aws:allow_action:events:DeleteRule",
+        "aws:allow_action:events:DescribeRule",
+        "aws:allow_action:events:PutRule",
+        "aws:allow_action:events:PutTargets",
+        "aws:allow_action:events:RemoveTargets",
+        "aws:allow_action:iam:CreateServiceLinkedRole",
+        "aws:allow_action:iam:PassRole",
+        "aws:allow_action:imagebuilder:StartImagePipelineExecution",
+        "aws:allow_action:imagebuilder:TagResource",
+        "aws:allow_action:inspector2:ListCoverage",
+        "aws:allow_action:inspector2:ListFindings",
+        "aws:allow_action:kms:CreateGrant",
+        "aws:allow_action:kms:Decrypt",
+        "aws:allow_action:kms:DescribeKey",
+        "aws:allow_action:kms:Encrypt",
+        "aws:allow_action:kms:GenerateDataKeyWithoutPlaintext",
+        "aws:allow_action:kms:ReEncryptFrom",
+        "aws:allow_action:kms:ReEncryptTo",
+        "aws:allow_action:license-manager:UpdateLicenseSpecificationsForResource",
+        "aws:allow_action:logs:CreateLogGroup",
+        "aws:allow_action:logs:CreateLogStream",
+        "aws:allow_action:logs:PutLogEvents",
+        "aws:allow_action:sns:Publish",
+        "aws:allow_action:ssm:AddTagsToResource",
+        "aws:allow_action:ssm:CreateAssociation",
+        "aws:allow_action:ssm:DeleteAssociation",
+        "aws:allow_action:ssm:DescribeAssociationExecutions",
+        "aws:allow_action:ssm:DescribeInstanceAssociationsStatus",
+        "aws:allow_action:ssm:DescribeInstanceInformation",
+        "aws:allow_action:ssm:GetCommandInvocation",
+        "aws:allow_action:ssm:GetParameter",
+        "aws:allow_action:ssm:ListCommandInvocations",
+        "aws:allow_action:ssm:ListInventoryEntries",
+        "aws:allow_action:ssm:PutParameter",
+        "aws:allow_action:ssm:SendCommand",
+        "aws:allow_action:sts:AssumeRole"
+      ],
+      "display_name": "EC2ImageBuilderExecutionPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/EC2ImageBuilderExecutionPolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:autoscaling:DescribeAutoScalingGroups",
+        "aws:allow_action:autoscaling:DescribeAutoScalingInstances",
+        "aws:allow_action:bcm-pricing-calculator:GetPreferences",
+        "aws:allow_action:bcm-pricing-calculator:GetWorkloadEstimate",
+        "aws:allow_action:bcm-pricing-calculator:ListWorkloadEstimateUsage",
+        "aws:allow_action:bcm-pricing-calculator:ListWorkloadEstimates",
+        "aws:allow_action:budgets:ViewBudget",
+        "aws:allow_action:ce:DescribeCostCategoryDefinition",
+        "aws:allow_action:ce:GetAnomalies",
+        "aws:allow_action:ce:GetAnomalyMonitors",
+        "aws:allow_action:ce:GetCostAndUsage",
+        "aws:allow_action:ce:GetCostAndUsageComparisons",
+        "aws:allow_action:ce:GetCostAndUsageWithResources",
+        "aws:allow_action:ce:GetCostCategories",
+        "aws:allow_action:ce:GetCostComparisonDrivers",
+        "aws:allow_action:ce:GetCostForecast",
+        "aws:allow_action:ce:GetDimensionValues",
+        "aws:allow_action:ce:GetReservationCoverage",
+        "aws:allow_action:ce:GetReservationPurchaseRecommendation",
+        "aws:allow_action:ce:GetReservationUtilization",
+        "aws:allow_action:ce:GetSavingsPlansCoverage",
+        "aws:allow_action:ce:GetSavingsPlansPurchaseRecommendation",
+        "aws:allow_action:ce:GetSavingsPlansUtilization",
+        "aws:allow_action:ce:GetSavingsPlansUtilizationDetails",
+        "aws:allow_action:ce:GetTags",
+        "aws:allow_action:ce:GetUsageForecast",
+        "aws:allow_action:ce:ListCostAllocationTagBackfillHistory",
+        "aws:allow_action:ce:ListCostAllocationTags",
+        "aws:allow_action:ce:ListCostCategoryDefinitions",
+        "aws:allow_action:cloudtrail:DescribeTrails",
+        "aws:allow_action:cloudtrail:GetEventSelectors",
+        "aws:allow_action:cloudtrail:GetTrailStatus",
+        "aws:allow_action:cloudtrail:LookupEvents",
+        "aws:allow_action:cloudwatch:GetMetricData",
+        "aws:allow_action:cloudwatch:GetMetricStatistics",
+        "aws:allow_action:cloudwatch:ListMetrics",
+        "aws:allow_action:compute-optimizer:DescribeRecommendationExportJobs",
+        "aws:allow_action:compute-optimizer:GetAutoScalingGroupRecommendations",
+        "aws:allow_action:compute-optimizer:GetEBSVolumeRecommendations",
+        "aws:allow_action:compute-optimizer:GetEC2InstanceRecommendations",
+        "aws:allow_action:compute-optimizer:GetEC2RecommendationProjectedMetrics",
+        "aws:allow_action:compute-optimizer:GetECSServiceRecommendationProjectedMetrics",
+        "aws:allow_action:compute-optimizer:GetECSServiceRecommendations",
+        "aws:allow_action:compute-optimizer:GetEffectiveRecommendationPreferences",
+        "aws:allow_action:compute-optimizer:GetEnrollmentStatus",
+        "aws:allow_action:compute-optimizer:GetEnrollmentStatusesForOrganization",
+        "aws:allow_action:compute-optimizer:GetIdleRecommendations",
+        "aws:allow_action:compute-optimizer:GetLambdaFunctionRecommendations",
+        "aws:allow_action:compute-optimizer:GetLicenseRecommendations",
+        "aws:allow_action:compute-optimizer:GetRDSDatabaseRecommendationProjectedMetrics",
+        "aws:allow_action:compute-optimizer:GetRDSDatabaseRecommendations",
+        "aws:allow_action:compute-optimizer:GetRecommendationPreferences",
+        "aws:allow_action:compute-optimizer:GetRecommendationSummaries",
+        "aws:allow_action:cost-optimization-hub:GetRecommendation",
+        "aws:allow_action:cost-optimization-hub:ListRecommendationSummaries",
+        "aws:allow_action:cost-optimization-hub:ListRecommendations",
+        "aws:allow_action:ec2:DescribeInstances",
+        "aws:allow_action:ec2:DescribeVolumes",
+        "aws:allow_action:ecs:ListClusters",
+        "aws:allow_action:ecs:ListServices",
+        "aws:allow_action:events:DeleteRule",
+        "aws:allow_action:events:DescribeRule",
+        "aws:allow_action:events:DisableRule",
+        "aws:allow_action:events:EnableRule",
+        "aws:allow_action:events:ListTargetsByRule",
+        "aws:allow_action:events:PutRule",
+        "aws:allow_action:events:PutTargets",
+        "aws:allow_action:events:RemoveTargets",
+        "aws:allow_action:freetier:GetFreeTierUsage",
+        "aws:allow_action:lambda:ListFunctions",
+        "aws:allow_action:lambda:ListProvisionedConcurrencyConfigs",
+        "aws:allow_action:logs:GetQueryResults",
+        "aws:allow_action:logs:StartQuery",
+        "aws:allow_action:organizations:DescribeAccount",
+        "aws:allow_action:organizations:DescribeOrganization",
+        "aws:allow_action:organizations:ListAccounts",
+        "aws:allow_action:pricing:DescribeServices",
+        "aws:allow_action:pricing:GetAttributeValues",
+        "aws:allow_action:pricing:GetProducts",
+        "aws:allow_action:rds:DescribeDBClusters",
+        "aws:allow_action:rds:DescribeDBInstances"
+      ],
+      "display_name": "FinOpsAgentAgentPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinOpsAgentAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/FinOpsAgentAgentPolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:finops-agent:AcceptAgentRequest",
+        "aws:allow_action:finops-agent:CancelTask",
+        "aws:allow_action:finops-agent:CancelTurn",
+        "aws:allow_action:finops-agent:CreateAutomation",
+        "aws:allow_action:finops-agent:CreateConversation",
+        "aws:allow_action:finops-agent:CreateDocument",
+        "aws:allow_action:finops-agent:CreateTask",
+        "aws:allow_action:finops-agent:CreateTurn",
+        "aws:allow_action:finops-agent:DeleteArtifact",
+        "aws:allow_action:finops-agent:DeleteAutomation",
+        "aws:allow_action:finops-agent:DeleteDocument",
+        "aws:allow_action:finops-agent:GetAgentRequest",
+        "aws:allow_action:finops-agent:GetArtifactContent",
+        "aws:allow_action:finops-agent:GetArtifactMetadata",
+        "aws:allow_action:finops-agent:GetAutomation",
+        "aws:allow_action:finops-agent:GetDocumentContent",
+        "aws:allow_action:finops-agent:GetDocumentMetadata",
+        "aws:allow_action:finops-agent:GetTask",
+        "aws:allow_action:finops-agent:GetTurn",
+        "aws:allow_action:finops-agent:ListArtifacts",
+        "aws:allow_action:finops-agent:ListAutomations",
+        "aws:allow_action:finops-agent:ListConversations",
+        "aws:allow_action:finops-agent:ListDocuments",
+        "aws:allow_action:finops-agent:ListRecords",
+        "aws:allow_action:finops-agent:ListTasks",
+        "aws:allow_action:finops-agent:ListTurns",
+        "aws:allow_action:finops-agent:RejectAgentRequest",
+        "aws:allow_action:finops-agent:RestoreDocument",
+        "aws:allow_action:finops-agent:SendFeedback",
+        "aws:allow_action:finops-agent:UpdateAutomation",
+        "aws:allow_action:finops-agent:UpdateDocument"
+      ],
+      "display_name": "FinOpsAgentOperatorPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinOpsAgentOperatorPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/FinOpsAgentOperatorPolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:autoscaling:DescribeAutoScalingGroups",
+      "aws:allow_action:autoscaling:DescribeAutoScalingInstances",
+      "aws:allow_action:bcm-pricing-calculator:GetPreferences",
+      "aws:allow_action:bcm-pricing-calculator:GetWorkloadEstimate",
+      "aws:allow_action:bcm-pricing-calculator:ListWorkloadEstimateUsage",
+      "aws:allow_action:bcm-pricing-calculator:ListWorkloadEstimates",
+      "aws:allow_action:budgets:ViewBudget",
+      "aws:allow_action:ce:DescribeCostCategoryDefinition",
+      "aws:allow_action:ce:GetAnomalies",
+      "aws:allow_action:ce:GetAnomalyMonitors",
+      "aws:allow_action:ce:GetCostAndUsage",
+      "aws:allow_action:ce:GetCostAndUsageComparisons",
+      "aws:allow_action:ce:GetCostAndUsageWithResources",
+      "aws:allow_action:ce:GetCostCategories",
+      "aws:allow_action:ce:GetCostComparisonDrivers",
+      "aws:allow_action:ce:GetCostForecast",
+      "aws:allow_action:ce:GetDimensionValues",
+      "aws:allow_action:ce:GetReservationCoverage",
+      "aws:allow_action:ce:GetReservationPurchaseRecommendation",
+      "aws:allow_action:ce:GetReservationUtilization",
+      "aws:allow_action:ce:GetSavingsPlansCoverage",
+      "aws:allow_action:ce:GetSavingsPlansPurchaseRecommendation",
+      "aws:allow_action:ce:GetSavingsPlansUtilization",
+      "aws:allow_action:ce:GetSavingsPlansUtilizationDetails",
+      "aws:allow_action:ce:GetTags",
+      "aws:allow_action:ce:GetUsageForecast",
+      "aws:allow_action:ce:ListCostAllocationTagBackfillHistory",
+      "aws:allow_action:ce:ListCostAllocationTags",
+      "aws:allow_action:ce:ListCostCategoryDefinitions",
+      "aws:allow_action:cloudtrail:DescribeTrails",
+      "aws:allow_action:cloudtrail:GetEventSelectors",
+      "aws:allow_action:cloudtrail:GetTrailStatus",
+      "aws:allow_action:cloudtrail:LookupEvents",
+      "aws:allow_action:cloudwatch:GetMetricData",
+      "aws:allow_action:cloudwatch:GetMetricStatistics",
+      "aws:allow_action:cloudwatch:ListMetrics",
+      "aws:allow_action:compute-optimizer:DescribeRecommendationExportJobs",
+      "aws:allow_action:compute-optimizer:GetAutoScalingGroupRecommendations",
+      "aws:allow_action:compute-optimizer:GetEBSVolumeRecommendations",
+      "aws:allow_action:compute-optimizer:GetEC2InstanceRecommendations",
+      "aws:allow_action:compute-optimizer:GetEC2RecommendationProjectedMetrics",
+      "aws:allow_action:compute-optimizer:GetECSServiceRecommendationProjectedMetrics",
+      "aws:allow_action:compute-optimizer:GetECSServiceRecommendations",
+      "aws:allow_action:compute-optimizer:GetEffectiveRecommendationPreferences",
+      "aws:allow_action:compute-optimizer:GetEnrollmentStatus",
+      "aws:allow_action:compute-optimizer:GetEnrollmentStatusesForOrganization",
+      "aws:allow_action:compute-optimizer:GetIdleRecommendations",
+      "aws:allow_action:compute-optimizer:GetLambdaFunctionRecommendations",
+      "aws:allow_action:compute-optimizer:GetLicenseRecommendations",
+      "aws:allow_action:compute-optimizer:GetRDSDatabaseRecommendationProjectedMetrics",
+      "aws:allow_action:compute-optimizer:GetRDSDatabaseRecommendations",
+      "aws:allow_action:compute-optimizer:GetRecommendationPreferences",
+      "aws:allow_action:compute-optimizer:GetRecommendationSummaries",
+      "aws:allow_action:cost-optimization-hub:GetRecommendation",
+      "aws:allow_action:cost-optimization-hub:ListRecommendationSummaries",
+      "aws:allow_action:cost-optimization-hub:ListRecommendations",
+      "aws:allow_action:ec2:CancelExportTask",
+      "aws:allow_action:ec2:CopyImage",
+      "aws:allow_action:ec2:CreateImage",
+      "aws:allow_action:ec2:CreateLaunchTemplateVersion",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeregisterImage",
+      "aws:allow_action:ec2:DescribeExportImageTasks",
+      "aws:allow_action:ec2:DescribeHosts",
+      "aws:allow_action:ec2:DescribeImages",
+      "aws:allow_action:ec2:DescribeImportImageTasks",
+      "aws:allow_action:ec2:DescribeInstanceAttribute",
+      "aws:allow_action:ec2:DescribeInstanceStatus",
+      "aws:allow_action:ec2:DescribeInstanceTypeOfferings",
+      "aws:allow_action:ec2:DescribeInstanceTypes",
+      "aws:allow_action:ec2:DescribeInstances",
+      "aws:allow_action:ec2:DescribeInstances",
+      "aws:allow_action:ec2:DescribeLaunchTemplateVersions",
+      "aws:allow_action:ec2:DescribeLaunchTemplates",
+      "aws:allow_action:ec2:DescribeSnapshots",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeTags",
+      "aws:allow_action:ec2:DescribeVolumes",
+      "aws:allow_action:ec2:EnableFastLaunch",
+      "aws:allow_action:ec2:ExportImage",
+      "aws:allow_action:ec2:ModifyImageAttribute",
+      "aws:allow_action:ec2:ModifyLaunchTemplate",
+      "aws:allow_action:ec2:ModifySnapshotAttribute",
+      "aws:allow_action:ec2:RegisterImage",
+      "aws:allow_action:ec2:RunInstances",
+      "aws:allow_action:ec2:StartInstances",
+      "aws:allow_action:ec2:StopInstances",
+      "aws:allow_action:ec2:TerminateInstances",
+      "aws:allow_action:ecr:BatchDeleteImage",
+      "aws:allow_action:ecr:CreateRepository",
+      "aws:allow_action:ecr:TagResource",
+      "aws:allow_action:ecs:ListClusters",
+      "aws:allow_action:ecs:ListServices",
+      "aws:allow_action:elasticloadbalancing:SetRulePriorities",
+      "aws:allow_action:elasticmapreduce:*",
+      "aws:allow_action:elasticmapreduce:*",
+      "aws:allow_action:elasticmapreduce:*PersistentAppUI*",
+      "aws:allow_action:elasticmapreduce:*PersistentAppUI*",
+      "aws:allow_action:elasticmapreduce:*Session*",
+      "aws:allow_action:elasticmapreduce:*Tag*",
+      "aws:allow_action:elasticmapreduce:*Tag*",
+      "aws:allow_action:elasticmapreduce:AddTags",
+      "aws:allow_action:elasticmapreduce:Describe*",
+      "aws:allow_action:elasticmapreduce:Describe*",
+      "aws:allow_action:elasticmapreduce:Get*",
+      "aws:allow_action:elasticmapreduce:Get*",
+      "aws:allow_action:elasticmapreduce:List*",
+      "aws:allow_action:elasticmapreduce:List*",
+      "aws:allow_action:elasticmapreduce:Start*",
+      "aws:allow_action:elasticmapreduce:Start*",
+      "aws:allow_action:elasticmapreduce:Terminate*",
+      "aws:allow_action:elasticmapreduce:Terminate*",
+      "aws:allow_action:events:DeleteRule",
+      "aws:allow_action:events:DeleteRule",
+      "aws:allow_action:events:DescribeRule",
+      "aws:allow_action:events:DescribeRule",
+      "aws:allow_action:events:DisableRule",
+      "aws:allow_action:events:EnableRule",
+      "aws:allow_action:events:ListTargetsByRule",
+      "aws:allow_action:events:PutRule",
+      "aws:allow_action:events:PutRule",
+      "aws:allow_action:events:PutTargets",
+      "aws:allow_action:events:PutTargets",
+      "aws:allow_action:events:RemoveTargets",
+      "aws:allow_action:events:RemoveTargets",
+      "aws:allow_action:finops-agent:AcceptAgentRequest",
+      "aws:allow_action:finops-agent:CancelTask",
+      "aws:allow_action:finops-agent:CancelTurn",
+      "aws:allow_action:finops-agent:CreateAutomation",
+      "aws:allow_action:finops-agent:CreateConversation",
+      "aws:allow_action:finops-agent:CreateDocument",
+      "aws:allow_action:finops-agent:CreateTask",
+      "aws:allow_action:finops-agent:CreateTurn",
+      "aws:allow_action:finops-agent:DeleteArtifact",
+      "aws:allow_action:finops-agent:DeleteAutomation",
+      "aws:allow_action:finops-agent:DeleteDocument",
+      "aws:allow_action:finops-agent:GetAgentRequest",
+      "aws:allow_action:finops-agent:GetArtifactContent",
+      "aws:allow_action:finops-agent:GetArtifactMetadata",
+      "aws:allow_action:finops-agent:GetAutomation",
+      "aws:allow_action:finops-agent:GetDocumentContent",
+      "aws:allow_action:finops-agent:GetDocumentMetadata",
+      "aws:allow_action:finops-agent:GetTask",
+      "aws:allow_action:finops-agent:GetTurn",
+      "aws:allow_action:finops-agent:ListArtifacts",
+      "aws:allow_action:finops-agent:ListAutomations",
+      "aws:allow_action:finops-agent:ListConversations",
+      "aws:allow_action:finops-agent:ListDocuments",
+      "aws:allow_action:finops-agent:ListRecords",
+      "aws:allow_action:finops-agent:ListTasks",
+      "aws:allow_action:finops-agent:ListTurns",
+      "aws:allow_action:finops-agent:RejectAgentRequest",
+      "aws:allow_action:finops-agent:RestoreDocument",
+      "aws:allow_action:finops-agent:SendFeedback",
+      "aws:allow_action:finops-agent:UpdateAutomation",
+      "aws:allow_action:finops-agent:UpdateDocument",
+      "aws:allow_action:freetier:GetFreeTierUsage",
+      "aws:allow_action:glue:*Session*",
+      "aws:allow_action:glue:*Statement*",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:imagebuilder:StartImagePipelineExecution",
+      "aws:allow_action:imagebuilder:TagResource",
+      "aws:allow_action:inspector2:ListCoverage",
+      "aws:allow_action:inspector2:ListFindings",
+      "aws:allow_action:kms:CreateGrant",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:Encrypt",
+      "aws:allow_action:kms:GenerateDataKeyWithoutPlaintext",
+      "aws:allow_action:kms:ReEncryptFrom",
+      "aws:allow_action:kms:ReEncryptTo",
+      "aws:allow_action:lambda:ListFunctions",
+      "aws:allow_action:lambda:ListProvisionedConcurrencyConfigs",
+      "aws:allow_action:license-manager:UpdateLicenseSpecificationsForResource",
+      "aws:allow_action:logs:CreateLogGroup",
+      "aws:allow_action:logs:CreateLogStream",
+      "aws:allow_action:logs:GetQueryResults",
+      "aws:allow_action:logs:PutLogEvents",
+      "aws:allow_action:logs:StartQuery",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:pricing:DescribeServices",
+      "aws:allow_action:pricing:GetAttributeValues",
+      "aws:allow_action:pricing:GetProducts",
+      "aws:allow_action:rds:DescribeDBClusters",
+      "aws:allow_action:rds:DescribeDBInstances",
+      "aws:allow_action:sns:Publish",
+      "aws:allow_action:ssm:AddTagsToResource",
+      "aws:allow_action:ssm:CreateAssociation",
+      "aws:allow_action:ssm:DeleteAssociation",
+      "aws:allow_action:ssm:DescribeAssociationExecutions",
+      "aws:allow_action:ssm:DescribeInstanceAssociationsStatus",
+      "aws:allow_action:ssm:DescribeInstanceInformation",
+      "aws:allow_action:ssm:GetCommandInvocation",
+      "aws:allow_action:ssm:GetParameter",
+      "aws:allow_action:ssm:ListCommandInvocations",
+      "aws:allow_action:ssm:ListInventoryEntries",
+      "aws:allow_action:ssm:PutParameter",
+      "aws:allow_action:ssm:SendCommand",
+      "aws:allow_action:sts:AssumeRole",
+      "aws:deny_action:elasticmapreduce:*Session*",
+      "aws:deny_action:elasticmapreduce:*Session*",
+      "aws:deny_action:elasticmapreduce:*Session*",
+      "aws:deny_action:elasticmapreduce:*Session*",
+      "aws:deny_action:elasticmapreduce:AddTags",
+      "aws:deny_action:elasticmapreduce:AddTags",
+      "aws:deny_action:elasticmapreduce:AddTags",
+      "aws:deny_action:elasticmapreduce:AddTags",
+      "aws:deny_action:elasticmapreduce:RemoveTags",
+      "aws:deny_action:elasticmapreduce:RemoveTags",
+      "aws:deny_action:elasticmapreduce:RemoveTags",
+      "aws:deny_action:elasticmapreduce:RemoveTags",
+      "aws:deny_action:glue:GetSessionEndpoint",
+      "aws:deny_action:glue:GetSessionEndpoint",
+      "aws:deny_action:glue:GetSessionEndpoint",
+      "aws:deny_action:glue:GetSessionEndpoint"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "autoscaling:DescribeAutoScalingGroups",
+          "autoscaling:DescribeAutoScalingInstances",
+          "bcm-pricing-calculator:GetPreferences",
+          "bcm-pricing-calculator:GetWorkloadEstimate",
+          "bcm-pricing-calculator:ListWorkloadEstimateUsage",
+          "bcm-pricing-calculator:ListWorkloadEstimates",
+          "budgets:ViewBudget",
+          "ce:DescribeCostCategoryDefinition",
+          "ce:GetAnomalies",
+          "ce:GetAnomalyMonitors",
+          "ce:GetCostAndUsage",
+          "ce:GetCostAndUsageComparisons",
+          "ce:GetCostAndUsageWithResources",
+          "ce:GetCostCategories",
+          "ce:GetCostComparisonDrivers",
+          "ce:GetCostForecast",
+          "ce:GetDimensionValues",
+          "ce:GetReservationCoverage",
+          "ce:GetReservationPurchaseRecommendation",
+          "ce:GetReservationUtilization",
+          "ce:GetSavingsPlansCoverage",
+          "ce:GetSavingsPlansPurchaseRecommendation",
+          "ce:GetSavingsPlansUtilization",
+          "ce:GetSavingsPlansUtilizationDetails",
+          "ce:GetTags",
+          "ce:GetUsageForecast",
+          "ce:ListCostAllocationTagBackfillHistory",
+          "ce:ListCostAllocationTags",
+          "ce:ListCostCategoryDefinitions",
+          "cloudtrail:DescribeTrails",
+          "cloudtrail:GetEventSelectors",
+          "cloudtrail:GetTrailStatus",
+          "cloudtrail:LookupEvents",
+          "cloudwatch:GetMetricData",
+          "cloudwatch:GetMetricStatistics",
+          "cloudwatch:ListMetrics",
+          "compute-optimizer:DescribeRecommendationExportJobs",
+          "compute-optimizer:GetAutoScalingGroupRecommendations",
+          "compute-optimizer:GetEBSVolumeRecommendations",
+          "compute-optimizer:GetEC2InstanceRecommendations",
+          "compute-optimizer:GetEC2RecommendationProjectedMetrics",
+          "compute-optimizer:GetECSServiceRecommendationProjectedMetrics",
+          "compute-optimizer:GetECSServiceRecommendations",
+          "compute-optimizer:GetEffectiveRecommendationPreferences",
+          "compute-optimizer:GetEnrollmentStatus",
+          "compute-optimizer:GetEnrollmentStatusesForOrganization",
+          "compute-optimizer:GetIdleRecommendations",
+          "compute-optimizer:GetLambdaFunctionRecommendations",
+          "compute-optimizer:GetLicenseRecommendations",
+          "compute-optimizer:GetRDSDatabaseRecommendationProjectedMetrics",
+          "compute-optimizer:GetRDSDatabaseRecommendations",
+          "compute-optimizer:GetRecommendationPreferences",
+          "compute-optimizer:GetRecommendationSummaries",
+          "cost-optimization-hub:GetRecommendation",
+          "cost-optimization-hub:ListRecommendationSummaries",
+          "cost-optimization-hub:ListRecommendations",
+          "ec2:CancelExportTask",
+          "ec2:CopyImage",
+          "ec2:CreateImage",
+          "ec2:CreateLaunchTemplateVersion",
+          "ec2:CreateTags",
+          "ec2:DeregisterImage",
+          "ec2:DescribeExportImageTasks",
+          "ec2:DescribeHosts",
+          "ec2:DescribeImages",
+          "ec2:DescribeImportImageTasks",
+          "ec2:DescribeInstanceAttribute",
+          "ec2:DescribeInstanceStatus",
+          "ec2:DescribeInstanceTypeOfferings",
+          "ec2:DescribeInstanceTypes",
+          "ec2:DescribeInstances",
+          "ec2:DescribeInstances",
+          "ec2:DescribeLaunchTemplateVersions",
+          "ec2:DescribeLaunchTemplates",
+          "ec2:DescribeSnapshots",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeTags",
+          "ec2:DescribeVolumes",
+          "ec2:EnableFastLaunch",
+          "ec2:ExportImage",
+          "ec2:ModifyImageAttribute",
+          "ec2:ModifyLaunchTemplate",
+          "ec2:ModifySnapshotAttribute",
+          "ec2:RegisterImage",
+          "ec2:RunInstances",
+          "ec2:StartInstances",
+          "ec2:StopInstances",
+          "ec2:TerminateInstances",
+          "ecr:BatchDeleteImage",
+          "ecr:CreateRepository",
+          "ecr:TagResource",
+          "ecs:ListClusters",
+          "ecs:ListServices",
+          "elasticloadbalancing:SetRulePriorities",
+          "elasticmapreduce:*",
+          "elasticmapreduce:*",
+          "elasticmapreduce:*PersistentAppUI*",
+          "elasticmapreduce:*PersistentAppUI*",
+          "elasticmapreduce:*Session*",
+          "elasticmapreduce:*Tag*",
+          "elasticmapreduce:*Tag*",
+          "elasticmapreduce:AddTags",
+          "elasticmapreduce:Describe*",
+          "elasticmapreduce:Describe*",
+          "elasticmapreduce:Get*",
+          "elasticmapreduce:Get*",
+          "elasticmapreduce:List*",
+          "elasticmapreduce:List*",
+          "elasticmapreduce:Start*",
+          "elasticmapreduce:Start*",
+          "elasticmapreduce:Terminate*",
+          "elasticmapreduce:Terminate*",
+          "events:DeleteRule",
+          "events:DeleteRule",
+          "events:DescribeRule",
+          "events:DescribeRule",
+          "events:DisableRule",
+          "events:EnableRule",
+          "events:ListTargetsByRule",
+          "events:PutRule",
+          "events:PutRule",
+          "events:PutTargets",
+          "events:PutTargets",
+          "events:RemoveTargets",
+          "events:RemoveTargets",
+          "finops-agent:AcceptAgentRequest",
+          "finops-agent:CancelTask",
+          "finops-agent:CancelTurn",
+          "finops-agent:CreateAutomation",
+          "finops-agent:CreateConversation",
+          "finops-agent:CreateDocument",
+          "finops-agent:CreateTask",
+          "finops-agent:CreateTurn",
+          "finops-agent:DeleteArtifact",
+          "finops-agent:DeleteAutomation",
+          "finops-agent:DeleteDocument",
+          "finops-agent:GetAgentRequest",
+          "finops-agent:GetArtifactContent",
+          "finops-agent:GetArtifactMetadata",
+          "finops-agent:GetAutomation",
+          "finops-agent:GetDocumentContent",
+          "finops-agent:GetDocumentMetadata",
+          "finops-agent:GetTask",
+          "finops-agent:GetTurn",
+          "finops-agent:ListArtifacts",
+          "finops-agent:ListAutomations",
+          "finops-agent:ListConversations",
+          "finops-agent:ListDocuments",
+          "finops-agent:ListRecords",
+          "finops-agent:ListTasks",
+          "finops-agent:ListTurns",
+          "finops-agent:RejectAgentRequest",
+          "finops-agent:RestoreDocument",
+          "finops-agent:SendFeedback",
+          "finops-agent:UpdateAutomation",
+          "finops-agent:UpdateDocument",
+          "freetier:GetFreeTierUsage",
+          "glue:*Session*",
+          "glue:*Statement*",
+          "iam:CreateServiceLinkedRole",
+          "iam:PassRole",
+          "imagebuilder:StartImagePipelineExecution",
+          "imagebuilder:TagResource",
+          "inspector2:ListCoverage",
+          "inspector2:ListFindings",
+          "kms:CreateGrant",
+          "kms:Decrypt",
+          "kms:Decrypt",
+          "kms:DescribeKey",
+          "kms:Encrypt",
+          "kms:GenerateDataKeyWithoutPlaintext",
+          "kms:ReEncryptFrom",
+          "kms:ReEncryptTo",
+          "lambda:ListFunctions",
+          "lambda:ListProvisionedConcurrencyConfigs",
+          "license-manager:UpdateLicenseSpecificationsForResource",
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:GetQueryResults",
+          "logs:PutLogEvents",
+          "logs:StartQuery",
+          "organizations:DescribeAccount",
+          "organizations:DescribeOrganization",
+          "organizations:ListAccounts",
+          "pricing:DescribeServices",
+          "pricing:GetAttributeValues",
+          "pricing:GetProducts",
+          "rds:DescribeDBClusters",
+          "rds:DescribeDBInstances",
+          "sns:Publish",
+          "ssm:AddTagsToResource",
+          "ssm:CreateAssociation",
+          "ssm:DeleteAssociation",
+          "ssm:DescribeAssociationExecutions",
+          "ssm:DescribeInstanceAssociationsStatus",
+          "ssm:DescribeInstanceInformation",
+          "ssm:GetCommandInvocation",
+          "ssm:GetParameter",
+          "ssm:ListCommandInvocations",
+          "ssm:ListInventoryEntries",
+          "ssm:PutParameter",
+          "ssm:SendCommand",
+          "sts:AssumeRole"
+        ],
+        "restriction:deny_actions": [
+          "elasticmapreduce:*Session*",
+          "elasticmapreduce:*Session*",
+          "elasticmapreduce:*Session*",
+          "elasticmapreduce:*Session*",
+          "elasticmapreduce:AddTags",
+          "elasticmapreduce:AddTags",
+          "elasticmapreduce:AddTags",
+          "elasticmapreduce:AddTags",
+          "elasticmapreduce:RemoveTags",
+          "elasticmapreduce:RemoveTags",
+          "elasticmapreduce:RemoveTags",
+          "elasticmapreduce:RemoveTags",
+          "glue:GetSessionEndpoint",
+          "glue:GetSessionEndpoint",
+          "glue:GetSessionEndpoint",
+          "glue:GetSessionEndpoint"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "glue:CancelStatement",
+          "glue:DeleteSession",
+          "glue:GetSession",
+          "glue:GetStatement",
+          "glue:ListStatements",
+          "glue:RunStatement",
+          "glue:StopSession"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:glue:CancelStatement",
+      "aws:allow_action:glue:DeleteSession",
+      "aws:allow_action:glue:GetSession",
+      "aws:allow_action:glue:GetStatement",
+      "aws:allow_action:glue:ListStatements",
+      "aws:allow_action:glue:RunStatement",
+      "aws:allow_action:glue:StopSession"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonEKSLoadBalancingPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticloadbalancing:SetRulePriorities"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 03, 2026, 22:12 UTC",
+          "before": "April 27, 2026, 22:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 03, 2026, 22:12 UTC",
+          "before": "April 27, 2026, 22:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
+    },
+    {
+      "display_name": "CloudWatchAPIKeyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "kms:Decrypt"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 04, 2026, 20:42 UTC",
+          "before": "May 08, 2026, 08:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 04, 2026, 20:42 UTC",
+          "before": "May 08, 2026, 08:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAPIKeyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/CloudWatchAPIKeyAccess"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticmapreduce:*PersistentAppUI*",
+              "elasticmapreduce:*Tag*",
+              "elasticmapreduce:Describe*",
+              "elasticmapreduce:Get*",
+              "elasticmapreduce:List*",
+              "elasticmapreduce:Start*",
+              "elasticmapreduce:Terminate*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "elasticmapreduce:*Session*",
+              "elasticmapreduce:AddTags",
+              "elasticmapreduce:RemoveTags",
+              "glue:GetSessionEndpoint"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v22 (default)",
+          "before": "v21 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 11, 2026, 20:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 11, 2026, 20:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticmapreduce:*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "elasticmapreduce:*Session*",
+              "elasticmapreduce:AddTags",
+              "elasticmapreduce:RemoveTags",
+              "glue:GetSessionEndpoint"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v19 (default)",
+          "before": "v18 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 11, 2026, 20:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 11, 2026, 20:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticmapreduce:*Session*",
+              "elasticmapreduce:AddTags",
+              "glue:*Session*",
+              "glue:*Statement*"
+            ],
+            "removed": [
+              "glue:CancelStatement",
+              "glue:DeleteSession",
+              "glue:GetSession",
+              "glue:GetStatement",
+              "glue:ListStatements",
+              "glue:RunStatement",
+              "glue:StopSession"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v69 (default)",
+          "before": "v68 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 28, 2026, 16:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 28, 2026, 16:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticmapreduce:*PersistentAppUI*",
+              "elasticmapreduce:*Tag*",
+              "elasticmapreduce:Describe*",
+              "elasticmapreduce:Get*",
+              "elasticmapreduce:List*",
+              "elasticmapreduce:Start*",
+              "elasticmapreduce:Terminate*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "elasticmapreduce:*Session*",
+              "elasticmapreduce:AddTags",
+              "elasticmapreduce:RemoveTags",
+              "glue:GetSessionEndpoint"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v26 (default)",
+          "before": "v25 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 26, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 26, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticmapreduce:*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "elasticmapreduce:*Session*",
+              "elasticmapreduce:AddTags",
+              "elasticmapreduce:RemoveTags",
+              "glue:GetSessionEndpoint"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v21 (default)",
+          "before": "v20 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 29, 2026, 20:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 29, 2026, 20:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v81 (default)",
+          "before": "v80 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 07, 2026, 00:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 04, 2026, 21:27 UTC",
+          "before": "May 07, 2026, 00:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-06T04:40:14Z",
+  "counts": {
+    "added_atoms": 219,
+    "added_objects": 3,
+    "changed_objects": 8,
+    "current_objects": 1515,
+    "previous_objects": 1512,
+    "removed_atoms": 7,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-06",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-04",
+  "removed_objects": []
+}
