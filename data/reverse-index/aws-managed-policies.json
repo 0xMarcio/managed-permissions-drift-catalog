@@ -2590,6 +2590,30 @@
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
       }
     ],
+    "aws:allow_action:aidevops:CreateAsset": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
+    "aws:allow_action:aidevops:CreateAssetFile": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
     "aws:allow_action:aidevops:CreateBacklogTask": [
       {
         "display_name": "AIDevOpsAgentFullAccess",
@@ -2626,11 +2650,49 @@
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
       }
     ],
+    "aws:allow_action:aidevops:CreateOneTimeLoginSession": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      }
+    ],
+    "aws:allow_action:aidevops:CreatePrivateConnection": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      }
+    ],
     "aws:allow_action:aidevops:DeleteAgentSpace": [
       {
         "display_name": "AIDevOpsAgentFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      }
+    ],
+    "aws:allow_action:aidevops:DeleteAsset": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
+    "aws:allow_action:aidevops:DeleteAssetFile": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
       }
     ],
     "aws:allow_action:aidevops:DeleteKnowledgeItem": [
@@ -2645,6 +2707,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
       }
     ],
+    "aws:allow_action:aidevops:DeletePrivateConnection": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      }
+    ],
     "aws:allow_action:aidevops:DeregisterService": [
       {
         "display_name": "AIDevOpsAgentFullAccess",
@@ -2653,6 +2722,11 @@
       }
     ],
     "aws:allow_action:aidevops:DescribePrivateConnection": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -2772,6 +2846,57 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:aidevops:GetAsset": [
+      {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
+    "aws:allow_action:aidevops:GetAssetContent": [
+      {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
+    "aws:allow_action:aidevops:GetAssetFile": [
+      {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
       }
     ],
     "aws:allow_action:aidevops:GetAssociation": [
@@ -2900,6 +3025,74 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:aidevops:ListAssetFiles": [
+      {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
+    "aws:allow_action:aidevops:ListAssetTypes": [
+      {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
+    "aws:allow_action:aidevops:ListAssetVersions": [
+      {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
+    "aws:allow_action:aidevops:ListAssets": [
+      {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
       }
     ],
     "aws:allow_action:aidevops:ListAssociations": [
@@ -3062,6 +3255,11 @@
     ],
     "aws:allow_action:aidevops:ListPrivateConnections": [
       {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -3177,6 +3375,30 @@
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
       }
     ],
+    "aws:allow_action:aidevops:UpdateAsset": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
+    "aws:allow_action:aidevops:UpdateAssetFile": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      },
+      {
+        "display_name": "AIDevOpsOperatorAppAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      }
+    ],
     "aws:allow_action:aidevops:UpdateAssociation": [
       {
         "display_name": "AIDevOpsAgentFullAccess",
@@ -3221,6 +3443,13 @@
       }
     ],
     "aws:allow_action:aidevops:UpdateOperatorAppIdpConfig": [
+      {
+        "display_name": "AIDevOpsAgentFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+      }
+    ],
+    "aws:allow_action:aidevops:UpdatePrivateConnectionCertificate": [
       {
         "display_name": "AIDevOpsAgentFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
@@ -17492,6 +17721,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceRequests"
       }
     ],
+    "aws:allow_action:aws-marketplace:CreateVerificationEvidence": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
     "aws:allow_action:aws-marketplace:DeleteResourcePolicy": [
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
@@ -18002,6 +18238,20 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
       }
     ],
+    "aws:allow_action:aws-marketplace:GetVerification": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:GetVerificationEvidence": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
     "aws:allow_action:aws-marketplace:ListAgreementApprovalRequests": [
       {
         "display_name": "AWSDataExchangeFullAccess",
@@ -18432,6 +18682,20 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceRequests"
       }
     ],
+    "aws:allow_action:aws-marketplace:ListVerificationEvidence": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:ListVerifications": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
     "aws:allow_action:aws-marketplace:MeterUsage": [
       {
         "display_name": "AWSMarketplaceMeteringFullAccess",
@@ -18662,6 +18926,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
       }
     ],
+    "aws:allow_action:aws-marketplace:StartVerification": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
     "aws:allow_action:aws-marketplace:Subscribe": [
       {
         "display_name": "AWSDataExchangeFullAccess",
@@ -18862,6 +19133,13 @@
         "display_name": "AWSMarketplaceManageSubscriptions",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:UpdateVerificationEvidence": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
       }
     ],
     "aws:allow_action:aws-marketplace:ViewSubscriptions": [
@@ -212396,6 +212674,13 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
+    "aws:allow_action:resiliencehub:Get*": [
+      {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      }
+    ],
     "aws:allow_action:resiliencehub:List*": [
       {
         "display_name": "AIDevOpsAgentAccessPolicy",
@@ -292127,7 +292412,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-06-06T04:40:14Z",
+  "generated_at_utc": "2026-06-07T04:53:38Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -316932,6 +317217,18 @@
       "terms": [
         "resiliencehub:Describe*",
         "aws:allow_action:resiliencehub:Describe*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:resiliencehub:Get*",
+      "object": {
+        "display_name": "AIDevOpsAgentAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      "terms": [
+        "resiliencehub:Get*",
+        "aws:allow_action:resiliencehub:Get*"
       ]
     },
     {

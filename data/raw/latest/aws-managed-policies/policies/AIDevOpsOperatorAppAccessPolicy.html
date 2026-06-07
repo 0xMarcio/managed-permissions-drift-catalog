@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 01, 2026, 22:42 UTC</p>
+                <p><b>Edited time:</b>  June 06, 2026, 02:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsOperatorAppAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v5 (default)</p>
+        <p><b>Policy version:</b> v6 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -75,35 +75,48 @@
       "Sid" : "AllowOperatorAgentSpaceActions",
       "Effect" : "Allow",
       "Action" : [
-        "aidevops:GetAgentSpace",
-        "aidevops:GetAssociation",
-        "aidevops:ListAssociations",
+        "aidevops:CreateAsset",
+        "aidevops:CreateAssetFile",
         "aidevops:CreateBacklogTask",
-        "aidevops:GetBacklogTask",
-        "aidevops:UpdateBacklogTask",
-        "aidevops:ListBacklogTasks",
-        "aidevops:ListJournalRecords",
-        "aidevops:DiscoverTopology",
-        "aidevops:ListGoals",
-        "aidevops:UpdateGoal",
-        "aidevops:ListRecommendations",
-        "aidevops:ListExecutions",
-        "aidevops:GetRecommendation",
-        "aidevops:UpdateRecommendation",
+        "aidevops:CreateChat",
         "aidevops:CreateKnowledgeItem",
+        "aidevops:DeleteAsset",
+        "aidevops:DeleteAssetFile",
+        "aidevops:DeleteKnowledgeItem",
+        "aidevops:DescribeServices",
+        "aidevops:DescribeSupportLevel",
+        "aidevops:DiscoverTopology",
+        "aidevops:EndChatForCase",
+        "aidevops:GetAgentSpace",
+        "aidevops:GetAsset",
+        "aidevops:GetAssetContent",
+        "aidevops:GetAssetFile",
+        "aidevops:GetAssociation",
+        "aidevops:GetBacklogTask",
+        "aidevops:GetKnowledgeItem",
+        "aidevops:GetRecommendation",
+        "aidevops:InitiateChatForCase",
+        "aidevops:ListAssetFiles",
+        "aidevops:ListAssets",
+        "aidevops:ListAssetTypes",
+        "aidevops:ListAssetVersions",
+        "aidevops:ListAssociations",
+        "aidevops:ListBacklogTasks",
+        "aidevops:ListChats",
+        "aidevops:ListExecutions",
+        "aidevops:ListGoals",
+        "aidevops:ListJournalRecords",
         "aidevops:ListKnowledgeItems",
         "aidevops:ListKnowledgeItemVersions",
-        "aidevops:GetKnowledgeItem",
-        "aidevops:UpdateKnowledgeItem",
-        "aidevops:DeleteKnowledgeItem",
         "aidevops:ListPendingMessages",
-        "aidevops:InitiateChatForCase",
-        "aidevops:EndChatForCase",
-        "aidevops:DescribeSupportLevel",
-        "aidevops:ListChats",
-        "aidevops:CreateChat",
+        "aidevops:ListRecommendations",
         "aidevops:SendMessage",
-        "aidevops:DescribeServices"
+        "aidevops:UpdateAsset",
+        "aidevops:UpdateAssetFile",
+        "aidevops:UpdateBacklogTask",
+        "aidevops:UpdateGoal",
+        "aidevops:UpdateKnowledgeItem",
+        "aidevops:UpdateRecommendation"
       ],
       "Resource" : "arn:aws:aidevops:*:*:agentspace/$<span>{</span>aws:PrincipalTag/AgentSpaceId}",
       "Condition" : <span>{</span>

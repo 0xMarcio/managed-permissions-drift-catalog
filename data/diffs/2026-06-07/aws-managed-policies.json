@@ -1,0 +1,311 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aidevops:CreateAsset",
+      "aws:allow_action:aidevops:CreateAsset",
+      "aws:allow_action:aidevops:CreateAssetFile",
+      "aws:allow_action:aidevops:CreateAssetFile",
+      "aws:allow_action:aidevops:CreateOneTimeLoginSession",
+      "aws:allow_action:aidevops:CreatePrivateConnection",
+      "aws:allow_action:aidevops:DeleteAsset",
+      "aws:allow_action:aidevops:DeleteAsset",
+      "aws:allow_action:aidevops:DeleteAssetFile",
+      "aws:allow_action:aidevops:DeleteAssetFile",
+      "aws:allow_action:aidevops:DeletePrivateConnection",
+      "aws:allow_action:aidevops:DescribePrivateConnection",
+      "aws:allow_action:aidevops:GetAsset",
+      "aws:allow_action:aidevops:GetAsset",
+      "aws:allow_action:aidevops:GetAsset",
+      "aws:allow_action:aidevops:GetAssetContent",
+      "aws:allow_action:aidevops:GetAssetContent",
+      "aws:allow_action:aidevops:GetAssetContent",
+      "aws:allow_action:aidevops:GetAssetFile",
+      "aws:allow_action:aidevops:GetAssetFile",
+      "aws:allow_action:aidevops:GetAssetFile",
+      "aws:allow_action:aidevops:ListAssetFiles",
+      "aws:allow_action:aidevops:ListAssetFiles",
+      "aws:allow_action:aidevops:ListAssetFiles",
+      "aws:allow_action:aidevops:ListAssetTypes",
+      "aws:allow_action:aidevops:ListAssetTypes",
+      "aws:allow_action:aidevops:ListAssetTypes",
+      "aws:allow_action:aidevops:ListAssetVersions",
+      "aws:allow_action:aidevops:ListAssetVersions",
+      "aws:allow_action:aidevops:ListAssetVersions",
+      "aws:allow_action:aidevops:ListAssets",
+      "aws:allow_action:aidevops:ListAssets",
+      "aws:allow_action:aidevops:ListAssets",
+      "aws:allow_action:aidevops:ListPrivateConnections",
+      "aws:allow_action:aidevops:UpdateAsset",
+      "aws:allow_action:aidevops:UpdateAsset",
+      "aws:allow_action:aidevops:UpdateAssetFile",
+      "aws:allow_action:aidevops:UpdateAssetFile",
+      "aws:allow_action:aidevops:UpdatePrivateConnectionCertificate",
+      "aws:allow_action:aws-marketplace:CreateVerificationEvidence",
+      "aws:allow_action:aws-marketplace:GetVerification",
+      "aws:allow_action:aws-marketplace:GetVerificationEvidence",
+      "aws:allow_action:aws-marketplace:ListVerificationEvidence",
+      "aws:allow_action:aws-marketplace:ListVerifications",
+      "aws:allow_action:aws-marketplace:StartVerification",
+      "aws:allow_action:aws-marketplace:UpdateVerificationEvidence",
+      "aws:allow_action:resiliencehub:Get*"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aidevops:CreateAsset",
+          "aidevops:CreateAsset",
+          "aidevops:CreateAssetFile",
+          "aidevops:CreateAssetFile",
+          "aidevops:CreateOneTimeLoginSession",
+          "aidevops:CreatePrivateConnection",
+          "aidevops:DeleteAsset",
+          "aidevops:DeleteAsset",
+          "aidevops:DeleteAssetFile",
+          "aidevops:DeleteAssetFile",
+          "aidevops:DeletePrivateConnection",
+          "aidevops:DescribePrivateConnection",
+          "aidevops:GetAsset",
+          "aidevops:GetAsset",
+          "aidevops:GetAsset",
+          "aidevops:GetAssetContent",
+          "aidevops:GetAssetContent",
+          "aidevops:GetAssetContent",
+          "aidevops:GetAssetFile",
+          "aidevops:GetAssetFile",
+          "aidevops:GetAssetFile",
+          "aidevops:ListAssetFiles",
+          "aidevops:ListAssetFiles",
+          "aidevops:ListAssetFiles",
+          "aidevops:ListAssetTypes",
+          "aidevops:ListAssetTypes",
+          "aidevops:ListAssetTypes",
+          "aidevops:ListAssetVersions",
+          "aidevops:ListAssetVersions",
+          "aidevops:ListAssetVersions",
+          "aidevops:ListAssets",
+          "aidevops:ListAssets",
+          "aidevops:ListAssets",
+          "aidevops:ListPrivateConnections",
+          "aidevops:UpdateAsset",
+          "aidevops:UpdateAsset",
+          "aidevops:UpdateAssetFile",
+          "aidevops:UpdateAssetFile",
+          "aidevops:UpdatePrivateConnectionCertificate",
+          "aws-marketplace:CreateVerificationEvidence",
+          "aws-marketplace:GetVerification",
+          "aws-marketplace:GetVerificationEvidence",
+          "aws-marketplace:ListVerificationEvidence",
+          "aws-marketplace:ListVerifications",
+          "aws-marketplace:StartVerification",
+          "aws-marketplace:UpdateVerificationEvidence",
+          "resiliencehub:Get*"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:GetAsset",
+              "aidevops:GetAssetContent",
+              "aidevops:GetAssetFile",
+              "aidevops:ListAssetFiles",
+              "aidevops:ListAssetTypes",
+              "aidevops:ListAssetVersions",
+              "aidevops:ListAssets",
+              "resiliencehub:Get*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 06, 2026, 02:27 UTC",
+          "before": "June 01, 2026, 22:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 06, 2026, 02:27 UTC",
+          "before": "June 01, 2026, 22:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "AIDevOpsAgentFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:CreateAsset",
+              "aidevops:CreateAssetFile",
+              "aidevops:CreateOneTimeLoginSession",
+              "aidevops:CreatePrivateConnection",
+              "aidevops:DeleteAsset",
+              "aidevops:DeleteAssetFile",
+              "aidevops:DeletePrivateConnection",
+              "aidevops:DescribePrivateConnection",
+              "aidevops:GetAsset",
+              "aidevops:GetAssetContent",
+              "aidevops:GetAssetFile",
+              "aidevops:ListAssetFiles",
+              "aidevops:ListAssetTypes",
+              "aidevops:ListAssetVersions",
+              "aidevops:ListAssets",
+              "aidevops:ListPrivateConnections",
+              "aidevops:UpdateAsset",
+              "aidevops:UpdateAssetFile",
+              "aidevops:UpdatePrivateConnectionCertificate"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 06, 2026, 02:27 UTC",
+          "before": "May 11, 2026, 21:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 06, 2026, 02:27 UTC",
+          "before": "May 11, 2026, 21:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 1,
+          "before": 15,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+    },
+    {
+      "display_name": "AIDevOpsOperatorAppAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:CreateAsset",
+              "aidevops:CreateAssetFile",
+              "aidevops:DeleteAsset",
+              "aidevops:DeleteAssetFile",
+              "aidevops:GetAsset",
+              "aidevops:GetAssetContent",
+              "aidevops:GetAssetFile",
+              "aidevops:ListAssetFiles",
+              "aidevops:ListAssetTypes",
+              "aidevops:ListAssetVersions",
+              "aidevops:ListAssets",
+              "aidevops:UpdateAsset",
+              "aidevops:UpdateAssetFile"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 06, 2026, 02:27 UTC",
+          "before": "June 01, 2026, 22:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 06, 2026, 02:27 UTC",
+          "before": "June 01, 2026, 22:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+    },
+    {
+      "display_name": "AWSMarketplaceSellerFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-marketplace:CreateVerificationEvidence",
+              "aws-marketplace:GetVerification",
+              "aws-marketplace:GetVerificationEvidence",
+              "aws-marketplace:ListVerificationEvidence",
+              "aws-marketplace:ListVerifications",
+              "aws-marketplace:StartVerification",
+              "aws-marketplace:UpdateVerificationEvidence"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v30 (default)",
+          "before": "v29 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 05, 2026, 18:12 UTC",
+          "before": "May 07, 2026, 18:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 05, 2026, 18:12 UTC",
+          "before": "May 07, 2026, 18:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 19,
+          "before": 17,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+    }
+  ],
+  "compared_at_utc": "2026-06-07T04:53:37Z",
+  "counts": {
+    "added_atoms": 47,
+    "added_objects": 0,
+    "changed_objects": 4,
+    "current_objects": 1515,
+    "previous_objects": 1515,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-07",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-06",
+  "removed_objects": []
+}
