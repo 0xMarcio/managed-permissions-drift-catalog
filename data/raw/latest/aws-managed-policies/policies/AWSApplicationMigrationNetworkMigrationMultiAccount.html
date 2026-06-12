@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 10, 2025, 09:04 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:58 UTC</p>
+                <p><b>Edited time:</b>  June 11, 2026, 07:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount</code></p>
             </li></ul></div>
      
         <h2 id="AWSApplicationMigrationNetworkMigrationMultiAccount-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -129,13 +129,13 @@
         "arn:aws:ec2:*:*:subnet/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -215,8 +215,8 @@
       "Resource" : "arn:aws:cloudformation:*:*:stack/Nmd*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService",
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService",
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -350,13 +350,13 @@
         "arn:aws:ec2:*:*:security-group-rule/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -408,13 +408,13 @@
         "arn:aws:ec2:*:*:elastic-ip/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "ec2:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "ec2:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -431,13 +431,13 @@
         "arn:aws:ec2:*:*:transit-gateway-attachment/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceOrgID" : "$<span>{</span>aws:PrincipalOrgID}"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceOrgID" : "$<span>{</span>aws:PrincipalOrgID}"
         }
       }
     },
@@ -475,13 +475,13 @@
         "arn:aws:ec2:*:*:vpc/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -497,13 +497,13 @@
         "arn:aws:ec2:*:*:route-table/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -519,13 +519,13 @@
         "arn:aws:ec2:*:*:elastic-ip/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -541,13 +541,13 @@
         "arn:aws:ec2:*:*:transit-gateway-route-table/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -564,13 +564,13 @@
         "arn:aws:ec2:*:*:subnet/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -614,13 +614,13 @@
         "arn:aws:ec2:*:*:network-insights-path/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -708,14 +708,14 @@
         "arn:aws:ssm:*:*:parameter/network-migration/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService",
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService",
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -733,13 +733,13 @@
         "arn:aws:ssm:*:*:parameter/network-migration/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -751,14 +751,14 @@
       ],
       "Resource" : "arn:aws:ram:*:*:resource-share/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService",
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService",
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -770,16 +770,16 @@
       ],
       "Resource" : "arn:aws:ram:*:*:resource-share/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
+        "Bool" : <span>{</span>
+          "ram:RequestedAllowsExternalPrincipals" : "false"
         },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
         },
-        "Bool" : <span>{</span>
-          "ram:RequestedAllowsExternalPrincipals" : "false"
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -791,16 +791,16 @@
       ],
       "Resource" : "arn:aws:ram:*:*:resource-share/*",
       "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        },
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService",
           "ram:RequestedResourceType" : [
             "ec2:TransitGateway",
             "ssm:Parameter"
-          ]
-        },
-        "ForAnyValue:StringEquals" : <span>{</span>
-          "aws:CalledVia" : [
-            "cloudformation.amazonaws.com"
           ]
         }
       }
@@ -815,13 +815,13 @@
       ],
       "Resource" : "arn:aws:ram:*:*:resource-share/*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -863,14 +863,14 @@
         "arn:aws:lambda:*:*:function:network-migration*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService",
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService",
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -878,7 +878,8 @@
       "Sid" : "GetCustomResource",
       "Effect" : "Allow",
       "Action" : [
-        "lambda:GetFunction"
+        "lambda:GetFunction",
+        "lambda:ListTags"
       ],
       "Resource" : [
         "arn:aws:lambda:*:*:function:network-migration*"
@@ -904,13 +905,13 @@
         "arn:aws:lambda:*:*:function:network-migration*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -923,14 +924,14 @@
       ],
       "Resource" : "arn:aws:iam::*:role/Nmd*modifyTransitGateway*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService",
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/CreatedBy" : "AWSApplicationMigrationService",
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -980,13 +981,13 @@
       ],
       "Resource" : "arn:aws:iam::*:role/Nmd*modifyTransitGateway*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -998,9 +999,6 @@
       ],
       "Resource" : "arn:aws:iam::*:role/Nmd*modifyTransitGateway*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ArnEquals" : <span>{</span>
           "iam:PolicyARN" : [
             "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
@@ -1011,6 +1009,9 @@
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },
@@ -1099,13 +1100,13 @@
         "arn:aws:ec2:*:*:security-group-rule/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
         }
       }
     },

@@ -1,0 +1,259 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:eventsbilltoaws:approve",
+        "aws:allow_action:eventsbilltoaws:info"
+      ],
+      "display_name": "ReInventTicketApprovalAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReInventTicketApprovalAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/ReInventTicketApprovalAccess"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aidevops:CreateTrigger",
+      "aws:allow_action:aidevops:CreateTrigger",
+      "aws:allow_action:aidevops:DeleteTrigger",
+      "aws:allow_action:aidevops:DeleteTrigger",
+      "aws:allow_action:aidevops:DescribePrivateConnection",
+      "aws:allow_action:aidevops:DescribeServices",
+      "aws:allow_action:aidevops:GetTrigger",
+      "aws:allow_action:aidevops:GetTrigger",
+      "aws:allow_action:aidevops:ListTriggers",
+      "aws:allow_action:aidevops:ListTriggers",
+      "aws:allow_action:aidevops:UpdateTrigger",
+      "aws:allow_action:aidevops:UpdateTrigger",
+      "aws:allow_action:eventsbilltoaws:approve",
+      "aws:allow_action:eventsbilltoaws:info",
+      "aws:allow_action:lambda:ListTags",
+      "aws:allow_action:logs:CreateLogGroup",
+      "aws:allow_action:logs:CreateLogStream",
+      "aws:allow_action:logs:PutLogEvents"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aidevops:CreateTrigger",
+          "aidevops:CreateTrigger",
+          "aidevops:DeleteTrigger",
+          "aidevops:DeleteTrigger",
+          "aidevops:DescribePrivateConnection",
+          "aidevops:DescribeServices",
+          "aidevops:GetTrigger",
+          "aidevops:GetTrigger",
+          "aidevops:ListTriggers",
+          "aidevops:ListTriggers",
+          "aidevops:UpdateTrigger",
+          "aidevops:UpdateTrigger",
+          "eventsbilltoaws:approve",
+          "eventsbilltoaws:info",
+          "lambda:ListTags",
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:CreateTrigger",
+              "aidevops:DeleteTrigger",
+              "aidevops:GetTrigger",
+              "aidevops:ListTriggers",
+              "aidevops:UpdateTrigger"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 11, 2026, 00:57 UTC",
+          "before": "June 06, 2026, 02:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 11, 2026, 00:57 UTC",
+          "before": "June 06, 2026, 02:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+    },
+    {
+      "display_name": "AIDevOpsAgentReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:DescribePrivateConnection",
+              "aidevops:DescribeServices"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 11, 2026, 00:57 UTC",
+          "before": "March 26, 2026, 03:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 11, 2026, 00:57 UTC",
+          "before": "March 26, 2026, 03:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentReadOnlyAccess"
+    },
+    {
+      "display_name": "AIDevOpsOperatorAppAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:CreateTrigger",
+              "aidevops:DeleteTrigger",
+              "aidevops:GetTrigger",
+              "aidevops:ListTriggers",
+              "aidevops:UpdateTrigger"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 11, 2026, 00:57 UTC",
+          "before": "June 06, 2026, 02:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 11, 2026, 00:57 UTC",
+          "before": "June 06, 2026, 02:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+    },
+    {
+      "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "lambda:ListTags"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 11, 2026, 07:42 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 11, 2026, 07:42 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+    },
+    {
+      "display_name": "AWSLambdaManagedEC2ResourceOperator",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "logs:CreateLogGroup",
+              "logs:CreateLogStream",
+              "logs:PutLogEvents"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 10, 2026, 20:27 UTC",
+          "before": "April 23, 2026, 20:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 10, 2026, 20:27 UTC",
+          "before": "April 23, 2026, 20:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 6,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSLambdaManagedEC2ResourceOperator.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSLambdaManagedEC2ResourceOperator"
+    }
+  ],
+  "compared_at_utc": "2026-06-12T04:56:32Z",
+  "counts": {
+    "added_atoms": 18,
+    "added_objects": 1,
+    "changed_objects": 5,
+    "current_objects": 1516,
+    "previous_objects": 1515,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-12",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-09",
+  "removed_objects": []
+}
