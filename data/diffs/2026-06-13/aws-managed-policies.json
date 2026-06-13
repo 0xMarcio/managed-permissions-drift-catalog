@@ -1,0 +1,188 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:iam:CreateServiceLinkedRole",
+        "aws:allow_action:vpc-lattice:CreateResourceGateway",
+        "aws:allow_action:vpc-lattice:DeleteResourceGateway",
+        "aws:allow_action:vpc-lattice:GetResourceGateway",
+        "aws:allow_action:vpc-lattice:TagResource"
+      ],
+      "display_name": "AWSSecurityAgentServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aws-external-anthropic:CreateWebhook",
+      "aws:allow_action:aws-external-anthropic:DeleteWebhook",
+      "aws:allow_action:aws-external-anthropic:ProcessEnvironmentWork",
+      "aws:allow_action:aws-external-anthropic:RotateWebhookSecret",
+      "aws:allow_action:aws-external-anthropic:UpdateWebhook",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:securityagent:BatchDeleteThreatModels",
+      "aws:allow_action:securityagent:BatchGetThreatModelJobTasks",
+      "aws:allow_action:securityagent:BatchGetThreatModelJobs",
+      "aws:allow_action:securityagent:BatchGetThreatModels",
+      "aws:allow_action:securityagent:BatchGetThreats",
+      "aws:allow_action:securityagent:CreateThreat",
+      "aws:allow_action:securityagent:CreateThreatModel",
+      "aws:allow_action:securityagent:ListThreatModelJobTasks",
+      "aws:allow_action:securityagent:ListThreatModelJobs",
+      "aws:allow_action:securityagent:ListThreatModels",
+      "aws:allow_action:securityagent:ListThreats",
+      "aws:allow_action:securityagent:StartThreatModelJob",
+      "aws:allow_action:securityagent:StopThreatModelJob",
+      "aws:allow_action:securityagent:UpdateThreat",
+      "aws:allow_action:securityagent:UpdateThreatModel",
+      "aws:allow_action:vpc-lattice:CreateResourceGateway",
+      "aws:allow_action:vpc-lattice:DeleteResourceGateway",
+      "aws:allow_action:vpc-lattice:GetResourceGateway",
+      "aws:allow_action:vpc-lattice:TagResource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aws-external-anthropic:CreateWebhook",
+          "aws-external-anthropic:DeleteWebhook",
+          "aws-external-anthropic:ProcessEnvironmentWork",
+          "aws-external-anthropic:RotateWebhookSecret",
+          "aws-external-anthropic:UpdateWebhook",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcs",
+          "iam:CreateServiceLinkedRole",
+          "securityagent:BatchDeleteThreatModels",
+          "securityagent:BatchGetThreatModelJobTasks",
+          "securityagent:BatchGetThreatModelJobs",
+          "securityagent:BatchGetThreatModels",
+          "securityagent:BatchGetThreats",
+          "securityagent:CreateThreat",
+          "securityagent:CreateThreatModel",
+          "securityagent:ListThreatModelJobTasks",
+          "securityagent:ListThreatModelJobs",
+          "securityagent:ListThreatModels",
+          "securityagent:ListThreats",
+          "securityagent:StartThreatModelJob",
+          "securityagent:StopThreatModelJob",
+          "securityagent:UpdateThreat",
+          "securityagent:UpdateThreatModel",
+          "vpc-lattice:CreateResourceGateway",
+          "vpc-lattice:DeleteResourceGateway",
+          "vpc-lattice:GetResourceGateway",
+          "vpc-lattice:TagResource"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AnthropicLimitedAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-external-anthropic:CreateWebhook",
+              "aws-external-anthropic:DeleteWebhook",
+              "aws-external-anthropic:ProcessEnvironmentWork",
+              "aws-external-anthropic:RotateWebhookSecret",
+              "aws-external-anthropic:UpdateWebhook"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 12, 2026, 16:57 UTC",
+          "before": "May 08, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 12, 2026, 16:57 UTC",
+          "before": "May 08, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+    },
+    {
+      "display_name": "AWSSecurityAgentWebAppPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "securityagent:BatchDeleteThreatModels",
+              "securityagent:BatchGetThreatModelJobTasks",
+              "securityagent:BatchGetThreatModelJobs",
+              "securityagent:BatchGetThreatModels",
+              "securityagent:BatchGetThreats",
+              "securityagent:CreateThreat",
+              "securityagent:CreateThreatModel",
+              "securityagent:ListThreatModelJobTasks",
+              "securityagent:ListThreatModelJobs",
+              "securityagent:ListThreatModels",
+              "securityagent:ListThreats",
+              "securityagent:StartThreatModelJob",
+              "securityagent:StopThreatModelJob",
+              "securityagent:UpdateThreat",
+              "securityagent:UpdateThreatModel"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 11, 2026, 18:27 UTC",
+          "before": "May 08, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 11, 2026, 18:27 UTC",
+          "before": "May 08, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-13T04:51:16Z",
+  "counts": {
+    "added_atoms": 28,
+    "added_objects": 1,
+    "changed_objects": 2,
+    "current_objects": 1517,
+    "previous_objects": 1516,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-13",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-12",
+  "removed_objects": []
+}

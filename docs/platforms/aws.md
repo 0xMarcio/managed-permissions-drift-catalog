@@ -1,19 +1,19 @@
 # AWS
 
-- Refreshed at: `2026-06-12T04:56:32Z`
+- Refreshed at: `2026-06-13T04:51:16Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | `1,516` | `+1 / ~5 / -0` | `+18 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-06-12/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
+| AWS managed policies | `1,517` | `+1 / ~2 / -0` | `+28 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-06-13/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
 
 ## Dataset details
 
 ### AWS managed policies
 
-- Inventory: `1,516` objects.
-- Today: +1 objects, ~5 changed, +18 atoms.
-- Biggest additions: `ReInventTicketApprovalAccess` (+2 atoms).
-- Biggest changes: `AIDevOpsAgentFullAccess` (+5), `AIDevOpsOperatorAppAccessPolicy` (+5), `AWSLambdaManagedEC2ResourceOperator` (+3).
-- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-06-12/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
+- Inventory: `1,517` objects.
+- Today: +1 objects, ~2 changed, +28 atoms.
+- Biggest additions: `AWSSecurityAgentServiceRolePolicy` (+8 atoms).
+- Biggest changes: `AWSSecurityAgentWebAppPolicy` (+15), `AnthropicLimitedAccess` (+5).
+- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-06-13/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)

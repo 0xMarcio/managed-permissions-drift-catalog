@@ -17397,6 +17397,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
       }
     ],
+    "aws:allow_action:aws-external-anthropic:CreateWebhook": [
+      {
+        "display_name": "AnthropicLimitedAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+      }
+    ],
     "aws:allow_action:aws-external-anthropic:DeleteBatchInference": [
       {
         "display_name": "AnthropicInferenceAccess",
@@ -17445,6 +17452,13 @@
       }
     ],
     "aws:allow_action:aws-external-anthropic:DeleteVault": [
+      {
+        "display_name": "AnthropicLimitedAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+      }
+    ],
+    "aws:allow_action:aws-external-anthropic:DeleteWebhook": [
       {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
@@ -17502,6 +17516,20 @@
         "stable_id": "arn:aws:iam::aws:policy/AnthropicReadOnlyAccess"
       }
     ],
+    "aws:allow_action:aws-external-anthropic:ProcessEnvironmentWork": [
+      {
+        "display_name": "AnthropicLimitedAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+      }
+    ],
+    "aws:allow_action:aws-external-anthropic:RotateWebhookSecret": [
+      {
+        "display_name": "AnthropicLimitedAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+      }
+    ],
     "aws:allow_action:aws-external-anthropic:UpdateAgent": [
       {
         "display_name": "AnthropicLimitedAccess",
@@ -17545,6 +17573,13 @@
       }
     ],
     "aws:allow_action:aws-external-anthropic:UpdateVault": [
+      {
+        "display_name": "AnthropicLimitedAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+      }
+    ],
+    "aws:allow_action:aws-external-anthropic:UpdateWebhook": [
       {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
@@ -88616,6 +88651,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSS3OnOutpostsServiceRolePolicy"
       },
       {
+        "display_name": "AWSSecurityAgentServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
+      },
+      {
         "display_name": "AWSServiceRoleForAIDevOpsPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForAIDevOpsPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAIDevOpsPolicy"
@@ -90398,6 +90438,11 @@
         "display_name": "AWSS3OnOutpostsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS3OnOutpostsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSS3OnOutpostsServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSSecurityAgentServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
       },
       {
         "display_name": "AWSServiceRoleForAIDevOpsPolicy",
@@ -93786,6 +93831,11 @@
         "display_name": "AWSSSMForSAPServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSSMForSAPServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSSMForSAPServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "AWSSecurityAgentServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
       },
       {
         "display_name": "AWSServiceRoleForAIDevOpsPolicy",
@@ -138090,6 +138140,11 @@
         "display_name": "AWSSSMForSAPServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSSMForSAPServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSSMForSAPServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "AWSSecurityAgentServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
       },
       {
         "display_name": "AWSSecurityHubServiceRolePolicy",
@@ -247997,6 +248052,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/SecurityAgentWebAppAPIPolicy"
       }
     ],
+    "aws:allow_action:securityagent:BatchDeleteThreatModels": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
     "aws:allow_action:securityagent:BatchGetAgentInstances": [
       {
         "display_name": "SecurityAgentWebAppAPIPolicy",
@@ -248190,6 +248252,34 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/SecurityAgentWebAppAPIPolicy"
       }
     ],
+    "aws:allow_action:securityagent:BatchGetThreatModelJobTasks": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:BatchGetThreatModelJobs": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:BatchGetThreatModels": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:BatchGetThreats": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
     "aws:allow_action:securityagent:CreateCodeReview": [
       {
         "display_name": "AWSSecurityAgentWebAppPolicy",
@@ -248231,6 +248321,20 @@
         "display_name": "SecurityAgentWebAppAPIPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAgentWebAppAPIPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SecurityAgentWebAppAPIPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:CreateThreat": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:CreateThreatModel": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
       }
     ],
     "aws:allow_action:securityagent:DeleteArtifact": [
@@ -248692,6 +248796,34 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/SecurityAgentWebAppAPIPolicy"
       }
     ],
+    "aws:allow_action:securityagent:ListThreatModelJobTasks": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:ListThreatModelJobs": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:ListThreatModels": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:ListThreats": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
     "aws:allow_action:securityagent:PutDesignReviewFeedback": [
       {
         "display_name": "AWSSecurityAgentWebAppPolicy",
@@ -248742,6 +248874,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
       }
     ],
+    "aws:allow_action:securityagent:StartThreatModelJob": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
     "aws:allow_action:securityagent:StopCodeReviewJob": [
       {
         "display_name": "AWSSecurityAgentWebAppPolicy",
@@ -248762,6 +248901,13 @@
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAgentWebAppPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAgentWebAppPolicy"
       },
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:StopThreatModelJob": [
       {
         "display_name": "AWSSecurityAgentWebAppPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
@@ -248807,6 +248953,20 @@
         "display_name": "SecurityAgentWebAppAPIPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAgentWebAppAPIPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SecurityAgentWebAppAPIPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:UpdateThreat": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+      }
+    ],
+    "aws:allow_action:securityagent:UpdateThreatModel": [
+      {
+        "display_name": "AWSSecurityAgentWebAppPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
       }
     ],
     "aws:allow_action:securityhub:*": [
@@ -275144,6 +275304,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy"
       },
       {
+        "display_name": "AWSSecurityAgentServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
+      },
+      {
         "display_name": "AWSServiceRoleForAIDevOpsPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForAIDevOpsPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAIDevOpsPolicy"
@@ -275159,6 +275324,11 @@
         "display_name": "AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSSecurityAgentServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
       },
       {
         "display_name": "AWSServiceRoleForAIDevOpsPolicy",
@@ -275300,6 +275470,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSSecurityAgentServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
       },
       {
         "display_name": "AWSServiceRoleForAIDevOpsPolicy",
@@ -275849,6 +276024,11 @@
         "display_name": "AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSSecurityAgentServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityAgentServiceRolePolicy"
       },
       {
         "display_name": "AWSServiceRoleForAIDevOpsPolicy",
@@ -292516,7 +292696,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-06-12T04:56:32Z",
+  "generated_at_utc": "2026-06-13T04:51:17Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
