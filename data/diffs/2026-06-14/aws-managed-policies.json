@@ -1,0 +1,152 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:aws-external-anthropic:CallWithBearerToken",
+        "aws:allow_action:aws-external-anthropic:GetEnvironment",
+        "aws:allow_action:aws-external-anthropic:GetSession",
+        "aws:allow_action:aws-external-anthropic:GetSkill",
+        "aws:allow_action:aws-external-anthropic:ProcessEnvironmentWork",
+        "aws:allow_action:aws-external-anthropic:UpdateSession"
+      ],
+      "display_name": "AnthropicSelfHostedEnvironmentAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicSelfHostedEnvironmentAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AnthropicSelfHostedEnvironmentAccess"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aidevops:CreateAccessToken",
+      "aws:allow_action:aidevops:CreateAccessToken",
+      "aws:allow_action:aidevops:GetAccessToken",
+      "aws:allow_action:aidevops:GetAccessToken",
+      "aws:allow_action:aidevops:ListAccessTokens",
+      "aws:allow_action:aidevops:ListAccessTokens",
+      "aws:allow_action:aidevops:RevokeAccessToken",
+      "aws:allow_action:aidevops:RevokeAccessToken",
+      "aws:allow_action:aidevops:RotateAccessToken",
+      "aws:allow_action:aidevops:RotateAccessToken",
+      "aws:allow_action:aws-external-anthropic:CallWithBearerToken",
+      "aws:allow_action:aws-external-anthropic:GetEnvironment",
+      "aws:allow_action:aws-external-anthropic:GetSession",
+      "aws:allow_action:aws-external-anthropic:GetSkill",
+      "aws:allow_action:aws-external-anthropic:ProcessEnvironmentWork",
+      "aws:allow_action:aws-external-anthropic:UpdateSession"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aidevops:CreateAccessToken",
+          "aidevops:CreateAccessToken",
+          "aidevops:GetAccessToken",
+          "aidevops:GetAccessToken",
+          "aidevops:ListAccessTokens",
+          "aidevops:ListAccessTokens",
+          "aidevops:RevokeAccessToken",
+          "aidevops:RevokeAccessToken",
+          "aidevops:RotateAccessToken",
+          "aidevops:RotateAccessToken",
+          "aws-external-anthropic:CallWithBearerToken",
+          "aws-external-anthropic:GetEnvironment",
+          "aws-external-anthropic:GetSession",
+          "aws-external-anthropic:GetSkill",
+          "aws-external-anthropic:ProcessEnvironmentWork",
+          "aws-external-anthropic:UpdateSession"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:CreateAccessToken",
+              "aidevops:GetAccessToken",
+              "aidevops:ListAccessTokens",
+              "aidevops:RevokeAccessToken",
+              "aidevops:RotateAccessToken"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 12, 2026, 23:27 UTC",
+          "before": "June 11, 2026, 00:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 12, 2026, 23:27 UTC",
+          "before": "June 11, 2026, 00:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+    },
+    {
+      "display_name": "AIDevOpsOperatorAppAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:CreateAccessToken",
+              "aidevops:GetAccessToken",
+              "aidevops:ListAccessTokens",
+              "aidevops:RevokeAccessToken",
+              "aidevops:RotateAccessToken"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 12, 2026, 23:27 UTC",
+          "before": "June 11, 2026, 00:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 12, 2026, 23:27 UTC",
+          "before": "June 11, 2026, 00:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-14T04:57:04Z",
+  "counts": {
+    "added_atoms": 16,
+    "added_objects": 1,
+    "changed_objects": 2,
+    "current_objects": 1518,
+    "previous_objects": 1517,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-14",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-13",
+  "removed_objects": []
+}

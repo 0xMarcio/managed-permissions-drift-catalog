@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 11, 2026, 00:57 UTC</p>
+                <p><b>Edited time:</b>  June 12, 2026, 23:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsAgentFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -77,6 +77,7 @@
       "Action" : [
         "aidevops:AllowVendedLogDeliveryForResource",
         "aidevops:AssociateService",
+        "aidevops:CreateAccessToken",
         "aidevops:CreateAgentSpace",
         "aidevops:CreateAsset",
         "aidevops:CreateAssetFile",
@@ -101,6 +102,7 @@
         "aidevops:DiscoverTopology",
         "aidevops:EnableOperatorApp",
         "aidevops:EndChatForCase",
+        "aidevops:GetAccessToken",
         "aidevops:GetAccountUsage",
         "aidevops:GetAgentSpace",
         "aidevops:GetAsset",
@@ -114,6 +116,7 @@
         "aidevops:GetService",
         "aidevops:GetTrigger",
         "aidevops:InitiateChatForCase",
+        "aidevops:ListAccessTokens",
         "aidevops:ListAgentSpaces",
         "aidevops:ListAssetFiles",
         "aidevops:ListAssets",
@@ -135,6 +138,8 @@
         "aidevops:ListTriggers",
         "aidevops:ListWebhooks",
         "aidevops:RegisterService",
+        "aidevops:RevokeAccessToken",
+        "aidevops:RotateAccessToken",
         "aidevops:SearchServiceAccessibleResource",
         "aidevops:SendMessage",
         "aidevops:TagResource",
