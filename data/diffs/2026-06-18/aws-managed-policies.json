@@ -1,0 +1,334 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:bedrock:AllowVendedLogDeliveryForResource",
+      "aws:allow_action:ec2:DescribeIpamPools",
+      "aws:allow_action:ec2:DescribeTransitGatewayPolicyTables",
+      "aws:allow_action:ec2:GetSecurityGroupsForVpc",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableAssociations",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableEntries",
+      "aws:allow_action:eks:DescribeAccessEntry",
+      "aws:allow_action:partnercentral:GetProspectingFromEngagementTask",
+      "aws:allow_action:partnercentral:ListProspectingFromEngagementTasks",
+      "aws:allow_action:partnercentral:StartProspectingFromEngagementTask",
+      "aws:allow_action:s3:AllowVendedLogDeliveryForResource",
+      "aws:allow_action:s3files:GetAccessPoint",
+      "aws:allow_action:s3files:GetAccessPoint",
+      "aws:allow_action:s3files:GetFileSystem",
+      "aws:allow_action:s3files:GetFileSystem",
+      "aws:allow_action:s3files:GetFileSystemPolicy",
+      "aws:allow_action:s3files:GetFileSystemPolicy",
+      "aws:allow_action:s3files:GetMountTarget",
+      "aws:allow_action:s3files:GetMountTarget",
+      "aws:allow_action:s3files:GetSynchronizationConfiguration",
+      "aws:allow_action:s3files:GetSynchronizationConfiguration",
+      "aws:allow_action:s3files:ListAccessPoints",
+      "aws:allow_action:s3files:ListAccessPoints",
+      "aws:allow_action:s3files:ListFileSystems",
+      "aws:allow_action:s3files:ListFileSystems",
+      "aws:allow_action:s3files:ListMountTargets",
+      "aws:allow_action:s3files:ListMountTargets",
+      "aws:allow_action:s3files:ListTagsForResource",
+      "aws:allow_action:s3files:ListTagsForResource",
+      "aws:allow_action:securityagent:BatchGetCodeReviewJobTasks",
+      "aws:allow_action:securityagent:BatchGetCodeReviewJobs",
+      "aws:allow_action:securityagent:BatchGetCodeReviews",
+      "aws:allow_action:securityagent:ListCodeReviewJobTasks",
+      "aws:allow_action:securityagent:ListCodeReviewJobsForCodeReview",
+      "aws:allow_action:securityagent:ListCodeReviews"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "bedrock:AllowVendedLogDeliveryForResource",
+          "ec2:DescribeIpamPools",
+          "ec2:DescribeTransitGatewayPolicyTables",
+          "ec2:GetSecurityGroupsForVpc",
+          "ec2:GetTransitGatewayPolicyTableAssociations",
+          "ec2:GetTransitGatewayPolicyTableEntries",
+          "eks:DescribeAccessEntry",
+          "partnercentral:GetProspectingFromEngagementTask",
+          "partnercentral:ListProspectingFromEngagementTasks",
+          "partnercentral:StartProspectingFromEngagementTask",
+          "s3:AllowVendedLogDeliveryForResource",
+          "s3files:GetAccessPoint",
+          "s3files:GetAccessPoint",
+          "s3files:GetFileSystem",
+          "s3files:GetFileSystem",
+          "s3files:GetFileSystemPolicy",
+          "s3files:GetFileSystemPolicy",
+          "s3files:GetMountTarget",
+          "s3files:GetMountTarget",
+          "s3files:GetSynchronizationConfiguration",
+          "s3files:GetSynchronizationConfiguration",
+          "s3files:ListAccessPoints",
+          "s3files:ListAccessPoints",
+          "s3files:ListFileSystems",
+          "s3files:ListFileSystems",
+          "s3files:ListMountTargets",
+          "s3files:ListMountTargets",
+          "s3files:ListTagsForResource",
+          "s3files:ListTagsForResource",
+          "securityagent:BatchGetCodeReviewJobTasks",
+          "securityagent:BatchGetCodeReviewJobs",
+          "securityagent:BatchGetCodeReviews",
+          "securityagent:ListCodeReviewJobTasks",
+          "securityagent:ListCodeReviewJobsForCodeReview",
+          "securityagent:ListCodeReviews"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSPartnerCentralOpportunityManagement",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetProspectingFromEngagementTask",
+              "partnercentral:ListProspectingFromEngagementTasks",
+              "partnercentral:StartProspectingFromEngagementTask"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 16, 2026, 13:27 UTC",
+          "before": "March 12, 2026, 17:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 16, 2026, 13:27 UTC",
+          "before": "March 12, 2026, 17:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+    },
+    {
+      "display_name": "AmazonEKSLoadBalancingPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeIpamPools"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 16, 2026, 00:12 UTC",
+          "before": "June 03, 2026, 22:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 16, 2026, 00:12 UTC",
+          "before": "June 03, 2026, 22:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
+    },
+    {
+      "display_name": "ReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "s3files:GetAccessPoint",
+              "s3files:GetFileSystem",
+              "s3files:GetFileSystemPolicy",
+              "s3files:GetMountTarget",
+              "s3files:GetSynchronizationConfiguration",
+              "s3files:ListAccessPoints",
+              "s3files:ListFileSystems",
+              "s3files:ListMountTargets",
+              "s3files:ListTagsForResource",
+              "securityagent:BatchGetCodeReviewJobTasks",
+              "securityagent:BatchGetCodeReviewJobs",
+              "securityagent:BatchGetCodeReviews",
+              "securityagent:ListCodeReviewJobTasks",
+              "securityagent:ListCodeReviewJobsForCodeReview",
+              "securityagent:ListCodeReviews"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v186 (default)",
+          "before": "v185 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 15, 2026, 20:27 UTC",
+          "before": "May 18, 2026, 15:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 15, 2026, 20:27 UTC",
+          "before": "May 18, 2026, 15:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+    },
+    {
+      "display_name": "SecurityAudit",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "eks:DescribeAccessEntry",
+              "s3files:GetAccessPoint",
+              "s3files:GetFileSystem",
+              "s3files:GetFileSystemPolicy",
+              "s3files:GetMountTarget",
+              "s3files:GetSynchronizationConfiguration",
+              "s3files:ListAccessPoints",
+              "s3files:ListFileSystems",
+              "s3files:ListMountTargets",
+              "s3files:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v89 (default)",
+          "before": "v88 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 15, 2026, 20:27 UTC",
+          "before": "May 18, 2026, 15:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 15, 2026, 20:27 UTC",
+          "before": "May 18, 2026, 15:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+      "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+    },
+    {
+      "display_name": "AWSObservabilityAdminTelemetryEnablementServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock:AllowVendedLogDeliveryForResource",
+              "s3:AllowVendedLogDeliveryForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 16, 2026, 20:42 UTC",
+          "before": "April 29, 2026, 21:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 16, 2026, 20:42 UTC",
+          "before": "April 29, 2026, 21:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 34,
+          "before": 33,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy"
+    },
+    {
+      "display_name": "AmazonInspector2ServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeTransitGatewayPolicyTables",
+              "ec2:GetSecurityGroupsForVpc",
+              "ec2:GetTransitGatewayPolicyTableAssociations",
+              "ec2:GetTransitGatewayPolicyTableEntries"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v27 (default)",
+          "before": "v26 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 16, 2026, 19:27 UTC",
+          "before": "February 13, 2026, 17:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 16, 2026, 19:27 UTC",
+          "before": "February 13, 2026, 17:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2ServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-18T04:55:34Z",
+  "counts": {
+    "added_atoms": 35,
+    "added_objects": 0,
+    "changed_objects": 6,
+    "current_objects": 1518,
+    "previous_objects": 1518,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-18",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-14",
+  "removed_objects": []
+}
