@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "IrLpOfztfoqytRG8YzCSv",
+  "buildId": "Wth0V8t3tOg_yVmN5KM-u",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -1888,7 +1888,7 @@
           "permissions": [
             {
               "access": "write",
-              "additional-permissions": true,
+              "additional-permissions": false,
               "category": "orgs",
               "requestPath": "/orgs/{org}/artifacts/metadata/deployment-record",
               "slug": "create-an-artifact-deployment-record",
@@ -1897,7 +1897,7 @@
             },
             {
               "access": "write",
-              "additional-permissions": true,
+              "additional-permissions": false,
               "category": "orgs",
               "requestPath": "/orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}",
               "slug": "set-cluster-deployment-records",
@@ -1906,7 +1906,7 @@
             },
             {
               "access": "write",
-              "additional-permissions": true,
+              "additional-permissions": false,
               "category": "orgs",
               "requestPath": "/orgs/{org}/artifacts/metadata/storage-record",
               "slug": "create-artifact-metadata-storage-record",
@@ -1915,7 +1915,7 @@
             },
             {
               "access": "read",
-              "additional-permissions": true,
+              "additional-permissions": false,
               "category": "orgs",
               "requestPath": "/orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records",
               "slug": "list-artifact-deployment-records",
@@ -1924,7 +1924,7 @@
             },
             {
               "access": "read",
-              "additional-permissions": true,
+              "additional-permissions": false,
               "category": "orgs",
               "requestPath": "/orgs/{org}/artifacts/{subject_digest}/metadata/storage-records",
               "slug": "list-artifact-storage-records",
@@ -2428,51 +2428,6 @@
               "slug": "render-a-markdown-document",
               "subcategory": "markdown",
               "verb": "post"
-            },
-            {
-              "access": "write",
-              "additional-permissions": true,
-              "category": "orgs",
-              "requestPath": "/orgs/{org}/artifacts/metadata/deployment-record",
-              "slug": "create-an-artifact-deployment-record",
-              "subcategory": "artifact-metadata",
-              "verb": "post"
-            },
-            {
-              "access": "write",
-              "additional-permissions": true,
-              "category": "orgs",
-              "requestPath": "/orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}",
-              "slug": "set-cluster-deployment-records",
-              "subcategory": "artifact-metadata",
-              "verb": "post"
-            },
-            {
-              "access": "write",
-              "additional-permissions": true,
-              "category": "orgs",
-              "requestPath": "/orgs/{org}/artifacts/metadata/storage-record",
-              "slug": "create-artifact-metadata-storage-record",
-              "subcategory": "artifact-metadata",
-              "verb": "post"
-            },
-            {
-              "access": "read",
-              "additional-permissions": true,
-              "category": "orgs",
-              "requestPath": "/orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records",
-              "slug": "list-artifact-deployment-records",
-              "subcategory": "artifact-metadata",
-              "verb": "get"
-            },
-            {
-              "access": "read",
-              "additional-permissions": true,
-              "category": "orgs",
-              "requestPath": "/orgs/{org}/artifacts/{subject_digest}/metadata/storage-records",
-              "slug": "list-artifact-storage-records",
-              "subcategory": "artifact-metadata",
-              "verb": "get"
             },
             {
               "access": "read",
@@ -5076,6 +5031,15 @@
               "access": "read",
               "additional-permissions": false,
               "category": "repos",
+              "requestPath": "/repos/{owner}/{repo}/issue-types",
+              "slug": "list-issue-types-for-a-repository",
+              "subcategory": "issue-types",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "repos",
               "requestPath": "/repos/{owner}/{repo}/languages",
               "slug": "list-repository-languages",
               "subcategory": "repos",
@@ -6001,15 +5965,6 @@
             },
             {
               "access": "read",
-              "additional-permissions": true,
-              "category": "copilot",
-              "requestPath": "/orgs/{org}/copilot/metrics",
-              "slug": "get-copilot-metrics-for-an-organization",
-              "subcategory": "copilot-metrics",
-              "verb": "get"
-            },
-            {
-              "access": "read",
               "additional-permissions": false,
               "category": "dependabot",
               "requestPath": "/orgs/{org}/dependabot/repository-access",
@@ -6259,15 +6214,6 @@
               "slug": "disable-a-selected-repository-for-immutable-releases-in-an-organization",
               "subcategory": "orgs",
               "verb": "delete"
-            },
-            {
-              "access": "read",
-              "additional-permissions": true,
-              "category": "copilot",
-              "requestPath": "/orgs/{org}/team/{team_slug}/copilot/metrics",
-              "slug": "get-copilot-metrics-for-a-team",
-              "subcategory": "copilot-metrics",
-              "verb": "get"
             },
             {
               "access": "write",
@@ -6963,27 +6909,9 @@
               "access": "read",
               "additional-permissions": true,
               "category": "copilot",
-              "requestPath": "/orgs/{org}/copilot/metrics",
-              "slug": "get-copilot-metrics-for-an-organization",
-              "subcategory": "copilot-metrics",
-              "verb": "get"
-            },
-            {
-              "access": "read",
-              "additional-permissions": true,
-              "category": "copilot",
               "requestPath": "/orgs/{org}/members/{username}/copilot",
               "slug": "get-copilot-seat-assignment-details-for-a-user",
               "subcategory": "copilot-user-management",
-              "verb": "get"
-            },
-            {
-              "access": "read",
-              "additional-permissions": true,
-              "category": "copilot",
-              "requestPath": "/orgs/{org}/team/{team_slug}/copilot/metrics",
-              "slug": "get-copilot-metrics-for-a-team",
-              "subcategory": "copilot-metrics",
               "verb": "get"
             }
           ],
@@ -11516,6 +11444,11 @@
                   "childPages": [],
                   "href": "/en/rest/repos/forks",
                   "title": "Forks"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/repos/issue-types",
+                  "title": "Issue types"
                 },
                 {
                   "childPages": [],

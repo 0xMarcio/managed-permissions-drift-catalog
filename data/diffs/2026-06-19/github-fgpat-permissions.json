@@ -1,0 +1,161 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records -> read",
+          "GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records -> read",
+          "GET /repos/{owner}/{repo}/issue-types -> read",
+          "POST /orgs/{org}/artifacts/metadata/deployment-record -> write",
+          "POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster} -> write",
+          "POST /orgs/{org}/artifacts/metadata/storage-record -> write"
+        ]
+      },
+      "removed": {
+        "grant:endpoints": [
+          "GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records -> read + additional permissions",
+          "GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records -> read + additional permissions",
+          "GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records -> read + additional permissions",
+          "GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records -> read + additional permissions",
+          "GET /orgs/{org}/copilot/metrics -> read + additional permissions",
+          "GET /orgs/{org}/copilot/metrics -> read + additional permissions",
+          "GET /orgs/{org}/team/{team_slug}/copilot/metrics -> read + additional permissions",
+          "GET /orgs/{org}/team/{team_slug}/copilot/metrics -> read + additional permissions",
+          "POST /orgs/{org}/artifacts/metadata/deployment-record -> write + additional permissions",
+          "POST /orgs/{org}/artifacts/metadata/deployment-record -> write + additional permissions",
+          "POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster} -> write + additional permissions",
+          "POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster} -> write + additional permissions",
+          "POST /orgs/{org}/artifacts/metadata/storage-record -> write + additional permissions",
+          "POST /orgs/{org}/artifacts/metadata/storage-record -> write + additional permissions"
+        ]
+      }
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Administration",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [],
+            "removed": [
+              "GET /orgs/{org}/copilot/metrics -> read + additional permissions",
+              "GET /orgs/{org}/team/{team_slug}/copilot/metrics -> read + additional permissions"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-administration",
+      "stable_id": "github-fgpat:organization:administration"
+    },
+    {
+      "display_name": "GitHub Copilot Business",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [],
+            "removed": [
+              "GET /orgs/{org}/copilot/metrics -> read + additional permissions",
+              "GET /orgs/{org}/team/{team_slug}/copilot/metrics -> read + additional permissions"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-github-copilot-business",
+      "stable_id": "github-fgpat:organization:github-copilot-business"
+    },
+    {
+      "display_name": "Artifact metadata",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records -> read",
+              "GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records -> read",
+              "POST /orgs/{org}/artifacts/metadata/deployment-record -> write",
+              "POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster} -> write",
+              "POST /orgs/{org}/artifacts/metadata/storage-record -> write"
+            ],
+            "removed": [
+              "GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records -> read + additional permissions",
+              "GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records -> read + additional permissions",
+              "POST /orgs/{org}/artifacts/metadata/deployment-record -> write + additional permissions",
+              "POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster} -> write + additional permissions",
+              "POST /orgs/{org}/artifacts/metadata/storage-record -> write + additional permissions"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": false,
+          "before": true,
+          "field": "metadata.additional_permissions_required"
+        }
+      ],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-artifact-metadata",
+      "stable_id": "github-fgpat:repository:artifact-metadata"
+    },
+    {
+      "display_name": "Contents",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [],
+            "removed": [
+              "GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records -> read + additional permissions",
+              "GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records -> read + additional permissions",
+              "POST /orgs/{org}/artifacts/metadata/deployment-record -> write + additional permissions",
+              "POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster} -> write + additional permissions",
+              "POST /orgs/{org}/artifacts/metadata/storage-record -> write + additional permissions"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-contents",
+      "stable_id": "github-fgpat:repository:contents"
+    },
+    {
+      "display_name": "Metadata",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /repos/{owner}/{repo}/issue-types -> read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-metadata",
+      "stable_id": "github-fgpat:repository:metadata"
+    }
+  ],
+  "compared_at_utc": "2026-06-19T04:57:36Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 72,
+    "previous_objects": 72,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-19",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-06-04",
+  "removed_objects": []
+}
