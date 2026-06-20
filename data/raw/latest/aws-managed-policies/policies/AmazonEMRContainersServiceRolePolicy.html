@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: December 09, 2020, 00:38 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 06, 2025, 21:07 UTC</p>
+                <p><b>Edited time:</b>  June 19, 2026, 16:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonEMRContainersServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonEMRContainersServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -86,7 +86,9 @@
         "elasticloadbalancing:DescribeTargetGroups",
         "elasticloadbalancing:DescribeTargetHealth",
         "eks:ListPodIdentityAssociations",
-        "eks:DescribePodIdentityAssociation"
+        "eks:DescribePodIdentityAssociation",
+        "ec2:DescribeVpcEndpointServiceConfigurations",
+        "ec2:DescribeVpcEndpointServicePermissions"
       ],
       "Resource" : "*"
     },
@@ -112,6 +114,46 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/emr-container:endpoint:managed-certificate" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "VPCEndpointServiceCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateVpcEndpointServiceConfiguration"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:vpc-endpoint-service/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/emr-containers:managed-endpoint-resource" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "VPCEndpointServiceManage",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DeleteVpcEndpointServiceConfigurations",
+        "ec2:ModifyVpcEndpointServicePermissions"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:vpc-endpoint-service/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/emr-containers:managed-endpoint-resource" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "VPCEndpointServiceTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateTags"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:vpc-endpoint-service/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "ec2:CreateAction" : "CreateVpcEndpointServiceConfiguration"
         }
       }
     }

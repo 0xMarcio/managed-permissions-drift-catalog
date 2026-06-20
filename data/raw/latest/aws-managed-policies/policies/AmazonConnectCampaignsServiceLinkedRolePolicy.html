@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: September 23, 2021, 20:54 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 27, 2026, 01:42 UTC</p>
+                <p><b>Edited time:</b>  June 18, 2026, 23:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonConnectCampaignsServiceLinkedRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -79,6 +79,14 @@
         "connect-campaigns:ListCampaigns"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "ConnectCampaignsMetricsAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "connect:GetMetricDataV2"
+      ],
+      "Resource" : "arn:aws:connect-campaigns:*:*:campaign/*"
     },
     <span>{</span>
       "Sid" : "ConnectAccess",

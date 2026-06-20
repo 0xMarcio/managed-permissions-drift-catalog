@@ -1,0 +1,184 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:connect:GetMetricDataV2",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:CreateVpcEndpointServiceConfiguration",
+      "aws:allow_action:ec2:DeleteVpcEndpointServiceConfigurations",
+      "aws:allow_action:ec2:DescribeVpcEndpointServiceConfigurations",
+      "aws:allow_action:ec2:DescribeVpcEndpointServicePermissions",
+      "aws:allow_action:ec2:ModifyVpcEndpointServicePermissions"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "connect:GetMetricDataV2",
+          "ec2:CreateTags",
+          "ec2:CreateVpcEndpointServiceConfiguration",
+          "ec2:DeleteVpcEndpointServiceConfigurations",
+          "ec2:DescribeVpcEndpointServiceConfigurations",
+          "ec2:DescribeVpcEndpointServicePermissions",
+          "ec2:ModifyVpcEndpointServicePermissions"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSElasticDisasterRecoveryConsoleFullAccess_v2",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 18, 2026, 22:57 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 18, 2026, 22:57 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticDisasterRecoveryConsoleFullAccess_v2.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSElasticDisasterRecoveryConsoleFullAccess_v2"
+    },
+    {
+      "display_name": "AWSElasticDisasterRecoveryLaunchActionsPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 18, 2026, 22:57 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 18, 2026, 22:57 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticDisasterRecoveryLaunchActionsPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSElasticDisasterRecoveryLaunchActionsPolicy"
+    },
+    {
+      "display_name": "AmazonConnectCampaignsServiceLinkedRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "connect:GetMetricDataV2"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 18, 2026, 23:12 UTC",
+          "before": "May 27, 2026, 01:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 18, 2026, 23:12 UTC",
+          "before": "May 27, 2026, 01:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 11,
+          "before": 10,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectCampaignsServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy"
+    },
+    {
+      "display_name": "AmazonEMRContainersServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:CreateTags",
+              "ec2:CreateVpcEndpointServiceConfiguration",
+              "ec2:DeleteVpcEndpointServiceConfigurations",
+              "ec2:DescribeVpcEndpointServiceConfigurations",
+              "ec2:DescribeVpcEndpointServicePermissions",
+              "ec2:ModifyVpcEndpointServicePermissions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 19, 2026, 16:27 UTC",
+          "before": "February 06, 2025, 21:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 19, 2026, 16:27 UTC",
+          "before": "February 06, 2025, 21:07 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 6,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEMRContainersServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEMRContainersServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-20T04:46:14Z",
+  "counts": {
+    "added_atoms": 7,
+    "added_objects": 0,
+    "changed_objects": 4,
+    "current_objects": 1519,
+    "previous_objects": 1519,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-20",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-19",
+  "removed_objects": []
+}
