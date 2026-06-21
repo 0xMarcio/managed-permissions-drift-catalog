@@ -169,6 +169,13 @@
         "stable_id": "7b0c7e81-271f-4c71-90bf-e30bdfdbc2f7"
       }
     ],
+    "azure:action:Microsoft.Advisor/conversations/*": [
+      {
+        "display_name": "Advisor Recommendations Contributor (Assessments and Reviews)",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#advisor-recommendations-contributor-assessments-and-reviews",
+        "stable_id": "6b534d80-e337-47c4-864f-140f5c7f593d"
+      }
+    ],
     "azure:action:Microsoft.Advisor/recommendations/available/action": [
       {
         "display_name": "Advisor Recommendations Contributor (Assessments and Reviews)",
@@ -2917,6 +2924,11 @@
         "stable_id": "bda0d508-adf1-4af0-9c28-88919fc3ae06"
       },
       {
+        "display_name": "Foundry Owner",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-owner",
+        "stable_id": "c883944f-8b7b-4483-af10-35834be79c4a"
+      },
+      {
         "display_name": "Foundry Account Owner",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-account-owner",
         "stable_id": "e47c6f54-e4a2-4754-9501-8e0985b135e1"
@@ -3089,6 +3101,11 @@
         "display_name": "Azure Stack HCI Administrator",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/hybrid-multicloud#azure-stack-hci-administrator",
         "stable_id": "bda0d508-adf1-4af0-9c28-88919fc3ae06"
+      },
+      {
+        "display_name": "Foundry Owner",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-owner",
+        "stable_id": "c883944f-8b7b-4483-af10-35834be79c4a"
       },
       {
         "display_name": "Foundry Account Owner",
@@ -12484,11 +12501,6 @@
         "stable_id": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b"
       },
       {
-        "display_name": "SRE Agent Standard User",
-        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-standard-user",
-        "stable_id": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
-      },
-      {
         "display_name": "Azure Managed Redis Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
         "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
@@ -13039,11 +13051,6 @@
         "stable_id": "e47c6f54-e4a2-4754-9501-8e0985b135e1"
       },
       {
-        "display_name": "SRE Agent Administrator",
-        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-administrator",
-        "stable_id": "e79298df-d852-4c6d-84f9-5d13249d1e55"
-      },
-      {
         "display_name": "Device Update Reader",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/internet-of-things#device-update-reader",
         "stable_id": "e9dba6fb-3d52-4cf0-bce3-f06ce71b9e0f"
@@ -13138,6 +13145,11 @@
         "stable_id": "175b81b9-6e0d-490a-85e4-0d422273c10c"
       },
       {
+        "display_name": "SRE Agent Standard User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-standard-user",
+        "stable_id": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
+      },
+      {
         "display_name": "Security Reader",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/security#security-reader",
         "stable_id": "39bc4728-0917-49c7-9d2c-d95423bc2eb4"
@@ -13166,6 +13178,11 @@
         "display_name": "Desktop Virtualization Host Pool Reader",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute#desktop-virtualization-host-pool-reader",
         "stable_id": "ceadfde2-b300-400a-ab7b-6143895aa822"
+      },
+      {
+        "display_name": "SRE Agent Administrator",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-administrator",
+        "stable_id": "e79298df-d852-4c6d-84f9-5d13249d1e55"
       },
       {
         "display_name": "Azure Managed Redis Reader",
@@ -13703,6 +13720,13 @@
         "display_name": "Monitoring Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor#monitoring-contributor",
         "stable_id": "749f88d5-cbae-40b8-bcfc-e573ddc772fa"
+      }
+    ],
+    "azure:action:Microsoft.Insights/privatelinkscopes/privateEndpointConnections/operationResults/read": [
+      {
+        "display_name": "Azure AI Enterprise Network Connection Approver",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#azure-ai-enterprise-network-connection-approver",
+        "stable_id": "b556d68e-0be0-4f35-a333-ad7ee1ce17ea"
       }
     ],
     "azure:action:Microsoft.Insights/privatelinkscopes/privateEndpointConnections/read": [
@@ -35794,7 +35818,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-06-03T04:58:00Z",
+  "generated_at_utc": "2026-06-21T04:58:16Z",
   "platform": "azure",
   "wildcard_atoms": [
     {
@@ -36083,6 +36107,18 @@
       "terms": [
         "Microsoft.AAD/domainServices/oucontainer/*",
         "azure:action:Microsoft.AAD/domainServices/oucontainer/*"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.Advisor/conversations/*",
+      "object": {
+        "display_name": "Advisor Recommendations Contributor (Assessments and Reviews)",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#advisor-recommendations-contributor-assessments-and-reviews",
+        "stable_id": "6b534d80-e337-47c4-864f-140f5c7f593d"
+      },
+      "terms": [
+        "Microsoft.Advisor/conversations/*",
+        "azure:action:Microsoft.Advisor/conversations/*"
       ]
     },
     {
@@ -43540,18 +43576,6 @@
     {
       "atom": "azure:action:Microsoft.Insights/alertRules/*",
       "object": {
-        "display_name": "SRE Agent Standard User",
-        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-standard-user",
-        "stable_id": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
-      },
-      "terms": [
-        "Microsoft.Insights/alertRules/*",
-        "azure:action:Microsoft.Insights/alertRules/*"
-      ]
-    },
-    {
-      "atom": "azure:action:Microsoft.Insights/alertRules/*",
-      "object": {
         "display_name": "Azure Managed Redis Contributor",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases#azure-managed-redis-contributor",
         "stable_id": "3015e5ed-6856-4ab3-b2f0-b8492aa30ca6"
@@ -44863,18 +44887,6 @@
         "display_name": "Foundry Account Owner",
         "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-account-owner",
         "stable_id": "e47c6f54-e4a2-4754-9501-8e0985b135e1"
-      },
-      "terms": [
-        "Microsoft.Insights/alertRules/*",
-        "azure:action:Microsoft.Insights/alertRules/*"
-      ]
-    },
-    {
-      "atom": "azure:action:Microsoft.Insights/alertRules/*",
-      "object": {
-        "display_name": "SRE Agent Administrator",
-        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-administrator",
-        "stable_id": "e79298df-d852-4c6d-84f9-5d13249d1e55"
       },
       "terms": [
         "Microsoft.Insights/alertRules/*",

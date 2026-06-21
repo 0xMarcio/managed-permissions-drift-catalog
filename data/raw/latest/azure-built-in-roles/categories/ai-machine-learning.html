@@ -76,7 +76,7 @@
 	
 		<meta name="ms.author" content="rolyon" />
 	
-		<meta name="ms.date" content="2026-05-25T00:00:00Z" />
+		<meta name="ms.date" content="2026-06-20T00:00:00Z" />
 	
 		<meta name="ms.custom" content="generated" />
 	
@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="05bc9d15-de20-5a1d-6fd6-cb4fb443a5b3" />
 	
-		<meta name="updated_at" content="2026-06-02T22:37:00Z" />
+		<meta name="updated_at" content="2026-06-20T22:11:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/6ce5e13533d37ee861c9447fd8e1fe7f49b496cc/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/8d43c807a29f2615429206770d749f72047ab5c8/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="git_commit_id" content="6ce5e13533d37ee861c9447fd8e1fe7f49b496cc" />
+		<meta name="git_commit_id" content="8d43c807a29f2615429206770d749f72047ab5c8" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="7981" />
+		<meta name="word_count" content="8069" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/ai-machine-learning" />
 	
@@ -112,7 +112,7 @@
 	
 		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="previous_tlsh_hash" content="9473A053330EC227FA05075AFA5BFF0A4FD8B4443750F6840D37842254976B5E7EA914B9EE45AE43F237E4133162A8471991F67FEE8FA588EB040ACB8029E1D7FDC9533299" />
+		<meta name="previous_tlsh_hash" content="13789653430EC227FA05075AFA5BFF0A4FD8B4443750F6840D37842254936B5E7A9914B9EE45BE43F237E4132162A8471991FA7FEECFA588EB040ACB8029E1D7FDC9537299" />
 	
 		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
@@ -1491,6 +1491,10 @@
 <td>Create or update a private endpoint connection</td>
 </tr>
 <tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/privatelinkscopes/privateEndpointConnections/operationResults/read</td>
+<td></td>
+</tr>
+<tr>
 <td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/privatelinkscopes/privateLinkResources/read</td>
 <td>Read a private link resource</td>
 </tr>
@@ -1646,6 +1650,7 @@
         "Microsoft.Insights/privatelinkscopes/privateEndpointConnectionsApproval/action",
         "Microsoft.Insights/privatelinkscopes/privateEndpointConnections/read",
         "Microsoft.Insights/privatelinkscopes/privateEndpointConnections/write",
+        "Microsoft.Insights/privatelinkscopes/privateEndpointConnections/operationResults/read",
         "Microsoft.Insights/privatelinkscopes/privateLinkResources/read",
         "Microsoft.Insights/privatelinkscopes/read",
         "Microsoft.Network/privateLinkServices/privateEndpointConnectionsApproval/action",
@@ -4988,8 +4993,8 @@
 <td></td>
 </tr>
 <tr>
-<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))</td>
-<td>Add or remove role assignments for the following roles:<br>Foundry User</td>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d,3bc748fc-213d-45c1-8d91-9da5725539b9,2a1e307c-b015-4ebd-883e-5b7698a07328,73c42c96-874c-492b-b04d-ab87d138a893})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d,3bc748fc-213d-45c1-8d91-9da5725539b9,2a1e307c-b015-4ebd-883e-5b7698a07328,73c42c96-874c-492b-b04d-ab87d138a893}))</td>
+<td>Add or remove role assignments for the following roles:<br>Foundry User<br>Container Registry Contributor and Data Access Configuration Administrator<br>Container Registry Repository Writer<br>Log Analytics Reader</td>
 </tr>
 </tbody>
 </table>
@@ -5029,7 +5034,7 @@
       "dataActions": [],
       "notDataActions": [],
       "conditionVersion": "2.0",
-      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d,3bc748fc-213d-45c1-8d91-9da5725539b9,2a1e307c-b015-4ebd-883e-5b7698a07328,73c42c96-874c-492b-b04d-ab87d138a893})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d,3bc748fc-213d-45c1-8d91-9da5725539b9,2a1e307c-b015-4ebd-883e-5b7698a07328,73c42c96-874c-492b-b04d-ab87d138a893}))"
     }
   ],
   "roleName": "Foundry Account Owner",
@@ -5072,6 +5077,14 @@
 <tr>
 <td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
 <td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/write</td>
+<td>Create a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/delete</td>
+<td>Delete a role assignment at the specified scope.</td>
 </tr>
 <tr>
 <td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/*</td>
@@ -5145,6 +5158,14 @@
 <td><em>none</em></td>
 <td></td>
 </tr>
+<tr>
+<td><strong>Condition</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d,3bc748fc-213d-45c1-8d91-9da5725539b9,2a1e307c-b015-4ebd-883e-5b7698a07328,73c42c96-874c-492b-b04d-ab87d138a893})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d,3bc748fc-213d-45c1-8d91-9da5725539b9,2a1e307c-b015-4ebd-883e-5b7698a07328,73c42c96-874c-492b-b04d-ab87d138a893}))</td>
+<td>Add or remove role assignments for the following roles:<br>Foundry User<br>Container Registry Contributor and Data Access Configuration Administrator<br>Container Registry Repository Writer<br>Log Analytics Reader</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -5164,6 +5185,8 @@
         "Microsoft.AlertsManagement/prometheusRuleGroups/*",
         "Microsoft.AlertsManagement/smartDetectorAlertRules/*",
         "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete",
         "Microsoft.CognitiveServices/*",
         "Microsoft.Insights/activityLogAlerts/*",
         "Microsoft.Insights/metricalerts/*",
@@ -5181,7 +5204,9 @@
       "dataActions": [
         "Microsoft.CognitiveServices/*"
       ],
-      "notDataActions": []
+      "notDataActions": [],
+      "conditionVersion": "2.0",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d,3bc748fc-213d-45c1-8d91-9da5725539b9,2a1e307c-b015-4ebd-883e-5b7698a07328,73c42c96-874c-492b-b04d-ab87d138a893})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d,3bc748fc-213d-45c1-8d91-9da5725539b9,2a1e307c-b015-4ebd-883e-5b7698a07328,73c42c96-874c-492b-b04d-ab87d138a893}))"
     }
   ],
   "roleName": "Foundry Owner",
@@ -6339,11 +6364,11 @@
 				<li class="visibility-hidden-visual-diff">
 			<span class="badge badge-sm text-wrap-pretty">
 				<span>Last updated on <local-time format="twoDigitNumeric"
-		datetime="2026-05-25T08:00:00.000Z"
+		datetime="2026-06-20T08:00:00.000Z"
 		data-article-date-source="calculated"
 		class="is-invisible"
 	>
-		2026-05-25
+		2026-06-20
 	</local-time></span>
 			</span>
 		</li>

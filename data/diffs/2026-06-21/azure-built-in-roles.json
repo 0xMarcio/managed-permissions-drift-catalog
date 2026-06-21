@@ -1,0 +1,142 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "azure:action:Microsoft.Advisor/conversations/*",
+      "azure:action:Microsoft.Authorization/roleAssignments/delete",
+      "azure:action:Microsoft.Authorization/roleAssignments/write",
+      "azure:action:Microsoft.Insights/alertRules/read",
+      "azure:action:Microsoft.Insights/alertRules/read",
+      "azure:action:Microsoft.Insights/privatelinkscopes/privateEndpointConnections/operationResults/read"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:actions": [
+          "Microsoft.Advisor/conversations/*",
+          "Microsoft.Authorization/roleAssignments/delete",
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.Insights/alertRules/read",
+          "Microsoft.Insights/alertRules/read",
+          "Microsoft.Insights/privatelinkscopes/privateEndpointConnections/operationResults/read"
+        ]
+      },
+      "removed": {
+        "grant:actions": [
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Insights/alertRules/*"
+        ]
+      }
+    },
+    "removed": [
+      "azure:action:Microsoft.Insights/alertRules/*",
+      "azure:action:Microsoft.Insights/alertRules/*"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "SRE Agent Standard User",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Insights/alertRules/read"
+            ],
+            "removed": [
+              "Microsoft.Insights/alertRules/*"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-standard-user",
+      "stable_id": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
+    },
+    {
+      "display_name": "Advisor Recommendations Contributor (Assessments and Reviews)",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Advisor/conversations/*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#advisor-recommendations-contributor-assessments-and-reviews",
+      "stable_id": "6b534d80-e337-47c4-864f-140f5c7f593d"
+    },
+    {
+      "display_name": "Azure AI Enterprise Network Connection Approver",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Insights/privatelinkscopes/privateEndpointConnections/operationResults/read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#azure-ai-enterprise-network-connection-approver",
+      "stable_id": "b556d68e-0be0-4f35-a333-ad7ee1ce17ea"
+    },
+    {
+      "display_name": "Foundry Owner",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Authorization/roleAssignments/delete",
+              "Microsoft.Authorization/roleAssignments/write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-owner",
+      "stable_id": "c883944f-8b7b-4483-af10-35834be79c4a"
+    },
+    {
+      "display_name": "SRE Agent Administrator",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Insights/alertRules/read"
+            ],
+            "removed": [
+              "Microsoft.Insights/alertRules/*"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#sre-agent-administrator",
+      "stable_id": "e79298df-d852-4c6d-84f9-5d13249d1e55"
+    }
+  ],
+  "compared_at_utc": "2026-06-21T04:57:34Z",
+  "counts": {
+    "added_atoms": 6,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 501,
+    "previous_objects": 501,
+    "removed_atoms": 2,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-21",
+  "dataset": "azure-built-in-roles",
+  "platform": "azure",
+  "previous_snapshot_date": "2026-06-03",
+  "removed_objects": []
+}
