@@ -1,0 +1,959 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [],
+      "display_name": "Migration Management Editor Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquerymigration#bigquerymigration.migrationEditor",
+      "stable_id": "roles/bigquerymigration.migrationEditor"
+    },
+    {
+      "atoms_added": [],
+      "display_name": "Migration Management Viewer Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquerymigration#bigquerymigration.migrationViewer",
+      "stable_id": "roles/bigquerymigration.migrationViewer"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:resourcemanager.organizations.get"
+      ],
+      "display_name": "Support Subscription Editor",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudsupport#cloudsupport.supportSubscriptionEditor",
+      "stable_id": "roles/cloudsupport.supportSubscriptionEditor"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:resourcemanager.organizations.get"
+      ],
+      "display_name": "Support Subscription Viewer",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudsupport#cloudsupport.supportSubscriptionViewer",
+      "stable_id": "roles/cloudsupport.supportSubscriptionViewer"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:dataplex.changeRequests.delete",
+        "gcp:permission:dataplex.changeRequests.get",
+        "gcp:permission:dataplex.changeRequests.update"
+      ],
+      "display_name": "Dataplex Change Request Owner Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.changeRequestOwner",
+      "stable_id": "roles/dataplex.changeRequestOwner"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:dataplex.changeRequests.adminDelete",
+        "gcp:permission:dataplex.changeRequests.delete",
+        "gcp:permission:dataplex.changeRequests.get",
+        "gcp:permission:dataplex.changeRequests.list",
+        "gcp:permission:dataplex.changeRequests.use"
+      ],
+      "display_name": "Dataplex Workflow Admin Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.workflowAdmin",
+      "stable_id": "roles/dataplex.workflowAdmin"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:dataplex.changeRequests.get",
+        "gcp:permission:dataplex.changeRequests.list",
+        "gcp:permission:dataplex.changeRequests.use"
+      ],
+      "display_name": "Dataplex Workflow Approver Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.workflowApprover",
+      "stable_id": "roles/dataplex.workflowApprover"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:bigquery.datasets.get",
+        "gcp:permission:bigquery.tables.create",
+        "gcp:permission:bigquery.tables.delete",
+        "gcp:permission:bigquery.tables.getData",
+        "gcp:permission:bigquery.tables.list",
+        "gcp:permission:bigquery.tables.updateData",
+        "gcp:permission:storage.buckets.get",
+        "gcp:permission:storage.objects.create",
+        "gcp:permission:storage.objects.delete",
+        "gcp:permission:storage.objects.get",
+        "gcp:permission:storage.objects.list"
+      ],
+      "display_name": "Data Studio Managed Storage Service Agent",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datastudio#datastudio.managedStorageServiceAgent",
+      "stable_id": "roles/datastudio.managedStorageServiceAgent"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:navigationconnect.trips.cancel",
+        "gcp:permission:navigationconnect.trips.create",
+        "gcp:permission:navigationconnect.trips.get",
+        "gcp:permission:resourcemanager.projects.get",
+        "gcp:permission:resourcemanager.projects.list"
+      ],
+      "display_name": "Navigation Connect Admin Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/navigationconnect#navigationconnect.admin",
+      "stable_id": "roles/navigationconnect.admin"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:navigationconnect.trips.get",
+        "gcp:permission:resourcemanager.projects.get",
+        "gcp:permission:resourcemanager.projects.list"
+      ],
+      "display_name": "Navigation Connect Viewer Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/navigationconnect#navigationconnect.viewer",
+      "stable_id": "roles/navigationconnect.viewer"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "gcp:permission:aiplatform.sandboxEnvironments.create",
+      "gcp:permission:aiplatform.sandboxEnvironments.delete",
+      "gcp:permission:aiplatform.sandboxEnvironments.execute",
+      "gcp:permission:aiplatform.sandboxEnvironments.get",
+      "gcp:permission:aiplatform.sandboxEnvironments.list",
+      "gcp:permission:bigquery.datasets.get",
+      "gcp:permission:bigquery.tables.create",
+      "gcp:permission:bigquery.tables.delete",
+      "gcp:permission:bigquery.tables.getData",
+      "gcp:permission:bigquery.tables.list",
+      "gcp:permission:bigquery.tables.updateData",
+      "gcp:permission:cloudkms.keyHandles.create",
+      "gcp:permission:cloudkms.keyHandles.create",
+      "gcp:permission:cloudkms.keyHandles.create",
+      "gcp:permission:cloudkms.keyHandles.create",
+      "gcp:permission:cloudkms.keyHandles.get",
+      "gcp:permission:cloudkms.keyHandles.get",
+      "gcp:permission:cloudkms.keyHandles.get",
+      "gcp:permission:cloudkms.keyHandles.get",
+      "gcp:permission:cloudkms.keyHandles.list",
+      "gcp:permission:cloudkms.keyHandles.list",
+      "gcp:permission:cloudkms.keyHandles.list",
+      "gcp:permission:cloudkms.keyHandles.list",
+      "gcp:permission:cloudkms.operations.get",
+      "gcp:permission:cloudkms.operations.get",
+      "gcp:permission:cloudkms.operations.get",
+      "gcp:permission:cloudkms.operations.get",
+      "gcp:permission:cloudkms.projects.showEffectiveAutokeyConfig",
+      "gcp:permission:cloudkms.projects.showEffectiveAutokeyConfig",
+      "gcp:permission:cloudkms.projects.showEffectiveAutokeyConfig",
+      "gcp:permission:cloudkms.projects.showEffectiveAutokeyConfig",
+      "gcp:permission:cloudmessaging.topicSubscriptions.get",
+      "gcp:permission:cloudmessaging.topicSubscriptions.get",
+      "gcp:permission:cloudmessaging.topicSubscriptions.get",
+      "gcp:permission:cloudmessaging.topicSubscriptions.list",
+      "gcp:permission:cloudmessaging.topicSubscriptions.list",
+      "gcp:permission:cloudmessaging.topicSubscriptions.list",
+      "gcp:permission:dataplex.changeRequests.adminDelete",
+      "gcp:permission:dataplex.changeRequests.adminDelete",
+      "gcp:permission:dataplex.changeRequests.adminDelete",
+      "gcp:permission:dataplex.changeRequests.adminDelete",
+      "gcp:permission:dataplex.changeRequests.delete",
+      "gcp:permission:dataplex.changeRequests.delete",
+      "gcp:permission:dataplex.changeRequests.delete",
+      "gcp:permission:dataplex.changeRequests.delete",
+      "gcp:permission:dataplex.changeRequests.delete",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.get",
+      "gcp:permission:dataplex.changeRequests.getIamPolicy",
+      "gcp:permission:dataplex.changeRequests.getIamPolicy",
+      "gcp:permission:dataplex.changeRequests.getIamPolicy",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.list",
+      "gcp:permission:dataplex.changeRequests.setIamPolicy",
+      "gcp:permission:dataplex.changeRequests.setIamPolicy",
+      "gcp:permission:dataplex.changeRequests.update",
+      "gcp:permission:dataplex.changeRequests.update",
+      "gcp:permission:dataplex.changeRequests.use",
+      "gcp:permission:dataplex.changeRequests.use",
+      "gcp:permission:dataplex.changeRequests.use",
+      "gcp:permission:dataplex.changeRequests.use",
+      "gcp:permission:dataplex.changeRequests.use",
+      "gcp:permission:dataplex.dataProducts.approve",
+      "gcp:permission:dataplex.dataProducts.approve",
+      "gcp:permission:dataplex.dataProducts.approve",
+      "gcp:permission:dataplex.dataProducts.approve",
+      "gcp:permission:dataplex.entryGroups.requestChanges",
+      "gcp:permission:dataplex.entryGroups.requestChanges",
+      "gcp:permission:dataplex.entryGroups.requestChanges",
+      "gcp:permission:dataplex.entryGroups.requestChanges",
+      "gcp:permission:dataplex.entryGroups.requestChanges",
+      "gcp:permission:dataplex.entryGroups.requestChanges",
+      "gcp:permission:dataplex.entryGroups.requestChanges",
+      "gcp:permission:dataplex.entryGroups.requestChanges",
+      "gcp:permission:dataplex.glossaries.requestChanges",
+      "gcp:permission:dataplex.glossaries.requestChanges",
+      "gcp:permission:dataplex.glossaries.requestChanges",
+      "gcp:permission:dataplex.glossaries.requestChanges",
+      "gcp:permission:dataplex.glossaries.requestChanges",
+      "gcp:permission:dataplex.glossaries.requestChanges",
+      "gcp:permission:externalexposure.scanMetrics.get",
+      "gcp:permission:externalexposure.scanMetrics.get",
+      "gcp:permission:externalexposure.scanMetrics.get",
+      "gcp:permission:firebaseappcheck.recaptchaV3Config.get",
+      "gcp:permission:navigationconnect.trips.cancel",
+      "gcp:permission:navigationconnect.trips.create",
+      "gcp:permission:navigationconnect.trips.get",
+      "gcp:permission:navigationconnect.trips.get",
+      "gcp:permission:networkmanagement.providers.generateProviderAccessToken",
+      "gcp:permission:networkmanagement.providers.generateProviderAccessToken",
+      "gcp:permission:resourcemanager.organizations.get",
+      "gcp:permission:resourcemanager.organizations.get",
+      "gcp:permission:resourcemanager.projects.get",
+      "gcp:permission:resourcemanager.projects.get",
+      "gcp:permission:resourcemanager.projects.list",
+      "gcp:permission:resourcemanager.projects.list",
+      "gcp:permission:storage.buckets.get",
+      "gcp:permission:storage.objects.create",
+      "gcp:permission:storage.objects.delete",
+      "gcp:permission:storage.objects.get",
+      "gcp:permission:storage.objects.list"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:included_permissions": [
+          "aiplatform.sandboxEnvironments.create",
+          "aiplatform.sandboxEnvironments.delete",
+          "aiplatform.sandboxEnvironments.execute",
+          "aiplatform.sandboxEnvironments.get",
+          "aiplatform.sandboxEnvironments.list",
+          "bigquery.datasets.get",
+          "bigquery.tables.create",
+          "bigquery.tables.delete",
+          "bigquery.tables.getData",
+          "bigquery.tables.list",
+          "bigquery.tables.updateData",
+          "cloudkms.keyHandles.create",
+          "cloudkms.keyHandles.create",
+          "cloudkms.keyHandles.create",
+          "cloudkms.keyHandles.create",
+          "cloudkms.keyHandles.get",
+          "cloudkms.keyHandles.get",
+          "cloudkms.keyHandles.get",
+          "cloudkms.keyHandles.get",
+          "cloudkms.keyHandles.list",
+          "cloudkms.keyHandles.list",
+          "cloudkms.keyHandles.list",
+          "cloudkms.keyHandles.list",
+          "cloudkms.operations.get",
+          "cloudkms.operations.get",
+          "cloudkms.operations.get",
+          "cloudkms.operations.get",
+          "cloudkms.projects.showEffectiveAutokeyConfig",
+          "cloudkms.projects.showEffectiveAutokeyConfig",
+          "cloudkms.projects.showEffectiveAutokeyConfig",
+          "cloudkms.projects.showEffectiveAutokeyConfig",
+          "cloudmessaging.topicSubscriptions.get",
+          "cloudmessaging.topicSubscriptions.get",
+          "cloudmessaging.topicSubscriptions.get",
+          "cloudmessaging.topicSubscriptions.list",
+          "cloudmessaging.topicSubscriptions.list",
+          "cloudmessaging.topicSubscriptions.list",
+          "dataplex.changeRequests.adminDelete",
+          "dataplex.changeRequests.adminDelete",
+          "dataplex.changeRequests.adminDelete",
+          "dataplex.changeRequests.adminDelete",
+          "dataplex.changeRequests.delete",
+          "dataplex.changeRequests.delete",
+          "dataplex.changeRequests.delete",
+          "dataplex.changeRequests.delete",
+          "dataplex.changeRequests.delete",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.get",
+          "dataplex.changeRequests.getIamPolicy",
+          "dataplex.changeRequests.getIamPolicy",
+          "dataplex.changeRequests.getIamPolicy",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.list",
+          "dataplex.changeRequests.setIamPolicy",
+          "dataplex.changeRequests.setIamPolicy",
+          "dataplex.changeRequests.update",
+          "dataplex.changeRequests.update",
+          "dataplex.changeRequests.use",
+          "dataplex.changeRequests.use",
+          "dataplex.changeRequests.use",
+          "dataplex.changeRequests.use",
+          "dataplex.changeRequests.use",
+          "dataplex.dataProducts.approve",
+          "dataplex.dataProducts.approve",
+          "dataplex.dataProducts.approve",
+          "dataplex.dataProducts.approve",
+          "dataplex.entryGroups.requestChanges",
+          "dataplex.entryGroups.requestChanges",
+          "dataplex.entryGroups.requestChanges",
+          "dataplex.entryGroups.requestChanges",
+          "dataplex.entryGroups.requestChanges",
+          "dataplex.entryGroups.requestChanges",
+          "dataplex.entryGroups.requestChanges",
+          "dataplex.entryGroups.requestChanges",
+          "dataplex.glossaries.requestChanges",
+          "dataplex.glossaries.requestChanges",
+          "dataplex.glossaries.requestChanges",
+          "dataplex.glossaries.requestChanges",
+          "dataplex.glossaries.requestChanges",
+          "dataplex.glossaries.requestChanges",
+          "externalexposure.scanMetrics.get",
+          "externalexposure.scanMetrics.get",
+          "externalexposure.scanMetrics.get",
+          "firebaseappcheck.recaptchaV3Config.get",
+          "navigationconnect.trips.cancel",
+          "navigationconnect.trips.create",
+          "navigationconnect.trips.get",
+          "navigationconnect.trips.get",
+          "networkmanagement.providers.generateProviderAccessToken",
+          "networkmanagement.providers.generateProviderAccessToken",
+          "resourcemanager.organizations.get",
+          "resourcemanager.organizations.get",
+          "resourcemanager.projects.get",
+          "resourcemanager.projects.get",
+          "resourcemanager.projects.list",
+          "resourcemanager.projects.list",
+          "storage.buckets.get",
+          "storage.objects.create",
+          "storage.objects.delete",
+          "storage.objects.get",
+          "storage.objects.list"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Apigee Organization Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudkms.keyHandles.create",
+              "cloudkms.keyHandles.get",
+              "cloudkms.keyHandles.list",
+              "cloudkms.operations.get",
+              "cloudkms.projects.showEffectiveAutokeyConfig"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/apigee#apigee.admin",
+      "stable_id": "roles/apigee.admin"
+    },
+    {
+      "display_name": "Apigee Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudkms.keyHandles.create",
+              "cloudkms.keyHandles.get",
+              "cloudkms.keyHandles.list",
+              "cloudkms.operations.get",
+              "cloudkms.projects.showEffectiveAutokeyConfig"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/apigee#apigee.editor",
+      "stable_id": "roles/apigee.editor"
+    },
+    {
+      "display_name": "Data Catalog Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.adminDelete",
+              "dataplex.changeRequests.delete",
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list",
+              "dataplex.changeRequests.use",
+              "dataplex.entryGroups.requestChanges",
+              "dataplex.glossaries.requestChanges"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.admin",
+      "stable_id": "roles/datacatalog.admin"
+    },
+    {
+      "display_name": "Data Catalog Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list",
+              "dataplex.entryGroups.requestChanges",
+              "dataplex.glossaries.requestChanges"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.editor",
+      "stable_id": "roles/datacatalog.editor"
+    },
+    {
+      "display_name": "DataCatalog EntryGroup Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list",
+              "dataplex.entryGroups.requestChanges"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner",
+      "stable_id": "roles/datacatalog.entryGroupOwner"
+    },
+    {
+      "display_name": "DataCatalog Entry Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.entryOwner",
+      "stable_id": "roles/datacatalog.entryOwner"
+    },
+    {
+      "display_name": "Data Catalog Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list",
+              "dataplex.entryGroups.requestChanges",
+              "dataplex.glossaries.requestChanges"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.viewer",
+      "stable_id": "roles/datacatalog.viewer"
+    },
+    {
+      "display_name": "Dataplex Administrator",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.adminDelete",
+              "dataplex.changeRequests.delete",
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.getIamPolicy",
+              "dataplex.changeRequests.list",
+              "dataplex.changeRequests.setIamPolicy",
+              "dataplex.changeRequests.update",
+              "dataplex.changeRequests.use",
+              "dataplex.dataProducts.approve",
+              "dataplex.entryGroups.requestChanges",
+              "dataplex.glossaries.requestChanges"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.admin",
+      "stable_id": "roles/dataplex.admin"
+    },
+    {
+      "display_name": "Dataplex Catalog Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.adminDelete",
+              "dataplex.changeRequests.delete",
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list",
+              "dataplex.changeRequests.use",
+              "dataplex.entryGroups.requestChanges",
+              "dataplex.glossaries.requestChanges"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.catalogAdmin",
+      "stable_id": "roles/dataplex.catalogAdmin"
+    },
+    {
+      "display_name": "Dataplex Catalog Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.catalogEditor",
+      "stable_id": "roles/dataplex.catalogEditor"
+    },
+    {
+      "display_name": "Dataplex Catalog Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list",
+              "dataplex.entryGroups.requestChanges",
+              "dataplex.glossaries.requestChanges"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.catalogViewer",
+      "stable_id": "roles/dataplex.catalogViewer"
+    },
+    {
+      "display_name": "Dataplex Data Products Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.dataProducts.approve"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.dataProductsAdmin",
+      "stable_id": "roles/dataplex.dataProductsAdmin"
+    },
+    {
+      "display_name": "Dataplex Data Products Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.dataProducts.approve"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.dataProductsEditor",
+      "stable_id": "roles/dataplex.dataProductsEditor"
+    },
+    {
+      "display_name": "Dataplex Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.dataProducts.approve"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.editor",
+      "stable_id": "roles/dataplex.editor"
+    },
+    {
+      "display_name": "Dataplex Entry Group Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list",
+              "dataplex.entryGroups.requestChanges"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.entryGroupOwner",
+      "stable_id": "roles/dataplex.entryGroupOwner"
+    },
+    {
+      "display_name": "Dataplex Entry and EntryLink Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.get",
+              "dataplex.changeRequests.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.entryOwner",
+      "stable_id": "roles/dataplex.entryOwner"
+    },
+    {
+      "display_name": "Discovery Engine Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "aiplatform.sandboxEnvironments.create",
+              "aiplatform.sandboxEnvironments.delete",
+              "aiplatform.sandboxEnvironments.execute",
+              "aiplatform.sandboxEnvironments.get",
+              "aiplatform.sandboxEnvironments.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/discoveryengine#discoveryengine.serviceAgent",
+      "stable_id": "roles/discoveryengine.serviceAgent"
+    },
+    {
+      "display_name": "File Admin Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudkms.keyHandles.create",
+              "cloudkms.keyHandles.get",
+              "cloudkms.keyHandles.list",
+              "cloudkms.operations.get",
+              "cloudkms.projects.showEffectiveAutokeyConfig"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/file#file.admin",
+      "stable_id": "roles/file.admin"
+    },
+    {
+      "display_name": "Cloud Filestore Editor Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudkms.keyHandles.create",
+              "cloudkms.keyHandles.get",
+              "cloudkms.keyHandles.list",
+              "cloudkms.operations.get",
+              "cloudkms.projects.showEffectiveAutokeyConfig"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/file#file.editor",
+      "stable_id": "roles/file.editor"
+    },
+    {
+      "display_name": "Firebase Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudmessaging.topicSubscriptions.get",
+              "cloudmessaging.topicSubscriptions.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/firebase#firebase.editor",
+      "stable_id": "roles/firebase.editor"
+    },
+    {
+      "display_name": "Firebase Grow Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudmessaging.topicSubscriptions.get",
+              "cloudmessaging.topicSubscriptions.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/firebase#firebase.growthViewer",
+      "stable_id": "roles/firebase.growthViewer"
+    },
+    {
+      "display_name": "Firebase Service Management Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "firebaseappcheck.recaptchaV3Config.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/firebase#firebase.managementServiceAgent",
+      "stable_id": "roles/firebase.managementServiceAgent"
+    },
+    {
+      "display_name": "Firebase Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudmessaging.topicSubscriptions.get",
+              "cloudmessaging.topicSubscriptions.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/firebase#firebase.viewer",
+      "stable_id": "roles/firebase.viewer"
+    },
+    {
+      "display_name": "Security Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.getIamPolicy",
+              "dataplex.changeRequests.list",
+              "dataplex.changeRequests.setIamPolicy"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityAdmin",
+      "stable_id": "roles/iam.securityAdmin"
+    },
+    {
+      "display_name": "Security Reviewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.changeRequests.getIamPolicy",
+              "dataplex.changeRequests.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityReviewer",
+      "stable_id": "roles/iam.securityReviewer"
+    },
+    {
+      "display_name": "Networkmanagement Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networkmanagement.providers.generateProviderAccessToken"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/networkmanagement#networkmanagement.editor",
+      "stable_id": "roles/networkmanagement.editor"
+    },
+    {
+      "display_name": "Network Management Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networkmanagement.providers.generateProviderAccessToken"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/networkmanagement#networkmanagement.viewer",
+      "stable_id": "roles/networkmanagement.viewer"
+    },
+    {
+      "display_name": "Security Center Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "externalexposure.scanMetrics.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/securitycenter#securitycenter.admin",
+      "stable_id": "roles/securitycenter.admin"
+    },
+    {
+      "display_name": "Security Center Admin Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "externalexposure.scanMetrics.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/securitycenter#securitycenter.adminEditor",
+      "stable_id": "roles/securitycenter.adminEditor"
+    },
+    {
+      "display_name": "Security Center Admin Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "externalexposure.scanMetrics.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/securitycenter#securitycenter.adminViewer",
+      "stable_id": "roles/securitycenter.adminViewer"
+    }
+  ],
+  "compared_at_utc": "2026-06-23T04:42:24Z",
+  "counts": {
+    "added_atoms": 126,
+    "added_objects": 10,
+    "changed_objects": 30,
+    "current_objects": 2334,
+    "previous_objects": 2324,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-23",
+  "dataset": "gcp-predefined-roles",
+  "platform": "gcp",
+  "previous_snapshot_date": "2026-06-12",
+  "removed_objects": []
+}

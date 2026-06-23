@@ -1,0 +1,161 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:CreateTags"
+      ],
+      "display_name": "AWSLambdaNetworkConnectorOperatorPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSLambdaNetworkConnectorOperatorPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSLambdaNetworkConnectorOperatorPolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteNetworkInterface",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:sso:ListApplicationAssignments"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ec2:CreateNetworkInterface",
+          "ec2:CreateTags",
+          "ec2:DeleteNetworkInterface",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "sso:ListApplicationAssignments"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSLambdaServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DeleteNetworkInterface",
+              "ec2:DescribeNetworkInterfaces",
+              "ec2:DescribeSecurityGroups",
+              "ec2:DescribeSubnets"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 22, 2026, 15:12 UTC",
+          "before": "November 30, 2025, 08:04 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 22, 2026, 15:12 UTC",
+          "before": "November 30, 2025, 08:04 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSLambdaServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSLambdaServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSServiceRoleForUserSubscriptions",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "sso:ListApplicationAssignments"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 22, 2026, 08:27 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 22, 2026, 08:27 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForUserSubscriptions.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForUserSubscriptions"
+    },
+    {
+      "display_name": "AmazonElasticsearchServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 22, 2026, 12:27 UTC",
+          "before": "October 23, 2023, 06:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 22, 2026, 12:27 UTC",
+          "before": "October 23, 2023, 06:58 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 11,
+          "before": 10,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticsearchServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonElasticsearchServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-23T04:42:24Z",
+  "counts": {
+    "added_atoms": 7,
+    "added_objects": 1,
+    "changed_objects": 3,
+    "current_objects": 1520,
+    "previous_objects": 1519,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-23",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-21",
+  "removed_objects": []
+}

@@ -82,7 +82,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "anthosservicemesh.googleapis.com, trafficdirector.googleapis.com, meshconfig.googleapis.com, meshdataplane.googleapis.com",
+      "name": "anthosservicemesh.googleapis.com, meshdataplane.googleapis.com, meshconfig.googleapis.com, trafficdirector.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "title": "API Gateway",
-      "name": "apigateway.management.googleapis.com, apigateway.googleapis.com",
+      "name": "apigateway.googleapis.com, apigateway.management.googleapis.com",
       "url": "/iam/docs/roles-permissions/apigateway"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "title": "Google Workspace Marketplace",
-      "name": "appmetadata.googleapis.com, workspacemarketplace.googleapis.com",
+      "name": "workspacemarketplace.googleapis.com, appmetadata.googleapis.com",
       "url": "/iam/docs/roles-permissions/workspacemarketplace"
     },
     {
@@ -387,7 +387,7 @@
     },
     {
       "title": "Cloud Deployment Manager",
-      "name": "deploymentmanager.googleapis.com, clouddeploymentmanager.googleapis.com",
+      "name": "clouddeploymentmanager.googleapis.com, deploymentmanager.googleapis.com",
       "url": "/iam/docs/roles-permissions/deploymentmanager"
     },
     {
@@ -402,7 +402,7 @@
     },
     {
       "title": "Cloud IoT",
-      "name": "cloudiottoken.googleapis.com, cloudiot.googleapis.com",
+      "name": "cloudiot.googleapis.com, cloudiottoken.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudiot"
     },
     {
@@ -437,7 +437,7 @@
     },
     {
       "title": "Service Catalog",
-      "name": "cloudprivatecatalog.googleapis.com, cloudprivatecatalogproducer.googleapis.com",
+      "name": "cloudprivatecatalogproducer.googleapis.com, cloudprivatecatalog.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudprivatecatalog"
     },
     {
@@ -462,7 +462,7 @@
     },
     {
       "title": "Web Security Scanner",
-      "name": "cloudsecurityscanner.googleapis.com, websecurityscanner.googleapis.com",
+      "name": "websecurityscanner.googleapis.com, cloudsecurityscanner.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudsecurityscanner"
     },
     {
@@ -522,7 +522,7 @@
     },
     {
       "title": "Commerce Price Management",
-      "name": "commercepricemanagement.googleapis.com, commerceprice.googleapis.com",
+      "name": "commerceprice.googleapis.com, commercepricemanagement.googleapis.com",
       "url": "/iam/docs/roles-permissions/commercepricemanagement"
     },
     {
@@ -712,12 +712,12 @@
     },
     {
       "title": "Data Studio",
-      "name": "lookerstudio.googleapis.com, datastudio.googleapis.com",
+      "name": "datastudio.googleapis.com, lookerstudio.googleapis.com",
       "url": "/iam/docs/roles-permissions/datastudio"
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
+      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -877,7 +877,7 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "firebasenotifications.googleapis.com, cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com",
+      "name": "firebasenotifications.googleapis.com, firebasecloudmessaging.googleapis.com, cloudmessaging.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
@@ -1002,7 +1002,7 @@
     },
     {
       "title": "Cloud Life Sciences",
-      "name": "genomics.googleapis.com, lifesciences.googleapis.com",
+      "name": "lifesciences.googleapis.com, genomics.googleapis.com",
       "url": "/iam/docs/roles-permissions/lifesciences"
     },
     {
@@ -1241,6 +1241,11 @@
       "url": "/iam/docs/roles-permissions/multiclusterservicediscovery"
     },
     {
+      "title": "Navigation Connect",
+      "name": "navigationconnect.googleapis.com",
+      "url": "/iam/docs/roles-permissions/navigationconnect"
+    },
+    {
       "title": "Nest Console",
       "name": "nestconsole.googleapis.com",
       "url": "/iam/docs/roles-permissions/nestconsole"
@@ -1412,7 +1417,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
+      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -1442,7 +1447,7 @@
     },
     {
       "title": "RISC Configuration Service",
-      "name": "riscconfigurationservice.googleapis.com, riscconfigs.googleapis.com",
+      "name": "riscconfigs.googleapis.com, riscconfigurationservice.googleapis.com",
       "url": "/iam/docs/roles-permissions/riscconfigurationservice"
     },
     {
@@ -1562,7 +1567,7 @@
     },
     {
       "title": "Cloud Source Repositories",
-      "name": "sourcerepo.googleapis.com, source.googleapis.com",
+      "name": "source.googleapis.com, sourcerepo.googleapis.com",
       "url": "/iam/docs/roles-permissions/source"
     },
     {
@@ -3718,6 +3723,18 @@
       "priority": 1
     },
     {
+      "title": "Migration Management Editor",
+      "name": "roles/bigquerymigration.migrationEditor",
+      "url": "/iam/docs/roles-permissions/bigquerymigration#bigquerymigration.migrationEditor",
+      "priority": 2
+    },
+    {
+      "title": "Migration Management Viewer",
+      "name": "roles/bigquerymigration.migrationViewer",
+      "url": "/iam/docs/roles-permissions/bigquerymigration#bigquerymigration.migrationViewer",
+      "priority": 2
+    },
+    {
       "title": "Task Orchestrator",
       "name": "roles/bigquerymigration.orchestrator",
       "url": "/iam/docs/roles-permissions/bigquerymigration#bigquerymigration.orchestrator",
@@ -5257,6 +5274,18 @@
       "title": "Advisory Support Viewer",
       "name": "roles/cloudsupport.advisorySupportViewer",
       "url": "/iam/docs/roles-permissions/cloudsupport#cloudsupport.advisorySupportViewer",
+      "priority": 2
+    },
+    {
+      "title": "Support Subscription Editor",
+      "name": "roles/cloudsupport.supportSubscriptionEditor",
+      "url": "/iam/docs/roles-permissions/cloudsupport#cloudsupport.supportSubscriptionEditor",
+      "priority": 2
+    },
+    {
+      "title": "Support Subscription Viewer",
+      "name": "roles/cloudsupport.supportSubscriptionViewer",
+      "url": "/iam/docs/roles-permissions/cloudsupport#cloudsupport.supportSubscriptionViewer",
       "priority": 2
     },
     {
@@ -6880,6 +6909,12 @@
       "priority": 2
     },
     {
+      "title": "Dataplex Change Request Owner",
+      "name": "roles/dataplex.changeRequestOwner",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequestOwner",
+      "priority": 2
+    },
+    {
       "title": "Dataplex Data Owner",
       "name": "roles/dataplex.dataOwner",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.dataOwner",
@@ -7087,6 +7122,18 @@
       "title": "Dataplex Taxonomy Viewer",
       "name": "roles/dataplex.taxonomyViewer",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.taxonomyViewer",
+      "priority": 2
+    },
+    {
+      "title": "Dataplex Workflow Admin",
+      "name": "roles/dataplex.workflowAdmin",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.workflowAdmin",
+      "priority": 2
+    },
+    {
+      "title": "Dataplex Workflow Approver",
+      "name": "roles/dataplex.workflowApprover",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.workflowApprover",
       "priority": 2
     },
     {
@@ -7363,6 +7410,12 @@
       "title": "Data Studio Workspace Contributor",
       "name": "roles/datastudio.contributor",
       "url": "/iam/docs/roles-permissions/datastudio#datastudio.contributor",
+      "priority": 2
+    },
+    {
+      "title": "Data Studio Managed Storage Service Agent",
+      "name": "roles/datastudio.managedStorageServiceAgent",
+      "url": "/iam/docs/roles-permissions/datastudio#datastudio.managedStorageServiceAgent",
       "priority": 2
     },
     {
@@ -11300,6 +11353,18 @@
       "name": "roles/multiclusterservicediscovery.serviceAgent",
       "url": "/iam/docs/roles-permissions/multiclusterservicediscovery#multiclusterservicediscovery.serviceAgent",
       "priority": 2
+    },
+    {
+      "title": "Navigation Connect Admin",
+      "name": "roles/navigationconnect.admin",
+      "url": "/iam/docs/roles-permissions/navigationconnect#navigationconnect.admin",
+      "priority": 1
+    },
+    {
+      "title": "Navigation Connect Viewer",
+      "name": "roles/navigationconnect.viewer",
+      "url": "/iam/docs/roles-permissions/navigationconnect#navigationconnect.viewer",
+      "priority": 1
     },
     {
       "title": "Nestconsole Admin",
@@ -42754,6 +42819,38 @@
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.assets.writeData"
     },
     {
+      "title": "dataplex.changeRequests.adminDelete",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequests.adminDelete"
+    },
+    {
+      "title": "dataplex.changeRequests.delete",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequests.delete"
+    },
+    {
+      "title": "dataplex.changeRequests.get",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequests.get"
+    },
+    {
+      "title": "dataplex.changeRequests.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequests.getIamPolicy"
+    },
+    {
+      "title": "dataplex.changeRequests.list",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequests.list"
+    },
+    {
+      "title": "dataplex.changeRequests.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequests.setIamPolicy"
+    },
+    {
+      "title": "dataplex.changeRequests.update",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequests.update"
+    },
+    {
+      "title": "dataplex.changeRequests.use",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.changeRequests.use"
+    },
+    {
       "title": "dataplex.content.create",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.content.create"
     },
@@ -42860,6 +42957,10 @@
     {
       "title": "dataplex.dataAttributes.update",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.dataAttributes.update"
+    },
+    {
+      "title": "dataplex.dataProducts.approve",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.dataProducts.approve"
     },
     {
       "title": "dataplex.dataProducts.create",
@@ -43060,6 +43161,10 @@
     {
       "title": "dataplex.entryGroups.list",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.list"
+    },
+    {
+      "title": "dataplex.entryGroups.requestChanges",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.requestChanges"
     },
     {
       "title": "dataplex.entryGroups.setIamPolicy",
@@ -43288,6 +43393,10 @@
     {
       "title": "dataplex.glossaries.list",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.glossaries.list"
+    },
+    {
+      "title": "dataplex.glossaries.requestChanges",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.glossaries.requestChanges"
     },
     {
       "title": "dataplex.glossaries.setIamPolicy",
@@ -56428,6 +56537,18 @@
     {
       "title": "stackdriver.resourceMetadata.write",
       "url": "/iam/docs/roles-permissions/monitoring#stackdriver.resourceMetadata.write"
+    },
+    {
+      "title": "navigationconnect.trips.cancel",
+      "url": "/iam/docs/roles-permissions/navigationconnect#navigationconnect.trips.cancel"
+    },
+    {
+      "title": "navigationconnect.trips.create",
+      "url": "/iam/docs/roles-permissions/navigationconnect#navigationconnect.trips.create"
+    },
+    {
+      "title": "navigationconnect.trips.get",
+      "url": "/iam/docs/roles-permissions/navigationconnect#navigationconnect.trips.get"
     },
     {
       "title": "nestconsole.smarthomePreviews.update",
