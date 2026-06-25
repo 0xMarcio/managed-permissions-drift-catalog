@@ -1,0 +1,169 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:autoscaling:UpdateAutoScalingGroup",
+        "aws:allow_action:cloudformation:UpdateStack",
+        "aws:allow_action:cloudwatch:PutMetricAlarm",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:ModifyInstanceAttribute",
+        "aws:allow_action:ecs:UpdateService",
+        "aws:allow_action:elasticloadbalancing:ModifyTargetGroup",
+        "aws:allow_action:lambda:UpdateFunctionConfiguration",
+        "aws:allow_action:logs:PutMetricFilter",
+        "aws:allow_action:rds:ModifyDBInstance"
+      ],
+      "display_name": "AIDevOpsAgentActionsPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentActionsPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentActionsPolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:autoscaling:UpdateAutoScalingGroup",
+      "aws:allow_action:budgets:ViewBudget",
+      "aws:allow_action:cloudformation:UpdateStack",
+      "aws:allow_action:cloudwatch:PutMetricAlarm",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:ModifyInstanceAttribute",
+      "aws:allow_action:ecs:UpdateService",
+      "aws:allow_action:elasticloadbalancing:ModifyTargetGroup",
+      "aws:allow_action:glue:GetCrawler",
+      "aws:allow_action:guardduty:GetFindings",
+      "aws:allow_action:health:Describe*",
+      "aws:allow_action:iam:ListAccountAliases",
+      "aws:allow_action:iam:ListUsers",
+      "aws:allow_action:inspector2:SearchVulnerabilities",
+      "aws:allow_action:lambda:UpdateFunctionConfiguration",
+      "aws:allow_action:logs:GetLogEvents",
+      "aws:allow_action:logs:PutMetricFilter",
+      "aws:allow_action:rds:ModifyDBInstance",
+      "aws:allow_action:servicequotas:Get*",
+      "aws:allow_action:servicequotas:List*",
+      "aws:allow_action:ssm:GetCommandInvocation",
+      "aws:allow_action:sso:DescribeAccountAssignmentCreationStatus",
+      "aws:allow_action:sso:DescribePermissionSet",
+      "aws:allow_action:sso:ListPermissionSets"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "autoscaling:UpdateAutoScalingGroup",
+          "budgets:ViewBudget",
+          "cloudformation:UpdateStack",
+          "cloudwatch:PutMetricAlarm",
+          "ec2:CreateTags",
+          "ec2:ModifyInstanceAttribute",
+          "ecs:UpdateService",
+          "elasticloadbalancing:ModifyTargetGroup",
+          "glue:GetCrawler",
+          "guardduty:GetFindings",
+          "health:Describe*",
+          "iam:ListAccountAliases",
+          "iam:ListUsers",
+          "inspector2:SearchVulnerabilities",
+          "lambda:UpdateFunctionConfiguration",
+          "logs:GetLogEvents",
+          "logs:PutMetricFilter",
+          "rds:ModifyDBInstance",
+          "servicequotas:Get*",
+          "servicequotas:List*",
+          "ssm:GetCommandInvocation",
+          "sso:DescribeAccountAssignmentCreationStatus",
+          "sso:DescribePermissionSet",
+          "sso:ListPermissionSets"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "health:DescribeAffectedEntities",
+          "health:DescribeEventDetails",
+          "health:DescribeEvents",
+          "servicequotas:GetServiceQuota",
+          "servicequotas:ListServiceQuotas"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:health:DescribeAffectedEntities",
+      "aws:allow_action:health:DescribeEventDetails",
+      "aws:allow_action:health:DescribeEvents",
+      "aws:allow_action:servicequotas:GetServiceQuota",
+      "aws:allow_action:servicequotas:ListServiceQuotas"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "budgets:ViewBudget",
+              "glue:GetCrawler",
+              "guardduty:GetFindings",
+              "health:Describe*",
+              "iam:ListAccountAliases",
+              "iam:ListUsers",
+              "inspector2:SearchVulnerabilities",
+              "logs:GetLogEvents",
+              "servicequotas:Get*",
+              "servicequotas:List*",
+              "ssm:GetCommandInvocation",
+              "sso:DescribeAccountAssignmentCreationStatus",
+              "sso:DescribePermissionSet",
+              "sso:ListPermissionSets"
+            ],
+            "removed": [
+              "health:DescribeAffectedEntities",
+              "health:DescribeEventDetails",
+              "health:DescribeEvents",
+              "servicequotas:GetServiceQuota",
+              "servicequotas:ListServiceQuotas"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 24, 2026, 04:57 UTC",
+          "before": "June 06, 2026, 02:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 24, 2026, 04:57 UTC",
+          "before": "June 06, 2026, 02:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-25T04:43:58Z",
+  "counts": {
+    "added_atoms": 24,
+    "added_objects": 1,
+    "changed_objects": 1,
+    "current_objects": 1523,
+    "previous_objects": 1522,
+    "removed_atoms": 5,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-25",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-24",
+  "removed_objects": []
+}

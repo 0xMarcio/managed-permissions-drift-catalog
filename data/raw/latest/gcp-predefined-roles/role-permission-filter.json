@@ -82,7 +82,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "anthosservicemesh.googleapis.com, meshdataplane.googleapis.com, meshconfig.googleapis.com, trafficdirector.googleapis.com",
+      "name": "anthosservicemesh.googleapis.com, trafficdirector.googleapis.com, meshdataplane.googleapis.com, meshconfig.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "title": "Google Workspace Marketplace",
-      "name": "workspacemarketplace.googleapis.com, appmetadata.googleapis.com",
+      "name": "appmetadata.googleapis.com, workspacemarketplace.googleapis.com",
       "url": "/iam/docs/roles-permissions/workspacemarketplace"
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "title": "Cloud Key Management Service",
-      "name": "cloudkms.googleapis.com, cloudkmskacls.googleapis.com",
+      "name": "cloudkmskacls.googleapis.com, cloudkms.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudkms"
     },
     {
@@ -437,7 +437,7 @@
     },
     {
       "title": "Service Catalog",
-      "name": "cloudprivatecatalogproducer.googleapis.com, cloudprivatecatalog.googleapis.com",
+      "name": "cloudprivatecatalog.googleapis.com, cloudprivatecatalogproducer.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudprivatecatalog"
     },
     {
@@ -487,7 +487,7 @@
     },
     {
       "title": "Cloud TPU",
-      "name": "cloudtpu.googleapis.com, tpu.googleapis.com",
+      "name": "tpu.googleapis.com, cloudtpu.googleapis.com",
       "url": "/iam/docs/roles-permissions/tpu"
     },
     {
@@ -522,7 +522,7 @@
     },
     {
       "title": "Commerce Price Management",
-      "name": "commerceprice.googleapis.com, commercepricemanagement.googleapis.com",
+      "name": "commercepricemanagement.googleapis.com, commerceprice.googleapis.com",
       "url": "/iam/docs/roles-permissions/commercepricemanagement"
     },
     {
@@ -712,7 +712,7 @@
     },
     {
       "title": "Data Studio",
-      "name": "datastudio.googleapis.com, lookerstudio.googleapis.com",
+      "name": "lookerstudio.googleapis.com, datastudio.googleapis.com",
       "url": "/iam/docs/roles-permissions/datastudio"
     },
     {
@@ -757,7 +757,7 @@
     },
     {
       "title": "Document AI",
-      "name": "documentaicore.googleapis.com, documentai.googleapis.com",
+      "name": "documentai.googleapis.com, documentaicore.googleapis.com",
       "url": "/iam/docs/roles-permissions/clouddocumentai"
     },
     {
@@ -877,7 +877,7 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "firebasenotifications.googleapis.com, firebasecloudmessaging.googleapis.com, cloudmessaging.googleapis.com",
+      "name": "cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com, firebasenotifications.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
@@ -949,6 +949,11 @@
       "title": "Firebase Storage",
       "name": "firebasestorage.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasestorage"
+    },
+    {
+      "title": "Firebase Telemetry",
+      "name": "firebasetelemetry.googleapis.com",
+      "url": "/iam/docs/roles-permissions/firebasetelemetry"
     },
     {
       "title": "Firebase AI Logic",
@@ -1222,7 +1227,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "opsconfigmonitoring.googleapis.com, stackdriver.googleapis.com, monitoring.googleapis.com",
+      "name": "monitoring.googleapis.com, opsconfigmonitoring.googleapis.com, stackdriver.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1257,7 +1262,7 @@
     },
     {
       "title": "NetApp Cloud Volumes Service",
-      "name": "cloudvolumesgcp.api.netapp.com, netappcloudvolumes.googleapis.com",
+      "name": "netappcloudvolumes.googleapis.com, cloudvolumesgcp.api.netapp.com",
       "url": "/iam/docs/roles-permissions/netappcloudvolumes"
     },
     {
@@ -1392,7 +1397,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
+      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1417,7 +1422,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
+      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -1447,7 +1452,7 @@
     },
     {
       "title": "RISC Configuration Service",
-      "name": "riscconfigs.googleapis.com, riscconfigurationservice.googleapis.com",
+      "name": "riscconfigurationservice.googleapis.com, riscconfigs.googleapis.com",
       "url": "/iam/docs/roles-permissions/riscconfigurationservice"
     },
     {
@@ -2685,9 +2690,27 @@
       "priority": 2
     },
     {
+      "title": "Appengine Admin",
+      "name": "roles/appengine.admin",
+      "url": "/iam/docs/roles-permissions/appengine#appengine.admin",
+      "priority": 1
+    },
+    {
       "title": "App Engine Admin",
       "name": "roles/appengine.appAdmin",
       "url": "/iam/docs/roles-permissions/appengine#appengine.appAdmin",
+      "priority": 1
+    },
+    {
+      "title": "Appengine Editor",
+      "name": "roles/appengine.editor",
+      "url": "/iam/docs/roles-permissions/appengine#appengine.editor",
+      "priority": 1
+    },
+    {
+      "title": "Appengine Viewer",
+      "name": "roles/appengine.viewer",
+      "url": "/iam/docs/roles-permissions/appengine#appengine.viewer",
       "priority": 1
     },
     {
@@ -3967,6 +3990,12 @@
       "name": "roles/businessaicode.user",
       "url": "/iam/docs/roles-permissions/businessaicode#businessaicode.user",
       "priority": 2
+    },
+    {
+      "title": "Capacityplanner Admin",
+      "name": "roles/capacityplanner.admin",
+      "url": "/iam/docs/roles-permissions/capacityplanner#capacityplanner.admin",
+      "priority": 1
     },
     {
       "title": "Capacity Planner Viewer",
@@ -8169,6 +8198,12 @@
       "priority": 1
     },
     {
+      "title": "Earthengine Editor",
+      "name": "roles/earthengine.editor",
+      "url": "/iam/docs/roles-permissions/earthengine#earthengine.editor",
+      "priority": 1
+    },
+    {
       "title": "Earth Engine Resource Viewer",
       "name": "roles/earthengine.viewer",
       "url": "/iam/docs/roles-permissions/earthengine#earthengine.viewer",
@@ -9018,6 +9053,12 @@
       "title": "Cloud Storage for Firebase Service Agent",
       "name": "roles/firebasestorage.serviceAgent",
       "url": "/iam/docs/roles-permissions/firebasestorage#firebasestorage.serviceAgent",
+      "priority": 2
+    },
+    {
+      "title": "Firebase Telemetry Service Agent",
+      "name": "roles/firebasetelemetry.serviceAgent",
+      "url": "/iam/docs/roles-permissions/firebasetelemetry#firebasetelemetry.serviceAgent",
       "priority": 2
     },
     {
@@ -13731,6 +13772,18 @@
       "priority": 2
     },
     {
+      "title": "Cloud Run SSH Read Only",
+      "name": "roles/run.sshReader",
+      "url": "/iam/docs/roles-permissions/run#run.sshReader",
+      "priority": 2
+    },
+    {
+      "title": "Cloud Run SSH Root Access",
+      "name": "roles/run.sshRoot",
+      "url": "/iam/docs/roles-permissions/run#run.sshRoot",
+      "priority": 2
+    },
+    {
       "title": "Runapps Admin",
       "name": "roles/runapps.admin",
       "url": "/iam/docs/roles-permissions/runapps#runapps.admin",
@@ -13812,6 +13865,12 @@
       "title": "Secret Manager Admin",
       "name": "roles/secretmanager.admin",
       "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.admin",
+      "priority": 1
+    },
+    {
+      "title": "Secretmanager Editor",
+      "name": "roles/secretmanager.editor",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.editor",
       "priority": 1
     },
     {
@@ -22231,6 +22290,10 @@
       "url": "/iam/docs/roles-permissions/baremetalsolution#baremetalsolution.luns.list"
     },
     {
+      "title": "baremetalsolution.luns.onDemandEvict",
+      "url": "/iam/docs/roles-permissions/baremetalsolution#baremetalsolution.luns.onDemandEvict"
+    },
+    {
       "title": "baremetalsolution.luns.update",
       "url": "/iam/docs/roles-permissions/baremetalsolution#baremetalsolution.luns.update"
     },
@@ -22389,6 +22452,10 @@
     {
       "title": "baremetalsolution.volumes.list",
       "url": "/iam/docs/roles-permissions/baremetalsolution#baremetalsolution.volumes.list"
+    },
+    {
+      "title": "baremetalsolution.volumes.onDemandEvict",
+      "url": "/iam/docs/roles-permissions/baremetalsolution#baremetalsolution.volumes.onDemandEvict"
     },
     {
       "title": "baremetalsolution.volumes.rename",
@@ -25155,6 +25222,10 @@
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.collectors.update"
     },
     {
+      "title": "chronicle.connectorEvents.get",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.connectorEvents.get"
+    },
+    {
       "title": "chronicle.connectorInstanceLogs.get",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.connectorInstanceLogs.get"
     },
@@ -25797,6 +25868,18 @@
     {
       "title": "chronicle.featuredContentNativeDashboards.list",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.featuredContentNativeDashboards.list"
+    },
+    {
+      "title": "chronicle.featuredContentPlaybooks.get",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.featuredContentPlaybooks.get"
+    },
+    {
+      "title": "chronicle.featuredContentPlaybooks.install",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.featuredContentPlaybooks.install"
+    },
+    {
+      "title": "chronicle.featuredContentPlaybooks.list",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.featuredContentPlaybooks.list"
     },
     {
       "title": "chronicle.featuredContentRules.list",
@@ -26857,6 +26940,10 @@
     {
       "title": "chronicle.moduleSettings.get",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.moduleSettings.get"
+    },
+    {
+      "title": "chronicle.moduleSettings.modifyCaseList",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.moduleSettings.modifyCaseList"
     },
     {
       "title": "chronicle.moduleSettings.rebranding",
@@ -63679,6 +63766,14 @@
       "url": "/iam/docs/roles-permissions/run#run.executions.list"
     },
     {
+      "title": "run.instances.sshRead",
+      "url": "/iam/docs/roles-permissions/run#run.instances.sshRead"
+    },
+    {
+      "title": "run.instances.sshRoot",
+      "url": "/iam/docs/roles-permissions/run#run.instances.sshRoot"
+    },
+    {
       "title": "run.jobs.create",
       "url": "/iam/docs/roles-permissions/run#run.jobs.create"
     },
@@ -63725,6 +63820,14 @@
     {
       "title": "run.jobs.setIamPolicy",
       "url": "/iam/docs/roles-permissions/run#run.jobs.setIamPolicy"
+    },
+    {
+      "title": "run.jobs.sshRead",
+      "url": "/iam/docs/roles-permissions/run#run.jobs.sshRead"
+    },
+    {
+      "title": "run.jobs.sshRoot",
+      "url": "/iam/docs/roles-permissions/run#run.jobs.sshRoot"
     },
     {
       "title": "run.jobs.update",
@@ -63815,6 +63918,14 @@
       "url": "/iam/docs/roles-permissions/run#run.services.setIamPolicy"
     },
     {
+      "title": "run.services.sshRead",
+      "url": "/iam/docs/roles-permissions/run#run.services.sshRead"
+    },
+    {
+      "title": "run.services.sshRoot",
+      "url": "/iam/docs/roles-permissions/run#run.services.sshRoot"
+    },
+    {
       "title": "run.services.update",
       "url": "/iam/docs/roles-permissions/run#run.services.update"
     },
@@ -63849,6 +63960,14 @@
     {
       "title": "run.workerpools.setIamPolicy",
       "url": "/iam/docs/roles-permissions/run#run.workerpools.setIamPolicy"
+    },
+    {
+      "title": "run.workerpools.sshRead",
+      "url": "/iam/docs/roles-permissions/run#run.workerpools.sshRead"
+    },
+    {
+      "title": "run.workerpools.sshRoot",
+      "url": "/iam/docs/roles-permissions/run#run.workerpools.sshRoot"
     },
     {
       "title": "run.workerpools.update",
@@ -69261,6 +69380,14 @@
     {
       "title": "workloadmanager.executions.list",
       "url": "/iam/docs/roles-permissions/workloadmanager#workloadmanager.executions.list"
+    },
+    {
+      "title": "workloadmanager.findings.create",
+      "url": "/iam/docs/roles-permissions/workloadmanager#workloadmanager.findings.create"
+    },
+    {
+      "title": "workloadmanager.findings.list",
+      "url": "/iam/docs/roles-permissions/workloadmanager#workloadmanager.findings.list"
     },
     {
       "title": "workloadmanager.insights.delete",
