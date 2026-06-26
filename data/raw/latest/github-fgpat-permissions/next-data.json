@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "93LSD_ToPPeSdV5LxGNiR",
+  "buildId": "2_ZY5M7FkUGBYwHY2WVIE",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -2089,6 +2089,30 @@
             }
           ],
           "title": "Block another user"
+        },
+        "code_quality": {
+          "displayTitle": "Repository permissions for \"Code quality\"",
+          "permissions": [
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "code-quality",
+              "requestPath": "/repos/{owner}/{repo}/code-quality/findings",
+              "slug": "list-code-quality-findings-for-a-repository",
+              "subcategory": "code-quality",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "code-quality",
+              "requestPath": "/repos/{owner}/{repo}/code-quality/findings/{finding_number}",
+              "slug": "get-a-code-quality-finding",
+              "subcategory": "code-quality",
+              "verb": "get"
+            }
+          ],
+          "title": "Code quality"
         },
         "codespaces": {
           "displayTitle": "Repository permissions for \"Codespaces\"",
@@ -9687,6 +9711,12 @@
             "contents": {
               "href": "#repository-permissions-for-attestations",
               "title": "Repository permissions for \"Attestations\""
+            }
+          },
+          {
+            "contents": {
+              "href": "#repository-permissions-for-code-quality",
+              "title": "Repository permissions for \"Code quality\""
             }
           },
           {

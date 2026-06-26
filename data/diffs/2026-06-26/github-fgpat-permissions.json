@@ -1,0 +1,46 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "github:fgpat:repository:code-quality:read"
+      ],
+      "display_name": "Code quality",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-code-quality",
+      "stable_id": "github-fgpat:repository:code-quality"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "github:fgpat:repository:code-quality:read"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "GET /repos/{owner}/{repo}/code-quality/findings -> read",
+          "GET /repos/{owner}/{repo}/code-quality/findings/{finding_number} -> read"
+        ],
+        "grant:levels": [
+          "read"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-06-26T04:46:25Z",
+  "counts": {
+    "added_atoms": 1,
+    "added_objects": 1,
+    "changed_objects": 0,
+    "current_objects": 73,
+    "previous_objects": 72,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-26",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-06-24",
+  "removed_objects": []
+}

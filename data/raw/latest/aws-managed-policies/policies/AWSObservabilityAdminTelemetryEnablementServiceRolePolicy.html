@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: August 01, 2025, 18:04 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 16, 2026, 20:42 UTC</p>
+                <p><b>Edited time:</b>  June 25, 2026, 01:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSObservabilityAdminTelemetryEnablementServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v11 (default)</p>
+        <p><b>Policy version:</b> v12 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -82,7 +82,9 @@
         "logs:DescribeResourcePolicies",
         "logs:ListLogGroups",
         "ec2:MonitorInstances",
-        "logs:DescribeDeliverySources"
+        "logs:DescribeDeliverySources",
+        "logs:DescribeDeliveries",
+        "logs:DescribeDeliveryDestinations"
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
