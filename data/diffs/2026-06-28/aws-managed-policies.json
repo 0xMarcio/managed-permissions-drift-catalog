@@ -1,0 +1,421 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:acm:GetCertificate",
+      "aws:allow_action:acm:ListCertificates",
+      "aws:allow_action:aidevops:UpdateApprovalAction",
+      "aws:allow_action:aidevops:UpdateApprovalAction",
+      "aws:allow_action:bcm-data-exports:Get*",
+      "aws:allow_action:bcm-data-exports:List*",
+      "aws:allow_action:bedrock:GetCustomModel",
+      "aws:allow_action:bedrock:GetFoundationModel",
+      "aws:allow_action:bedrock:GetInferenceProfile",
+      "aws:allow_action:bedrock:GetModelInvocationLoggingConfiguration",
+      "aws:allow_action:bedrock:GetProvisionedModelThroughput",
+      "aws:allow_action:cloudwatch:GetMetricData",
+      "aws:allow_action:config:GetConnector",
+      "aws:allow_action:config:GetConnector",
+      "aws:allow_action:config:ListConfigurationRecorders",
+      "aws:allow_action:config:ListConfigurationRecorders",
+      "aws:allow_action:config:PutThirdPartyServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:PutThirdPartyServiceLinkedConfigurationRecorder",
+      "aws:allow_action:cur:Describe*",
+      "aws:allow_action:cur:Get*",
+      "aws:allow_action:ec2:GetCapacityManagerAttributes",
+      "aws:allow_action:ec2:GetCapacityManagerMetricData",
+      "aws:allow_action:ec2:GetCapacityManagerMonitoredTagKeys",
+      "aws:allow_action:glue:BatchGetJobs",
+      "aws:allow_action:glue:GetClassifier",
+      "aws:allow_action:glue:GetClassifiers",
+      "aws:allow_action:glue:GetCrawlerMetrics",
+      "aws:allow_action:glue:GetCrawlers",
+      "aws:allow_action:glue:GetDataCatalogEncryptionSettings",
+      "aws:allow_action:glue:GetJobBookmark",
+      "aws:allow_action:glue:GetJobRun",
+      "aws:allow_action:glue:GetJobRuns",
+      "aws:allow_action:glue:GetResourcePolicy",
+      "aws:allow_action:glue:GetSecurityConfiguration",
+      "aws:allow_action:glue:GetSecurityConfigurations",
+      "aws:allow_action:glue:GetWorkflow",
+      "aws:allow_action:glue:GetWorkflowRun",
+      "aws:allow_action:inspector2:CreateConnector",
+      "aws:allow_action:inspector2:DeleteConnector",
+      "aws:allow_action:inspector2:ListConnectorScanConfigurations",
+      "aws:allow_action:inspector2:ListConnectors",
+      "aws:allow_action:inspector2:UpdateConnector",
+      "aws:allow_action:inspector2:UpdateConnectorScanConfiguration",
+      "aws:allow_action:securityhub:CreateConnector",
+      "aws:allow_action:securityhub:DeleteConnector",
+      "aws:allow_action:securityhub:DisableSecurityHubFeatureV2",
+      "aws:allow_action:securityhub:EnableSecurityHubFeatureV2",
+      "aws:allow_action:securityhub:UpdateConnector",
+      "aws:allow_action:ssm:ListCloudConnectors",
+      "aws:allow_action:sts:GetWebIdentityToken",
+      "aws:deny_action:sagemaker:CreateNotebookInstanceLifecycleConfig"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "acm:GetCertificate",
+          "acm:ListCertificates",
+          "aidevops:UpdateApprovalAction",
+          "aidevops:UpdateApprovalAction",
+          "bcm-data-exports:Get*",
+          "bcm-data-exports:List*",
+          "bedrock:GetCustomModel",
+          "bedrock:GetFoundationModel",
+          "bedrock:GetInferenceProfile",
+          "bedrock:GetModelInvocationLoggingConfiguration",
+          "bedrock:GetProvisionedModelThroughput",
+          "cloudwatch:GetMetricData",
+          "config:GetConnector",
+          "config:GetConnector",
+          "config:ListConfigurationRecorders",
+          "config:ListConfigurationRecorders",
+          "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+          "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+          "cur:Describe*",
+          "cur:Get*",
+          "ec2:GetCapacityManagerAttributes",
+          "ec2:GetCapacityManagerMetricData",
+          "ec2:GetCapacityManagerMonitoredTagKeys",
+          "glue:BatchGetJobs",
+          "glue:GetClassifier",
+          "glue:GetClassifiers",
+          "glue:GetCrawlerMetrics",
+          "glue:GetCrawlers",
+          "glue:GetDataCatalogEncryptionSettings",
+          "glue:GetJobBookmark",
+          "glue:GetJobRun",
+          "glue:GetJobRuns",
+          "glue:GetResourcePolicy",
+          "glue:GetSecurityConfiguration",
+          "glue:GetSecurityConfigurations",
+          "glue:GetWorkflow",
+          "glue:GetWorkflowRun",
+          "inspector2:CreateConnector",
+          "inspector2:DeleteConnector",
+          "inspector2:ListConnectorScanConfigurations",
+          "inspector2:ListConnectors",
+          "inspector2:UpdateConnector",
+          "inspector2:UpdateConnectorScanConfiguration",
+          "securityhub:CreateConnector",
+          "securityhub:DeleteConnector",
+          "securityhub:DisableSecurityHubFeatureV2",
+          "securityhub:EnableSecurityHubFeatureV2",
+          "securityhub:UpdateConnector",
+          "ssm:ListCloudConnectors",
+          "sts:GetWebIdentityToken"
+        ],
+        "restriction:deny_actions": [
+          "sagemaker:CreateNotebookInstanceLifecycleConfig"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "acm:GetCertificate",
+              "acm:ListCertificates",
+              "bcm-data-exports:Get*",
+              "bcm-data-exports:List*",
+              "bedrock:GetCustomModel",
+              "bedrock:GetFoundationModel",
+              "bedrock:GetInferenceProfile",
+              "bedrock:GetModelInvocationLoggingConfiguration",
+              "bedrock:GetProvisionedModelThroughput",
+              "cur:Describe*",
+              "cur:Get*",
+              "ec2:GetCapacityManagerAttributes",
+              "ec2:GetCapacityManagerMetricData",
+              "ec2:GetCapacityManagerMonitoredTagKeys",
+              "glue:BatchGetJobs",
+              "glue:GetClassifier",
+              "glue:GetClassifiers",
+              "glue:GetCrawlerMetrics",
+              "glue:GetCrawlers",
+              "glue:GetDataCatalogEncryptionSettings",
+              "glue:GetJobBookmark",
+              "glue:GetJobRun",
+              "glue:GetJobRuns",
+              "glue:GetResourcePolicy",
+              "glue:GetSecurityConfiguration",
+              "glue:GetSecurityConfigurations",
+              "glue:GetWorkflow",
+              "glue:GetWorkflowRun"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 26, 2026, 23:42 UTC",
+          "before": "June 24, 2026, 04:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 26, 2026, 23:42 UTC",
+          "before": "June 24, 2026, 04:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "AIDevOpsAgentFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:UpdateApprovalAction"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 26, 2026, 23:57 UTC",
+          "before": "June 12, 2026, 23:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 26, 2026, 23:57 UTC",
+          "before": "June 12, 2026, 23:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
+    },
+    {
+      "display_name": "AIDevOpsOperatorAppAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:UpdateApprovalAction"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 26, 2026, 23:57 UTC",
+          "before": "June 12, 2026, 23:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 26, 2026, 23:57 UTC",
+          "before": "June 12, 2026, 23:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+    },
+    {
+      "display_name": "AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "sagemaker:CreateNotebookInstanceLifecycleConfig"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v12 (default)",
+          "before": "v11 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 27, 2026, 00:57 UTC",
+          "before": "March 11, 2026, 21:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 27, 2026, 00:57 UTC",
+          "before": "March 11, 2026, 21:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary"
+    },
+    {
+      "display_name": "AWSSecurityHubServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:GetMetricData",
+              "config:GetConnector",
+              "config:ListConfigurationRecorders",
+              "config:PutThirdPartyServiceLinkedConfigurationRecorder"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 27, 2026, 00:42 UTC",
+          "before": "April 29, 2026, 14:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 27, 2026, 00:42 UTC",
+          "before": "April 29, 2026, 14:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 7,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSSecurityHubV2ServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "config:GetConnector",
+              "config:ListConfigurationRecorders",
+              "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+              "inspector2:CreateConnector",
+              "inspector2:DeleteConnector",
+              "inspector2:ListConnectorScanConfigurations",
+              "inspector2:ListConnectors",
+              "inspector2:UpdateConnector",
+              "inspector2:UpdateConnectorScanConfiguration",
+              "securityhub:CreateConnector",
+              "securityhub:DeleteConnector",
+              "securityhub:DisableSecurityHubFeatureV2",
+              "securityhub:EnableSecurityHubFeatureV2",
+              "securityhub:UpdateConnector",
+              "sts:GetWebIdentityToken"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 27, 2026, 00:42 UTC",
+          "before": "May 05, 2026, 20:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 27, 2026, 00:42 UTC",
+          "before": "May 05, 2026, 20:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 21,
+          "before": 16,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubV2ServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubV2ServiceRolePolicy"
+    },
+    {
+      "display_name": "AmazonSSMServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ssm:ListCloudConnectors"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v17 (default)",
+          "before": "v16 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 26, 2026, 19:12 UTC",
+          "before": "July 15, 2025, 17:22 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 26, 2026, 19:12 UTC",
+          "before": "July 15, 2025, 17:22 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonSSMServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-28T04:50:41Z",
+  "counts": {
+    "added_atoms": 51,
+    "added_objects": 0,
+    "changed_objects": 7,
+    "current_objects": 1524,
+    "previous_objects": 1524,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-28",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-27",
+  "removed_objects": []
+}

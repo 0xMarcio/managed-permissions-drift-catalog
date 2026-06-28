@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 24, 2026, 04:57 UTC</p>
+                <p><b>Edited time:</b>  June 26, 2026, 23:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsAgentAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v7 (default)</p>
+        <p><b>Policy version:</b> v8 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -93,6 +93,8 @@
         "acm-pca:List*",
         "acm:DescribeCertificate",
         "acm:GetAccountConfiguration",
+        "acm:GetCertificate",
+        "acm:ListCertificates",
         "aidevops:GetAsset",
         "aidevops:GetAssetContent",
         "aidevops:GetAssetFile",
@@ -170,13 +172,20 @@
         "batch:DescribeJobQueues",
         "batch:DescribeSchedulingPolicies",
         "batch:List*",
+        "bcm-data-exports:Get*",
+        "bcm-data-exports:List*",
         "bedrock:GetAgent",
         "bedrock:GetAgentActionGroup",
         "bedrock:GetAgentAlias",
         "bedrock:GetAgentKnowledgeBase",
+        "bedrock:GetCustomModel",
         "bedrock:GetDataSource",
+        "bedrock:GetFoundationModel",
         "bedrock:GetGuardrail",
+        "bedrock:GetInferenceProfile",
         "bedrock:GetKnowledgeBase",
+        "bedrock:GetModelInvocationLoggingConfiguration",
+        "bedrock:GetProvisionedModelThroughput",
         "bedrock:List*",
         "budgets:Describe*",
         "budgets:List*",
@@ -297,6 +306,8 @@
         "connect:Describe*",
         "connect:GetTaskTemplate",
         "connect:List*",
+        "cur:Describe*",
+        "cur:Get*",
         "databrew:Describe*",
         "databrew:List*",
         "datapipeline:Describe*",
@@ -333,6 +344,9 @@
         "dynamodb:List*",
         "ec2:Describe*",
         "ec2:GetAssociatedEnclaveCertificateIamRoles",
+        "ec2:GetCapacityManagerAttributes",
+        "ec2:GetCapacityManagerMetricData",
+        "ec2:GetCapacityManagerMonitoredTagKeys",
         "ec2:GetIpamPoolAllocations",
         "ec2:GetIpamPoolCidrs",
         "ec2:GetManagedPrefixListEntries",
@@ -411,16 +425,30 @@
         "gamelift:List*",
         "globalaccelerator:Describe*",
         "globalaccelerator:List*",
+        "glue:BatchGetJobs",
+        "glue:GetClassifier",
+        "glue:GetClassifiers",
         "glue:GetCrawler",
+        "glue:GetCrawlerMetrics",
+        "glue:GetCrawlers",
         "glue:GetDatabase",
         "glue:GetDatabases",
+        "glue:GetDataCatalogEncryptionSettings",
         "glue:GetJob",
+        "glue:GetJobBookmark",
+        "glue:GetJobRun",
+        "glue:GetJobRuns",
         "glue:GetRegistry",
+        "glue:GetResourcePolicy",
         "glue:GetSchema",
         "glue:GetSchemaVersion",
         "glue:GetTable",
         "glue:GetTags",
         "glue:GetTrigger",
+        "glue:GetSecurityConfiguration",
+        "glue:GetSecurityConfigurations",
+        "glue:GetWorkflow",
+        "glue:GetWorkflowRun",
         "glue:List*",
         "glue:querySchemaVersionMetadata",
         "grafana:Describe*",

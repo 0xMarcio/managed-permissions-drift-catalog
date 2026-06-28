@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 27, 2018, 23:47 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 29, 2026, 14:27 UTC</p>
+                <p><b>Edited time:</b>  June 27, 2026, 00:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSSecurityHubServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v15 (default)</p>
+        <p><b>Policy version:</b> v16 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -154,6 +154,7 @@
       "Effect" : "Allow",
       "Action" : [
         "config:PutServiceLinkedConfigurationRecorder",
+        "config:PutThirdPartyServiceLinkedConfigurationRecorder",
         "config:DeleteServiceLinkedConfigurationRecorder",
         "config:DescribeConfigurationRecorders",
         "config:DescribeConfigurationRecorderStatus"
@@ -161,6 +162,15 @@
       "Resource" : [
         "arn:aws:config:*:*:configuration-recorder/*ConfigurationRecorderForSecurityHubCSPM*"
       ]
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubCSPMServiceRoleConfigListAndGet",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:ListConfigurationRecorders",
+        "config:GetConnector"
+      ],
+      "Resource" : "*"
     },
     <span>{</span>
       "Sid" : "SecurityHubCSPMServiceRoleIamPermissions",
@@ -174,6 +184,12 @@
           "iam:AWSServiceName" : "config.amazonaws.com"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "SecurityHubCSPMServiceRoleConfigMetricsPermissions",
+      "Effect" : "Allow",
+      "Action" : "cloudwatch:GetMetricData",
+      "Resource" : "*"
     }
   ]
 }</code></pre>
