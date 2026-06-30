@@ -1,0 +1,542 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:application-autoscaling:*",
+      "aws:allow_action:application-autoscaling:*",
+      "aws:allow_action:application-autoscaling:DescribeScalingActivities",
+      "aws:allow_action:application-autoscaling:DescribeScalingActivities",
+      "aws:allow_action:application-autoscaling:PutScalingPolicy",
+      "aws:allow_action:application-autoscaling:PutScalingPolicy",
+      "aws:allow_action:application-autoscaling:RegisterScalableTarget",
+      "aws:allow_action:application-autoscaling:RegisterScalableTarget",
+      "aws:allow_action:cloudwatch:DeleteAlarms",
+      "aws:allow_action:cloudwatch:DeleteAlarms",
+      "aws:allow_action:cloudwatch:DescribeAlarms",
+      "aws:allow_action:cloudwatch:DescribeAlarms",
+      "aws:allow_action:cloudwatch:PutMetricAlarm",
+      "aws:allow_action:cloudwatch:PutMetricAlarm",
+      "aws:allow_action:codeconnections:GetConnection",
+      "aws:allow_action:codeconnections:GetHost",
+      "aws:allow_action:codeconnections:ListConnections",
+      "aws:allow_action:codeconnections:ListTagsForResource",
+      "aws:allow_action:codeconnections:UseConnection",
+      "aws:allow_action:codestar-connections:GetConnection",
+      "aws:allow_action:codestar-connections:GetHost",
+      "aws:allow_action:codestar-connections:ListConnections",
+      "aws:allow_action:codestar-connections:ListTagsForResource",
+      "aws:allow_action:codestar-connections:UseConnection",
+      "aws:allow_action:comprehend:*",
+      "aws:allow_action:comprehend:*",
+      "aws:allow_action:comprehend:*",
+      "aws:allow_action:comprehend:BatchDetect*",
+      "aws:allow_action:comprehend:Detect*",
+      "aws:allow_action:datazone:StartCompute",
+      "aws:allow_action:datazone:StartCompute",
+      "aws:allow_action:datazone:StopCompute",
+      "aws:allow_action:datazone:StopCompute",
+      "aws:allow_action:ec2:CreateVpcEndpoint",
+      "aws:allow_action:ec2:CreateVpcEndpoint",
+      "aws:allow_action:ec2:CreateVpcEndpoint",
+      "aws:allow_action:ec2:CreateVpcEndpoint",
+      "aws:allow_action:events:*",
+      "aws:allow_action:events:*",
+      "aws:allow_action:events:DescribeRule",
+      "aws:allow_action:events:DescribeRule",
+      "aws:allow_action:events:ListTagsForResource",
+      "aws:allow_action:events:ListTagsForResource",
+      "aws:allow_action:events:PutRule",
+      "aws:allow_action:events:PutRule",
+      "aws:allow_action:events:PutTargets",
+      "aws:allow_action:events:PutTargets",
+      "aws:allow_action:events:TagResource",
+      "aws:allow_action:events:TagResource",
+      "aws:allow_action:glue:*DataQuality*",
+      "aws:allow_action:quicksight:*",
+      "aws:allow_action:quicksight:*",
+      "aws:allow_action:quicksight:ListNamespaces",
+      "aws:allow_action:quicksight:ListNamespaces",
+      "aws:allow_action:rds:*",
+      "aws:allow_action:rds:*",
+      "aws:allow_action:rds:DescribeDBInstances",
+      "aws:allow_action:rds:DescribeDBInstances",
+      "aws:allow_action:redshift:GetClusterCredentials",
+      "aws:allow_action:redshift:GetClusterCredentials",
+      "aws:allow_action:rekognition:*",
+      "aws:allow_action:rekognition:*",
+      "aws:allow_action:rekognition:*",
+      "aws:allow_action:rekognition:Detect*",
+      "aws:allow_action:s3:AbortMultipartUpload",
+      "aws:allow_action:s3:DeleteObject",
+      "aws:allow_action:sagemaker-data-science-assistant:*",
+      "aws:allow_action:sagemaker-data-science-assistant:*",
+      "aws:allow_action:sagemaker-data-science-assistant:*",
+      "aws:allow_action:sagemaker-data-science-assistant:*",
+      "aws:allow_action:sagemaker:UpdateUserProfile",
+      "aws:allow_action:secretsmanager:PutSecretValue",
+      "aws:allow_action:secretsmanager:PutSecretValue",
+      "aws:allow_action:secretsmanager:PutSecretValue",
+      "aws:allow_action:textract:*",
+      "aws:allow_action:textract:*",
+      "aws:allow_action:textract:*",
+      "aws:allow_action:textract:Analyze*",
+      "aws:allow_action:textract:Get*",
+      "aws:allow_action:textract:Start*"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "application-autoscaling:*",
+          "application-autoscaling:*",
+          "application-autoscaling:DescribeScalingActivities",
+          "application-autoscaling:DescribeScalingActivities",
+          "application-autoscaling:PutScalingPolicy",
+          "application-autoscaling:PutScalingPolicy",
+          "application-autoscaling:RegisterScalableTarget",
+          "application-autoscaling:RegisterScalableTarget",
+          "cloudwatch:DeleteAlarms",
+          "cloudwatch:DeleteAlarms",
+          "cloudwatch:DescribeAlarms",
+          "cloudwatch:DescribeAlarms",
+          "cloudwatch:PutMetricAlarm",
+          "cloudwatch:PutMetricAlarm",
+          "codeconnections:GetConnection",
+          "codeconnections:GetHost",
+          "codeconnections:ListConnections",
+          "codeconnections:ListTagsForResource",
+          "codeconnections:UseConnection",
+          "codestar-connections:GetConnection",
+          "codestar-connections:GetHost",
+          "codestar-connections:ListConnections",
+          "codestar-connections:ListTagsForResource",
+          "codestar-connections:UseConnection",
+          "comprehend:*",
+          "comprehend:*",
+          "comprehend:*",
+          "comprehend:BatchDetect*",
+          "comprehend:Detect*",
+          "datazone:StartCompute",
+          "datazone:StartCompute",
+          "datazone:StopCompute",
+          "datazone:StopCompute",
+          "ec2:CreateVpcEndpoint",
+          "ec2:CreateVpcEndpoint",
+          "ec2:CreateVpcEndpoint",
+          "ec2:CreateVpcEndpoint",
+          "events:*",
+          "events:*",
+          "events:DescribeRule",
+          "events:DescribeRule",
+          "events:ListTagsForResource",
+          "events:ListTagsForResource",
+          "events:PutRule",
+          "events:PutRule",
+          "events:PutTargets",
+          "events:PutTargets",
+          "events:TagResource",
+          "events:TagResource",
+          "glue:*DataQuality*",
+          "quicksight:*",
+          "quicksight:*",
+          "quicksight:ListNamespaces",
+          "quicksight:ListNamespaces",
+          "rds:*",
+          "rds:*",
+          "rds:DescribeDBInstances",
+          "rds:DescribeDBInstances",
+          "redshift:GetClusterCredentials",
+          "redshift:GetClusterCredentials",
+          "rekognition:*",
+          "rekognition:*",
+          "rekognition:*",
+          "rekognition:Detect*",
+          "s3:AbortMultipartUpload",
+          "s3:DeleteObject",
+          "sagemaker-data-science-assistant:*",
+          "sagemaker-data-science-assistant:*",
+          "sagemaker-data-science-assistant:*",
+          "sagemaker-data-science-assistant:*",
+          "sagemaker:UpdateUserProfile",
+          "secretsmanager:PutSecretValue",
+          "secretsmanager:PutSecretValue",
+          "secretsmanager:PutSecretValue",
+          "textract:*",
+          "textract:*",
+          "textract:*",
+          "textract:Analyze*",
+          "textract:Get*",
+          "textract:Start*"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "glue:CancelDataQualityRuleRecommendationRun",
+          "glue:CancelDataQualityRulesetEvaluationRun",
+          "glue:DeleteDataQualityRuleset",
+          "glue:GetDataQualityModel",
+          "glue:GetDataQualityModelResult",
+          "glue:GetDataQualityResult",
+          "glue:GetDataQualityRuleRecommendationRun",
+          "glue:GetDataQualityRuleset",
+          "glue:GetDataQualityRulesetEvaluationRun",
+          "glue:PublishDataQuality",
+          "glue:PutDataQualityProfileAnnotation",
+          "glue:PutDataQualityStatisticAnnotation",
+          "glue:StartDataQualityRuleRecommendationRun",
+          "glue:StartDataQualityRulesetEvaluationRun",
+          "glue:UpdateDataQualityRuleset",
+          "sagemaker-unified-studio-mcp:CallPrivilegedTool",
+          "sagemaker-unified-studio-mcp:CallPrivilegedTool",
+          "sagemaker-unified-studio-mcp:CallReadOnlyTool",
+          "sagemaker-unified-studio-mcp:CallReadOnlyTool",
+          "sagemaker-unified-studio-mcp:InvokeMcp",
+          "sagemaker-unified-studio-mcp:InvokeMcp"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:glue:CancelDataQualityRuleRecommendationRun",
+      "aws:allow_action:glue:CancelDataQualityRulesetEvaluationRun",
+      "aws:allow_action:glue:DeleteDataQualityRuleset",
+      "aws:allow_action:glue:GetDataQualityModel",
+      "aws:allow_action:glue:GetDataQualityModelResult",
+      "aws:allow_action:glue:GetDataQualityResult",
+      "aws:allow_action:glue:GetDataQualityRuleRecommendationRun",
+      "aws:allow_action:glue:GetDataQualityRuleset",
+      "aws:allow_action:glue:GetDataQualityRulesetEvaluationRun",
+      "aws:allow_action:glue:PublishDataQuality",
+      "aws:allow_action:glue:PutDataQualityProfileAnnotation",
+      "aws:allow_action:glue:PutDataQualityStatisticAnnotation",
+      "aws:allow_action:glue:StartDataQualityRuleRecommendationRun",
+      "aws:allow_action:glue:StartDataQualityRulesetEvaluationRun",
+      "aws:allow_action:glue:UpdateDataQualityRuleset",
+      "aws:allow_action:sagemaker-unified-studio-mcp:CallPrivilegedTool",
+      "aws:allow_action:sagemaker-unified-studio-mcp:CallPrivilegedTool",
+      "aws:allow_action:sagemaker-unified-studio-mcp:CallReadOnlyTool",
+      "aws:allow_action:sagemaker-unified-studio-mcp:CallReadOnlyTool",
+      "aws:allow_action:sagemaker-unified-studio-mcp:InvokeMcp",
+      "aws:allow_action:sagemaker-unified-studio-mcp:InvokeMcp"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 29, 2026, 08:57 UTC",
+          "before": "June 11, 2026, 07:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 29, 2026, 08:57 UTC",
+          "before": "June 11, 2026, 07:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "application-autoscaling:DescribeScalingActivities",
+              "application-autoscaling:PutScalingPolicy",
+              "application-autoscaling:RegisterScalableTarget",
+              "cloudwatch:DeleteAlarms",
+              "cloudwatch:DescribeAlarms",
+              "cloudwatch:PutMetricAlarm",
+              "comprehend:*",
+              "ec2:CreateVpcEndpoint",
+              "events:DescribeRule",
+              "events:ListTagsForResource",
+              "events:PutRule",
+              "events:PutTargets",
+              "events:TagResource",
+              "quicksight:ListNamespaces",
+              "rds:DescribeDBInstances",
+              "redshift:GetClusterCredentials",
+              "rekognition:*",
+              "s3:AbortMultipartUpload",
+              "s3:DeleteObject",
+              "sagemaker-data-science-assistant:*",
+              "secretsmanager:PutSecretValue",
+              "textract:*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v23 (default)",
+          "before": "v22 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 72,
+          "before": 70,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "application-autoscaling:*",
+              "comprehend:*",
+              "ec2:CreateVpcEndpoint",
+              "events:*",
+              "quicksight:*",
+              "rds:*",
+              "rekognition:*",
+              "sagemaker-data-science-assistant:*",
+              "secretsmanager:PutSecretValue",
+              "textract:*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v20 (default)",
+          "before": "v19 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "codeconnections:GetConnection",
+              "codeconnections:GetHost",
+              "codeconnections:ListConnections",
+              "codeconnections:ListTagsForResource",
+              "codeconnections:UseConnection",
+              "codestar-connections:GetConnection",
+              "codestar-connections:GetHost",
+              "codestar-connections:ListConnections",
+              "codestar-connections:ListTagsForResource",
+              "codestar-connections:UseConnection",
+              "glue:*DataQuality*"
+            ],
+            "removed": [
+              "glue:CancelDataQualityRuleRecommendationRun",
+              "glue:CancelDataQualityRulesetEvaluationRun",
+              "glue:DeleteDataQualityRuleset",
+              "glue:GetDataQualityModel",
+              "glue:GetDataQualityModelResult",
+              "glue:GetDataQualityResult",
+              "glue:GetDataQualityRuleRecommendationRun",
+              "glue:GetDataQualityRuleset",
+              "glue:GetDataQualityRulesetEvaluationRun",
+              "glue:PublishDataQuality",
+              "glue:PutDataQualityProfileAnnotation",
+              "glue:PutDataQualityStatisticAnnotation",
+              "glue:StartDataQualityRuleRecommendationRun",
+              "glue:StartDataQualityRulesetEvaluationRun",
+              "glue:UpdateDataQualityRuleset",
+              "sagemaker-unified-studio-mcp:CallPrivilegedTool",
+              "sagemaker-unified-studio-mcp:CallReadOnlyTool",
+              "sagemaker-unified-studio-mcp:InvokeMcp"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v70 (default)",
+          "before": "v69 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "application-autoscaling:DescribeScalingActivities",
+              "application-autoscaling:PutScalingPolicy",
+              "application-autoscaling:RegisterScalableTarget",
+              "cloudwatch:DeleteAlarms",
+              "cloudwatch:DescribeAlarms",
+              "cloudwatch:PutMetricAlarm",
+              "comprehend:BatchDetect*",
+              "comprehend:Detect*",
+              "datazone:StartCompute",
+              "datazone:StopCompute",
+              "ec2:CreateVpcEndpoint",
+              "events:DescribeRule",
+              "events:ListTagsForResource",
+              "events:PutRule",
+              "events:PutTargets",
+              "events:TagResource",
+              "quicksight:ListNamespaces",
+              "rds:DescribeDBInstances",
+              "redshift:GetClusterCredentials",
+              "rekognition:Detect*",
+              "sagemaker-data-science-assistant:*",
+              "sagemaker:UpdateUserProfile",
+              "secretsmanager:PutSecretValue",
+              "textract:Analyze*",
+              "textract:Get*",
+              "textract:Start*"
+            ],
+            "removed": [
+              "sagemaker-unified-studio-mcp:CallPrivilegedTool",
+              "sagemaker-unified-studio-mcp:CallReadOnlyTool",
+              "sagemaker-unified-studio-mcp:InvokeMcp"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v27 (default)",
+          "before": "v26 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 63,
+          "before": 57,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "application-autoscaling:*",
+              "comprehend:*",
+              "datazone:StartCompute",
+              "datazone:StopCompute",
+              "ec2:CreateVpcEndpoint",
+              "events:*",
+              "quicksight:*",
+              "rds:*",
+              "rekognition:*",
+              "sagemaker-data-science-assistant:*",
+              "textract:*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v22 (default)",
+          "before": "v21 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 29, 2026, 16:12 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 35,
+          "before": 34,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-06-30T04:43:57Z",
+  "counts": {
+    "added_atoms": 80,
+    "added_objects": 0,
+    "changed_objects": 6,
+    "current_objects": 1524,
+    "previous_objects": 1524,
+    "removed_atoms": 21,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-06-30",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-28",
+  "removed_objects": []
+}
