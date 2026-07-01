@@ -1500,13 +1500,13 @@
       
         track-metadata-eventDetail="nav"
       
-        referrerpolicy="no-referrer-when-downgrade"
-      
-        track-name="console"
-      
         track-type="globalNav"
       
         track-metadata-position="nav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
+      
+        track-name="console"
       
     >
   Console
@@ -1697,13 +1697,13 @@
       
         track-metadata-eventDetail="nav"
       
-        track-type="freeTrial"
-      
         track-metadata-position="nav"
       
         referrerpolicy="no-referrer-when-downgrade"
       
         track-name="gcpCta"
+      
+        track-type="freeTrial"
       
     
     >Start free</a>
@@ -2330,13 +2330,13 @@
       
         track-metadata-eventDetail="nav"
       
-        referrerpolicy="no-referrer-when-downgrade"
-      
-        track-name="console"
-      
         track-type="globalNav"
       
         track-metadata-position="nav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
+      
+        track-name="console"
       
     
      data-category="Site-Wide Custom Events"
@@ -4741,7 +4741,9 @@
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Workflows</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/workloadcertificate"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Workload Certificate</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/workloadmanager"
+      ><span class="devsite-nav-text" tooltip>Workload Certificate</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/workloadidentity"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>Workload Identity Federation</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/workloadmanager"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Workload Manager</span></a></li></ul></div></li></ul></div></li>
 
@@ -5790,6 +5792,8 @@ Grants full access to all resources in Agent Platform.
       <li><code translate="no" dir="ltr">aiplatform.agents.get</code></li>
       <li><code translate="no" dir="ltr">aiplatform.agents.list</code></li>
       <li><code translate="no" dir="ltr">aiplatform.agents.update</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>list</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedSessions.<wbr>aggregate</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedSessions.<wbr>get</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedSessions.<wbr>list</code></li>
@@ -5912,6 +5916,10 @@ Grants full access to all resources in Agent Platform.
       <li><code translate="no" dir="ltr">aiplatform.evaluationItems.get</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>list</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>update</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>list</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationRuns.<wbr>cancel</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationRuns.<wbr>create</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationRuns.<wbr>delete</code></li>
@@ -6289,6 +6297,15 @@ Editor role for aiplatform
       <li><code translate="no" dir="ltr">aiplatform.agents.update</code></li>
     </ul>
   </devsite-expandable>
+  <devsite-expandable id="expandable-aiplatform.editor-aiplatform.analyzedInvocations.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>list</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.editor-aiplatform.analyzedSessions.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.analyzedSessions.*</code></span>
@@ -6547,6 +6564,17 @@ Editor role for aiplatform
       <li><code translate="no" dir="ltr">aiplatform.evaluationItems.get</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>list</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-aiplatform.editor-aiplatform.evaluationMetrics.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.evaluationMetrics.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>list</code></li>
     </ul>
   </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.editor-aiplatform.evaluationRuns.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -7369,6 +7397,15 @@ Grants access to use all resource in Agent Platform.
       <li><code translate="no" dir="ltr">aiplatform.agents.update</code></li>
     </ul>
   </devsite-expandable>
+  <devsite-expandable id="expandable-aiplatform.user-aiplatform.analyzedInvocations.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>list</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.user-aiplatform.analyzedSessions.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.analyzedSessions.*</code></span>
@@ -7609,6 +7646,17 @@ Grants access to use all resource in Agent Platform.
       <li><code translate="no" dir="ltr">aiplatform.evaluationItems.get</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>list</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-aiplatform.user-aiplatform.evaluationMetrics.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.evaluationMetrics.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>list</code></li>
     </ul>
   </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.user-aiplatform.evaluationRuns.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -8278,6 +8326,15 @@ Grants access to view all resource in Agent Platform.
   <p><code translate="no" dir="ltr">aiplatform.agentExamples.list</code></p>
   <p><code translate="no" dir="ltr">aiplatform.agents.get</code></p>
   <p><code translate="no" dir="ltr">aiplatform.agents.list</code></p>
+  <devsite-expandable id="expandable-aiplatform.viewer-aiplatform.analyzedInvocations.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>list</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.viewer-aiplatform.analyzedSessions.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.analyzedSessions.*</code></span>
@@ -8331,6 +8388,8 @@ Grants access to view all resource in Agent Platform.
   <p><code translate="no" dir="ltr">aiplatform.<wbr>evaluationExperiments.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">aiplatform.evaluationItems.get</code></p>
   <p><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>list</code></p>
+  <p><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">aiplatform.evaluationRuns.get</code></p>
   <p><code translate="no" dir="ltr">aiplatform.evaluationRuns.list</code></p>
   <p><code translate="no" dir="ltr">aiplatform.evaluationSets.get</code></p>
@@ -9830,6 +9889,15 @@ Gives Vertex AI Custom Code the proper permissions. The aiplatform.customJobs.cr
       <li><code translate="no" dir="ltr">aiplatform.agents.update</code></li>
     </ul>
   </devsite-expandable>
+  <devsite-expandable id="expandable-aiplatform.customCodeServiceAgent-aiplatform.analyzedInvocations.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>list</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.customCodeServiceAgent-aiplatform.analyzedSessions.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.analyzedSessions.*</code></span>
@@ -10070,6 +10138,17 @@ Gives Vertex AI Custom Code the proper permissions. The aiplatform.customJobs.cr
       <li><code translate="no" dir="ltr">aiplatform.evaluationItems.get</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>list</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-aiplatform.customCodeServiceAgent-aiplatform.evaluationMetrics.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.evaluationMetrics.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>list</code></li>
     </ul>
   </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.customCodeServiceAgent-aiplatform.evaluationRuns.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -11292,6 +11371,15 @@ Gives Vertex AI the permissions it needs to function.
       <li><code translate="no" dir="ltr">aiplatform.agents.update</code></li>
     </ul>
   </devsite-expandable>
+  <devsite-expandable id="expandable-aiplatform.serviceAgent-aiplatform.analyzedInvocations.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>list</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.serviceAgent-aiplatform.analyzedSessions.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.analyzedSessions.*</code></span>
@@ -11532,6 +11620,17 @@ Gives Vertex AI the permissions it needs to function.
       <li><code translate="no" dir="ltr">aiplatform.evaluationItems.get</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>list</code></li>
       <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationItems.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-aiplatform.serviceAgent-aiplatform.evaluationMetrics.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">aiplatform.evaluationMetrics.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>list</code></li>
     </ul>
   </devsite-expandable>
   <devsite-expandable id="expandable-aiplatform.serviceAgent-aiplatform.evaluationRuns.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -13430,6 +13529,141 @@ Vertex AI Service Agent used for tuning in user project.
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="aiplatform.agents.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.customCodeServiceAgent">Vertex AI Custom Code Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.customCodeServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent">Visual Inspection AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>visualinspection.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="aiplatform.analyzedInvocations.get" data-text="aiplatform.analyzedInvocations.get" tabindex="-1"><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>get</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.admin">Agent Platform Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.editor">Aiplatform Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.user">Agent Platform User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.viewer">Agent Platform Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="aiplatform.analyzedInvocations.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.customCodeServiceAgent">Vertex AI Custom Code Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.customCodeServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent">Visual Inspection AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>visualinspection.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="aiplatform.analyzedInvocations.list" data-text="aiplatform.analyzedInvocations.list" tabindex="-1"><code translate="no" dir="ltr">aiplatform.<wbr>analyzedInvocations.<wbr>list</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.admin">Agent Platform Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.editor">Aiplatform Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.user">Agent Platform User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.viewer">Agent Platform Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="aiplatform.analyzedInvocations.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
             <span class="serviceagentrole">Service agent roles</span>
           </p>
@@ -20678,6 +20912,237 @@ Vertex AI Service Agent used for tuning in user project.
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="aiplatform.evaluationItems.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.customCodeServiceAgent">Vertex AI Custom Code Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.customCodeServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent">Visual Inspection AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>visualinspection.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="aiplatform.evaluationMetrics.create" data-text="aiplatform.evaluationMetrics.create" tabindex="-1"><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>create</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.admin">Agent Platform Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.editor">Aiplatform Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.user">Agent Platform User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="aiplatform.evaluationMetrics.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.customCodeServiceAgent">Vertex AI Custom Code Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.customCodeServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent">Visual Inspection AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>visualinspection.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="aiplatform.evaluationMetrics.delete" data-text="aiplatform.evaluationMetrics.delete" tabindex="-1"><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>delete</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.admin">Agent Platform Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.editor">Aiplatform Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.user">Agent Platform User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="aiplatform.evaluationMetrics.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.customCodeServiceAgent">Vertex AI Custom Code Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.customCodeServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent">Visual Inspection AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>visualinspection.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="aiplatform.evaluationMetrics.get" data-text="aiplatform.evaluationMetrics.get" tabindex="-1"><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>get</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.admin">Agent Platform Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.editor">Aiplatform Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.user">Agent Platform User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.viewer">Agent Platform Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="aiplatform.evaluationMetrics.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.customCodeServiceAgent">Vertex AI Custom Code Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.customCodeServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent">Visual Inspection AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>visualinspection.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="aiplatform.evaluationMetrics.list" data-text="aiplatform.evaluationMetrics.list" tabindex="-1"><code translate="no" dir="ltr">aiplatform.<wbr>evaluationMetrics.<wbr>list</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.admin">Agent Platform Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.editor">Aiplatform Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.user">Agent Platform User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.viewer">Agent Platform Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="aiplatform.evaluationMetrics.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
             <span class="serviceagentrole">Service agent roles</span>
           </p>
@@ -40351,7 +40816,7 @@ Vertex AI Service Agent used for tuning in user project.
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-06-25 UTC.</p>
+  <p>Last updated 2026-06-30 UTC.</p>
 </devsite-content-footer>
 
 
@@ -40400,7 +40865,7 @@ Vertex AI Service Agent used for tuning in user project.
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-06-25 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-06-30 UTC."],[],[]]
     </template>
   
 </div>
@@ -40432,7 +40897,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-child_headline="products and pricing"track-name="see all products"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/products/">
+            track-metadata-eventDetail="cloud.google.com/products/"track-metadata-child_headline="products and pricing"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="see all products">
             
           
             See all products
@@ -40449,7 +40914,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-child_headline="products and pricing"track-name="google cloud pricing"track-metadata-position="footer"track-type="footer link">
+            track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-name="google cloud pricing"track-type="footer link"track-metadata-module="footer">
             
           
             Google Cloud pricing
@@ -40466,7 +40931,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="resources"track-name="google cloud marketplace"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-module="footer">
+            track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-name="google cloud marketplace"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-child_headline="resources">
             
           
             Google Cloud Marketplace
@@ -40483,7 +40948,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="engage"track-name="contact sales"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/contact/">
+            track-metadata-position="footer"track-name="contact sales"track-metadata-module="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/contact/"track-metadata-child_headline="engage">
             
               
               
@@ -40510,7 +40975,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-module="footer"track-metadata-position="footer"rel="noopener"track-type="footer link"track-metadata-child_headline="engage"track-name="google cloud community"target="_blank">
+            track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-child_headline="engage"target="_blank"track-metadata-position="footer"rel="noopener"track-name="google cloud community"track-type="footer link"track-metadata-module="footer">
             
           
             Community forums
@@ -40527,7 +40992,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="resources"track-name="support">
+            track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="support"track-type="footer link"track-metadata-module="footer">
             
           
             Support
@@ -40544,7 +41009,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/release-notes/"track-name="release notes"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer">
+            track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-child_headline="resources"track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-name="release notes">
             
           
             Release Notes
@@ -40561,7 +41026,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-metadata-position="footer"target="_blank"track-name="system status"track-metadata-child_headline="resources"track-metadata-eventDetail="status.cloud.google.com"track-metadata-module="footer">
+            track-metadata-position="footer"track-name="system status"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="status.cloud.google.com"track-metadata-child_headline="resources"target="_blank">
             
               
               
@@ -40588,7 +41053,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="github"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/">
+            track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="github"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-child_headline="resources">
             
           
             GitHub
@@ -40605,7 +41070,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="google cloud quickstarts"track-metadata-child_headline="resources">
+            track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="google cloud quickstarts"track-metadata-module="footer"track-type="footer link">
             
           
             Getting Started with Google Cloud
@@ -40622,7 +41087,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/docs/samples"track-name="code samples"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer">
+            track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="code samples"track-type="footer link"track-metadata-module="footer">
             
           
             Code samples
@@ -40639,7 +41104,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-name="cloud architecture center"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/architecture/">
+            track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-name="cloud architecture center"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-child_headline="resources">
             
           
             Cloud Architecture Center
@@ -40656,7 +41121,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-type="footer link"track-metadata-position="footer"track-name="training"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-module="footer">
+            track-metadata-position="footer"track-name="training"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-child_headline="resources">
             
               
               
@@ -40683,7 +41148,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="engage"track-name="blog"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-module="footer">
+            track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-child_headline="engage"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="blog">
             
           
             Blog
@@ -40700,7 +41165,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="engage"track-name="events"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/events/">
+            track-metadata-eventDetail="cloud.google.com/events/"track-metadata-child_headline="engage"track-metadata-position="footer"track-name="events"track-metadata-module="footer"track-type="footer link">
             
           
             Events
@@ -40717,7 +41182,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-position="footer"rel="noopener"track-type="footer link"track-metadata-child_headline="engage"track-name="follow on x"target="_blank"track-metadata-eventDetail="x.com/googlecloud"track-metadata-module="footer">
+            track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"rel="noopener"track-name="follow on x"track-metadata-eventDetail="x.com/googlecloud"track-metadata-child_headline="engage"target="_blank">
             
           
             X (Twitter)
@@ -40734,7 +41199,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloud"track-metadata-child_headline="engage"target="_blank"track-name="google cloud on youtube"rel="noopener"track-metadata-position="footer"track-type="footer link">
+            rel="noopener"track-name="google cloud on youtube"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"target="_blank"track-metadata-child_headline="engage"track-metadata-eventDetail="www.youtube.com/googlecloud">
             
           
             Google Cloud on YouTube
@@ -40751,7 +41216,7 @@ Vertex AI Service Agent used for tuning in user project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-position="footer"rel="noopener"track-type="footer link"track-metadata-child_headline="engage"target="_blank"track-name="google cloud tech on youtube"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-metadata-module="footer">
+            track-metadata-child_headline="engage"target="_blank"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-metadata-module="footer"track-type="footer link"track-name="google cloud tech on youtube"rel="noopener"track-metadata-position="footer">
             
               
               
@@ -40793,17 +41258,17 @@ Vertex AI Service Agent used for tuning in user project.
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-name="about google"
-         
            target="_blank"
+         
+           track-metadata-eventDetail="//about.google/"
+         
+           track-name="about google"
          
            track-metadata-position="footer"
          
-           track-type="footer link"
-         
            track-metadata-module="utility footer"
          
-           track-metadata-eventDetail="//about.google/"
+           track-type="footer link"
          >
           About Google
         </a>
@@ -40819,17 +41284,17 @@ Vertex AI Service Agent used for tuning in user project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           track-metadata-position="footer"
+           track-metadata-module="utility footer"
          
            track-type="footer link"
          
            track-name="privacy"
          
+           track-metadata-position="footer"
+         
            target="_blank"
          
            track-metadata-eventDetail="//policies.google.com/privacy"
-         
-           track-metadata-module="utility footer"
          >
           Privacy
         </a>
@@ -40845,17 +41310,17 @@ Vertex AI Service Agent used for tuning in user project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           track-metadata-module="utility footer"
-         
-           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
-         
            track-name="site terms"
-         
-           target="_blank"
          
            track-metadata-position="footer"
          
            track-type="footer link"
+         
+           track-metadata-module="utility footer"
+         
+           target="_blank"
+         
+           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
          >
           Site terms
         </a>
@@ -40871,13 +41336,13 @@ Vertex AI Service Agent used for tuning in user project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-type="footer link"
+           track-metadata-eventDetail="//cloud.google.com/product-terms"
          
            track-metadata-position="footer"
          
            track-name="google cloud terms"
          
-           track-metadata-eventDetail="//cloud.google.com/product-terms"
+           track-type="footer link"
          
            track-metadata-module="utility footer"
          >
@@ -40895,17 +41360,17 @@ Vertex AI Service Agent used for tuning in user project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-metadata-module="utility footer"
+           track-metadata-eventDetail="#"
          
            aria-hidden="true"
          
-           track-metadata-eventDetail="#"
-         
-           track-name="Manage cookies"
+           track-metadata-module="utility footer"
          
            track-type="footer link"
          
            track-metadata-position="footer"
+         
+           track-name="Manage cookies"
          >
           Manage cookies
         </a>
@@ -40921,11 +41386,11 @@ Vertex AI Service Agent used for tuning in user project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Our third decade of climate action: join us link"
          
+           track-metadata-position="footer"
+         
            track-name="Our third decade of climate action: join us"
          
            track-type="footer link"
-         
-           track-metadata-position="footer"
          
            track-metadata-module="utility footer"
          
@@ -40947,15 +41412,15 @@ Vertex AI Service Agent used for tuning in user project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-metadata-eventDetail="/newsletter/"
+           track-type="footer link"
          
            track-metadata-module="utility footer"
-         
-           track-type="footer link"
          
            track-metadata-position="footer"
          
            track-name="subscribe"
+         
+           track-metadata-eventDetail="/newsletter/"
          >
           Subscribe
         </a>
@@ -41043,12 +41508,12 @@ Vertex AI Service Agent used for tuning in user project.
   <cloudx-free-trial-eligible-store freeTrialEligible="true"></cloudx-free-trial-eligible-store>
 
     
-<script nonce="4ThIRs/O4bu9x0EXH8a2ZJU9hCKIT3">
+<script nonce="FY7JiXQ4uDDxg3ty5kVE9JRnQeBHnp">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Profiles__enable_awarding_url","Profiles__enable_completequiz_endpoint","Cloud__fast_free_trial","EngEduTelemetry__enable_engedu_telemetry","Profiles__enable_recognition_badges","BookNav__enable_tenant_cache_key","MiscFeatureFlags__enable_firebase_utm","SignIn__enable_l1_signup_flow","Concierge__enable_remove_info_panel_tags","DevPro__enable_devpro_offers","TpcFeatures__enable_unmirrored_page_left_nav","CloudShell__cloud_code_overflow_menu","Search__enable_ai_search_summaries_for_all","Analytics__enable_clearcut_logging","Search__enable_dynamic_content_confidential_banner","DevPro__enable_devsite_captcha","MiscFeatureFlags__enable_view_transitions","DevPro__enable_google_payments","DevPro__enable_free_benefits","DevPro__enable_google_one_card","Analytics__enable_devpro_interaction_logging","Profiles__enable_playlist_community_acl","Concierge__enable_pushui","Search__enable_suggestions_from_borg","DevPro__enable_embed_profile_creation","Search__enable_page_map","Cloud__enable_cloud_dlp_service","Profiles__enable_completecodelab_endpoint","DevPro__enable_google_payments_buyflow","Cloud__cache_serialized_dynamic_content","MiscFeatureFlags__enable_project_variables","MiscFeatureFlags__enable_dark_theme","OnSwitch__enable","MiscFeatureFlags__developers_footer_dark_image","Profiles__require_profile_eligibility_for_signin","DevPro__enable_credits_banner","Cloud__enable_legacy_calculator_redirect","DevPro__enable_firebase_workspaces_card","Cloud__enable_free_trial_server_call","Profiles__enable_stripe_subscription_management","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_callout_notifications","Profiles__enable_developer_profile_pages_as_content","AIStudioInteractionsToggle__interactions_are_default","DevPro__enable_nvidia_credits_card","Profiles__enable_auto_apply_credits","CloudShell__cloud_shell_button","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__enable_variable_operator","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_public_developer_profiles","Profiles__enable_page_saving","DevPro__enable_developer_subscriptions","Cloud__enable_cloud_shell","Profiles__enable_developer_profile_benefits_ui_redesign","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__developers_footer_image","Profiles__enable_user_type","DevPro__enable_enterprise","Experiments__reqs_query_experiments","Profiles__enable_profile_collections","MiscFeatureFlags__enable_explicit_template_dependencies","MiscFeatureFlags__remove_cross_domain_tracking_params","DevPro__enable_code_assist","MiscFeatureFlags__enable_variable_operator_index_yaml","Search__enable_ai_eligibility_checks","Concierge__enable_actions_menu","Concierge__enable_devsite_llm_tools","Profiles__enable_complete_playlist_endpoint","Concierge__enable_concierge_restricted","Cloud__enable_cloud_shell_fte_user_flow","TpcFeatures__proxy_prod_host","DevPro__remove_eu_tax_intake_form","MiscFeatureFlags__fix_lower_breadcrumbs","Profiles__enable_join_program_group_endpoint","Cloud__enable_llm_concierge_chat","MiscFeatureFlags__enable_framebox_badge_methods","MiscFeatureFlags__enable_appearance_cookies","DevPro__enable_g1_integration","Profiles__enable_targeted_hero","DevPro__enable_vertex_credit_card","DevPro__enable_cloud_innovators_plus","Profiles__enable_developer_profiles_callout","DevPro__enable_g1_ineligible_redirect","Profiles__enable_purchase_prompts"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Cloud__fast_free_trial","DevPro__enable_enterprise","Profiles__enable_completequiz_endpoint","DevPro__enable_developer_subscriptions","Cloud__enable_cloudx_experiment_ids","DevPro__enable_g1_ineligible_redirect","MiscFeatureFlags__enable_variable_operator_index_yaml","Profiles__enable_purchase_prompts","DevPro__enable_g1_integration","Search__enable_page_map","MiscFeatureFlags__enable_explicit_template_dependencies","MiscFeatureFlags__enable_variable_operator","Concierge__enable_remove_info_panel_tags","EngEduTelemetry__enable_engedu_telemetry","Profiles__enable_dashboard_curated_recommendations","DevPro__enable_google_payments_buyflow","DevPro__enable_free_benefits","Profiles__enable_playlist_community_acl","Concierge__enable_actions_menu","Profiles__enable_developer_profiles_callout","Profiles__enable_recognition_badges","TpcFeatures__enable_unmirrored_page_left_nav","SignIn__enable_l1_signup_flow","Search__enable_ai_search_summaries_for_all","Profiles__enable_complete_playlist_endpoint","Profiles__enable_callout_notifications","TpcFeatures__proxy_prod_host","MiscFeatureFlags__enable_dark_theme","DevPro__enable_credits_banner","DevPro__enable_embed_profile_creation","Search__enable_suggestions_from_borg","MiscFeatureFlags__enable_appearance_cookies","Cloud__enable_legacy_calculator_redirect","DevPro__enable_devpro_offers","OnSwitch__enable","Cloud__enable_cloud_dlp_service","Cloud__enable_free_trial_server_call","MiscFeatureFlags__enable_project_variables","Profiles__enable_public_developer_profiles","Cloud__enable_llm_concierge_chat","AIStudioInteractionsToggle__interactions_are_default","DevPro__enable_google_payments","DevPro__remove_eu_tax_intake_form","Search__enable_dynamic_content_confidential_banner","Cloud__cache_serialized_dynamic_content","Analytics__enable_devpro_interaction_logging","Profiles__enable_completecodelab_endpoint","CloudShell__cloud_code_overflow_menu","DevPro__enable_google_one_card","Concierge__enable_concierge_restricted","MiscFeatureFlags__enable_explain_this_code","BookNav__enable_tenant_cache_key","MiscFeatureFlags__developers_footer_image","Profiles__enable_join_program_group_endpoint","MiscFeatureFlags__enable_framebox_badge_methods","DevPro__enable_vertex_credit_card","Cloud__enable_cloud_shell_fte_user_flow","Experiments__reqs_query_experiments","Analytics__enable_clearcut_logging","Profiles__enable_auto_apply_credits","Profiles__enable_stripe_subscription_management","DevPro__enable_devsite_captcha","DevPro__enable_firebase_workspaces_card","Profiles__enable_awarding_url","Profiles__enable_page_saving","Profiles__enable_user_type","MiscFeatureFlags__remove_cross_domain_tracking_params","DevPro__enable_cloud_innovators_plus","DevPro__enable_nvidia_credits_card","Profiles__enable_targeted_hero","MiscFeatureFlags__developers_footer_dark_image","MiscFeatureFlags__enable_firebase_utm","CloudShell__cloud_shell_button","Cloud__enable_cloud_shell","MiscFeatureFlags__fix_lower_breadcrumbs","Profiles__enable_developer_profile_pages_as_content","Profiles__enable_profile_collections","DevPro__enable_code_assist","Concierge__enable_pushui","MiscFeatureFlags__gdp_dashboard_reskin_enabled","MiscFeatureFlags__enable_view_transitions","Concierge__enable_devsite_llm_tools","Profiles__require_profile_eligibility_for_signin","Search__enable_ai_eligibility_checks","Profiles__enable_developer_profile_benefits_ui_redesign"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 

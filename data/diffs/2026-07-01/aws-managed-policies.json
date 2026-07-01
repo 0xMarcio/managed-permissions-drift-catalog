@@ -1,0 +1,260 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:partnercentral:CreateRevenueAttribution",
+        "aws:allow_action:partnercentral:GetRevenueAttribution",
+        "aws:allow_action:partnercentral:ListRevenueAttributions",
+        "aws:allow_action:partnercentral:ListTagsForResource",
+        "aws:allow_action:partnercentral:TagResource",
+        "aws:allow_action:partnercentral:UntagResource",
+        "aws:allow_action:partnercentral:UpdateRevenueAttribution"
+      ],
+      "display_name": "AWSRevenueAttributionManagement",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRevenueAttributionManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSRevenueAttributionManagement"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:organizations:DescribeAccount",
+        "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+        "aws:allow_action:organizations:ListAccounts"
+      ],
+      "display_name": "AccountAccessManagerServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountAccessManagerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AccountAccessManagerServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:acm:DescribeAcmeAccount",
+      "aws:allow_action:acm:DescribeAcmeDomainValidation",
+      "aws:allow_action:acm:DescribeAcmeEndpoint",
+      "aws:allow_action:acm:DescribeAcmeExternalAccountBinding",
+      "aws:allow_action:acm:ListAcmeAccounts",
+      "aws:allow_action:acm:ListAcmeDomainValidations",
+      "aws:allow_action:acm:ListAcmeEndpoints",
+      "aws:allow_action:acm:ListAcmeExternalAccountBindings",
+      "aws:allow_action:acm:ListTagsForResource",
+      "aws:allow_action:datazone:*Compute*",
+      "aws:allow_action:ec2:CancelCapacityReservation",
+      "aws:allow_action:ec2:CreateCapacityReservation",
+      "aws:allow_action:ec2:DescribeCapacityReservations",
+      "aws:allow_action:ec2:ModifyCapacityReservation",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:partnercentral:CreateRevenueAttribution",
+      "aws:allow_action:partnercentral:GetRevenueAttribution",
+      "aws:allow_action:partnercentral:ListRevenueAttributions",
+      "aws:allow_action:partnercentral:ListTagsForResource",
+      "aws:allow_action:partnercentral:TagResource",
+      "aws:allow_action:partnercentral:UntagResource",
+      "aws:allow_action:partnercentral:UpdateRevenueAttribution",
+      "aws:allow_action:servicequotas:ListServiceQuotas"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "acm:DescribeAcmeAccount",
+          "acm:DescribeAcmeDomainValidation",
+          "acm:DescribeAcmeEndpoint",
+          "acm:DescribeAcmeExternalAccountBinding",
+          "acm:ListAcmeAccounts",
+          "acm:ListAcmeDomainValidations",
+          "acm:ListAcmeEndpoints",
+          "acm:ListAcmeExternalAccountBindings",
+          "acm:ListTagsForResource",
+          "datazone:*Compute*",
+          "ec2:CancelCapacityReservation",
+          "ec2:CreateCapacityReservation",
+          "ec2:DescribeCapacityReservations",
+          "ec2:ModifyCapacityReservation",
+          "organizations:DescribeAccount",
+          "organizations:ListAWSServiceAccessForOrganization",
+          "organizations:ListAccounts",
+          "partnercentral:CreateRevenueAttribution",
+          "partnercentral:GetRevenueAttribution",
+          "partnercentral:ListRevenueAttributions",
+          "partnercentral:ListTagsForResource",
+          "partnercentral:TagResource",
+          "partnercentral:UntagResource",
+          "partnercentral:UpdateRevenueAttribution",
+          "servicequotas:ListServiceQuotas"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSCertificateManagerReadOnly",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "acm:DescribeAcmeAccount",
+              "acm:DescribeAcmeDomainValidation",
+              "acm:DescribeAcmeEndpoint",
+              "acm:DescribeAcmeExternalAccountBinding",
+              "acm:ListAcmeAccounts",
+              "acm:ListAcmeDomainValidations",
+              "acm:ListAcmeEndpoints",
+              "acm:ListAcmeExternalAccountBindings",
+              "acm:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 30, 2026, 16:57 UTC",
+          "before": "March 31, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 30, 2026, 16:57 UTC",
+          "before": "March 31, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCertificateManagerReadOnly.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSCertificateManagerReadOnly"
+    },
+    {
+      "display_name": "AmazonSageMakerModelCustomizationCoreAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "servicequotas:ListServiceQuotas"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 30, 2026, 16:57 UTC",
+          "before": "May 26, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 30, 2026, 16:57 UTC",
+          "before": "May 26, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerModelCustomizationCoreAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerModelCustomizationCoreAccess"
+    },
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:*Compute*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v71 (default)",
+          "before": "v70 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 29, 2026, 20:27 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 29, 2026, 20:27 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    },
+    {
+      "display_name": "AWSServiceRolePolicyForWorkspacesInstances",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:CancelCapacityReservation",
+              "ec2:CreateCapacityReservation",
+              "ec2:DescribeCapacityReservations",
+              "ec2:ModifyCapacityReservation"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 29, 2026, 23:42 UTC",
+          "before": "April 07, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 29, 2026, 23:42 UTC",
+          "before": "April 07, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 5,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRolePolicyForWorkspacesInstances.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForWorkspacesInstances"
+    }
+  ],
+  "compared_at_utc": "2026-07-01T04:52:25Z",
+  "counts": {
+    "added_atoms": 25,
+    "added_objects": 2,
+    "changed_objects": 4,
+    "current_objects": 1526,
+    "previous_objects": 1524,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-01",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-06-30",
+  "removed_objects": []
+}
