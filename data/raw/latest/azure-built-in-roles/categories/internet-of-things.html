@@ -76,7 +76,7 @@
 	
 		<meta name="ms.author" content="rolyon" />
 	
-		<meta name="ms.date" content="2026-06-20T00:00:00Z" />
+		<meta name="ms.date" content="2026-07-01T00:00:00Z" />
 	
 		<meta name="ms.custom" content="generated" />
 	
@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="aae4d53d-0e75-9cf5-6cd5-ef838dc06fcf" />
 	
-		<meta name="updated_at" content="2026-06-20T22:11:00Z" />
+		<meta name="updated_at" content="2026-07-01T23:48:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/internet-of-things.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/8d43c807a29f2615429206770d749f72047ab5c8/articles/role-based-access-control/built-in-roles/internet-of-things.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/1b4e136a1da731e1ed16444eb6ce5701bcd8c0f4/articles/role-based-access-control/built-in-roles/internet-of-things.md" />
 	
-		<meta name="git_commit_id" content="8d43c807a29f2615429206770d749f72047ab5c8" />
+		<meta name="git_commit_id" content="1b4e136a1da731e1ed16444eb6ce5701bcd8c0f4" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="2431" />
+		<meta name="word_count" content="2482" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/internet-of-things" />
 	
@@ -112,7 +112,7 @@
 	
 		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/internet-of-things.md" />
 	
-		<meta name="previous_tlsh_hash" content="796FCA62EE168217FB67074FBC17BF006FBC780DF5E8BBC01A36812B55859B1A264E24BFDB11AB6AE627C56B21437CD31452A43FD3CF5850CB0016A9982A9FA77D8E93B54C" />
+		<meta name="previous_tlsh_hash" content="225ECC62FF128217FB67074FBC17BF005FBC780DF5E8BAC01A36812B55859B1A264E24BFDB10AB6BE627C66B21437CD31452A43FD3CF5850CB0016A9982A9FA77D8E93B54C" />
 	
 		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/internet-of-things.md" />
 	
@@ -208,6 +208,10 @@
       {
         "name": "rolyon",
         "url": "https://github.com/rolyon"
+      },
+      {
+        "name": "FaithOmbongi",
+        "url": "https://github.com/FaithOmbongi"
       },
       {
         "name": "SoniaLopezBravo",
@@ -752,6 +756,70 @@
 		</nav>
 	
 					<div class="content"><p>This article lists the Azure built-in roles in the Internet of Things category.</p>
+<h2 id="azure-device-registry-administrator">Azure Device Registry Administrator</h2>
+<p>Azure Device Registry Administrator</p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/internet-of-things#microsoftdeviceregistry" data-linktype="relative-path">Microsoft.DeviceRegistry</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Azure Device Registry Administrator",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/12675fd7-7f59-493f-9201-f7944860a2f1",
+  "name": "12675fd7-7f59-493f-9201-f7944860a2f1",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DeviceRegistry/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Device Registry Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
 <h2 id="azure-device-registry-contributor">Azure Device Registry Contributor</h2>
 <p>Allows for full access to IoT devices within Azure Device Registry Namespace.</p>
 <div class="mx-tableFixed">
@@ -1434,8 +1502,8 @@
 <td></td>
 </tr>
 <tr>
-<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, b24988ac-6180-42a0-ab88-20f7382dd24c}))</td>
-<td>Add role assignments for the following roles:<br>Storage Blob Data Contributor<br>Contributor</td>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, 12675fd7-7f59-493f-9201-f7944860a2f1}))</td>
+<td>Add role assignments for the following roles:<br>Storage Blob Data Contributor<br>Azure Device Registry Administrator</td>
 </tr>
 </tbody>
 </table>
@@ -1465,7 +1533,7 @@
       "dataActions": [],
       "notDataActions": [],
       "conditionVersion": "2.0",
-      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, b24988ac-6180-42a0-ab88-20f7382dd24c}))"
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, 12675fd7-7f59-493f-9201-f7944860a2f1}))"
     }
   ],
   "roleName": "Azure IoT Operations Onboarding",
@@ -2982,11 +3050,11 @@
 				<li class="visibility-hidden-visual-diff">
 			<span class="badge badge-sm text-wrap-pretty">
 				<span>Last updated on <local-time format="twoDigitNumeric"
-		datetime="2026-06-20T08:00:00.000Z"
+		datetime="2026-07-01T08:00:00.000Z"
 		data-article-date-source="calculated"
 		class="is-invisible"
 	>
-		2026-06-20
+		2026-07-01
 	</local-time></span>
 			</span>
 		</li>

@@ -1,0 +1,646 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:artifact:CreateComplianceInquiry",
+        "aws:allow_action:artifact:ExportComplianceInquiry",
+        "aws:allow_action:artifact:GetComplianceInquiryMetadata",
+        "aws:allow_action:artifact:ListComplianceInquiries",
+        "aws:allow_action:artifact:ListComplianceInquiryQueries"
+      ],
+      "display_name": "AWSArtifactComplianceInquiriesFullAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesFullAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:artifact:ExportComplianceInquiry",
+        "aws:allow_action:artifact:GetComplianceInquiryMetadata",
+        "aws:allow_action:artifact:ListComplianceInquiries",
+        "aws:allow_action:artifact:ListComplianceInquiryQueries"
+      ],
+      "display_name": "AWSArtifactComplianceInquiriesReadOnlyAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesReadOnlyAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:aws-marketplace:DescribeEntity",
+        "aws:allow_action:aws-marketplace:ListEntities",
+        "aws:allow_action:partnercentral:CreateMarketplaceRevenueShare",
+        "aws:allow_action:partnercentral:CreateMarketplaceRevenueShareAllocation",
+        "aws:allow_action:partnercentral:CreateRevenueAttribution",
+        "aws:allow_action:partnercentral:GetMarketplaceRevenueShare",
+        "aws:allow_action:partnercentral:GetMarketplaceRevenueShareAllocation",
+        "aws:allow_action:partnercentral:GetOpportunity",
+        "aws:allow_action:partnercentral:GetPartner",
+        "aws:allow_action:partnercentral:GetRevenueAttribution",
+        "aws:allow_action:partnercentral:GetRevenueAttributionAllocation",
+        "aws:allow_action:partnercentral:GetRevenueAttributionAllocationsTask",
+        "aws:allow_action:partnercentral:ListMarketplaceRevenueShareAllocations",
+        "aws:allow_action:partnercentral:ListMarketplaceRevenueShares",
+        "aws:allow_action:partnercentral:ListOpportunities",
+        "aws:allow_action:partnercentral:ListPartners",
+        "aws:allow_action:partnercentral:ListRevenueAttributionAllocations",
+        "aws:allow_action:partnercentral:ListRevenueAttributions",
+        "aws:allow_action:partnercentral:ListTagsForResource",
+        "aws:allow_action:partnercentral:StartRevenueAttributionAllocationsTask",
+        "aws:allow_action:partnercentral:TagResource",
+        "aws:allow_action:partnercentral:UntagResource",
+        "aws:allow_action:partnercentral:UpdateMarketplaceRevenueShareAllocation",
+        "aws:allow_action:partnercentral:UpdateRevenueAttribution",
+        "aws:allow_action:q:GetConversation",
+        "aws:allow_action:q:ListConversations",
+        "aws:allow_action:q:PassRequest",
+        "aws:allow_action:q:SendMessage",
+        "aws:allow_action:q:StartConversation"
+      ],
+      "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:iam:PassRole",
+        "aws:allow_action:s3:GetObject",
+        "aws:allow_action:s3:ListBucket",
+        "aws:allow_action:s3:PutObject",
+        "aws:allow_action:securityagent:BatchGetFindings",
+        "aws:allow_action:securityagent:CreateCodeReview",
+        "aws:allow_action:securityagent:ListAgentSpaces",
+        "aws:allow_action:securityagent:ListCodeReviewJobsForCodeReview",
+        "aws:allow_action:securityagent:ListFindings",
+        "aws:allow_action:securityagent:StartCodeRemediation",
+        "aws:allow_action:securityagent:StartCodeReviewJob"
+      ],
+      "display_name": "AWSTransformSecurityAgentExecutorAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:artifact:CreateComplianceInquiry",
+      "aws:allow_action:artifact:ExportComplianceInquiry",
+      "aws:allow_action:artifact:ExportComplianceInquiry",
+      "aws:allow_action:artifact:GetComplianceInquiryMetadata",
+      "aws:allow_action:artifact:GetComplianceInquiryMetadata",
+      "aws:allow_action:artifact:ListComplianceInquiries",
+      "aws:allow_action:artifact:ListComplianceInquiries",
+      "aws:allow_action:artifact:ListComplianceInquiryQueries",
+      "aws:allow_action:artifact:ListComplianceInquiryQueries",
+      "aws:allow_action:auditmanager:ListAssessmentFrameworks",
+      "aws:allow_action:auditmanager:ListControls",
+      "aws:allow_action:aws-marketplace:DescribeEntity",
+      "aws:allow_action:aws-marketplace:ListEntities",
+      "aws:allow_action:bedrock-agentcore:GatewayAssociateWebACL",
+      "aws:allow_action:bedrock-agentcore:GatewayAssociateWebACL",
+      "aws:allow_action:bedrock-agentcore:GatewayDisassociateWebACL",
+      "aws:allow_action:bedrock-agentcore:GatewayDisassociateWebACL",
+      "aws:allow_action:bedrock-agentcore:GatewayGetWebACLForResource",
+      "aws:allow_action:bedrock-agentcore:GatewayGetWebACLForResource",
+      "aws:allow_action:bedrock-agentcore:GatewayGetWebACLForResource",
+      "aws:allow_action:bedrock-agentcore:GatewayGetWebACLForResource",
+      "aws:allow_action:bedrock-agentcore:GatewayListResourcesForWebACL",
+      "aws:allow_action:bedrock-agentcore:GatewayListResourcesForWebACL",
+      "aws:allow_action:bedrock-agentcore:GatewayListResourcesForWebACL",
+      "aws:allow_action:bedrock-agentcore:GatewayListResourcesForWebACL",
+      "aws:allow_action:bedrock-agentcore:GetGateway",
+      "aws:allow_action:bedrock-agentcore:GetGateway",
+      "aws:allow_action:bedrock-agentcore:ListGateways",
+      "aws:allow_action:bedrock-agentcore:ListGateways",
+      "aws:allow_action:cloudhsm:DescribeClusters",
+      "aws:allow_action:cloudtrail:ListTags",
+      "aws:allow_action:connect:ListQueueEmailAddresses",
+      "aws:allow_action:gamelift:ListFleets",
+      "aws:allow_action:gamelift:ListGameServerGroups",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:iot:ListCustomMetrics",
+      "aws:allow_action:iot:ListDimensions",
+      "aws:allow_action:iot:ListOTAUpdates",
+      "aws:allow_action:iot:ListStreams",
+      "aws:allow_action:iot:ListTunnels",
+      "aws:allow_action:logs:ListTagsForResource",
+      "aws:allow_action:partnercentral:CreateMarketplaceRevenueShare",
+      "aws:allow_action:partnercentral:CreateMarketplaceRevenueShareAllocation",
+      "aws:allow_action:partnercentral:CreateRevenueAttribution",
+      "aws:allow_action:partnercentral:GetBenefitApplication",
+      "aws:allow_action:partnercentral:GetMarketplaceRevenueShare",
+      "aws:allow_action:partnercentral:GetMarketplaceRevenueShareAllocation",
+      "aws:allow_action:partnercentral:GetOpportunity",
+      "aws:allow_action:partnercentral:GetPartner",
+      "aws:allow_action:partnercentral:GetRevenueAttribution",
+      "aws:allow_action:partnercentral:GetRevenueAttributionAllocation",
+      "aws:allow_action:partnercentral:GetRevenueAttributionAllocationsTask",
+      "aws:allow_action:partnercentral:ListBenefitApplications",
+      "aws:allow_action:partnercentral:ListMarketplaceRevenueShareAllocations",
+      "aws:allow_action:partnercentral:ListMarketplaceRevenueShares",
+      "aws:allow_action:partnercentral:ListOpportunities",
+      "aws:allow_action:partnercentral:ListPartners",
+      "aws:allow_action:partnercentral:ListRevenueAttributionAllocations",
+      "aws:allow_action:partnercentral:ListRevenueAttributions",
+      "aws:allow_action:partnercentral:ListTagsForResource",
+      "aws:allow_action:partnercentral:ListTagsForResource",
+      "aws:allow_action:partnercentral:StartRevenueAttributionAllocationsTask",
+      "aws:allow_action:partnercentral:TagResource",
+      "aws:allow_action:partnercentral:UntagResource",
+      "aws:allow_action:partnercentral:UpdateMarketplaceRevenueShareAllocation",
+      "aws:allow_action:partnercentral:UpdateRevenueAttribution",
+      "aws:allow_action:q:GetConversation",
+      "aws:allow_action:q:ListConversations",
+      "aws:allow_action:q:PassRequest",
+      "aws:allow_action:q:SendMessage",
+      "aws:allow_action:q:StartConversation",
+      "aws:allow_action:quicksight:ListFolders",
+      "aws:allow_action:rbin:ListRules",
+      "aws:allow_action:rbin:ListTagsForResource",
+      "aws:allow_action:rekognition:ListCollections",
+      "aws:allow_action:resiliencehub:ListAppAssessments",
+      "aws:allow_action:s3:GetObject",
+      "aws:allow_action:s3:ListBucket",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:s3vectors:GetIndex",
+      "aws:allow_action:s3vectors:GetVectorBucket",
+      "aws:allow_action:s3vectors:ListIndexes",
+      "aws:allow_action:s3vectors:ListVectorBuckets",
+      "aws:allow_action:securityagent:BatchGetFindings",
+      "aws:allow_action:securityagent:CreateCodeReview",
+      "aws:allow_action:securityagent:ListAgentSpaces",
+      "aws:allow_action:securityagent:ListCodeReviewJobsForCodeReview",
+      "aws:allow_action:securityagent:ListFindings",
+      "aws:allow_action:securityagent:StartCodeRemediation",
+      "aws:allow_action:securityagent:StartCodeReviewJob",
+      "aws:allow_action:ses:ListEmailTemplates",
+      "aws:allow_action:ssm:GetParameter",
+      "aws:allow_action:swf:ListDomains",
+      "aws:allow_action:tax:ListTaxRegistrations",
+      "aws:allow_action:tax:PutTaxRegistration",
+      "aws:allow_action:vpc-lattice:GetAccessLogSubscription",
+      "aws:allow_action:vpc-lattice:ListAccessLogSubscriptions",
+      "aws:allow_action:vpc-lattice:ListTagsForResource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "artifact:CreateComplianceInquiry",
+          "artifact:ExportComplianceInquiry",
+          "artifact:ExportComplianceInquiry",
+          "artifact:GetComplianceInquiryMetadata",
+          "artifact:GetComplianceInquiryMetadata",
+          "artifact:ListComplianceInquiries",
+          "artifact:ListComplianceInquiries",
+          "artifact:ListComplianceInquiryQueries",
+          "artifact:ListComplianceInquiryQueries",
+          "auditmanager:ListAssessmentFrameworks",
+          "auditmanager:ListControls",
+          "aws-marketplace:DescribeEntity",
+          "aws-marketplace:ListEntities",
+          "bedrock-agentcore:GatewayAssociateWebACL",
+          "bedrock-agentcore:GatewayAssociateWebACL",
+          "bedrock-agentcore:GatewayDisassociateWebACL",
+          "bedrock-agentcore:GatewayDisassociateWebACL",
+          "bedrock-agentcore:GatewayGetWebACLForResource",
+          "bedrock-agentcore:GatewayGetWebACLForResource",
+          "bedrock-agentcore:GatewayGetWebACLForResource",
+          "bedrock-agentcore:GatewayGetWebACLForResource",
+          "bedrock-agentcore:GatewayListResourcesForWebACL",
+          "bedrock-agentcore:GatewayListResourcesForWebACL",
+          "bedrock-agentcore:GatewayListResourcesForWebACL",
+          "bedrock-agentcore:GatewayListResourcesForWebACL",
+          "bedrock-agentcore:GetGateway",
+          "bedrock-agentcore:GetGateway",
+          "bedrock-agentcore:ListGateways",
+          "bedrock-agentcore:ListGateways",
+          "cloudhsm:DescribeClusters",
+          "cloudtrail:ListTags",
+          "connect:ListQueueEmailAddresses",
+          "gamelift:ListFleets",
+          "gamelift:ListGameServerGroups",
+          "iam:PassRole",
+          "iot:ListCustomMetrics",
+          "iot:ListDimensions",
+          "iot:ListOTAUpdates",
+          "iot:ListStreams",
+          "iot:ListTunnels",
+          "logs:ListTagsForResource",
+          "partnercentral:CreateMarketplaceRevenueShare",
+          "partnercentral:CreateMarketplaceRevenueShareAllocation",
+          "partnercentral:CreateRevenueAttribution",
+          "partnercentral:GetBenefitApplication",
+          "partnercentral:GetMarketplaceRevenueShare",
+          "partnercentral:GetMarketplaceRevenueShareAllocation",
+          "partnercentral:GetOpportunity",
+          "partnercentral:GetPartner",
+          "partnercentral:GetRevenueAttribution",
+          "partnercentral:GetRevenueAttributionAllocation",
+          "partnercentral:GetRevenueAttributionAllocationsTask",
+          "partnercentral:ListBenefitApplications",
+          "partnercentral:ListMarketplaceRevenueShareAllocations",
+          "partnercentral:ListMarketplaceRevenueShares",
+          "partnercentral:ListOpportunities",
+          "partnercentral:ListPartners",
+          "partnercentral:ListRevenueAttributionAllocations",
+          "partnercentral:ListRevenueAttributions",
+          "partnercentral:ListTagsForResource",
+          "partnercentral:ListTagsForResource",
+          "partnercentral:StartRevenueAttributionAllocationsTask",
+          "partnercentral:TagResource",
+          "partnercentral:UntagResource",
+          "partnercentral:UpdateMarketplaceRevenueShareAllocation",
+          "partnercentral:UpdateRevenueAttribution",
+          "q:GetConversation",
+          "q:ListConversations",
+          "q:PassRequest",
+          "q:SendMessage",
+          "q:StartConversation",
+          "quicksight:ListFolders",
+          "rbin:ListRules",
+          "rbin:ListTagsForResource",
+          "rekognition:ListCollections",
+          "resiliencehub:ListAppAssessments",
+          "s3:GetObject",
+          "s3:ListBucket",
+          "s3:PutObject",
+          "s3vectors:GetIndex",
+          "s3vectors:GetVectorBucket",
+          "s3vectors:ListIndexes",
+          "s3vectors:ListVectorBuckets",
+          "securityagent:BatchGetFindings",
+          "securityagent:CreateCodeReview",
+          "securityagent:ListAgentSpaces",
+          "securityagent:ListCodeReviewJobsForCodeReview",
+          "securityagent:ListFindings",
+          "securityagent:StartCodeRemediation",
+          "securityagent:StartCodeReviewJob",
+          "ses:ListEmailTemplates",
+          "ssm:GetParameter",
+          "swf:ListDomains",
+          "tax:ListTaxRegistrations",
+          "tax:PutTaxRegistration",
+          "vpc-lattice:GetAccessLogSubscription",
+          "vpc-lattice:ListAccessLogSubscriptions",
+          "vpc-lattice:ListTagsForResource"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSApplicationMigrationReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ssm:GetParameter"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 01, 2026, 14:57 UTC",
+          "before": "March 20, 2023, 08:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 01, 2026, 14:57 UTC",
+          "before": "March 20, 2023, 08:58 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess"
+    },
+    {
+      "display_name": "AWSMarketplaceSellerFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "tax:ListTaxRegistrations",
+              "tax:PutTaxRegistration"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v31 (default)",
+          "before": "v30 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 30, 2026, 17:12 UTC",
+          "before": "June 05, 2026, 18:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 30, 2026, 17:12 UTC",
+          "before": "June 05, 2026, 18:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+    },
+    {
+      "display_name": "AWSWAFConsoleFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GatewayAssociateWebACL",
+              "bedrock-agentcore:GatewayDisassociateWebACL",
+              "bedrock-agentcore:GatewayGetWebACLForResource",
+              "bedrock-agentcore:GatewayListResourcesForWebACL",
+              "bedrock-agentcore:GetGateway",
+              "bedrock-agentcore:ListGateways"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v22 (default)",
+          "before": "v21 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 01, 2026, 04:12 UTC",
+          "before": "April 08, 2026, 22:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 01, 2026, 04:12 UTC",
+          "before": "April 08, 2026, 22:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 38,
+          "before": 36,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleFullAccess"
+    },
+    {
+      "display_name": "AWSWAFConsoleReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GatewayGetWebACLForResource",
+              "bedrock-agentcore:GatewayListResourcesForWebACL",
+              "bedrock-agentcore:GetGateway",
+              "bedrock-agentcore:ListGateways"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v21 (default)",
+          "before": "v20 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 01, 2026, 04:12 UTC",
+          "before": "April 08, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 01, 2026, 04:12 UTC",
+          "before": "April 08, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 33,
+          "before": 31,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleReadOnlyAccess"
+    },
+    {
+      "display_name": "AWSWAFFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GatewayAssociateWebACL",
+              "bedrock-agentcore:GatewayDisassociateWebACL",
+              "bedrock-agentcore:GatewayGetWebACLForResource",
+              "bedrock-agentcore:GatewayListResourcesForWebACL"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 30, 2026, 22:42 UTC",
+          "before": "April 08, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 30, 2026, 22:42 UTC",
+          "before": "April 08, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 23,
+          "before": 21,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
+    },
+    {
+      "display_name": "AWSWAFReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GatewayGetWebACLForResource",
+              "bedrock-agentcore:GatewayListResourcesForWebACL"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 01, 2026, 04:27 UTC",
+          "before": "April 08, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 01, 2026, 04:27 UTC",
+          "before": "April 08, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 17,
+          "before": 15,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSWAFReadOnlyAccess"
+    },
+    {
+      "display_name": "AWSObservabilityAdminTelemetryEnablementServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "logs:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "June 30, 2026, 18:57 UTC",
+          "before": "June 25, 2026, 01:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "June 30, 2026, 18:57 UTC",
+          "before": "June 25, 2026, 01:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 35,
+          "before": 34,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSResourceExplorerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "auditmanager:ListAssessmentFrameworks",
+              "auditmanager:ListControls",
+              "cloudhsm:DescribeClusters",
+              "cloudtrail:ListTags",
+              "connect:ListQueueEmailAddresses",
+              "gamelift:ListFleets",
+              "gamelift:ListGameServerGroups",
+              "iot:ListCustomMetrics",
+              "iot:ListDimensions",
+              "iot:ListOTAUpdates",
+              "iot:ListStreams",
+              "iot:ListTunnels",
+              "partnercentral:GetBenefitApplication",
+              "partnercentral:ListBenefitApplications",
+              "partnercentral:ListTagsForResource",
+              "quicksight:ListFolders",
+              "rbin:ListRules",
+              "rbin:ListTagsForResource",
+              "rekognition:ListCollections",
+              "resiliencehub:ListAppAssessments",
+              "s3vectors:GetIndex",
+              "s3vectors:GetVectorBucket",
+              "s3vectors:ListIndexes",
+              "s3vectors:ListVectorBuckets",
+              "ses:ListEmailTemplates",
+              "swf:ListDomains",
+              "vpc-lattice:GetAccessLogSubscription",
+              "vpc-lattice:ListAccessLogSubscriptions",
+              "vpc-lattice:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v51 (default)",
+          "before": "v50 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 01, 2026, 16:27 UTC",
+          "before": "February 27, 2026, 12:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 01, 2026, 16:27 UTC",
+          "before": "February 27, 2026, 12:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 6,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-07-02T04:42:16Z",
+  "counts": {
+    "added_atoms": 98,
+    "added_objects": 4,
+    "changed_objects": 8,
+    "current_objects": 1530,
+    "previous_objects": 1526,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-02",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-01",
+  "removed_objects": []
+}

@@ -13149,11 +13149,42 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSArtifactAgreementsFullAccess"
       }
     ],
+    "aws:allow_action:artifact:CreateComplianceInquiry": [
+      {
+        "display_name": "AWSArtifactComplianceInquiriesFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesFullAccess"
+      }
+    ],
+    "aws:allow_action:artifact:ExportComplianceInquiry": [
+      {
+        "display_name": "AWSArtifactComplianceInquiriesFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesFullAccess"
+      },
+      {
+        "display_name": "AWSArtifactComplianceInquiriesReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:artifact:GetAgreement": [
       {
         "display_name": "AWSArtifactAgreementsFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactAgreementsFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSArtifactAgreementsFullAccess"
+      }
+    ],
+    "aws:allow_action:artifact:GetComplianceInquiryMetadata": [
+      {
+        "display_name": "AWSArtifactComplianceInquiriesFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesFullAccess"
+      },
+      {
+        "display_name": "AWSArtifactComplianceInquiriesReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesReadOnlyAccess"
       }
     ],
     "aws:allow_action:artifact:GetCustomerAgreement": [
@@ -13291,6 +13322,30 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:artifact:ListComplianceInquiries": [
+      {
+        "display_name": "AWSArtifactComplianceInquiriesFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesFullAccess"
+      },
+      {
+        "display_name": "AWSArtifactComplianceInquiriesReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:artifact:ListComplianceInquiryQueries": [
+      {
+        "display_name": "AWSArtifactComplianceInquiriesFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesFullAccess"
+      },
+      {
+        "display_name": "AWSArtifactComplianceInquiriesReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesReadOnlyAccess"
       }
     ],
     "aws:allow_action:artifact:ListCustomerAgreements": [
@@ -15748,6 +15803,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -15828,6 +15888,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -18554,6 +18619,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       },
       {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
+      {
         "display_name": "AWSPrivateMarketplaceAdminFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceAdminFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceAdminFullAccess"
@@ -19146,6 +19216,11 @@
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      },
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       },
       {
         "display_name": "AWSPrivateMarketplaceAdminFullAccess",
@@ -22824,6 +22899,74 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy"
       }
     ],
+    "aws:allow_action:bedrock-agentcore:GatewayAssociateWebACL": [
+      {
+        "display_name": "AWSWAFConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSWAFFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
+      }
+    ],
+    "aws:allow_action:bedrock-agentcore:GatewayDisassociateWebACL": [
+      {
+        "display_name": "AWSWAFConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSWAFFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
+      }
+    ],
+    "aws:allow_action:bedrock-agentcore:GatewayGetWebACLForResource": [
+      {
+        "display_name": "AWSWAFConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSWAFConsoleReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSWAFFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
+      },
+      {
+        "display_name": "AWSWAFReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:bedrock-agentcore:GatewayListResourcesForWebACL": [
+      {
+        "display_name": "AWSWAFConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSWAFConsoleReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSWAFFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
+      },
+      {
+        "display_name": "AWSWAFReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:bedrock-agentcore:GetAgentRuntime": [
       {
         "display_name": "AmazonSageMakerJobFullAccess",
@@ -22990,6 +23133,16 @@
       }
     ],
     "aws:allow_action:bedrock-agentcore:GetGateway": [
+      {
+        "display_name": "AWSWAFConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSWAFConsoleReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleReadOnlyAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -23416,6 +23569,16 @@
       }
     ],
     "aws:allow_action:bedrock-agentcore:ListGateways": [
+      {
+        "display_name": "AWSWAFConsoleFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSWAFConsoleReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFConsoleReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleReadOnlyAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -39107,6 +39270,13 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSKeyManagementServiceCustomKeyStoresServiceRolePolicy"
       }
     ],
+    "aws:allow_action:cloudhsm:DescribeClusters": [
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      }
+    ],
     "aws:allow_action:cloudhsm:DescribeHapg": [
       {
         "display_name": "RDSCloudHsmAuthorizationRole",
@@ -40142,6 +40312,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "SupportUser",
@@ -55549,6 +55724,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -126916,6 +127096,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -126926,6 +127111,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -146394,6 +146584,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSTransferFullAccess"
       },
       {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
+      {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-AWSElasticBeanstalk.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk"
@@ -153848,6 +154043,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
         "display_name": "AWSIoTFleetHubFederationAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIoTFleetHubFederationAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSIoTFleetHubFederationAccess"
@@ -153863,6 +154063,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWSIoTFleetHubFederationAccess",
@@ -154045,6 +154250,11 @@
         "display_name": "AWSIoTConfigReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIoTConfigReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSIoTConfigReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:iot:ListOutgoingCertificates": [
@@ -154328,6 +154538,11 @@
         "display_name": "AWSIoTConfigReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIoTConfigReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSIoTConfigReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:iot:ListTagsForResource": [
@@ -154594,6 +154809,13 @@
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
+      }
+    ],
+    "aws:allow_action:iot:ListTunnels": [
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:iot:ListV2LoggingLevels": [
@@ -178376,6 +178598,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
+        "display_name": "AWSObservabilityAdminTelemetryEnablementServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy"
+      },
+      {
         "display_name": "AWSResourceExplorerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
@@ -198260,6 +198487,20 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       }
     ],
+    "aws:allow_action:partnercentral:CreateMarketplaceRevenueShare": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
+    "aws:allow_action:partnercentral:CreateMarketplaceRevenueShareAllocation": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:CreateOpportunity": [
       {
         "display_name": "AWSPartnerCentralOpportunityManagement",
@@ -198301,6 +198542,11 @@
       }
     ],
     "aws:allow_action:partnercentral:CreateRevenueAttribution": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
       {
         "display_name": "AWSRevenueAttributionManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRevenueAttributionManagement.html",
@@ -198373,6 +198619,11 @@
         "display_name": "PartnerCentralIncentiveBenefitManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PartnerCentralIncentiveBenefitManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/PartnerCentralIncentiveBenefitManagement"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:partnercentral:GetCollaborationChannel": [
@@ -198396,11 +198647,30 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       }
     ],
+    "aws:allow_action:partnercentral:GetMarketplaceRevenueShare": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
+    "aws:allow_action:partnercentral:GetMarketplaceRevenueShareAllocation": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:GetOpportunity": [
       {
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      },
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       },
       {
         "display_name": "AWSPartnerCentralSellingResourceSnapshotJobExecutionRolePolicy",
@@ -198428,6 +198698,11 @@
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      },
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       },
       {
         "display_name": "PartnerCentralIncentiveBenefitManagement",
@@ -198510,9 +198785,28 @@
     ],
     "aws:allow_action:partnercentral:GetRevenueAttribution": [
       {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
+      {
         "display_name": "AWSRevenueAttributionManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRevenueAttributionManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSRevenueAttributionManagement"
+      }
+    ],
+    "aws:allow_action:partnercentral:GetRevenueAttributionAllocation": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
+    "aws:allow_action:partnercentral:GetRevenueAttributionAllocationsTask": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       }
     ],
     "aws:allow_action:partnercentral:GetVerification": [
@@ -198539,6 +198833,11 @@
         "display_name": "PartnerCentralIncentiveBenefitManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PartnerCentralIncentiveBenefitManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/PartnerCentralIncentiveBenefitManagement"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:partnercentral:ListBenefits": [
@@ -198619,11 +198918,30 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
+    "aws:allow_action:partnercentral:ListMarketplaceRevenueShareAllocations": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
+    "aws:allow_action:partnercentral:ListMarketplaceRevenueShares": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:ListOpportunities": [
       {
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      },
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       },
       {
         "display_name": "PartnerCentralIncentiveBenefitManagement",
@@ -198658,6 +198976,11 @@
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      },
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       },
       {
         "display_name": "PartnerCentralIncentiveBenefitManagement",
@@ -198710,7 +199033,19 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
+    "aws:allow_action:partnercentral:ListRevenueAttributionAllocations": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:ListRevenueAttributions": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
       {
         "display_name": "AWSRevenueAttributionManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRevenueAttributionManagement.html",
@@ -198736,6 +199071,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       },
       {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
+      {
         "display_name": "AWSRevenueAttributionManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRevenueAttributionManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSRevenueAttributionManagement"
@@ -198744,6 +199084,11 @@
         "display_name": "PartnerCentralIncentiveBenefitManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PartnerCentralIncentiveBenefitManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/PartnerCentralIncentiveBenefitManagement"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:partnercentral:PutProfileVisibility": [
@@ -198828,6 +199173,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       }
     ],
+    "aws:allow_action:partnercentral:StartRevenueAttributionAllocationsTask": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:StartVerification": [
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
@@ -198873,6 +199225,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       },
       {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
+      {
         "display_name": "AWSRevenueAttributionManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRevenueAttributionManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSRevenueAttributionManagement"
@@ -198893,6 +199250,11 @@
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      },
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       },
       {
         "display_name": "AWSRevenueAttributionManagement",
@@ -198919,6 +199281,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       }
     ],
+    "aws:allow_action:partnercentral:UpdateMarketplaceRevenueShareAllocation": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:UpdateOpportunity": [
       {
         "display_name": "AWSPartnerCentralOpportunityManagement",
@@ -198941,6 +199310,11 @@
       }
     ],
     "aws:allow_action:partnercentral:UpdateRevenueAttribution": [
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
       {
         "display_name": "AWSRevenueAttributionManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRevenueAttributionManagement.html",
@@ -203113,6 +203487,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       },
       {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
+      {
         "display_name": "AmazonQDeveloperAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQDeveloperAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonQDeveloperAccess"
@@ -203235,6 +203614,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       },
       {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
+      {
         "display_name": "AmazonQDeveloperAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQDeveloperAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonQDeveloperAccess"
@@ -203326,6 +203710,11 @@
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      },
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       },
       {
         "display_name": "AmazonQDeveloperAccess",
@@ -203424,6 +203813,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       },
       {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+      },
+      {
         "display_name": "AmazonQDeveloperAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQDeveloperAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonQDeveloperAccess"
@@ -203519,6 +203913,11 @@
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      },
+      {
+        "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
       },
       {
         "display_name": "AmazonQDeveloperAccess",
@@ -205429,6 +205828,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -207611,6 +208015,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:rbin:ListTagsForResource": [
@@ -207618,6 +208027,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:rbin:getRule": [
@@ -215708,6 +216122,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -216076,6 +216495,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
     "aws:allow_action:resiliencehub:ListAppComponentCompliances": [
@@ -228546,6 +228970,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy"
       },
       {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
+      {
         "display_name": "AdministratorAccess-Amplify",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-Amplify.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
@@ -230809,6 +231238,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAssetServerPolicy"
       },
       {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
+      {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-AWSElasticBeanstalk.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk"
@@ -232980,6 +233414,11 @@
         "display_name": "AWSThinkboxAssetServerPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAssetServerPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAssetServerPolicy"
+      },
+      {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -235599,6 +236038,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
         "display_name": "SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy"
@@ -235624,6 +236068,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -235692,6 +236141,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
         "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
@@ -235724,6 +236178,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -251887,6 +252346,11 @@
     ],
     "aws:allow_action:securityagent:BatchGetFindings": [
       {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
+      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -252040,6 +252504,11 @@
       }
     ],
     "aws:allow_action:securityagent:CreateCodeReview": [
+      {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
       {
         "display_name": "AWSSecurityAgentWebAppPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
@@ -252251,6 +252720,11 @@
     ],
     "aws:allow_action:securityagent:ListAgentSpaces": [
       {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
+      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -252308,6 +252782,11 @@
       }
     ],
     "aws:allow_action:securityagent:ListCodeReviewJobsForCodeReview": [
+      {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -252409,6 +252888,11 @@
       }
     ],
     "aws:allow_action:securityagent:ListFindings": [
+      {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -252607,6 +253091,11 @@
     ],
     "aws:allow_action:securityagent:StartCodeRemediation": [
       {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
+      {
         "display_name": "SecurityAgentWebAppPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAgentWebAppPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAgentWebAppPolicy"
@@ -252623,6 +253112,11 @@
       }
     ],
     "aws:allow_action:securityagent:StartCodeReviewJob": [
+      {
+        "display_name": "AWSTransformSecurityAgentExecutorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+      },
       {
         "display_name": "AWSSecurityAgentWebAppPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
@@ -256910,6 +257404,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -267195,6 +267694,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess"
       },
       {
+        "display_name": "AWSApplicationMigrationReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess"
+      },
+      {
         "display_name": "AWSElasticDisasterRecoveryConsoleFullAccess_v2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticDisasterRecoveryConsoleFullAccess_v2.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticDisasterRecoveryConsoleFullAccess_v2"
@@ -274621,6 +275125,13 @@
         "stable_id": "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
       }
     ],
+    "aws:allow_action:swf:ListDomains": [
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      }
+    ],
     "aws:allow_action:swf:TagResource": [
       {
         "display_name": "ResourceGroupsTaggingAPITagUntagSupportedResources",
@@ -275955,6 +276466,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSBillingReadOnlyAccess"
       },
       {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      },
+      {
         "display_name": "AWSPurchaseOrdersServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPurchaseOrdersServiceRolePolicy"
@@ -276001,6 +276517,11 @@
         "display_name": "AWSAccountSettingsManagementRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
       },
       {
         "display_name": "Billing",
@@ -279547,6 +280068,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -279897,6 +280423,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
       },
       {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -280111,6 +280642,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSResourceExplorerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -296916,7 +297452,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-07-01T04:52:25Z",
+  "generated_at_utc": "2026-07-02T04:42:16Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

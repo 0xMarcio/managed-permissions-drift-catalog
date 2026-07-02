@@ -1,0 +1,149 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "azure:action:Microsoft.DeviceRegistry/*"
+      ],
+      "display_name": "Azure Device Registry Administrator",
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/internet-of-things#azure-device-registry-administrator",
+      "stable_id": "12675fd7-7f59-493f-9201-f7944860a2f1"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "azure:action:Microsoft.DeviceRegistry/*",
+      "azure:action:Microsoft.Network/privateEndpoints/privateLinkServiceProxies/delete",
+      "azure:action:Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+      "azure:action:Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+      "azure:action:Microsoft.Network/virtualNetworks/read",
+      "azure:action:Microsoft.Network/virtualNetworks/subnets/read",
+      "azure:action:Microsoft.Resources/deployments/*/read",
+      "azure:action:Microsoft.Resources/deployments/read",
+      "azure:action:Microsoft.Resources/subscriptions/resourceGroups/read",
+      "azure:action:Microsoft.Support/*",
+      "azure:not_action:Microsoft.Web/sites/hostruntime/host/_master/read",
+      "azure:not_action:Microsoft.Web/sites/hostruntime/host/action"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:actions": [
+          "Microsoft.DeviceRegistry/*",
+          "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/delete",
+          "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+          "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Resources/deployments/*/read",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "restriction:not_actions": [
+          "Microsoft.Web/sites/hostruntime/host/_master/read",
+          "Microsoft.Web/sites/hostruntime/host/action"
+        ]
+      },
+      "removed": {
+        "restriction:not_data_actions": [
+          "Microsoft.AppConfiguration/configurationStores/useSasAuth/action"
+        ]
+      }
+    },
+    "removed": [
+      "azure:not_data_action:Microsoft.AppConfiguration/configurationStores/useSasAuth/action"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "Container Registry Contributor and Data Access Configuration Administrator",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/delete",
+              "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+              "Microsoft.Support/*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/containers#container-registry-contributor-and-data-access-configuration-administrator",
+      "stable_id": "3bc748fc-213d-45c1-8d91-9da5725539b9"
+    },
+    {
+      "display_name": "App Configuration Data Owner",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "not_data_actions": {
+            "added": [],
+            "removed": [
+              "Microsoft.AppConfiguration/configurationStores/useSasAuth/action"
+            ]
+          }
+        }
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration#app-configuration-data-owner",
+      "stable_id": "5ae67dd6-50cb-40e7-96ff-dc2bfa4b606b"
+    },
+    {
+      "display_name": "Container Registry Configuration Reader and Data Access Configuration Reader",
+      "facet_changes": {
+        "grants": {
+          "actions": {
+            "added": [
+              "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+              "Microsoft.Network/virtualNetworks/read",
+              "Microsoft.Network/virtualNetworks/subnets/read",
+              "Microsoft.Resources/deployments/*/read",
+              "Microsoft.Resources/deployments/read",
+              "Microsoft.Resources/subscriptions/resourceGroups/read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/containers#container-registry-configuration-reader-and-data-access-configuration-reader",
+      "stable_id": "69b07be0-09bf-439a-b9a6-e73de851bd59"
+    },
+    {
+      "display_name": "Logic Apps Standard Operator (Preview)",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "not_actions": {
+            "added": [
+              "Microsoft.Web/sites/hostruntime/host/_master/read",
+              "Microsoft.Web/sites/hostruntime/host/action"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [],
+      "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration#logic-apps-standard-operator-preview",
+      "stable_id": "b70c96e9-66fe-4c09-b6e7-c98e69c98555"
+    }
+  ],
+  "compared_at_utc": "2026-07-02T04:42:16Z",
+  "counts": {
+    "added_atoms": 12,
+    "added_objects": 1,
+    "changed_objects": 4,
+    "current_objects": 502,
+    "previous_objects": 501,
+    "removed_atoms": 1,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-02",
+  "dataset": "azure-built-in-roles",
+  "platform": "azure",
+  "previous_snapshot_date": "2026-06-21",
+  "removed_objects": []
+}

@@ -76,7 +76,7 @@
 	
 		<meta name="ms.author" content="rolyon" />
 	
-		<meta name="ms.date" content="2026-06-20T00:00:00Z" />
+		<meta name="ms.date" content="2026-07-01T00:00:00Z" />
 	
 		<meta name="ms.custom" content="generated" />
 	
@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="38da9fd6-7b3a-9234-b1bb-5f1255b82ba7" />
 	
-		<meta name="updated_at" content="2026-06-20T22:11:00Z" />
+		<meta name="updated_at" content="2026-07-01T23:48:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/containers.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/8d43c807a29f2615429206770d749f72047ab5c8/articles/role-based-access-control/built-in-roles/containers.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/1b4e136a1da731e1ed16444eb6ce5701bcd8c0f4/articles/role-based-access-control/built-in-roles/containers.md" />
 	
-		<meta name="git_commit_id" content="8d43c807a29f2615429206770d749f72047ab5c8" />
+		<meta name="git_commit_id" content="1b4e136a1da731e1ed16444eb6ce5701bcd8c0f4" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="15213" />
+		<meta name="word_count" content="15287" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/containers" />
 	
@@ -112,7 +112,7 @@
 	
 		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/containers.md" />
 	
-		<meta name="previous_tlsh_hash" content="B88E00C32115D61AFACA0B1B791BFF042BD8F44671B4AD841E76071A83C1361D3A88A5D5CE02EF85D637EA43316EAD438891AD7BE3CB5D08CF8462E8C927C5D7BCCE923546" />
+		<meta name="previous_tlsh_hash" content="B8A393C32115D61AFACA0B1B791BFF042BD8F44671B4AD841E76071A83C1361D3A88A5D5CE02EF85D637EA43316EAD438891AD7BE3CB5D08CF8462E8C927C5D7BCCE923546" />
 	
 		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/containers.md" />
 	
@@ -216,6 +216,10 @@
       {
         "name": "rolyon",
         "url": "https://github.com/rolyon"
+      },
+      {
+        "name": "FaithOmbongi",
+        "url": "https://github.com/FaithOmbongi"
       },
       {
         "name": "lizMSFT",
@@ -8968,6 +8972,30 @@
 <td>Read a classic metric alert incident</td>
 </tr>
 <tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/read</td>
+<td>Gets or lists deployments.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateEndpoints/privateLinkServiceProxies/read</td>
+<td>Gets a private link service proxy resource.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/virtualNetworks/read</td>
+<td>Get the virtual network definition</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/virtualNetworks/subnets/read</td>
+<td>Gets a virtual network subnet definition</td>
+</tr>
+<tr>
 <td><strong>NotActions</strong></td>
 <td></td>
 </tr>
@@ -9030,7 +9058,13 @@
         "Microsoft.Insights/AlertRules/Activated/Action",
         "Microsoft.Insights/AlertRules/Resolved/Action",
         "Microsoft.Insights/AlertRules/Throttled/Action",
-        "Microsoft.Insights/AlertRules/Incidents/Read"
+        "Microsoft.Insights/AlertRules/Incidents/Read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/read"
       ],
       "notActions": [],
       "dataActions": [],
@@ -9275,6 +9309,18 @@
 <td>Creates a new private link service proxy, or updates an existing private link service proxy.</td>
 </tr>
 <tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateEndpoints/privateLinkServiceProxies/read</td>
+<td>Gets a private link service proxy resource.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateEndpoints/privateLinkServiceProxies/delete</td>
+<td>Deletes an private link service proxy resource.</td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
 <td><strong>NotActions</strong></td>
 <td></td>
 </tr>
@@ -9365,7 +9411,10 @@
         "Microsoft.Network/virtualNetworks/subnets/read",
         "Microsoft.Network/virtualNetworks/subnets/write",
         "Microsoft.Network/virtualNetworks/read",
-        "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/write"
+        "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/write",
+        "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+        "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/delete",
+        "Microsoft.Support/*"
       ],
       "notActions": [],
       "dataActions": [],
@@ -10983,11 +11032,11 @@
 				<li class="visibility-hidden-visual-diff">
 			<span class="badge badge-sm text-wrap-pretty">
 				<span>Last updated on <local-time format="twoDigitNumeric"
-		datetime="2026-06-20T08:00:00.000Z"
+		datetime="2026-07-01T08:00:00.000Z"
 		data-article-date-source="calculated"
 		class="is-invisible"
 	>
-		2026-06-20
+		2026-07-01
 	</local-time></span>
 			</span>
 		</li>

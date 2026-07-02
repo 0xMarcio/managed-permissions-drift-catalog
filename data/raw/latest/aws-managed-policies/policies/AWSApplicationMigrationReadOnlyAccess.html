@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: April 07, 2021, 07:15 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 20, 2023, 08:58 UTC</p>
+                <p><b>Edited time:</b>  July 01, 2026, 14:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSApplicationMigrationReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v5 (default)</p>
+        <p><b>Policy version:</b> v6 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -107,6 +107,13 @@
       "Effect" : "Allow",
       "Action" : [
         "servicequotas:GetServiceQuota"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:GetParameter"
       ],
       "Resource" : "*"
     }

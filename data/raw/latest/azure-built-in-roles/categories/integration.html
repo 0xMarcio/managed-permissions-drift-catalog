@@ -76,7 +76,7 @@
 	
 		<meta name="ms.author" content="rolyon" />
 	
-		<meta name="ms.date" content="2026-06-20T00:00:00Z" />
+		<meta name="ms.date" content="2026-07-01T00:00:00Z" />
 	
 		<meta name="ms.custom" content="generated" />
 	
@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="5c56e594-1293-b1a9-2a94-78b190e25c32" />
 	
-		<meta name="updated_at" content="2026-06-20T22:11:00Z" />
+		<meta name="updated_at" content="2026-07-01T23:48:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/integration.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/8d43c807a29f2615429206770d749f72047ab5c8/articles/role-based-access-control/built-in-roles/integration.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/1b4e136a1da731e1ed16444eb6ce5701bcd8c0f4/articles/role-based-access-control/built-in-roles/integration.md" />
 	
-		<meta name="git_commit_id" content="8d43c807a29f2615429206770d749f72047ab5c8" />
+		<meta name="git_commit_id" content="1b4e136a1da731e1ed16444eb6ce5701bcd8c0f4" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="7355" />
+		<meta name="word_count" content="7381" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/integration" />
 	
@@ -112,7 +112,7 @@
 	
 		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/integration.md" />
 	
-		<meta name="previous_tlsh_hash" content="3F7710230116C216FF02078F781FBF092FA86489B65436810E3A8226C1C4AA2E3A5D1466DF02BF9EF537C56722436DD35892B53BE6CF7450EA0456ED8925C7F3BCDDA6364C" />
+		<meta name="previous_tlsh_hash" content="1D8C7F230116C216FF02078F781FBF092BA86489B65436810E3A8226C1C4AA2E3A5D1466DF02BF9EF537C56732436D935892B53BE6CF7450EA0456ED8925C7F3BCDDA6364C" />
 	
 		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/integration.md" />
 	
@@ -212,6 +212,10 @@
       {
         "name": "rolyon",
         "url": "https://github.com/rolyon"
+      },
+      {
+        "name": "FaithOmbongi",
+        "url": "https://github.com/FaithOmbongi"
       },
       {
         "name": "hhunter-ms",
@@ -1975,7 +1979,7 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="../permissions/integration#microsoftappconfiguration" data-linktype="relative-path">Microsoft.AppConfiguration</a>/configurationStores/useSasAuth/action</td>
+<td><em>none</em></td>
 <td></td>
 </tr>
 </tbody>
@@ -1998,9 +2002,7 @@
         "Microsoft.AppConfiguration/configurationStores/*/delete",
         "Microsoft.AppConfiguration/configurationStores/*/action"
       ],
-      "notDataActions": [
-        "Microsoft.AppConfiguration/configurationStores/useSasAuth/action"
-      ]
+      "notDataActions": []
     }
   ],
   "roleName": "App Configuration Data Owner",
@@ -6005,8 +6007,12 @@
 <td></td>
 </tr>
 <tr>
-<td><em>none</em></td>
-<td></td>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/sites/hostruntime/host/_master/read</td>
+<td>Get Function App's master key for admin operations</td>
+</tr>
+<tr>
+<td><a href="../permissions/web-and-mobile#microsoftweb" data-linktype="relative-path">Microsoft.Web</a>/sites/hostruntime/host/action</td>
+<td>Perform Function App runtime action like sync triggers, add functions, invoke functions, delete functions etc.</td>
 </tr>
 <tr>
 <td><strong>DataActions</strong></td>
@@ -6057,7 +6063,10 @@
         "Microsoft.Web/sites/stop/Action",
         "Microsoft.Web/sites/write"
       ],
-      "notActions": [],
+      "notActions": [
+        "Microsoft.Web/sites/hostruntime/host/_master/read",
+        "Microsoft.Web/sites/hostruntime/host/action"
+      ],
       "dataActions": [],
       "notDataActions": []
     }
@@ -6599,11 +6608,11 @@
 				<li class="visibility-hidden-visual-diff">
 			<span class="badge badge-sm text-wrap-pretty">
 				<span>Last updated on <local-time format="twoDigitNumeric"
-		datetime="2026-06-20T08:00:00.000Z"
+		datetime="2026-07-01T08:00:00.000Z"
 		data-article-date-source="calculated"
 		class="is-invisible"
 	>
-		2026-06-20
+		2026-07-01
 	</local-time></span>
 			</span>
 		</li>
