@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: September 26, 2025, 23:49 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:58 UTC</p>
+                <p><b>Edited time:</b>  July 02, 2026, 02:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonECSInstanceRolePolicyForManagedInstances</code></p>
             </li></ul></div>
      
         <h2 id="AmazonECSInstanceRolePolicyForManagedInstances-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -93,7 +93,10 @@
       "Action" : [
         "ecs:Poll"
       ],
-      "Resource" : "arn:aws:ecs:*:*:container-instance/*"
+      "Resource" : [
+        "arn:aws:ecs:*:*:container-instance/*",
+        "arn:aws:ecs:*:*:task-set/*"
+      ]
     },
     <span>{</span>
       "Sid" : "ECSAgentTelemetryPermissions",
