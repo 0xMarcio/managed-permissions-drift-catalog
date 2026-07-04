@@ -1,0 +1,268 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ecr-public:GetAuthorizationToken",
+        "aws:allow_action:ecr:BatchCheckLayerAvailability",
+        "aws:allow_action:ecr:BatchGetImage",
+        "aws:allow_action:ecr:CompleteLayerUpload",
+        "aws:allow_action:ecr:GetAuthorizationToken",
+        "aws:allow_action:ecr:GetDownloadUrlForLayer",
+        "aws:allow_action:ecr:InitiateLayerUpload",
+        "aws:allow_action:ecr:PutImage",
+        "aws:allow_action:ecr:UploadLayerPart",
+        "aws:allow_action:logs:CreateLogGroup",
+        "aws:allow_action:logs:CreateLogStream",
+        "aws:allow_action:logs:PutLogEvents",
+        "aws:allow_action:s3:GetObject",
+        "aws:allow_action:s3:GetObjectVersion",
+        "aws:allow_action:sts:GetServiceBearerToken"
+      ],
+      "display_name": "AWSElasticBeanstalkEKSImageBuild",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkEKSImageBuild.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkEKSImageBuild"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:aps:CreateWorkspace",
+        "aws:allow_action:aps:DeleteWorkspace",
+        "aws:allow_action:aps:Describe*",
+        "aws:allow_action:aps:RemoteWrite",
+        "aws:allow_action:aps:TagResource",
+        "aws:allow_action:s3:CreateBucket",
+        "aws:allow_action:s3:ListBucket",
+        "aws:allow_action:s3:PutObject"
+      ],
+      "display_name": "AWSElasticBeanstalkEKSObservability",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkEKSObservability.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkEKSObservability"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CreateFleet",
+        "aws:allow_action:ec2:CreateLaunchTemplate",
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:CreateSecurityGroup",
+        "aws:allow_action:ec2:CreateSnapshot",
+        "aws:allow_action:ec2:CreateVolume",
+        "aws:allow_action:ec2:RunInstances",
+        "aws:allow_action:elasticloadbalancing:CreateListener",
+        "aws:allow_action:elasticloadbalancing:CreateLoadBalancer",
+        "aws:allow_action:elasticloadbalancing:CreateRule",
+        "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+        "aws:allow_action:shield:CreateProtection",
+        "aws:allow_action:shield:TagResource"
+      ],
+      "display_name": "AWSElasticBeanstalkEKSTagging",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkEKSTagging.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkEKSTagging"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aps:CreateWorkspace",
+      "aws:allow_action:aps:DeleteWorkspace",
+      "aws:allow_action:aps:Describe*",
+      "aws:allow_action:aps:RemoteWrite",
+      "aws:allow_action:aps:TagResource",
+      "aws:allow_action:directconnect:DescribeConnections",
+      "aws:allow_action:directconnect:DescribeDirectConnectGatewayAssociations",
+      "aws:allow_action:directconnect:DescribeDirectConnectGatewayAttachments",
+      "aws:allow_action:directconnect:DescribeDirectConnectGateways",
+      "aws:allow_action:directconnect:DescribeHostedConnections",
+      "aws:allow_action:directconnect:DescribeInterconnects",
+      "aws:allow_action:directconnect:DescribeLags",
+      "aws:allow_action:directconnect:DescribeTags",
+      "aws:allow_action:directconnect:DescribeVirtualInterfaces",
+      "aws:allow_action:ec2:CreateFleet",
+      "aws:allow_action:ec2:CreateLaunchTemplate",
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:CreateSecurityGroup",
+      "aws:allow_action:ec2:CreateSnapshot",
+      "aws:allow_action:ec2:CreateVolume",
+      "aws:allow_action:ec2:DescribeAccountVpcEncryptionControl",
+      "aws:allow_action:ec2:RunInstances",
+      "aws:allow_action:ecr-public:GetAuthorizationToken",
+      "aws:allow_action:ecr:BatchCheckLayerAvailability",
+      "aws:allow_action:ecr:BatchGetImage",
+      "aws:allow_action:ecr:CompleteLayerUpload",
+      "aws:allow_action:ecr:GetAuthorizationToken",
+      "aws:allow_action:ecr:GetDownloadUrlForLayer",
+      "aws:allow_action:ecr:InitiateLayerUpload",
+      "aws:allow_action:ecr:PutImage",
+      "aws:allow_action:ecr:UploadLayerPart",
+      "aws:allow_action:elasticloadbalancing:CreateListener",
+      "aws:allow_action:elasticloadbalancing:CreateLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:CreateRule",
+      "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+      "aws:allow_action:glue:GetPartitions",
+      "aws:allow_action:glue:GetTables",
+      "aws:allow_action:logs:CreateLogGroup",
+      "aws:allow_action:logs:CreateLogStream",
+      "aws:allow_action:logs:PutLogEvents",
+      "aws:allow_action:s3:CreateBucket",
+      "aws:allow_action:s3:GetIntelligentTieringConfiguration",
+      "aws:allow_action:s3:GetInventoryConfiguration",
+      "aws:allow_action:s3:GetObject",
+      "aws:allow_action:s3:GetObjectVersion",
+      "aws:allow_action:s3:ListBucket",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:shield:CreateProtection",
+      "aws:allow_action:shield:TagResource",
+      "aws:allow_action:sts:GetServiceBearerToken"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aps:CreateWorkspace",
+          "aps:DeleteWorkspace",
+          "aps:Describe*",
+          "aps:RemoteWrite",
+          "aps:TagResource",
+          "directconnect:DescribeConnections",
+          "directconnect:DescribeDirectConnectGatewayAssociations",
+          "directconnect:DescribeDirectConnectGatewayAttachments",
+          "directconnect:DescribeDirectConnectGateways",
+          "directconnect:DescribeHostedConnections",
+          "directconnect:DescribeInterconnects",
+          "directconnect:DescribeLags",
+          "directconnect:DescribeTags",
+          "directconnect:DescribeVirtualInterfaces",
+          "ec2:CreateFleet",
+          "ec2:CreateLaunchTemplate",
+          "ec2:CreateNetworkInterface",
+          "ec2:CreateSecurityGroup",
+          "ec2:CreateSnapshot",
+          "ec2:CreateVolume",
+          "ec2:DescribeAccountVpcEncryptionControl",
+          "ec2:RunInstances",
+          "ecr-public:GetAuthorizationToken",
+          "ecr:BatchCheckLayerAvailability",
+          "ecr:BatchGetImage",
+          "ecr:CompleteLayerUpload",
+          "ecr:GetAuthorizationToken",
+          "ecr:GetDownloadUrlForLayer",
+          "ecr:InitiateLayerUpload",
+          "ecr:PutImage",
+          "ecr:UploadLayerPart",
+          "elasticloadbalancing:CreateListener",
+          "elasticloadbalancing:CreateLoadBalancer",
+          "elasticloadbalancing:CreateRule",
+          "elasticloadbalancing:CreateTargetGroup",
+          "glue:GetPartitions",
+          "glue:GetTables",
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents",
+          "s3:CreateBucket",
+          "s3:GetIntelligentTieringConfiguration",
+          "s3:GetInventoryConfiguration",
+          "s3:GetObject",
+          "s3:GetObjectVersion",
+          "s3:ListBucket",
+          "s3:PutObject",
+          "shield:CreateProtection",
+          "shield:TagResource",
+          "sts:GetServiceBearerToken"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "directconnect:DescribeConnections",
+              "directconnect:DescribeDirectConnectGatewayAssociations",
+              "directconnect:DescribeDirectConnectGatewayAttachments",
+              "directconnect:DescribeDirectConnectGateways",
+              "directconnect:DescribeHostedConnections",
+              "directconnect:DescribeInterconnects",
+              "directconnect:DescribeLags",
+              "directconnect:DescribeTags",
+              "directconnect:DescribeVirtualInterfaces",
+              "glue:GetPartitions",
+              "glue:GetTables",
+              "s3:GetIntelligentTieringConfiguration",
+              "s3:GetInventoryConfiguration"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 02, 2026, 23:42 UTC",
+          "before": "June 26, 2026, 23:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 02, 2026, 23:42 UTC",
+          "before": "June 26, 2026, 23:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "DeclarativePoliciesEC2Report",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeAccountVpcEncryptionControl"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 03, 2026, 10:57 UTC",
+          "before": "November 30, 2024, 13:21 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 03, 2026, 10:57 UTC",
+          "before": "November 30, 2024, 13:21 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DeclarativePoliciesEC2Report.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/DeclarativePoliciesEC2Report"
+    }
+  ],
+  "compared_at_utc": "2026-07-04T06:29:55Z",
+  "counts": {
+    "added_atoms": 50,
+    "added_objects": 3,
+    "changed_objects": 2,
+    "current_objects": 1533,
+    "previous_objects": 1530,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-04",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-03",
+  "removed_objects": []
+}
