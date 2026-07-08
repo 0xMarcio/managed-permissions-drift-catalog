@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 26, 2021, 19:34 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 28, 2021, 05:34 UTC</p>
+                <p><b>Edited time:</b>  July 06, 2026, 19:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonBraketJobsExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonBraketJobsExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -82,6 +82,23 @@
         "s3:PutBucketPolicy"
       ],
       "Resource" : "arn:aws:s3:::amazon-braket-*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:ListBucket",
+        "s3:CreateBucket",
+        "s3:PutBucketPublicAccessBlock",
+        "s3:PutBucketPolicy"
+      ],
+      "Resource" : "arn:aws:s3:::*",
+      "Condition" : <span>{</span>
+        "StringEqualsIgnoreCase" : <span>{</span>
+          "aws:ResourceTag/AmazonBraket" : "true"
+        }
+      }
     },
     <span>{</span>
       "Effect" : "Allow",

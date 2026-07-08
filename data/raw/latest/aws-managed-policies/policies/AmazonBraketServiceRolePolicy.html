@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: August 04, 2020, 17:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 11, 2025, 21:37 UTC</p>
+                <p><b>Edited time:</b>  July 06, 2026, 18:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonBraketServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonBraketServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -83,6 +83,23 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "Resource" : "arn:aws:s3:::*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
+        "StringEqualsIgnoreCase" : <span>{</span>
+          "aws:ResourceTag/AmazonBraket" : "true"
         }
       }
     },

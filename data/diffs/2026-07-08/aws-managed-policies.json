@@ -1,0 +1,319 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:partnercentral:CreateRevenueAttribution",
+        "aws:allow_action:partnercentral:GetRevenueAttribution",
+        "aws:allow_action:partnercentral:ListRevenueAttributions",
+        "aws:allow_action:partnercentral:UpdateRevenueAttribution"
+      ],
+      "display_name": "AWSTransformRevenueAttributionPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformRevenueAttributionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformRevenueAttributionPolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:DescribeAvailabilityZones",
+        "aws:allow_action:ec2:DescribeInstances",
+        "aws:allow_action:ec2:DescribeInternetGateways",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcEndpoints",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:iam:CreateServiceLinkedRole",
+        "aws:allow_action:iam:GetPolicy",
+        "aws:allow_action:iam:GetPolicyVersion",
+        "aws:allow_action:kms:Decrypt",
+        "aws:allow_action:kms:DescribeKey",
+        "aws:allow_action:kms:ListAliases",
+        "aws:allow_action:rds-data:ExecuteStatement",
+        "aws:allow_action:rds:AddTagsToResource",
+        "aws:allow_action:rds:CreateDBCluster",
+        "aws:allow_action:rds:CreateDBInstance",
+        "aws:allow_action:rds:CreateDBSubnetGroup",
+        "aws:allow_action:rds:DescribeDBClusters",
+        "aws:allow_action:rds:DescribeDBInstances",
+        "aws:allow_action:rds:DescribeDBSubnetGroups",
+        "aws:allow_action:rds:DisableHttpEndpoint",
+        "aws:allow_action:rds:EnableHttpEndpoint",
+        "aws:allow_action:rds:ModifyDBSubnetGroup",
+        "aws:allow_action:s3:CreateBucket",
+        "aws:allow_action:s3:DeleteObject",
+        "aws:allow_action:s3:GetBucketLocation",
+        "aws:allow_action:s3:GetBucketVersioning",
+        "aws:allow_action:s3:GetObject",
+        "aws:allow_action:s3:ListBucket",
+        "aws:allow_action:s3:PutBucketTagging",
+        "aws:allow_action:s3:PutBucketVersioning",
+        "aws:allow_action:s3:PutObject",
+        "aws:allow_action:secretsmanager:CreateSecret",
+        "aws:allow_action:secretsmanager:DescribeSecret",
+        "aws:allow_action:secretsmanager:GetSecretValue",
+        "aws:allow_action:secretsmanager:ListSecrets",
+        "aws:allow_action:secretsmanager:TagResource",
+        "aws:allow_action:secretsmanager:UpdateSecret"
+      ],
+      "display_name": "DBModVirtualSource",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DBModVirtualSource.html",
+      "stable_id": "arn:aws:iam::aws:policy/DBModVirtualSource"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ec2:DescribeAvailabilityZones",
+      "aws:allow_action:ec2:DescribeInstances",
+      "aws:allow_action:ec2:DescribeInternetGateways",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcEndpoints",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:GetPolicy",
+      "aws:allow_action:iam:GetPolicyVersion",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:ListAliases",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+      "aws:allow_action:organizations:ListAccountsForParent",
+      "aws:allow_action:organizations:ListDelegatedAdministrators",
+      "aws:allow_action:organizations:ListDelegatedServicesForAccount",
+      "aws:allow_action:organizations:ListTagsForResource",
+      "aws:allow_action:partnercentral:CreateRevenueAttribution",
+      "aws:allow_action:partnercentral:GetRevenueAttribution",
+      "aws:allow_action:partnercentral:ListRevenueAttributions",
+      "aws:allow_action:partnercentral:UpdateRevenueAttribution",
+      "aws:allow_action:rds-data:ExecuteStatement",
+      "aws:allow_action:rds:AddTagsToResource",
+      "aws:allow_action:rds:CreateDBCluster",
+      "aws:allow_action:rds:CreateDBInstance",
+      "aws:allow_action:rds:CreateDBSubnetGroup",
+      "aws:allow_action:rds:DescribeDBClusters",
+      "aws:allow_action:rds:DescribeDBInstances",
+      "aws:allow_action:rds:DescribeDBSubnetGroups",
+      "aws:allow_action:rds:DisableHttpEndpoint",
+      "aws:allow_action:rds:EnableHttpEndpoint",
+      "aws:allow_action:rds:ModifyDBSubnetGroup",
+      "aws:allow_action:s3:CreateBucket",
+      "aws:allow_action:s3:DeleteObject",
+      "aws:allow_action:s3:GetBucketLocation",
+      "aws:allow_action:s3:GetBucketVersioning",
+      "aws:allow_action:s3:GetObject",
+      "aws:allow_action:s3:ListBucket",
+      "aws:allow_action:s3:PutBucketTagging",
+      "aws:allow_action:s3:PutBucketVersioning",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:secretsmanager:CreateSecret",
+      "aws:allow_action:secretsmanager:DescribeSecret",
+      "aws:allow_action:secretsmanager:GetSecretValue",
+      "aws:allow_action:secretsmanager:ListSecrets",
+      "aws:allow_action:secretsmanager:TagResource",
+      "aws:allow_action:secretsmanager:UpdateSecret"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ec2:DescribeAvailabilityZones",
+          "ec2:DescribeInstances",
+          "ec2:DescribeInternetGateways",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcEndpoints",
+          "ec2:DescribeVpcs",
+          "iam:CreateServiceLinkedRole",
+          "iam:GetPolicy",
+          "iam:GetPolicyVersion",
+          "kms:Decrypt",
+          "kms:DescribeKey",
+          "kms:ListAliases",
+          "organizations:DescribeAccount",
+          "organizations:ListAWSServiceAccessForOrganization",
+          "organizations:ListAccountsForParent",
+          "organizations:ListDelegatedAdministrators",
+          "organizations:ListDelegatedServicesForAccount",
+          "organizations:ListTagsForResource",
+          "partnercentral:CreateRevenueAttribution",
+          "partnercentral:GetRevenueAttribution",
+          "partnercentral:ListRevenueAttributions",
+          "partnercentral:UpdateRevenueAttribution",
+          "rds-data:ExecuteStatement",
+          "rds:AddTagsToResource",
+          "rds:CreateDBCluster",
+          "rds:CreateDBInstance",
+          "rds:CreateDBSubnetGroup",
+          "rds:DescribeDBClusters",
+          "rds:DescribeDBInstances",
+          "rds:DescribeDBSubnetGroups",
+          "rds:DisableHttpEndpoint",
+          "rds:EnableHttpEndpoint",
+          "rds:ModifyDBSubnetGroup",
+          "s3:CreateBucket",
+          "s3:DeleteObject",
+          "s3:GetBucketLocation",
+          "s3:GetBucketVersioning",
+          "s3:GetObject",
+          "s3:ListBucket",
+          "s3:PutBucketTagging",
+          "s3:PutBucketVersioning",
+          "s3:PutObject",
+          "secretsmanager:CreateSecret",
+          "secretsmanager:DescribeSecret",
+          "secretsmanager:GetSecretValue",
+          "secretsmanager:ListSecrets",
+          "secretsmanager:TagResource",
+          "secretsmanager:UpdateSecret"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonBraketFullAccess",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 06, 2026, 19:57 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 06, 2026, 19:57 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 17,
+          "before": 16,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBraketFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBraketFullAccess"
+    },
+    {
+      "display_name": "AmazonBraketJobsExecutionPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 06, 2026, 19:12 UTC",
+          "before": "November 28, 2021, 05:34 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 06, 2026, 19:12 UTC",
+          "before": "November 28, 2021, 05:34 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 10,
+          "before": 9,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBraketJobsExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBraketJobsExecutionPolicy"
+    },
+    {
+      "display_name": "AWSResilienceHubServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "organizations:DescribeAccount",
+              "organizations:ListAWSServiceAccessForOrganization",
+              "organizations:ListAccountsForParent",
+              "organizations:ListDelegatedAdministrators",
+              "organizations:ListDelegatedServicesForAccount",
+              "organizations:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 06, 2026, 18:12 UTC",
+          "before": "May 28, 2026, 17:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 06, 2026, 18:12 UTC",
+          "before": "May 28, 2026, 17:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResilienceHubServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResilienceHubServiceRolePolicy"
+    },
+    {
+      "display_name": "AmazonBraketServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 06, 2026, 18:42 UTC",
+          "before": "July 11, 2025, 21:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 06, 2026, 18:42 UTC",
+          "before": "July 11, 2025, 21:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBraketServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonBraketServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-07-08T06:08:08Z",
+  "counts": {
+    "added_atoms": 49,
+    "added_objects": 2,
+    "changed_objects": 4,
+    "current_objects": 1535,
+    "previous_objects": 1533,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-08",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-04",
+  "removed_objects": []
+}
