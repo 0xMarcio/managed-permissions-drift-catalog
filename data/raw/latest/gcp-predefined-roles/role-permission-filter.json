@@ -26,6 +26,11 @@
       "url": "/iam/docs/roles-permissions/agentgateway"
     },
     {
+      "title": "Agent Identity API",
+      "name": "agentidentity.googleapis.com",
+      "url": "/iam/docs/roles-permissions/agentidentity"
+    },
+    {
       "title": "Agent Registry",
       "name": "agentregistry.googleapis.com",
       "url": "/iam/docs/roles-permissions/agentregistry"
@@ -82,7 +87,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "anthosservicemesh.googleapis.com, trafficdirector.googleapis.com, meshconfig.googleapis.com, meshdataplane.googleapis.com",
+      "name": "trafficdirector.googleapis.com, meshconfig.googleapis.com, anthosservicemesh.googleapis.com, meshdataplane.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -387,7 +392,7 @@
     },
     {
       "title": "Cloud Deployment Manager",
-      "name": "deploymentmanager.googleapis.com, clouddeploymentmanager.googleapis.com",
+      "name": "clouddeploymentmanager.googleapis.com, deploymentmanager.googleapis.com",
       "url": "/iam/docs/roles-permissions/deploymentmanager"
     },
     {
@@ -402,7 +407,7 @@
     },
     {
       "title": "Cloud IoT",
-      "name": "cloudiottoken.googleapis.com, cloudiot.googleapis.com",
+      "name": "cloudiot.googleapis.com, cloudiottoken.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudiot"
     },
     {
@@ -412,7 +417,7 @@
     },
     {
       "title": "Cloud Key Management Service",
-      "name": "cloudkmskacls.googleapis.com, cloudkms.googleapis.com",
+      "name": "cloudkms.googleapis.com, cloudkmskacls.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudkms"
     },
     {
@@ -437,7 +442,7 @@
     },
     {
       "title": "Service Catalog",
-      "name": "cloudprivatecatalog.googleapis.com, cloudprivatecatalogproducer.googleapis.com",
+      "name": "cloudprivatecatalogproducer.googleapis.com, cloudprivatecatalog.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudprivatecatalog"
     },
     {
@@ -487,7 +492,7 @@
     },
     {
       "title": "Cloud TPU",
-      "name": "tpu.googleapis.com, cloudtpu.googleapis.com",
+      "name": "cloudtpu.googleapis.com, tpu.googleapis.com",
       "url": "/iam/docs/roles-permissions/tpu"
     },
     {
@@ -717,7 +722,7 @@
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
+      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -1397,7 +1402,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
+      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1422,7 +1427,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
+      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -1452,7 +1457,7 @@
     },
     {
       "title": "RISC Configuration Service",
-      "name": "riscconfigs.googleapis.com, riscconfigurationservice.googleapis.com",
+      "name": "riscconfigurationservice.googleapis.com, riscconfigs.googleapis.com",
       "url": "/iam/docs/roles-permissions/riscconfigurationservice"
     },
     {
@@ -1572,7 +1577,7 @@
     },
     {
       "title": "Cloud Source Repositories",
-      "name": "sourcerepo.googleapis.com, source.googleapis.com",
+      "name": "source.googleapis.com, sourcerepo.googleapis.com",
       "url": "/iam/docs/roles-permissions/source"
     },
     {
@@ -1706,7 +1711,7 @@
       "url": "/iam/docs/roles-permissions/workloadcertificate"
     },
     {
-      "title": "Workload Identity Federation",
+      "title": "Workload Identity API",
       "name": "workloadidentity.googleapis.com",
       "url": "/iam/docs/roles-permissions/workloadidentity"
     },
@@ -1924,6 +1929,30 @@
       "title": "Agent Gateway Service Agent",
       "name": "roles/agentgateway.serviceAgent",
       "url": "/iam/docs/roles-permissions/agentgateway#agentgateway.serviceAgent",
+      "priority": 2
+    },
+    {
+      "title": "Auth Provider Admin",
+      "name": "roles/agentidentity.admin",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.admin",
+      "priority": 1
+    },
+    {
+      "title": "Agent Identity Editor",
+      "name": "roles/agentidentity.editor",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.editor",
+      "priority": 1
+    },
+    {
+      "title": "Agent Identity Viewer",
+      "name": "roles/agentidentity.viewer",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.viewer",
+      "priority": 1
+    },
+    {
+      "title": "Auth Provider User",
+      "name": "roles/agentidentity.user",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.user",
       "priority": 2
     },
     {
@@ -4390,6 +4419,18 @@
       "title": "Cloud API Registry Viewer",
       "name": "roles/cloudapiregistry.viewer",
       "url": "/iam/docs/roles-permissions/cloudapiregistry#cloudapiregistry.viewer",
+      "priority": 1
+    },
+    {
+      "title": "Cloud Asset Admin",
+      "name": "roles/cloudasset.admin",
+      "url": "/iam/docs/roles-permissions/cloudasset#cloudasset.admin",
+      "priority": 1
+    },
+    {
+      "title": "Cloud Asset Editor",
+      "name": "roles/cloudasset.editor",
+      "url": "/iam/docs/roles-permissions/cloudasset#cloudasset.editor",
       "priority": 1
     },
     {
@@ -8110,6 +8151,18 @@
       "title": "DNS Administrator",
       "name": "roles/dns.admin",
       "url": "/iam/docs/roles-permissions/dns#dns.admin",
+      "priority": 1
+    },
+    {
+      "title": "DNS Editor",
+      "name": "roles/dns.editor",
+      "url": "/iam/docs/roles-permissions/dns#dns.editor",
+      "priority": 1
+    },
+    {
+      "title": "DNS Viewer",
+      "name": "roles/dns.viewer",
+      "url": "/iam/docs/roles-permissions/dns#dns.viewer",
       "priority": 1
     },
     {
@@ -12343,6 +12396,24 @@
       "priority": 2
     },
     {
+      "title": "Parameter Manager Template Accessor",
+      "name": "roles/parametermanager.templateAccessor",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateAccessor",
+      "priority": 2
+    },
+    {
+      "title": "Parameter Manager Template Version Manager",
+      "name": "roles/parametermanager.templateVersionManager",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateVersionManager",
+      "priority": 2
+    },
+    {
+      "title": "Parameter Manager Template Viewer",
+      "name": "roles/parametermanager.templateViewer",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateViewer",
+      "priority": 2
+    },
+    {
       "title": "Paymentsresellersubscription Admin",
       "name": "roles/paymentsresellersubscription.admin",
       "url": "/iam/docs/roles-permissions/paymentsresellersubscription#paymentsresellersubscription.admin",
@@ -13925,6 +13996,18 @@
       "name": "roles/secretmanager.secretVersionManager",
       "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.secretVersionManager",
       "priority": 2
+    },
+    {
+      "title": "Secured Landing Zone Admin",
+      "name": "roles/securedlandingzone.admin",
+      "url": "/iam/docs/roles-permissions/securedlandingzone#securedlandingzone.admin",
+      "priority": 1
+    },
+    {
+      "title": "Secured Landing Zone Viewer",
+      "name": "roles/securedlandingzone.viewer",
+      "url": "/iam/docs/roles-permissions/securedlandingzone#securedlandingzone.viewer",
+      "priority": 1
     },
     {
       "title": "SLZ BQDW Blueprint Organization Level Remediator",
@@ -16141,6 +16224,78 @@
     {
       "title": "advisorynotifications.settings.update",
       "url": "/iam/docs/roles-permissions/advisorynotifications#advisorynotifications.settings.update"
+    },
+    {
+      "title": "agentidentity.accessSummaries.get",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.accessSummaries.get"
+    },
+    {
+      "title": "agentidentity.accessSummaries.list",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.accessSummaries.list"
+    },
+    {
+      "title": "agentidentity.authProviders.create",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.create"
+    },
+    {
+      "title": "agentidentity.authProviders.delete",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.delete"
+    },
+    {
+      "title": "agentidentity.authProviders.get",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.get"
+    },
+    {
+      "title": "agentidentity.authProviders.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.getIamPolicy"
+    },
+    {
+      "title": "agentidentity.authProviders.list",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.list"
+    },
+    {
+      "title": "agentidentity.authProviders.queryWorkloads",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.queryWorkloads"
+    },
+    {
+      "title": "agentidentity.authProviders.retrieveCredentials",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.retrieveCredentials"
+    },
+    {
+      "title": "agentidentity.authProviders.revokeAuthorizations",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.revokeAuthorizations"
+    },
+    {
+      "title": "agentidentity.authProviders.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.setIamPolicy"
+    },
+    {
+      "title": "agentidentity.authProviders.undelete",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.undelete"
+    },
+    {
+      "title": "agentidentity.authProviders.update",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.update"
+    },
+    {
+      "title": "agentidentity.authorizations.delete",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.delete"
+    },
+    {
+      "title": "agentidentity.authorizations.get",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.get"
+    },
+    {
+      "title": "agentidentity.authorizations.list",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.list"
+    },
+    {
+      "title": "agentidentity.locations.get",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.locations.get"
+    },
+    {
+      "title": "agentidentity.locations.list",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.locations.list"
     },
     {
       "title": "agentregistry.agents.get",
@@ -21819,6 +21974,10 @@
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.updateForAlloydbCluster"
     },
     {
+      "title": "backupdr.backupPlanAssociations.updateForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.updateForCloudSqlInstance"
+    },
+    {
       "title": "backupdr.backupPlanAssociations.updateForComputeDisk",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.updateForComputeDisk"
     },
@@ -22985,6 +23144,10 @@
     {
       "title": "biglake.tables.lock",
       "url": "/iam/docs/roles-permissions/biglake#biglake.tables.lock"
+    },
+    {
+      "title": "biglake.tables.register",
+      "url": "/iam/docs/roles-permissions/biglake#biglake.tables.register"
     },
     {
       "title": "biglake.tables.setIamPolicy",
@@ -24337,6 +24500,10 @@
     {
       "title": "businessaicode.locations.queryConfiguration",
       "url": "/iam/docs/roles-permissions/businessaicode#businessaicode.locations.queryConfiguration"
+    },
+    {
+      "title": "businessaicode.locations.selfAssignLicense",
+      "url": "/iam/docs/roles-permissions/businessaicode#businessaicode.locations.selfAssignLicense"
     },
     {
       "title": "businessaicode.locations.sendTelemetry",
@@ -43403,6 +43570,18 @@
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useContactsAspect"
     },
     {
+      "title": "dataplex.entryGroups.useContextAspect",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useContextAspect"
+    },
+    {
+      "title": "dataplex.entryGroups.useContextEntry",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useContextEntry"
+    },
+    {
+      "title": "dataplex.entryGroups.useContextEntryLink",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useContextEntryLink"
+    },
+    {
       "title": "dataplex.entryGroups.useDataProfileAspect",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useDataProfileAspect"
     },
@@ -43921,6 +44100,10 @@
     {
       "title": "dataproc.batches.cancel",
       "url": "/iam/docs/roles-permissions/dataproc#dataproc.batches.cancel"
+    },
+    {
+      "title": "dataproc.batches.computeTuningConfig",
+      "url": "/iam/docs/roles-permissions/dataproc#dataproc.batches.computeTuningConfig"
     },
     {
       "title": "dataproc.batches.create",
@@ -46519,6 +46702,14 @@
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.dataStores.update"
     },
     {
+      "title": "discoveryengine.devToolsConfigs.get",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.devToolsConfigs.get"
+    },
+    {
+      "title": "discoveryengine.devToolsConfigs.update",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.devToolsConfigs.update"
+    },
+    {
       "title": "discoveryengine.documentProcessingConfigs.get",
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.documentProcessingConfigs.get"
     },
@@ -46869,6 +47060,10 @@
     {
       "title": "discoveryengine.projects.reportConsentChange",
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.projects.reportConsentChange"
+    },
+    {
+      "title": "discoveryengine.projects.update",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.projects.update"
     },
     {
       "title": "discoveryengine.rankingConfigs.rank",
@@ -55731,12 +55926,20 @@
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.delete"
     },
     {
+      "title": "memorystore.instances.finishMigration",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.finishMigration"
+    },
+    {
       "title": "memorystore.instances.get",
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.get"
     },
     {
       "title": "memorystore.instances.list",
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.list"
+    },
+    {
+      "title": "memorystore.instances.startMigration",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.startMigration"
     },
     {
       "title": "memorystore.instances.update",
@@ -58003,6 +58206,10 @@
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.create"
     },
     {
+      "title": "networksecurity.firewallEndpoints.createVerdictChangeRequest",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.createVerdictChangeRequest"
+    },
+    {
       "title": "networksecurity.firewallEndpoints.delete",
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.delete"
     },
@@ -58011,8 +58218,24 @@
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.get"
     },
     {
+      "title": "networksecurity.firewallEndpoints.getVerdictChangeRequest",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.getVerdictChangeRequest"
+    },
+    {
+      "title": "networksecurity.firewallEndpoints.getWildfireReport",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.getWildfireReport"
+    },
+    {
+      "title": "networksecurity.firewallEndpoints.getWildfireSample",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.getWildfireSample"
+    },
+    {
       "title": "networksecurity.firewallEndpoints.list",
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.list"
+    },
+    {
+      "title": "networksecurity.firewallEndpoints.listVerdictChangeRequests",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.firewallEndpoints.listVerdictChangeRequests"
     },
     {
       "title": "networksecurity.firewallEndpoints.submitVerdictChangeRequest",
@@ -60139,8 +60362,16 @@
       "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.parameters.create"
     },
     {
+      "title": "parametermanager.parameters.createTagBinding",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.parameters.createTagBinding"
+    },
+    {
       "title": "parametermanager.parameters.delete",
       "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.parameters.delete"
+    },
+    {
+      "title": "parametermanager.parameters.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.parameters.deleteTagBinding"
     },
     {
       "title": "parametermanager.parameters.get",
@@ -60151,8 +60382,60 @@
       "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.parameters.list"
     },
     {
+      "title": "parametermanager.parameters.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.parameters.listEffectiveTags"
+    },
+    {
+      "title": "parametermanager.parameters.listTagBindings",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.parameters.listTagBindings"
+    },
+    {
       "title": "parametermanager.parameters.update",
       "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.parameters.update"
+    },
+    {
+      "title": "parametermanager.templateVersions.create",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateVersions.create"
+    },
+    {
+      "title": "parametermanager.templateVersions.delete",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateVersions.delete"
+    },
+    {
+      "title": "parametermanager.templateVersions.get",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateVersions.get"
+    },
+    {
+      "title": "parametermanager.templateVersions.list",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateVersions.list"
+    },
+    {
+      "title": "parametermanager.templateVersions.render",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateVersions.render"
+    },
+    {
+      "title": "parametermanager.templateVersions.update",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templateVersions.update"
+    },
+    {
+      "title": "parametermanager.templates.create",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templates.create"
+    },
+    {
+      "title": "parametermanager.templates.delete",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templates.delete"
+    },
+    {
+      "title": "parametermanager.templates.get",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templates.get"
+    },
+    {
+      "title": "parametermanager.templates.list",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templates.list"
+    },
+    {
+      "title": "parametermanager.templates.update",
+      "url": "/iam/docs/roles-permissions/parametermanager#parametermanager.templates.update"
     },
     {
       "title": "paymentsresellersubscription.products.list",
@@ -69301,10 +69584,6 @@
     {
       "title": "vpcaccess.connectors.update",
       "url": "/iam/docs/roles-permissions/vpcaccess#vpcaccess.connectors.update"
-    },
-    {
-      "title": "vpcaccess.connectors.use",
-      "url": "/iam/docs/roles-permissions/vpcaccess#vpcaccess.connectors.use"
     },
     {
       "title": "vpcaccess.locations.list",

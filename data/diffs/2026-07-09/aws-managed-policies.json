@@ -1,0 +1,156 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:config:DescribeConfigurationRecorderStatus",
+      "aws:allow_action:config:DescribeConfigurationRecorders",
+      "aws:allow_action:config:GetConnector",
+      "aws:allow_action:config:ListConfigurationRecorders",
+      "aws:allow_action:config:ListConnectors",
+      "aws:allow_action:ec2:AttachImageWatermark",
+      "aws:allow_action:ssm:GetCloudConnector",
+      "aws:allow_action:ssm:ListCloudConnectors"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "config:DescribeConfigurationRecorderStatus",
+          "config:DescribeConfigurationRecorders",
+          "config:GetConnector",
+          "config:ListConfigurationRecorders",
+          "config:ListConnectors",
+          "ec2:AttachImageWatermark",
+          "ssm:GetCloudConnector",
+          "ssm:ListCloudConnectors"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonInspector2FullAccess_v2",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 07, 2026, 20:12 UTC",
+          "before": "February 12, 2026, 18:03 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 07, 2026, 20:12 UTC",
+          "before": "February 12, 2026, 18:03 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2FullAccess_v2.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonInspector2FullAccess_v2"
+    },
+    {
+      "display_name": "AmazonInspector2ReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "config:DescribeConfigurationRecorderStatus",
+              "config:DescribeConfigurationRecorders",
+              "config:GetConnector",
+              "config:ListConfigurationRecorders",
+              "config:ListConnectors",
+              "ssm:GetCloudConnector",
+              "ssm:ListCloudConnectors"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 07, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 07, 2026, 18:57 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonInspector2ReadOnlyAccess"
+    },
+    {
+      "display_name": "EC2ImageBuilderExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:AttachImageWatermark"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 08, 2026, 16:27 UTC",
+          "before": "June 04, 2026, 17:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 08, 2026, 16:27 UTC",
+          "before": "June 04, 2026, 17:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 46,
+          "before": 45,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/EC2ImageBuilderExecutionPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-07-09T07:06:04Z",
+  "counts": {
+    "added_atoms": 8,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1535,
+    "previous_objects": 1535,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-09",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-08",
+  "removed_objects": []
+}

@@ -1503,9 +1503,9 @@
       
         track-name="console"
       
-        referrerpolicy="no-referrer-when-downgrade"
-      
         track-type="globalNav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
         track-metadata-eventDetail="nav"
       
@@ -1696,15 +1696,15 @@
     
     
       
-        track-metadata-eventDetail="nav"
-      
         track-type="freeTrial"
       
         referrerpolicy="no-referrer-when-downgrade"
       
+        track-metadata-position="nav"
+      
         track-name="gcpCta"
       
-        track-metadata-position="nav"
+        track-metadata-eventDetail="nav"
       
     
     >Start free</a>
@@ -2333,9 +2333,9 @@
       
         track-name="console"
       
-        referrerpolicy="no-referrer-when-downgrade"
-      
         track-type="globalNav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
         track-metadata-eventDetail="nav"
       
@@ -4030,7 +4030,9 @@
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Advisory Notifications</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/agentgateway"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Agent Gateway</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/agentregistry"
+      ><span class="devsite-nav-text" tooltip>Agent Gateway</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/agentidentity"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>Agent Identity API</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/agentregistry"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Agent Registry</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/retail"
         class="devsite-nav-title"
@@ -4744,7 +4746,7 @@
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Workload Certificate</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/workloadidentity"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Workload Identity Federation</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/workloadmanager"
+      ><span class="devsite-nav-text" tooltip>Workload Identity API</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/workloadmanager"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Workload Manager</span></a></li></ul></div></li></ul></div></li>
 
@@ -7600,12 +7602,117 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
   <p><code translate="no" dir="ltr">bigquery.tables.getData</code></p>
   <p><code translate="no" dir="ltr">bigquery.tables.update</code></p>
   <p><code translate="no" dir="ltr">bigquery.tables.updateData</code></p>
-  <p><code translate="no" dir="ltr">ces.appVersions.create</code></p>
-  <p><code translate="no" dir="ltr">ces.appVersions.get</code></p>
-  <p><code translate="no" dir="ltr">ces.apps.get</code></p>
-  <p><code translate="no" dir="ltr">ces.apps.runEvaluation</code></p>
-  <p><code translate="no" dir="ltr">ces.evaluationResults.get</code></p>
-  <p><code translate="no" dir="ltr">ces.evaluationRuns.get</code></p>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.agents.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.agents.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.agents.create</code></li>
+      <li><code translate="no" dir="ltr">ces.agents.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.agents.get</code></li>
+      <li><code translate="no" dir="ltr">ces.agents.list</code></li>
+      <li><code translate="no" dir="ltr">ces.agents.update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.appVersions.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.appVersions.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.appVersions.create</code></li>
+      <li><code translate="no" dir="ltr">ces.appVersions.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.appVersions.get</code></li>
+      <li><code translate="no" dir="ltr">ces.appVersions.list</code></li>
+      <li><code translate="no" dir="ltr">ces.appVersions.restore</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.apps.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.apps.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.apps.create</code></li>
+      <li><code translate="no" dir="ltr">ces.apps.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.apps.export</code></li>
+      <li><code translate="no" dir="ltr">ces.apps.get</code></li>
+      <li><code translate="no" dir="ltr">ces.apps.import</code></li>
+      <li><code translate="no" dir="ltr">ces.apps.list</code></li>
+      <li><code translate="no" dir="ltr">ces.apps.runEvaluation</code></li>
+      <li><code translate="no" dir="ltr">ces.apps.update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.changelogs.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.changelogs.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.changelogs.get</code></li>
+      <li><code translate="no" dir="ltr">ces.changelogs.list</code></li>
+    </ul>
+  </devsite-expandable>
+  <p><code translate="no" dir="ltr">ces.conversations.get</code></p>
+  <p><code translate="no" dir="ltr">ces.conversations.list</code></p>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.deployments.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.deployments.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.deployments.create</code></li>
+      <li><code translate="no" dir="ltr">ces.deployments.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.deployments.get</code></li>
+      <li><code translate="no" dir="ltr">ces.deployments.list</code></li>
+      <li><code translate="no" dir="ltr">ces.deployments.update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.evaluationDatasets.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.evaluationDatasets.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.evaluationDatasets.create</code></li>
+      <li><code translate="no" dir="ltr">ces.evaluationDatasets.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.evaluationDatasets.get</code></li>
+      <li><code translate="no" dir="ltr">ces.evaluationDatasets.list</code></li>
+      <li><code translate="no" dir="ltr">ces.evaluationDatasets.update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.evaluationResults.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.evaluationResults.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.evaluationResults.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.evaluationResults.get</code></li>
+      <li><code translate="no" dir="ltr">ces.evaluationResults.list</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.evaluationRuns.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.evaluationRuns.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.evaluationRuns.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.evaluationRuns.get</code></li>
+      <li><code translate="no" dir="ltr">ces.evaluationRuns.list</code></li>
+    </ul>
+  </devsite-expandable>
+  <p><code translate="no" dir="ltr">ces.evaluations.create</code></p>
+  <p><code translate="no" dir="ltr">ces.evaluations.delete</code></p>
+  <p><code translate="no" dir="ltr">ces.evaluations.get</code></p>
+  <p><code translate="no" dir="ltr">ces.evaluations.list</code></p>
+  <p><code translate="no" dir="ltr">ces.evaluations.update</code></p>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.guardrails.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.guardrails.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.guardrails.create</code></li>
+      <li><code translate="no" dir="ltr">ces.guardrails.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.guardrails.get</code></li>
+      <li><code translate="no" dir="ltr">ces.guardrails.list</code></li>
+      <li><code translate="no" dir="ltr">ces.guardrails.update</code></li>
+    </ul>
+  </devsite-expandable>
   <p><code translate="no" dir="ltr">ces.operations.get</code></p>
   <devsite-expandable id="expandable-ces.serviceAgent-ces.sessions.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
@@ -7616,7 +7723,31 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
       <li><code translate="no" dir="ltr">ces.sessions.runSession</code></li>
     </ul>
   </devsite-expandable>
-  <p><code translate="no" dir="ltr">ces.tools.execute</code></p>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.tools.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.tools.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.tools.create</code></li>
+      <li><code translate="no" dir="ltr">ces.tools.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.tools.execute</code></li>
+      <li><code translate="no" dir="ltr">ces.tools.get</code></li>
+      <li><code translate="no" dir="ltr">ces.tools.list</code></li>
+      <li><code translate="no" dir="ltr">ces.tools.update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-ces.serviceAgent-ces.toolsets.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">ces.toolsets.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">ces.toolsets.create</code></li>
+      <li><code translate="no" dir="ltr">ces.toolsets.delete</code></li>
+      <li><code translate="no" dir="ltr">ces.toolsets.get</code></li>
+      <li><code translate="no" dir="ltr">ces.toolsets.list</code></li>
+      <li><code translate="no" dir="ltr">ces.toolsets.update</code></li>
+    </ul>
+  </devsite-expandable>
   <p><code translate="no" dir="ltr">cloudfunctions.<wbr>functions.<wbr>invoke</code></p>
   <devsite-expandable id="expandable-ces.serviceAgent-connectors.actions.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
@@ -7840,6 +7971,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.agentEditor">Gemini Enterprise for Customer Experience Agent Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.agentEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.agents.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -7859,6 +8004,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.agentEditor">Gemini Enterprise for Customer Experience Agent Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.agentEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.agents.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -7905,6 +8064,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.agents.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -7960,6 +8133,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.agents.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -7979,6 +8166,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.agentEditor">Gemini Enterprise for Customer Experience Agent Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.agentEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.agents.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8031,6 +8232,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.appEditor">Gemini Enterprise for Customer Experience App Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.appEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.appVersions.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8146,6 +8361,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.appVersions.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8165,6 +8394,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.appEditor">Gemini Enterprise for Customer Experience App Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.appEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.appVersions.restore-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8184,6 +8427,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.appEditor">Gemini Enterprise for Customer Experience App Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.appEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.apps.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8203,6 +8460,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.appEditor">Gemini Enterprise for Customer Experience App Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.appEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.apps.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8228,6 +8499,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.apps.export-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8310,6 +8595,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.appEditor">Gemini Enterprise for Customer Experience App Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.appEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.apps.import-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8365,6 +8664,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.apps.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8420,6 +8733,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.appEditor">Gemini Enterprise for Customer Experience App Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.appEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.apps.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8583,6 +8910,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.changelogs.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8638,6 +8979,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.changelogs.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8700,6 +9055,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.conversations.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8755,6 +9124,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.conversations.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8774,6 +9157,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.deploymentEditor">Gemini Enterprise for Customer Experience Deployment Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.deploymentEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.deployments.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8793,6 +9190,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.deploymentEditor">Gemini Enterprise for Customer Experience Deployment Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.deploymentEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.deployments.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8839,6 +9250,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.deployments.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8894,6 +9319,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.deployments.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8913,6 +9352,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.deploymentEditor">Gemini Enterprise for Customer Experience Deployment Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.deploymentEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.deployments.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8932,6 +9385,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.evalsEditor">Gemini Enterprise for Customer Experience Evals Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.evalsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationDatasets.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8951,6 +9418,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.evalsEditor">Gemini Enterprise for Customer Experience Evals Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.evalsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationDatasets.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -8997,6 +9478,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationDatasets.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9052,6 +9547,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationDatasets.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9071,6 +9580,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.evalsEditor">Gemini Enterprise for Customer Experience Evals Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.evalsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationDatasets.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9248,6 +9771,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.evalsEditor">Gemini Enterprise for Customer Experience Evals Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.evalsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationResults.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9363,6 +9900,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationResults.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9382,6 +9933,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.evalsEditor">Gemini Enterprise for Customer Experience Evals Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.evalsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationRuns.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9497,6 +10062,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluationRuns.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9516,6 +10095,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.evalsEditor">Gemini Enterprise for Customer Experience Evals Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.evalsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluations.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9535,6 +10128,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.evalsEditor">Gemini Enterprise for Customer Experience Evals Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.evalsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluations.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9606,6 +10213,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluations.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9661,6 +10282,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluations.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9680,6 +10315,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.evalsEditor">Gemini Enterprise for Customer Experience Evals Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.evalsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.evaluations.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9857,6 +10506,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.guardrailsEditor">Gemini Enterprise for Customer Experience Guardrails Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.guardrailsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.guardrails.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9876,6 +10539,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.guardrailsEditor">Gemini Enterprise for Customer Experience Guardrails Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.guardrailsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.guardrails.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9922,6 +10599,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.guardrails.get-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9977,6 +10668,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.guardrails.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -9996,6 +10701,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.guardrailsEditor">Gemini Enterprise for Customer Experience Guardrails Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.guardrailsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.guardrails.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -10424,6 +11143,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.toolsEditor">Gemini Enterprise for Customer Experience Tools Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.toolsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.tools.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -10443,6 +11176,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.toolsEditor">Gemini Enterprise for Customer Experience Tools Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.toolsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.tools.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -10547,6 +11294,9 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
           </aside>
           <ul class="serviceagentrole-list">
             <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+            <li>
               <a href="/iam/docs/roles-permissions/dialogflow#dialogflow.serviceAgent">Dialogflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dialogflow.serviceAgent</code>)
             </li>
           </ul>
@@ -10606,6 +11356,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.tools.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -10625,6 +11389,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.toolsEditor">Gemini Enterprise for Customer Experience Tools Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.toolsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.tools.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -10644,6 +11422,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.toolsEditor">Gemini Enterprise for Customer Experience Tools Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.toolsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.toolsets.create-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -10663,6 +11455,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.toolsEditor">Gemini Enterprise for Customer Experience Tools Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.toolsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.toolsets.delete-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -10718,6 +11524,9 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
             href="/iam/docs/service-agents">service agents</a>.
           </aside>
           <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
             <li>
               <a href="/iam/docs/roles-permissions/dialogflow#dialogflow.serviceAgent">Dialogflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dialogflow.serviceAgent</code>)
             </li>
@@ -10778,6 +11587,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.toolsets.list-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -10797,6 +11620,20 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/ces#ces.toolsEditor">Gemini Enterprise for Customer Experience Tools Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.toolsEditor</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="ces.toolsets.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/ces#ces.serviceAgent">Customer Engagement Suite Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ces.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
   </tbody>
@@ -10808,7 +11645,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
 
   
     <devsite-hats-survey class="nocontent" data-nosnippet
-      hats-id="mwETRvWii0eU5NUYprb0Y9z5GVbc"
+      hats-id="Nd7nTix2o0eU5NUYprb0ThtUc5jf"
       listnr-id="83405"></devsite-hats-survey>
   
 
@@ -10945,7 +11782,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="see all products"track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/products/"track-type="footer link">
+            track-metadata-eventDetail="cloud.google.com/products/"track-metadata-module="footer"track-metadata-child_headline="products and pricing"track-type="footer link"track-metadata-position="footer"track-name="see all products">
             
           
             See all products
@@ -10962,7 +11799,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-name="google cloud pricing"track-metadata-module="footer">
+            track-type="footer link"track-name="google cloud pricing"track-metadata-position="footer"track-metadata-child_headline="products and pricing"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-module="footer">
             
           
             Google Cloud pricing
@@ -10979,7 +11816,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-eventDetail="cloud.google.com/marketplace/"track-type="footer link"track-metadata-module="footer"track-name="google cloud marketplace"track-metadata-position="footer"track-metadata-child_headline="resources">
+            track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-module="footer"track-type="footer link"track-name="google cloud marketplace"track-metadata-position="footer">
             
           
             Google Cloud Marketplace
@@ -10996,7 +11833,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-name="contact sales"track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/contact/"track-type="footer link">
+            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/contact/"track-metadata-child_headline="engage"track-name="contact sales"track-metadata-position="footer"track-type="footer link">
             
               
               
@@ -11023,7 +11860,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-module="footer"track-name="google cloud community"rel="noopener"track-metadata-position="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="www.googlecloudcommunity.com"track-type="footer link"target="_blank">
+            track-name="google cloud community"track-metadata-position="footer"rel="noopener"track-type="footer link"track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-eventDetail="www.googlecloudcommunity.com"target="_blank">
             
           
             Community forums
@@ -11040,7 +11877,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/support-hub/"track-type="footer link"track-name="support"track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-module="footer">
+            track-type="footer link"track-name="support"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             Support
@@ -11057,7 +11894,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-eventDetail="cloud.google.com/release-notes/"track-type="footer link"track-metadata-module="footer"track-name="release notes"track-metadata-child_headline="resources"track-metadata-position="footer">
+            track-metadata-position="footer"track-name="release notes"track-type="footer link"track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/release-notes/">
             
           
             Release Notes
@@ -11074,7 +11911,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-module="footer"track-name="system status"track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-eventDetail="status.cloud.google.com"track-type="footer link"target="_blank">
+            track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-eventDetail="status.cloud.google.com"target="_blank"track-metadata-position="footer"track-name="system status"track-type="footer link">
             
               
               
@@ -11101,7 +11938,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="github"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-type="footer link">
+            track-metadata-position="footer"track-name="github"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-child_headline="resources">
             
           
             GitHub
@@ -11118,7 +11955,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-type="footer link"track-metadata-module="footer"track-name="google cloud quickstarts"track-metadata-child_headline="resources"track-metadata-position="footer">
+            track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-module="footer"track-type="footer link"track-name="google cloud quickstarts"track-metadata-position="footer">
             
           
             Getting Started with Google Cloud
@@ -11135,7 +11972,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-eventDetail="cloud.google.com/docs/samples"track-type="footer link"track-name="code samples"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-module="footer">
+            track-type="footer link"track-name="code samples"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             Code samples
@@ -11152,7 +11989,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="resources"track-name="cloud architecture center">
+            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="cloud architecture center"track-type="footer link">
             
           
             Cloud Architecture Center
@@ -11169,7 +12006,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-module="footer"track-name="training"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/learn/training/"track-type="footer link">
+            track-type="footer link"track-metadata-position="footer"track-name="training"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-module="footer"track-metadata-child_headline="resources">
             
               
               
@@ -11196,7 +12033,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"track-metadata-child_headline="engage"track-name="blog"track-metadata-module="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/blog/">
+            track-type="footer link"track-metadata-position="footer"track-name="blog"track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/blog/">
             
           
             Blog
@@ -11213,7 +12050,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-metadata-eventDetail="cloud.google.com/events/"track-metadata-child_headline="engage"track-metadata-position="footer"track-name="events"track-metadata-module="footer">
+            track-metadata-position="footer"track-name="events"track-type="footer link"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/events/"track-metadata-module="footer">
             
           
             Events
@@ -11230,7 +12067,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"rel="noopener"track-metadata-child_headline="engage"track-metadata-position="footer"track-name="follow on x"track-type="footer link"track-metadata-eventDetail="x.com/googlecloud"target="_blank">
+            track-type="footer link"track-metadata-position="footer"track-name="follow on x"rel="noopener"track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-eventDetail="x.com/googlecloud"target="_blank">
             
           
             X (Twitter)
@@ -11247,7 +12084,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="engage"rel="noopener"track-metadata-position="footer"track-name="google cloud on youtube"track-metadata-module="footer"target="_blank"track-type="footer link"track-metadata-eventDetail="www.youtube.com/googlecloud">
+            track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloud"target="_blank"track-metadata-child_headline="engage"track-metadata-position="footer"track-name="google cloud on youtube"rel="noopener"track-type="footer link">
             
           
             Google Cloud on YouTube
@@ -11264,7 +12101,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-type="footer link"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"target="_blank"track-metadata-module="footer"track-metadata-position="footer"rel="noopener"track-metadata-child_headline="engage"track-name="google cloud tech on youtube">
+            track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"target="_blank"track-name="google cloud tech on youtube"track-metadata-position="footer"rel="noopener"track-type="footer link">
             
               
               
@@ -11306,15 +12143,15 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-metadata-module="utility footer"
+           track-type="footer link"
          
            track-name="about google"
          
            track-metadata-position="footer"
          
-           track-metadata-eventDetail="//about.google/"
+           track-metadata-module="utility footer"
          
-           track-type="footer link"
+           track-metadata-eventDetail="//about.google/"
          
            target="_blank"
          >
@@ -11332,17 +12169,17 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           target="_blank"
+           track-metadata-module="utility footer"
          
            track-metadata-eventDetail="//policies.google.com/privacy"
+         
+           target="_blank"
          
            track-type="footer link"
          
            track-name="privacy"
          
            track-metadata-position="footer"
-         
-           track-metadata-module="utility footer"
          >
           Privacy
         </a>
@@ -11358,17 +12195,17 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           track-type="footer link"
-         
            track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
          
            target="_blank"
          
            track-metadata-module="utility footer"
          
+           track-name="site terms"
+         
            track-metadata-position="footer"
          
-           track-name="site terms"
+           track-type="footer link"
          >
           Site terms
         </a>
@@ -11384,15 +12221,15 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-type="footer link"
+           track-metadata-module="utility footer"
          
            track-metadata-eventDetail="//cloud.google.com/product-terms"
          
-           track-metadata-position="footer"
+           track-type="footer link"
          
            track-name="google cloud terms"
          
-           track-metadata-module="utility footer"
+           track-metadata-position="footer"
          >
           Google Cloud terms
         </a>
@@ -11408,17 +12245,17 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-metadata-position="footer"
+           track-type="footer link"
          
-           aria-hidden="true"
+           track-metadata-position="footer"
          
            track-name="Manage cookies"
          
+           track-metadata-eventDetail="#"
+         
            track-metadata-module="utility footer"
          
-           track-type="footer link"
-         
-           track-metadata-eventDetail="#"
+           aria-hidden="true"
          >
           Manage cookies
         </a>
@@ -11434,7 +12271,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
            data-category="Site-Wide Custom Events"
            data-label="Footer Our third decade of climate action: join us link"
          
-           track-type="footer link"
+           track-metadata-module="utility footer"
          
            track-metadata-eventDetail="/sustainability/"
          
@@ -11442,7 +12279,7 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
          
            track-name="Our third decade of climate action: join us"
          
-           track-metadata-module="utility footer"
+           track-type="footer link"
          >
           Our third decade of climate action: join us
         </a>
@@ -11460,15 +12297,15 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-name="subscribe"
+           track-type="footer link"
          
            track-metadata-position="footer"
          
-           track-metadata-module="utility footer"
+           track-name="subscribe"
          
            track-metadata-eventDetail="/newsletter/"
          
-           track-type="footer link"
+           track-metadata-module="utility footer"
          >
           Subscribe
         </a>
@@ -11556,12 +12393,12 @@ Allows Customer Engagement Suite Service Account to access to dependent resource
   <cloudx-free-trial-eligible-store freeTrialEligible="true"></cloudx-free-trial-eligible-store>
 
     
-<script nonce="ls/PIakoHLxY8JYGZNyJRXaG3BYWKr">
+<script nonce="LwUVuvmHmG29IWVPvaXM2sRXI6dBpw">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Profiles__enable_profile_collections","Cloud__enable_cloudx_experiment_ids","DevPro__enable_code_assist","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_playlist_community_acl","DevPro__enable_nvidia_credits_card","Profiles__enable_developer_profile_pages_as_content","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__enable_appearance_cookies","Profiles__require_profile_eligibility_for_signin","MiscFeatureFlags__enable_view_transitions","MiscFeatureFlags__enable_explicit_template_dependencies","Profiles__enable_developer_profile_benefits_ui_redesign","Profiles__enable_public_developer_profiles","Profiles__enable_purchase_prompts","AIStudioInteractionsToggle__interactions_are_default","DevPro__enable_cloud_innovators_plus","MiscFeatureFlags__developers_footer_image","DevPro__enable_firebase_workspaces_card","OnSwitch__enable","Profiles__enable_stripe_subscription_management","Profiles__enable_dashboard_curated_recommendations","Profiles__enable_awarding_url","Cloud__fast_free_trial","EngEduTelemetry__enable_engedu_telemetry","MiscFeatureFlags__enable_firebase_utm","Cloud__cache_serialized_dynamic_content","DevPro__enable_embed_profile_creation","CloudShell__cloud_code_overflow_menu","MiscFeatureFlags__enable_variable_operator_index_yaml","MiscFeatureFlags__remove_cross_domain_tracking_params","BookNav__enable_tenant_cache_key","CloudShell__cloud_shell_button","Concierge__enable_pushui","Profiles__enable_complete_playlist_endpoint","SignIn__enable_l1_signup_flow","Search__enable_suggestions_from_borg","Search__enable_ai_search_summaries_for_all","Search__enable_page_map","Cloud__enable_cloud_shell_fte_user_flow","DevPro__enable_g1_integration","DevPro__enable_vertex_credit_card","Cloud__enable_llm_concierge_chat","MiscFeatureFlags__gdp_dashboard_reskin_enabled","MiscFeatureFlags__enable_framebox_badge_methods","Analytics__enable_clearcut_logging","MiscFeatureFlags__developers_footer_dark_image","TpcFeatures__proxy_prod_host","Profiles__enable_recognition_badges","DevPro__enable_developer_subscriptions","DevPro__enable_google_payments","MiscFeatureFlags__enable_dark_theme","MiscFeatureFlags__enable_project_variables","DevPro__enable_devpro_offers","Concierge__enable_actions_menu","DevPro__enable_google_payments_buyflow","Profiles__enable_targeted_hero","DevPro__remove_eu_tax_intake_form","Profiles__enable_completecodelab_endpoint","DevPro__enable_devsite_captcha","DevPro__enable_credits_banner","Cloud__enable_cloud_dlp_service","Cloud__enable_free_trial_server_call","Concierge__enable_concierge_restricted","Profiles__enable_developer_profiles_callout","MiscFeatureFlags__enable_variable_operator","DevPro__enable_free_benefits","DevPro__enable_enterprise","Cloud__enable_legacy_calculator_redirect","Profiles__enable_join_program_group_endpoint","Cloud__enable_cloud_shell","Profiles__enable_callout_notifications","Experiments__reqs_query_experiments","Profiles__enable_completequiz_endpoint","MiscFeatureFlags__fix_lower_breadcrumbs","Profiles__enable_auto_apply_credits","DevPro__enable_g1_ineligible_redirect","Profiles__enable_page_saving","Concierge__enable_devsite_llm_tools","DevPro__enable_google_one_card","Search__enable_dynamic_content_confidential_banner","Search__enable_ai_eligibility_checks","Profiles__enable_user_type","Analytics__enable_devpro_interaction_logging","Concierge__enable_remove_info_panel_tags"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v3be1e30159846e100d05529400567b663b9f8b605137438a2f417848d68359dd/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Concierge__enable_concierge_restricted","TpcFeatures__proxy_prod_host","DevPro__enable_enterprise","Concierge__enable_pushui","DevPro__enable_devsite_captcha","DevPro__enable_vertex_credit_card","MiscFeatureFlags__enable_firebase_utm","DevPro__enable_free_benefits","Cloud__enable_cloud_dlp_service","Cloud__enable_legacy_calculator_redirect","Concierge__enable_remove_info_panel_tags","Profiles__enable_public_developer_profiles","Profiles__enable_dashboard_curated_recommendations","Concierge__enable_devsite_llm_tools","Profiles__enable_complete_playlist_endpoint","DevPro__enable_devpro_offers","Profiles__enable_completequiz_endpoint","CloudShell__cloud_code_overflow_menu","Profiles__enable_developer_profile_benefits_ui_redesign","DevPro__enable_embed_profile_creation","MiscFeatureFlags__enable_variable_operator","DevPro__enable_google_one_card","DevPro__remove_eu_tax_intake_form","Search__enable_suggestions_from_borg","MiscFeatureFlags__enable_appearance_cookies","DevPro__enable_g1_ineligible_redirect","Concierge__enable_actions_menu","DevPro__enable_google_payments","Profiles__enable_targeted_hero","DevPro__enable_cloud_innovators_plus","AIStudioInteractionsToggle__interactions_are_default","Cloud__fast_free_trial","Profiles__enable_user_type","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__enable_variable_operator_index_yaml","Search__enable_page_map","MiscFeatureFlags__enable_explicit_template_dependencies","Profiles__enable_stripe_subscription_management","Profiles__enable_completecodelab_endpoint","DevPro__enable_developer_subscriptions","DevPro__enable_code_assist","Search__enable_ai_eligibility_checks","DevPro__enable_firebase_workspaces_card","Cloud__enable_cloudx_experiment_ids","Profiles__enable_awarding_url","Cloud__enable_cloud_shell_fte_user_flow","MiscFeatureFlags__fix_lower_breadcrumbs","Experiments__reqs_query_experiments","Profiles__enable_recognition_badges","Profiles__enable_developer_profile_pages_as_content","Profiles__enable_join_program_group_endpoint","MiscFeatureFlags__remove_cross_domain_tracking_params","CloudShell__cloud_shell_button","MiscFeatureFlags__gdp_dashboard_reskin_enabled","DevPro__enable_nvidia_credits_card","Profiles__require_profile_eligibility_for_signin","OnSwitch__enable","BookNav__enable_tenant_cache_key","EngEduTelemetry__enable_engedu_telemetry","MiscFeatureFlags__enable_framebox_badge_methods","MiscFeatureFlags__developers_footer_image","Analytics__enable_devpro_interaction_logging","DevPro__enable_credits_banner","Cloud__enable_free_trial_server_call","MiscFeatureFlags__developers_footer_dark_image","MiscFeatureFlags__enable_dark_theme","Analytics__enable_clearcut_logging","Cloud__cache_serialized_dynamic_content","Search__enable_ai_search_summaries_for_all","Profiles__enable_callout_notifications","Profiles__enable_playlist_community_acl","Profiles__enable_auto_apply_credits","MiscFeatureFlags__enable_view_transitions","Profiles__enable_page_saving","Profiles__enable_developer_profiles_callout","SignIn__enable_l1_signup_flow","Cloud__enable_llm_concierge_chat","Cloud__enable_cloud_shell","DevPro__enable_google_payments_buyflow","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_profile_collections","DevPro__enable_g1_integration","Search__enable_dynamic_content_confidential_banner","Profiles__enable_purchase_prompts","MiscFeatureFlags__enable_project_variables"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 
