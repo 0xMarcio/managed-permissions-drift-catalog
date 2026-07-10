@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 03, 2025, 16:07 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 07, 2026, 20:12 UTC</p>
+                <p><b>Edited time:</b>  July 08, 2026, 19:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonInspector2FullAccess_v2</code></p>
             </li></ul></div>
      
         <h2 id="AmazonInspector2FullAccess_v2-version">Policy version</h2>
-        <p><b>Policy version:</b> v8 (default)</p>
+        <p><b>Policy version:</b> v9 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -174,6 +174,32 @@
           "organizations:PolicyType" : [
             "INSPECTOR_POLICY"
           ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowConfigConnectorWriteAndList",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:PutConnector",
+        "config:ListConnectors"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AllowConfigConnectorRead",
+      "Effect" : "Allow",
+      "Action" : "config:GetConnector",
+      "Resource" : "arn:aws:config:*:*:connector/*"
+    },
+    <span>{</span>
+      "Sid" : "AllowCreateConfigThirdPartySLR",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "thirdparty.config.amazonaws.com"
         }
       }
     }

@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 29, 2019, 22:02 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 17, 2026, 20:42 UTC</p>
+                <p><b>Edited time:</b>  July 09, 2026, 15:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForImageBuilder</code></p>
             </li></ul></div>
      
         <h2 id="AWSServiceRoleForImageBuilder-version">Policy version</h2>
-        <p><b>Policy version:</b> v27 (default)</p>
+        <p><b>Policy version:</b> v28 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -438,6 +438,18 @@
         "arn:aws:ec2:*::image/*",
         "arn:aws:ec2:*:*:launch-template/*"
       ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "ec2:ResourceTag/CreatedBy" : "EC2 Image Builder"
+        }
+      }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:AttachImageWatermark"
+      ],
+      "Resource" : "arn:aws:ec2:*::image/*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "ec2:ResourceTag/CreatedBy" : "EC2 Image Builder"

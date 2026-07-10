@@ -1,0 +1,258 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:signin:AuthorizeOAuth2Access",
+        "aws:allow_action:signin:CreateOAuth2Token"
+      ],
+      "display_name": "AWSMCPSignInOAuthAccessPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMCPSignInOAuthAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMCPSignInOAuthAccessPolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:config:GetConnector",
+      "aws:allow_action:config:ListConnectors",
+      "aws:allow_action:config:PutConnector",
+      "aws:allow_action:ec2:AttachImageWatermark",
+      "aws:allow_action:interconnect:AcceptConnectionProposal",
+      "aws:allow_action:interconnect:CreateConnection",
+      "aws:allow_action:interconnect:DeleteConnection",
+      "aws:allow_action:interconnect:DescribeConnectionProposal",
+      "aws:allow_action:interconnect:GetConnection",
+      "aws:allow_action:interconnect:GetEnvironment",
+      "aws:allow_action:interconnect:ListAttachPoints",
+      "aws:allow_action:interconnect:ListConnections",
+      "aws:allow_action:interconnect:ListEnvironments",
+      "aws:allow_action:interconnect:ListTagsForResource",
+      "aws:allow_action:interconnect:TagResource",
+      "aws:allow_action:interconnect:UntagResource",
+      "aws:allow_action:interconnect:UpdateConnection",
+      "aws:allow_action:signin:AuthorizeOAuth2Access",
+      "aws:allow_action:signin:CreateOAuth2Token",
+      "aws:allow_action:support:AddCommunicationToCase",
+      "aws:allow_action:support:CreateCase",
+      "aws:allow_action:support:DescribeCases",
+      "aws:allow_action:support:DescribeServices",
+      "aws:allow_action:support:DescribeSeverityLevels",
+      "aws:allow_action:support:ResolveCase"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "config:GetConnector",
+          "config:ListConnectors",
+          "config:PutConnector",
+          "ec2:AttachImageWatermark",
+          "interconnect:AcceptConnectionProposal",
+          "interconnect:CreateConnection",
+          "interconnect:DeleteConnection",
+          "interconnect:DescribeConnectionProposal",
+          "interconnect:GetConnection",
+          "interconnect:GetEnvironment",
+          "interconnect:ListAttachPoints",
+          "interconnect:ListConnections",
+          "interconnect:ListEnvironments",
+          "interconnect:ListTagsForResource",
+          "interconnect:TagResource",
+          "interconnect:UntagResource",
+          "interconnect:UpdateConnection",
+          "signin:AuthorizeOAuth2Access",
+          "signin:CreateOAuth2Token",
+          "support:AddCommunicationToCase",
+          "support:CreateCase",
+          "support:DescribeCases",
+          "support:DescribeServices",
+          "support:DescribeSeverityLevels",
+          "support:ResolveCase"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSAccountSettingsManagementRole",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "support:AddCommunicationToCase",
+              "support:CreateCase",
+              "support:DescribeCases",
+              "support:DescribeServices",
+              "support:DescribeSeverityLevels",
+              "support:ResolveCase"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 08, 2026, 19:12 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 08, 2026, 19:12 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 11,
+          "before": 10,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+    },
+    {
+      "display_name": "AmazonInspector2FullAccess_v2",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "config:GetConnector",
+              "config:ListConnectors",
+              "config:PutConnector"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 08, 2026, 19:12 UTC",
+          "before": "July 07, 2026, 20:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 08, 2026, 19:12 UTC",
+          "before": "July 07, 2026, 20:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 13,
+          "before": 10,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2FullAccess_v2.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonInspector2FullAccess_v2"
+    },
+    {
+      "display_name": "AWSServiceRoleForImageBuilder",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:AttachImageWatermark"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v28 (default)",
+          "before": "v27 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 09, 2026, 15:27 UTC",
+          "before": "March 17, 2026, 20:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 09, 2026, 15:27 UTC",
+          "before": "March 17, 2026, 20:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 38,
+          "before": 37,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForImageBuilder.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForImageBuilder"
+    },
+    {
+      "display_name": "NetworkAdministrator",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "interconnect:AcceptConnectionProposal",
+              "interconnect:CreateConnection",
+              "interconnect:DeleteConnection",
+              "interconnect:DescribeConnectionProposal",
+              "interconnect:GetConnection",
+              "interconnect:GetEnvironment",
+              "interconnect:ListAttachPoints",
+              "interconnect:ListConnections",
+              "interconnect:ListEnvironments",
+              "interconnect:ListTagsForResource",
+              "interconnect:TagResource",
+              "interconnect:UntagResource",
+              "interconnect:UpdateConnection"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 09, 2026, 14:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 09, 2026, 14:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
+    }
+  ],
+  "compared_at_utc": "2026-07-10T06:56:25Z",
+  "counts": {
+    "added_atoms": 25,
+    "added_objects": 1,
+    "changed_objects": 4,
+    "current_objects": 1536,
+    "previous_objects": 1535,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-10",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-09",
+  "removed_objects": []
+}

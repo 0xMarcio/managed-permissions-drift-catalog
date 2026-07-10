@@ -54227,6 +54227,11 @@
     ],
     "aws:allow_action:config:GetConnector": [
       {
+        "display_name": "AmazonInspector2FullAccess_v2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2FullAccess_v2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonInspector2FullAccess_v2"
+      },
+      {
         "display_name": "AmazonInspector2ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonInspector2ReadOnlyAccess"
@@ -54364,6 +54369,11 @@
     ],
     "aws:allow_action:config:ListConnectors": [
       {
+        "display_name": "AmazonInspector2FullAccess_v2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2FullAccess_v2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonInspector2FullAccess_v2"
+      },
+      {
         "display_name": "AmazonInspector2ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonInspector2ReadOnlyAccess"
@@ -54491,6 +54501,13 @@
         "display_name": "AWSConfigMultiAccountSetupPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigMultiAccountSetupPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigMultiAccountSetupPolicy"
+      }
+    ],
+    "aws:allow_action:config:PutConnector": [
+      {
+        "display_name": "AmazonInspector2FullAccess_v2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2FullAccess_v2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonInspector2FullAccess_v2"
       }
     ],
     "aws:allow_action:config:PutDeliveryChannel": [
@@ -74626,6 +74643,11 @@
         "display_name": "EC2ImageBuilderExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/EC2ImageBuilderExecutionPolicy"
+      },
+      {
+        "display_name": "AWSServiceRoleForImageBuilder",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForImageBuilder.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForImageBuilder"
       }
     ],
     "aws:allow_action:ec2:AttachInternetGateway": [
@@ -151308,11 +151330,37 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
       }
     ],
+    "aws:allow_action:interconnect:AcceptConnectionProposal": [
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
+      }
+    ],
+    "aws:allow_action:interconnect:CreateConnection": [
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
+      }
+    ],
+    "aws:allow_action:interconnect:DeleteConnection": [
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
+      }
+    ],
     "aws:allow_action:interconnect:DescribeConnectionProposal": [
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
       }
     ],
     "aws:allow_action:interconnect:GetConnection": [
@@ -151320,6 +151368,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
       }
     ],
     "aws:allow_action:interconnect:GetEnvironment": [
@@ -151327,6 +151380,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
       }
     ],
     "aws:allow_action:interconnect:ListAttachPoints": [
@@ -151334,6 +151392,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
       }
     ],
     "aws:allow_action:interconnect:ListConnections": [
@@ -151341,6 +151404,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
       }
     ],
     "aws:allow_action:interconnect:ListEnvironments": [
@@ -151348,6 +151416,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
       }
     ],
     "aws:allow_action:interconnect:ListTagsForResource": [
@@ -151355,6 +151428,32 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
+      }
+    ],
+    "aws:allow_action:interconnect:TagResource": [
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
+      }
+    ],
+    "aws:allow_action:interconnect:UntagResource": [
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
+      }
+    ],
+    "aws:allow_action:interconnect:UpdateConnection": [
+      {
+        "display_name": "NetworkAdministrator",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
       }
     ],
     "aws:allow_action:internetmonitor:CreateMonitor": [
@@ -259356,12 +259455,22 @@
     ],
     "aws:allow_action:signin:AuthorizeOAuth2Access": [
       {
+        "display_name": "AWSMCPSignInOAuthAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMCPSignInOAuthAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMCPSignInOAuthAccessPolicy"
+      },
+      {
         "display_name": "SignInLocalDevelopmentAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SignInLocalDevelopmentAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/SignInLocalDevelopmentAccess"
       }
     ],
     "aws:allow_action:signin:CreateOAuth2Token": [
+      {
+        "display_name": "AWSMCPSignInOAuthAccessPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMCPSignInOAuthAccessPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMCPSignInOAuthAccessPolicy"
+      },
       {
         "display_name": "SignInLocalDevelopmentAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SignInLocalDevelopmentAccess.html",
@@ -275067,6 +275176,11 @@
     ],
     "aws:allow_action:support:AddCommunicationToCase": [
       {
+        "display_name": "AWSAccountSettingsManagementRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
+      {
         "display_name": "AWSPartnerCentralFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess"
@@ -275097,6 +275211,11 @@
         "display_name": "AIDevOpsAgentAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AWSAccountSettingsManagementRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
       },
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
@@ -275168,6 +275287,11 @@
         "display_name": "AIDevOpsOperatorAppAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+      },
+      {
+        "display_name": "AWSAccountSettingsManagementRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
       },
       {
         "display_name": "AWSPartnerCentralFullAccess",
@@ -275290,6 +275414,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
       },
       {
+        "display_name": "AWSAccountSettingsManagementRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
+      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -275301,6 +275430,11 @@
       }
     ],
     "aws:allow_action:support:DescribeSeverityLevels": [
+      {
+        "display_name": "AWSAccountSettingsManagementRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
       {
         "display_name": "AWSSupportAppFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppFullAccess.html",
@@ -275478,6 +275612,11 @@
       }
     ],
     "aws:allow_action:support:ResolveCase": [
+      {
+        "display_name": "AWSAccountSettingsManagementRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
       {
         "display_name": "AWSPartnerCentralFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess.html",
@@ -297999,7 +298138,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-07-09T07:06:05Z",
+  "generated_at_utc": "2026-07-10T06:56:25Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
