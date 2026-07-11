@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 29, 2018, 18:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 29, 2018, 18:19 UTC</p>
+                <p><b>Edited time:</b>  July 09, 2026, 17:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/WellArchitectedConsoleFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="WellArchitectedConsoleFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -73,10 +73,103 @@
   "Statement" : [
     <span>{</span>
       "Effect" : "Allow",
+      "Action" : "wellarchitected:*",
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
       "Action" : [
-        "wellarchitected:*"
+        "organizations:DescribeAccount",
+        "organizations:DescribeOrganization",
+        "organizations:ListAWSServiceAccessForOrganization",
+        "organizations:ListRoots",
+        "organizations:ListAccounts",
+        "organizations:ListOrganizationalUnitsForParent",
+        "organizations:ListAccountsForParent",
+        "organizations:ListDelegatedServicesForAccount",
+        "organizations:ListDelegatedAdministrators"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "organizations:RegisterDelegatedAdministrator",
+        "organizations:DeregisterDelegatedAdministrator",
+        "organizations:EnableAWSServiceAccess",
+        "organizations:DisableAWSServiceAccess"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "organizations:ServicePrincipal" : "agent.wellarchitected.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "trustedadvisor:List*",
+        "trustedadvisor:Get*"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:*:iam::*:role/aws-service-role/*/AWSServiceRoleForWellArchitected*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : [
+            "wellarchitected.amazonaws.com",
+            "agent.wellarchitected.amazonaws.com",
+            "metrics.wellarchitected.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:DeleteServiceLinkedRole",
+        "iam:GetServiceLinkedRoleDeletionStatus"
+      ],
+      "Resource" : "arn:*:iam::*:role/aws-service-role/*/AWSServiceRoleForWellArchitected*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateRole",
+        "iam:AttachRolePolicy"
+      ],
+      "Resource" : "arn:aws:iam::*:role/service-role/*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreatePolicy",
+        "iam:CreatePolicyVersion",
+        "iam:DeletePolicyVersion"
+      ],
+      "Resource" : "arn:aws:iam::*:policy/service-role/*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "iam:ListRoles",
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : "arn:aws:iam::*:role/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:PassedToService" : [
+            "wellarchitected.amazonaws.com",
+            "agent.wellarchitected.amazonaws.com"
+          ]
+        }
+      }
     }
   ]
 }</code></pre>

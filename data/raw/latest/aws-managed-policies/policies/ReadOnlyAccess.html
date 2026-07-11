@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:39 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 15, 2026, 20:27 UTC</p>
+                <p><b>Edited time:</b>  July 09, 2026, 20:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/ReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="ReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v186 (default)</p>
+        <p><b>Policy version:</b> v187 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -397,6 +397,7 @@
         "bedrock-agentcore:GetEvent",
         "bedrock-agentcore:GetGateway",
         "bedrock-agentcore:GetGatewayTarget",
+        "bedrock-agentcore:GetHarness",
         "bedrock-agentcore:GetMemory",
         "bedrock-agentcore:GetMemoryRecord",
         "bedrock-agentcore:GetOauth2CredentialProvider",
@@ -419,6 +420,7 @@
         "bedrock-agentcore:ListEvents",
         "bedrock-agentcore:ListGateways",
         "bedrock-agentcore:ListGatewayTargets",
+        "bedrock-agentcore:ListHarnesses",
         "bedrock-agentcore:ListMemories",
         "bedrock-agentcore:ListMemoryRecords",
         "bedrock-agentcore:ListOauth2CredentialProviders",
@@ -483,6 +485,7 @@
         "billing:GetBillingNotifications",
         "billing:GetBillingPreferences",
         "billing:GetBillingView",
+        "billing:GetCreditAllocationHistory",
         "billing:GetContractInformation",
         "billing:GetCredits",
         "billing:GetIAMAccessPreference",
@@ -906,8 +909,11 @@
         "deadline:GetFleet",
         "deadline:GetJob",
         "deadline:GetLicenseEndpoint",
+        "deadline:GetLimit",
         "deadline:GetMonitor",
+        "deadline:GetMonitorSettings",
         "deadline:GetQueue",
+        "deadline:GetQueueLimitAssociation",
         "deadline:GetQueueEnvironment",
         "deadline:GetQueueFleetAssociation",
         "deadline:GetSession",
@@ -917,6 +923,7 @@
         "deadline:GetStorageProfile",
         "deadline:GetStorageProfileForQueue",
         "deadline:GetTask",
+        "deadline:GetVolume",
         "deadline:GetWorker",
         "deadline:ListAvailableMeteredProducts",
         "deadline:ListBudgets",
@@ -928,10 +935,12 @@
         "deadline:ListJobParameterDefinitions",
         "deadline:ListJobs",
         "deadline:ListLicenseEndpoints",
+        "deadline:ListLimits",
         "deadline:ListMeteredProducts",
         "deadline:ListMonitors",
         "deadline:ListQueueEnvironments",
         "deadline:ListQueueFleetAssociations",
+        "deadline:ListQueueLimitAssociations",
         "deadline:ListQueueMembers",
         "deadline:ListQueues",
         "deadline:ListSessionActions",
@@ -944,6 +953,7 @@
         "deadline:ListStorageProfilesForQueue",
         "deadline:ListTagsForResource",
         "deadline:ListTasks",
+        "deadline:ListVolumes",
         "deadline:ListWorkers",
         "deadline:SearchJobs",
         "deadline:SearchSteps",
@@ -1022,8 +1032,10 @@
         "ds:Verify*",
         "dsql:GetCluster",
         "dsql:GetClusterPolicy",
+        "dsql:GetStream",
         "dsql:GetVpcEndpointServiceName",
         "dsql:ListClusters",
+        "dsql:ListStreams",
         "dsql:ListTagsForResource",
         "dynamodb:BatchGet*",
         "dynamodb:Describe*",
@@ -2331,6 +2343,11 @@
         "rekognition:List*",
         "rekognition:RecognizeCelebrities",
         "rekognition:Search*",
+        "resiliencehub:GetFailureModeFinding",
+        "resiliencehub:GetPolicy",
+        "resiliencehub:GetService",
+        "resiliencehub:GetSystem",
+        "resiliencehub:GetUserJourney",
         "resiliencehub:DescribeApp",
         "resiliencehub:DescribeAppAssessment",
         "resiliencehub:DescribeAppVersion",
@@ -2354,15 +2371,32 @@
         "resiliencehub:ListAppVersionResourceMappings",
         "resiliencehub:ListAppVersionResources",
         "resiliencehub:ListAppVersions",
+        "resiliencehub:ListAssertions",
+        "resiliencehub:ListDependencies",
+        "resiliencehub:ListFailureModeAssessments",
+        "resiliencehub:ListFailureModeFindings",
+        "resiliencehub:ListInputSources",
         "resiliencehub:ListMetrics",
+        "resiliencehub:ListPolicies",
         "resiliencehub:ListRecommendationTemplates",
+        "resiliencehub:ListReports",
+        "resiliencehub:ListResources",
         "resiliencehub:ListResiliencyPolicies",
         "resiliencehub:ListResourceGroupingRecommendations",
+        "resiliencehub:ListServices",
+        "resiliencehub:ListServiceEvents",
+        "resiliencehub:ListServiceFunctions",
+        "resiliencehub:ListServiceEvents",
+        "resiliencehub:ListServiceFunctions",
+        "resiliencehub:ListServiceTopologyEdges",
         "resiliencehub:ListSopRecommendations",
         "resiliencehub:ListSuggestedResiliencyPolicies",
+        "resiliencehub:ListSystems",
+        "resiliencehub:ListSystemEvents",
         "resiliencehub:ListTagsForResource",
         "resiliencehub:ListTestRecommendations",
         "resiliencehub:ListUnsupportedAppVersionResources",
+        "resiliencehub:ListUserJourneys",
         "resource-explorer-2:BatchGetView",
         "resource-explorer-2:GetAccountLevelServiceConfiguration",
         "resource-explorer-2:GetDefaultView",

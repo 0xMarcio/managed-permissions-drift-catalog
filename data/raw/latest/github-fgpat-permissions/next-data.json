@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "3a9sVYHB5-yNtTNb2W0Mt",
+  "buildId": "xas2ng1Xr8okgAP5ydSmP",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -1462,6 +1462,24 @@
               "slug": "remove-users-from-the-pull-request-creation-cap-bypass-list-for-a-repository",
               "subcategory": "repos",
               "verb": "delete"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "interactions",
+              "requestPath": "/repos/{owner}/{repo}/interaction-limits/pulls/creation-cap",
+              "slug": "get-pull-request-creation-cap-for-a-repository",
+              "subcategory": "repos",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "interactions",
+              "requestPath": "/repos/{owner}/{repo}/interaction-limits/pulls/creation-cap",
+              "slug": "update-pull-request-creation-cap-for-a-repository",
+              "subcategory": "repos",
+              "verb": "patch"
             },
             {
               "access": "read",
@@ -9944,7 +9962,7 @@
         ],
         "permissions": "",
         "product": "",
-        "renderedPage": "<h2 id=\"about-permissions-required-for-fine-grained-personal-access-token\" tabindex=\"-1\"><a class=\"heading-link\" href=\"#about-permissions-required-for-fine-grained-personal-access-token\">About permissions required for fine-grained personal access token<span class=\"heading-link-symbol\" aria-hidden=\"true\"></span></a></h2>\n<p>When you create a fine-grained personal access token, you grant it a set of permissions. Permissions define what resources the token can access via the API. For more information, see <a href=\"/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\">Managing your personal access tokens</a>.</p>\n<p>To help you choose the correct permissions, you will receive the <code>X-Accepted-GitHub-Permissions</code> header in the REST API response. The header will tell you what permissions are required in order to access the endpoint. For more information, see <a href=\"/en/rest/overview/troubleshooting#resource-not-accessible\">Troubleshooting the REST API</a>.</p>\n<p>These permissions are required to access private resources. Some endpoints can also be used to access public resources without these permissions. To see whether an endpoint can access public resources without a permission, see the documentation for that endpoint.</p>\n<p>Some endpoints require more than one permission. Other endpoints work with any one permission from a set of permissions. In these cases, the \"Additional permissions\" column will include a checkmark. For full details about the permissions that are required to use the endpoint, see the documentation for that endpoint.</p>",
+        "renderedPage": "<h2 id=\"about-permissions-required-for-fine-grained-personal-access-token\" tabindex=\"-1\"><a class=\"heading-link\" href=\"#about-permissions-required-for-fine-grained-personal-access-token\">About permissions required for fine-grained personal access token<span class=\"heading-link-symbol\" aria-hidden=\"true\"></span></a></h2>\n<p>When you create a fine-grained personal access token, you grant it a set of permissions. Permissions define what resources the token can access via the API. For more information, see <a href=\"/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\">Managing your personal access tokens</a>.</p>\n<p>To help you choose the correct permissions, you will receive the <code>X-Accepted-GitHub-Permissions</code> header in the REST API response. The header will tell you what permissions are required in order to access the endpoint. For more information, see <a href=\"/en/rest/using-the-rest-api/troubleshooting-the-rest-api#resource-not-accessible\">Troubleshooting the REST API</a>.</p>\n<p>These permissions are required to access private resources. Some endpoints can also be used to access public resources without these permissions. To see whether an endpoint can access public resources without a permission, see the documentation for that endpoint.</p>\n<p>Some endpoints require more than one permission. Other endpoints work with any one permission from a set of permissions. In these cases, the \"Additional permissions\" column will include a checkmark. For full details about the permissions that are required to use the endpoint, see the documentation for that endpoint.</p>",
         "renderedPageHast": {
           "children": [
             {
@@ -10049,7 +10067,7 @@
                     }
                   ],
                   "properties": {
-                    "href": "/en/rest/overview/troubleshooting#resource-not-accessible"
+                    "href": "/en/rest/using-the-rest-api/troubleshooting-the-rest-api#resource-not-accessible"
                   },
                   "tagName": "a",
                   "type": "element"

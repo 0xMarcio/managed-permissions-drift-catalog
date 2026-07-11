@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 29, 2018, 18:21 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 29, 2023, 17:16 UTC</p>
+                <p><b>Edited time:</b>  July 09, 2026, 17:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/WellArchitectedConsoleReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="WellArchitectedConsoleReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -76,7 +76,17 @@
       "Action" : [
         "wellarchitected:Get*",
         "wellarchitected:List*",
-        "wellarchitected:ExportLens"
+        "wellarchitected:ExportLens",
+        "organizations:DescribeAccount",
+        "organizations:ListAWSServiceAccessForOrganization",
+        "organizations:ListDelegatedAdministrators",
+        "organizations:ListRoots",
+        "organizations:ListOrganizationalUnitsForParent",
+        "organizations:ListAccountsForParent",
+        "organizations:ListAccounts",
+        "organizations:DescribeOrganization",
+        "trustedadvisor:List*",
+        "trustedadvisor:Get*"
       ],
       "Resource" : "*"
     }

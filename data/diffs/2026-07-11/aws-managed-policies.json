@@ -1,0 +1,515 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:bedrock-agentcore:GetABTest",
+      "aws:allow_action:bedrock-agentcore:GetBatchEvaluation",
+      "aws:allow_action:bedrock-agentcore:GetConfigurationBundle",
+      "aws:allow_action:bedrock-agentcore:GetConfigurationBundleVersion",
+      "aws:allow_action:bedrock-agentcore:GetEvaluator",
+      "aws:allow_action:bedrock-agentcore:GetHarness",
+      "aws:allow_action:bedrock-agentcore:GetOnlineEvaluationConfig",
+      "aws:allow_action:bedrock-agentcore:GetPaymentConnector",
+      "aws:allow_action:bedrock-agentcore:GetPaymentCredentialProvider",
+      "aws:allow_action:bedrock-agentcore:GetPaymentInstrument",
+      "aws:allow_action:bedrock-agentcore:GetPaymentManager",
+      "aws:allow_action:bedrock-agentcore:GetPaymentSession",
+      "aws:allow_action:bedrock-agentcore:GetRecommendation",
+      "aws:allow_action:bedrock-agentcore:GetRegistry",
+      "aws:allow_action:bedrock-agentcore:GetRegistryRecord",
+      "aws:allow_action:bedrock-agentcore:ListABTests",
+      "aws:allow_action:bedrock-agentcore:ListBatchEvaluations",
+      "aws:allow_action:bedrock-agentcore:ListConfigurationBundleVersions",
+      "aws:allow_action:bedrock-agentcore:ListConfigurationBundles",
+      "aws:allow_action:bedrock-agentcore:ListEvaluators",
+      "aws:allow_action:bedrock-agentcore:ListHarnesses",
+      "aws:allow_action:bedrock-agentcore:ListOnlineEvaluationConfigs",
+      "aws:allow_action:bedrock-agentcore:ListPaymentConnectors",
+      "aws:allow_action:bedrock-agentcore:ListPaymentCredentialProviders",
+      "aws:allow_action:bedrock-agentcore:ListPaymentInstruments",
+      "aws:allow_action:bedrock-agentcore:ListPaymentManagers",
+      "aws:allow_action:bedrock-agentcore:ListPaymentSessions",
+      "aws:allow_action:bedrock-agentcore:ListRecommendations",
+      "aws:allow_action:bedrock-agentcore:ListRegistries",
+      "aws:allow_action:bedrock-agentcore:ListRegistryRecords",
+      "aws:allow_action:billing:GetCreditAllocationHistory",
+      "aws:allow_action:deadline:GetLimit",
+      "aws:allow_action:deadline:GetMonitorSettings",
+      "aws:allow_action:deadline:GetQueueLimitAssociation",
+      "aws:allow_action:deadline:GetVolume",
+      "aws:allow_action:deadline:ListLimits",
+      "aws:allow_action:deadline:ListQueueLimitAssociations",
+      "aws:allow_action:deadline:ListVolumes",
+      "aws:allow_action:dsql:GetStream",
+      "aws:allow_action:dsql:ListStreams",
+      "aws:allow_action:iam:AttachRolePolicy",
+      "aws:allow_action:iam:CreatePolicy",
+      "aws:allow_action:iam:CreatePolicyVersion",
+      "aws:allow_action:iam:CreateRole",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:DeletePolicyVersion",
+      "aws:allow_action:iam:DeleteServiceLinkedRole",
+      "aws:allow_action:iam:GetServiceLinkedRoleDeletionStatus",
+      "aws:allow_action:iam:ListRoles",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:organizations:DeregisterDelegatedAdministrator",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:DisableAWSServiceAccess",
+      "aws:allow_action:organizations:EnableAWSServiceAccess",
+      "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+      "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:organizations:ListAccountsForParent",
+      "aws:allow_action:organizations:ListAccountsForParent",
+      "aws:allow_action:organizations:ListDelegatedAdministrators",
+      "aws:allow_action:organizations:ListDelegatedAdministrators",
+      "aws:allow_action:organizations:ListDelegatedServicesForAccount",
+      "aws:allow_action:organizations:ListOrganizationalUnitsForParent",
+      "aws:allow_action:organizations:ListOrganizationalUnitsForParent",
+      "aws:allow_action:organizations:ListRoots",
+      "aws:allow_action:organizations:ListRoots",
+      "aws:allow_action:organizations:RegisterDelegatedAdministrator",
+      "aws:allow_action:resiliencehub:GetFailureModeFinding",
+      "aws:allow_action:resiliencehub:GetPolicy",
+      "aws:allow_action:resiliencehub:GetService",
+      "aws:allow_action:resiliencehub:GetSystem",
+      "aws:allow_action:resiliencehub:GetUserJourney",
+      "aws:allow_action:resiliencehub:ListAssertions",
+      "aws:allow_action:resiliencehub:ListDependencies",
+      "aws:allow_action:resiliencehub:ListFailureModeAssessments",
+      "aws:allow_action:resiliencehub:ListFailureModeFindings",
+      "aws:allow_action:resiliencehub:ListInputSources",
+      "aws:allow_action:resiliencehub:ListPolicies",
+      "aws:allow_action:resiliencehub:ListReports",
+      "aws:allow_action:resiliencehub:ListResources",
+      "aws:allow_action:resiliencehub:ListServiceEvents",
+      "aws:allow_action:resiliencehub:ListServiceFunctions",
+      "aws:allow_action:resiliencehub:ListServiceTopologyEdges",
+      "aws:allow_action:resiliencehub:ListServices",
+      "aws:allow_action:resiliencehub:ListSystemEvents",
+      "aws:allow_action:resiliencehub:ListSystems",
+      "aws:allow_action:resiliencehub:ListUserJourneys",
+      "aws:allow_action:sagemaker:*Feature*",
+      "aws:allow_action:sagemaker:*Record",
+      "aws:allow_action:sagemaker:DescribeHub",
+      "aws:allow_action:sagemaker:DescribeHubContent",
+      "aws:allow_action:sagemaker:ListFeatureGroups",
+      "aws:allow_action:scheduler:ListSchedules",
+      "aws:allow_action:trustedadvisor:Get*",
+      "aws:allow_action:trustedadvisor:Get*",
+      "aws:allow_action:trustedadvisor:List*",
+      "aws:allow_action:trustedadvisor:List*"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "bedrock-agentcore:GetABTest",
+          "bedrock-agentcore:GetBatchEvaluation",
+          "bedrock-agentcore:GetConfigurationBundle",
+          "bedrock-agentcore:GetConfigurationBundleVersion",
+          "bedrock-agentcore:GetEvaluator",
+          "bedrock-agentcore:GetHarness",
+          "bedrock-agentcore:GetOnlineEvaluationConfig",
+          "bedrock-agentcore:GetPaymentConnector",
+          "bedrock-agentcore:GetPaymentCredentialProvider",
+          "bedrock-agentcore:GetPaymentInstrument",
+          "bedrock-agentcore:GetPaymentManager",
+          "bedrock-agentcore:GetPaymentSession",
+          "bedrock-agentcore:GetRecommendation",
+          "bedrock-agentcore:GetRegistry",
+          "bedrock-agentcore:GetRegistryRecord",
+          "bedrock-agentcore:ListABTests",
+          "bedrock-agentcore:ListBatchEvaluations",
+          "bedrock-agentcore:ListConfigurationBundleVersions",
+          "bedrock-agentcore:ListConfigurationBundles",
+          "bedrock-agentcore:ListEvaluators",
+          "bedrock-agentcore:ListHarnesses",
+          "bedrock-agentcore:ListOnlineEvaluationConfigs",
+          "bedrock-agentcore:ListPaymentConnectors",
+          "bedrock-agentcore:ListPaymentCredentialProviders",
+          "bedrock-agentcore:ListPaymentInstruments",
+          "bedrock-agentcore:ListPaymentManagers",
+          "bedrock-agentcore:ListPaymentSessions",
+          "bedrock-agentcore:ListRecommendations",
+          "bedrock-agentcore:ListRegistries",
+          "bedrock-agentcore:ListRegistryRecords",
+          "billing:GetCreditAllocationHistory",
+          "deadline:GetLimit",
+          "deadline:GetMonitorSettings",
+          "deadline:GetQueueLimitAssociation",
+          "deadline:GetVolume",
+          "deadline:ListLimits",
+          "deadline:ListQueueLimitAssociations",
+          "deadline:ListVolumes",
+          "dsql:GetStream",
+          "dsql:ListStreams",
+          "iam:AttachRolePolicy",
+          "iam:CreatePolicy",
+          "iam:CreatePolicyVersion",
+          "iam:CreateRole",
+          "iam:CreateServiceLinkedRole",
+          "iam:DeletePolicyVersion",
+          "iam:DeleteServiceLinkedRole",
+          "iam:GetServiceLinkedRoleDeletionStatus",
+          "iam:ListRoles",
+          "iam:PassRole",
+          "organizations:DeregisterDelegatedAdministrator",
+          "organizations:DescribeAccount",
+          "organizations:DescribeAccount",
+          "organizations:DescribeOrganization",
+          "organizations:DescribeOrganization",
+          "organizations:DisableAWSServiceAccess",
+          "organizations:EnableAWSServiceAccess",
+          "organizations:ListAWSServiceAccessForOrganization",
+          "organizations:ListAWSServiceAccessForOrganization",
+          "organizations:ListAccounts",
+          "organizations:ListAccounts",
+          "organizations:ListAccountsForParent",
+          "organizations:ListAccountsForParent",
+          "organizations:ListDelegatedAdministrators",
+          "organizations:ListDelegatedAdministrators",
+          "organizations:ListDelegatedServicesForAccount",
+          "organizations:ListOrganizationalUnitsForParent",
+          "organizations:ListOrganizationalUnitsForParent",
+          "organizations:ListRoots",
+          "organizations:ListRoots",
+          "organizations:RegisterDelegatedAdministrator",
+          "resiliencehub:GetFailureModeFinding",
+          "resiliencehub:GetPolicy",
+          "resiliencehub:GetService",
+          "resiliencehub:GetSystem",
+          "resiliencehub:GetUserJourney",
+          "resiliencehub:ListAssertions",
+          "resiliencehub:ListDependencies",
+          "resiliencehub:ListFailureModeAssessments",
+          "resiliencehub:ListFailureModeFindings",
+          "resiliencehub:ListInputSources",
+          "resiliencehub:ListPolicies",
+          "resiliencehub:ListReports",
+          "resiliencehub:ListResources",
+          "resiliencehub:ListServiceEvents",
+          "resiliencehub:ListServiceFunctions",
+          "resiliencehub:ListServiceTopologyEdges",
+          "resiliencehub:ListServices",
+          "resiliencehub:ListSystemEvents",
+          "resiliencehub:ListSystems",
+          "resiliencehub:ListUserJourneys",
+          "sagemaker:*Feature*",
+          "sagemaker:*Record",
+          "sagemaker:DescribeHub",
+          "sagemaker:DescribeHubContent",
+          "sagemaker:ListFeatureGroups",
+          "scheduler:ListSchedules",
+          "trustedadvisor:Get*",
+          "trustedadvisor:Get*",
+          "trustedadvisor:List*",
+          "trustedadvisor:List*"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "ReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GetHarness",
+              "bedrock-agentcore:ListHarnesses",
+              "billing:GetCreditAllocationHistory",
+              "deadline:GetLimit",
+              "deadline:GetMonitorSettings",
+              "deadline:GetQueueLimitAssociation",
+              "deadline:GetVolume",
+              "deadline:ListLimits",
+              "deadline:ListQueueLimitAssociations",
+              "deadline:ListVolumes",
+              "dsql:GetStream",
+              "dsql:ListStreams",
+              "resiliencehub:GetFailureModeFinding",
+              "resiliencehub:GetPolicy",
+              "resiliencehub:GetService",
+              "resiliencehub:GetSystem",
+              "resiliencehub:GetUserJourney",
+              "resiliencehub:ListAssertions",
+              "resiliencehub:ListDependencies",
+              "resiliencehub:ListFailureModeAssessments",
+              "resiliencehub:ListFailureModeFindings",
+              "resiliencehub:ListInputSources",
+              "resiliencehub:ListPolicies",
+              "resiliencehub:ListReports",
+              "resiliencehub:ListResources",
+              "resiliencehub:ListServiceEvents",
+              "resiliencehub:ListServiceFunctions",
+              "resiliencehub:ListServiceTopologyEdges",
+              "resiliencehub:ListServices",
+              "resiliencehub:ListSystemEvents",
+              "resiliencehub:ListSystems",
+              "resiliencehub:ListUserJourneys"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v187 (default)",
+          "before": "v186 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 09, 2026, 20:42 UTC",
+          "before": "June 15, 2026, 20:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 09, 2026, 20:42 UTC",
+          "before": "June 15, 2026, 20:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+    },
+    {
+      "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "sagemaker:*Feature*",
+              "sagemaker:*Record",
+              "sagemaker:DescribeHub",
+              "sagemaker:DescribeHubContent",
+              "sagemaker:ListFeatureGroups",
+              "scheduler:ListSchedules"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v41 (default)",
+          "before": "v40 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 09, 2026, 17:27 UTC",
+          "before": "May 21, 2026, 16:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 09, 2026, 17:27 UTC",
+          "before": "May 21, 2026, 16:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 78,
+          "before": 76,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+    },
+    {
+      "display_name": "SecurityAudit",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GetABTest",
+              "bedrock-agentcore:GetBatchEvaluation",
+              "bedrock-agentcore:GetConfigurationBundle",
+              "bedrock-agentcore:GetConfigurationBundleVersion",
+              "bedrock-agentcore:GetEvaluator",
+              "bedrock-agentcore:GetOnlineEvaluationConfig",
+              "bedrock-agentcore:GetPaymentConnector",
+              "bedrock-agentcore:GetPaymentCredentialProvider",
+              "bedrock-agentcore:GetPaymentInstrument",
+              "bedrock-agentcore:GetPaymentManager",
+              "bedrock-agentcore:GetPaymentSession",
+              "bedrock-agentcore:GetRecommendation",
+              "bedrock-agentcore:GetRegistry",
+              "bedrock-agentcore:GetRegistryRecord",
+              "bedrock-agentcore:ListABTests",
+              "bedrock-agentcore:ListBatchEvaluations",
+              "bedrock-agentcore:ListConfigurationBundleVersions",
+              "bedrock-agentcore:ListConfigurationBundles",
+              "bedrock-agentcore:ListEvaluators",
+              "bedrock-agentcore:ListOnlineEvaluationConfigs",
+              "bedrock-agentcore:ListPaymentConnectors",
+              "bedrock-agentcore:ListPaymentCredentialProviders",
+              "bedrock-agentcore:ListPaymentInstruments",
+              "bedrock-agentcore:ListPaymentManagers",
+              "bedrock-agentcore:ListPaymentSessions",
+              "bedrock-agentcore:ListRecommendations",
+              "bedrock-agentcore:ListRegistries",
+              "bedrock-agentcore:ListRegistryRecords"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v90 (default)",
+          "before": "v89 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 09, 2026, 20:57 UTC",
+          "before": "June 15, 2026, 20:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 09, 2026, 20:57 UTC",
+          "before": "June 15, 2026, 20:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+      "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+    },
+    {
+      "display_name": "WellArchitectedConsoleFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:AttachRolePolicy",
+              "iam:CreatePolicy",
+              "iam:CreatePolicyVersion",
+              "iam:CreateRole",
+              "iam:CreateServiceLinkedRole",
+              "iam:DeletePolicyVersion",
+              "iam:DeleteServiceLinkedRole",
+              "iam:GetServiceLinkedRoleDeletionStatus",
+              "iam:ListRoles",
+              "iam:PassRole",
+              "organizations:DeregisterDelegatedAdministrator",
+              "organizations:DescribeAccount",
+              "organizations:DescribeOrganization",
+              "organizations:DisableAWSServiceAccess",
+              "organizations:EnableAWSServiceAccess",
+              "organizations:ListAWSServiceAccessForOrganization",
+              "organizations:ListAccounts",
+              "organizations:ListAccountsForParent",
+              "organizations:ListDelegatedAdministrators",
+              "organizations:ListDelegatedServicesForAccount",
+              "organizations:ListOrganizationalUnitsForParent",
+              "organizations:ListRoots",
+              "organizations:RegisterDelegatedAdministrator",
+              "trustedadvisor:Get*",
+              "trustedadvisor:List*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 09, 2026, 17:27 UTC",
+          "before": "November 29, 2018, 18:19 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 09, 2026, 17:27 UTC",
+          "before": "November 29, 2018, 18:19 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 10,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedConsoleFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/WellArchitectedConsoleFullAccess"
+    },
+    {
+      "display_name": "WellArchitectedConsoleReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "organizations:DescribeAccount",
+              "organizations:DescribeOrganization",
+              "organizations:ListAWSServiceAccessForOrganization",
+              "organizations:ListAccounts",
+              "organizations:ListAccountsForParent",
+              "organizations:ListDelegatedAdministrators",
+              "organizations:ListOrganizationalUnitsForParent",
+              "organizations:ListRoots",
+              "trustedadvisor:Get*",
+              "trustedadvisor:List*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 09, 2026, 17:27 UTC",
+          "before": "June 29, 2023, 17:16 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 09, 2026, 17:27 UTC",
+          "before": "June 29, 2023, 17:16 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedConsoleReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/WellArchitectedConsoleReadOnlyAccess"
+    }
+  ],
+  "compared_at_utc": "2026-07-11T05:52:04Z",
+  "counts": {
+    "added_atoms": 101,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 1536,
+    "previous_objects": 1536,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-11",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-10",
+  "removed_objects": []
+}

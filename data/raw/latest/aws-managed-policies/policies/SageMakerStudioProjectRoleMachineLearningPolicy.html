@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:55 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 21, 2026, 16:57 UTC</p>
+                <p><b>Edited time:</b>  July 09, 2026, 17:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectRoleMachineLearningPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v40 (default)</p>
+        <p><b>Policy version:</b> v41 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -437,10 +437,13 @@
         "sagemaker:ListModelMetadata",
         "sagemaker:ListMlflowTrackingServers",
         "sagemaker:ListArtifacts",
+        "sagemaker:ListAssociations",
         "sagemaker:ListHubs",
         "sagemaker:ListPipelines",
         "sagemaker:ListContexts",
-        "sagemaker:ListMlflowApps"
+        "sagemaker:ListMlflowApps",
+        "sagemaker:ListFeatureGroups",
+        "scheduler:ListSchedules"
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
@@ -469,7 +472,6 @@
       "Action" : [
         "sagemaker:ListCandidatesForAutoMLJob",
         "sagemaker:ListTrainingJobsForHyperParameterTuningJob",
-        "sagemaker:ListAssociations",
         "sagemaker:ListHubContents",
         "sagemaker:ListPipelineExecutionSteps",
         "sagemaker:ListPipelineExecutions",
@@ -480,6 +482,24 @@
         "StringEquals" : <span>{</span>
           "aws:PrincipalTag/EnableSageMakerMLWorkloadsPermissions" : "true",
           "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SageMakerPublicHubReadPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "sagemaker:DescribeHub",
+        "sagemaker:DescribeHubContent",
+        "sagemaker:ListHubContents"
+      ],
+      "Resource" : [
+        "arn:aws:sagemaker:*:aws:hub/SageMakerPublicHub",
+        "arn:aws:sagemaker:*:aws:hub-content/SageMakerPublicHub/*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:PrincipalTag/EnableSageMakerMLWorkloadsPermissions" : "true"
         }
       }
     },
@@ -933,6 +953,20 @@
       "Resource" : [
         "*"
       ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SageMakerFeatureStorePermission",
+      "Effect" : "Allow",
+      "Action" : [
+        "sagemaker:*Feature*",
+        "sagemaker:*Record"
+      ],
+      "Resource" : "*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
