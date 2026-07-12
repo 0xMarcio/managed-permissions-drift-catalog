@@ -1,0 +1,101 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ds:DescribeTrusts",
+      "aws:allow_action:ec2:DescribeVpcEndpoints"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ds:DescribeTrusts",
+          "ec2:DescribeVpcEndpoints"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSLicenseManagerUserSubscriptionsServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ds:DescribeTrusts",
+              "ec2:DescribeVpcEndpoints"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 10, 2026, 20:42 UTC",
+          "before": "April 20, 2026, 22:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 10, 2026, 20:42 UTC",
+          "before": "April 20, 2026, 22:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 12,
+          "before": 11,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSLicenseManagerUserSubscriptionsServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerUserSubscriptionsServiceRolePolicy"
+    },
+    {
+      "display_name": "AmazonEKSServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v26 (default)",
+          "before": "v25 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 10, 2026, 18:57 UTC",
+          "before": "April 21, 2026, 22:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 10, 2026, 18:57 UTC",
+          "before": "April 21, 2026, 22:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-07-12T06:13:52Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1536,
+    "previous_objects": 1536,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-12",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-11",
+  "removed_objects": []
+}
