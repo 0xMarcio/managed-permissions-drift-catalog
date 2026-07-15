@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="a1c6a399-ae2a-e9db-fb59-75becc31af4f" />
 	
-		<meta name="updated_at" content="2026-07-01T23:48:00Z" />
+		<meta name="updated_at" content="2026-07-14T22:16:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/migration.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/45613dbcb99c7596e80dac1d657f289e7e467933/articles/role-based-access-control/built-in-roles/migration.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/3c9a5b714e5a846066f97602431d6365aa2dde1a/articles/role-based-access-control/built-in-roles/migration.md" />
 	
-		<meta name="git_commit_id" content="45613dbcb99c7596e80dac1d657f289e7e467933" />
+		<meta name="git_commit_id" content="3c9a5b714e5a846066f97602431d6365aa2dde1a" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="2313" />
+		<meta name="word_count" content="3485" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/migration" />
 	
@@ -112,7 +112,7 @@
 	
 		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/migration.md" />
 	
-		<meta name="previous_tlsh_hash" content="E42327826105C312FA152B0E3D0BFF041FD8F1452664AAC40B3A011562C43E6D729867AAEE07FB55E433C6A33093AE42DA81F5BFC29F5511DB48D89DCA1AC2D7FDDD92B68A" />
+		<meta name="previous_tlsh_hash" content="2AF545D25104C312FA1A1B4E3D0BFF041FD8F1452664A9C40F3A011562C43B6D769867AAEE07FB55E433C6A33053AE82DA82B5BFC2DF6511DB48D89DCA19C2D7BDDDA2B649" />
 	
 		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/migration.md" />
 	
@@ -120,15 +120,15 @@
 	 
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/20ed8455-bc18-4537-87a4-83784e7b2a39" data-source="generated" />
 	
-		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated" />
-	
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/347c5276-f041-4567-aee3-45f19a1b5e32" data-source="generated" />
+	
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated" />
 	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/9a7f703b-30bb-4d62-9eb4-97213f571849" data-source="generated" />
 	
-		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d" data-source="generated" />
-	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/802bcdcb-473d-4ef1-8382-dbeb2537d3a3" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d" data-source="generated" />
 	
 
 			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
@@ -1990,6 +1990,765 @@
   "type": "Microsoft.Authorization/roleDefinitions"
 }
 </code></pre>
+<h2 id="azure-local-migrate-execute-expert">Azure Local Migrate Execute Expert</h2>
+<p>Grants restricted access on an Azure Local based Azure Migrate project to only perform migration related operations, including replication, execution of migrations, tracking and monitoring of migration progress, and initiation of agentless migrations.</p>
+<p>Includes an ABAC condition to constrain role assignments.</p>
+<p><a href="/en-us/azure/migrate/prepare-azure-accounts" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/read</td>
+<td>Gets the list of subscriptions.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/write</td>
+<td>Creates or updates a resource group.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/locations/read</td>
+<td>Gets the list of locations supported.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/checkResourceName/action</td>
+<td>Check the resource name for validity.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/validate/action</td>
+<td>Validates a deployment.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deploymentScripts/write</td>
+<td>Creates or updates a deployment script</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deploymentScripts/read</td>
+<td>Gets or lists deployment scripts</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/links/write</td>
+<td>Creates or updates a resource link.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/locks/write</td>
+<td>Add locks at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/locks/delete</td>
+<td>Delete locks at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftmigrate" data-linktype="relative-path">Microsoft.Migrate</a>/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.ApplicationMigration/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftoffazure" data-linktype="relative-path">Microsoft.OffAzure</a>/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.MySQLDiscovery/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td><a href="../permissions/storage#microsoftstorage" data-linktype="relative-path">Microsoft.Storage</a>/storageAccounts/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/storage#microsoftstorage" data-linktype="relative-path">Microsoft.Storage</a>/storageAccounts/*/write</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/storage#microsoftstorage" data-linktype="relative-path">Microsoft.Storage</a>/storageAccounts/listKeys/action</td>
+<td>Returns the access keys for the specified storage account.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/links/read</td>
+<td>Gets or lists resource links.</td>
+</tr>
+<tr>
+<td>Microsoft.DependencyMap/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.DependencyMap/maps/*/action</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/*/Read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/LogicalNetworks/join/action</td>
+<td>Joins logical networks resource</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/NetworkInterfaces/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/VirtualHardDisks/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/VirtualMachines/Write</td>
+<td>Creates/Updates virtual machine resource</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/VirtualMachineInstances/Write</td>
+<td>Creates/Updates virtual machine instance resource</td>
+</tr>
+<tr>
+<td>Microsoft.DataReplication/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.DataReplication/replicationVaults/protectedItems/*</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.DataReplication/replicationVaults/replicationExtensions/*</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.DataReplication/replicationVaults/replicationPolicies/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftextendedlocation" data-linktype="relative-path">Microsoft.ExtendedLocation</a>/customLocations/read</td>
+<td>Gets an Custom Location resource</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftkubernetesconfiguration" data-linktype="relative-path">Microsoft.KubernetesConfiguration</a>/extensions/read</td>
+<td>Gets extension instance resource.</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftresourceconnector" data-linktype="relative-path">Microsoft.ResourceConnector</a>/appliances/read</td>
+<td>Gets an Appliance resource</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftoffazure" data-linktype="relative-path">Microsoft.OffAzure</a>/hypervSites/machines/inventoryinsights/pendingupdates/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftoffazure" data-linktype="relative-path">Microsoft.OffAzure</a>/hypervSites/machines/inventoryinsights/vulnerabilities/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftoffazure" data-linktype="relative-path">Microsoft.OffAzure</a>/serverSites/machines/inventoryinsights/pendingupdates/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftoffazure" data-linktype="relative-path">Microsoft.OffAzure</a>/serverSites/machines/inventoryinsights/vulnerabilities/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftoffazure" data-linktype="relative-path">Microsoft.OffAzure</a>/vmwareSites/machines/inventoryinsights/vulnerabilities/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftoffazure" data-linktype="relative-path">Microsoft.OffAzure</a>/vmwareSites/machines/inventoryinsights/pendingupdates/*</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Actions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/write</td>
+<td>Create a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/delete</td>
+<td>Delete a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Condition</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{17d1049b-9a84-46fb-8f53-869881c3d3ab, ba92f5b4-2d11-453d-a403-e96b0029c9fe})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{17d1049b-9a84-46fb-8f53-869881c3d3ab, ba92f5b4-2d11-453d-a403-e96b0029c9fe}))</td>
+<td>Add or remove role assignments for the following roles:<br>Storage Account Contributor<br>Storage Blob Data Contributor</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants restricted access on an Azure Local based Azure Migrate project to only perform migration related operations, including replication, execution of migrations, tracking and monitoring of migration progress, and initiation of agentless migrations.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/1cfa4eac-9a23-481c-a793-bfb6958e836c",
+  "name": "1cfa4eac-9a23-481c-a793-bfb6958e836c",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "Microsoft.Resources/subscriptions/locations/read",
+        "Microsoft.Resources/checkResourceName/action",
+        "Microsoft.Resources/deployments/validate/action",
+        "Microsoft.Resources/deploymentScripts/write",
+        "Microsoft.Resources/deploymentScripts/read",
+        "Microsoft.Resources/links/write",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/locks/write",
+        "Microsoft.Authorization/locks/delete",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Migrate/*/read",
+        "Microsoft.ApplicationMigration/*/read",
+        "Microsoft.OffAzure/*/read",
+        "Microsoft.MySQLDiscovery/*/read",
+        "Microsoft.Support/*",
+        "Microsoft.Storage/storageAccounts/*/read",
+        "Microsoft.Storage/storageAccounts/*/write",
+        "Microsoft.Storage/storageAccounts/listKeys/action",
+        "Microsoft.Resources/links/read",
+        "Microsoft.DependencyMap/*/read",
+        "Microsoft.DependencyMap/maps/*/action",
+        "Microsoft.AzureStackHCI/*/Read",
+        "Microsoft.AzureStackHCI/LogicalNetworks/join/action",
+        "Microsoft.AzureStackHCI/NetworkInterfaces/*",
+        "Microsoft.AzureStackHCI/VirtualHardDisks/*",
+        "Microsoft.AzureStackHCI/VirtualMachines/Write",
+        "Microsoft.AzureStackHCI/VirtualMachineInstances/Write",
+        "Microsoft.DataReplication/*/read",
+        "Microsoft.DataReplication/replicationVaults/protectedItems/*",
+        "Microsoft.DataReplication/replicationVaults/replicationExtensions/*",
+        "Microsoft.DataReplication/replicationVaults/replicationPolicies/*",
+        "Microsoft.ExtendedLocation/customLocations/read",
+        "Microsoft.KubernetesConfiguration/extensions/read",
+        "Microsoft.ResourceConnector/appliances/read"
+      ],
+      "notActions": [
+        "Microsoft.OffAzure/hypervSites/machines/inventoryinsights/pendingupdates/*",
+        "Microsoft.OffAzure/hypervSites/machines/inventoryinsights/vulnerabilities/*",
+        "Microsoft.OffAzure/serverSites/machines/inventoryinsights/pendingupdates/*",
+        "Microsoft.OffAzure/serverSites/machines/inventoryinsights/vulnerabilities/*",
+        "Microsoft.OffAzure/vmwareSites/machines/inventoryinsights/vulnerabilities/*",
+        "Microsoft.OffAzure/vmwareSites/machines/inventoryinsights/pendingupdates/*"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    },
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": [],
+      "conditionVersion": "2.0",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{17d1049b-9a84-46fb-8f53-869881c3d3ab, ba92f5b4-2d11-453d-a403-e96b0029c9fe})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{17d1049b-9a84-46fb-8f53-869881c3d3ab, ba92f5b4-2d11-453d-a403-e96b0029c9fe}))"
+    }
+  ],
+  "roleName": "Azure Local Migrate Execute Expert",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="azure-local-migrate-owner">Azure Local Migrate Owner</h2>
+<p>Grants full access to create and manage Azure Local based Azure Migrate projects including appliance-based discovery and execution of migrations; Also grants ability to assign Azure Migrate Local specific roles in Azure RBAC</p>
+<p>Includes an ABAC condition to constrain role assignments.</p>
+<p><a href="/en-us/azure/migrate/prepare-azure-accounts" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/read</td>
+<td>Gets or lists resource groups.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
+<td>Create and manage a deployment</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/resourceGroups/write</td>
+<td>Creates or updates a resource group.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/read</td>
+<td>Gets the list of subscriptions.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/subscriptions/locations/read</td>
+<td>Gets the list of locations supported.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/checkResourceName/action</td>
+<td>Check the resource name for validity.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/validate/action</td>
+<td>Validates a deployment.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deploymentScripts/write</td>
+<td>Creates or updates a deployment script</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deploymentScripts/read</td>
+<td>Gets or lists deployment scripts</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/links/write</td>
+<td>Creates or updates a resource link.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/*/read</td>
+<td>Read roles and role assignments</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/locks/write</td>
+<td>Add locks at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/locks/delete</td>
+<td>Delete locks at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/alertRules/*</td>
+<td>Create and manage a classic metric alert</td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftmigrate" data-linktype="relative-path">Microsoft.Migrate</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.ApplicationMigration/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/migration#microsoftoffazure" data-linktype="relative-path">Microsoft.OffAzure</a>/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/general#microsoftsupport" data-linktype="relative-path">Microsoft.Support</a>/*</td>
+<td>Create and update a support ticket</td>
+</tr>
+<tr>
+<td>Microsoft.MySQLDiscovery/*</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.DependencyMap/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/security#microsoftkeyvault" data-linktype="relative-path">Microsoft.KeyVault</a>/vaults/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/security#microsoftkeyvault" data-linktype="relative-path">Microsoft.KeyVault</a>/checkNameAvailability/read</td>
+<td>Checks that a key vault name is valid and is not in use</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsofthybridcompute" data-linktype="relative-path">Microsoft.HybridCompute</a>/machines/read</td>
+<td>Read any Azure Arc machines</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsofthybridcompute" data-linktype="relative-path">Microsoft.HybridCompute</a>/machines/write</td>
+<td>Writes an Azure Arc machines</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsofthybridcompute" data-linktype="relative-path">Microsoft.HybridCompute</a>/machines/delete</td>
+<td>Deletes an Azure Arc machines</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsofthybridcompute" data-linktype="relative-path">Microsoft.HybridCompute</a>/register/action</td>
+<td>Registers the subscription for the Microsoft.HybridCompute Resource Provider</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/virtualNetworks/read</td>
+<td>Get the virtual network definition</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/virtualNetworks/subnets/write</td>
+<td>Creates a virtual network subnet or updates an existing virtual network subnet</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/virtualNetworks/subnets/join/action</td>
+<td>Joins a virtual network. Not Alertable.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/virtualNetworks/join/action</td>
+<td>Joins a virtual network. Not Alertable.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateEndpoints/read</td>
+<td>Gets an private endpoint resource.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateEndpoints/write</td>
+<td>Creates a new private endpoint, or updates an existing private endpoint.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateEndpoints/privateDnsZoneGroups/write</td>
+<td>Puts a Private DNS Zone Group</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateDnsZones/write</td>
+<td>Create or update a Private DNS zone within a resource group. Note that this command cannot be used to create or update virtual network links or record sets within the zone.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateDnsZones/virtualNetworkLinks/write</td>
+<td>Create or update a Private DNS zone link to virtual network.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateDnsZones/join/action</td>
+<td>Joins a Private DNS Zone</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateDnsZones/A/write</td>
+<td>Create or update a record set of type 'A' within a Private DNS zone. The records specified will replace the current records in the record set.</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/register/action</td>
+<td>Registers the subscription</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/virtualNetworks/subnets/read</td>
+<td>Gets a virtual network subnet definition</td>
+</tr>
+<tr>
+<td><a href="../permissions/networking#microsoftnetwork" data-linktype="relative-path">Microsoft.Network</a>/privateEndpoints/privateDnsZoneGroups/read</td>
+<td>Gets a Private DNS Zone Group</td>
+</tr>
+<tr>
+<td><a href="../permissions/storage#microsoftstorage" data-linktype="relative-path">Microsoft.Storage</a>/storageAccounts/*</td>
+<td>Create and manage storage accounts</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftguestconfiguration" data-linktype="relative-path">Microsoft.GuestConfiguration</a>/register/action</td>
+<td>Registers the subscription for the Microsoft.GuestConfiguration resource provider.</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsofthybridconnectivity" data-linktype="relative-path">Microsoft.HybridConnectivity</a>/register/action</td>
+<td>Register the subscription for Microsoft.HybridConnectivity</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftrecoveryservices" data-linktype="relative-path">Microsoft.RecoveryServices</a>/vaults/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftrecoveryservices" data-linktype="relative-path">Microsoft.RecoveryServices</a>/register/action</td>
+<td>Registers subscription for given Resource Provider</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftrecoveryservices" data-linktype="relative-path">Microsoft.RecoveryServices</a>/operations/read</td>
+<td>Operation returns the list of Operations for a Resource Provider</td>
+</tr>
+<tr>
+<td>Microsoft.DataReplication/*/read</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.DataReplication/register/action</td>
+<td>Registers the subscription for the Microsoft.DataReplication resource provider</td>
+</tr>
+<tr>
+<td>Microsoft.DataReplication/replicationFabrics/*</td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft.DataReplication/replicationVaults/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/security#microsoftkeyvault" data-linktype="relative-path">Microsoft.KeyVault</a>/register/action</td>
+<td>Registers a subscription</td>
+</tr>
+<tr>
+<td>Microsoft.AzureArcData/register/action</td>
+<td>Register the subscription for Microsoft.AzureArcData</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/links/read</td>
+<td>Gets or lists resource links.</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/*/Read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/LogicalNetworks/join/action</td>
+<td>Joins logical networks resource</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/NetworkInterfaces/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/VirtualHardDisks/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/VirtualMachines/Write</td>
+<td>Creates/Updates virtual machine resource</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftazurestackhci" data-linktype="relative-path">Microsoft.AzureStackHCI</a>/VirtualMachineInstances/Write</td>
+<td>Creates/Updates virtual machine instance resource</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftextendedlocation" data-linktype="relative-path">Microsoft.ExtendedLocation</a>/customLocations/read</td>
+<td>Gets an Custom Location resource</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftkubernetesconfiguration" data-linktype="relative-path">Microsoft.KubernetesConfiguration</a>/extensions/read</td>
+<td>Gets extension instance resource.</td>
+</tr>
+<tr>
+<td><a href="../permissions/hybrid-multicloud#microsoftresourceconnector" data-linktype="relative-path">Microsoft.ResourceConnector</a>/appliances/read</td>
+<td>Gets an Appliance resource</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Actions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/write</td>
+<td>Create a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftauthorization" data-linktype="relative-path">Microsoft.Authorization</a>/roleAssignments/delete</td>
+<td>Delete a role assignment at the specified scope.</td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Condition</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{7859c0b0-0bb9-4994-bd12-cd529af7d646, 1cfa4eac-9a23-481c-a793-bfb6958e836c, 17d1049b-9a84-46fb-8f53-869881c3d3ab, ba92f5b4-2d11-453d-a403-e96b0029c9fe, ba480ccd-6499-4709-b581-8f38bb215c63})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{7859c0b0-0bb9-4994-bd12-cd529af7d646, 1cfa4eac-9a23-481c-a793-bfb6958e836c, 17d1049b-9a84-46fb-8f53-869881c3d3ab, ba92f5b4-2d11-453d-a403-e96b0029c9fe, ba480ccd-6499-4709-b581-8f38bb215c63}))</td>
+<td>Add or remove role assignments for the following roles:<br>Azure Migrate Decide and Plan Expert<br>Azure Local Migrate Execute Expert<br>Storage Account Contributor<br>Storage Blob Data Contributor<br>Azure Migrate Service Reader</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants full access to create and manage Azure Local based Azure Migrate projects including appliance-based discovery and execution of migrations; Also grants ability to assign Azure Migrate Local specific roles in Azure RBAC",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/fd8ea4d5-6509-4db0-bada-356ab233b4fb",
+  "name": "fd8ea4d5-6509-4db0-bada-356ab233b4fb",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/locations/read",
+        "Microsoft.Resources/checkResourceName/action",
+        "Microsoft.Resources/deployments/validate/action",
+        "Microsoft.Resources/deploymentScripts/write",
+        "Microsoft.Resources/deploymentScripts/read",
+        "Microsoft.Resources/links/write",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/locks/write",
+        "Microsoft.Authorization/locks/delete",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Migrate/*",
+        "Microsoft.ApplicationMigration/*",
+        "Microsoft.OffAzure/*",
+        "Microsoft.Support/*",
+        "Microsoft.MySQLDiscovery/*",
+        "Microsoft.DependencyMap/*",
+        "Microsoft.KeyVault/vaults/*",
+        "Microsoft.KeyVault/checkNameAvailability/read",
+        "Microsoft.HybridCompute/machines/read",
+        "Microsoft.HybridCompute/machines/write",
+        "Microsoft.HybridCompute/machines/delete",
+        "Microsoft.HybridCompute/register/action",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/write",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/virtualNetworks/join/action",
+        "Microsoft.Network/privateEndpoints/read",
+        "Microsoft.Network/privateEndpoints/write",
+        "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/write",
+        "Microsoft.Network/privateDnsZones/write",
+        "Microsoft.Network/privateDnsZones/virtualNetworkLinks/write",
+        "Microsoft.Network/privateDnsZones/join/action",
+        "Microsoft.Network/privateDnsZones/A/write",
+        "Microsoft.Network/register/action",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/read",
+        "Microsoft.Storage/storageAccounts/*",
+        "Microsoft.GuestConfiguration/register/action",
+        "Microsoft.HybridConnectivity/register/action",
+        "Microsoft.RecoveryServices/vaults/*",
+        "Microsoft.RecoveryServices/register/action",
+        "Microsoft.RecoveryServices/operations/read",
+        "Microsoft.DataReplication/*/read",
+        "Microsoft.DataReplication/register/action",
+        "Microsoft.DataReplication/replicationFabrics/*",
+        "Microsoft.DataReplication/replicationVaults/*",
+        "Microsoft.KeyVault/register/action",
+        "Microsoft.AzureArcData/register/action",
+        "Microsoft.Resources/links/read",
+        "Microsoft.AzureStackHCI/*/Read",
+        "Microsoft.AzureStackHCI/LogicalNetworks/join/action",
+        "Microsoft.AzureStackHCI/NetworkInterfaces/*",
+        "Microsoft.AzureStackHCI/VirtualHardDisks/*",
+        "Microsoft.AzureStackHCI/VirtualMachines/Write",
+        "Microsoft.AzureStackHCI/VirtualMachineInstances/Write",
+        "Microsoft.ExtendedLocation/customLocations/read",
+        "Microsoft.KubernetesConfiguration/extensions/read",
+        "Microsoft.ResourceConnector/appliances/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    },
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": [],
+      "conditionVersion": "2.0",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{7859c0b0-0bb9-4994-bd12-cd529af7d646, 1cfa4eac-9a23-481c-a793-bfb6958e836c, 17d1049b-9a84-46fb-8f53-869881c3d3ab, ba92f5b4-2d11-453d-a403-e96b0029c9fe, ba480ccd-6499-4709-b581-8f38bb215c63})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{7859c0b0-0bb9-4994-bd12-cd529af7d646, 1cfa4eac-9a23-481c-a793-bfb6958e836c, 17d1049b-9a84-46fb-8f53-869881c3d3ab, ba92f5b4-2d11-453d-a403-e96b0029c9fe, ba480ccd-6499-4709-b581-8f38bb215c63}))"
+    }
+  ],
+  "roleName": "Azure Local Migrate Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
 <h2 id="migrate-arc-discovery-reader---preview">Migrate Arc Discovery Reader - Preview</h2>
 <p>Read metadata of Azure Arc enabled server resources and metadata, performance and migration suitability of Arc enabled SQL server resources. Users creating Azure Migrate project that uses Arc resource discovery require this role on Arc scope of the project. To enable periodic sync, Azure Migrate project managed identity must be assigned this role. This role is in preview and subject to change.</p>
 <p><a href="/en-us/azure/migrate/concepts-arc-resource-discovery" data-linktype="absolute-path">Learn more</a></p>
@@ -2313,11 +3072,11 @@
 				<li class="visibility-hidden-visual-diff">
 			<span class="badge badge-sm text-wrap-pretty">
 				<span>Last updated on <local-time format="twoDigitNumeric"
-		datetime="2026-07-01T08:00:00.000Z"
+		datetime="2026-07-14T22:16:00.000Z"
 		data-article-date-source="calculated"
 		class="is-invisible"
 	>
-		2026-07-01
+		2026-07-14
 	</local-time></span>
 			</span>
 		</li>
