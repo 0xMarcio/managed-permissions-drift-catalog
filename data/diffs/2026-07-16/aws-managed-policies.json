@@ -1,0 +1,324 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:emr-containers:*",
+      "aws:allow_action:emr-containers:*",
+      "aws:allow_action:emr-containers:*ManagedEndpoint*",
+      "aws:allow_action:emr-containers:*ManagedEndpoint*",
+      "aws:allow_action:emr-containers:*ManagedEndpoint*",
+      "aws:allow_action:emr-containers:*Resource",
+      "aws:allow_action:emr-containers:*Resource",
+      "aws:allow_action:emr-containers:*SecurityConfiguration*",
+      "aws:allow_action:emr-containers:*SecurityConfiguration*",
+      "aws:allow_action:emr-containers:*VirtualCluster*",
+      "aws:allow_action:emr-containers:*VirtualCluster*",
+      "aws:allow_action:emr-containers:TagResource",
+      "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+      "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "aws:deny_action:emr-containers:*Resource",
+      "aws:deny_action:emr-containers:*Resource",
+      "aws:deny_action:emr-containers:*Resource",
+      "aws:deny_action:emr-containers:*Resource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "emr-containers:*",
+          "emr-containers:*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*Resource",
+          "emr-containers:*Resource",
+          "emr-containers:*SecurityConfiguration*",
+          "emr-containers:*SecurityConfiguration*",
+          "emr-containers:*VirtualCluster*",
+          "emr-containers:*VirtualCluster*",
+          "emr-containers:TagResource",
+          "organizations:ListAWSServiceAccessForOrganization"
+        ],
+        "restriction:deny_actions": [
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*Resource",
+          "emr-containers:*Resource",
+          "emr-containers:*Resource",
+          "emr-containers:*Resource"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "emr-containers:DescribeManagedEndpoint",
+          "emr-containers:GetManagedEndpointSessionCredentials"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:emr-containers:DescribeManagedEndpoint",
+      "aws:allow_action:emr-containers:GetManagedEndpointSessionCredentials"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "emr-containers:*ManagedEndpoint*",
+              "emr-containers:*Resource",
+              "emr-containers:*SecurityConfiguration*",
+              "emr-containers:*VirtualCluster*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-containers:*ManagedEndpoint*",
+              "emr-containers:*Resource"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v24 (default)",
+          "before": "v23 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 14, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 14, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "emr-containers:*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-containers:*ManagedEndpoint*",
+              "emr-containers:*Resource"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v21 (default)",
+          "before": "v20 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 14, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 14, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "emr-containers:*ManagedEndpoint*",
+              "emr-containers:TagResource"
+            ],
+            "removed": [
+              "emr-containers:DescribeManagedEndpoint",
+              "emr-containers:GetManagedEndpointSessionCredentials"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v72 (default)",
+          "before": "v71 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 14, 2026, 19:12 UTC",
+          "before": "June 29, 2026, 20:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 14, 2026, 19:12 UTC",
+          "before": "June 29, 2026, 20:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "emr-containers:*ManagedEndpoint*",
+              "emr-containers:*Resource",
+              "emr-containers:*SecurityConfiguration*",
+              "emr-containers:*VirtualCluster*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-containers:*ManagedEndpoint*",
+              "emr-containers:*Resource"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v28 (default)",
+          "before": "v27 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 14, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 14, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "emr-containers:*"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-containers:*ManagedEndpoint*",
+              "emr-containers:*Resource"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v23 (default)",
+          "before": "v22 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 14, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 14, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 16:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "AWSObservabilityAdminServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "organizations:ListAWSServiceAccessForOrganization"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 14, 2026, 22:42 UTC",
+          "before": "November 27, 2024, 19:36 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 14, 2026, 22:42 UTC",
+          "before": "November 27, 2024, 19:36 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSObservabilityAdminServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-07-16T05:56:24Z",
+  "counts": {
+    "added_atoms": 21,
+    "added_objects": 0,
+    "changed_objects": 6,
+    "current_objects": 1536,
+    "previous_objects": 1536,
+    "removed_atoms": 2,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-16",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-12",
+  "removed_objects": []
+}

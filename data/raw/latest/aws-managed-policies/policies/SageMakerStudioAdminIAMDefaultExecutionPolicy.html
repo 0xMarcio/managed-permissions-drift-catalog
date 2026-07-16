@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 18, 2025, 17:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 29, 2026, 16:12 UTC</p>
+                <p><b>Edited time:</b>  July 14, 2026, 18:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioAdminIAMDefaultExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v23 (default)</p>
+        <p><b>Policy version:</b> v24 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -129,7 +129,8 @@
       "Condition" : <span>{</span>
         "ForAllValues:StringLike" : <span>{</span>
           "aws:TagKeys" : [
-            "AmazonDataZone*"
+            "AmazonDataZone*",
+            "SageMakerSpacesDomainId"
           ]
         }
       }
@@ -207,7 +208,8 @@
             "elasticmapreduce.amazonaws.com",
             "redshift.amazonaws.com",
             "airflow-serverless.amazonaws.com",
-            "events.amazonaws.com"
+            "events.amazonaws.com",
+            "pods.eks.amazonaws.com"
           ]
         }
       }
@@ -446,6 +448,7 @@
         "athena:TerminateSession",
         "emr-serverless:*Session*",
         "emr-serverless:*Dashboard*",
+        "emr-containers:*ManagedEndpoint*",
         "elasticmapreduce:*Session*",
         "glue:CancelStatement",
         "glue:CreateSession",
@@ -460,6 +463,7 @@
       "Resource" : [
         "arn:aws:athena:*:*:workgroup/*/session/*",
         "arn:aws:emr-serverless:*:*:/applications/*/sessions/*",
+        "arn:aws:emr-containers:*:*:/virtualclusters/*/endpoints/*",
         "arn:aws:elasticmapreduce:*:*:cluster/*/session/*",
         "arn:aws:glue:*:*:session/*"
       ],
@@ -477,6 +481,7 @@
         "athena:TagResource",
         "athena:UntagResource",
         "emr-serverless:*Resource",
+        "emr-containers:*Resource",
         "elasticmapreduce:AddTags",
         "elasticmapreduce:RemoveTags",
         "glue:TagResource",
@@ -485,6 +490,7 @@
       "Resource" : [
         "arn:aws:athena:*:*:workgroup/*/session/*",
         "arn:aws:emr-serverless:*:*:/applications/*/sessions/*",
+        "arn:aws:emr-containers:*:*:/virtualclusters/*/endpoints/*",
         "arn:aws:elasticmapreduce:*:*:cluster/*/session/*",
         "arn:aws:glue:*:*:session/*"
       ],
@@ -988,6 +994,10 @@
         "emr-serverless:Access*",
         "emr-serverless:Terminate*",
         "emr-serverless:*Resource",
+        "emr-containers:*ManagedEndpoint*",
+        "emr-containers:*SecurityConfiguration*",
+        "emr-containers:*VirtualCluster*",
+        "emr-containers:*Resource",
         "elasticmapreduce:*PersistentAppUI*",
         "elasticmapreduce:Start*",
         "elasticmapreduce:Get*",

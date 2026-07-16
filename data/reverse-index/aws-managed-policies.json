@@ -117928,6 +117928,71 @@
         "stable_id": "arn:aws:iam::aws:policy/ElementalSupportCenterFullAccess"
       }
     ],
+    "aws:allow_action:emr-containers:*": [
+      {
+        "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      }
+    ],
+    "aws:allow_action:emr-containers:*ManagedEndpoint*": [
+      {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioProjectUserRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      }
+    ],
+    "aws:allow_action:emr-containers:*Resource": [
+      {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      }
+    ],
+    "aws:allow_action:emr-containers:*SecurityConfiguration*": [
+      {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      }
+    ],
+    "aws:allow_action:emr-containers:*VirtualCluster*": [
+      {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      }
+    ],
     "aws:allow_action:emr-containers:CreateManagedEndpoint": [
       {
         "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
@@ -118006,11 +118071,6 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
-        "display_name": "SageMakerStudioProjectUserRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
-      },
-      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -118063,13 +118123,6 @@
         "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
-      }
-    ],
-    "aws:allow_action:emr-containers:GetManagedEndpointSessionCredentials": [
-      {
-        "display_name": "SageMakerStudioProjectUserRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
       }
     ],
     "aws:allow_action:emr-containers:List*": [
@@ -118181,6 +118234,11 @@
         "display_name": "ResourceGroupsTaggingAPITagUntagSupportedResources",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ResourceGroupsTaggingAPITagUntagSupportedResources.html",
         "stable_id": "arn:aws:iam::aws:policy/ResourceGroupsTaggingAPITagUntagSupportedResources"
+      },
+      {
+        "display_name": "SageMakerStudioProjectUserRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
       },
       {
         "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
@@ -196207,6 +196265,11 @@
         "display_name": "AWSNetworkManagerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSNetworkManagerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSNetworkManagerServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSObservabilityAdminServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSObservabilityAdminServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminServiceRolePolicy"
       },
       {
         "display_name": "AWSReachabilityAnalyzerServiceRolePolicy",
@@ -288084,6 +288147,50 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
+    "aws:deny_action:emr-containers:*ManagedEndpoint*": [
+      {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      }
+    ],
+    "aws:deny_action:emr-containers:*Resource": [
+      {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      }
+    ],
     "aws:deny_action:emr-serverless:*Dashboard*": [
       {
         "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
@@ -298751,7 +298858,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-07-12T06:13:52Z",
+  "generated_at_utc": "2026-07-16T05:56:24Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -313356,6 +313463,138 @@
       "terms": [
         "elemental-support-content:*",
         "aws:allow_action:elemental-support-content:*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*",
+        "aws:allow_action:emr-containers:*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*",
+        "aws:allow_action:emr-containers:*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*ManagedEndpoint*",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*ManagedEndpoint*",
+        "aws:allow_action:emr-containers:*ManagedEndpoint*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*ManagedEndpoint*",
+      "object": {
+        "display_name": "SageMakerStudioProjectUserRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+      },
+      "terms": [
+        "emr-containers:*ManagedEndpoint*",
+        "aws:allow_action:emr-containers:*ManagedEndpoint*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*ManagedEndpoint*",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*ManagedEndpoint*",
+        "aws:allow_action:emr-containers:*ManagedEndpoint*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*Resource",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*Resource",
+        "aws:allow_action:emr-containers:*Resource"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*Resource",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*Resource",
+        "aws:allow_action:emr-containers:*Resource"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*SecurityConfiguration*",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*SecurityConfiguration*",
+        "aws:allow_action:emr-containers:*SecurityConfiguration*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*SecurityConfiguration*",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*SecurityConfiguration*",
+        "aws:allow_action:emr-containers:*SecurityConfiguration*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*VirtualCluster*",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*VirtualCluster*",
+        "aws:allow_action:emr-containers:*VirtualCluster*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:emr-containers:*VirtualCluster*",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*VirtualCluster*",
+        "aws:allow_action:emr-containers:*VirtualCluster*"
       ]
     },
     {
@@ -334476,6 +334715,102 @@
       "terms": [
         "elasticmapreduce:*Session*",
         "aws:deny_action:elasticmapreduce:*Session*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*ManagedEndpoint*",
+        "aws:deny_action:emr-containers:*ManagedEndpoint*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*ManagedEndpoint*",
+        "aws:deny_action:emr-containers:*ManagedEndpoint*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*ManagedEndpoint*",
+        "aws:deny_action:emr-containers:*ManagedEndpoint*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*ManagedEndpoint*",
+        "aws:deny_action:emr-containers:*ManagedEndpoint*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:emr-containers:*Resource",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*Resource",
+        "aws:deny_action:emr-containers:*Resource"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:emr-containers:*Resource",
+      "object": {
+        "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*Resource",
+        "aws:deny_action:emr-containers:*Resource"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:emr-containers:*Resource",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*Resource",
+        "aws:deny_action:emr-containers:*Resource"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:emr-containers:*Resource",
+      "object": {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      },
+      "terms": [
+        "emr-containers:*Resource",
+        "aws:deny_action:emr-containers:*Resource"
       ]
     },
     {
