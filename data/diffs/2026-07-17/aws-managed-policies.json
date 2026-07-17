@@ -1,0 +1,132 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:access-analyzer:CreateServiceLinkedAnalyzer",
+        "aws:allow_action:access-analyzer:DeleteServiceLinkedAnalyzer"
+      ],
+      "display_name": "AWSIAMRoleManagerServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIAMRoleManagerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSIAMRoleManagerServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:access-analyzer:CreateServiceLinkedAnalyzer",
+      "aws:allow_action:access-analyzer:DeleteServiceLinkedAnalyzer",
+      "aws:allow_action:cloudtrail:DescribeTrails",
+      "aws:allow_action:cloudtrail:GetEventSelectors",
+      "aws:allow_action:cloudtrail:GetTrailStatus",
+      "aws:allow_action:cloudwatch:PutMetricData"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "access-analyzer:CreateServiceLinkedAnalyzer",
+          "access-analyzer:DeleteServiceLinkedAnalyzer",
+          "cloudtrail:DescribeTrails",
+          "cloudtrail:GetEventSelectors",
+          "cloudtrail:GetTrailStatus",
+          "cloudwatch:PutMetricData"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "EC2ApplicationStatusChecksServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:PutMetricData"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 15, 2026, 17:12 UTC",
+          "before": "June 19, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 15, 2026, 17:12 UTC",
+          "before": "June 19, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ApplicationStatusChecksServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/EC2ApplicationStatusChecksServiceRolePolicy"
+    },
+    {
+      "display_name": "SecurityLakeServiceLinkedRole",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudtrail:DescribeTrails",
+              "cloudtrail:GetEventSelectors",
+              "cloudtrail:GetTrailStatus"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 15, 2026, 17:57 UTC",
+          "before": "April 19, 2024, 16:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 15, 2026, 17:57 UTC",
+          "before": "April 19, 2024, 16:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 11,
+          "before": 10,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityLakeServiceLinkedRole.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/SecurityLakeServiceLinkedRole"
+    }
+  ],
+  "compared_at_utc": "2026-07-17T05:56:46Z",
+  "counts": {
+    "added_atoms": 6,
+    "added_objects": 1,
+    "changed_objects": 2,
+    "current_objects": 1537,
+    "previous_objects": 1536,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-17",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-16",
+  "removed_objects": []
+}

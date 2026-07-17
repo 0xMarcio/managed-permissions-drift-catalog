@@ -526,12 +526,22 @@
     ],
     "aws:allow_action:access-analyzer:CreateServiceLinkedAnalyzer": [
       {
+        "display_name": "AWSIAMRoleManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIAMRoleManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSIAMRoleManagerServiceRolePolicy"
+      },
+      {
         "display_name": "AWSSecurityHubV2ServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubV2ServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubV2ServiceRolePolicy"
       }
     ],
     "aws:allow_action:access-analyzer:DeleteServiceLinkedAnalyzer": [
+      {
+        "display_name": "AWSIAMRoleManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIAMRoleManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSIAMRoleManagerServiceRolePolicy"
+      },
       {
         "display_name": "AWSSecurityHubV2ServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubV2ServiceRolePolicy.html",
@@ -40036,6 +40046,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorServiceRolePolicy"
       },
       {
+        "display_name": "SecurityLakeServiceLinkedRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityLakeServiceLinkedRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/SecurityLakeServiceLinkedRole"
+      },
+      {
         "display_name": "SupportUser",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
@@ -40218,6 +40233,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorServiceRolePolicy"
       },
       {
+        "display_name": "SecurityLakeServiceLinkedRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityLakeServiceLinkedRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/SecurityLakeServiceLinkedRole"
+      },
+      {
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
@@ -40398,6 +40418,11 @@
         "display_name": "AmazonRDSCustomServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSCustomServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonRDSCustomServiceRolePolicy"
+      },
+      {
+        "display_name": "SecurityLakeServiceLinkedRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityLakeServiceLinkedRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/SecurityLakeServiceLinkedRole"
       },
       {
         "display_name": "SupportUser",
@@ -44126,6 +44151,11 @@
         "display_name": "CustomerProfilesServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CustomerProfilesServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CustomerProfilesServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "EC2ApplicationStatusChecksServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ApplicationStatusChecksServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/EC2ApplicationStatusChecksServiceRolePolicy"
       },
       {
         "display_name": "EC2FastLaunchServiceRolePolicy",
@@ -298858,7 +298888,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-07-16T05:56:24Z",
+  "generated_at_utc": "2026-07-17T05:56:47Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
