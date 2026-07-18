@@ -1,19 +1,19 @@
 # AWS
 
-- Refreshed at: `2026-07-17T05:56:46Z`
+- Refreshed at: `2026-07-18T05:37:21Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | `1,537` | `+1 / ~2 / -0` | `+6 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-07-17/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
+| AWS managed policies | `1,538` | `+1 / ~2 / -0` | `+1,118 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-07-18/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
 
 ## Dataset details
 
 ### AWS managed policies
 
-- Inventory: `1,537` objects.
-- Today: +1 objects, ~2 changed, +6 atoms.
-- Biggest additions: `AWSIAMRoleManagerServiceRolePolicy` (+2 atoms).
-- Biggest changes: `SecurityLakeServiceLinkedRole` (+3), `EC2ApplicationStatusChecksServiceRolePolicy` (+1).
-- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-07-17/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
+- Inventory: `1,538` objects.
+- Today: +1 objects, ~2 changed, +1,118 atoms.
+- Biggest additions: `WellArchitectedAgentResourceScanning` (+1,117 atoms).
+- Biggest changes: `AmazonPrometheusScraperServiceRolePolicy` (+1), `AWSThinkboxDeadlineResourceTrackerAdminPolicy` (metadata only).
+- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-07-18/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)

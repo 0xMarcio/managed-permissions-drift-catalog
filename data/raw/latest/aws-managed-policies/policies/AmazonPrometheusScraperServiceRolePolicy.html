@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 26, 2023, 14:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 26, 2024, 20:25 UTC</p>
+                <p><b>Edited time:</b>  July 17, 2026, 08:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonPrometheusScraperServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonPrometheusScraperServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -156,6 +156,17 @@
       "Effect" : "Allow",
       "Action" : "aps:RemoteWrite",
       "Resource" : "arn:aws:aps:*:*:workspace/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:PrincipalAccount" : "$<span>{</span>aws:ResourceAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CloudWatchMetricsWriting",
+      "Effect" : "Allow",
+      "Action" : "cloudwatch:PutMetricData",
+      "Resource" : "arn:aws:cloudwatch:*:*:dataset/*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:PrincipalAccount" : "$<span>{</span>aws:ResourceAccount}"
