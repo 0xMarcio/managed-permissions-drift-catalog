@@ -958,6 +958,27 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
       }
     ],
+    "aws:allow_action:account-access:CreateEntitlement": [
+      {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      }
+    ],
+    "aws:allow_action:account-access:ListApplications": [
+      {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      }
+    ],
+    "aws:allow_action:account-access:ListEntitlements": [
+      {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      }
+    ],
     "aws:allow_action:account:*": [
       {
         "display_name": "AWSAccountManagementFullAccess",
@@ -1055,6 +1076,11 @@
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "NetworkSecurityDirectorServiceLinkedRolePolicy",
@@ -1173,6 +1199,11 @@
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:account:GetRegionOptStatus": [
@@ -2682,6 +2713,13 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
       }
     ],
+    "aws:allow_action:aco-automation:GetAutomationEvent": [
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      }
+    ],
     "aws:allow_action:aco-automation:GetAutomationRule": [
       {
         "display_name": "WellArchitectedAgentResourceScanning",
@@ -2694,6 +2732,20 @@
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
+      }
+    ],
+    "aws:allow_action:aco-automation:ListRecommendedActions": [
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      }
+    ],
+    "aws:allow_action:aco-automation:StartAutomationEvent": [
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:action-recommendations:ListRecommendedActions": [
@@ -24882,6 +24934,11 @@
     ],
     "aws:allow_action:bedrock-mantle:CallWithBearerToken": [
       {
+        "display_name": "AmazonBedrockAgentCoreMemoryBedrockModelInferenceExecutionRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockAgentCoreMemoryBedrockModelInferenceExecutionRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockAgentCoreMemoryBedrockModelInferenceExecutionRolePolicy"
+      },
+      {
         "display_name": "AmazonBedrockLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockLimitedAccess"
@@ -24898,6 +24955,11 @@
       }
     ],
     "aws:allow_action:bedrock-mantle:CreateInference": [
+      {
+        "display_name": "AmazonBedrockAgentCoreMemoryBedrockModelInferenceExecutionRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockAgentCoreMemoryBedrockModelInferenceExecutionRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockAgentCoreMemoryBedrockModelInferenceExecutionRolePolicy"
+      },
       {
         "display_name": "AmazonBedrockLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockLimitedAccess.html",
@@ -26023,6 +26085,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -26416,6 +26483,11 @@
         "display_name": "AWSAuditManagerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:bedrock:GetModelImportJob": [
@@ -26435,6 +26507,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:bedrock:GetModelInvocationLoggingConfiguration": [
@@ -26543,6 +26620,11 @@
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "SageMakerStudioBedrockEvaluationJobServiceRolePolicy",
@@ -27165,6 +27247,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -27533,6 +27620,11 @@
         "display_name": "AWSAuditManagerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:bedrock:ListModelImportJobs": [
@@ -27557,6 +27649,11 @@
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:bedrock:ListPromptRouters": [
@@ -27638,6 +27735,11 @@
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:bedrock:ListSessions": [
@@ -27854,6 +27956,11 @@
         "display_name": "SageMakerStudioProjectUserRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:bedrock:StopIngestionJob": [
@@ -27873,6 +27980,11 @@
         "display_name": "AmazonSageMakerCanvasAIServicesAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasAIServicesAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerCanvasAIServicesAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:bedrock:StopModelInvocationJob": [
@@ -27880,6 +27992,11 @@
         "display_name": "AmazonBedrockLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockLimitedAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "SageMakerStudioBedrockEvaluationJobServiceRolePolicy",
@@ -28088,6 +28205,11 @@
         "display_name": "AmazonBedrockLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockLimitedAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:bedrock:UpdateSession": [
@@ -54616,6 +54738,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AmazonSSMServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonSSMServiceRolePolicy"
@@ -54653,6 +54780,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:compute-optimizer:GetLambdaFunctionRecommendations": [
@@ -54755,6 +54887,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:compute-optimizer:getAutoScalingGroupRecommendations": [
@@ -73378,6 +73515,11 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -73570,6 +73712,11 @@
         "display_name": "AWSBackupServiceLinkedRolePolicyForBackup",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceLinkedRolePolicyForBackup.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -85401,6 +85548,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSCloudFrontVPCOriginServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudFrontVPCOriginServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSCloudFrontVPCOriginServiceRolePolicy"
@@ -87722,6 +87874,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationMigrationServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSCloud9ServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloud9ServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSCloud9ServiceRolePolicy"
@@ -88513,6 +88670,11 @@
         "display_name": "AWSBackupServiceLinkedRolePolicyForBackup",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceLinkedRolePolicyForBackup.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSCloud9ServiceRolePolicy",
@@ -90207,6 +90369,11 @@
         "display_name": "AWSAuditManagerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSReachabilityAnalyzerServiceRolePolicy",
@@ -93797,6 +93964,11 @@
         "display_name": "AWSBackupServiceLinkedRolePolicyForBackup",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceLinkedRolePolicyForBackup.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSElasticDisasterRecoveryServiceRolePolicy",
@@ -99167,6 +99339,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSReachabilityAnalyzerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSReachabilityAnalyzerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSReachabilityAnalyzerServiceRolePolicy"
@@ -104424,6 +104601,11 @@
         "display_name": "AWSApplicationMigrationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationMigrationServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSCloud9ServiceRolePolicy",
@@ -152445,6 +152627,20 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSSSOMemberAccountAdministrator"
       }
     ],
+    "aws:allow_action:identitystore:CreateGroup": [
+      {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      }
+    ],
+    "aws:allow_action:identitystore:CreateGroupMembership": [
+      {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      }
+    ],
     "aws:allow_action:identitystore:CreateUser": [
       {
         "display_name": "AWSIdentityCenterExternalManagementPolicy",
@@ -152649,6 +152845,11 @@
     ],
     "aws:allow_action:identitystore:GetGroupId": [
       {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      },
+      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -152677,6 +152878,11 @@
       }
     ],
     "aws:allow_action:identitystore:GetUserId": [
+      {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      },
       {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
@@ -172134,6 +172340,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "SecurityLakeResourceManagementServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityLakeResourceManagementServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/SecurityLakeResourceManagementServiceRolePolicy"
@@ -172161,6 +172372,11 @@
         "display_name": "AWSApplicationAutoscalingLambdaConcurrencyPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationAutoscalingLambdaConcurrencyPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingLambdaConcurrencyPolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:lambda:DisableReplication": [
@@ -172344,6 +172560,11 @@
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -172592,6 +172813,11 @@
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AmazonDevOpsGuruServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDevOpsGuruServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonDevOpsGuruServiceRolePolicy"
@@ -172682,6 +172908,11 @@
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -173053,6 +173284,11 @@
         "display_name": "AWSApplicationAutoscalingLambdaConcurrencyPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationAutoscalingLambdaConcurrencyPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingLambdaConcurrencyPolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -173521,6 +173757,11 @@
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -173757,6 +173998,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -173876,6 +174122,11 @@
         "display_name": "FinOpsAgentAgentPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinOpsAgentAgentPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/FinOpsAgentAgentPolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AmazonDevOpsGuruServiceRolePolicy",
@@ -174093,6 +174344,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "SecurityLakeResourceManagementServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityLakeResourceManagementServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/SecurityLakeResourceManagementServiceRolePolicy"
@@ -174103,6 +174359,11 @@
         "display_name": "AWSApplicationAutoscalingLambdaConcurrencyPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationAutoscalingLambdaConcurrencyPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingLambdaConcurrencyPolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "SecurityLakeResourceManagementServiceRolePolicy",
@@ -198525,9 +198786,21 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSBackupOrganizationAdminAccess"
       },
       {
+        "display_name": "AWSManagedBudgetsSpendLimitManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedBudgetsSpendLimitManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
+      },
+      {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecurityHubOrganizationsAccess"
+      }
+    ],
+    "aws:allow_action:organizations:CloseAccount": [
+      {
+        "display_name": "AWSManagedBudgetsSpendLimitManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedBudgetsSpendLimitManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
       }
     ],
     "aws:allow_action:organizations:CreateAccount": [
@@ -199827,6 +200100,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSBackupOrganizationAdminAccess"
       },
       {
+        "display_name": "AWSManagedBudgetsSpendLimitManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedBudgetsSpendLimitManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
+      },
+      {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecurityHubOrganizationsAccess"
@@ -199906,6 +200184,11 @@
         "display_name": "AWSBackupOrganizationAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupOrganizationAdminAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSBackupOrganizationAdminAccess"
+      },
+      {
+        "display_name": "AWSManagedBudgetsSpendLimitManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedBudgetsSpendLimitManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
       },
       {
         "display_name": "AWSSecurityHubOrganizationsAccess",
@@ -201911,6 +202194,11 @@
         "display_name": "AWSBudgetsActionsWithAWSResourceControlAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsActionsWithAWSResourceControlAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSBudgetsActionsWithAWSResourceControlAccess"
+      },
+      {
+        "display_name": "AWSManagedBudgetsSpendLimitManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedBudgetsSpendLimitManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
       },
       {
         "display_name": "AWSSecurityHubOrganizationsAccess",
@@ -213660,6 +213948,11 @@
         "stable_id": "arn:aws:iam::aws:policy/NeptuneFullAccess"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSBackupServiceRolePolicyForBackup",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForBackup.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForBackup"
@@ -214626,6 +214919,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -214781,6 +215079,11 @@
         "display_name": "AWSBackupServiceLinkedRolePolicyForBackup",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceLinkedRolePolicyForBackup.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -215179,6 +215482,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -215410,6 +215718,11 @@
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -215980,6 +216293,11 @@
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -216917,6 +217235,11 @@
         "stable_id": "arn:aws:iam::aws:policy/NeptuneFullAccess"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSBackupServiceRolePolicyForRestores",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForRestores"
@@ -216947,6 +217270,11 @@
         "display_name": "NeptuneFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NeptuneFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/NeptuneFullAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSBackupServiceRolePolicyForRestores",
@@ -217002,6 +217330,11 @@
         "display_name": "NeptuneFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NeptuneFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/NeptuneFullAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:rds:StopDBInstance": [
@@ -217009,6 +217342,11 @@
         "display_name": "AWSBudgetsActions_RolePolicyForResourceAdministrationWithSSM",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsActions_RolePolicyForResourceAdministrationWithSSM.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSBudgetsActions_RolePolicyForResourceAdministrationWithSSM"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:rds:describeAccountAttributes": [
@@ -243690,6 +244028,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy"
       }
     ],
+    "aws:allow_action:sagemaker:AttachClusterNodeVolume": [
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      }
+    ],
     "aws:allow_action:sagemaker:Batch*": [
       {
         "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
@@ -246684,6 +247029,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -246859,6 +247209,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodObservabilityAdminAccess"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -246881,6 +247236,11 @@
         "display_name": "AmazonSageMakerHyperPodTrainingOperatorAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodTrainingOperatorAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodTrainingOperatorAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:sagemaker:DescribeCodeRepository": [
@@ -247316,6 +247676,11 @@
         "display_name": "AWSAuditManagerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -247807,6 +248172,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -248217,6 +248587,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -248466,6 +248841,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -248633,6 +249013,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBatchServiceRolePolicyForSageMaker"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSDeepLensServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeepLensServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSDeepLensServiceRolePolicy"
@@ -248695,6 +249080,11 @@
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSQuickSightSageMakerPolicy",
@@ -248818,6 +249208,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -248905,6 +249300,13 @@
         "display_name": "AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy"
+      }
+    ],
+    "aws:allow_action:sagemaker:DetachClusterNodeVolume": [
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:sagemaker:DisableSagemakerServicecatalogPortfolio": [
@@ -249457,6 +249859,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -249650,11 +250057,23 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy"
       }
     ],
+    "aws:allow_action:sagemaker:ListClusterNodes": [
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      }
+    ],
     "aws:allow_action:sagemaker:ListClusters": [
       {
         "display_name": "AmazonSageMakerHyperPodObservabilityAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodObservabilityAdminAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodObservabilityAdminAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -249950,6 +250369,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -250025,6 +250449,11 @@
         "display_name": "AWSAuditManagerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAuditManagerServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -250543,6 +250972,11 @@
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -251072,6 +251506,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -251282,6 +251721,11 @@
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -251556,6 +252000,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBatchServiceRolePolicyForSageMaker"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy"
@@ -251615,6 +252064,11 @@
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy",
@@ -252232,6 +252686,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy"
@@ -252440,6 +252899,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy"
@@ -252470,6 +252934,11 @@
         "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:sagemaker:StopMonitoringSchedule": [
@@ -252509,6 +252978,11 @@
         "display_name": "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy",
@@ -252570,6 +253044,11 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy"
@@ -252617,6 +253096,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBatchServiceRolePolicyForSageMaker"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSDeepLensServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeepLensServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSDeepLensServiceRolePolicy"
@@ -252657,6 +253141,11 @@
         "display_name": "SageMakerStudioProjectUserRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSQuickSightSageMakerPolicy",
@@ -273299,6 +273788,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSSMAutomationApproverAccess"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -273334,6 +273828,11 @@
         "display_name": "AWS-SSM-RemediationAutomation-ExecutionRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS-SSM-RemediationAutomation-ExecutionRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWS-SSM-RemediationAutomation-ExecutionRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AmazonInspector2ThirdPartyServiceRolePolicy",
@@ -274008,6 +274507,11 @@
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSConfigServiceRolePolicy",
@@ -276344,6 +276848,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizard_Fullaccess"
       },
       {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      },
+      {
         "display_name": "AWSConfigRemediationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigRemediationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigRemediationServiceRolePolicy"
@@ -276441,6 +276950,11 @@
         "display_name": "AmazonLaunchWizard_Fullaccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizard_Fullaccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizard_Fullaccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSServiceRoleForImageBuilder",
@@ -278104,6 +278618,13 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AppStudioServiceRolePolicy"
       }
     ],
+    "aws:allow_action:sso-directory:ListProvisioningTenants": [
+      {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      }
+    ],
     "aws:allow_action:sso-directory:Search*": [
       {
         "display_name": "AWSSSODirectoryReadOnly",
@@ -279193,6 +279714,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
       },
       {
+        "display_name": "AWSManagedAccountUserEntitlementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountUserEntitlementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountUserEntitlementAccess"
+      },
+      {
         "display_name": "MultiPartyApprovalFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/MultiPartyApprovalFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/MultiPartyApprovalFullAccess"
@@ -279216,6 +279742,11 @@
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSServiceRoleForUserSubscriptions",
@@ -295641,6 +296172,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
       }
     ],
+    "aws:deny_action:sagemaker:DeleteNotebookInstanceLifecycleConfig": [
+      {
+        "display_name": "AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary"
+      }
+    ],
     "aws:deny_action:sagemaker:UpdateNotebookInstanceLifecycleConfig": [
       {
         "display_name": "AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary",
@@ -304796,7 +305334,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-07-18T05:37:21Z",
+  "generated_at_utc": "2026-07-19T06:09:27Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
