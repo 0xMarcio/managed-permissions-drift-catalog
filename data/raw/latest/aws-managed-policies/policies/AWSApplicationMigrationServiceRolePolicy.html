@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: April 07, 2021, 06:43 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:57 UTC</p>
+                <p><b>Edited time:</b>  July 19, 2026, 15:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSApplicationMigrationServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSApplicationMigrationServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v8 (default)</p>
+        <p><b>Policy version:</b> v9 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -358,7 +358,8 @@
         "arn:aws:ec2:*:*:volume/*",
         "arn:aws:ec2:*:*:snapshot/*",
         "arn:aws:ec2:*:*:network-interface/*",
-        "arn:aws:ec2:*:*:instance/*"
+        "arn:aws:ec2:*:*:instance/*",
+        "arn:aws:ec2:*:*:image/*"
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
@@ -367,7 +368,8 @@
             "CreateSecurityGroup",
             "CreateVolume",
             "CreateSnapshot",
-            "RunInstances"
+            "RunInstances",
+            "RegisterImage"
           ]
         }
       }
