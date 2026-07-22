@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 02, 2019, 20:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 30, 2026, 17:12 UTC</p>
+                <p><b>Edited time:</b>  July 21, 2026, 16:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceSellerFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v31 (default)</p>
+        <p><b>Policy version:</b> v32 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -159,7 +159,9 @@
       "Resource" : [
         "arn:aws:aws-marketplace:*:*:AWSMarketplace*/*",
         "arn:aws:aws-marketplace:*:*:catalog/AWSMarketplace*/*",
-        "arn:aws:aws-marketplace:*:*:verification-type/*/verification-evidence/*"
+        "arn:aws:aws-marketplace:*:*:verification-type/*/verification-evidence/*",
+        "arn:aws:aws-marketplace:*:*:tax-compliance-profile/*",
+        "arn:aws:aws-marketplace:*:*:tax-compliance-profile-change-task/*"
       ]
     },
     <span>{</span>
@@ -339,6 +341,31 @@
           ]
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "TaxComplianceProfileChangeTaskManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:StartTaxComplianceProfileChangeTask"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:tax-compliance-profile-change-task/*"
+    },
+    <span>{</span>
+      "Sid" : "TaxComplianceProfileRead",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetTaxComplianceProfile"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:tax-compliance-profile/*"
+    },
+    <span>{</span>
+      "Sid" : "TaxComplianceProfileList",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:ListTaxComplianceProfileChangeTasks",
+        "aws-marketplace:ListTaxComplianceProfiles"
+      ],
+      "Resource" : "*"
     }
   ]
 }</code></pre>

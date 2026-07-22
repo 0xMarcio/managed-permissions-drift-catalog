@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: January 27, 2026, 20:34 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:01 UTC</p>
+                <p><b>Edited time:</b>  July 20, 2026, 20:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonSageMakerHyperPodInferenceAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -120,6 +120,52 @@
       }
     },
     <span>{</span>
+      "Sid" : "DataCaptureS3",
+      "Effect" : "Allow",
+      "Action" : "s3:PutObject",
+      "Resource" : [
+        "arn:aws:s3:::hyperpod-tls*/data-capture/*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "S3ListBucketAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:ListBucket"
+      ],
+      "Resource" : [
+        "arn:aws:s3:::hyperpod-tls*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DataCaptureKMS",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "s3.*.amazonaws.com",
+          "kms:EncryptionContext:aws:s3:arn" : "arn:aws:s3:::hyperpod-tls*"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
       "Sid" : "ECRAuthorization",
       "Effect" : "Allow",
       "Action" : [
@@ -159,7 +205,8 @@
       "Effect" : "Allow",
       "Action" : [
         "ec2:CreateNetworkInterface",
-        "ec2:CreateNetworkInterfacePermission"
+        "ec2:CreateNetworkInterfacePermission",
+        "ec2:DeleteNetworkInterface"
       ],
       "Resource" : [
         "arn:aws:ec2:*:*:network-interface/*",
@@ -197,6 +244,19 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "eks:policyarn" : "arn:aws:eks::aws:cluster-access-policy/AmazonSagemakerHyperpodInferenceMonitoringPolicy"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "EKSAccessEntryListPolicies",
+      "Effect" : "Allow",
+      "Action" : [
+        "eks:ListAssociatedAccessPolicies"
+      ],
+      "Resource" : "arn:aws:eks:*:*:access-entry/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },

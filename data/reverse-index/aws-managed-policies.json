@@ -1165,6 +1165,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:account:GetGovCloudAccountInformation": [
@@ -19474,6 +19479,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
       }
     ],
+    "aws:allow_action:aws-marketplace:GetTaxComplianceProfile": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
     "aws:allow_action:aws-marketplace:GetVerification": [
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
@@ -19923,6 +19935,20 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceRequests"
       }
     ],
+    "aws:allow_action:aws-marketplace:ListTaxComplianceProfileChangeTasks": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:ListTaxComplianceProfiles": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
     "aws:allow_action:aws-marketplace:ListVerificationEvidence": [
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
@@ -20161,6 +20187,13 @@
       }
     ],
     "aws:allow_action:aws-marketplace:StartInvoiceSubmissionTask": [
+      {
+        "display_name": "AWSMarketplaceSellerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:StartTaxComplianceProfileChangeTask": [
       {
         "display_name": "AWSMarketplaceSellerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
@@ -23024,6 +23057,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
@@ -23058,6 +23096,11 @@
     ],
     "aws:allow_action:batch:DescribeJobDefinitions": [
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
@@ -23090,6 +23133,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -23103,6 +23151,13 @@
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
+      }
+    ],
+    "aws:allow_action:batch:DescribeJobs": [
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
       }
     ],
     "aws:allow_action:batch:DescribeSchedulingPolicies": [
@@ -23174,6 +23229,11 @@
       }
     ],
     "aws:allow_action:batch:ListJobs": [
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
       {
         "display_name": "ViewOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ViewOnlyAccess.html",
@@ -29035,6 +29095,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:billing:List*": [
@@ -35364,6 +35429,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupSSMDeploymentRolePolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonLaunchWizardFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizardFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2"
@@ -35434,6 +35504,11 @@
         "display_name": "AWSThinkboxAWSPortalAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAWSPortalAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -35702,6 +35777,11 @@
         "display_name": "AWSThinkboxAWSPortalAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAWSPortalAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -35983,6 +36063,16 @@
         "display_name": "AWSThinkboxDeadlineResourceTrackerAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxDeadlineResourceTrackerAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -37331,6 +37421,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AdministratorAccess-Amplify",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-Amplify.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
@@ -37961,6 +38061,11 @@
         "display_name": "AWSServiceCatalogEndUserFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceCatalogEndUserFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSServiceCatalogEndUserFullAccess"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonLaunchWizardFullAccessV2",
@@ -43055,6 +43160,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
@@ -44050,6 +44160,11 @@
         "display_name": "AWSGlueConsoleSageMakerNotebookFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSGlueConsoleSageMakerNotebookFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSGlueConsoleSageMakerNotebookFullAccess"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
       },
       {
         "display_name": "SecurityAudit",
@@ -59052,6 +59167,11 @@
         "display_name": "AWSAccountSettingsManagementRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:customer-verification:CreateUploadUrls": [
@@ -59059,6 +59179,11 @@
         "display_name": "AWSAccountSettingsManagementRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:customer-verification:GetCustomerVerificationDetails": [
@@ -59071,6 +59196,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:customer-verification:GetCustomerVerificationEligibility": [
@@ -59083,6 +59213,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:customer-verification:UpdateCustomerVerificationDetails": [
@@ -59090,6 +59225,11 @@
         "display_name": "AWSAccountSettingsManagementRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:databrew:BatchDeleteRecipeVersion": [
@@ -82762,6 +82902,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
       },
       {
+        "display_name": "AmazonSageMakerHyperPodInferenceAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
+      {
         "display_name": "AmazonSageMakerJobFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerJobFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerJobFullAccess"
@@ -87297,6 +87442,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonEC2RolePolicyForLaunchWizard",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2RolePolicyForLaunchWizard.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEC2RolePolicyForLaunchWizard"
@@ -88452,6 +88602,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineSpotEventPluginWorkerPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonDocDBConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDocDBConsoleFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDocDBConsoleFullAccess"
@@ -89144,6 +89299,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonDRSVPCManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDRSVPCManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDRSVPCManagement"
@@ -89595,6 +89755,11 @@
         "display_name": "AWSThinkboxAWSPortalAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAWSPortalAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonEMRFullAccessPolicy_v2",
@@ -90319,6 +90484,16 @@
         "display_name": "AWSThinkboxAWSPortalAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAWSPortalAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonDocDBConsoleFullAccess",
@@ -92058,6 +92233,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonAppStreamFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAppStreamFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonAppStreamFullAccess"
@@ -92786,6 +92971,16 @@
         "display_name": "AWSTransferConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferConsoleFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransferConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonAppStreamFullAccess",
@@ -94550,6 +94745,16 @@
         "display_name": "AWSTransferConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferConsoleFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransferConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonAppStreamFullAccess",
@@ -98266,6 +98471,16 @@
         "display_name": "AWSTransferConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferConsoleFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransferConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonAppStreamFullAccess",
@@ -104387,6 +104602,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSSystemsManagerForSAPFullAccess"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonDynamoDBFullAccesswithDataPipeline",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDynamoDBFullAccesswithDataPipeline.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccesswithDataPipeline"
@@ -104566,6 +104786,11 @@
         "display_name": "AWSSystemsManagerForSAPFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSystemsManagerForSAPFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSystemsManagerForSAPFullAccess"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonDynamoDBFullAccesswithDataPipeline",
@@ -112839,6 +113064,11 @@
       }
     ],
     "aws:allow_action:eks:ListAssociatedAccessPolicies": [
+      {
+        "display_name": "AmazonSageMakerHyperPodInferenceAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
+      },
       {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
@@ -143336,6 +143566,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
       },
       {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
+      {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupDeploymentRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupDeploymentRolePolicy"
@@ -143606,6 +143841,11 @@
         "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
       },
       {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
@@ -144907,6 +145147,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
       },
       {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
+      {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupDeploymentRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupDeploymentRolePolicy"
@@ -145034,6 +145279,11 @@
     ],
     "aws:allow_action:iam:DeleteRolePermissionsBoundary": [
       {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
+      {
         "display_name": "AdministratorAccess-Amplify",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-Amplify.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
@@ -145049,6 +145299,11 @@
         "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
       },
       {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
@@ -145259,6 +145514,11 @@
         "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
       },
       {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
@@ -145785,6 +146045,11 @@
         "display_name": "AWSThinkboxDeadlineSpotEventPluginAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxDeadlineSpotEventPluginAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineSpotEventPluginAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonLaunchWizardFullAccessV2",
@@ -146628,6 +146893,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineSpotEventPluginAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AccountManagementFromVercel",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountManagementFromVercel.html",
         "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
@@ -147180,6 +147455,16 @@
         "display_name": "AWSThinkboxAWSPortalAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAWSPortalAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -147989,6 +148274,16 @@
         "display_name": "AWSThinkboxDeadlineResourceTrackerAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxDeadlineResourceTrackerAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
@@ -148822,6 +149117,11 @@
         "display_name": "AWSResilienceHubV2AssessmentExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResilienceHubV2AssessmentExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSResilienceHubV2AssessmentExecutionPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
@@ -150445,6 +150745,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSTransferFullAccess"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AWSTransformSecurityAgentExecutorAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
@@ -151285,7 +151595,19 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/ServerMigration_ServiceRole"
       }
     ],
+    "aws:allow_action:iam:PutAccountProperties": [
+      {
+        "display_name": "AWSManagedAdvancedFeaturesActivationAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAdvancedFeaturesActivationAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAdvancedFeaturesActivationAccess"
+      }
+    ],
     "aws:allow_action:iam:PutRolePermissionsBoundary": [
+      {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
       {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupDeploymentRolePolicy.html",
@@ -151308,6 +151630,11 @@
       }
     ],
     "aws:allow_action:iam:PutRolePolicy": [
+      {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
       {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupDeploymentRolePolicy.html",
@@ -151521,6 +151848,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
       },
       {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
+      {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupDeploymentRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupDeploymentRolePolicy"
@@ -151652,6 +151984,11 @@
     ],
     "aws:allow_action:iam:UntagRole": [
       {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
+      {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupDeploymentRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupDeploymentRolePolicy"
@@ -151705,6 +152042,11 @@
     ],
     "aws:allow_action:iam:UpdateAssumeRolePolicy": [
       {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
+      {
         "display_name": "AdministratorAccess-Amplify",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-Amplify.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
@@ -151721,6 +152063,11 @@
       }
     ],
     "aws:allow_action:iam:UpdateRole": [
+      {
+        "display_name": "AWSManagedAccountManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedAccountManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess"
+      },
       {
         "display_name": "AWSQuickSetupDeploymentRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupDeploymentRolePolicy.html",
@@ -153010,6 +153357,11 @@
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSServiceRoleForAmazonQDeveloper",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForAmazonQDeveloper.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAmazonQDeveloper"
       },
       {
         "display_name": "AWSSystemsManagerJustInTimeAccessServicePolicy",
@@ -155514,6 +155866,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:invoicing:GetInvoiceUnit": [
@@ -167965,6 +168322,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AWSTransformSecretsManagerConnectorPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecretsManagerConnectorPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecretsManagerConnectorPolicy"
@@ -168028,6 +168395,11 @@
         "display_name": "AmazonRDSCustomInstanceProfileRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSCustomInstanceProfileRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonRDSCustomInstanceProfileRolePolicy"
+      },
+      {
+        "display_name": "AmazonSageMakerHyperPodInferenceAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
         "display_name": "AmazonSageMakerJobFullAccess",
@@ -168228,6 +168600,11 @@
         "display_name": "AmazonSageMakerNotebooksServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerNotebooksServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonSageMakerNotebooksServiceRolePolicy"
+      },
+      {
+        "display_name": "AmazonTimestreamInfluxDBServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonTimestreamInfluxDBServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonTimestreamInfluxDBServiceRolePolicy"
       },
       {
         "display_name": "WAFLoggingServiceRolePolicy",
@@ -169004,6 +169381,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonAuroraDSQLConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
@@ -169186,6 +169573,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonAuroraDSQLConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAuroraDSQLConsoleFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonAuroraDSQLConsoleFullAccess"
@@ -169239,6 +169636,11 @@
         "display_name": "AmazonRDSCustomInstanceProfileRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSCustomInstanceProfileRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonRDSCustomInstanceProfileRolePolicy"
+      },
+      {
+        "display_name": "AmazonSageMakerHyperPodInferenceAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
         "display_name": "AmazonSageMakerJobFullAccess",
@@ -172865,6 +173267,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
         "display_name": "AdministratorAccess-Amplify",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-Amplify.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
@@ -173415,6 +173822,11 @@
         "display_name": "AWSThinkboxDeadlineResourceTrackerAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxDeadlineResourceTrackerAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAccessPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -181374,6 +181786,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAssetServerPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
         "display_name": "AdministratorAccess-Amplify",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-Amplify.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
@@ -182053,6 +182470,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPanoramaFullAccess"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
         "display_name": "AmazonBraketFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBraketFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonBraketFullAccess"
@@ -182568,6 +182990,11 @@
         "display_name": "AWSThinkboxAssetServerPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAssetServerPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAssetServerPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
       },
       {
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
@@ -198791,6 +199218,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
       },
       {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
+      },
+      {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecurityHubOrganizationsAccess"
@@ -198817,6 +199249,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSBackupOrganizationAdminAccess"
       },
       {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
+      },
+      {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecurityHubOrganizationsAccess"
@@ -198827,6 +199264,11 @@
         "display_name": "AWSBackupOrganizationAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupOrganizationAdminAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSBackupOrganizationAdminAccess"
+      },
+      {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
       },
       {
         "display_name": "AWSSecurityHubOrganizationsAccess",
@@ -200105,6 +200547,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
       },
       {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
+      },
+      {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecurityHubOrganizationsAccess"
@@ -200189,6 +200636,11 @@
         "display_name": "AWSManagedBudgetsSpendLimitManagementAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedBudgetsSpendLimitManagementAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
+      },
+      {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
       },
       {
         "display_name": "AWSSecurityHubOrganizationsAccess",
@@ -202201,6 +202653,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSManagedBudgetsSpendLimitManagementAccess"
       },
       {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
+      },
+      {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecurityHubOrganizationsAccess"
@@ -202328,6 +202785,11 @@
         "display_name": "AWSLakeFormationCrossAccountManager",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSLakeFormationCrossAccountManager.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSLakeFormationCrossAccountManager"
+      },
+      {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
       },
       {
         "display_name": "AWSPrivateMarketplaceAdminFullAccess",
@@ -202482,6 +202944,11 @@
     ],
     "aws:allow_action:organizations:ListTagsForResource": [
       {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
+      },
+      {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecurityHubOrganizationsAccess"
@@ -202635,6 +203102,11 @@
     ],
     "aws:allow_action:organizations:TagResource": [
       {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
+      },
+      {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecurityHubOrganizationsAccess"
@@ -202646,6 +203118,11 @@
       }
     ],
     "aws:allow_action:organizations:UntagResource": [
+      {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
+      },
       {
         "display_name": "AWSSecurityHubOrganizationsAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html",
@@ -202662,6 +203139,11 @@
         "display_name": "AWSBackupOrganizationAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupOrganizationAdminAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSBackupOrganizationAdminAccess"
+      },
+      {
+        "display_name": "AWSManagedControlPolicyManagementAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedControlPolicyManagementAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedControlPolicyManagementAccess"
       },
       {
         "display_name": "AWSSecurityHubOrganizationsAccess",
@@ -204835,6 +205317,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:DeletePaymentInstrument": [
@@ -204922,6 +205409,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:GetPaymentStatus": [
@@ -204944,6 +205436,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:ListFinancingApplications": [
@@ -205029,6 +205526,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:ListPaymentProgramOptions": [
@@ -205085,6 +205587,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:MakePayment": [
@@ -205097,6 +205604,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:TagResource": [
@@ -205109,6 +205621,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:UntagResource": [
@@ -205121,6 +205638,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:UpdateFinancingApplication": [
@@ -205140,6 +205662,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:payments:UpdatePaymentPreferences": [
@@ -205152,6 +205679,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:pca-connector-ad:Get*": [
@@ -231139,6 +231671,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSDiscoveryContinuousExportFirehosePolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
         "display_name": "AmazonAthenaFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAthenaFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonAthenaFullAccess"
@@ -231993,6 +232530,11 @@
         "display_name": "AWSThinkboxAWSPortalAdminPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAWSPortalAdminPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AdministratorAccess-Amplify",
@@ -235348,6 +235890,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AWSTransformSecurityAgentExecutorAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
@@ -237686,6 +238238,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAssetServerPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AWSTransformSecurityAgentExecutorAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
@@ -237854,6 +238416,11 @@
         "display_name": "AmazonSageMakerGroundTruthExecution",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerGroundTruthExecution.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerGroundTruthExecution"
+      },
+      {
+        "display_name": "AmazonSageMakerHyperPodInferenceAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
       },
       {
         "display_name": "AmazonSageMakerJobFullAccess",
@@ -239902,6 +240469,16 @@
         "display_name": "AWSThinkboxAssetServerPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSThinkboxAssetServerPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAssetServerPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AWSTransformSecurityAgentExecutorAccess",
@@ -255757,6 +256334,16 @@
     ],
     "aws:allow_action:scheduler:CreateSchedule": [
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "SageMakerStudioProjectUserRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
@@ -255775,6 +256362,16 @@
       }
     ],
     "aws:allow_action:scheduler:DeleteSchedule": [
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
@@ -255827,6 +256424,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonEventBridgeReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEventBridgeReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEventBridgeReadOnlyAccess"
@@ -255867,6 +256474,16 @@
         "display_name": "AIOpsAssistantPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOpsAssistantPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonEventBridgeReadOnlyAccess",
@@ -255933,6 +256550,11 @@
     ],
     "aws:allow_action:scheduler:ListScheduleGroups": [
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonEventBridgeReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEventBridgeReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEventBridgeReadOnlyAccess"
@@ -255964,6 +256586,16 @@
       }
     ],
     "aws:allow_action:scheduler:ListSchedules": [
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
       {
         "display_name": "AmazonEventBridgeReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEventBridgeReadOnlyAccess.html",
@@ -256042,6 +256674,16 @@
       }
     ],
     "aws:allow_action:scheduler:UpdateSchedule": [
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
       {
         "display_name": "SageMakerStudioProjectUserRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
@@ -257278,6 +257920,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalAdminPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AWSTransformSecretsManagerConnectorPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecretsManagerConnectorPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecretsManagerConnectorPolicy"
@@ -257654,6 +258306,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSThinkboxAWSPortalGatewayPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AWSTransformSecretsManagerConnectorPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecretsManagerConnectorPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecretsManagerConnectorPolicy"
@@ -257899,6 +258561,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEventBridgeApiDestinationsServiceRolePolicy"
       },
       {
+        "display_name": "AmazonTimestreamInfluxDBServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonTimestreamInfluxDBServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonTimestreamInfluxDBServiceRolePolicy"
+      },
+      {
         "display_name": "AppStudioServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppStudioServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AppStudioServiceRolePolicy"
@@ -258073,6 +258740,11 @@
         "display_name": "AWSSecretsManagerClientReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecretsManagerClientReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonDataZoneEnvironmentRolePermissionsBoundary",
@@ -274099,6 +274771,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupPatchPolicyPermissionsBoundary"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonLaunchWizardFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizardFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2"
@@ -274353,6 +275030,11 @@
         "display_name": "AWSRefactoringToolkitFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRefactoringToolkitFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSRefactoringToolkitFullAccess"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonSageMakerSpacesControllerPolicy",
@@ -274623,6 +275305,11 @@
         "display_name": "AWSSystemsManagerJustInTimeAccessTokenSessionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSystemsManagerJustInTimeAccessTokenSessionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSystemsManagerJustInTimeAccessTokenSessionPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonEC2RolePolicyForLaunchWizard",
@@ -275781,6 +276468,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticDisasterRecoveryReadOnlyAccess"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "EC2ImageBuilderExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/EC2ImageBuilderExecutionPolicy"
@@ -275821,6 +276513,11 @@
         "display_name": "AWSEC2VssRestorePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssRestorePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSEC2VssRestorePolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "SecurityAudit",
@@ -276589,6 +277286,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSSystemsManagerJustInTimeAccessTokenSessionPolicy"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonEC2RolePolicyForLaunchWizard",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2RolePolicyForLaunchWizard.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEC2RolePolicyForLaunchWizard"
@@ -276918,6 +277620,11 @@
         "display_name": "AWSSystemsManagerJustInTimeAccessTokenSessionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSystemsManagerJustInTimeAccessTokenSessionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSystemsManagerJustInTimeAccessTokenSessionPolicy"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
       },
       {
         "display_name": "AmazonSageMakerSpacesControllerPolicy",
@@ -283429,6 +284136,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSServiceCatalogAppRegistryFullAccess"
       },
       {
+        "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+      },
+      {
+        "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+      },
+      {
         "display_name": "AmazonDataZoneEnvironmentRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneEnvironmentRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneEnvironmentRolePermissionsBoundary"
@@ -283923,6 +284640,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:tax:DeleteSupplementalTaxRegistration": [
@@ -283942,6 +284664,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:tax:GetExemptions": [
@@ -284017,6 +284744,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:tax:GetTaxRegistrationDocument": [
@@ -284039,6 +284771,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:tax:ListSupplementalTaxRegistrations": [
@@ -284078,6 +284815,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:tax:PutSupplementalTaxRegistration": [
@@ -284121,6 +284863,11 @@
         "display_name": "Billing",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+      },
+      {
+        "display_name": "AWSManagedSignUpAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSignUpAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AWSManagedSignUpAdminAccess"
       }
     ],
     "aws:allow_action:tax:UpdateExemptions": [
@@ -305334,7 +306081,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-07-20T06:27:33Z",
+  "generated_at_utc": "2026-07-22T06:06:06Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

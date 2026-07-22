@@ -1,0 +1,1856 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "gcp:permission:aiplatform.endpoints.predict",
+        "gcp:permission:logging.logEntries.create",
+        "gcp:permission:logging.logEntries.route",
+        "gcp:permission:serviceusage.services.use"
+      ],
+      "display_name": "FlowService Service Agent",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/aisandbox#aisandbox.serviceAgent",
+      "stable_id": "roles/aisandbox.serviceAgent"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:aiplatform.endpoints.predict",
+        "gcp:permission:discoveryengine.devToolsConfigs.get",
+        "gcp:permission:monitoring.timeSeries.list"
+      ],
+      "display_name": "Business AI Code Service Agent",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/businessaicode#businessaicode.serviceAgent",
+      "stable_id": "roles/businessaicode.serviceAgent"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "gcp:permission:aiplatform.endpoints.predict",
+      "gcp:permission:aiplatform.endpoints.predict",
+      "gcp:permission:bigquery.reservationGroups.update",
+      "gcp:permission:bigquery.reservationGroups.update",
+      "gcp:permission:bigquery.reservationGroups.update",
+      "gcp:permission:bigquery.reservationGroups.update",
+      "gcp:permission:bigquery.reservationGroups.update",
+      "gcp:permission:bigquery.reservationGroups.update",
+      "gcp:permission:bigquery.reservationGroups.update",
+      "gcp:permission:businessaicode.locations.fetchQuotaStatus",
+      "gcp:permission:businessaicode.locations.fetchQuotaStatus",
+      "gcp:permission:businessaicode.locations.fetchQuotaStatus",
+      "gcp:permission:businessaicode.locations.fetchQuotaStatus",
+      "gcp:permission:ces.agents.get",
+      "gcp:permission:ces.agents.list",
+      "gcp:permission:ces.appVersions.get",
+      "gcp:permission:ces.appVersions.list",
+      "gcp:permission:ces.apps.get",
+      "gcp:permission:ces.apps.list",
+      "gcp:permission:ces.changelogs.get",
+      "gcp:permission:ces.changelogs.list",
+      "gcp:permission:ces.deployments.get",
+      "gcp:permission:ces.deployments.list",
+      "gcp:permission:ces.examples.get",
+      "gcp:permission:ces.examples.list",
+      "gcp:permission:ces.guardrails.get",
+      "gcp:permission:ces.guardrails.list",
+      "gcp:permission:ces.tools.get",
+      "gcp:permission:ces.tools.list",
+      "gcp:permission:ces.toolsets.get",
+      "gcp:permission:ces.toolsets.list",
+      "gcp:permission:chronicle.legacyCaseFederationPlatforms.get",
+      "gcp:permission:chronicle.legacyCaseFederationPlatforms.get",
+      "gcp:permission:chronicle.legacyFederatedCases.get",
+      "gcp:permission:chronicle.legacyFederatedCases.get",
+      "gcp:permission:chronicle.legacySystemMetadata.placeholders",
+      "gcp:permission:chronicle.legacySystemMetadata.placeholders",
+      "gcp:permission:chronicle.propertySchemaDefinitions.get",
+      "gcp:permission:chronicle.propertySchemaDefinitions.get",
+      "gcp:permission:chronicle.views.get",
+      "gcp:permission:chronicle.views.get",
+      "gcp:permission:cloudkms.keyHandles.create",
+      "gcp:permission:cloudkms.keyHandles.create",
+      "gcp:permission:cloudkms.keyHandles.get",
+      "gcp:permission:cloudkms.keyHandles.get",
+      "gcp:permission:cloudkms.keyHandles.list",
+      "gcp:permission:cloudkms.keyHandles.list",
+      "gcp:permission:cloudkms.operations.get",
+      "gcp:permission:cloudkms.operations.get",
+      "gcp:permission:cloudkms.projects.showEffectiveAutokeyConfig",
+      "gcp:permission:cloudkms.projects.showEffectiveAutokeyConfig",
+      "gcp:permission:cloudtasks.operations.get",
+      "gcp:permission:cloudtasks.operations.get",
+      "gcp:permission:cloudtasks.operations.get",
+      "gcp:permission:cloudtasks.operations.get",
+      "gcp:permission:developerconnect.accountConnectors.fetchUserRepositories",
+      "gcp:permission:developerconnect.accountConnectors.fetchUserRepositories",
+      "gcp:permission:developerconnect.accountConnectors.fetchUserRepositories",
+      "gcp:permission:developerconnect.accountConnectors.fetchUserRepositories",
+      "gcp:permission:developerconnect.accountConnectors.gitProxyRead",
+      "gcp:permission:developerconnect.accountConnectors.gitProxyRead",
+      "gcp:permission:developerconnect.accountConnectors.gitProxyRead",
+      "gcp:permission:developerconnect.accountConnectors.gitProxyRead",
+      "gcp:permission:developerconnect.accountConnectors.gitProxyWrite",
+      "gcp:permission:developerconnect.accountConnectors.gitProxyWrite",
+      "gcp:permission:developerconnect.accountConnectors.gitProxyWrite",
+      "gcp:permission:developerconnect.accountConnectors.gitProxyWrite",
+      "gcp:permission:developerconnect.accountConnectors.httpProxyRead",
+      "gcp:permission:developerconnect.accountConnectors.httpProxyRead",
+      "gcp:permission:developerconnect.accountConnectors.httpProxyRead",
+      "gcp:permission:developerconnect.accountConnectors.httpProxyRead",
+      "gcp:permission:developerconnect.accountConnectors.httpProxyWrite",
+      "gcp:permission:developerconnect.accountConnectors.httpProxyWrite",
+      "gcp:permission:developerconnect.accountConnectors.httpProxyWrite",
+      "gcp:permission:developerconnect.accountConnectors.httpProxyWrite",
+      "gcp:permission:discoveryengine.devToolsConfigs.get",
+      "gcp:permission:logging.logEntries.create",
+      "gcp:permission:logging.logEntries.route",
+      "gcp:permission:looker.instances.createTagBinding",
+      "gcp:permission:looker.instances.createTagBinding",
+      "gcp:permission:looker.instances.createTagBinding",
+      "gcp:permission:looker.instances.createTagBinding",
+      "gcp:permission:looker.instances.deleteTagBinding",
+      "gcp:permission:looker.instances.deleteTagBinding",
+      "gcp:permission:looker.instances.deleteTagBinding",
+      "gcp:permission:looker.instances.deleteTagBinding",
+      "gcp:permission:looker.instances.listEffectiveTags",
+      "gcp:permission:looker.instances.listEffectiveTags",
+      "gcp:permission:looker.instances.listEffectiveTags",
+      "gcp:permission:looker.instances.listEffectiveTags",
+      "gcp:permission:looker.instances.listEffectiveTags",
+      "gcp:permission:looker.instances.listEffectiveTags",
+      "gcp:permission:looker.instances.listTagBindings",
+      "gcp:permission:looker.instances.listTagBindings",
+      "gcp:permission:looker.instances.listTagBindings",
+      "gcp:permission:looker.instances.listTagBindings",
+      "gcp:permission:looker.instances.listTagBindings",
+      "gcp:permission:looker.instances.listTagBindings",
+      "gcp:permission:modelarmor.topics.create",
+      "gcp:permission:modelarmor.topics.create",
+      "gcp:permission:modelarmor.topics.create",
+      "gcp:permission:modelarmor.topics.delete",
+      "gcp:permission:modelarmor.topics.delete",
+      "gcp:permission:modelarmor.topics.delete",
+      "gcp:permission:modelarmor.topics.get",
+      "gcp:permission:modelarmor.topics.get",
+      "gcp:permission:modelarmor.topics.get",
+      "gcp:permission:modelarmor.topics.get",
+      "gcp:permission:modelarmor.topics.list",
+      "gcp:permission:modelarmor.topics.list",
+      "gcp:permission:modelarmor.topics.list",
+      "gcp:permission:modelarmor.topics.list",
+      "gcp:permission:modelarmor.topics.list",
+      "gcp:permission:modelarmor.topics.list",
+      "gcp:permission:modelarmor.topics.test",
+      "gcp:permission:modelarmor.topics.test",
+      "gcp:permission:modelarmor.topics.test",
+      "gcp:permission:modelarmor.topics.test",
+      "gcp:permission:modelarmor.topics.update",
+      "gcp:permission:modelarmor.topics.update",
+      "gcp:permission:modelarmor.topics.update",
+      "gcp:permission:monitoring.timeSeries.list",
+      "gcp:permission:netapp.ontap.get",
+      "gcp:permission:netapp.ontap.get",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.createTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.authorizationPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.clientTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.createTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.deleteTagBinding",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listEffectiveTags",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:networksecurity.serverTlsPolicies.listTagBindings",
+      "gcp:permission:secretmanager.secrets.enableManagedRotation",
+      "gcp:permission:secretmanager.secrets.enableManagedRotation",
+      "gcp:permission:secretmanager.secrets.rotate",
+      "gcp:permission:secretmanager.secrets.rotate",
+      "gcp:permission:secretmanager.secrets.rotate",
+      "gcp:permission:secretmanager.secrets.rotate",
+      "gcp:permission:serviceusage.services.use",
+      "gcp:permission:vmmigration.groups.createTagBinding",
+      "gcp:permission:vmmigration.groups.createTagBinding",
+      "gcp:permission:vmmigration.groups.createTagBinding",
+      "gcp:permission:vmmigration.groups.createTagBinding",
+      "gcp:permission:vmmigration.groups.deleteTagBinding",
+      "gcp:permission:vmmigration.groups.deleteTagBinding",
+      "gcp:permission:vmmigration.groups.deleteTagBinding",
+      "gcp:permission:vmmigration.groups.deleteTagBinding",
+      "gcp:permission:vmmigration.groups.listEffectiveTags",
+      "gcp:permission:vmmigration.groups.listEffectiveTags",
+      "gcp:permission:vmmigration.groups.listEffectiveTags",
+      "gcp:permission:vmmigration.groups.listEffectiveTags",
+      "gcp:permission:vmmigration.groups.listEffectiveTags",
+      "gcp:permission:vmmigration.groups.listTagBindings",
+      "gcp:permission:vmmigration.groups.listTagBindings",
+      "gcp:permission:vmmigration.groups.listTagBindings",
+      "gcp:permission:vmmigration.groups.listTagBindings",
+      "gcp:permission:vmmigration.groups.listTagBindings",
+      "gcp:permission:vmmigration.sources.createTagBinding",
+      "gcp:permission:vmmigration.sources.createTagBinding",
+      "gcp:permission:vmmigration.sources.createTagBinding",
+      "gcp:permission:vmmigration.sources.createTagBinding",
+      "gcp:permission:vmmigration.sources.deleteTagBinding",
+      "gcp:permission:vmmigration.sources.deleteTagBinding",
+      "gcp:permission:vmmigration.sources.deleteTagBinding",
+      "gcp:permission:vmmigration.sources.deleteTagBinding",
+      "gcp:permission:vmmigration.sources.listEffectiveTags",
+      "gcp:permission:vmmigration.sources.listEffectiveTags",
+      "gcp:permission:vmmigration.sources.listEffectiveTags",
+      "gcp:permission:vmmigration.sources.listEffectiveTags",
+      "gcp:permission:vmmigration.sources.listEffectiveTags",
+      "gcp:permission:vmmigration.sources.listTagBindings",
+      "gcp:permission:vmmigration.sources.listTagBindings",
+      "gcp:permission:vmmigration.sources.listTagBindings",
+      "gcp:permission:vmmigration.sources.listTagBindings",
+      "gcp:permission:vmmigration.sources.listTagBindings"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:included_permissions": [
+          "aiplatform.endpoints.predict",
+          "aiplatform.endpoints.predict",
+          "bigquery.reservationGroups.update",
+          "bigquery.reservationGroups.update",
+          "bigquery.reservationGroups.update",
+          "bigquery.reservationGroups.update",
+          "bigquery.reservationGroups.update",
+          "bigquery.reservationGroups.update",
+          "bigquery.reservationGroups.update",
+          "businessaicode.locations.fetchQuotaStatus",
+          "businessaicode.locations.fetchQuotaStatus",
+          "businessaicode.locations.fetchQuotaStatus",
+          "businessaicode.locations.fetchQuotaStatus",
+          "ces.agents.get",
+          "ces.agents.list",
+          "ces.appVersions.get",
+          "ces.appVersions.list",
+          "ces.apps.get",
+          "ces.apps.list",
+          "ces.changelogs.get",
+          "ces.changelogs.list",
+          "ces.deployments.get",
+          "ces.deployments.list",
+          "ces.examples.get",
+          "ces.examples.list",
+          "ces.guardrails.get",
+          "ces.guardrails.list",
+          "ces.tools.get",
+          "ces.tools.list",
+          "ces.toolsets.get",
+          "ces.toolsets.list",
+          "chronicle.legacyCaseFederationPlatforms.get",
+          "chronicle.legacyCaseFederationPlatforms.get",
+          "chronicle.legacyFederatedCases.get",
+          "chronicle.legacyFederatedCases.get",
+          "chronicle.legacySystemMetadata.placeholders",
+          "chronicle.legacySystemMetadata.placeholders",
+          "chronicle.propertySchemaDefinitions.get",
+          "chronicle.propertySchemaDefinitions.get",
+          "chronicle.views.get",
+          "chronicle.views.get",
+          "cloudkms.keyHandles.create",
+          "cloudkms.keyHandles.create",
+          "cloudkms.keyHandles.get",
+          "cloudkms.keyHandles.get",
+          "cloudkms.keyHandles.list",
+          "cloudkms.keyHandles.list",
+          "cloudkms.operations.get",
+          "cloudkms.operations.get",
+          "cloudkms.projects.showEffectiveAutokeyConfig",
+          "cloudkms.projects.showEffectiveAutokeyConfig",
+          "cloudtasks.operations.get",
+          "cloudtasks.operations.get",
+          "cloudtasks.operations.get",
+          "cloudtasks.operations.get",
+          "developerconnect.accountConnectors.fetchUserRepositories",
+          "developerconnect.accountConnectors.fetchUserRepositories",
+          "developerconnect.accountConnectors.fetchUserRepositories",
+          "developerconnect.accountConnectors.fetchUserRepositories",
+          "developerconnect.accountConnectors.gitProxyRead",
+          "developerconnect.accountConnectors.gitProxyRead",
+          "developerconnect.accountConnectors.gitProxyRead",
+          "developerconnect.accountConnectors.gitProxyRead",
+          "developerconnect.accountConnectors.gitProxyWrite",
+          "developerconnect.accountConnectors.gitProxyWrite",
+          "developerconnect.accountConnectors.gitProxyWrite",
+          "developerconnect.accountConnectors.gitProxyWrite",
+          "developerconnect.accountConnectors.httpProxyRead",
+          "developerconnect.accountConnectors.httpProxyRead",
+          "developerconnect.accountConnectors.httpProxyRead",
+          "developerconnect.accountConnectors.httpProxyRead",
+          "developerconnect.accountConnectors.httpProxyWrite",
+          "developerconnect.accountConnectors.httpProxyWrite",
+          "developerconnect.accountConnectors.httpProxyWrite",
+          "developerconnect.accountConnectors.httpProxyWrite",
+          "discoveryengine.devToolsConfigs.get",
+          "logging.logEntries.create",
+          "logging.logEntries.route",
+          "looker.instances.createTagBinding",
+          "looker.instances.createTagBinding",
+          "looker.instances.createTagBinding",
+          "looker.instances.createTagBinding",
+          "looker.instances.deleteTagBinding",
+          "looker.instances.deleteTagBinding",
+          "looker.instances.deleteTagBinding",
+          "looker.instances.deleteTagBinding",
+          "looker.instances.listEffectiveTags",
+          "looker.instances.listEffectiveTags",
+          "looker.instances.listEffectiveTags",
+          "looker.instances.listEffectiveTags",
+          "looker.instances.listEffectiveTags",
+          "looker.instances.listEffectiveTags",
+          "looker.instances.listTagBindings",
+          "looker.instances.listTagBindings",
+          "looker.instances.listTagBindings",
+          "looker.instances.listTagBindings",
+          "looker.instances.listTagBindings",
+          "looker.instances.listTagBindings",
+          "modelarmor.topics.create",
+          "modelarmor.topics.create",
+          "modelarmor.topics.create",
+          "modelarmor.topics.delete",
+          "modelarmor.topics.delete",
+          "modelarmor.topics.delete",
+          "modelarmor.topics.get",
+          "modelarmor.topics.get",
+          "modelarmor.topics.get",
+          "modelarmor.topics.get",
+          "modelarmor.topics.list",
+          "modelarmor.topics.list",
+          "modelarmor.topics.list",
+          "modelarmor.topics.list",
+          "modelarmor.topics.list",
+          "modelarmor.topics.list",
+          "modelarmor.topics.test",
+          "modelarmor.topics.test",
+          "modelarmor.topics.test",
+          "modelarmor.topics.test",
+          "modelarmor.topics.update",
+          "modelarmor.topics.update",
+          "modelarmor.topics.update",
+          "monitoring.timeSeries.list",
+          "netapp.ontap.get",
+          "netapp.ontap.get",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.createTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.deleteTagBinding",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listEffectiveTags",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.authorizationPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.createTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.deleteTagBinding",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listEffectiveTags",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.clientTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.createTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.deleteTagBinding",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listEffectiveTags",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "networksecurity.serverTlsPolicies.listTagBindings",
+          "secretmanager.secrets.enableManagedRotation",
+          "secretmanager.secrets.enableManagedRotation",
+          "secretmanager.secrets.rotate",
+          "secretmanager.secrets.rotate",
+          "secretmanager.secrets.rotate",
+          "secretmanager.secrets.rotate",
+          "serviceusage.services.use",
+          "vmmigration.groups.createTagBinding",
+          "vmmigration.groups.createTagBinding",
+          "vmmigration.groups.createTagBinding",
+          "vmmigration.groups.createTagBinding",
+          "vmmigration.groups.deleteTagBinding",
+          "vmmigration.groups.deleteTagBinding",
+          "vmmigration.groups.deleteTagBinding",
+          "vmmigration.groups.deleteTagBinding",
+          "vmmigration.groups.listEffectiveTags",
+          "vmmigration.groups.listEffectiveTags",
+          "vmmigration.groups.listEffectiveTags",
+          "vmmigration.groups.listEffectiveTags",
+          "vmmigration.groups.listEffectiveTags",
+          "vmmigration.groups.listTagBindings",
+          "vmmigration.groups.listTagBindings",
+          "vmmigration.groups.listTagBindings",
+          "vmmigration.groups.listTagBindings",
+          "vmmigration.groups.listTagBindings",
+          "vmmigration.sources.createTagBinding",
+          "vmmigration.sources.createTagBinding",
+          "vmmigration.sources.createTagBinding",
+          "vmmigration.sources.createTagBinding",
+          "vmmigration.sources.deleteTagBinding",
+          "vmmigration.sources.deleteTagBinding",
+          "vmmigration.sources.deleteTagBinding",
+          "vmmigration.sources.deleteTagBinding",
+          "vmmigration.sources.listEffectiveTags",
+          "vmmigration.sources.listEffectiveTags",
+          "vmmigration.sources.listEffectiveTags",
+          "vmmigration.sources.listEffectiveTags",
+          "vmmigration.sources.listEffectiveTags",
+          "vmmigration.sources.listTagBindings",
+          "vmmigration.sources.listTagBindings",
+          "vmmigration.sources.listTagBindings",
+          "vmmigration.sources.listTagBindings",
+          "vmmigration.sources.listTagBindings"
+        ]
+      },
+      "removed": {
+        "grant:included_permissions": [
+          "dataplex.locations.get",
+          "dataplex.locations.get",
+          "dataplex.locations.get",
+          "dataplex.locations.get",
+          "dataplex.locations.list",
+          "dataplex.locations.list",
+          "dataplex.locations.list",
+          "dataplex.locations.list",
+          "dataplex.operations.cancel",
+          "dataplex.operations.cancel",
+          "dataplex.operations.cancel",
+          "dataplex.operations.cancel",
+          "dataplex.operations.delete",
+          "dataplex.operations.delete",
+          "dataplex.operations.delete",
+          "dataplex.operations.delete",
+          "dataplex.operations.get",
+          "dataplex.operations.get",
+          "dataplex.operations.list",
+          "dataplex.operations.list"
+        ]
+      }
+    },
+    "removed": [
+      "gcp:permission:dataplex.locations.get",
+      "gcp:permission:dataplex.locations.get",
+      "gcp:permission:dataplex.locations.get",
+      "gcp:permission:dataplex.locations.get",
+      "gcp:permission:dataplex.locations.list",
+      "gcp:permission:dataplex.locations.list",
+      "gcp:permission:dataplex.locations.list",
+      "gcp:permission:dataplex.locations.list",
+      "gcp:permission:dataplex.operations.cancel",
+      "gcp:permission:dataplex.operations.cancel",
+      "gcp:permission:dataplex.operations.cancel",
+      "gcp:permission:dataplex.operations.cancel",
+      "gcp:permission:dataplex.operations.delete",
+      "gcp:permission:dataplex.operations.delete",
+      "gcp:permission:dataplex.operations.delete",
+      "gcp:permission:dataplex.operations.delete",
+      "gcp:permission:dataplex.operations.get",
+      "gcp:permission:dataplex.operations.get",
+      "gcp:permission:dataplex.operations.list",
+      "gcp:permission:dataplex.operations.list"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AlloyDB Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [],
+            "removed": [
+              "dataplex.locations.get",
+              "dataplex.locations.list",
+              "dataplex.operations.cancel",
+              "dataplex.operations.delete",
+              "dataplex.operations.get",
+              "dataplex.operations.list"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/alloydb#alloydb.admin",
+      "stable_id": "roles/alloydb.admin"
+    },
+    {
+      "display_name": "AlloyDB Database User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [],
+            "removed": [
+              "dataplex.locations.get",
+              "dataplex.locations.list",
+              "dataplex.operations.cancel",
+              "dataplex.operations.delete",
+              "dataplex.operations.get",
+              "dataplex.operations.list"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/alloydb#alloydb.databaseUser",
+      "stable_id": "roles/alloydb.databaseUser"
+    },
+    {
+      "display_name": "Backup and DR Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudkms.keyHandles.create",
+              "cloudkms.keyHandles.get",
+              "cloudkms.keyHandles.list",
+              "cloudkms.operations.get",
+              "cloudkms.projects.showEffectiveAutokeyConfig"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/backupdr#backupdr.admin",
+      "stable_id": "roles/backupdr.admin"
+    },
+    {
+      "display_name": "BigQuery Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "bigquery.reservationGroups.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquery#bigquery.admin",
+      "stable_id": "roles/bigquery.admin"
+    },
+    {
+      "display_name": "BigQuery Resource Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "bigquery.reservationGroups.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquery#bigquery.resourceAdmin",
+      "stable_id": "roles/bigquery.resourceAdmin"
+    },
+    {
+      "display_name": "BigQuery Resource Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "bigquery.reservationGroups.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquery#bigquery.resourceEditor",
+      "stable_id": "roles/bigquery.resourceEditor"
+    },
+    {
+      "display_name": "BigQuery Studio Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "bigquery.reservationGroups.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin",
+      "stable_id": "roles/bigquery.studioAdmin"
+    },
+    {
+      "display_name": "BigQuery Data Policy Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "bigquery.reservationGroups.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquerydatapolicy#bigquerydatapolicy.editor",
+      "stable_id": "roles/bigquerydatapolicy.editor"
+    },
+    {
+      "display_name": "User role for Business AI Code API",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "businessaicode.locations.fetchQuotaStatus"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "User role for Business AI Code API",
+          "before": "User role for Business AI Code API Beta",
+          "field": "display_name"
+        },
+        {
+          "after": "GA",
+          "before": "Beta",
+          "field": "metadata.stage"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.stage_inferred"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/businessaicode#businessaicode.user",
+      "stable_id": "roles/businessaicode.user"
+    },
+    {
+      "display_name": "Chronicle API Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "chronicle.legacyCaseFederationPlatforms.get",
+              "chronicle.legacyFederatedCases.get",
+              "chronicle.legacySystemMetadata.placeholders",
+              "chronicle.propertySchemaDefinitions.get",
+              "chronicle.views.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#chronicle.editor",
+      "stable_id": "roles/chronicle.editor"
+    },
+    {
+      "display_name": "Chronicle API Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "chronicle.legacyCaseFederationPlatforms.get",
+              "chronicle.legacyFederatedCases.get",
+              "chronicle.legacySystemMetadata.placeholders",
+              "chronicle.propertySchemaDefinitions.get",
+              "chronicle.views.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#chronicle.viewer",
+      "stable_id": "roles/chronicle.viewer"
+    },
+    {
+      "display_name": "Gemini Code Assist Tools Admin Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "developerconnect.accountConnectors.fetchUserRepositories",
+              "developerconnect.accountConnectors.gitProxyRead",
+              "developerconnect.accountConnectors.gitProxyWrite",
+              "developerconnect.accountConnectors.httpProxyRead",
+              "developerconnect.accountConnectors.httpProxyWrite"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.codeToolsAdmin",
+      "stable_id": "roles/cloudaicompanion.codeToolsAdmin"
+    },
+    {
+      "display_name": "Gemini Code Assist Tools User Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "developerconnect.accountConnectors.fetchUserRepositories",
+              "developerconnect.accountConnectors.gitProxyRead",
+              "developerconnect.accountConnectors.gitProxyWrite",
+              "developerconnect.accountConnectors.httpProxyRead",
+              "developerconnect.accountConnectors.httpProxyWrite"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.codeToolsUser",
+      "stable_id": "roles/cloudaicompanion.codeToolsUser"
+    },
+    {
+      "display_name": "Cloud Tasks Admin Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudtasks.operations.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudtasks#cloudtasks.admin",
+      "stable_id": "roles/cloudtasks.admin"
+    },
+    {
+      "display_name": "Cloud Tasks Editor Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudtasks.operations.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudtasks#cloudtasks.editor",
+      "stable_id": "roles/cloudtasks.editor"
+    },
+    {
+      "display_name": "Cloud Tasks Enqueuer Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudtasks.operations.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudtasks#cloudtasks.enqueuer",
+      "stable_id": "roles/cloudtasks.enqueuer"
+    },
+    {
+      "display_name": "Cloud Tasks Viewer Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudtasks.operations.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudtasks#cloudtasks.viewer",
+      "stable_id": "roles/cloudtasks.viewer"
+    },
+    {
+      "display_name": "Cloud TPU V2 API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/tpu#cloudtpu.serviceAgent",
+      "stable_id": "roles/cloudtpu.serviceAgent"
+    },
+    {
+      "display_name": "Cloud Composer API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/composer#composer.serviceAgent",
+      "stable_id": "roles/composer.serviceAgent"
+    },
+    {
+      "display_name": "Compute Network Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/compute#compute.networkAdmin",
+      "stable_id": "roles/compute.networkAdmin"
+    },
+    {
+      "display_name": "Contact Center AI Insights Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "ces.agents.get",
+              "ces.agents.list",
+              "ces.appVersions.get",
+              "ces.appVersions.list",
+              "ces.apps.get",
+              "ces.apps.list",
+              "ces.changelogs.get",
+              "ces.changelogs.list",
+              "ces.deployments.get",
+              "ces.deployments.list",
+              "ces.examples.get",
+              "ces.examples.list",
+              "ces.guardrails.get",
+              "ces.guardrails.list",
+              "ces.tools.get",
+              "ces.tools.list",
+              "ces.toolsets.get",
+              "ces.toolsets.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/contactcenterinsights#contactcenterinsights.serviceAgent",
+      "stable_id": "roles/contactcenterinsights.serviceAgent"
+    },
+    {
+      "display_name": "Kubernetes Engine Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/container#container.serviceAgent",
+      "stable_id": "roles/container.serviceAgent"
+    },
+    {
+      "display_name": "Cloud Dataflow Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "bigquery.reservationGroups.update",
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent",
+      "stable_id": "roles/dataflow.serviceAgent"
+    },
+    {
+      "display_name": "Cloud Dataplex Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "bigquery.reservationGroups.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.serviceAgent",
+      "stable_id": "roles/dataplex.serviceAgent"
+    },
+    {
+      "display_name": "Developer Connect OAuth Admin Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "developerconnect.accountConnectors.fetchUserRepositories",
+              "developerconnect.accountConnectors.gitProxyRead",
+              "developerconnect.accountConnectors.gitProxyWrite",
+              "developerconnect.accountConnectors.httpProxyRead",
+              "developerconnect.accountConnectors.httpProxyWrite"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/developerconnect#developerconnect.oauthAdmin",
+      "stable_id": "roles/developerconnect.oauthAdmin"
+    },
+    {
+      "display_name": "Developer Connect OAuth User Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "developerconnect.accountConnectors.fetchUserRepositories",
+              "developerconnect.accountConnectors.gitProxyRead",
+              "developerconnect.accountConnectors.gitProxyWrite",
+              "developerconnect.accountConnectors.httpProxyRead",
+              "developerconnect.accountConnectors.httpProxyWrite"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/developerconnect#developerconnect.oauthUser",
+      "stable_id": "roles/developerconnect.oauthUser"
+    },
+    {
+      "display_name": "Gemini Enterprise User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "businessaicode.locations.fetchQuotaStatus"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceUser",
+      "stable_id": "roles/discoveryengine.agentspaceUser"
+    },
+    {
+      "display_name": "Podcast API User Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "businessaicode.locations.fetchQuotaStatus"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/discoveryengine#discoveryengine.podcastApiUser",
+      "stable_id": "roles/discoveryengine.podcastApiUser"
+    },
+    {
+      "display_name": "Discovery Engine User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "businessaicode.locations.fetchQuotaStatus"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/discoveryengine#discoveryengine.user",
+      "stable_id": "roles/discoveryengine.user"
+    },
+    {
+      "display_name": "DLP Organization Data Profiles Driver",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "looker.instances.createTagBinding",
+              "looker.instances.deleteTagBinding",
+              "looker.instances.listEffectiveTags",
+              "looker.instances.listTagBindings",
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings",
+              "vmmigration.groups.createTagBinding",
+              "vmmigration.groups.deleteTagBinding",
+              "vmmigration.groups.listEffectiveTags",
+              "vmmigration.groups.listTagBindings",
+              "vmmigration.sources.createTagBinding",
+              "vmmigration.sources.deleteTagBinding",
+              "vmmigration.sources.listEffectiveTags",
+              "vmmigration.sources.listTagBindings"
+            ],
+            "removed": [
+              "dataplex.locations.get",
+              "dataplex.locations.list",
+              "dataplex.operations.cancel",
+              "dataplex.operations.delete"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dlp#dlp.orgdriver",
+      "stable_id": "roles/dlp.orgdriver"
+    },
+    {
+      "display_name": "DLP Project Data Profiles Driver",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "looker.instances.createTagBinding",
+              "looker.instances.deleteTagBinding",
+              "looker.instances.listEffectiveTags",
+              "looker.instances.listTagBindings",
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings",
+              "vmmigration.groups.createTagBinding",
+              "vmmigration.groups.deleteTagBinding",
+              "vmmigration.groups.listEffectiveTags",
+              "vmmigration.groups.listTagBindings",
+              "vmmigration.sources.createTagBinding",
+              "vmmigration.sources.deleteTagBinding",
+              "vmmigration.sources.listEffectiveTags",
+              "vmmigration.sources.listTagBindings"
+            ],
+            "removed": [
+              "dataplex.locations.get",
+              "dataplex.locations.list",
+              "dataplex.operations.cancel",
+              "dataplex.operations.delete"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dlp#dlp.projectdriver",
+      "stable_id": "roles/dlp.projectdriver"
+    },
+    {
+      "display_name": "Security Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.topics.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityAdmin",
+      "stable_id": "roles/iam.securityAdmin"
+    },
+    {
+      "display_name": "Security Reviewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.topics.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityReviewer",
+      "stable_id": "roles/iam.securityReviewer"
+    },
+    {
+      "display_name": "Looker Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "looker.instances.createTagBinding",
+              "looker.instances.deleteTagBinding",
+              "looker.instances.listEffectiveTags",
+              "looker.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/looker#looker.admin",
+      "stable_id": "roles/looker.admin"
+    },
+    {
+      "display_name": "Looker Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "looker.instances.listEffectiveTags",
+              "looker.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/looker#looker.viewer",
+      "stable_id": "roles/looker.viewer"
+    },
+    {
+      "display_name": "Model Armor Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.topics.create",
+              "modelarmor.topics.delete",
+              "modelarmor.topics.get",
+              "modelarmor.topics.list",
+              "modelarmor.topics.test",
+              "modelarmor.topics.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/modelarmor#modelarmor.admin",
+      "stable_id": "roles/modelarmor.admin"
+    },
+    {
+      "display_name": "Model Armor Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.topics.create",
+              "modelarmor.topics.delete",
+              "modelarmor.topics.get",
+              "modelarmor.topics.list",
+              "modelarmor.topics.test",
+              "modelarmor.topics.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/modelarmor#modelarmor.editor",
+      "stable_id": "roles/modelarmor.editor"
+    },
+    {
+      "display_name": "Model Armor User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.topics.test"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/modelarmor#modelarmor.user",
+      "stable_id": "roles/modelarmor.user"
+    },
+    {
+      "display_name": "Model Armor Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.topics.get",
+              "modelarmor.topics.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/modelarmor#modelarmor.viewer",
+      "stable_id": "roles/modelarmor.viewer"
+    },
+    {
+      "display_name": "Google Cloud NetApp Volumes Admin Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "netapp.ontap.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/netapp#netapp.admin",
+      "stable_id": "roles/netapp.admin"
+    },
+    {
+      "display_name": "Google Cloud NetApp Volumes Viewer Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "netapp.ontap.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/netapp#netapp.viewer",
+      "stable_id": "roles/netapp.viewer"
+    },
+    {
+      "display_name": "Networksecurity Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/networksecurity#networksecurity.admin",
+      "stable_id": "roles/networksecurity.admin"
+    },
+    {
+      "display_name": "Networksecurity Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/networksecurity#networksecurity.editor",
+      "stable_id": "roles/networksecurity.editor"
+    },
+    {
+      "display_name": "Networksecurity Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/networksecurity#networksecurity.viewer",
+      "stable_id": "roles/networksecurity.viewer"
+    },
+    {
+      "display_name": "Tag User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "looker.instances.createTagBinding",
+              "looker.instances.deleteTagBinding",
+              "looker.instances.listEffectiveTags",
+              "looker.instances.listTagBindings",
+              "networksecurity.authorizationPolicies.createTagBinding",
+              "networksecurity.authorizationPolicies.deleteTagBinding",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.createTagBinding",
+              "networksecurity.clientTlsPolicies.deleteTagBinding",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.createTagBinding",
+              "networksecurity.serverTlsPolicies.deleteTagBinding",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings",
+              "vmmigration.groups.createTagBinding",
+              "vmmigration.groups.deleteTagBinding",
+              "vmmigration.groups.listEffectiveTags",
+              "vmmigration.groups.listTagBindings",
+              "vmmigration.sources.createTagBinding",
+              "vmmigration.sources.deleteTagBinding",
+              "vmmigration.sources.listEffectiveTags",
+              "vmmigration.sources.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser",
+      "stable_id": "roles/resourcemanager.tagUser"
+    },
+    {
+      "display_name": "Tag Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "looker.instances.listEffectiveTags",
+              "looker.instances.listTagBindings",
+              "networksecurity.authorizationPolicies.listEffectiveTags",
+              "networksecurity.authorizationPolicies.listTagBindings",
+              "networksecurity.clientTlsPolicies.listEffectiveTags",
+              "networksecurity.clientTlsPolicies.listTagBindings",
+              "networksecurity.serverTlsPolicies.listEffectiveTags",
+              "networksecurity.serverTlsPolicies.listTagBindings",
+              "vmmigration.groups.listEffectiveTags",
+              "vmmigration.groups.listTagBindings",
+              "vmmigration.sources.listEffectiveTags",
+              "vmmigration.sources.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer",
+      "stable_id": "roles/resourcemanager.tagViewer"
+    },
+    {
+      "display_name": "Secret Manager Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "secretmanager.secrets.enableManagedRotation",
+              "secretmanager.secrets.rotate"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/secretmanager#secretmanager.admin",
+      "stable_id": "roles/secretmanager.admin"
+    },
+    {
+      "display_name": "Secretmanager Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "secretmanager.secrets.enableManagedRotation",
+              "secretmanager.secrets.rotate"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/secretmanager#secretmanager.editor",
+      "stable_id": "roles/secretmanager.editor"
+    },
+    {
+      "display_name": "Secret Manager Secret Version Adder",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "secretmanager.secrets.rotate"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/secretmanager#secretmanager.secretVersionAdder",
+      "stable_id": "roles/secretmanager.secretVersionAdder"
+    },
+    {
+      "display_name": "Secret Manager Secret Version Manager",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "secretmanager.secrets.rotate"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/secretmanager#secretmanager.secretVersionManager",
+      "stable_id": "roles/secretmanager.secretVersionManager"
+    },
+    {
+      "display_name": "Security Center Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "modelarmor.topics.create",
+              "modelarmor.topics.delete",
+              "modelarmor.topics.get",
+              "modelarmor.topics.list",
+              "modelarmor.topics.test",
+              "modelarmor.topics.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/securitycenter#securitycenter.admin",
+      "stable_id": "roles/securitycenter.admin"
+    },
+    {
+      "display_name": "VM Migration Administrator",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "vmmigration.groups.createTagBinding",
+              "vmmigration.groups.deleteTagBinding",
+              "vmmigration.groups.listEffectiveTags",
+              "vmmigration.groups.listTagBindings",
+              "vmmigration.sources.createTagBinding",
+              "vmmigration.sources.deleteTagBinding",
+              "vmmigration.sources.listEffectiveTags",
+              "vmmigration.sources.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/vmmigration#vmmigration.admin",
+      "stable_id": "roles/vmmigration.admin"
+    },
+    {
+      "display_name": "Cloud Workstations Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudkms.keyHandles.create",
+              "cloudkms.keyHandles.get",
+              "cloudkms.keyHandles.list",
+              "cloudkms.operations.get",
+              "cloudkms.projects.showEffectiveAutokeyConfig"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/workstations#workstations.admin",
+      "stable_id": "roles/workstations.admin"
+    }
+  ],
+  "compared_at_utc": "2026-07-22T06:06:06Z",
+  "counts": {
+    "added_atoms": 293,
+    "added_objects": 2,
+    "changed_objects": 53,
+    "current_objects": 2364,
+    "previous_objects": 2362,
+    "removed_atoms": 20,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-22",
+  "dataset": "gcp-predefined-roles",
+  "platform": "gcp",
+  "previous_snapshot_date": "2026-07-15",
+  "removed_objects": []
+}

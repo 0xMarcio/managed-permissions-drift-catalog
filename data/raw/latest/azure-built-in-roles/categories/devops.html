@@ -168,7 +168,7 @@
 
 			<!-- assets and js globals -->
 			
-			<link rel="stylesheet" href="/static/assets/0.4.03475.7996-de13af4f/styles/site.css" />
+			<link rel="stylesheet" href="/static/assets/0.4.03488.8049-c02b30ef/styles/site.css" />
 			
 			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
 			<script async src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
@@ -229,7 +229,7 @@
 
 			<!-- base scripts, msdocs global should be before this -->
 			<script
-				src="/static/assets/0.4.03475.7996-de13af4f/scripts/en-us/index-docs.js"
+				src="/static/assets/0.4.03488.8049-c02b30ef/scripts/en-us/index-docs.js"
 				async
 			></script>
 			
@@ -601,7 +601,7 @@
 			<span class="icon" aria-hidden="true">
 				<span class="docon docon-circle-addition"></span>
 			</span>
-			<span class="plan-status">Add to plan</span>
+			<span class="plan-status">Add to Plans</span>
 		</button>
 	 
 					
@@ -4048,8 +4048,8 @@
 				data-test-id="theme-selector-button"
 				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
 				aria-controls="{{ themeMenuId }}"
+				aria-haspopup="true"
 				aria-expanded="false"
-				title="Theme"
 				data-bi-name="theme"
 			>
 				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
@@ -4059,11 +4059,14 @@
 				</span>
 			</button>
 			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
-				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu">
-					<li class="theme display-block">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu" role="none">
+					<li class="theme display-block" role="none">
 						<button
 							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
 							data-theme-to="light"
+							tabindex="-1"
 						>
 							<span class="theme-light margin-right-xxs">
 								<span
@@ -4082,13 +4085,16 @@
 									</svg>
 								</span>
 							</span>
-							<span role="menuitem"> Light </span>
+							<span> Light </span>
 						</button>
 					</li>
-					<li class="theme display-block">
+					<li class="theme display-block" role="none">
 						<button
 							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
 							data-theme-to="dark"
+							tabindex="-1"
 						>
 							<span class="theme-dark margin-right-xxs">
 								<span
@@ -4107,13 +4113,16 @@
 									</svg>
 								</span>
 							</span>
-							<span role="menuitem"> Dark </span>
+							<span> Dark </span>
 						</button>
 					</li>
-					<li class="theme display-block">
+					<li class="theme display-block" role="none">
 						<button
 							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
 							data-theme-to="high-contrast"
+							tabindex="-1"
 						>
 							<span class="theme-high-contrast margin-right-xxs">
 								<span
@@ -4132,7 +4141,7 @@
 									</svg>
 								</span>
 							</span>
-							<span role="menuitem"> High contrast </span>
+							<span> High contrast </span>
 						</button>
 					</li>
 				</ul>
