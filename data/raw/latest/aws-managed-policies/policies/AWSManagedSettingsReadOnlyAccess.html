@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 22, 2026, 01:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 22, 2026, 01:12 UTC</p>
+                <p><b>Edited time:</b>  July 23, 2026, 00:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSManagedSettingsReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSManagedSettingsReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -105,6 +105,16 @@
       "Effect" : "Allow",
       "Action" : [
         "sso:DescribeInstance"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "SSODirectoryReadOnly",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso-directory:DescribeUsers",
+        "sso-directory:SearchGroups",
+        "sso-directory:SearchUsers"
       ],
       "Resource" : "*"
     }

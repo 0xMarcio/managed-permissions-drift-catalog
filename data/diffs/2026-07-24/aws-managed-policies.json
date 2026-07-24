@@ -1,0 +1,321 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:budgets:DescribeBudgetActionHistories",
+      "aws:allow_action:cloudformation:CreateStack",
+      "aws:allow_action:cloudformation:DeleteStack",
+      "aws:allow_action:cloudformation:DescribeStackEvents",
+      "aws:allow_action:cloudformation:DescribeStacks",
+      "aws:allow_action:cloudformation:UpdateStack",
+      "aws:allow_action:drs:GetAgentSnapshotCreditsForDrs",
+      "aws:allow_action:drs:SendVolumeStatsForDrs",
+      "aws:allow_action:iam:DeleteRolePolicy",
+      "aws:allow_action:iam:GetRolePolicy",
+      "aws:allow_action:iam:PutRolePolicy",
+      "aws:allow_action:organizations:InviteAccountToOrganization",
+      "aws:allow_action:pi:ListPerformanceAnalysisReportRecommendations",
+      "aws:allow_action:pi:ListPerformanceAnalysisReportRecommendations",
+      "aws:allow_action:sso-directory:DescribeUsers",
+      "aws:allow_action:sso-directory:SearchGroups",
+      "aws:allow_action:sso-directory:SearchUsers"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "budgets:DescribeBudgetActionHistories",
+          "cloudformation:CreateStack",
+          "cloudformation:DeleteStack",
+          "cloudformation:DescribeStackEvents",
+          "cloudformation:DescribeStacks",
+          "cloudformation:UpdateStack",
+          "drs:GetAgentSnapshotCreditsForDrs",
+          "drs:SendVolumeStatsForDrs",
+          "iam:DeleteRolePolicy",
+          "iam:GetRolePolicy",
+          "iam:PutRolePolicy",
+          "organizations:InviteAccountToOrganization",
+          "pi:ListPerformanceAnalysisReportRecommendations",
+          "pi:ListPerformanceAnalysisReportRecommendations",
+          "sso-directory:DescribeUsers",
+          "sso-directory:SearchGroups",
+          "sso-directory:SearchUsers"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSApplicationMigrationFullAccess",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 23, 2026, 07:27 UTC",
+          "before": "May 31, 2026, 13:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 23, 2026, 07:27 UTC",
+          "before": "May 31, 2026, 13:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess"
+    },
+    {
+      "display_name": "AWSManagedSettingsAdminAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "budgets:DescribeBudgetActionHistories",
+              "organizations:InviteAccountToOrganization"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 23, 2026, 00:42 UTC",
+          "before": "July 22, 2026, 01:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 23, 2026, 00:42 UTC",
+          "before": "July 22, 2026, 01:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+    },
+    {
+      "display_name": "AWSManagedSettingsReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "sso-directory:DescribeUsers",
+              "sso-directory:SearchGroups",
+              "sso-directory:SearchUsers"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 23, 2026, 00:42 UTC",
+          "before": "July 22, 2026, 01:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 23, 2026, 00:42 UTC",
+          "before": "July 22, 2026, 01:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsReadOnlyAccess"
+    },
+    {
+      "display_name": "AmazonRDSPerformanceInsightsFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "pi:ListPerformanceAnalysisReportRecommendations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 23, 2026, 00:27 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 23, 2026, 00:27 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSPerformanceInsightsFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonRDSPerformanceInsightsFullAccess"
+    },
+    {
+      "display_name": "AmazonRDSPerformanceInsightsReadOnly",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "pi:ListPerformanceAnalysisReportRecommendations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 22, 2026, 23:42 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 22, 2026, 23:42 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 14,
+          "before": 13,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSPerformanceInsightsReadOnly.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonRDSPerformanceInsightsReadOnly"
+    },
+    {
+      "display_name": "CloudFormationStackSetsOrgMemberServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:CreateStack",
+              "cloudformation:DeleteStack",
+              "cloudformation:DescribeStackEvents",
+              "cloudformation:DescribeStacks",
+              "cloudformation:UpdateStack",
+              "iam:DeleteRolePolicy",
+              "iam:GetRolePolicy",
+              "iam:PutRolePolicy"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 22, 2026, 20:12 UTC",
+          "before": "December 09, 2019, 23:52 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 22, 2026, 20:12 UTC",
+          "before": "December 09, 2019, 23:52 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFormationStackSetsOrgMemberServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CloudFormationStackSetsOrgMemberServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSElasticDisasterRecoveryFailbackPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "drs:GetAgentSnapshotCreditsForDrs",
+              "drs:SendVolumeStatsForDrs"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 22, 2026, 18:42 UTC",
+          "before": "November 27, 2023, 12:56 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 22, 2026, 18:42 UTC",
+          "before": "November 27, 2023, 12:56 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticDisasterRecoveryFailbackPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSElasticDisasterRecoveryFailbackPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-07-24T06:05:28Z",
+  "counts": {
+    "added_atoms": 17,
+    "added_objects": 0,
+    "changed_objects": 7,
+    "current_objects": 1550,
+    "previous_objects": 1550,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-24",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-23",
+  "removed_objects": []
+}

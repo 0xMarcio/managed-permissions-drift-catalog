@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: April 07, 2021, 06:56 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 31, 2026, 13:12 UTC</p>
+                <p><b>Edited time:</b>  July 23, 2026, 07:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSApplicationMigrationFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v12 (default)</p>
+        <p><b>Policy version:</b> v13 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -334,7 +334,7 @@
       ]
     },
     <span>{</span>
-      "Sid" : "AllowTagSVMWithMapMigrated",
+      "Sid" : "AllowTagSVMWithMapKeys",
       "Effect" : "Allow",
       "Action" : [
         "fsx:TagResource"
@@ -343,7 +343,8 @@
       "Condition" : <span>{</span>
         "ForAllValues:StringEquals" : <span>{</span>
           "aws:TagKeys" : [
-            "map-migrated"
+            "map-migrated",
+            "aws-apn-id"
           ]
         }
       }

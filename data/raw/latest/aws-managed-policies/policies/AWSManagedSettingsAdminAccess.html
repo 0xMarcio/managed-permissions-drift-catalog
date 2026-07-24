@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 22, 2026, 01:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 22, 2026, 01:27 UTC</p>
+                <p><b>Edited time:</b>  July 23, 2026, 00:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSManagedSettingsAdminAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -71,6 +71,19 @@
         <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"><awsui-icon name="copy"></awsui-icon></div></div><!--DEBUG: cli (json)--><code class="json "><span>{</span>
   "Version" : "2012-10-17",
   "Statement" : [
+    <span>{</span>
+      "Sid" : "ActivateAdvancedUpdateAccountName",
+      "Effect" : "Allow",
+      "Action" : [
+        "account:PutAccountName"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:CalledViaLast" : "account.amazonaws.com"
+        }
+      }
+    },
     <span>{</span>
       "Sid" : "AWSSettingsAccountAccess",
       "Effect" : "Allow",
@@ -119,7 +132,8 @@
         "budgets:CreateBudget",
         "budgets:DeleteBudget",
         "budgets:DescribeBudgets",
-        "budgets:DescribeBudget"
+        "budgets:DescribeBudget",
+        "budgets:DescribeBudgetActionHistories"
       ],
       "Resource" : "*"
     },
@@ -169,7 +183,6 @@
         "identitystore:DescribeUser",
         "identitystore:GetGroupId",
         "identitystore:GetUserId",
-        "sso:UpdateInstance",
         "identitystore:ListGroupMemberships",
         "identitystore:UpdateIdentityStore",
         "identitystore:ListGroupMembershipsForMember",
@@ -210,7 +223,8 @@
         "organizations:ListRoots",
         "organizations:CreateBuilderIdOwnedAccount",
         "organizations:DescribeCreateAccountStatus",
-        "organizations:DescribeAccount"
+        "organizations:DescribeAccount",
+        "organizations:InviteAccountToOrganization"
       ],
       "Resource" : "*"
     },
@@ -281,7 +295,8 @@
         "sso:ListApplicationAssignments",
         "sso:CreateApplicationAssignment",
         "sso:DescribeApplication",
-        "sso:ListApplications"
+        "sso:ListApplications",
+        "sso:UpdateInstance"
       ],
       "Resource" : "*"
     },
@@ -312,7 +327,7 @@
       "Resource" : "*"
     },
     <span>{</span>
-      "Sid" : "TransitionProvisioningAccess",
+      "Sid" : "ActivateAdvancedProvisioningAccess",
       "Effect" : "Allow",
       "Action" : [
         "organizations:CreateBuilderIdOwnedAccount",
@@ -334,7 +349,7 @@
       }
     },
     <span>{</span>
-      "Sid" : "TransitionDelegatedAdminAccess",
+      "Sid" : "ActivateAdvancedDelegatedAdminAccess",
       "Effect" : "Allow",
       "Action" : [
         "organizations:RegisterDelegatedAdministrator",
@@ -349,7 +364,7 @@
       }
     },
     <span>{</span>
-      "Sid" : "TransitionManagedRoleAccess",
+      "Sid" : "ActivateAdvancedManagedRoleAccess",
       "Effect" : "Allow",
       "Action" : [
         "iam:GetRole",
@@ -363,7 +378,8 @@
       ],
       "Resource" : [
         "arn:aws:iam::*:role/managed/*",
-        "arn:aws:iam::*:role/ManagedAccountAdmin"
+        "arn:aws:iam::*:role/ManagedAccountAdmin",
+        "arn:aws:iam::*:role/AccountFullAccessRole"
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
@@ -372,10 +388,10 @@
       }
     },
     <span>{</span>
-      "Sid" : "TransitionMemberAccountAssume",
+      "Sid" : "ActivateAdvancedMemberAccountAssume",
       "Effect" : "Allow",
       "Action" : "sts:AssumeRole",
-      "Resource" : "arn:aws:iam::*:role/OrganizationAccountAccessRole",
+      "Resource" : "arn:aws:iam::*:role/managed/AWSManagedAdvancedFeaturesActivationRole",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:CalledViaLast" : "account.amazonaws.com"
@@ -383,7 +399,7 @@
       }
     },
     <span>{</span>
-      "Sid" : "TransitionBudgetsAccess",
+      "Sid" : "ActivateAdvancedBudgetsAccess",
       "Effect" : "Allow",
       "Action" : "budgets:ModifyBudget",
       "Resource" : "arn:aws:budgets::*:budget/sla-*",
@@ -394,7 +410,7 @@
       }
     },
     <span>{</span>
-      "Sid" : "TransitionSCPCleanupAccess",
+      "Sid" : "ActivateAdvancedSCPCleanupAccess",
       "Effect" : "Allow",
       "Action" : [
         "organizations:DeletePolicy",
