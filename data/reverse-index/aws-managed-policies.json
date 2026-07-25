@@ -13972,6 +13972,13 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
+    "aws:allow_action:artifact:PutComplianceInquiryFeedback": [
+      {
+        "display_name": "AWSArtifactComplianceInquiriesFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSArtifactComplianceInquiriesFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesFullAccess"
+      }
+    ],
     "aws:allow_action:artifact:TerminateAgreement": [
       {
         "display_name": "AWSArtifactAgreementsFullAccess",
@@ -80199,6 +80206,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceEditorsRole"
       }
     ],
+    "aws:allow_action:ec2:CreateOdbNetworkPeering": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
     "aws:allow_action:ec2:CreatePlacementGroup": [
       {
         "display_name": "AWSThinkboxAWSPortalAdminPolicy",
@@ -83808,6 +83822,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceEditorsRole"
       }
     ],
+    "aws:allow_action:ec2:DeleteOdbNetworkPeering": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
     "aws:allow_action:ec2:DeletePlacementGroup": [
       {
         "display_name": "AWSThinkboxAWSPortalAdminPolicy",
@@ -86334,6 +86355,11 @@
         "display_name": "AmazonManagedBlockchainConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonManagedBlockchainConsoleFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonManagedBlockchainConsoleFullAccess"
+      },
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
       },
       {
         "display_name": "AmazonRDSFullAccess",
@@ -99002,6 +99028,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonManagedBlockchainConsoleFullAccess"
       },
       {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      },
+      {
         "display_name": "AmazonRDSFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonRDSFullAccess"
@@ -102758,6 +102789,13 @@
         "display_name": "ROSANodePoolManagementPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSANodePoolManagementPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/ROSANodePoolManagementPolicy"
+      }
+    ],
+    "aws:allow_action:ec2:ModifyOdbNetworkPeering": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
       }
     ],
     "aws:allow_action:ec2:ModifySecurityGroupRules": [
@@ -144967,6 +145005,11 @@
         "display_name": "AmazonMonitronFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonMonitronFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonMonitronFullAccess"
+      },
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
       },
       {
         "display_name": "AmazonOpenSearchIngestionFullAccess",
@@ -198575,6 +198618,146 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
       }
     ],
+    "aws:allow_action:odb:CreateAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateAutonomousDatabaseBackup": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateAutonomousDatabaseWallet": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateCloudAutonomousVmCluster": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateCloudExadataInfrastructure": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateCloudVmCluster": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateDbNode": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateOdbNetwork": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateOdbPeeringConnection": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:CreateOutboundIntegration": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteAutonomousDatabaseBackup": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteCloudAutonomousVmCluster": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteCloudExadataInfrastructure": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteCloudVmCluster": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteDbNode": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteOdbNetwork": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteOdbPeeringConnection": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:DeleteResourcePolicy": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:FailoverAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
     "aws:allow_action:odb:Get*": [
       {
         "display_name": "WellArchitectedAgentResourceScanning",
@@ -198582,11 +198765,354 @@
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
       }
     ],
+    "aws:allow_action:odb:GetAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetAutonomousDatabaseBackup": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetAutonomousDatabaseWalletDetails": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetCloudAutonomousVmCluster": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetCloudExadataInfrastructure": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetCloudExadataInfrastructureUnallocatedResources": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetCloudVmCluster": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetDbNode": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetDbServer": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetOciOnboardingStatus": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetOdbNetwork": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetOdbPeeringConnection": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:GetResourcePolicy": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:InitializeService": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
     "aws:allow_action:odb:List*": [
       {
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
+      }
+    ],
+    "aws:allow_action:odb:ListAutonomousDatabaseBackups": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListAutonomousDatabaseCharacterSets": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListAutonomousDatabaseClones": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListAutonomousDatabasePeers": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListAutonomousDatabaseVersions": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListAutonomousDatabases": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListAutonomousVirtualMachines": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListCloudAutonomousVmClusters": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListCloudExadataInfrastructures": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListCloudVmClusters": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListDbNodes": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListDbServers": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListDbSystemShapes": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListGiVersions": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListOdbNetworks": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListOdbPeeringConnections": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListSystemVersions": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ListTagsForResource": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:PutResourcePolicy": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:RebootAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:RebootDbNode": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:RestoreAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:ShrinkAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:StartAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:StartDbNode": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:StopAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:StopDbNode": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:SwitchoverAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:TagResource": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:UntagResource": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:UpdateAutonomousDatabase": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:UpdateAutonomousDatabaseBackup": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:UpdateCloudExadataInfrastructure": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:UpdateOdbNetwork": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+      }
+    ],
+    "aws:allow_action:odb:UpdateOdbPeeringConnection": [
+      {
+        "display_name": "AmazonODBFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
       }
     ],
     "aws:allow_action:odb:getCloudAutonomousVmCluster": [
@@ -307284,7 +307810,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-07-24T06:05:29Z",
+  "generated_at_utc": "2026-07-25T05:57:43Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

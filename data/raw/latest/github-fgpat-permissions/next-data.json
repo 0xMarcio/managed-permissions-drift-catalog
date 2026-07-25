@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "j7LdCcI52sHO9LH0taZyu",
+  "buildId": "sbXUhJ_MVGI-vgt85DywL",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -3201,6 +3201,24 @@
               "verb": "post"
             },
             {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "activity",
+              "requestPath": "/repos/{owner}/{repo}/stargazers",
+              "slug": "list-stargazers",
+              "subcategory": "starring",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "activity",
+              "requestPath": "/repos/{owner}/{repo}/subscribers",
+              "slug": "list-watchers",
+              "subcategory": "watching",
+              "verb": "get"
+            },
+            {
               "access": "read",
               "additional-permissions": false,
               "category": "repos",
@@ -5171,15 +5189,6 @@
             {
               "access": "read",
               "additional-permissions": false,
-              "category": "activity",
-              "requestPath": "/repos/{owner}/{repo}/stargazers",
-              "slug": "list-stargazers",
-              "subcategory": "starring",
-              "verb": "get"
-            },
-            {
-              "access": "read",
-              "additional-permissions": false,
               "category": "metrics",
               "requestPath": "/repos/{owner}/{repo}/stats/code_frequency",
               "slug": "get-the-weekly-commit-activity",
@@ -5220,15 +5229,6 @@
               "requestPath": "/repos/{owner}/{repo}/stats/punch_card",
               "slug": "get-the-hourly-commit-count-for-each-day",
               "subcategory": "statistics",
-              "verb": "get"
-            },
-            {
-              "access": "read",
-              "additional-permissions": false,
-              "category": "activity",
-              "requestPath": "/repos/{owner}/{repo}/subscribers",
-              "slug": "list-watchers",
-              "subcategory": "watching",
               "verb": "get"
             },
             {

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: June 30, 2026, 19:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 30, 2026, 19:27 UTC</p>
+                <p><b>Edited time:</b>  July 23, 2026, 20:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSArtifactComplianceInquiriesFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSArtifactComplianceInquiriesFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -86,7 +86,8 @@
       "Action" : [
         "artifact:ListComplianceInquiryQueries",
         "artifact:GetComplianceInquiryMetadata",
-        "artifact:ExportComplianceInquiry"
+        "artifact:ExportComplianceInquiry",
+        "artifact:PutComplianceInquiryFeedback"
       ],
       "Resource" : "arn:aws:artifact:*:*:compliance-inquiry/*"
     }
