@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "sbXUhJ_MVGI-vgt85DywL",
+  "buildId": "tNcvoO-FClmycV8_Au0lw",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -4299,6 +4299,33 @@
               "access": "read",
               "additional-permissions": true,
               "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions",
+              "slug": "list-issue-suggestions",
+              "subcategory": "issues",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve",
+              "slug": "approve-an-issue-suggestion",
+              "subcategory": "issues",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss",
+              "slug": "dismiss-an-issue-suggestion",
+              "subcategory": "issues",
+              "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": true,
+              "category": "issues",
               "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/timeline",
               "slug": "list-timeline-events-for-an-issue",
               "subcategory": "timeline",
@@ -8530,6 +8557,33 @@
               "slug": "unlock-an-issue",
               "subcategory": "issues",
               "verb": "delete"
+            },
+            {
+              "access": "read",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions",
+              "slug": "list-issue-suggestions",
+              "subcategory": "issues",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve",
+              "slug": "approve-an-issue-suggestion",
+              "subcategory": "issues",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss",
+              "slug": "dismiss-an-issue-suggestion",
+              "subcategory": "issues",
+              "verb": "post"
             },
             {
               "access": "read",

@@ -1,0 +1,75 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions -> read + additional permissions",
+          "GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions -> read + additional permissions",
+          "POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve -> write + additional permissions",
+          "POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve -> write + additional permissions",
+          "POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss -> write + additional permissions",
+          "POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss -> write + additional permissions"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Issues",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions -> read + additional permissions",
+              "POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve -> write + additional permissions",
+              "POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss -> write + additional permissions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-issues",
+      "stable_id": "github-fgpat:repository:issues"
+    },
+    {
+      "display_name": "Pull requests",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions -> read + additional permissions",
+              "POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve -> write + additional permissions",
+              "POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss -> write + additional permissions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-pull-requests",
+      "stable_id": "github-fgpat:repository:pull-requests"
+    }
+  ],
+  "compared_at_utc": "2026-07-28T06:04:49Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 73,
+    "previous_objects": 73,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-28",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-07-25",
+  "removed_objects": []
+}
