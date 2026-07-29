@@ -397,7 +397,7 @@
     },
     {
       "title": "Cloud Deployment Manager",
-      "name": "clouddeploymentmanager.googleapis.com, deploymentmanager.googleapis.com",
+      "name": "deploymentmanager.googleapis.com, clouddeploymentmanager.googleapis.com",
       "url": "/iam/docs/roles-permissions/deploymentmanager"
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "title": "Cloud IoT",
-      "name": "cloudiot.googleapis.com, cloudiottoken.googleapis.com",
+      "name": "cloudiottoken.googleapis.com, cloudiot.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudiot"
     },
     {
@@ -472,7 +472,7 @@
     },
     {
       "title": "Web Security Scanner",
-      "name": "websecurityscanner.googleapis.com, cloudsecurityscanner.googleapis.com",
+      "name": "cloudsecurityscanner.googleapis.com, websecurityscanner.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudsecurityscanner"
     },
     {
@@ -712,7 +712,7 @@
     },
     {
       "title": "Firestore",
-      "name": "firestore.googleapis.com, datastore.googleapis.com",
+      "name": "datastore.googleapis.com, firestore.googleapis.com",
       "url": "/iam/docs/roles-permissions/firestore"
     },
     {
@@ -722,12 +722,12 @@
     },
     {
       "title": "Data Studio",
-      "name": "datastudio.googleapis.com, lookerstudio.googleapis.com",
+      "name": "lookerstudio.googleapis.com, datastudio.googleapis.com",
       "url": "/iam/docs/roles-permissions/datastudio"
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
+      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -767,7 +767,7 @@
     },
     {
       "title": "Document AI",
-      "name": "documentaicore.googleapis.com, documentai.googleapis.com",
+      "name": "documentai.googleapis.com, documentaicore.googleapis.com",
       "url": "/iam/docs/roles-permissions/clouddocumentai"
     },
     {
@@ -887,7 +887,7 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "firebasecloudmessaging.googleapis.com, cloudmessaging.googleapis.com, firebasenotifications.googleapis.com",
+      "name": "firebasecloudmessaging.googleapis.com, firebasenotifications.googleapis.com, cloudmessaging.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
@@ -1017,7 +1017,7 @@
     },
     {
       "title": "Cloud Life Sciences",
-      "name": "lifesciences.googleapis.com, genomics.googleapis.com",
+      "name": "genomics.googleapis.com, lifesciences.googleapis.com",
       "url": "/iam/docs/roles-permissions/lifesciences"
     },
     {
@@ -1237,7 +1237,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "opsconfigmonitoring.googleapis.com, monitoring.googleapis.com, stackdriver.googleapis.com",
+      "name": "stackdriver.googleapis.com, opsconfigmonitoring.googleapis.com, monitoring.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1272,7 +1272,7 @@
     },
     {
       "title": "NetApp Cloud Volumes Service",
-      "name": "netappcloudvolumes.googleapis.com, cloudvolumesgcp.api.netapp.com",
+      "name": "cloudvolumesgcp.api.netapp.com, netappcloudvolumes.googleapis.com",
       "url": "/iam/docs/roles-permissions/netappcloudvolumes"
     },
     {
@@ -1407,7 +1407,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
+      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1432,7 +1432,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
+      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -5480,6 +5480,12 @@
       "title": "TPU Admin",
       "name": "roles/tpu.admin",
       "url": "/iam/docs/roles-permissions/tpu#tpu.admin",
+      "priority": 1
+    },
+    {
+      "title": "TPU Editor",
+      "name": "roles/tpu.editor",
+      "url": "/iam/docs/roles-permissions/tpu#tpu.editor",
       "priority": 1
     },
     {
@@ -11201,6 +11207,12 @@
       "priority": 1
     },
     {
+      "title": "AI Platform Editor",
+      "name": "roles/ml.editor",
+      "url": "/iam/docs/roles-permissions/ml#ml.editor",
+      "priority": 1
+    },
+    {
       "title": "AI Platform Viewer",
       "name": "roles/ml.viewer",
       "url": "/iam/docs/roles-permissions/ml#ml.viewer",
@@ -14429,7 +14441,7 @@
       "priority": 1
     },
     {
-      "title": "Securitycentermanagement Editor",
+      "title": "Security Center Management Editor",
       "name": "roles/securitycentermanagement.editor",
       "url": "/iam/docs/roles-permissions/securitycentermanagement#securitycentermanagement.editor",
       "priority": 1
@@ -24283,6 +24295,10 @@
       "url": "/iam/docs/roles-permissions/billing#billing.billingAccountSkus.list"
     },
     {
+      "title": "billing.budgets.configureSpendCap",
+      "url": "/iam/docs/roles-permissions/billing#billing.budgets.configureSpendCap"
+    },
+    {
       "title": "billing.budgets.create",
       "url": "/iam/docs/roles-permissions/billing#billing.budgets.create"
     },
@@ -24333,6 +24349,10 @@
     {
       "title": "billing.resourceCosts.get",
       "url": "/iam/docs/roles-permissions/billing#billing.resourceCosts.get"
+    },
+    {
+      "title": "billing.resourcebudgets.configureSpendCap",
+      "url": "/iam/docs/roles-permissions/billing#billing.resourcebudgets.configureSpendCap"
     },
     {
       "title": "billing.resourcebudgets.read",
@@ -27421,6 +27441,14 @@
     {
       "title": "chronicle.queries.suggestSql",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.queries.suggestSql"
+    },
+    {
+      "title": "chronicle.queryMetrics.get",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.queryMetrics.get"
+    },
+    {
+      "title": "chronicle.queryMetrics.list",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.queryMetrics.list"
     },
     {
       "title": "chronicle.referenceLists.create",
@@ -32499,6 +32527,10 @@
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.addServerCertificate"
     },
     {
+      "title": "cloudsql.instances.cancelAgentSession",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.cancelAgentSession"
+    },
+    {
       "title": "cloudsql.instances.clone",
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.clone"
     },
@@ -32517,6 +32549,10 @@
     {
       "title": "cloudsql.instances.createTagBinding",
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.createTagBinding"
+    },
+    {
+      "title": "cloudsql.instances.createTestingAgentSession",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.createTestingAgentSession"
     },
     {
       "title": "cloudsql.instances.delete",
@@ -32547,6 +32583,10 @@
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.get"
     },
     {
+      "title": "cloudsql.instances.getAgentSession",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.getAgentSession"
+    },
+    {
       "title": "cloudsql.instances.getDiskShrinkConfig",
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.getDiskShrinkConfig"
     },
@@ -32557,6 +32597,10 @@
     {
       "title": "cloudsql.instances.list",
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.list"
+    },
+    {
+      "title": "cloudsql.instances.listAgentSessions",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.listAgentSessions"
     },
     {
       "title": "cloudsql.instances.listEffectiveTags",
@@ -34521,6 +34565,14 @@
     {
       "title": "compute.globalForwardingRules.update",
       "url": "/iam/docs/roles-permissions/compute#compute.globalForwardingRules.update"
+    },
+    {
+      "title": "compute.globalFrontendSettings.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.globalFrontendSettings.get"
+    },
+    {
+      "title": "compute.globalFrontendSettings.update",
+      "url": "/iam/docs/roles-permissions/compute#compute.globalFrontendSettings.update"
     },
     {
       "title": "compute.globalNetworkEndpointGroups.attachNetworkEndpoints",

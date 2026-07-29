@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 16, 2025, 13:37 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 21, 2026, 17:42 UTC</p>
+                <p><b>Edited time:</b>  July 28, 2026, 16:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="BedrockAgentCoreFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v17 (default)</p>
+        <p><b>Policy version:</b> v18 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -471,6 +471,23 @@
         "lambda:GetFunction"
       ],
       "Resource" : "arn:aws:lambda:*:*:function:*"
+    },
+    <span>{</span>
+      "Sid" : "AgentCoreEvaluationBedrockMantleInference",
+      "Effect" : "Allow",
+      "Action" : "bedrock-mantle:CreateInference",
+      "Resource" : "arn:aws:bedrock-mantle:*:*:project/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AgentCoreEvaluationBedrockMantleCallWithBearerToken",
+      "Effect" : "Allow",
+      "Action" : "bedrock-mantle:CallWithBearerToken",
+      "Resource" : "*"
     }
   ]
 }</code></pre>

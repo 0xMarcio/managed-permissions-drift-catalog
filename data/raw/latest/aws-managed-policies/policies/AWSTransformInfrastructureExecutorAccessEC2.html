@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 20, 2026, 20:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 20, 2026, 20:12 UTC</p>
+                <p><b>Edited time:</b>  July 28, 2026, 15:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2</code></p>
             </li></ul></div>
      
         <h2 id="AWSTransformInfrastructureExecutorAccessEC2-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -80,7 +80,10 @@
         "cloudformation:DescribeStackResources",
         "cloudformation:DescribeStackDriftDetectionStatus"
       ],
-      "Resource" : "arn:aws:cloudformation:*:*:stack/atx-*/*"
+      "Resource" : [
+        "arn:aws:cloudformation:*:*:stack/atx-*/*",
+        "arn:aws:cloudformation:*:*:stack/AtxSecurityAgentStack-*/*"
+      ]
     },
     <span>{</span>
       "Sid" : "CFNValidateTemplate",
@@ -194,8 +197,11 @@
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         },
-        "ForAnyValue:StringEquals" : <span>{</span>
-          "kms:ResourceAliases" : "alias/atx-encryption-key"
+        "ForAnyValue:StringLike" : <span>{</span>
+          "kms:ResourceAliases" : [
+            "alias/atx-encryption-key",
+            "alias/atx-encryption-key-*"
+          ]
         }
       }
     },
@@ -233,7 +239,10 @@
         "scheduler:GetSchedule",
         "scheduler:UpdateSchedule"
       ],
-      "Resource" : "arn:aws:scheduler:*:*:schedule/atx-ct/*",
+      "Resource" : [
+        "arn:aws:scheduler:*:*:schedule/atx-ct/*",
+        "arn:aws:scheduler:*:*:schedule/atx-ct-*/*"
+      ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
@@ -244,7 +253,10 @@
       "Sid" : "SchedGroupRead",
       "Effect" : "Allow",
       "Action" : "scheduler:GetScheduleGroup",
-      "Resource" : "arn:aws:scheduler:*:*:schedule-group/atx-ct",
+      "Resource" : [
+        "arn:aws:scheduler:*:*:schedule-group/atx-ct",
+        "arn:aws:scheduler:*:*:schedule-group/atx-ct-*"
+      ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
@@ -269,7 +281,10 @@
       "Sid" : "IAMPassEC2InstanceRole",
       "Effect" : "Allow",
       "Action" : "iam:PassRole",
-      "Resource" : "arn:aws:iam::*:role/atx-transform-role*",
+      "Resource" : [
+        "arn:aws:iam::*:role/atx-transform-role",
+        "arn:aws:iam::*:role/atx-transform-role-*"
+      ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "iam:PassedToService" : "ec2.amazonaws.com",
@@ -281,7 +296,10 @@
       "Sid" : "IAMPassSchedulerRole",
       "Effect" : "Allow",
       "Action" : "iam:PassRole",
-      "Resource" : "arn:aws:iam::*:role/AtxSchedulerInvocationRole",
+      "Resource" : [
+        "arn:aws:iam::*:role/AtxSchedulerInvocationRole",
+        "arn:aws:iam::*:role/AtxSchedulerInvocationRole-*"
+      ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "iam:PassedToService" : "scheduler.amazonaws.com",
