@@ -1,0 +1,142 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ec2:DeleteTags",
+      "aws:allow_action:ec2:DescribeInstanceTypes",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:sqs:DeleteMessage",
+      "aws:allow_action:sqs:ReceiveMessage"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ec2:DeleteTags",
+          "ec2:DescribeInstanceTypes",
+          "ec2:DescribeSubnets",
+          "sqs:DeleteMessage",
+          "sqs:ReceiveMessage"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSWAFFullAccess",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v17 (default)",
+          "before": "v16 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 28, 2026, 21:42 UTC",
+          "before": "June 30, 2026, 22:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 28, 2026, 21:42 UTC",
+          "before": "June 30, 2026, 22:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
+    },
+    {
+      "display_name": "ROSAControlPlaneOperatorPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DeleteTags",
+              "ec2:DescribeSubnets"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 28, 2026, 23:12 UTC",
+          "before": "April 10, 2026, 16:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 28, 2026, 23:12 UTC",
+          "before": "April 10, 2026, 16:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSAControlPlaneOperatorPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/ROSAControlPlaneOperatorPolicy"
+    },
+    {
+      "display_name": "ROSANodePoolManagementPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeInstanceTypes",
+              "sqs:DeleteMessage",
+              "sqs:ReceiveMessage"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 29, 2026, 16:57 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 29, 2026, 16:57 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 17,
+          "before": 16,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSANodePoolManagementPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/ROSANodePoolManagementPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-07-30T06:00:18Z",
+  "counts": {
+    "added_atoms": 5,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1553,
+    "previous_objects": 1553,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-30",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-29",
+  "removed_objects": []
+}

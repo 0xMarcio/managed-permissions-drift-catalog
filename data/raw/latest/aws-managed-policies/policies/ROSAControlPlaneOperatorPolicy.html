@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: April 24, 2023, 23:02 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 10, 2026, 16:12 UTC</p>
+                <p><b>Edited time:</b>  July 28, 2026, 23:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/ROSAControlPlaneOperatorPolicy</code></p>
             </li></ul></div>
      
         <h2 id="ROSAControlPlaneOperatorPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v6 (default)</p>
+        <p><b>Policy version:</b> v7 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -78,6 +78,7 @@
         "ec2:DescribeVpcEndpoints",
         "ec2:DescribeVpcs",
         "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
         "route53:ListHostedZones"
       ],
       "Resource" : "*"
@@ -256,15 +257,26 @@
       }
     },
     <span>{</span>
-      "Sid" : "AddTagsToRedHatManagedSecurityGroups",
+      "Sid" : "AddDeleteTagsRedHatManagedSecurityGroups",
       "Effect" : "Allow",
       "Action" : [
-        "ec2:CreateTags"
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
       ],
-      "Resource" : "arn:aws:ec2:*:*:security-group/*",
+      "Resource" : [
+        "arn:aws:ec2:*:*:security-group/*"
+      ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/red-hat-managed" : "true"
+        },
+        "ForAllValues:StringNotEquals" : <span>{</span>
+          "aws:TagKeys" : [
+            "red-hat-managed"
+          ]
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
         }
       }
     }

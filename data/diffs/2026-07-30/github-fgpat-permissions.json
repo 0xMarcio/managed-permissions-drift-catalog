@@ -1,0 +1,51 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "GET /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs/{job_id} -> read",
+          "POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs -> write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Artifact metadata",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs/{job_id} -> read",
+              "POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-artifact-metadata",
+      "stable_id": "github-fgpat:repository:artifact-metadata"
+    }
+  ],
+  "compared_at_utc": "2026-07-30T06:00:18Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 73,
+    "previous_objects": 73,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-30",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-07-28",
+  "removed_objects": []
+}

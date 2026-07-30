@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "ZzGT-6s5kzhBhs2SMqY6w",
+  "buildId": "2Rf6bSGOXH1lSq7Qdl_NG",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -1948,6 +1948,24 @@
               "slug": "set-cluster-deployment-records",
               "subcategory": "artifact-metadata",
               "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "orgs",
+              "requestPath": "/orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs",
+              "slug": "create-a-cluster-deployment-records-job",
+              "subcategory": "artifact-metadata",
+              "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "orgs",
+              "requestPath": "/orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs/{job_id}",
+              "slug": "get-cluster-deployment-records-job-status",
+              "subcategory": "artifact-metadata",
+              "verb": "get"
             },
             {
               "access": "write",

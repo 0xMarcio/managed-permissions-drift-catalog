@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: October 06, 2015, 20:44 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 30, 2026, 22:42 UTC</p>
+                <p><b>Edited time:</b>  July 28, 2026, 21:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSWAFFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSWAFFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v16 (default)</p>
+        <p><b>Policy version:</b> v17 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -291,7 +291,7 @@
       "Action" : [
         "logs:PutResourcePolicy"
       ],
-      "Resource" : "*",
+      "Resource" : "arn:aws:logs:*:*:log-group:*",
       "Condition" : <span>{</span>
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
