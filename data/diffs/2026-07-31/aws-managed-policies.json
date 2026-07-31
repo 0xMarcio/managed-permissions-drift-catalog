@@ -1,0 +1,202 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:cloudwatch:GetMetricData",
+        "aws:allow_action:freetier:GetAccountPlanState",
+        "aws:allow_action:pricingplanmanager:ApprovePaidSubscription",
+        "aws:allow_action:pricingplanmanager:AssociateResourcesToSubscription",
+        "aws:allow_action:pricingplanmanager:CancelSubscription",
+        "aws:allow_action:pricingplanmanager:CancelSubscriptionChange",
+        "aws:allow_action:pricingplanmanager:CreateSubscription",
+        "aws:allow_action:pricingplanmanager:DisassociateResourcesFromSubscription",
+        "aws:allow_action:pricingplanmanager:GetSubscription",
+        "aws:allow_action:pricingplanmanager:ListSubscriptions",
+        "aws:allow_action:pricingplanmanager:UpdateSubscription",
+        "aws:allow_action:shield:ListProtections"
+      ],
+      "display_name": "PricingPlanManagerFullAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:pricingplanmanager:GetSubscription",
+        "aws:allow_action:pricingplanmanager:ListSubscriptions"
+      ],
+      "display_name": "PricingPlanManagerReadonlyAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerReadonlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerReadonlyAccess"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudwatch:GetMetricData",
+      "aws:allow_action:cloudwatch:GetMetricData",
+      "aws:allow_action:freetier:GetAccountPlanState",
+      "aws:allow_action:freetier:GetAccountPlanState",
+      "aws:allow_action:pricingplanmanager:ApprovePaidSubscription",
+      "aws:allow_action:pricingplanmanager:ApprovePaidSubscription",
+      "aws:allow_action:pricingplanmanager:AssociateResourcesToSubscription",
+      "aws:allow_action:pricingplanmanager:CancelSubscription",
+      "aws:allow_action:pricingplanmanager:CancelSubscriptionChange",
+      "aws:allow_action:pricingplanmanager:CreateSubscription",
+      "aws:allow_action:pricingplanmanager:DisassociateResourcesFromSubscription",
+      "aws:allow_action:pricingplanmanager:GetSubscription",
+      "aws:allow_action:pricingplanmanager:GetSubscription",
+      "aws:allow_action:pricingplanmanager:ListSubscriptions",
+      "aws:allow_action:pricingplanmanager:ListSubscriptions",
+      "aws:allow_action:pricingplanmanager:UpdateSubscription",
+      "aws:allow_action:shield:ListProtections",
+      "aws:allow_action:shield:ListProtections"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:TagResource",
+          "cloudformation:UntagResource",
+          "cloudwatch:GetMetricData",
+          "cloudwatch:GetMetricData",
+          "freetier:GetAccountPlanState",
+          "freetier:GetAccountPlanState",
+          "pricingplanmanager:ApprovePaidSubscription",
+          "pricingplanmanager:ApprovePaidSubscription",
+          "pricingplanmanager:AssociateResourcesToSubscription",
+          "pricingplanmanager:CancelSubscription",
+          "pricingplanmanager:CancelSubscriptionChange",
+          "pricingplanmanager:CreateSubscription",
+          "pricingplanmanager:DisassociateResourcesFromSubscription",
+          "pricingplanmanager:GetSubscription",
+          "pricingplanmanager:GetSubscription",
+          "pricingplanmanager:ListSubscriptions",
+          "pricingplanmanager:ListSubscriptions",
+          "pricingplanmanager:UpdateSubscription",
+          "shield:ListProtections",
+          "shield:ListProtections"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 30, 2026, 07:42 UTC",
+          "before": "June 29, 2026, 08:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 30, 2026, 07:42 UTC",
+          "before": "June 29, 2026, 08:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 49,
+          "before": 47,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+    },
+    {
+      "display_name": "CloudFrontFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:GetMetricData",
+              "freetier:GetAccountPlanState",
+              "pricingplanmanager:ApprovePaidSubscription",
+              "shield:ListProtections"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 30, 2026, 16:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 30, 2026, 16:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+    },
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v73 (default)",
+          "before": "v72 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 29, 2026, 21:12 UTC",
+          "before": "July 14, 2026, 19:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 29, 2026, 21:12 UTC",
+          "before": "July 14, 2026, 19:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-07-31T06:25:17Z",
+  "counts": {
+    "added_atoms": 20,
+    "added_objects": 2,
+    "changed_objects": 3,
+    "current_objects": 1555,
+    "previous_objects": 1553,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-31",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-30",
+  "removed_objects": []
+}

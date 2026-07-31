@@ -1,0 +1,95 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "GET /repos/{owner}/{repo}/pulls/{pull_number}/merge-async/{uuid} -> write",
+          "GET /repos/{owner}/{repo}/stacks -> read",
+          "GET /repos/{owner}/{repo}/stacks/{stack_number} -> read",
+          "PATCH /orgs/{org}/interaction-limits/pulls/creation-cap -> write",
+          "POST /repos/{owner}/{repo}/stacks -> write",
+          "POST /repos/{owner}/{repo}/stacks/{stack_number}/add -> write",
+          "POST /repos/{owner}/{repo}/stacks/{stack_number}/unstack -> write",
+          "PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge-async -> write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Administration",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "PATCH /orgs/{org}/interaction-limits/pulls/creation-cap -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-administration",
+      "stable_id": "github-fgpat:organization:administration"
+    },
+    {
+      "display_name": "Contents",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /repos/{owner}/{repo}/pulls/{pull_number}/merge-async/{uuid} -> write",
+              "PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge-async -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-contents",
+      "stable_id": "github-fgpat:repository:contents"
+    },
+    {
+      "display_name": "Pull requests",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /repos/{owner}/{repo}/stacks -> read",
+              "GET /repos/{owner}/{repo}/stacks/{stack_number} -> read",
+              "POST /repos/{owner}/{repo}/stacks -> write",
+              "POST /repos/{owner}/{repo}/stacks/{stack_number}/add -> write",
+              "POST /repos/{owner}/{repo}/stacks/{stack_number}/unstack -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-pull-requests",
+      "stable_id": "github-fgpat:repository:pull-requests"
+    }
+  ],
+  "compared_at_utc": "2026-07-31T06:25:17Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 73,
+    "previous_objects": 73,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-07-31",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-07-30",
+  "removed_objects": []
+}

@@ -37939,6 +37939,11 @@
     ],
     "aws:allow_action:cloudformation:TagResource": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess"
@@ -38050,6 +38055,11 @@
       }
     ],
     "aws:allow_action:cloudformation:UntagResource": [
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
       {
         "display_name": "AWSRefactoringToolkitFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRefactoringToolkitFullAccess.html",
@@ -43826,6 +43836,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonWorkMailReadOnlyAccess"
       },
       {
+        "display_name": "CloudFrontFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
         "display_name": "CloudWatchApplicationSignalsFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchApplicationSignalsFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchApplicationSignalsFullAccess"
@@ -43874,6 +43889,11 @@
         "display_name": "NeptuneGraphReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NeptuneGraphReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/NeptuneGraphReadOnlyAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
       },
       {
         "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
@@ -129629,6 +129649,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AccountManagementFromVercel"
       },
       {
+        "display_name": "CloudFrontFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
         "display_name": "ConsoleFullAccessFromVercel",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ConsoleFullAccessFromVercel.html",
         "stable_id": "arn:aws:iam::aws:policy/ConsoleFullAccessFromVercel"
@@ -129637,6 +129662,11 @@
         "display_name": "ConsoleViewOnlyAccessFromVercel",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ConsoleViewOnlyAccessFromVercel.html",
         "stable_id": "arn:aws:iam::aws:policy/ConsoleViewOnlyAccessFromVercel"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -209344,11 +209374,28 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
       }
     ],
+    "aws:allow_action:pricingplanmanager:ApprovePaidSubscription": [
+      {
+        "display_name": "CloudFrontFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
+      }
+    ],
     "aws:allow_action:pricingplanmanager:AssociateResourcesToSubscription": [
       {
         "display_name": "CloudFrontFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
       }
     ],
     "aws:allow_action:pricingplanmanager:CancelSubscription": [
@@ -209361,6 +209408,11 @@
         "display_name": "CloudFrontFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
       }
     ],
     "aws:allow_action:pricingplanmanager:CancelSubscriptionChange": [
@@ -209373,6 +209425,11 @@
         "display_name": "CloudFrontFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
       }
     ],
     "aws:allow_action:pricingplanmanager:CreateSubscription": [
@@ -209380,6 +209437,11 @@
         "display_name": "CloudFrontFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
       }
     ],
     "aws:allow_action:pricingplanmanager:DisassociateResourcesFromSubscription": [
@@ -209387,6 +209449,11 @@
         "display_name": "CloudFrontFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
       }
     ],
     "aws:allow_action:pricingplanmanager:GetSubscription": [
@@ -209409,6 +209476,16 @@
         "display_name": "CloudFrontReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudFrontReadOnlyAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerReadonlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerReadonlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerReadonlyAccess"
       }
     ],
     "aws:allow_action:pricingplanmanager:ListSubscriptions": [
@@ -209431,6 +209508,16 @@
         "display_name": "CloudFrontReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudFrontReadOnlyAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerReadonlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerReadonlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerReadonlyAccess"
       }
     ],
     "aws:allow_action:pricingplanmanager:UpdateSubscription": [
@@ -209443,6 +209530,11 @@
         "display_name": "CloudFrontFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
       }
     ],
     "aws:allow_action:private-networks:ListNetworks": [
@@ -268241,6 +268333,16 @@
     ],
     "aws:allow_action:shield:ListProtections": [
       {
+        "display_name": "CloudFrontFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudFrontFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudFrontFullAccess"
+      },
+      {
+        "display_name": "PricingPlanManagerFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PricingPlanManagerFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/PricingPlanManagerFullAccess"
+      },
+      {
         "display_name": "AWSResourceExplorerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
@@ -308197,7 +308299,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-07-30T06:00:18Z",
+  "generated_at_utc": "2026-07-31T06:25:17Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
