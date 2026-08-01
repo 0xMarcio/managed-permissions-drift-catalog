@@ -1,0 +1,480 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ebs:GetSnapshotBlock",
+        "aws:allow_action:ebs:ListSnapshotBlocks",
+        "aws:allow_action:ec2:DescribeImages",
+        "aws:allow_action:ec2:DescribeSnapshots",
+        "aws:allow_action:ec2:DescribeVolumes",
+        "aws:allow_action:events:DeleteRule",
+        "aws:allow_action:events:DescribeRule",
+        "aws:allow_action:events:ListTargetsByRule",
+        "aws:allow_action:events:PutRule",
+        "aws:allow_action:events:PutTargets",
+        "aws:allow_action:events:RemoveTargets",
+        "aws:allow_action:inspector2:AssociateMember",
+        "aws:allow_action:inspector2:Disable",
+        "aws:allow_action:inspector2:Enable",
+        "aws:allow_action:inspector2:EnableDelegatedAdminAccount",
+        "aws:allow_action:kms:Decrypt",
+        "aws:allow_action:kms:DescribeKey",
+        "aws:allow_action:kms:ListResourceTags",
+        "aws:allow_action:organizations:DescribeAccount",
+        "aws:allow_action:organizations:DescribeOrganization",
+        "aws:allow_action:organizations:ListAccounts",
+        "aws:allow_action:organizations:ListDelegatedAdministrators",
+        "aws:deny_action:ebs:GetSnapshotBlock",
+        "aws:deny_action:ebs:ListSnapshotBlocks",
+        "aws:deny_action:kms:Decrypt"
+      ],
+      "display_name": "AmazonInspector2AmiScanServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2AmiScanServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2AmiScanServiceRolePolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteNetworkInterface",
+        "aws:allow_action:ec2:DeleteNetworkInterfacePermission",
+        "aws:allow_action:ec2:DescribeDhcpOptions",
+        "aws:allow_action:ec2:DescribeNetworkInterfaces",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcs"
+      ],
+      "display_name": "AmazonSageMakerInferenceServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerInferenceServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonSageMakerInferenceServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:access-analyzer:CheckNoPublicAccess",
+      "aws:allow_action:access-analyzer:CheckNoPublicAccess",
+      "aws:allow_action:access-analyzer:ValidatePolicy",
+      "aws:allow_action:access-analyzer:ValidatePolicy",
+      "aws:allow_action:bedrock-agentcore:GetPaymentManager",
+      "aws:allow_action:bedrock-agentcore:GetPaymentManager",
+      "aws:allow_action:bedrock-agentcore:GetPolicyEngineSummary",
+      "aws:allow_action:bedrock-agentcore:GetPolicyEngineSummary",
+      "aws:allow_action:bedrock-agentcore:GetPolicySummary",
+      "aws:allow_action:bedrock-agentcore:GetPolicySummary",
+      "aws:allow_action:bedrock-agentcore:ListPaymentManagers",
+      "aws:allow_action:bedrock-agentcore:ListPaymentManagers",
+      "aws:allow_action:bedrock-agentcore:ListPolicyEngineSummaries",
+      "aws:allow_action:bedrock-agentcore:ListPolicyEngineSummaries",
+      "aws:allow_action:bedrock-agentcore:ListPolicySummaries",
+      "aws:allow_action:bedrock-agentcore:ListPolicySummaries",
+      "aws:allow_action:bedrock:ListEnforcedGuardrailsConfiguration",
+      "aws:allow_action:bedrock:ListEnforcedGuardrailsConfiguration",
+      "aws:allow_action:ebs:GetSnapshotBlock",
+      "aws:allow_action:ebs:ListSnapshotBlocks",
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteNetworkInterface",
+      "aws:allow_action:ec2:DeleteNetworkInterfacePermission",
+      "aws:allow_action:ec2:DescribeDhcpOptions",
+      "aws:allow_action:ec2:DescribeImages",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSnapshots",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVolumes",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:events:DeleteRule",
+      "aws:allow_action:events:DescribeRule",
+      "aws:allow_action:events:ListTargetsByRule",
+      "aws:allow_action:events:PutRule",
+      "aws:allow_action:events:PutTargets",
+      "aws:allow_action:events:RemoveTargets",
+      "aws:allow_action:inspector2:AssociateMember",
+      "aws:allow_action:inspector2:Disable",
+      "aws:allow_action:inspector2:Enable",
+      "aws:allow_action:inspector2:EnableDelegatedAdminAccount",
+      "aws:allow_action:invoicing:ListProcurementPortalSuppliers",
+      "aws:allow_action:invoicing:ListProcurementPortalSuppliers",
+      "aws:allow_action:invoicing:ListProcurementPortals",
+      "aws:allow_action:invoicing:ListProcurementPortals",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:ListResourceTags",
+      "aws:allow_action:notifications:ListNotificationConfigurations",
+      "aws:allow_action:notifications:ListNotificationConfigurations",
+      "aws:allow_action:notifications:ListTagsForResource",
+      "aws:allow_action:notifications:ListTagsForResource",
+      "aws:allow_action:nova-act:GetWorkflowDefinition",
+      "aws:allow_action:nova-act:GetWorkflowDefinition",
+      "aws:allow_action:nova-act:ListWorkflowDefinitions",
+      "aws:allow_action:nova-act:ListWorkflowDefinitions",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:organizations:ListDelegatedAdministrators",
+      "aws:allow_action:s3vectors:GetIndex",
+      "aws:allow_action:s3vectors:GetIndex",
+      "aws:allow_action:s3vectors:ListIndexes",
+      "aws:allow_action:s3vectors:ListIndexes",
+      "aws:allow_action:sagemaker:DescribeAlgorithm",
+      "aws:allow_action:sagemaker:DescribeAlgorithm",
+      "aws:allow_action:sagemaker:DescribeClusterSchedulerConfig",
+      "aws:allow_action:sagemaker:DescribeClusterSchedulerConfig",
+      "aws:allow_action:sagemaker:DescribeFlowDefinition",
+      "aws:allow_action:sagemaker:DescribeFlowDefinition",
+      "aws:allow_action:sagemaker:DescribeHumanTaskUi",
+      "aws:allow_action:sagemaker:DescribeHumanTaskUi",
+      "aws:allow_action:sagemaker:DescribeLabelingJob",
+      "aws:allow_action:sagemaker:DescribeLabelingJob",
+      "aws:allow_action:sagemaker:DescribeMlflowApp",
+      "aws:allow_action:sagemaker:DescribeMlflowApp",
+      "aws:allow_action:sagemaker:DescribeOptimizationJob",
+      "aws:allow_action:sagemaker:DescribeOptimizationJob",
+      "aws:allow_action:sagemaker:DescribeTrainingJob",
+      "aws:allow_action:sagemaker:DescribeTrainingJob",
+      "aws:allow_action:sagemaker:ListAlgorithms",
+      "aws:allow_action:sagemaker:ListAlgorithms",
+      "aws:allow_action:sagemaker:ListClusterSchedulerConfigs",
+      "aws:allow_action:sagemaker:ListClusterSchedulerConfigs",
+      "aws:allow_action:sagemaker:ListFlowDefinitions",
+      "aws:allow_action:sagemaker:ListFlowDefinitions",
+      "aws:allow_action:sagemaker:ListHumanTaskUis",
+      "aws:allow_action:sagemaker:ListHumanTaskUis",
+      "aws:allow_action:sagemaker:ListLabelingJobs",
+      "aws:allow_action:sagemaker:ListLabelingJobs",
+      "aws:allow_action:sagemaker:ListMlflowApps",
+      "aws:allow_action:sagemaker:ListMlflowApps",
+      "aws:allow_action:sagemaker:ListOptimizationJobs",
+      "aws:allow_action:sagemaker:ListOptimizationJobs",
+      "aws:allow_action:sagemaker:ListTrainingJobs",
+      "aws:allow_action:sagemaker:ListTrainingJobs",
+      "aws:deny_action:ebs:GetSnapshotBlock",
+      "aws:deny_action:ebs:ListSnapshotBlocks",
+      "aws:deny_action:kms:Decrypt"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "access-analyzer:CheckNoPublicAccess",
+          "access-analyzer:CheckNoPublicAccess",
+          "access-analyzer:ValidatePolicy",
+          "access-analyzer:ValidatePolicy",
+          "bedrock-agentcore:GetPaymentManager",
+          "bedrock-agentcore:GetPaymentManager",
+          "bedrock-agentcore:GetPolicyEngineSummary",
+          "bedrock-agentcore:GetPolicyEngineSummary",
+          "bedrock-agentcore:GetPolicySummary",
+          "bedrock-agentcore:GetPolicySummary",
+          "bedrock-agentcore:ListPaymentManagers",
+          "bedrock-agentcore:ListPaymentManagers",
+          "bedrock-agentcore:ListPolicyEngineSummaries",
+          "bedrock-agentcore:ListPolicyEngineSummaries",
+          "bedrock-agentcore:ListPolicySummaries",
+          "bedrock-agentcore:ListPolicySummaries",
+          "bedrock:ListEnforcedGuardrailsConfiguration",
+          "bedrock:ListEnforcedGuardrailsConfiguration",
+          "ebs:GetSnapshotBlock",
+          "ebs:ListSnapshotBlocks",
+          "ec2:CreateNetworkInterface",
+          "ec2:CreateNetworkInterfacePermission",
+          "ec2:CreateTags",
+          "ec2:DeleteNetworkInterface",
+          "ec2:DeleteNetworkInterfacePermission",
+          "ec2:DescribeDhcpOptions",
+          "ec2:DescribeImages",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSnapshots",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVolumes",
+          "ec2:DescribeVpcs",
+          "events:DeleteRule",
+          "events:DescribeRule",
+          "events:ListTargetsByRule",
+          "events:PutRule",
+          "events:PutTargets",
+          "events:RemoveTargets",
+          "inspector2:AssociateMember",
+          "inspector2:Disable",
+          "inspector2:Enable",
+          "inspector2:EnableDelegatedAdminAccount",
+          "invoicing:ListProcurementPortalSuppliers",
+          "invoicing:ListProcurementPortalSuppliers",
+          "invoicing:ListProcurementPortals",
+          "invoicing:ListProcurementPortals",
+          "kms:Decrypt",
+          "kms:DescribeKey",
+          "kms:ListResourceTags",
+          "notifications:ListNotificationConfigurations",
+          "notifications:ListNotificationConfigurations",
+          "notifications:ListTagsForResource",
+          "notifications:ListTagsForResource",
+          "nova-act:GetWorkflowDefinition",
+          "nova-act:GetWorkflowDefinition",
+          "nova-act:ListWorkflowDefinitions",
+          "nova-act:ListWorkflowDefinitions",
+          "organizations:DescribeAccount",
+          "organizations:DescribeOrganization",
+          "organizations:ListAccounts",
+          "organizations:ListDelegatedAdministrators",
+          "s3vectors:GetIndex",
+          "s3vectors:GetIndex",
+          "s3vectors:ListIndexes",
+          "s3vectors:ListIndexes",
+          "sagemaker:DescribeAlgorithm",
+          "sagemaker:DescribeAlgorithm",
+          "sagemaker:DescribeClusterSchedulerConfig",
+          "sagemaker:DescribeClusterSchedulerConfig",
+          "sagemaker:DescribeFlowDefinition",
+          "sagemaker:DescribeFlowDefinition",
+          "sagemaker:DescribeHumanTaskUi",
+          "sagemaker:DescribeHumanTaskUi",
+          "sagemaker:DescribeLabelingJob",
+          "sagemaker:DescribeLabelingJob",
+          "sagemaker:DescribeMlflowApp",
+          "sagemaker:DescribeMlflowApp",
+          "sagemaker:DescribeOptimizationJob",
+          "sagemaker:DescribeOptimizationJob",
+          "sagemaker:DescribeTrainingJob",
+          "sagemaker:DescribeTrainingJob",
+          "sagemaker:ListAlgorithms",
+          "sagemaker:ListAlgorithms",
+          "sagemaker:ListClusterSchedulerConfigs",
+          "sagemaker:ListClusterSchedulerConfigs",
+          "sagemaker:ListFlowDefinitions",
+          "sagemaker:ListFlowDefinitions",
+          "sagemaker:ListHumanTaskUis",
+          "sagemaker:ListHumanTaskUis",
+          "sagemaker:ListLabelingJobs",
+          "sagemaker:ListLabelingJobs",
+          "sagemaker:ListMlflowApps",
+          "sagemaker:ListMlflowApps",
+          "sagemaker:ListOptimizationJobs",
+          "sagemaker:ListOptimizationJobs",
+          "sagemaker:ListTrainingJobs",
+          "sagemaker:ListTrainingJobs"
+        ],
+        "restriction:deny_actions": [
+          "ebs:GetSnapshotBlock",
+          "ebs:ListSnapshotBlocks",
+          "kms:Decrypt"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSBillingReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "invoicing:ListProcurementPortalSuppliers",
+              "invoicing:ListProcurementPortals"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v28 (default)",
+          "before": "v27 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 30, 2026, 22:12 UTC",
+          "before": "April 08, 2026, 17:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 30, 2026, 22:12 UTC",
+          "before": "April 08, 2026, 17:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSBillingReadOnlyAccess"
+    },
+    {
+      "display_name": "AWSConfigServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "access-analyzer:CheckNoPublicAccess",
+              "access-analyzer:ValidatePolicy",
+              "bedrock-agentcore:GetPaymentManager",
+              "bedrock-agentcore:GetPolicyEngineSummary",
+              "bedrock-agentcore:GetPolicySummary",
+              "bedrock-agentcore:ListPaymentManagers",
+              "bedrock-agentcore:ListPolicyEngineSummaries",
+              "bedrock-agentcore:ListPolicySummaries",
+              "bedrock:ListEnforcedGuardrailsConfiguration",
+              "notifications:ListNotificationConfigurations",
+              "notifications:ListTagsForResource",
+              "nova-act:GetWorkflowDefinition",
+              "nova-act:ListWorkflowDefinitions",
+              "s3vectors:GetIndex",
+              "s3vectors:ListIndexes",
+              "sagemaker:DescribeAlgorithm",
+              "sagemaker:DescribeClusterSchedulerConfig",
+              "sagemaker:DescribeFlowDefinition",
+              "sagemaker:DescribeHumanTaskUi",
+              "sagemaker:DescribeLabelingJob",
+              "sagemaker:DescribeMlflowApp",
+              "sagemaker:DescribeOptimizationJob",
+              "sagemaker:DescribeTrainingJob",
+              "sagemaker:ListAlgorithms",
+              "sagemaker:ListClusterSchedulerConfigs",
+              "sagemaker:ListFlowDefinitions",
+              "sagemaker:ListHumanTaskUis",
+              "sagemaker:ListLabelingJobs",
+              "sagemaker:ListMlflowApps",
+              "sagemaker:ListOptimizationJobs",
+              "sagemaker:ListTrainingJobs"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v94 (default)",
+          "before": "v93 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 30, 2026, 23:27 UTC",
+          "before": "May 05, 2026, 22:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 30, 2026, 23:27 UTC",
+          "before": "May 05, 2026, 22:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+    },
+    {
+      "display_name": "Billing",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "invoicing:ListProcurementPortalSuppliers",
+              "invoicing:ListProcurementPortals"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v30 (default)",
+          "before": "v29 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 30, 2026, 22:12 UTC",
+          "before": "July 21, 2026, 19:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 30, 2026, 22:12 UTC",
+          "before": "July 21, 2026, 19:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/Billing"
+    },
+    {
+      "display_name": "AWS_ConfigRole",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "access-analyzer:CheckNoPublicAccess",
+              "access-analyzer:ValidatePolicy",
+              "bedrock-agentcore:GetPaymentManager",
+              "bedrock-agentcore:GetPolicyEngineSummary",
+              "bedrock-agentcore:GetPolicySummary",
+              "bedrock-agentcore:ListPaymentManagers",
+              "bedrock-agentcore:ListPolicyEngineSummaries",
+              "bedrock-agentcore:ListPolicySummaries",
+              "bedrock:ListEnforcedGuardrailsConfiguration",
+              "notifications:ListNotificationConfigurations",
+              "notifications:ListTagsForResource",
+              "nova-act:GetWorkflowDefinition",
+              "nova-act:ListWorkflowDefinitions",
+              "s3vectors:GetIndex",
+              "s3vectors:ListIndexes",
+              "sagemaker:DescribeAlgorithm",
+              "sagemaker:DescribeClusterSchedulerConfig",
+              "sagemaker:DescribeFlowDefinition",
+              "sagemaker:DescribeHumanTaskUi",
+              "sagemaker:DescribeLabelingJob",
+              "sagemaker:DescribeMlflowApp",
+              "sagemaker:DescribeOptimizationJob",
+              "sagemaker:DescribeTrainingJob",
+              "sagemaker:ListAlgorithms",
+              "sagemaker:ListClusterSchedulerConfigs",
+              "sagemaker:ListFlowDefinitions",
+              "sagemaker:ListHumanTaskUis",
+              "sagemaker:ListLabelingJobs",
+              "sagemaker:ListMlflowApps",
+              "sagemaker:ListOptimizationJobs",
+              "sagemaker:ListTrainingJobs"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v71 (default)",
+          "before": "v70 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "July 30, 2026, 23:27 UTC",
+          "before": "May 05, 2026, 22:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "July 30, 2026, 23:27 UTC",
+          "before": "May 05, 2026, 22:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
+    }
+  ],
+  "compared_at_utc": "2026-08-01T06:10:16Z",
+  "counts": {
+    "added_atoms": 101,
+    "added_objects": 2,
+    "changed_objects": 4,
+    "current_objects": 1557,
+    "previous_objects": 1555,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-01",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-07-31",
+  "removed_objects": []
+}
