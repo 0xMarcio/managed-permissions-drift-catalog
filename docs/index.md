@@ -1,14 +1,14 @@
 # Managed Permissions Drift Catalog
 
-- Refreshed: August 1, 2026 · [daily report](daily/2026-08-01.md)
-- Leading platform: `AWS` (`+95` net score)
-- Driver: `AWS managed policies` (+2 objects, ~4 changed, +101 atoms)
+- Refreshed: August 2, 2026 · [daily report](daily/2026-08-02.md)
+- Leading platform: `AWS` (`+113` net score)
+- Driver: `AWS managed policies` (+2 objects, ~1 changed, +113 atoms)
 
 ## Platform overview
 
 | Platform | Net score | Objects (+/~/-) | Atoms (+/-) | Main driver |
 | --- | ---: | ---: | ---: | --- |
-| AWS | `+95` | `+2 / ~4 / -0` | `+101 / -0` | AWS managed policies (+2 objects, ~4 changed, +101 atoms) |
+| AWS | `+113` | `+2 / ~1 / -0` | `+113 / -0` | AWS managed policies (+2 objects, ~1 changed, +113 atoms) |
 | Azure | `0` | `+0 / ~0 / -0` | `+0 / -0` | Azure built-in roles (no drift) |
 | GCP | `0` | `+0 / ~0 / -0` | `+0 / -0` | GCP predefined roles (no drift) |
 | GitHub | `0` | `+0 / ~0 / -0` | `+0 / -0` | GitHub Actions default workflow settings (no drift) |
@@ -17,12 +17,12 @@
 
 | Dataset | Platform | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | AWS | `1,557` | `+2 / ~4 / -0` | `+101 / -0` | [snapshot](../data/latest/aws-managed-policies.json) · [diff](../data/diffs/2026-08-01/aws-managed-policies.json) · [reverse index](../data/reverse-index/aws-managed-policies.json) |
-| Azure built-in roles | Azure | `504` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/azure-built-in-roles.json) · [diff](../data/diffs/2026-08-01/azure-built-in-roles.json) · [reverse index](../data/reverse-index/azure-built-in-roles.json) |
-| GCP predefined roles | GCP | `2,366` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/gcp-predefined-roles.json) · [diff](../data/diffs/2026-08-01/gcp-predefined-roles.json) · [reverse index](../data/reverse-index/gcp-predefined-roles.json) |
-| GitHub Actions default workflow settings | GitHub | `6` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/github-actions-default-workflow-settings.json) · [diff](../data/diffs/2026-08-01/github-actions-default-workflow-settings.json) · [reverse index](../data/reverse-index/github-actions-default-workflow-settings.json) |
-| GitHub fine-grained PAT permissions | GitHub | `73` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/github-fgpat-permissions.json) · [diff](../data/diffs/2026-08-01/github-fgpat-permissions.json) · [reverse index](../data/reverse-index/github-fgpat-permissions.json) |
-| GitHub GITHUB_TOKEN permissions | GitHub | `16` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/github-token-permissions.json) · [diff](../data/diffs/2026-08-01/github-token-permissions.json) · [reverse index](../data/reverse-index/github-token-permissions.json) |
+| AWS managed policies | AWS | `1,559` | `+2 / ~1 / -0` | `+113 / -0` | [snapshot](../data/latest/aws-managed-policies.json) · [diff](../data/diffs/2026-08-02/aws-managed-policies.json) · [reverse index](../data/reverse-index/aws-managed-policies.json) |
+| Azure built-in roles | Azure | `504` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/azure-built-in-roles.json) · [diff](../data/diffs/2026-08-02/azure-built-in-roles.json) · [reverse index](../data/reverse-index/azure-built-in-roles.json) |
+| GCP predefined roles | GCP | `2,366` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/gcp-predefined-roles.json) · [diff](../data/diffs/2026-08-02/gcp-predefined-roles.json) · [reverse index](../data/reverse-index/gcp-predefined-roles.json) |
+| GitHub Actions default workflow settings | GitHub | `6` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/github-actions-default-workflow-settings.json) · [diff](../data/diffs/2026-08-02/github-actions-default-workflow-settings.json) · [reverse index](../data/reverse-index/github-actions-default-workflow-settings.json) |
+| GitHub fine-grained PAT permissions | GitHub | `73` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/github-fgpat-permissions.json) · [diff](../data/diffs/2026-08-02/github-fgpat-permissions.json) · [reverse index](../data/reverse-index/github-fgpat-permissions.json) |
+| GitHub GITHUB_TOKEN permissions | GitHub | `16` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../data/latest/github-token-permissions.json) · [diff](../data/diffs/2026-08-02/github-token-permissions.json) · [reverse index](../data/reverse-index/github-token-permissions.json) |
 
 ## Platform pages
 
