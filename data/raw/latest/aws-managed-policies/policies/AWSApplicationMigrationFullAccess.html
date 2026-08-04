@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: April 07, 2021, 06:56 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 23, 2026, 07:27 UTC</p>
+                <p><b>Edited time:</b>  August 03, 2026, 10:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSApplicationMigrationFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v13 (default)</p>
+        <p><b>Policy version:</b> v14 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -345,6 +345,79 @@
           "aws:TagKeys" : [
             "map-migrated",
             "aws-apn-id"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "FSxDescribeOperations",
+      "Effect" : "Allow",
+      "Action" : [
+        "fsx:DescribeVolumes",
+        "fsx:DescribeSnapshots"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "mgn.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "FSxCreateVolume",
+      "Effect" : "Allow",
+      "Action" : "fsx:CreateVolume",
+      "Resource" : [
+        "arn:aws:fsx:*:*:volume/*/*",
+        "arn:aws:fsx:*:*:storage-virtual-machine/*/*"
+      ],
+      "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "aws:RequestTag/AWSApplicationMigrationServiceManaged" : "false"
+        },
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "mgn.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "FSxDeleteVolumeAndTag",
+      "Effect" : "Allow",
+      "Action" : [
+        "fsx:DeleteVolume",
+        "fsx:TagResource"
+      ],
+      "Resource" : "arn:aws:fsx:*:*:volume/*/*",
+      "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AWSApplicationMigrationServiceManaged" : "false"
+        },
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "mgn.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "FSxCreateSnapshot",
+      "Effect" : "Allow",
+      "Action" : "fsx:CreateSnapshot",
+      "Resource" : [
+        "arn:aws:fsx:*:*:snapshot/*/*",
+        "arn:aws:fsx:*:*:volume/*/*"
+      ],
+      "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "aws:RequestTag/AWSApplicationMigrationServiceManaged" : "false"
+        },
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "mgn.amazonaws.com"
           ]
         }
       }

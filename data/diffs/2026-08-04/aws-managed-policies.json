@@ -1,0 +1,143 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:bedrock-websearch:ExternalWebAccess",
+        "aws:allow_action:bedrock-websearch:InvokeFetch",
+        "aws:allow_action:bedrock-websearch:InvokeSearch"
+      ],
+      "display_name": "AmazonBedrockExternalWebSearchFullAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockExternalWebSearchFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockExternalWebSearchFullAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:bedrock-websearch:ExternalWebAccess",
+        "aws:allow_action:bedrock-websearch:InvokeFetch",
+        "aws:allow_action:bedrock-websearch:InvokeSearch"
+      ],
+      "display_name": "AmazonBedrockExternalWebSearchReadOnly",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockExternalWebSearchReadOnly.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockExternalWebSearchReadOnly"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:bedrock-websearch:InvokeFetch",
+        "aws:allow_action:bedrock-websearch:InvokeSearch"
+      ],
+      "display_name": "AmazonBedrockWebSearchFullAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockWebSearchFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockWebSearchFullAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:bedrock-websearch:InvokeFetch",
+        "aws:allow_action:bedrock-websearch:InvokeSearch"
+      ],
+      "display_name": "AmazonBedrockWebSearchReadOnly",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockWebSearchReadOnly.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockWebSearchReadOnly"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:bedrock-websearch:ExternalWebAccess",
+      "aws:allow_action:bedrock-websearch:ExternalWebAccess",
+      "aws:allow_action:bedrock-websearch:InvokeFetch",
+      "aws:allow_action:bedrock-websearch:InvokeFetch",
+      "aws:allow_action:bedrock-websearch:InvokeFetch",
+      "aws:allow_action:bedrock-websearch:InvokeFetch",
+      "aws:allow_action:bedrock-websearch:InvokeSearch",
+      "aws:allow_action:bedrock-websearch:InvokeSearch",
+      "aws:allow_action:bedrock-websearch:InvokeSearch",
+      "aws:allow_action:bedrock-websearch:InvokeSearch",
+      "aws:allow_action:fsx:CreateSnapshot",
+      "aws:allow_action:fsx:CreateVolume",
+      "aws:allow_action:fsx:DeleteVolume",
+      "aws:allow_action:fsx:DescribeSnapshots",
+      "aws:allow_action:fsx:DescribeVolumes"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "bedrock-websearch:ExternalWebAccess",
+          "bedrock-websearch:ExternalWebAccess",
+          "bedrock-websearch:InvokeFetch",
+          "bedrock-websearch:InvokeFetch",
+          "bedrock-websearch:InvokeFetch",
+          "bedrock-websearch:InvokeFetch",
+          "bedrock-websearch:InvokeSearch",
+          "bedrock-websearch:InvokeSearch",
+          "bedrock-websearch:InvokeSearch",
+          "bedrock-websearch:InvokeSearch",
+          "fsx:CreateSnapshot",
+          "fsx:CreateVolume",
+          "fsx:DeleteVolume",
+          "fsx:DescribeSnapshots",
+          "fsx:DescribeVolumes"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSApplicationMigrationFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "fsx:CreateSnapshot",
+              "fsx:CreateVolume",
+              "fsx:DeleteVolume",
+              "fsx:DescribeSnapshots",
+              "fsx:DescribeVolumes"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v14 (default)",
+          "before": "v13 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 03, 2026, 10:57 UTC",
+          "before": "July 23, 2026, 07:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 03, 2026, 10:57 UTC",
+          "before": "July 23, 2026, 07:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 27,
+          "before": 23,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess"
+    }
+  ],
+  "compared_at_utc": "2026-08-04T06:05:52Z",
+  "counts": {
+    "added_atoms": 15,
+    "added_objects": 4,
+    "changed_objects": 1,
+    "current_objects": 1563,
+    "previous_objects": 1559,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-04",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-02",
+  "removed_objects": []
+}
