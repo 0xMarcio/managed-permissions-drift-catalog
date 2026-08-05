@@ -92,7 +92,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "anthosservicemesh.googleapis.com, trafficdirector.googleapis.com, meshdataplane.googleapis.com, meshconfig.googleapis.com",
+      "name": "meshdataplane.googleapis.com, trafficdirector.googleapis.com, anthosservicemesh.googleapis.com, meshconfig.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "title": "Google Workspace Marketplace",
-      "name": "workspacemarketplace.googleapis.com, appmetadata.googleapis.com",
+      "name": "appmetadata.googleapis.com, workspacemarketplace.googleapis.com",
       "url": "/iam/docs/roles-permissions/workspacemarketplace"
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "title": "Cloud IoT",
-      "name": "cloudiottoken.googleapis.com, cloudiot.googleapis.com",
+      "name": "cloudiot.googleapis.com, cloudiottoken.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudiot"
     },
     {
@@ -497,7 +497,7 @@
     },
     {
       "title": "Cloud TPU",
-      "name": "cloudtpu.googleapis.com, tpu.googleapis.com",
+      "name": "tpu.googleapis.com, cloudtpu.googleapis.com",
       "url": "/iam/docs/roles-permissions/tpu"
     },
     {
@@ -722,12 +722,12 @@
     },
     {
       "title": "Data Studio",
-      "name": "lookerstudio.googleapis.com, datastudio.googleapis.com",
+      "name": "datastudio.googleapis.com, lookerstudio.googleapis.com",
       "url": "/iam/docs/roles-permissions/datastudio"
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
+      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -892,7 +892,7 @@
     },
     {
       "title": "Firebase Crashlytics",
-      "name": "firebasecrashlytics.googleapis.com, firebasecrash.googleapis.com",
+      "name": "firebasecrash.googleapis.com, firebasecrashlytics.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecrash"
     },
     {
@@ -1017,7 +1017,7 @@
     },
     {
       "title": "Cloud Life Sciences",
-      "name": "genomics.googleapis.com, lifesciences.googleapis.com",
+      "name": "lifesciences.googleapis.com, genomics.googleapis.com",
       "url": "/iam/docs/roles-permissions/lifesciences"
     },
     {
@@ -1237,7 +1237,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "stackdriver.googleapis.com, opsconfigmonitoring.googleapis.com, monitoring.googleapis.com",
+      "name": "stackdriver.googleapis.com, monitoring.googleapis.com, opsconfigmonitoring.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1407,7 +1407,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
+      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1432,7 +1432,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
+      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -1937,7 +1937,7 @@
       "priority": 2
     },
     {
-      "title": "Auth Provider Admin",
+      "title": "Agent Identity Admin",
       "name": "roles/agentidentity.admin",
       "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.admin",
       "priority": 1
@@ -1955,7 +1955,7 @@
       "priority": 1
     },
     {
-      "title": "Auth Provider User",
+      "title": "Agent Identity User",
       "name": "roles/agentidentity.user",
       "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.user",
       "priority": 2
@@ -1977,6 +1977,12 @@
       "name": "roles/agentregistry.viewer",
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.viewer",
       "priority": 1
+    },
+    {
+      "title": "Agent Registry User",
+      "name": "roles/agentregistry.user",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.user",
+      "priority": 2
     },
     {
       "title": "AI Edge Portal Service Agent",
@@ -8957,25 +8963,25 @@
       "priority": 2
     },
     {
-      "title": "Firebase Data Connect API Admin",
+      "title": "Firebase SQL Connect API Admin",
       "name": "roles/firebasedataconnect.admin",
       "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.admin",
       "priority": 1
     },
     {
-      "title": "Firebase Data Connect API Viewer",
+      "title": "Firebase SQL Connect API Viewer",
       "name": "roles/firebasedataconnect.viewer",
       "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.viewer",
       "priority": 1
     },
     {
-      "title": "Firebase Data Connect API Data Admin",
+      "title": "Firebase SQL Connect API Data Admin",
       "name": "roles/firebasedataconnect.dataAdmin",
       "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.dataAdmin",
       "priority": 2
     },
     {
-      "title": "Firebase Data Connect API Data Viewer",
+      "title": "Firebase SQL Connect API Data Viewer",
       "name": "roles/firebasedataconnect.dataViewer",
       "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.dataViewer",
       "priority": 2
@@ -16407,6 +16413,14 @@
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.operations.list"
     },
     {
+      "title": "agentregistry.publishers.get",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.publishers.get"
+    },
+    {
+      "title": "agentregistry.publishers.list",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.publishers.list"
+    },
+    {
       "title": "agentregistry.services.create",
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.services.create"
     },
@@ -16425,6 +16439,46 @@
     {
       "title": "agentregistry.services.update",
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.services.update"
+    },
+    {
+      "title": "agentregistry.skillRevisions.create",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skillRevisions.create"
+    },
+    {
+      "title": "agentregistry.skillRevisions.delete",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skillRevisions.delete"
+    },
+    {
+      "title": "agentregistry.skillRevisions.get",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skillRevisions.get"
+    },
+    {
+      "title": "agentregistry.skillRevisions.list",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skillRevisions.list"
+    },
+    {
+      "title": "agentregistry.skills.create",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.create"
+    },
+    {
+      "title": "agentregistry.skills.delete",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.delete"
+    },
+    {
+      "title": "agentregistry.skills.get",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.get"
+    },
+    {
+      "title": "agentregistry.skills.list",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.list"
+    },
+    {
+      "title": "agentregistry.skills.search",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.search"
+    },
+    {
+      "title": "agentregistry.skills.update",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.update"
     },
     {
       "title": "aiplatform.agentAnomalyDetectionScopes.create",
@@ -31663,6 +31717,10 @@
       "url": "/iam/docs/roles-permissions/cloudkms#cloudkms.importJobs.create"
     },
     {
+      "title": "cloudkms.importJobs.delete",
+      "url": "/iam/docs/roles-permissions/cloudkms#cloudkms.importJobs.delete"
+    },
+    {
       "title": "cloudkms.importJobs.get",
       "url": "/iam/docs/roles-permissions/cloudkms#cloudkms.importJobs.get"
     },
@@ -31709,6 +31767,10 @@
     {
       "title": "cloudkms.keyRings.createTagBinding",
       "url": "/iam/docs/roles-permissions/cloudkms#cloudkms.keyRings.createTagBinding"
+    },
+    {
+      "title": "cloudkms.keyRings.delete",
+      "url": "/iam/docs/roles-permissions/cloudkms#cloudkms.keyRings.delete"
     },
     {
       "title": "cloudkms.keyRings.deleteTagBinding",
@@ -46631,8 +46693,16 @@
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.collections.get"
     },
     {
+      "title": "discoveryengine.collections.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.collections.getIamPolicy"
+    },
+    {
       "title": "discoveryengine.collections.list",
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.collections.list"
+    },
+    {
+      "title": "discoveryengine.collections.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.collections.setIamPolicy"
     },
     {
       "title": "discoveryengine.completionConfigs.completeQuery",
@@ -46767,12 +46837,20 @@
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.dataStores.get"
     },
     {
+      "title": "discoveryengine.dataStores.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.dataStores.getIamPolicy"
+    },
+    {
       "title": "discoveryengine.dataStores.list",
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.dataStores.list"
     },
     {
       "title": "discoveryengine.dataStores.listCustomModels",
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.dataStores.listCustomModels"
+    },
+    {
+      "title": "discoveryengine.dataStores.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.dataStores.setIamPolicy"
     },
     {
       "title": "discoveryengine.dataStores.trainCustomModel",
@@ -47129,6 +47207,10 @@
     {
       "title": "discoveryengine.podcasts.create",
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.podcasts.create"
+    },
+    {
+      "title": "discoveryengine.projectOverageConfigs.get",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.projectOverageConfigs.get"
     },
     {
       "title": "discoveryengine.projects.get",
@@ -49995,6 +50077,10 @@
       "url": "/iam/docs/roles-permissions/firebaseappcheck#firebaseappcheck.services.update"
     },
     {
+      "title": "firebaseappcheck.tokens.mint",
+      "url": "/iam/docs/roles-permissions/firebaseappcheck#firebaseappcheck.tokens.mint"
+    },
+    {
       "title": "firebaseappdistro.groups.list",
       "url": "/iam/docs/roles-permissions/firebaseappdistro#firebaseappdistro.groups.list"
     },
@@ -50397,6 +50483,14 @@
     {
       "title": "firebasedataconnect.services.executeGraphqlRead",
       "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.executeGraphqlRead"
+    },
+    {
+      "title": "firebasedataconnect.services.generateQuery",
+      "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.generateQuery"
+    },
+    {
+      "title": "firebasedataconnect.services.generateSchema",
+      "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.generateSchema"
     },
     {
       "title": "firebasedataconnect.services.get",

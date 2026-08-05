@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 14, 2024, 22:53 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:57 UTC</p>
+                <p><b>Edited time:</b>  August 03, 2026, 22:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonTimestreamInfluxDBFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonTimestreamInfluxDBFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v17 (default)</p>
+        <p><b>Policy version:</b> v18 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -93,7 +93,12 @@
         "timestream-influxdb:ListDbClusters",
         "timestream-influxdb:ListDbInstancesForCluster",
         "timestream-influxdb:RebootDbInstance",
-        "timestream-influxdb:RebootDbCluster"
+        "timestream-influxdb:RebootDbCluster",
+        "timestream-influxdb:CreateDbBackup",
+        "timestream-influxdb:GetDbBackup",
+        "timestream-influxdb:ListDbBackups",
+        "timestream-influxdb:DeleteDbBackup",
+        "timestream-influxdb:RestoreFromDbBackup"
       ],
       "Resource" : "arn:aws:timestream-influxdb:*:*:*"
     },

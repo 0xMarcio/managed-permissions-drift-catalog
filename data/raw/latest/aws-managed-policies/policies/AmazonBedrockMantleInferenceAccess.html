@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: December 04, 2025, 07:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 09, 2026, 04:42 UTC</p>
+                <p><b>Edited time:</b>  August 04, 2026, 05:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonBedrockMantleInferenceAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonBedrockMantleInferenceAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -80,6 +80,15 @@
         "bedrock-mantle:CreateInference"
       ],
       "Resource" : "arn:aws:bedrock-mantle:*:*:project/*"
+    },
+    <span>{</span>
+      "Sid" : "BedrockWebSearch",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-websearch:InvokeSearch",
+        "bedrock-websearch:InvokeFetch"
+      ],
+      "Resource" : "arn:aws:bedrock-websearch:*:*:*"
     },
     <span>{</span>
       "Sid" : "BedrockMantleCallWithBearerToken",

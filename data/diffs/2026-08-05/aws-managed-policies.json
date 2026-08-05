@@ -1,0 +1,632 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:acm:AddTagsToCertificate",
+      "aws:allow_action:acm:DeleteCertificate",
+      "aws:allow_action:acm:DescribeCertificate",
+      "aws:allow_action:acm:ListCertificates",
+      "aws:allow_action:acm:ListTagsForCertificate",
+      "aws:allow_action:acm:RemoveTagsFromCertificate",
+      "aws:allow_action:acm:RequestCertificate",
+      "aws:allow_action:aps:CreateWorkspace",
+      "aws:allow_action:aps:DeleteWorkspace",
+      "aws:allow_action:aps:Describe*",
+      "aws:allow_action:aps:RemoteWrite",
+      "aws:allow_action:aps:TagResource",
+      "aws:allow_action:bedrock-websearch:InvokeFetch",
+      "aws:allow_action:bedrock-websearch:InvokeFetch",
+      "aws:allow_action:bedrock-websearch:InvokeFetch",
+      "aws:allow_action:bedrock-websearch:InvokeFetch",
+      "aws:allow_action:bedrock-websearch:InvokeSearch",
+      "aws:allow_action:bedrock-websearch:InvokeSearch",
+      "aws:allow_action:bedrock-websearch:InvokeSearch",
+      "aws:allow_action:bedrock-websearch:InvokeSearch",
+      "aws:allow_action:cloudformation:CreateStack",
+      "aws:allow_action:cloudformation:DeleteStack",
+      "aws:allow_action:cloudformation:DescribeStackEvents",
+      "aws:allow_action:cloudformation:ListStacks",
+      "aws:allow_action:cloudformation:UpdateStack",
+      "aws:allow_action:cloudwatch:PutDashboard",
+      "aws:allow_action:codebuild:BatchGetBuilds",
+      "aws:allow_action:codebuild:BatchGetProjects",
+      "aws:allow_action:codebuild:CreateProject",
+      "aws:allow_action:codebuild:ListProjects",
+      "aws:allow_action:codebuild:StartBuild",
+      "aws:allow_action:codebuild:UpdateProject",
+      "aws:allow_action:datazone:GetDesignation",
+      "aws:allow_action:ec2:AuthorizeSecurityGroupEgress",
+      "aws:allow_action:ec2:CreateSecurityGroup",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteTags",
+      "aws:allow_action:ec2:DescribeRouteTables",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ecr:BatchCheckLayerAvailability",
+      "aws:allow_action:ecr:BatchGetImage",
+      "aws:allow_action:ecr:CreateRepository",
+      "aws:allow_action:ecr:DescribeImages",
+      "aws:allow_action:ecr:DescribeRepositories",
+      "aws:allow_action:ecr:GetDownloadUrlForLayer",
+      "aws:allow_action:ecr:ListTagsForResource",
+      "aws:allow_action:ecr:PutLifecyclePolicy",
+      "aws:allow_action:ecr:TagResource",
+      "aws:allow_action:ecr:UntagResource",
+      "aws:allow_action:eks:AssociateAccessPolicy",
+      "aws:allow_action:eks:CreateAccessEntry",
+      "aws:allow_action:eks:CreateAddon",
+      "aws:allow_action:eks:CreateCluster",
+      "aws:allow_action:eks:CreatePodIdentityAssociation",
+      "aws:allow_action:eks:DeleteAccessEntry",
+      "aws:allow_action:eks:DeleteAddon",
+      "aws:allow_action:eks:DeleteCluster",
+      "aws:allow_action:eks:DeletePodIdentityAssociation",
+      "aws:allow_action:eks:DescribeAccessEntry",
+      "aws:allow_action:eks:DescribeAddon",
+      "aws:allow_action:eks:DescribeCluster",
+      "aws:allow_action:eks:DescribePodIdentityAssociation",
+      "aws:allow_action:eks:DescribeUpdate",
+      "aws:allow_action:eks:ListAssociatedAccessPolicies",
+      "aws:allow_action:eks:ListPodIdentityAssociations",
+      "aws:allow_action:eks:UpdateAddon",
+      "aws:allow_action:eks:UpdatePodIdentityAssociation",
+      "aws:allow_action:elasticbeanstalk:DescribeConfigurationSettings",
+      "aws:allow_action:elasticbeanstalk:DescribeEnvironments",
+      "aws:allow_action:elasticbeanstalk:DescribeEvents",
+      "aws:allow_action:elasticloadbalancing:AddTags",
+      "aws:allow_action:elasticloadbalancing:CreateRule",
+      "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+      "aws:allow_action:elasticloadbalancing:DeleteRule",
+      "aws:allow_action:elasticloadbalancing:DeleteTargetGroup",
+      "aws:allow_action:elasticloadbalancing:DescribeListeners",
+      "aws:allow_action:elasticloadbalancing:DescribeRules",
+      "aws:allow_action:elasticloadbalancing:DescribeTags",
+      "aws:allow_action:elasticloadbalancing:ModifyTargetGroup",
+      "aws:allow_action:elasticloadbalancing:RemoveTags",
+      "aws:allow_action:elasticloadbalancing:SetSecurityGroups",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:GetRole",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:s3:CreateBucket",
+      "aws:allow_action:s3:GetObjectVersion",
+      "aws:allow_action:s3:ListBucket",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:s3:PutObjectAcl",
+      "aws:allow_action:tag:GetResources",
+      "aws:allow_action:tag:TagResources",
+      "aws:allow_action:tag:UntagResources",
+      "aws:allow_action:timestream-influxdb:CreateDbBackup",
+      "aws:allow_action:timestream-influxdb:CreateDbBackup",
+      "aws:allow_action:timestream-influxdb:DeleteDbBackup",
+      "aws:allow_action:timestream-influxdb:DeleteDbBackup",
+      "aws:allow_action:timestream-influxdb:GetDbBackup",
+      "aws:allow_action:timestream-influxdb:GetDbBackup",
+      "aws:allow_action:timestream-influxdb:ListDbBackups",
+      "aws:allow_action:timestream-influxdb:ListDbBackups",
+      "aws:allow_action:timestream-influxdb:RestoreFromDbBackup",
+      "aws:allow_action:timestream-influxdb:RestoreFromDbBackup"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "acm:AddTagsToCertificate",
+          "acm:DeleteCertificate",
+          "acm:DescribeCertificate",
+          "acm:ListCertificates",
+          "acm:ListTagsForCertificate",
+          "acm:RemoveTagsFromCertificate",
+          "acm:RequestCertificate",
+          "aps:CreateWorkspace",
+          "aps:DeleteWorkspace",
+          "aps:Describe*",
+          "aps:RemoteWrite",
+          "aps:TagResource",
+          "bedrock-websearch:InvokeFetch",
+          "bedrock-websearch:InvokeFetch",
+          "bedrock-websearch:InvokeFetch",
+          "bedrock-websearch:InvokeFetch",
+          "bedrock-websearch:InvokeSearch",
+          "bedrock-websearch:InvokeSearch",
+          "bedrock-websearch:InvokeSearch",
+          "bedrock-websearch:InvokeSearch",
+          "cloudformation:CreateStack",
+          "cloudformation:DeleteStack",
+          "cloudformation:DescribeStackEvents",
+          "cloudformation:ListStacks",
+          "cloudformation:UpdateStack",
+          "cloudwatch:PutDashboard",
+          "codebuild:BatchGetBuilds",
+          "codebuild:BatchGetProjects",
+          "codebuild:CreateProject",
+          "codebuild:ListProjects",
+          "codebuild:StartBuild",
+          "codebuild:UpdateProject",
+          "datazone:GetDesignation",
+          "ec2:AuthorizeSecurityGroupEgress",
+          "ec2:CreateSecurityGroup",
+          "ec2:CreateTags",
+          "ec2:DeleteTags",
+          "ec2:DescribeRouteTables",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcs",
+          "ecr:BatchCheckLayerAvailability",
+          "ecr:BatchGetImage",
+          "ecr:CreateRepository",
+          "ecr:DescribeImages",
+          "ecr:DescribeRepositories",
+          "ecr:GetDownloadUrlForLayer",
+          "ecr:ListTagsForResource",
+          "ecr:PutLifecyclePolicy",
+          "ecr:TagResource",
+          "ecr:UntagResource",
+          "eks:AssociateAccessPolicy",
+          "eks:CreateAccessEntry",
+          "eks:CreateAddon",
+          "eks:CreateCluster",
+          "eks:CreatePodIdentityAssociation",
+          "eks:DeleteAccessEntry",
+          "eks:DeleteAddon",
+          "eks:DeleteCluster",
+          "eks:DeletePodIdentityAssociation",
+          "eks:DescribeAccessEntry",
+          "eks:DescribeAddon",
+          "eks:DescribeCluster",
+          "eks:DescribePodIdentityAssociation",
+          "eks:DescribeUpdate",
+          "eks:ListAssociatedAccessPolicies",
+          "eks:ListPodIdentityAssociations",
+          "eks:UpdateAddon",
+          "eks:UpdatePodIdentityAssociation",
+          "elasticbeanstalk:DescribeConfigurationSettings",
+          "elasticbeanstalk:DescribeEnvironments",
+          "elasticbeanstalk:DescribeEvents",
+          "elasticloadbalancing:AddTags",
+          "elasticloadbalancing:CreateRule",
+          "elasticloadbalancing:CreateTargetGroup",
+          "elasticloadbalancing:DeleteRule",
+          "elasticloadbalancing:DeleteTargetGroup",
+          "elasticloadbalancing:DescribeListeners",
+          "elasticloadbalancing:DescribeRules",
+          "elasticloadbalancing:DescribeTags",
+          "elasticloadbalancing:ModifyTargetGroup",
+          "elasticloadbalancing:RemoveTags",
+          "elasticloadbalancing:SetSecurityGroups",
+          "iam:CreateServiceLinkedRole",
+          "iam:GetRole",
+          "iam:PassRole",
+          "s3:CreateBucket",
+          "s3:GetObjectVersion",
+          "s3:ListBucket",
+          "s3:PutObject",
+          "s3:PutObjectAcl",
+          "tag:GetResources",
+          "tag:TagResources",
+          "tag:UntagResources",
+          "timestream-influxdb:CreateDbBackup",
+          "timestream-influxdb:CreateDbBackup",
+          "timestream-influxdb:DeleteDbBackup",
+          "timestream-influxdb:DeleteDbBackup",
+          "timestream-influxdb:GetDbBackup",
+          "timestream-influxdb:GetDbBackup",
+          "timestream-influxdb:ListDbBackups",
+          "timestream-influxdb:ListDbBackups",
+          "timestream-influxdb:RestoreFromDbBackup",
+          "timestream-influxdb:RestoreFromDbBackup"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonBedrockFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-websearch:InvokeFetch",
+              "bedrock-websearch:InvokeSearch"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 04, 2026, 05:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 04, 2026, 05:42 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 15,
+          "before": 14,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockFullAccess"
+    },
+    {
+      "display_name": "AmazonBedrockLimitedAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-websearch:InvokeFetch",
+              "bedrock-websearch:InvokeSearch"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 04, 2026, 05:27 UTC",
+          "before": "April 09, 2026, 04:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 04, 2026, 05:27 UTC",
+          "before": "April 09, 2026, 04:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 6,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockLimitedAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockLimitedAccess"
+    },
+    {
+      "display_name": "AmazonBedrockMantleFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-websearch:InvokeFetch",
+              "bedrock-websearch:InvokeSearch"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 04, 2026, 04:42 UTC",
+          "before": "April 09, 2026, 04:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 04, 2026, 04:42 UTC",
+          "before": "April 09, 2026, 04:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockMantleFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockMantleFullAccess"
+    },
+    {
+      "display_name": "AmazonBedrockMantleInferenceAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-websearch:InvokeFetch",
+              "bedrock-websearch:InvokeSearch"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 04, 2026, 05:12 UTC",
+          "before": "April 09, 2026, 04:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 04, 2026, 05:12 UTC",
+          "before": "April 09, 2026, 04:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockMantleInferenceAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBedrockMantleInferenceAccess"
+    },
+    {
+      "display_name": "AmazonTimestreamInfluxDBFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "timestream-influxdb:CreateDbBackup",
+              "timestream-influxdb:DeleteDbBackup",
+              "timestream-influxdb:GetDbBackup",
+              "timestream-influxdb:ListDbBackups",
+              "timestream-influxdb:RestoreFromDbBackup"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v18 (default)",
+          "before": "v17 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 03, 2026, 22:42 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 03, 2026, 22:42 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonTimestreamInfluxDBFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonTimestreamInfluxDBFullAccess"
+    },
+    {
+      "display_name": "AmazonTimestreamInfluxDBFullAccessWithoutMarketplaceAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "timestream-influxdb:CreateDbBackup",
+              "timestream-influxdb:DeleteDbBackup",
+              "timestream-influxdb:GetDbBackup",
+              "timestream-influxdb:ListDbBackups",
+              "timestream-influxdb:RestoreFromDbBackup"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 03, 2026, 22:57 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 03, 2026, 22:57 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonTimestreamInfluxDBFullAccessWithoutMarketplaceAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonTimestreamInfluxDBFullAccessWithoutMarketplaceAccess"
+    },
+    {
+      "display_name": "AWSElasticBeanstalkServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "acm:AddTagsToCertificate",
+              "acm:DeleteCertificate",
+              "acm:DescribeCertificate",
+              "acm:ListCertificates",
+              "acm:ListTagsForCertificate",
+              "acm:RemoveTagsFromCertificate",
+              "acm:RequestCertificate",
+              "aps:CreateWorkspace",
+              "aps:DeleteWorkspace",
+              "aps:Describe*",
+              "aps:RemoteWrite",
+              "aps:TagResource",
+              "cloudformation:CreateStack",
+              "cloudformation:DeleteStack",
+              "cloudformation:DescribeStackEvents",
+              "cloudformation:ListStacks",
+              "cloudformation:UpdateStack",
+              "cloudwatch:PutDashboard",
+              "codebuild:BatchGetBuilds",
+              "codebuild:BatchGetProjects",
+              "codebuild:CreateProject",
+              "codebuild:ListProjects",
+              "codebuild:StartBuild",
+              "codebuild:UpdateProject",
+              "ec2:AuthorizeSecurityGroupEgress",
+              "ec2:CreateSecurityGroup",
+              "ec2:CreateTags",
+              "ec2:DeleteTags",
+              "ec2:DescribeRouteTables",
+              "ec2:DescribeSubnets",
+              "ec2:DescribeVpcs",
+              "ecr:BatchCheckLayerAvailability",
+              "ecr:BatchGetImage",
+              "ecr:CreateRepository",
+              "ecr:DescribeImages",
+              "ecr:DescribeRepositories",
+              "ecr:GetDownloadUrlForLayer",
+              "ecr:ListTagsForResource",
+              "ecr:PutLifecyclePolicy",
+              "ecr:TagResource",
+              "ecr:UntagResource",
+              "eks:AssociateAccessPolicy",
+              "eks:CreateAccessEntry",
+              "eks:CreateAddon",
+              "eks:CreateCluster",
+              "eks:CreatePodIdentityAssociation",
+              "eks:DeleteAccessEntry",
+              "eks:DeleteAddon",
+              "eks:DeleteCluster",
+              "eks:DeletePodIdentityAssociation",
+              "eks:DescribeAccessEntry",
+              "eks:DescribeAddon",
+              "eks:DescribeCluster",
+              "eks:DescribePodIdentityAssociation",
+              "eks:DescribeUpdate",
+              "eks:ListAssociatedAccessPolicies",
+              "eks:ListPodIdentityAssociations",
+              "eks:UpdateAddon",
+              "eks:UpdatePodIdentityAssociation",
+              "elasticbeanstalk:DescribeConfigurationSettings",
+              "elasticbeanstalk:DescribeEnvironments",
+              "elasticbeanstalk:DescribeEvents",
+              "elasticloadbalancing:AddTags",
+              "elasticloadbalancing:CreateRule",
+              "elasticloadbalancing:CreateTargetGroup",
+              "elasticloadbalancing:DeleteRule",
+              "elasticloadbalancing:DeleteTargetGroup",
+              "elasticloadbalancing:DescribeListeners",
+              "elasticloadbalancing:DescribeRules",
+              "elasticloadbalancing:DescribeTags",
+              "elasticloadbalancing:ModifyTargetGroup",
+              "elasticloadbalancing:RemoveTags",
+              "elasticloadbalancing:SetSecurityGroups",
+              "iam:CreateServiceLinkedRole",
+              "iam:GetRole",
+              "iam:PassRole",
+              "s3:CreateBucket",
+              "s3:GetObjectVersion",
+              "s3:ListBucket",
+              "s3:PutObject",
+              "s3:PutObjectAcl",
+              "tag:GetResources",
+              "tag:TagResources",
+              "tag:UntagResources"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 03, 2026, 18:57 UTC",
+          "before": "June 06, 2019, 21:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 03, 2026, 18:57 UTC",
+          "before": "June 06, 2019, 21:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 34,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSElasticBeanstalkServiceRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioDomainExecutionRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:GetDesignation"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v22 (default)",
+          "before": "v21 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 03, 2026, 21:27 UTC",
+          "before": "July 22, 2026, 16:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 03, 2026, 21:27 UTC",
+          "before": "July 22, 2026, 16:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-08-05T06:02:40Z",
+  "counts": {
+    "added_atoms": 103,
+    "added_objects": 0,
+    "changed_objects": 8,
+    "current_objects": 1563,
+    "previous_objects": 1563,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-05",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-04",
+  "removed_objects": []
+}
