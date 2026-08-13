@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: March 10, 2021, 06:55 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  December 05, 2023, 22:52 UTC</p>
+                <p><b>Edited time:</b>  August 05, 2026, 17:12 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/BatchServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="BatchServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v7 (default)</p>
+        <p><b>Policy version:</b> v8 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -99,6 +99,7 @@
         "autoscaling:DescribeAutoScalingInstances",
         "autoscaling:DescribeScalingActivities",
         "eks:DescribeCluster",
+        "ecs:DescribeCapacityProviders",
         "ecs:DescribeClusters",
         "ecs:DescribeContainerInstances",
         "ecs:DescribeTaskDefinition",
@@ -159,6 +160,7 @@
           "iam:PassedToService" : [
             "ec2.amazonaws.com",
             "ec2.amazonaws.com.cn",
+            "ecs.amazonaws.com",
             "ecs-tasks.amazonaws.com"
           ]
         }
@@ -175,7 +177,8 @@
             "spot.amazonaws.com",
             "spotfleet.amazonaws.com",
             "autoscaling.amazonaws.com",
-            "ecs.amazonaws.com"
+            "ecs.amazonaws.com",
+            "ecs-compute.amazonaws.com"
           ]
         }
       }
@@ -238,9 +241,11 @@
       "Action" : [
         "ecs:DeleteCluster",
         "ecs:DeregisterContainerInstance",
+        "ecs:PutClusterCapacityProviders",
         "ecs:RunTask",
         "ecs:StartTask",
-        "ecs:StopTask"
+        "ecs:StopTask",
+        "ecs:UpdateCluster"
       ],
       "Resource" : "arn:aws:ecs:*:*:cluster/AWSBatch*"
     },
@@ -325,6 +330,27 @@
           ]
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "AWSBatchPolicyStatement18",
+      "Effect" : "Allow",
+      "Action" : [
+        "ecs:CreateCapacityProvider",
+        "ecs:UpdateCapacityProvider",
+        "ecs:DeleteCapacityProvider"
+      ],
+      "Resource" : "arn:aws:ecs:*:*:capacity-provider/AWSBatch*"
+    },
+    <span>{</span>
+      "Sid" : "AWSBatchPolicyStatement19",
+      "Effect" : "Allow",
+      "Action" : [
+        "ecs:TagResource",
+        "ecs:UntagResource"
+      ],
+      "Resource" : [
+        "arn:aws:ecs:*:*:capacity-provider/AWSBatch*"
+      ]
     }
   ]
 }</code></pre>

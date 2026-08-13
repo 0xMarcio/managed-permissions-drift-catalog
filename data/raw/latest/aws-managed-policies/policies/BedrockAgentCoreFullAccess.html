@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 16, 2025, 13:37 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 28, 2026, 16:57 UTC</p>
+                <p><b>Edited time:</b>  August 11, 2026, 19:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="BedrockAgentCoreFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v18 (default)</p>
+        <p><b>Policy version:</b> v19 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -141,13 +141,13 @@
         "arn:aws:kms:*:*:key/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "bedrock-agentcore.amazonaws.com"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -161,19 +161,19 @@
         "arn:aws:kms:*:*:key/*"
       ],
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "kms:GrantConstraintType" : "EncryptionContextSubset"
-        },
-        "StringLike" : <span>{</span>
-          "kms:ViaService" : [
-            "bedrock-agentcore.*.amazonaws.com"
-          ],
-          "kms:EncryptionContext:aws:bedrock-agentcore-gateway:arn" : "arn:aws:bedrock-agentcore:*:*:gateway/*"
-        },
         "ForAllValues:StringEquals" : <span>{</span>
           "kms:GrantOperations" : [
             "Decrypt",
             "GenerateDataKey"
+          ]
+        },
+        "StringEquals" : <span>{</span>
+          "kms:GrantConstraintType" : "EncryptionContextSubset"
+        },
+        "StringLike" : <span>{</span>
+          "kms:EncryptionContext:aws:bedrock-agentcore-gateway:arn" : "arn:aws:bedrock-agentcore:*:*:gateway/*",
+          "kms:ViaService" : [
+            "bedrock-agentcore.*.amazonaws.com"
           ]
         }
       }
@@ -359,6 +359,17 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "iam:AWSServiceName" : "runtime-identity.bedrock-agentcore.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreateBedrockAgentCoreRuntimeInstancesServiceLinkedRolePermissions",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/runtime-instances.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreRuntimeInstances",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "runtime-instances.bedrock-agentcore.amazonaws.com"
         }
       }
     },

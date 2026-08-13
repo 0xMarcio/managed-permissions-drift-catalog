@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: July 18, 2026, 00:57 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 18, 2026, 00:57 UTC</p>
+                <p><b>Edited time:</b>  August 11, 2026, 18:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSBudgetsSpendLimitMemberRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -82,7 +82,8 @@
         "ec2:DescribeVpnGateways",
         "ec2:DescribeAddresses",
         "ec2:DescribeSnapshots",
-        "ec2:DescribeInstanceStatus"
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeVolumes"
       ],
       "Resource" : "*"
     },
@@ -208,12 +209,19 @@
       ]
     },
     <span>{</span>
+      "Sid" : "CostOptimizationHubActions",
+      "Effect" : "Allow",
+      "Action" : "cost-optimization-hub:UpdateEnrollmentStatus",
+      "Resource" : "*"
+    },
+    <span>{</span>
       "Sid" : "ComputeOptimizerActions",
       "Effect" : "Allow",
       "Action" : [
         "compute-optimizer:GetIdleRecommendations",
         "compute-optimizer:GetRecommendationSummaries",
-        "compute-optimizer:GetEnrollmentStatus"
+        "compute-optimizer:GetEnrollmentStatus",
+        "compute-optimizer:UpdateEnrollmentStatus"
       ],
       "Resource" : "*"
     },
@@ -223,7 +231,8 @@
       "Action" : [
         "aco-automation:StartAutomationEvent",
         "aco-automation:ListRecommendedActions",
-        "aco-automation:GetAutomationEvent"
+        "aco-automation:GetAutomationEvent",
+        "aco-automation:UpdateEnrollmentConfiguration"
       ],
       "Resource" : "*"
     },
@@ -243,6 +252,16 @@
         "account:GetPrimaryEmail"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/aco-automation.amazonaws.com/AWSServiceRoleForComputeOptimizerAutomation",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "iam:AWSServiceName" : "aco-automation.amazonaws.com"
+        }
+      }
     }
   ]
 }</code></pre>

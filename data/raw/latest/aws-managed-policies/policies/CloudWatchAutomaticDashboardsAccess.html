@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 23, 2019, 10:01 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 20, 2021, 13:05 UTC</p>
+                <p><b>Edited time:</b>  August 07, 2026, 10:42 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchAutomaticDashboardsAccess</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchAutomaticDashboardsAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -72,6 +72,7 @@
   "Version" : "2012-10-17",
   "Statement" : [
     <span>{</span>
+      "Effect" : "Allow",
       "Action" : [
         "autoscaling:DescribeAutoScalingGroups",
         "cloudfront:GetDistribution",
@@ -92,7 +93,9 @@
         "kinesis:DescribeStream",
         "kinesis:ListStreams",
         "lambda:GetFunction",
+        "lambda:GetFunctionConfiguration",
         "lambda:ListFunctions",
+        "lambda:ListTags",
         "rds:DescribeDBClusters",
         "rds:DescribeDBInstances",
         "resource-groups:ListGroupResources",
@@ -108,14 +111,13 @@
         "synthetics:DescribeCanariesLastRun",
         "tag:GetResources"
       ],
-      "Effect" : "Allow",
       "Resource" : "*"
     },
     <span>{</span>
+      "Effect" : "Allow",
       "Action" : [
         "apigateway:GET"
       ],
-      "Effect" : "Allow",
       "Resource" : [
         "arn:aws:apigateway:*::/restapis*"
       ]
