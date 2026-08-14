@@ -1,0 +1,232 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:codecommit:BatchDescribe*",
+      "aws:allow_action:codecommit:BatchGet*",
+      "aws:allow_action:codecommit:Describe*",
+      "aws:allow_action:codecommit:EvaluatePullRequestApprovalRules",
+      "aws:allow_action:codecommit:GetApprovalRuleTemplate",
+      "aws:allow_action:codecommit:GetBranch",
+      "aws:allow_action:codecommit:GetComment",
+      "aws:allow_action:codecommit:GetCommentReactions",
+      "aws:allow_action:codecommit:GetCommentsForComparedCommit",
+      "aws:allow_action:codecommit:GetCommentsForPullRequest",
+      "aws:allow_action:codecommit:GetCommit",
+      "aws:allow_action:codecommit:GetCommitHistory",
+      "aws:allow_action:codecommit:GetCommitsFromMergeBase",
+      "aws:allow_action:codecommit:GetDifferences",
+      "aws:allow_action:codecommit:GetMergeCommit",
+      "aws:allow_action:codecommit:GetMergeConflicts",
+      "aws:allow_action:codecommit:GetMergeOptions",
+      "aws:allow_action:codecommit:GetObjectIdentifier",
+      "aws:allow_action:codecommit:GetPullRequest",
+      "aws:allow_action:codecommit:GetPullRequestApprovalStates",
+      "aws:allow_action:codecommit:GetPullRequestOverrideState",
+      "aws:allow_action:codecommit:GetReferences",
+      "aws:allow_action:codecommit:GetTree",
+      "aws:allow_action:codecommit:GetUploadArchiveStatus",
+      "aws:allow_action:codecommit:List*",
+      "aws:allow_action:config:GetAggregateResourceConfig",
+      "aws:allow_action:config:SelectAggregateResourceConfig",
+      "aws:allow_action:datazone:BatchUpdateNotifications",
+      "aws:allow_action:glue:getPartition",
+      "aws:allow_action:kms:DescribeCustomKeyStores",
+      "aws:allow_action:kms:GetParametersForImport",
+      "aws:allow_action:kms:GetPublicKey",
+      "aws:allow_action:kms:ListGrants",
+      "aws:allow_action:kms:ListKeyPolicies",
+      "aws:allow_action:kms:ListRetirableGrants"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "codecommit:BatchDescribe*",
+          "codecommit:BatchGet*",
+          "codecommit:Describe*",
+          "codecommit:EvaluatePullRequestApprovalRules",
+          "codecommit:GetApprovalRuleTemplate",
+          "codecommit:GetBranch",
+          "codecommit:GetComment",
+          "codecommit:GetCommentReactions",
+          "codecommit:GetCommentsForComparedCommit",
+          "codecommit:GetCommentsForPullRequest",
+          "codecommit:GetCommit",
+          "codecommit:GetCommitHistory",
+          "codecommit:GetCommitsFromMergeBase",
+          "codecommit:GetDifferences",
+          "codecommit:GetMergeCommit",
+          "codecommit:GetMergeConflicts",
+          "codecommit:GetMergeOptions",
+          "codecommit:GetObjectIdentifier",
+          "codecommit:GetPullRequest",
+          "codecommit:GetPullRequestApprovalStates",
+          "codecommit:GetPullRequestOverrideState",
+          "codecommit:GetReferences",
+          "codecommit:GetTree",
+          "codecommit:GetUploadArchiveStatus",
+          "codecommit:List*",
+          "config:GetAggregateResourceConfig",
+          "config:SelectAggregateResourceConfig",
+          "datazone:BatchUpdateNotifications",
+          "glue:getPartition",
+          "kms:DescribeCustomKeyStores",
+          "kms:GetParametersForImport",
+          "kms:GetPublicKey",
+          "kms:ListGrants",
+          "kms:ListKeyPolicies",
+          "kms:ListRetirableGrants"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "codecommit:BatchDescribe*",
+              "codecommit:BatchGet*",
+              "codecommit:Describe*",
+              "codecommit:EvaluatePullRequestApprovalRules",
+              "codecommit:GetApprovalRuleTemplate",
+              "codecommit:GetBranch",
+              "codecommit:GetComment",
+              "codecommit:GetCommentReactions",
+              "codecommit:GetCommentsForComparedCommit",
+              "codecommit:GetCommentsForPullRequest",
+              "codecommit:GetCommit",
+              "codecommit:GetCommitHistory",
+              "codecommit:GetCommitsFromMergeBase",
+              "codecommit:GetDifferences",
+              "codecommit:GetMergeCommit",
+              "codecommit:GetMergeConflicts",
+              "codecommit:GetMergeOptions",
+              "codecommit:GetObjectIdentifier",
+              "codecommit:GetPullRequest",
+              "codecommit:GetPullRequestApprovalStates",
+              "codecommit:GetPullRequestOverrideState",
+              "codecommit:GetReferences",
+              "codecommit:GetTree",
+              "codecommit:GetUploadArchiveStatus",
+              "codecommit:List*",
+              "config:GetAggregateResourceConfig",
+              "config:SelectAggregateResourceConfig",
+              "glue:getPartition",
+              "kms:DescribeCustomKeyStores",
+              "kms:GetParametersForImport",
+              "kms:GetPublicKey",
+              "kms:ListGrants",
+              "kms:ListKeyPolicies",
+              "kms:ListRetirableGrants"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 12, 2026, 23:07 UTC",
+          "before": "July 02, 2026, 23:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 12, 2026, 23:07 UTC",
+          "before": "July 02, 2026, 23:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "AWSWellArchitectedAgentResourceScanningServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 13, 2026, 00:27 UTC",
+          "before": "August 04, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 13, 2026, 00:27 UTC",
+          "before": "August 04, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 1,
+          "before": 90,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentResourceScanningServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentResourceScanningServiceRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioDomainExecutionRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:BatchUpdateNotifications"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v23 (default)",
+          "before": "v22 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 12, 2026, 17:27 UTC",
+          "before": "August 03, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 12, 2026, 17:27 UTC",
+          "before": "August 03, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-08-14T05:04:53Z",
+  "counts": {
+    "added_atoms": 35,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1579,
+    "previous_objects": 1579,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-14",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-13",
+  "removed_objects": []
+}
