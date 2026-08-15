@@ -2658,6 +2658,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSCertificateManagerReadOnly"
       }
     ],
+    "aws:allow_action:acm:ListCertificateDomainValidations": [
+      {
+        "display_name": "AWSCertificateManagerReadOnly",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCertificateManagerReadOnly.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCertificateManagerReadOnly"
+      }
+    ],
     "aws:allow_action:acm:ListCertificates": [
       {
         "display_name": "AIDevOpsAgentAccessPolicy",
@@ -2935,6 +2942,18 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentResourceScanningServiceRolePolicy"
       }
     ],
+    "aws:allow_action:aco-automation:GetEnrollmentConfiguration": [
+      {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+      }
+    ],
     "aws:allow_action:aco-automation:ListAutomationRules": [
       {
         "display_name": "WellArchitectedAgentResourceScanning",
@@ -2962,6 +2981,11 @@
       }
     ],
     "aws:allow_action:aco-automation:UpdateEnrollmentConfiguration": [
+      {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      },
       {
         "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
@@ -58821,6 +58845,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       }
     ],
     "aws:allow_action:compute-optimizer:GetEBSVolumeRecommendations": [
@@ -58855,6 +58884,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AmazonSSMServiceRolePolicy",
@@ -58931,6 +58965,11 @@
       }
     ],
     "aws:allow_action:compute-optimizer:GetEnrollmentStatus": [
+      {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      },
       {
         "display_name": "AWSQuickSetupCFGCPacksPermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupCFGCPacksPermissionsBoundary.html",
@@ -59139,6 +59178,11 @@
       }
     ],
     "aws:allow_action:compute-optimizer:UpdateEnrollmentStatus": [
+      {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      },
       {
         "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
@@ -63603,6 +63647,11 @@
     ],
     "aws:allow_action:cost-optimization-hub:ListEnrollmentStatuses": [
       {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      },
+      {
         "display_name": "CostOptimizationHubAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CostOptimizationHubAdminAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/CostOptimizationHubAdminAccess"
@@ -63621,6 +63670,11 @@
         "display_name": "AWSBCMDataExportsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBCMDataExportsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBCMDataExportsServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "ViewOnlyAccess",
@@ -63688,6 +63742,11 @@
       }
     ],
     "aws:allow_action:cost-optimization-hub:UpdateEnrollmentStatus": [
+      {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      },
       {
         "display_name": "CostOptimizationHubAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CostOptimizationHubAdminAccess.html",
@@ -66634,6 +66693,16 @@
       }
     ],
     "aws:allow_action:datazone:BatchUpdateNotifications": [
+      {
+        "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+      },
+      {
+        "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      },
       {
         "display_name": "SageMakerStudioDomainExecutionRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
@@ -151904,6 +151973,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSLambda_FullAccess"
       },
       {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      },
+      {
         "display_name": "AWSMarketplaceSellerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
@@ -210875,6 +210949,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSHealthFullAccess"
       },
       {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      },
+      {
         "display_name": "AWSPrivateMarketplaceAdminFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceAdminFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceAdminFullAccess"
@@ -210948,6 +211027,11 @@
         "display_name": "WellArchitectedConsoleFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedConsoleFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedConsoleFullAccess"
+      },
+      {
+        "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
       },
       {
         "display_name": "AWSObservabilityAdminServiceRolePolicy",
@@ -215662,6 +215746,13 @@
       }
     ],
     "aws:allow_action:payments:GetAccountBalance": [
+      {
+        "display_name": "AWSManagedSettingsAdminAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      }
+    ],
+    "aws:allow_action:payments:GetDefaultPaymentProfile": [
       {
         "display_name": "AWSManagedSettingsAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
@@ -317811,7 +317902,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-08-14T05:04:54Z",
+  "generated_at_utc": "2026-08-15T03:56:30Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

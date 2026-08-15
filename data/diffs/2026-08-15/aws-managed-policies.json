@@ -1,0 +1,253 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:acm:ListCertificateDomainValidations",
+      "aws:allow_action:aco-automation:GetEnrollmentConfiguration",
+      "aws:allow_action:aco-automation:GetEnrollmentConfiguration",
+      "aws:allow_action:aco-automation:UpdateEnrollmentConfiguration",
+      "aws:allow_action:compute-optimizer:GetAutoScalingGroupRecommendations",
+      "aws:allow_action:compute-optimizer:GetEC2InstanceRecommendations",
+      "aws:allow_action:compute-optimizer:GetEnrollmentStatus",
+      "aws:allow_action:compute-optimizer:UpdateEnrollmentStatus",
+      "aws:allow_action:cost-optimization-hub:ListEnrollmentStatuses",
+      "aws:allow_action:cost-optimization-hub:ListEnrollmentStatuses",
+      "aws:allow_action:cost-optimization-hub:UpdateEnrollmentStatus",
+      "aws:allow_action:datazone:BatchUpdateNotifications",
+      "aws:allow_action:datazone:BatchUpdateNotifications",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:organizations:EnableAWSServiceAccess",
+      "aws:allow_action:organizations:EnableAWSServiceAccess",
+      "aws:allow_action:payments:GetDefaultPaymentProfile"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "acm:ListCertificateDomainValidations",
+          "aco-automation:GetEnrollmentConfiguration",
+          "aco-automation:GetEnrollmentConfiguration",
+          "aco-automation:UpdateEnrollmentConfiguration",
+          "compute-optimizer:GetAutoScalingGroupRecommendations",
+          "compute-optimizer:GetEC2InstanceRecommendations",
+          "compute-optimizer:GetEnrollmentStatus",
+          "compute-optimizer:UpdateEnrollmentStatus",
+          "cost-optimization-hub:ListEnrollmentStatuses",
+          "cost-optimization-hub:ListEnrollmentStatuses",
+          "cost-optimization-hub:UpdateEnrollmentStatus",
+          "datazone:BatchUpdateNotifications",
+          "datazone:BatchUpdateNotifications",
+          "iam:CreateServiceLinkedRole",
+          "organizations:EnableAWSServiceAccess",
+          "organizations:EnableAWSServiceAccess",
+          "payments:GetDefaultPaymentProfile"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSCertificateManagerReadOnly",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "acm:ListCertificateDomainValidations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 13, 2026, 18:07 UTC",
+          "before": "June 30, 2026, 16:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 13, 2026, 18:07 UTC",
+          "before": "June 30, 2026, 16:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCertificateManagerReadOnly.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSCertificateManagerReadOnly"
+    },
+    {
+      "display_name": "AWSManagedSettingsAdminAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aco-automation:GetEnrollmentConfiguration",
+              "aco-automation:UpdateEnrollmentConfiguration",
+              "compute-optimizer:GetEnrollmentStatus",
+              "compute-optimizer:UpdateEnrollmentStatus",
+              "cost-optimization-hub:ListEnrollmentStatuses",
+              "cost-optimization-hub:UpdateEnrollmentStatus",
+              "iam:CreateServiceLinkedRole",
+              "organizations:EnableAWSServiceAccess",
+              "payments:GetDefaultPaymentProfile"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 13, 2026, 22:37 UTC",
+          "before": "August 07, 2026, 23:47 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 13, 2026, 22:37 UTC",
+          "before": "August 07, 2026, 23:47 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 28,
+          "before": 23,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:BatchUpdateNotifications"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v29 (default)",
+          "before": "v28 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 13, 2026, 18:37 UTC",
+          "before": "July 14, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 13, 2026, 18:37 UTC",
+          "before": "July 14, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:BatchUpdateNotifications"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v24 (default)",
+          "before": "v23 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 13, 2026, 18:37 UTC",
+          "before": "July 14, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 13, 2026, 18:37 UTC",
+          "before": "July 14, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "AWSBudgetsSpendLimitMemberRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aco-automation:GetEnrollmentConfiguration",
+              "compute-optimizer:GetAutoScalingGroupRecommendations",
+              "compute-optimizer:GetEC2InstanceRecommendations",
+              "cost-optimization-hub:ListEnrollmentStatuses",
+              "organizations:EnableAWSServiceAccess"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 13, 2026, 20:47 UTC",
+          "before": "August 11, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 13, 2026, 20:47 UTC",
+          "before": "August 11, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 16,
+          "before": 13,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBudgetsSpendLimitMemberRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-08-15T03:56:29Z",
+  "counts": {
+    "added_atoms": 17,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 1579,
+    "previous_objects": 1579,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-15",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-14",
+  "removed_objects": []
+}

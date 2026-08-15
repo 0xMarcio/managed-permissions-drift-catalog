@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 22, 2026, 01:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 07, 2026, 23:47 UTC</p>
+                <p><b>Edited time:</b>  August 13, 2026, 22:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSManagedSettingsAdminAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -273,7 +273,8 @@
         "payments:SearchFinancialRecords",
         "payments:SetPreferredCurrency",
         "payments:UpdatePaymentProfile",
-        "payments:GetAccountBalance"
+        "payments:GetAccountBalance",
+        "payments:GetDefaultPaymentProfile"
       ],
       "Resource" : "*"
     },
@@ -430,6 +431,68 @@
           "aws:CalledViaLast" : "account.amazonaws.com"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "AllowAWSServiceAccessForCostOptimizationHub",
+      "Effect" : "Allow",
+      "Action" : [
+        "organizations:EnableAWSServiceAccess"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "organizations:ServicePrincipal" : [
+            "cost-optimization-hub.bcm.amazonaws.com",
+            "compute-optimizer.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowCreateServiceLinkedRoleForComputeOptimizerAutomation",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/aco-automation.amazonaws.com/AWSServiceRoleForComputeOptimizerAutomation",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "iam:AWSServiceName" : "aco-automation.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowCreateServiceLinkedRoleForComputeOptimizer",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "iam:AWSServiceName" : "compute-optimizer.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowCreateServiceLinkedRoleForCostOptimizationHub",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/cost-optimization-hub.bcm.amazonaws.com/AWSServiceRoleForCostOptimizationHub",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "iam:AWSServiceName" : "cost-optimization-hub.bcm.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "GetAndUpdateEnrollmentStatusForACOCOH",
+      "Effect" : "Allow",
+      "Action" : [
+        "aco-automation:GetEnrollmentConfiguration",
+        "aco-automation:UpdateEnrollmentConfiguration",
+        "compute-optimizer:GetEnrollmentStatus",
+        "compute-optimizer:UpdateEnrollmentStatus",
+        "cost-optimization-hub:ListEnrollmentStatuses",
+        "cost-optimization-hub:UpdateEnrollmentStatus"
+      ],
+      "Resource" : "*"
     }
   ]
 }</code></pre>
