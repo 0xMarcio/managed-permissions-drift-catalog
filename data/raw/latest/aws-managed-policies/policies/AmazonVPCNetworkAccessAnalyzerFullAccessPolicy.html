@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: June 15, 2023, 22:56 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 15, 2024, 21:40 UTC</p>
+                <p><b>Edited time:</b>  August 14, 2026, 17:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonVPCNetworkAccessAnalyzerFullAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonVPCNetworkAccessAnalyzerFullAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -110,10 +110,14 @@
         "ec2:DescribeTransitGatewayConnects",
         "ec2:DescribeTransitGatewayPeeringAttachments",
         "ec2:DescribeTransitGatewayRouteTables",
+        "ec2:DescribeTransitGatewayPolicyTables",
+        "ec2:GetTransitGatewayPolicyTableEntries",
+        "ec2:GetTransitGatewayPolicyTableAssociations",
         "ec2:DescribeTransitGateways",
         "ec2:DescribeTransitGatewayVpcAttachments",
         "ec2:DescribeVpcEndpoints",
         "ec2:DescribeVpcEndpointServiceConfigurations",
+        "ec2:DescribeAddresses",
         "ec2:DescribeVpcPeeringConnections",
         "ec2:DescribeVpcs",
         "ec2:DescribeVpnConnections",
@@ -173,6 +177,7 @@
       "Effect" : "Allow",
       "Action" : [
         "network-firewall:DescribeFirewall",
+        "network-firewall:DescribeFirewallMetadata",
         "network-firewall:DescribeFirewallPolicy",
         "network-firewall:DescribeResourcePolicy",
         "network-firewall:DescribeRuleGroup",

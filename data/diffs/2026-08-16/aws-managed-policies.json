@@ -1,0 +1,266 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:builderid:CreateInvitation",
+      "aws:allow_action:builderid:DeleteInvitation",
+      "aws:allow_action:builderid:DisassociateCollaborator",
+      "aws:allow_action:builderid:ListInvitations",
+      "aws:allow_action:ec2:DescribeAddresses",
+      "aws:allow_action:ec2:DescribeAddresses",
+      "aws:allow_action:ec2:DescribeAddresses",
+      "aws:allow_action:ec2:DescribeTransitGatewayPolicyTables",
+      "aws:allow_action:ec2:DescribeTransitGatewayPolicyTables",
+      "aws:allow_action:ec2:DescribeTransitGatewayPolicyTables",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableAssociations",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableAssociations",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableAssociations",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableEntries",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableEntries",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableEntries",
+      "aws:allow_action:identitystore:DeleteUser",
+      "aws:allow_action:identitystore:ReserveUser",
+      "aws:allow_action:network-firewall:DescribeFirewallMetadata",
+      "aws:allow_action:network-firewall:DescribeFirewallMetadata",
+      "aws:allow_action:network-firewall:DescribeFirewallMetadata",
+      "aws:allow_action:signin:DeleteResourcePermissionStatement",
+      "aws:allow_action:signin:ListResourcePermissionStatements"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "builderid:CreateInvitation",
+          "builderid:DeleteInvitation",
+          "builderid:DisassociateCollaborator",
+          "builderid:ListInvitations",
+          "ec2:DescribeAddresses",
+          "ec2:DescribeAddresses",
+          "ec2:DescribeAddresses",
+          "ec2:DescribeTransitGatewayPolicyTables",
+          "ec2:DescribeTransitGatewayPolicyTables",
+          "ec2:DescribeTransitGatewayPolicyTables",
+          "ec2:GetTransitGatewayPolicyTableAssociations",
+          "ec2:GetTransitGatewayPolicyTableAssociations",
+          "ec2:GetTransitGatewayPolicyTableAssociations",
+          "ec2:GetTransitGatewayPolicyTableEntries",
+          "ec2:GetTransitGatewayPolicyTableEntries",
+          "ec2:GetTransitGatewayPolicyTableEntries",
+          "identitystore:DeleteUser",
+          "identitystore:ReserveUser",
+          "network-firewall:DescribeFirewallMetadata",
+          "network-firewall:DescribeFirewallMetadata",
+          "network-firewall:DescribeFirewallMetadata",
+          "signin:DeleteResourcePermissionStatement",
+          "signin:ListResourcePermissionStatements"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSManagedSettingsAdminAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "signin:DeleteResourcePermissionStatement",
+              "signin:ListResourcePermissionStatements"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 14, 2026, 20:07 UTC",
+          "before": "August 13, 2026, 22:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 14, 2026, 20:07 UTC",
+          "before": "August 13, 2026, 22:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+    },
+    {
+      "display_name": "AmazonVPCNetworkAccessAnalyzerFullAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeAddresses",
+              "ec2:DescribeTransitGatewayPolicyTables",
+              "ec2:GetTransitGatewayPolicyTableAssociations",
+              "ec2:GetTransitGatewayPolicyTableEntries",
+              "network-firewall:DescribeFirewallMetadata"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 14, 2026, 17:17 UTC",
+          "before": "May 15, 2024, 21:40 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 14, 2026, 17:17 UTC",
+          "before": "May 15, 2024, 21:40 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonVPCNetworkAccessAnalyzerFullAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonVPCNetworkAccessAnalyzerFullAccessPolicy"
+    },
+    {
+      "display_name": "AmazonVPCReachabilityAnalyzerFullAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeAddresses",
+              "ec2:DescribeTransitGatewayPolicyTables",
+              "ec2:GetTransitGatewayPolicyTableAssociations",
+              "ec2:GetTransitGatewayPolicyTableEntries",
+              "network-firewall:DescribeFirewallMetadata"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 14, 2026, 17:07 UTC",
+          "before": "May 15, 2024, 20:47 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 14, 2026, 17:07 UTC",
+          "before": "May 15, 2024, 20:47 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonVPCReachabilityAnalyzerFullAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonVPCReachabilityAnalyzerFullAccessPolicy"
+    },
+    {
+      "display_name": "AWSReachabilityAnalyzerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeAddresses",
+              "ec2:DescribeTransitGatewayPolicyTables",
+              "ec2:GetTransitGatewayPolicyTableAssociations",
+              "ec2:GetTransitGatewayPolicyTableEntries",
+              "network-firewall:DescribeFirewallMetadata"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 14, 2026, 17:17 UTC",
+          "before": "September 10, 2024, 16:04 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 14, 2026, 17:17 UTC",
+          "before": "September 10, 2024, 16:04 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSReachabilityAnalyzerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSReachabilityAnalyzerServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSSupplyChainFederationAdminAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "builderid:CreateInvitation",
+              "builderid:DeleteInvitation",
+              "builderid:DisassociateCollaborator",
+              "builderid:ListInvitations",
+              "identitystore:DeleteUser",
+              "identitystore:ReserveUser"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 14, 2026, 21:07 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 14, 2026, 21:07 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 19,
+          "before": 17,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupplyChainFederationAdminAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSupplyChainFederationAdminAccess"
+    }
+  ],
+  "compared_at_utc": "2026-08-16T04:01:34Z",
+  "counts": {
+    "added_atoms": 23,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 1579,
+    "previous_objects": 1579,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-16",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-15",
+  "removed_objects": []
+}

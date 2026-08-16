@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 23, 2022, 17:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  September 10, 2024, 16:04 UTC</p>
+                <p><b>Edited time:</b>  August 14, 2026, 17:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSReachabilityAnalyzerServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSReachabilityAnalyzerServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -103,7 +103,11 @@
         "ec2:DescribeTransitGatewayRouteTables",
         "ec2:DescribeTransitGatewayVpcAttachments",
         "ec2:DescribeTransitGateways",
+        "ec2:DescribeTransitGatewayPolicyTables",
+        "ec2:GetTransitGatewayPolicyTableEntries",
+        "ec2:GetTransitGatewayPolicyTableAssociations",
         "ec2:DescribeVpcEndpointServiceConfigurations",
+        "ec2:DescribeAddresses",
         "ec2:DescribeVpcEndpoints",
         "ec2:DescribeVpcPeeringConnections",
         "ec2:DescribeVpcs",
@@ -121,6 +125,7 @@
         "elasticloadbalancing:DescribeTargetGroups",
         "elasticloadbalancing:DescribeTargetHealth",
         "network-firewall:DescribeFirewall",
+        "network-firewall:DescribeFirewallMetadata",
         "network-firewall:DescribeFirewallPolicy",
         "network-firewall:DescribeResourcePolicy",
         "network-firewall:DescribeRuleGroup",
