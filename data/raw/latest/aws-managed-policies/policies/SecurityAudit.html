@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:41 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 21, 2026, 17:42 UTC</p>
+                <p><b>Edited time:</b>  August 17, 2026, 15:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SecurityAudit</code></p>
             </li></ul></div>
      
         <h2 id="SecurityAudit-version">Policy version</h2>
-        <p><b>Policy version:</b> v91 (default)</p>
+        <p><b>Policy version:</b> v92 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -144,6 +144,7 @@
         "backup:ListTags",
         "batch:DescribeComputeEnvironments",
         "batch:DescribeJobDefinitions",
+        "bedrock:GetAgent",
         "bedrock:GetAgentAlias",
         "bedrock:GetAgentKnowledgeBase",
         "bedrock:GetCustomModel",
@@ -291,6 +292,7 @@
         "cloudformation:DescribeStack*",
         "cloudformation:GetStackPolicy",
         "cloudformation:GetTemplate",
+        "cloudformation:ListStackResources",
         "cloudformation:ListStack*",
         "cloudfront:Get*",
         "cloudfront:List*",
@@ -528,6 +530,7 @@
         "glue:GetDatabases",
         "glue:GetDataCatalogEncryptionSettings",
         "glue:GetDevEndpoints",
+        "glue:GetJobBookmark",
         "glue:GetJobs",
         "glue:GetResourcePolicy",
         "glue:GetSecurityConfiguration",
@@ -638,6 +641,7 @@
         "lambda:GetFunctionConcurrency",
         "lambda:GetFunctionConfiguration",
         "lambda:GetFunctionEventInvokeConfig",
+        "lambda:GetFunctionUrlConfig",
         "lambda:GetLayerVersionPolicy",
         "lambda:GetPolicy",
         "lambda:GetRuntimeManagementConfig",
@@ -983,6 +987,7 @@
         "sso-directory:ListExternalIdPConfigurationsForDirectory",
         "states:DescribeStateMachine",
         "states:ListStateMachines",
+        "states:ListTagsForResource",
         "storagegateway:DescribeBandwidthRateLimit",
         "storagegateway:DescribeCache",
         "storagegateway:DescribeCachediSCSIVolumes",

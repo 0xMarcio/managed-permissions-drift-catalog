@@ -1,0 +1,79 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:bedrock:GetAgent",
+      "aws:allow_action:cloudformation:ListStackResources",
+      "aws:allow_action:glue:GetJobBookmark",
+      "aws:allow_action:lambda:GetFunctionUrlConfig",
+      "aws:allow_action:states:ListTagsForResource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "bedrock:GetAgent",
+          "cloudformation:ListStackResources",
+          "glue:GetJobBookmark",
+          "lambda:GetFunctionUrlConfig",
+          "states:ListTagsForResource"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "SecurityAudit",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock:GetAgent",
+              "cloudformation:ListStackResources",
+              "glue:GetJobBookmark",
+              "lambda:GetFunctionUrlConfig",
+              "states:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v92 (default)",
+          "before": "v91 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 17, 2026, 15:27 UTC",
+          "before": "July 21, 2026, 17:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 17, 2026, 15:27 UTC",
+          "before": "July 21, 2026, 17:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
+      "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
+    }
+  ],
+  "compared_at_utc": "2026-08-18T04:00:07Z",
+  "counts": {
+    "added_atoms": 5,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1579,
+    "previous_objects": 1579,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-18",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-16",
+  "removed_objects": []
+}
