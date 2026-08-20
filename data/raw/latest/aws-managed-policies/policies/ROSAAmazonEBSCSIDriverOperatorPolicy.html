@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: April 20, 2023, 22:36 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:58 UTC</p>
+                <p><b>Edited time:</b>  August 19, 2026, 05:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/ROSAAmazonEBSCSIDriverOperatorPolicy</code></p>
             </li></ul></div>
      
         <h2 id="ROSAAmazonEBSCSIDriverOperatorPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v6 (default)</p>
+        <p><b>Policy version:</b> v7 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -72,26 +72,167 @@
   "Version" : "2012-10-17",
   "Statement" : [
     <span>{</span>
+      "Sid" : "ReadOnlyDescribeOperations",
       "Effect" : "Allow",
       "Action" : [
+        "ec2:DescribeAvailabilityZones",
         "ec2:DescribeInstances",
+        "ec2:DescribeInstanceTypes",
         "ec2:DescribeSnapshots",
         "ec2:DescribeTags",
         "ec2:DescribeVolumes",
-        "ec2:DescribeVolumesModifications"
+        "ec2:DescribeVolumesModifications",
+        "ec2:DescribeVolumeStatus"
       ],
       "Resource" : "*"
     },
     <span>{</span>
+      "Sid" : "CreateAndCopyVolumesWithManagedTag",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateVolume",
+        "ec2:CopyVolumes"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/red-hat-managed" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CopyManagedVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CopyVolumes"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/vol-*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat-managed" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CopyUserBroughtVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CopyVolumes"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/vol-*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreateSnapshotsWithManagedTag",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateSnapshot"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:snapshot/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/red-hat-managed" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreateSnapshotsFromManagedVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateSnapshot"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat-managed" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreateSnapshotsFromUserBroughtVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateSnapshot"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ManageManagedVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:ModifyVolume",
+        "ec2:AttachVolume",
+        "ec2:DetachVolume",
+        "ec2:DeleteVolume"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat-managed" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ManageUserBroughtVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:ModifyVolume",
+        "ec2:AttachVolume",
+        "ec2:DetachVolume",
+        "ec2:DeleteVolume"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreateVolumesFromAndEnableFSROnManagedSnapshots",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateVolume",
+        "ec2:EnableFastSnapshotRestores"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:snapshot/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat-managed" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreateVolumesFromAndEnableFSROnUserBroughtSnapshots",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateVolume",
+        "ec2:EnableFastSnapshotRestores"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:snapshot/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AttachDetachVolumesToManagedInstances",
       "Effect" : "Allow",
       "Action" : [
         "ec2:AttachVolume",
         "ec2:DetachVolume"
       ],
-      "Resource" : [
-        "arn:aws:ec2:*:*:instance/*",
-        "arn:aws:ec2:*:*:volume/*"
-      ],
+      "Resource" : "arn:aws:ec2:*:*:instance/*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/red-hat-managed" : "true"
@@ -99,14 +240,13 @@
       }
     },
     <span>{</span>
+      "Sid" : "DeleteAndLockManagedSnapshots",
       "Effect" : "Allow",
       "Action" : [
-        "ec2:DeleteVolume",
-        "ec2:ModifyVolume"
+        "ec2:DeleteSnapshot",
+        "ec2:LockSnapshot"
       ],
-      "Resource" : [
-        "arn:aws:ec2:*:*:volume/*"
-      ],
+      "Resource" : "arn:aws:ec2:*:*:snapshot/*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/red-hat-managed" : "true"
@@ -114,74 +254,21 @@
       }
     },
     <span>{</span>
+      "Sid" : "DeleteAndLockUserBroughtSnapshots",
       "Effect" : "Allow",
       "Action" : [
-        "ec2:CreateVolume"
+        "ec2:DeleteSnapshot",
+        "ec2:LockSnapshot"
       ],
-      "Resource" : [
-        "arn:aws:ec2:*:*:volume/*"
-      ],
+      "Resource" : "arn:aws:ec2:*:*:snapshot/*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "aws:RequestTag/red-hat-managed" : "true"
+          "aws:ResourceTag/red-hat" : "true"
         }
       }
     },
     <span>{</span>
-      "Sid" : "CreateVolumeFromSnapshot",
-      "Effect" : "Allow",
-      "Action" : [
-        "ec2:CreateVolume"
-      ],
-      "Resource" : [
-        "arn:aws:ec2:*:*:snapshot/*"
-      ]
-    },
-    <span>{</span>
-      "Sid" : "CreateSnapshotResourceTag",
-      "Effect" : "Allow",
-      "Action" : [
-        "ec2:CreateSnapshot"
-      ],
-      "Resource" : [
-        "arn:aws:ec2:*:*:volume/*"
-      ],
-      "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/red-hat-managed" : "true"
-        }
-      }
-    },
-    <span>{</span>
-      "Sid" : "CreateSnapshotRequestTag",
-      "Effect" : "Allow",
-      "Action" : [
-        "ec2:CreateSnapshot"
-      ],
-      "Resource" : [
-        "arn:aws:ec2:*:*:snapshot/*"
-      ],
-      "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:RequestTag/red-hat-managed" : "true"
-        }
-      }
-    },
-    <span>{</span>
-      "Effect" : "Allow",
-      "Action" : [
-        "ec2:DeleteSnapshot"
-      ],
-      "Resource" : [
-        "arn:aws:ec2:*:*:snapshot/*"
-      ],
-      "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceTag/red-hat-managed" : "true"
-        }
-      }
-    },
-    <span>{</span>
+      "Sid" : "TagResourcesOnCreation",
       "Effect" : "Allow",
       "Action" : [
         "ec2:CreateTags"
@@ -194,8 +281,133 @@
         "StringEquals" : <span>{</span>
           "ec2:CreateAction" : [
             "CreateVolume",
-            "CreateSnapshot"
+            "CreateSnapshot",
+            "CopyVolumes"
           ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ModifyTagsOnManagedVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat-managed" : "true"
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
+        },
+        "ForAllValues:StringNotEquals" : <span>{</span>
+          "aws:TagKeys" : [
+            "red-hat-managed",
+            "ebs.csi.aws.com/cluster",
+            "kubernetes.io/created-for/pvc/name"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ModifyTagsOnUserBroughtVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:volume/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat" : "true"
+        },
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "false"
+        },
+        "ForAllValues:StringNotEquals" : <span>{</span>
+          "aws:TagKeys" : [
+            "red-hat-managed",
+            "red-hat",
+            "ebs.csi.aws.com/cluster",
+            "kubernetes.io/created-for/pvc/name"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "KMSEncryptedVolumes",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat" : "true"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "ec2.*.amazonaws.com"
+        },
+        "Null" : <span>{</span>
+          "kms:EncryptionContextKeys" : false
+        },
+        "ForAllValues:StringEquals" : <span>{</span>
+          "kms:EncryptionContextKeys" : [
+            "aws:ebs:id"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "KMSCreateGrant",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:CreateGrant"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "Bool" : <span>{</span>
+          "kms:GrantIsForAWSResource" : true
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "ec2.*.amazonaws.com"
+        },
+        "StringEquals" : <span>{</span>
+          "kms:GrantConstraintType" : "EncryptionContextSubset",
+          "aws:ResourceTag/red-hat" : "true"
+        },
+        "Null" : <span>{</span>
+          "kms:EncryptionContextKeys" : false
+        },
+        "ForAllValues:StringEquals" : <span>{</span>
+          "kms:GrantOperations" : [
+            "Decrypt",
+            "GenerateDataKeyWithoutPlaintext",
+            "ReEncryptFrom",
+            "ReEncryptTo"
+          ],
+          "kms:EncryptionContextKeys" : [
+            "aws:ebs:id"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DescribeKMSKeysForEBSVolumeEncryption",
+      "Effect" : "Allow",
+      "Action" : "kms:DescribeKey",
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/red-hat" : "true"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "ec2.*.amazonaws.com"
         }
       }
     }
@@ -214,7 +426,7 @@
                 </li><li class="listitem">
                     <p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html">Adding and removing IAM identity permissions</a>
                     </p>
-                </li><li class="listitem"><p><a href="https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html">Understand versioning for IAM policies</a></p>
-            </li><li class="listitem"><p><a href="https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies">Get started with AWS managed policies and move toward least-privilege permissions</a></p>
+                </li><li class="listitem"><p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html">Understand versioning for IAM policies</a></p>
+            </li><li class="listitem"><p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies">Get started with AWS managed policies and move toward least-privilege permissions</a></p>
             </li></ul></div>
     <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="previous" class="prev-link" accesskey="p" href="./ResourceGroupsTaggingAPITagUntagSupportedResources.html">ResourceGroupsTaggingAPITagUntagSupportedResources</div><div id="next" class="next-link" accesskey="n" href="./ROSACloudNetworkConfigOperatorPolicy.html">ROSACloudNetworkConfigOperatorPolicy</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWSManagedPolicies&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-managed-policy/latest/reference/ROSAAmazonEBSCSIDriverOperatorPolicy.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWSManagedPolicies&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-managed-policy/latest/reference/ROSAAmazonEBSCSIDriverOperatorPolicy.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>
