@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: June 23, 2026, 22:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 23, 2026, 22:27 UTC</p>
+                <p><b>Edited time:</b>  August 19, 2026, 22:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsAgentActionsPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsAgentActionsPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -72,19 +72,33 @@
   "Version" : "2012-10-17",
   "Statement" : [
     <span>{</span>
-      "Sid" : "AIDevOpsMutativeAccess",
+      "Sid" : "AIDevOpsElevatedAccess",
+      "Effect" : "Allow",
+      "NotAction" : [
+        "account:*",
+        "cognito-identity:*",
+        "iam:*",
+        "identitystore:*",
+        "organizations:*",
+        "ram:*",
+        "rolesanywhere:*",
+        "sso:*",
+        "sts:*"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AIDevOpsElevatedCarveBacks",
       "Effect" : "Allow",
       "Action" : [
-        "autoscaling:UpdateAutoScalingGroup",
-        "cloudformation:UpdateStack",
-        "cloudwatch:PutMetricAlarm",
-        "ec2:CreateTags",
-        "ec2:ModifyInstanceAttribute",
-        "ecs:UpdateService",
-        "elasticloadbalancing:ModifyTargetGroup",
-        "lambda:UpdateFunctionConfiguration",
-        "logs:PutMetricFilter",
-        "rds:ModifyDBInstance"
+        "account:GetAccountInformation",
+        "account:GetGovCloudAccountInformation",
+        "account:GetPrimaryEmail",
+        "account:ListRegions",
+        "iam:ListRoles",
+        "organizations:DescribeEffectivePolicy",
+        "organizations:DescribeOrganization",
+        "sts:DecodeAuthorizationMessage"
       ],
       "Resource" : "*"
     }
