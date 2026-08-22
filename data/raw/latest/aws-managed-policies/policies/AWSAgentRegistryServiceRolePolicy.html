@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: August 06, 2026, 14:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 06, 2026, 14:27 UTC</p>
+                <p><b>Edited time:</b>  August 21, 2026, 16:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSAgentRegistryServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSAgentRegistryServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -72,6 +72,78 @@
         <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"><awsui-icon name="copy"></awsui-icon></div></div><!--DEBUG: cli (json)--><code class="json "><span>{</span>
   "Version" : "2012-10-17",
   "Statement" : [
+    <span>{</span>
+      "Sid" : "AllowOrganizationsReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "organizations:DescribeAccount",
+        "organizations:DescribeOrganization",
+        "organizations:ListAccounts",
+        "organizations:ListDelegatedAdministrators"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AllowSLRCreationForAWSConfig",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "config.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowConfigRecorderWrite",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:DeleteServiceLinkedConfigurationRecorder",
+        "config:PutServiceLinkedConfigurationRecorder"
+      ],
+      "Resource" : [
+        "*"
+      ],
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "config:ConfigurationRecorderServicePrincipal" : [
+            "agent-registry.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowConfigRecorderRead",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:DescribeConfigurationRecorders",
+        "config:DescribeConfigurationRecorderStatus"
+      ],
+      "Resource" : [
+        "arn:aws:config:*:*:configuration-recorder/AWSConfigurationRecorderForAgentRegistry*"
+      ]
+    },
+    <span>{</span>
+      "Sid" : "AllowRegistryRecordReadWrite",
+      "Effect" : "Allow",
+      "Action" : [
+        "agent-registry:CreateRegistryRecord",
+        "agent-registry:DeleteRegistryRecord",
+        "agent-registry:GetRegistryRecord",
+        "agent-registry:ListRegistryRecords",
+        "agent-registry:UpdateRegistryRecord"
+      ],
+      "Resource" : [
+        "arn:aws:agent-registry:*:*:registry/*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
     <span>{</span>
       "Sid" : "AllowPublishCloudWatchMetrics",
       "Effect" : "Allow",

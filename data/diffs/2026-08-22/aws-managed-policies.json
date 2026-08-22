@@ -1,0 +1,182 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:agent-registry:CreateRegistryRecord",
+      "aws:allow_action:agent-registry:DeleteRegistryRecord",
+      "aws:allow_action:agent-registry:GetRegistryRecord",
+      "aws:allow_action:agent-registry:ListRegistryRecords",
+      "aws:allow_action:agent-registry:UpdateRegistryRecord",
+      "aws:allow_action:config:DeleteServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:DescribeConfigurationRecorderStatus",
+      "aws:allow_action:config:DescribeConfigurationRecorders",
+      "aws:allow_action:config:PutServiceLinkedConfigurationRecorder",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:organizations:ListDelegatedAdministrators",
+      "aws:allow_action:wafv2:ListWebACLs"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "agent-registry:CreateRegistryRecord",
+          "agent-registry:DeleteRegistryRecord",
+          "agent-registry:GetRegistryRecord",
+          "agent-registry:ListRegistryRecords",
+          "agent-registry:UpdateRegistryRecord",
+          "config:DeleteServiceLinkedConfigurationRecorder",
+          "config:DescribeConfigurationRecorderStatus",
+          "config:DescribeConfigurationRecorders",
+          "config:PutServiceLinkedConfigurationRecorder",
+          "iam:CreateServiceLinkedRole",
+          "organizations:DescribeAccount",
+          "organizations:DescribeOrganization",
+          "organizations:ListAccounts",
+          "organizations:ListDelegatedAdministrators",
+          "wafv2:ListWebACLs"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonEKSLoadBalancingPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "wafv2:ListWebACLs"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 20, 2026, 23:07 UTC",
+          "before": "June 16, 2026, 00:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 20, 2026, 23:07 UTC",
+          "before": "June 16, 2026, 00:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
+    },
+    {
+      "display_name": "AWSAgentRegistryServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "agent-registry:CreateRegistryRecord",
+              "agent-registry:DeleteRegistryRecord",
+              "agent-registry:GetRegistryRecord",
+              "agent-registry:ListRegistryRecords",
+              "agent-registry:UpdateRegistryRecord",
+              "config:DeleteServiceLinkedConfigurationRecorder",
+              "config:DescribeConfigurationRecorderStatus",
+              "config:DescribeConfigurationRecorders",
+              "config:PutServiceLinkedConfigurationRecorder",
+              "iam:CreateServiceLinkedRole",
+              "organizations:DescribeAccount",
+              "organizations:DescribeOrganization",
+              "organizations:ListAccounts",
+              "organizations:ListDelegatedAdministrators"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 21, 2026, 16:57 UTC",
+          "before": "August 06, 2026, 14:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 21, 2026, 16:57 UTC",
+          "before": "August 06, 2026, 14:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 6,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAgentRegistryServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAgentRegistryServiceRolePolicy"
+    },
+    {
+      "display_name": "AmazonInspector2AgentlessServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 20, 2026, 19:17 UTC",
+          "before": "November 20, 2023, 15:18 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 20, 2026, 19:17 UTC",
+          "before": "November 20, 2023, 15:18 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 15,
+          "before": 12,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2AgentlessServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2AgentlessServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-08-22T03:58:23Z",
+  "counts": {
+    "added_atoms": 15,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1582,
+    "previous_objects": 1582,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-22",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-21",
+  "removed_objects": []
+}

@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 20, 2023, 15:18 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 20, 2023, 15:18 UTC</p>
+                <p><b>Edited time:</b>  August 20, 2026, 19:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2AgentlessServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonInspector2AgentlessServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -207,6 +207,50 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "ec2.*.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DecryptCrossAccountOrgVolContext",
+      "Effect" : "Allow",
+      "Action" : "kms:Decrypt",
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceOrgID" : "$<span>{</span>aws:PrincipalOrgID}"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "ec2.*.amazonaws.com",
+          "kms:EncryptionContext:aws:ebs:id" : "vol-*"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DecryptCrossAccountOrgSnapContext",
+      "Effect" : "Allow",
+      "Action" : "kms:Decrypt",
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceOrgID" : "$<span>{</span>aws:PrincipalOrgID}"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "ec2.*.amazonaws.com",
+          "kms:EncryptionContext:aws:ebs:id" : "snap-*"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DescribeCrossAccountOrgKeysForEbsOperations",
+      "Effect" : "Allow",
+      "Action" : "kms:DescribeKey",
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceOrgID" : "$<span>{</span>aws:PrincipalOrgID}"
         },
         "StringLike" : <span>{</span>
           "kms:ViaService" : "ec2.*.amazonaws.com"
