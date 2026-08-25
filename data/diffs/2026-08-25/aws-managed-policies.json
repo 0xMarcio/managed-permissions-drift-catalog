@@ -1,0 +1,221 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteNetworkInterface",
+        "aws:allow_action:ec2:DescribeDhcpOptions",
+        "aws:allow_action:ec2:DescribeNetworkInterfaces",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:ec2:ModifyNetworkInterfaceAttribute"
+      ],
+      "display_name": "AIDevOpsReleaseManagementVPCPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsReleaseManagementVPCPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsReleaseManagementVPCPolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:ec2:AssociateTrunkInterface",
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteNetworkInterface",
+      "aws:allow_action:ec2:DescribeDhcpOptions",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeTrunkInterfaceAssociations",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ec2:DisassociateTrunkInterface",
+      "aws:allow_action:ec2:ModifyNetworkInterfaceAttribute",
+      "aws:allow_action:organizations:ListDelegatedAdministrators",
+      "aws:allow_action:organizations:ListPolicies"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:UntagResource",
+          "ec2:AssociateTrunkInterface",
+          "ec2:CreateNetworkInterface",
+          "ec2:CreateNetworkInterfacePermission",
+          "ec2:CreateTags",
+          "ec2:DeleteNetworkInterface",
+          "ec2:DescribeDhcpOptions",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeTrunkInterfaceAssociations",
+          "ec2:DescribeVpcs",
+          "ec2:DisassociateTrunkInterface",
+          "ec2:ModifyNetworkInterfaceAttribute",
+          "organizations:ListDelegatedAdministrators",
+          "organizations:ListPolicies"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSManagedSettingsReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "organizations:ListDelegatedAdministrators",
+              "organizations:ListPolicies"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 21, 2026, 18:07 UTC",
+          "before": "July 23, 2026, 00:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 21, 2026, 18:07 UTC",
+          "before": "July 23, 2026, 00:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsReadOnlyAccess"
+    },
+    {
+      "display_name": "AmazonDataZoneRedshiftGlueProvisioningPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 21, 2026, 22:27 UTC",
+          "before": "October 23, 2024, 18:29 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 21, 2026, 22:27 UTC",
+          "before": "October 23, 2024, 18:29 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneRedshiftGlueProvisioningPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneRedshiftGlueProvisioningPolicy"
+    },
+    {
+      "display_name": "AmazonEKSNetworkingPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:AssociateTrunkInterface",
+              "ec2:DisassociateTrunkInterface"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 21, 2026, 17:27 UTC",
+          "before": "February 20, 2026, 19:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 21, 2026, 17:27 UTC",
+          "before": "February 20, 2026, 19:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 6,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSNetworkingPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEKSNetworkingPolicy"
+    },
+    {
+      "display_name": "AmazonEKSServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeTrunkInterfaceAssociations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v27 (default)",
+          "before": "v26 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 21, 2026, 17:17 UTC",
+          "before": "July 10, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 21, 2026, 17:17 UTC",
+          "before": "July 10, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-08-25T04:02:26Z",
+  "counts": {
+    "added_atoms": 16,
+    "added_objects": 1,
+    "changed_objects": 4,
+    "current_objects": 1583,
+    "previous_objects": 1582,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-25",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-22",
+  "removed_objects": []
+}

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: October 28, 2024, 22:34 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 20, 2026, 19:12 UTC</p>
+                <p><b>Edited time:</b>  August 21, 2026, 17:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonEKSNetworkingPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonEKSNetworkingPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -85,7 +85,12 @@
         "ForAllValues:StringEquals" : <span>{</span>
           "aws:TagKeys" : [
             "eks:eks-cluster-name",
-            "eks:kubernetes-cni-node-name"
+            "eks:kubernetes-cni-node-name",
+            "sgp.eks.amazonaws.com/instance-id",
+            "sgp.eks.amazonaws.com/trunk-eni-id",
+            "sgp.eks.amazonaws.com/vlan-id",
+            "sgp.eks.amazonaws.com/managed",
+            "sgp.eks.amazonaws.com/policy-ref"
           ]
         }
       }
@@ -137,6 +142,14 @@
           "aws:ResourceTag/eks:eks-cluster-name" : "$<span>{</span>aws:PrincipalTag/eks:eks-cluster-name}"
         }
       }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:AssociateTrunkInterface",
+        "ec2:DisassociateTrunkInterface"
+      ],
+      "Resource" : "*"
     }
   ]
 }</code></pre>
