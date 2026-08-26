@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:58 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 04, 2026, 21:27 UTC</p>
+                <p><b>Edited time:</b>  August 24, 2026, 20:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectProvisioningRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v81 (default)</p>
+        <p><b>Policy version:</b> v82 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -76,7 +76,8 @@
       "Effect" : "Allow",
       "Action" : [
         "cloudformation:CreateStack",
-        "cloudformation:TagResource"
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
       ],
       "Resource" : [
         "arn:aws:cloudformation:*:*:stack/DataZone*"
@@ -2018,15 +2019,14 @@
       }
     },
     <span>{</span>
-      "Sid" : "SMAppDelete",
+      "Sid" : "SMApp",
       "Effect" : "Allow",
-      "Action" : "sagemaker:DeleteApp",
-      "Resource" : [
-        "arn:aws:sagemaker:*:*:app/*/*/codeeditor/*",
-        "arn:aws:sagemaker:*:*:app/*/*/CodeEditor/*",
-        "arn:aws:sagemaker:*:*:app/*/*/jupyterlab/*",
-        "arn:aws:sagemaker:*:*:app/*/*/JupyterLab/*"
+      "Action" : [
+        "sagemaker:CreateApp",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteApp"
       ],
+      "Resource" : "arn:aws:sagemaker:*:*:app/*",
       "Condition" : <span>{</span>
         "Null" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "false"

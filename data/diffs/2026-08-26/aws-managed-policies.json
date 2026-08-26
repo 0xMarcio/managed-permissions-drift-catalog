@@ -1,0 +1,263 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:ec2:DescribeTransitGatewayPeeringAttachments",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:GetRole",
+      "aws:allow_action:s3:ListTagsForResource",
+      "aws:allow_action:sagemaker:CreateApp",
+      "aws:allow_action:supportplans:AcceptSupportAgreement",
+      "aws:allow_action:supportplans:CancelSupportAgreement",
+      "aws:allow_action:supportplans:CreateSupportAgreement",
+      "aws:allow_action:supportplans:GetSupportAgreement",
+      "aws:allow_action:supportplans:GetSupportAgreement",
+      "aws:allow_action:supportplans:ListSupportAgreementRevisions",
+      "aws:allow_action:supportplans:ListSupportAgreementRevisions",
+      "aws:allow_action:supportplans:ListSupportAgreements",
+      "aws:allow_action:supportplans:ListSupportAgreements",
+      "aws:allow_action:supportplans:RejectSupportAgreement",
+      "aws:allow_action:supportplans:UpdateSupportAgreement"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:UntagResource",
+          "ec2:DescribeTransitGatewayPeeringAttachments",
+          "iam:CreateServiceLinkedRole",
+          "iam:GetRole",
+          "s3:ListTagsForResource",
+          "sagemaker:CreateApp",
+          "supportplans:AcceptSupportAgreement",
+          "supportplans:CancelSupportAgreement",
+          "supportplans:CreateSupportAgreement",
+          "supportplans:GetSupportAgreement",
+          "supportplans:GetSupportAgreement",
+          "supportplans:ListSupportAgreementRevisions",
+          "supportplans:ListSupportAgreementRevisions",
+          "supportplans:ListSupportAgreements",
+          "supportplans:ListSupportAgreements",
+          "supportplans:RejectSupportAgreement",
+          "supportplans:UpdateSupportAgreement"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSBackupServiceRolePolicyForS3Backup",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "s3:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 24, 2026, 18:17 UTC",
+          "before": "May 17, 2024, 17:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 24, 2026, 18:17 UTC",
+          "before": "May 17, 2024, 17:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 9,
+          "before": 8,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Backup.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSBackupServiceRolePolicyForS3Backup"
+    },
+    {
+      "display_name": "AWSSupportPlansFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:CreateServiceLinkedRole",
+              "iam:GetRole",
+              "supportplans:AcceptSupportAgreement",
+              "supportplans:CancelSupportAgreement",
+              "supportplans:CreateSupportAgreement",
+              "supportplans:GetSupportAgreement",
+              "supportplans:ListSupportAgreementRevisions",
+              "supportplans:ListSupportAgreements",
+              "supportplans:RejectSupportAgreement",
+              "supportplans:UpdateSupportAgreement"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 24, 2026, 18:27 UTC",
+          "before": "September 09, 2024, 21:15 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 24, 2026, 18:27 UTC",
+          "before": "September 09, 2024, 21:15 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 3,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportPlansFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSSupportPlansFullAccess"
+    },
+    {
+      "display_name": "AWSSupportPlansReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "supportplans:GetSupportAgreement",
+              "supportplans:ListSupportAgreementRevisions",
+              "supportplans:ListSupportAgreements"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 24, 2026, 18:17 UTC",
+          "before": "September 09, 2024, 21:21 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 24, 2026, 18:17 UTC",
+          "before": "September 09, 2024, 21:21 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportPlansReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSSupportPlansReadOnlyAccess"
+    },
+    {
+      "display_name": "CloudWatchNetworkMonitorServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeTransitGatewayPeeringAttachments"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 25, 2026, 13:27 UTC",
+          "before": "December 12, 2025, 22:04 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 25, 2026, 13:27 UTC",
+          "before": "December 12, 2025, 22:04 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchNetworkMonitorServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CloudWatchNetworkMonitorServiceRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:UntagResource",
+              "sagemaker:CreateApp"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v82 (default)",
+          "before": "v81 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 24, 2026, 20:37 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 24, 2026, 20:37 UTC",
+          "before": "June 04, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-08-26T04:04:55Z",
+  "counts": {
+    "added_atoms": 17,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 1583,
+    "previous_objects": 1583,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-26",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-25",
+  "removed_objects": []
+}

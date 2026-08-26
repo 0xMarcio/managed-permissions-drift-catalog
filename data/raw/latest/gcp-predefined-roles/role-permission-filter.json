@@ -47,7 +47,7 @@
     },
     {
       "title": "Flow",
-      "name": "aisandbox.googleapis.com, flow.googleapis.com",
+      "name": "flow.googleapis.com, aisandbox.googleapis.com",
       "url": "/iam/docs/roles-permissions/flow"
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "anthosservicemesh.googleapis.com, meshdataplane.googleapis.com, trafficdirector.googleapis.com, meshconfig.googleapis.com",
+      "name": "anthosservicemesh.googleapis.com, meshdataplane.googleapis.com, meshconfig.googleapis.com, trafficdirector.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "title": "API Gateway",
-      "name": "apigateway.googleapis.com, apigateway.management.googleapis.com",
+      "name": "apigateway.management.googleapis.com, apigateway.googleapis.com",
       "url": "/iam/docs/roles-permissions/apigateway"
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "title": "Google Workspace Marketplace",
-      "name": "appmetadata.googleapis.com, workspacemarketplace.googleapis.com",
+      "name": "workspacemarketplace.googleapis.com, appmetadata.googleapis.com",
       "url": "/iam/docs/roles-permissions/workspacemarketplace"
     },
     {
@@ -397,7 +397,7 @@
     },
     {
       "title": "Cloud Deployment Manager",
-      "name": "deploymentmanager.googleapis.com, clouddeploymentmanager.googleapis.com",
+      "name": "clouddeploymentmanager.googleapis.com, deploymentmanager.googleapis.com",
       "url": "/iam/docs/roles-permissions/deploymentmanager"
     },
     {
@@ -422,7 +422,7 @@
     },
     {
       "title": "Cloud Key Management Service",
-      "name": "cloudkms.googleapis.com, cloudkmskacls.googleapis.com",
+      "name": "cloudkmskacls.googleapis.com, cloudkms.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudkms"
     },
     {
@@ -532,7 +532,7 @@
     },
     {
       "title": "Commerce Price Management",
-      "name": "commercepricemanagement.googleapis.com, commerceprice.googleapis.com",
+      "name": "commerceprice.googleapis.com, commercepricemanagement.googleapis.com",
       "url": "/iam/docs/roles-permissions/commercepricemanagement"
     },
     {
@@ -892,12 +892,12 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "cloudmessaging.googleapis.com, firebasenotifications.googleapis.com, firebasecloudmessaging.googleapis.com",
+      "name": "cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com, firebasenotifications.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
       "title": "Firebase Crashlytics",
-      "name": "firebasecrashlytics.googleapis.com, firebasecrash.googleapis.com",
+      "name": "firebasecrash.googleapis.com, firebasecrashlytics.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecrash"
     },
     {
@@ -1027,7 +1027,7 @@
     },
     {
       "title": "Cloud Life Sciences",
-      "name": "genomics.googleapis.com, lifesciences.googleapis.com",
+      "name": "lifesciences.googleapis.com, genomics.googleapis.com",
       "url": "/iam/docs/roles-permissions/lifesciences"
     },
     {
@@ -1247,7 +1247,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "monitoring.googleapis.com, stackdriver.googleapis.com, opsconfigmonitoring.googleapis.com",
+      "name": "monitoring.googleapis.com, opsconfigmonitoring.googleapis.com, stackdriver.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1282,7 +1282,7 @@
     },
     {
       "title": "NetApp Cloud Volumes Service",
-      "name": "netappcloudvolumes.googleapis.com, cloudvolumesgcp.api.netapp.com",
+      "name": "cloudvolumesgcp.api.netapp.com, netappcloudvolumes.googleapis.com",
       "url": "/iam/docs/roles-permissions/netappcloudvolumes"
     },
     {
@@ -2351,6 +2351,12 @@
       "title": "Analytics Hub Publisher",
       "name": "roles/analyticshub.publisher",
       "url": "/iam/docs/roles-permissions/analyticshub#analyticshub.publisher",
+      "priority": 2
+    },
+    {
+      "title": "Analytics Hub Service Agent",
+      "name": "roles/analyticshub.serviceAgent",
+      "url": "/iam/docs/roles-permissions/analyticshub#analyticshub.serviceAgent",
       "priority": 2
     },
     {
@@ -35218,6 +35224,10 @@
       "url": "/iam/docs/roles-permissions/compute#compute.instances.getShieldedVmIdentity"
     },
     {
+      "title": "compute.instances.getVmExtensionState",
+      "url": "/iam/docs/roles-permissions/compute#compute.instances.getVmExtensionState"
+    },
+    {
       "title": "compute.instances.list",
       "url": "/iam/docs/roles-permissions/compute#compute.instances.list"
     },
@@ -35232,6 +35242,10 @@
     {
       "title": "compute.instances.listTagBindings",
       "url": "/iam/docs/roles-permissions/compute#compute.instances.listTagBindings"
+    },
+    {
+      "title": "compute.instances.listVmExtensionStates",
+      "url": "/iam/docs/roles-permissions/compute#compute.instances.listVmExtensionStates"
     },
     {
       "title": "compute.instances.osAdminLogin",
@@ -47210,6 +47224,10 @@
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.ideaForgeInstances.start"
     },
     {
+      "title": "discoveryengine.ideaForgeInstances.stop",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.ideaForgeInstances.stop"
+    },
+    {
       "title": "discoveryengine.identityMappingStores.create",
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.identityMappingStores.create"
     },
@@ -53880,6 +53898,10 @@
     {
       "title": "iap.projects.updateSettings",
       "url": "/iam/docs/roles-permissions/iap#iap.projects.updateSettings"
+    },
+    {
+      "title": "iap.resources.egressViaIAP",
+      "url": "/iam/docs/roles-permissions/iap#iap.resources.egressViaIAP"
     },
     {
       "title": "iap.tunnel.getIamPolicy",
@@ -61106,22 +61128,6 @@
       "url": "/iam/docs/roles-permissions/policysimulator#policysimulator.accessPolicySimulations.list"
     },
     {
-      "title": "policysimulator.activityBacktestResults.search",
-      "url": "/iam/docs/roles-permissions/policysimulator#policysimulator.activityBacktestResults.search"
-    },
-    {
-      "title": "policysimulator.activityBacktests.evaluateRabPolicy",
-      "url": "/iam/docs/roles-permissions/policysimulator#policysimulator.activityBacktests.evaluateRabPolicy"
-    },
-    {
-      "title": "policysimulator.activityBacktests.list",
-      "url": "/iam/docs/roles-permissions/policysimulator#policysimulator.activityBacktests.list"
-    },
-    {
-      "title": "policysimulator.activityBacktests.viewRabPolicy",
-      "url": "/iam/docs/roles-permissions/policysimulator#policysimulator.activityBacktests.viewRabPolicy"
-    },
-    {
       "title": "policysimulator.orgPolicyViolations.list",
       "url": "/iam/docs/roles-permissions/policysimulator#policysimulator.orgPolicyViolations.list"
     },
@@ -64838,6 +64844,14 @@
       "url": "/iam/docs/roles-permissions/roads#roads.selectedRoutes.batchCreate"
     },
     {
+      "title": "roads.selectedRoutes.batchDelete",
+      "url": "/iam/docs/roles-permissions/roads#roads.selectedRoutes.batchDelete"
+    },
+    {
+      "title": "roads.selectedRoutes.batchUpdate",
+      "url": "/iam/docs/roles-permissions/roads#roads.selectedRoutes.batchUpdate"
+    },
+    {
       "title": "roads.selectedRoutes.create",
       "url": "/iam/docs/roles-permissions/roads#roads.selectedRoutes.create"
     },
@@ -64852,6 +64866,10 @@
     {
       "title": "roads.selectedRoutes.list",
       "url": "/iam/docs/roles-permissions/roads#roads.selectedRoutes.list"
+    },
+    {
+      "title": "roads.selectedRoutes.update",
+      "url": "/iam/docs/roles-permissions/roads#roads.selectedRoutes.update"
     },
     {
       "title": "routeoptimization.locations.use",
@@ -65000,6 +65018,10 @@
     {
       "title": "run.locations.list",
       "url": "/iam/docs/roles-permissions/run#run.locations.list"
+    },
+    {
+      "title": "run.locations.uploadSource",
+      "url": "/iam/docs/roles-permissions/run#run.locations.uploadSource"
     },
     {
       "title": "run.operations.delete",

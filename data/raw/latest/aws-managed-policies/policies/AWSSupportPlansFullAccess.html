@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: September 27, 2022, 18:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  September 09, 2024, 21:15 UTC</p>
+                <p><b>Edited time:</b>  August 24, 2026, 18:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSSupportPlansFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSSupportPlansFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -78,9 +78,32 @@
         "supportplans:GetSupportPlanUpdateStatus",
         "supportplans:ListSupportPlanModifiers",
         "supportplans:StartSupportPlanUpdate",
-        "supportplans:CreateSupportPlanSchedule"
+        "supportplans:CreateSupportPlanSchedule",
+        "supportplans:AcceptSupportAgreement",
+        "supportplans:CancelSupportAgreement",
+        "supportplans:CreateSupportAgreement",
+        "supportplans:GetSupportAgreement",
+        "supportplans:ListSupportAgreements",
+        "supportplans:ListSupportAgreementRevisions",
+        "supportplans:RejectSupportAgreement",
+        "supportplans:UpdateSupportAgreement"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/supportplans.amazonaws.com/AWSServiceRoleForSupportPlans",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "supportplans.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "iam:GetRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/supportplans.amazonaws.com/AWSServiceRoleForSupportPlans"
     }
   ]
 }</code></pre>
