@@ -1,0 +1,150 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:ecs:UpdateCluster",
+      "aws:allow_action:support:AddAttachmentsToSet"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:TagResource",
+          "cloudformation:UntagResource",
+          "ecs:UpdateCluster",
+          "support:AddAttachmentsToSet"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSAccountSettingsManagementRole",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "support:AddAttachmentsToSet"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 26, 2026, 01:07 UTC",
+          "before": "July 08, 2026, 19:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 26, 2026, 01:07 UTC",
+          "before": "July 08, 2026, 19:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+    },
+    {
+      "display_name": "SecretsManagerReadWrite",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 25, 2026, 23:37 UTC",
+          "before": "February 22, 2024, 18:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 25, 2026, 23:37 UTC",
+          "before": "February 22, 2024, 18:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecretsManagerReadWrite.html",
+      "stable_id": "arn:aws:iam::aws:policy/SecretsManagerReadWrite"
+    },
+    {
+      "display_name": "AWSBatchServiceRole",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ecs:UpdateCluster"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v14 (default)",
+          "before": "v13 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 25, 2026, 22:27 UTC",
+          "before": "December 05, 2023, 18:49 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 25, 2026, 22:27 UTC",
+          "before": "December 05, 2023, 18:49 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchServiceRole.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSBatchServiceRole"
+    }
+  ],
+  "compared_at_utc": "2026-08-27T14:16:32Z",
+  "counts": {
+    "added_atoms": 4,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1583,
+    "previous_objects": 1583,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-27",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-26",
+  "removed_objects": []
+}
