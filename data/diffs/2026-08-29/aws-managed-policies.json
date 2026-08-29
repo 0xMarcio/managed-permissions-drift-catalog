@@ -1,0 +1,249 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:bedrock-agentcore:GetPolicyGeneration",
+      "aws:allow_action:bedrock-agentcore:GetPolicyGeneration",
+      "aws:allow_action:bedrock-agentcore:ListPolicyGenerations",
+      "aws:allow_action:bedrock-agentcore:ListPolicyGenerations",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:ec2:DescribeAvailabilityZones",
+      "aws:allow_action:glue:RefreshOAuth2Tokens",
+      "aws:allow_action:sagemaker:DescribeComputeQuota",
+      "aws:allow_action:sagemaker:DescribeComputeQuota",
+      "aws:allow_action:sagemaker:DescribePipelineExecution",
+      "aws:allow_action:sagemaker:DescribePipelineExecution",
+      "aws:allow_action:sagemaker:DescribeTrainingPlan",
+      "aws:allow_action:sagemaker:DescribeTrainingPlan",
+      "aws:allow_action:sagemaker:ListComputeQuotas",
+      "aws:allow_action:sagemaker:ListComputeQuotas",
+      "aws:allow_action:sagemaker:ListPipelineExecutions",
+      "aws:allow_action:sagemaker:ListPipelineExecutions",
+      "aws:allow_action:sagemaker:ListTrainingPlans",
+      "aws:allow_action:sagemaker:ListTrainingPlans"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "bedrock-agentcore:GetPolicyGeneration",
+          "bedrock-agentcore:GetPolicyGeneration",
+          "bedrock-agentcore:ListPolicyGenerations",
+          "bedrock-agentcore:ListPolicyGenerations",
+          "cloudformation:UntagResource",
+          "ec2:DescribeAvailabilityZones",
+          "glue:RefreshOAuth2Tokens",
+          "sagemaker:DescribeComputeQuota",
+          "sagemaker:DescribeComputeQuota",
+          "sagemaker:DescribePipelineExecution",
+          "sagemaker:DescribePipelineExecution",
+          "sagemaker:DescribeTrainingPlan",
+          "sagemaker:DescribeTrainingPlan",
+          "sagemaker:ListComputeQuotas",
+          "sagemaker:ListComputeQuotas",
+          "sagemaker:ListPipelineExecutions",
+          "sagemaker:ListPipelineExecutions",
+          "sagemaker:ListTrainingPlans",
+          "sagemaker:ListTrainingPlans"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "glue:RefreshOAuth2Tokens"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v75 (default)",
+          "before": "v74 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 27, 2026, 20:57 UTC",
+          "before": "August 11, 2026, 20:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 27, 2026, 20:57 UTC",
+          "before": "August 11, 2026, 20:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    },
+    {
+      "display_name": "AWSConfigServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GetPolicyGeneration",
+              "bedrock-agentcore:ListPolicyGenerations",
+              "sagemaker:DescribeComputeQuota",
+              "sagemaker:DescribePipelineExecution",
+              "sagemaker:DescribeTrainingPlan",
+              "sagemaker:ListComputeQuotas",
+              "sagemaker:ListPipelineExecutions",
+              "sagemaker:ListTrainingPlans"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v95 (default)",
+          "before": "v94 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 27, 2026, 22:07 UTC",
+          "before": "July 30, 2026, 23:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 27, 2026, 22:07 UTC",
+          "before": "July 30, 2026, 23:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSServiceRolePolicyForWorkspacesInstances",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeAvailabilityZones"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 27, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 23:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 27, 2026, 18:57 UTC",
+          "before": "June 29, 2026, 23:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRolePolicyForWorkspacesInstances.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForWorkspacesInstances"
+    },
+    {
+      "display_name": "AWSBackupServiceRolePolicyForRestores",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v36 (default)",
+          "before": "v35 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 27, 2026, 23:57 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 27, 2026, 23:57 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForRestores"
+    },
+    {
+      "display_name": "AWS_ConfigRole",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GetPolicyGeneration",
+              "bedrock-agentcore:ListPolicyGenerations",
+              "sagemaker:DescribeComputeQuota",
+              "sagemaker:DescribePipelineExecution",
+              "sagemaker:DescribeTrainingPlan",
+              "sagemaker:ListComputeQuotas",
+              "sagemaker:ListPipelineExecutions",
+              "sagemaker:ListTrainingPlans"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v72 (default)",
+          "before": "v71 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 27, 2026, 22:07 UTC",
+          "before": "July 30, 2026, 23:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 27, 2026, 22:07 UTC",
+          "before": "July 30, 2026, 23:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
+    }
+  ],
+  "compared_at_utc": "2026-08-29T10:08:56Z",
+  "counts": {
+    "added_atoms": 19,
+    "added_objects": 0,
+    "changed_objects": 5,
+    "current_objects": 1585,
+    "previous_objects": 1585,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-08-29",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-28",
+  "removed_objects": []
+}

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: January 12, 2019, 00:23 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:57 UTC</p>
+                <p><b>Edited time:</b>  August 27, 2026, 23:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForRestores</code></p>
             </li></ul></div>
      
         <h2 id="AWSBackupServiceRolePolicyForRestores-version">Policy version</h2>
-        <p><b>Policy version:</b> v35 (default)</p>
+        <p><b>Policy version:</b> v36 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -470,7 +470,8 @@
       "Action" : [
         "cloudformation:CreateChangeSet",
         "cloudformation:DescribeChangeSet",
-        "cloudformation:TagResource"
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
       ],
       "Resource" : "arn:aws:cloudformation:*:*:*/*/*"
     },
@@ -602,8 +603,8 @@
       "Resource" : "arn:aws:eks:*:*:access-entry/*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
-          "eks:policyArn" : "arn:aws:eks::aws:cluster-access-policy/AWSBackupFullAccessPolicyForRestore",
-          "eks:accessScope" : "cluster"
+          "eks:accessScope" : "cluster",
+          "eks:policyArn" : "arn:aws:eks::aws:cluster-access-policy/AWSBackupFullAccessPolicyForRestore"
         }
       }
     },

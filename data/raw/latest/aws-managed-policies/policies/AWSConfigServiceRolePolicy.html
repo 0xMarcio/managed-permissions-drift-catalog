@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: May 30, 2018, 23:31 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 30, 2026, 23:27 UTC</p>
+                <p><b>Edited time:</b>  August 27, 2026, 22:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSConfigServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v94 (default)</p>
+        <p><b>Policy version:</b> v95 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -319,6 +319,7 @@
         "bedrock-agentcore:GetPolicy",
         "bedrock-agentcore:GetPolicyEngine",
         "bedrock-agentcore:GetPolicyEngineSummary",
+        "bedrock-agentcore:GetPolicyGeneration",
         "bedrock-agentcore:GetPolicySummary",
         "bedrock-agentcore:GetTokenVault",
         "bedrock-agentcore:GetWorkloadIdentity",
@@ -337,6 +338,7 @@
         "bedrock-agentcore:ListPolicies",
         "bedrock-agentcore:ListPolicyEngines",
         "bedrock-agentcore:ListPolicyEngineSummaries",
+        "bedrock-agentcore:ListPolicyGenerations",
         "bedrock-agentcore:ListPolicySummaries",
         "bedrock-agentcore:ListTagsForResource",
         "bedrock-agentcore:ListWorkloadIdentities",
@@ -1237,14 +1239,7 @@
         "iotevents:ListDetectorModels",
         "iotevents:ListInputs",
         "iotevents:ListTagsForResource",
-        "iotfleethub:DescribeApplication"
-      ],
-      "Resource" : "*"
-    },
-    <span>{</span>
-      "Sid" : "AWSConfigServiceRolePolicyStatementID2",
-      "Effect" : "Allow",
-      "Action" : [
+        "iotfleethub:DescribeApplication",
         "iotfleethub:ListApplications",
         "iotfleetwise:GetCampaign",
         "iotfleetwise:GetDecoderManifest",
@@ -1253,7 +1248,14 @@
         "iotfleetwise:GetSignalCatalog",
         "iotfleetwise:GetStateTemplate",
         "iotfleetwise:GetVehicle",
-        "iotfleetwise:ListCampaigns",
+        "iotfleetwise:ListCampaigns"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AWSConfigServiceRolePolicyStatementID2",
+      "Effect" : "Allow",
+      "Action" : [
         "iotfleetwise:ListDecoderManifestNetworkInterfaces",
         "iotfleetwise:ListDecoderManifests",
         "iotfleetwise:ListDecoderManifestSignals",
@@ -2041,6 +2043,7 @@
         "sagemaker:DescribeCluster",
         "sagemaker:DescribeClusterSchedulerConfig",
         "sagemaker:DescribeCodeRepository",
+        "sagemaker:DescribeComputeQuota",
         "sagemaker:DescribeContext",
         "sagemaker:DescribeDataQualityJobDefinition",
         "sagemaker:DescribeDeviceFleet",
@@ -2074,11 +2077,13 @@
         "sagemaker:DescribeOptimizationJob",
         "sagemaker:DescribePartnerApp",
         "sagemaker:DescribePipeline",
+        "sagemaker:DescribePipelineExecution",
         "sagemaker:DescribeProcessingJob",
         "sagemaker:DescribeProject",
         "sagemaker:DescribeSpace",
         "sagemaker:DescribeStudioLifecycleConfig",
         "sagemaker:DescribeTrainingJob",
+        "sagemaker:DescribeTrainingPlan",
         "sagemaker:DescribeTrial",
         "sagemaker:DescribeTrialComponent",
         "sagemaker:DescribeUserProfile",
@@ -2094,6 +2099,7 @@
         "sagemaker:ListClusters",
         "sagemaker:ListClusterSchedulerConfigs",
         "sagemaker:ListCodeRepositories",
+        "sagemaker:ListComputeQuotas",
         "sagemaker:ListContexts",
         "sagemaker:ListDataQualityJobDefinitions",
         "sagemaker:ListDeviceFleets",
@@ -2128,6 +2134,7 @@
         "sagemaker:ListNotebookInstances",
         "sagemaker:ListOptimizationJobs",
         "sagemaker:ListPartnerApps",
+        "sagemaker:ListPipelineExecutions",
         "sagemaker:ListPipelines",
         "sagemaker:ListProcessingJobs",
         "sagemaker:ListProjects",
@@ -2135,6 +2142,7 @@
         "sagemaker:ListStudioLifecycleConfigs",
         "sagemaker:ListTags",
         "sagemaker:ListTrainingJobs",
+        "sagemaker:ListTrainingPlans",
         "sagemaker:ListTrialComponents",
         "sagemaker:ListTrials",
         "sagemaker:ListUserProfiles",
