@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 16, 2024, 00:01 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:01 UTC</p>
+                <p><b>Edited time:</b>  August 29, 2026, 00:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -89,8 +89,10 @@
       ],
       "Resource" : [
         "arn:aws:ssm:*:*:document/AWS-*UnmanagedEC2*",
+        "arn:aws:ssm:*:*:document/AWS-DiagnoseHybridActivationIssues",
         "arn:aws:ssm:*:*:automation-execution/*",
-        "arn:aws:ssm:*:*:automation-definition/AWS-*UnmanagedEC2*:*"
+        "arn:aws:ssm:*:*:automation-definition/AWS-*UnmanagedEC2*:*",
+        "arn:aws:ssm:*:*:automation-definition/AWS-DiagnoseHybridActivationIssues:*"
       ]
     },
     <span>{</span>
