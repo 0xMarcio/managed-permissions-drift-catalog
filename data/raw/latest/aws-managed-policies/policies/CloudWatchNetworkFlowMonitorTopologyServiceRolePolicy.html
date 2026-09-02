@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: December 01, 2024, 22:51 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:57 UTC</p>
+                <p><b>Edited time:</b>  September 01, 2026, 01:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v9 (default)</p>
+        <p><b>Policy version:</b> v10 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -73,16 +73,17 @@
   "Version" : "2012-10-17",
   "Statement" : [
     <span>{</span>
+      "Sid" : "TransitGatewayAndVPNStatement",
       "Effect" : "Allow",
       "Action" : [
+        "ec2:DescribeCustomerGateways",
         "ec2:DescribeTransitGatewayAttachments",
         "ec2:DescribeTransitGatewayConnects",
         "ec2:DescribeTransitGatewayPeeringAttachments",
         "ec2:DescribeTransitGatewayRouteTables",
-        "ec2:DescribeTransitGateways",
         "ec2:DescribeTransitGatewayVpcAttachments",
+        "ec2:DescribeTransitGateways",
         "ec2:DescribeVpnConnections",
-        "ec2:DescribeCustomerGateways",
         "ec2:GetTransitGatewayRouteTableAssociations",
         "ec2:GetTransitGatewayRouteTablePropagations",
         "ec2:SearchTransitGatewayRoutes"
@@ -106,6 +107,73 @@
         "ec2:DescribeVpcEndpointServiceConfigurations"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "LoadBalancerStatement",
+      "Effect" : "Allow",
+      "Action" : [
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeTags",
+        "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeRules",
+        "elasticloadbalancing:DescribeTargetGroups",
+        "elasticloadbalancing:DescribeLoadBalancerAttributes",
+        "elasticloadbalancing:DescribeTargetHealth",
+        "elasticloadbalancing:DescribeTargetGroupAttributes"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "CloudWANStatement",
+      "Effect" : "Allow",
+      "Action" : [
+        "networkmanager:ListCoreNetworks",
+        "networkmanager:GetCoreNetwork",
+        "networkmanager:GetCoreNetworkPolicy",
+        "networkmanager:ListAttachments",
+        "networkmanager:GetVpcAttachment",
+        "networkmanager:GetNetworkRoutes"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "ConfigRecorderCreateDelete",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:PutServiceLinkedConfigurationRecorder",
+        "config:DeleteServiceLinkedConfigurationRecorder"
+      ],
+      "Resource" : [
+        "arn:aws:config:*:*:configuration-recorder/AWSConfigurationRecorderForNetworkFlowMonitorTopologyService/*"
+      ]
+    },
+    <span>{</span>
+      "Sid" : "ConfigRecorderDescribe",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:DescribeConfigurationRecorders",
+        "config:DescribeConfigurationRecorderStatus"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    <span>{</span>
+      "Sid" : "ConfigRecorderSlrCreation",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : [
+            "config.amazonaws.com"
+          ]
+        }
+      }
     }
   ]
 }</code></pre>

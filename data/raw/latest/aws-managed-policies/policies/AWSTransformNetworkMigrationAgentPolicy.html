@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 06, 2026, 15:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 06, 2026, 15:27 UTC</p>
+                <p><b>Edited time:</b>  September 01, 2026, 10:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSTransformNetworkMigrationAgentPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -659,10 +659,11 @@
       }
     },
     <span>{</span>
-      "Sid" : "LambdaViaCfnNetworkMigrationFunctionOperationsReadOnly",
+      "Sid" : "LambdaViaCfnNetworkMigrationFunctionReadOnly",
       "Effect" : "Allow",
       "Action" : [
-        "lambda:GetFunction"
+        "lambda:GetFunction",
+        "lambda:ListTags"
       ],
       "Resource" : "arn:aws:lambda:*:*:function:network-migration*",
       "Condition" : <span>{</span>
@@ -806,6 +807,7 @@
         "mgn:ListNetworkMigrationExecutions",
         "mgn:ListNetworkMigrationMapperSegmentConstructs",
         "mgn:ListNetworkMigrationMapperSegments",
+        "mgn:ListNetworkMigrationExecutionArtifacts",
         "mgn:ListNetworkMigrationMappings"
       ],
       "Resource" : "*",
@@ -1234,9 +1236,7 @@
       "Action" : [
         "ssm:DeleteParameter",
         "ssm:DeleteResourcePolicy",
-        "ssm:GetResourcePolicies",
-        "ssm:ListTagsForResource",
-        "ssm:PutResourcePolicy"
+        "ssm:ListTagsForResource"
       ],
       "Resource" : "arn:aws:ssm:*:*:parameter/network-migration/*",
       "Condition" : <span>{</span>
@@ -1249,6 +1249,26 @@
           "aws:RequestedRegion" : "$<span>{</span>aws:PrincipalTag/TargetRegion}",
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SsmParametersViaCfnRamSharingOperations",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:GetResourcePolicies",
+        "ssm:PutResourcePolicy"
+      ],
+      "Resource" : "arn:aws:ssm:*:*:parameter/network-migration/*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:RequestedRegion" : "$<span>{</span>aws:PrincipalTag/TargetRegion}",
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },

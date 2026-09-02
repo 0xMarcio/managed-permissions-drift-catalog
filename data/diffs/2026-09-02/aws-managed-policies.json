@@ -1,0 +1,495 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:billing:GetEnterpriseSupportChargeSummary",
+      "aws:allow_action:billing:GetEnterpriseSupportContractDetails",
+      "aws:allow_action:billing:ListEnterpriseSupportLinkedAccountCharges",
+      "aws:allow_action:budgets:DescribeBudgetActionsForAccount",
+      "aws:allow_action:budgets:DescribeBudgetActionsForBudget",
+      "aws:allow_action:ce:GetCommitmentPurchaseAnalysis",
+      "aws:allow_action:ce:GetSavingsPlanPurchaseRecommendationDetails",
+      "aws:allow_action:ce:ListCommitmentPurchaseAnalyses",
+      "aws:allow_action:ce:ListSavingsPlansPurchaseRecommendationGeneration",
+      "aws:allow_action:ce:StartCommitmentPurchaseAnalysis",
+      "aws:allow_action:ce:StartSavingsPlansPurchaseRecommendationGeneration",
+      "aws:allow_action:config:DeleteServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:DescribeConfigurationRecorderStatus",
+      "aws:allow_action:config:DescribeConfigurationRecorders",
+      "aws:allow_action:config:PutServiceLinkedConfigurationRecorder",
+      "aws:allow_action:customer-verification:GetInheritanceConfig",
+      "aws:allow_action:customer-verification:PutInheritanceConfig",
+      "aws:allow_action:elasticloadbalancing:DescribeListeners",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancerAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+      "aws:allow_action:elasticloadbalancing:DescribeRules",
+      "aws:allow_action:elasticloadbalancing:DescribeTags",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroupAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+      "aws:allow_action:fsx:CreateSnapshot",
+      "aws:allow_action:fsx:CreateVolume",
+      "aws:allow_action:fsx:DeleteVolume",
+      "aws:allow_action:fsx:DescribeFileSystems",
+      "aws:allow_action:fsx:DescribeSnapshots",
+      "aws:allow_action:fsx:DescribeVolumes",
+      "aws:allow_action:fsx:TagResource",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:kms:CreateGrant",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:Encrypt",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:kms:GenerateDataKeyWithoutPlaintext",
+      "aws:allow_action:kms:ReEncryptFrom",
+      "aws:allow_action:kms:ReEncryptTo",
+      "aws:allow_action:lambda:ListTags",
+      "aws:allow_action:mgn:ListNetworkMigrationExecutionArtifacts",
+      "aws:allow_action:networkmanager:GetCoreNetwork",
+      "aws:allow_action:networkmanager:GetCoreNetworkPolicy",
+      "aws:allow_action:networkmanager:GetNetworkRoutes",
+      "aws:allow_action:networkmanager:GetVpcAttachment",
+      "aws:allow_action:networkmanager:ListAttachments",
+      "aws:allow_action:networkmanager:ListCoreNetworks",
+      "aws:allow_action:s3:PutBucketPolicy",
+      "aws:allow_action:savingsplans:DescribeSavingsPlanRates",
+      "aws:allow_action:savingsplans:DescribeSavingsPlans",
+      "aws:allow_action:savingsplans:DescribeSavingsPlansOfferingRates",
+      "aws:allow_action:savingsplans:DescribeSavingsPlansOfferings",
+      "aws:allow_action:savingsplans:ListTagsForResource",
+      "aws:allow_action:ssm:GetAutomationExecution",
+      "aws:allow_action:ssm:GetParameter",
+      "aws:allow_action:ssm:ListDocuments",
+      "aws:allow_action:support:DescribeAttachment",
+      "aws:allow_action:support:DescribeCommunications"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "billing:GetEnterpriseSupportChargeSummary",
+          "billing:GetEnterpriseSupportContractDetails",
+          "billing:ListEnterpriseSupportLinkedAccountCharges",
+          "budgets:DescribeBudgetActionsForAccount",
+          "budgets:DescribeBudgetActionsForBudget",
+          "ce:GetCommitmentPurchaseAnalysis",
+          "ce:GetSavingsPlanPurchaseRecommendationDetails",
+          "ce:ListCommitmentPurchaseAnalyses",
+          "ce:ListSavingsPlansPurchaseRecommendationGeneration",
+          "ce:StartCommitmentPurchaseAnalysis",
+          "ce:StartSavingsPlansPurchaseRecommendationGeneration",
+          "config:DeleteServiceLinkedConfigurationRecorder",
+          "config:DescribeConfigurationRecorderStatus",
+          "config:DescribeConfigurationRecorders",
+          "config:PutServiceLinkedConfigurationRecorder",
+          "customer-verification:GetInheritanceConfig",
+          "customer-verification:PutInheritanceConfig",
+          "elasticloadbalancing:DescribeListeners",
+          "elasticloadbalancing:DescribeLoadBalancerAttributes",
+          "elasticloadbalancing:DescribeLoadBalancers",
+          "elasticloadbalancing:DescribeRules",
+          "elasticloadbalancing:DescribeTags",
+          "elasticloadbalancing:DescribeTargetGroupAttributes",
+          "elasticloadbalancing:DescribeTargetGroups",
+          "elasticloadbalancing:DescribeTargetHealth",
+          "fsx:CreateSnapshot",
+          "fsx:CreateVolume",
+          "fsx:DeleteVolume",
+          "fsx:DescribeFileSystems",
+          "fsx:DescribeSnapshots",
+          "fsx:DescribeVolumes",
+          "fsx:TagResource",
+          "iam:CreateServiceLinkedRole",
+          "kms:CreateGrant",
+          "kms:DescribeKey",
+          "kms:Encrypt",
+          "kms:GenerateDataKey",
+          "kms:GenerateDataKeyWithoutPlaintext",
+          "kms:ReEncryptFrom",
+          "kms:ReEncryptTo",
+          "lambda:ListTags",
+          "mgn:ListNetworkMigrationExecutionArtifacts",
+          "networkmanager:GetCoreNetwork",
+          "networkmanager:GetCoreNetworkPolicy",
+          "networkmanager:GetNetworkRoutes",
+          "networkmanager:GetVpcAttachment",
+          "networkmanager:ListAttachments",
+          "networkmanager:ListCoreNetworks",
+          "s3:PutBucketPolicy",
+          "savingsplans:DescribeSavingsPlanRates",
+          "savingsplans:DescribeSavingsPlans",
+          "savingsplans:DescribeSavingsPlansOfferingRates",
+          "savingsplans:DescribeSavingsPlansOfferings",
+          "savingsplans:ListTagsForResource",
+          "ssm:GetAutomationExecution",
+          "ssm:GetParameter",
+          "ssm:ListDocuments",
+          "support:DescribeAttachment",
+          "support:DescribeCommunications"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSAccountSettingsManagementRole",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "support:DescribeAttachment",
+              "support:DescribeCommunications"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 01, 2026, 15:17 UTC",
+          "before": "August 26, 2026, 01:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 01, 2026, 15:17 UTC",
+          "before": "August 26, 2026, 01:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+    },
+    {
+      "display_name": "AWSManagedSettingsAdminAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "customer-verification:GetInheritanceConfig",
+              "customer-verification:PutInheritanceConfig"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 01, 2026, 00:37 UTC",
+          "before": "August 14, 2026, 20:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 01, 2026, 00:37 UTC",
+          "before": "August 14, 2026, 20:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+    },
+    {
+      "display_name": "AWSTransformLandingZoneAgentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "s3:PutBucketPolicy"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 01, 2026, 10:27 UTC",
+          "before": "August 06, 2026, 15:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 01, 2026, 10:27 UTC",
+          "before": "August 06, 2026, 15:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformLandingZoneAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformLandingZoneAgentPolicy"
+    },
+    {
+      "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "lambda:ListTags",
+              "mgn:ListNetworkMigrationExecutionArtifacts"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 01, 2026, 10:37 UTC",
+          "before": "August 06, 2026, 15:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 01, 2026, 10:37 UTC",
+          "before": "August 06, 2026, 15:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 55,
+          "before": 54,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+    },
+    {
+      "display_name": "AWSTransformServerMigrationAgentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "fsx:CreateSnapshot",
+              "fsx:CreateVolume",
+              "fsx:DeleteVolume",
+              "fsx:DescribeFileSystems",
+              "fsx:DescribeSnapshots",
+              "fsx:DescribeVolumes",
+              "fsx:TagResource",
+              "ssm:GetAutomationExecution",
+              "ssm:GetParameter",
+              "ssm:ListDocuments"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 01, 2026, 10:37 UTC",
+          "before": "August 06, 2026, 15:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 01, 2026, 10:37 UTC",
+          "before": "August 06, 2026, 15:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 51,
+          "before": 44,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformServerMigrationAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformServerMigrationAgentPolicy"
+    },
+    {
+      "display_name": "AgentRegistryFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "kms:CreateGrant",
+              "kms:DescribeKey",
+              "kms:Encrypt",
+              "kms:GenerateDataKey",
+              "kms:GenerateDataKeyWithoutPlaintext",
+              "kms:ReEncryptFrom",
+              "kms:ReEncryptTo"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "August 31, 2026, 17:07 UTC",
+          "before": "August 06, 2026, 18:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "August 31, 2026, 17:07 UTC",
+          "before": "August 06, 2026, 18:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 12,
+          "before": 9,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AgentRegistryFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AgentRegistryFullAccess"
+    },
+    {
+      "display_name": "FinOpsAgentAgentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "billing:GetEnterpriseSupportChargeSummary",
+              "billing:GetEnterpriseSupportContractDetails",
+              "billing:ListEnterpriseSupportLinkedAccountCharges",
+              "budgets:DescribeBudgetActionsForAccount",
+              "budgets:DescribeBudgetActionsForBudget",
+              "ce:GetCommitmentPurchaseAnalysis",
+              "ce:GetSavingsPlanPurchaseRecommendationDetails",
+              "ce:ListCommitmentPurchaseAnalyses",
+              "ce:ListSavingsPlansPurchaseRecommendationGeneration",
+              "ce:StartCommitmentPurchaseAnalysis",
+              "ce:StartSavingsPlansPurchaseRecommendationGeneration",
+              "savingsplans:DescribeSavingsPlanRates",
+              "savingsplans:DescribeSavingsPlans",
+              "savingsplans:DescribeSavingsPlansOfferingRates",
+              "savingsplans:DescribeSavingsPlansOfferings",
+              "savingsplans:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 01, 2026, 16:27 UTC",
+          "before": "August 19, 2026, 19:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 01, 2026, 16:27 UTC",
+          "before": "August 19, 2026, 19:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinOpsAgentAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/FinOpsAgentAgentPolicy"
+    },
+    {
+      "display_name": "CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "config:DeleteServiceLinkedConfigurationRecorder",
+              "config:DescribeConfigurationRecorderStatus",
+              "config:DescribeConfigurationRecorders",
+              "config:PutServiceLinkedConfigurationRecorder",
+              "elasticloadbalancing:DescribeListeners",
+              "elasticloadbalancing:DescribeLoadBalancerAttributes",
+              "elasticloadbalancing:DescribeLoadBalancers",
+              "elasticloadbalancing:DescribeRules",
+              "elasticloadbalancing:DescribeTags",
+              "elasticloadbalancing:DescribeTargetGroupAttributes",
+              "elasticloadbalancing:DescribeTargetGroups",
+              "elasticloadbalancing:DescribeTargetHealth",
+              "iam:CreateServiceLinkedRole",
+              "networkmanager:GetCoreNetwork",
+              "networkmanager:GetCoreNetworkPolicy",
+              "networkmanager:GetNetworkRoutes",
+              "networkmanager:GetVpcAttachment",
+              "networkmanager:ListAttachments",
+              "networkmanager:ListCoreNetworks"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 01, 2026, 01:47 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 01, 2026, 01:47 UTC",
+          "before": "February 12, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 8,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-09-02T07:57:48Z",
+  "counts": {
+    "added_atoms": 59,
+    "added_objects": 0,
+    "changed_objects": 8,
+    "current_objects": 1585,
+    "previous_objects": 1585,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-02",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-08-30",
+  "removed_objects": []
+}

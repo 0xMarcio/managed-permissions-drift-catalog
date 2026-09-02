@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: June 03, 2026, 19:57 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 19, 2026, 19:27 UTC</p>
+                <p><b>Edited time:</b>  September 01, 2026, 16:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/FinOpsAgentAgentPolicy</code></p>
             </li></ul></div>
      
         <h2 id="FinOpsAgentAgentPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -97,6 +97,14 @@
         "ce:ListCostAllocationTagBackfillHistory",
         "ce:DescribeCostCategoryDefinition",
         "ce:ListCostCategoryDefinitions",
+        "ce:StartCommitmentPurchaseAnalysis",
+        "ce:ListCommitmentPurchaseAnalyses",
+        "ce:GetCommitmentPurchaseAnalysis",
+        "ce:StartSavingsPlansPurchaseRecommendationGeneration",
+        "ce:ListSavingsPlansPurchaseRecommendationGeneration",
+        "ce:GetSavingsPlanPurchaseRecommendationDetails",
+        "budgets:DescribeBudgetActionsForAccount",
+        "budgets:DescribeBudgetActionsForBudget",
         "budgets:ViewBudget",
         "cost-optimization-hub:GetRecommendation",
         "cost-optimization-hub:ListRecommendations",
@@ -149,7 +157,10 @@
         "logs:StartQuery",
         "logs:GetQueryResults",
         "billing:GetBillingView",
+        "billing:GetEnterpriseSupportChargeSummary",
+        "billing:GetEnterpriseSupportContractDetails",
         "billing:ListBillingViews",
+        "billing:ListEnterpriseSupportLinkedAccountCharges",
         "billing:ListSourceViewsForBillingView",
         "billing:GetResourcePolicy",
         "billingconductor:ListBillingGroups",
@@ -184,7 +195,12 @@
         "aco-automation:ListTagsForResource",
         "billing:GetCredits",
         "billing:GetCreditAllocationHistory",
-        "health:DescribeEvents"
+        "health:DescribeEvents",
+        "savingsplans:DescribeSavingsPlans",
+        "savingsplans:DescribeSavingsPlanRates",
+        "savingsplans:DescribeSavingsPlansOfferings",
+        "savingsplans:DescribeSavingsPlansOfferingRates",
+        "savingsplans:ListTagsForResource"
       ],
       "Resource" : "*"
     },

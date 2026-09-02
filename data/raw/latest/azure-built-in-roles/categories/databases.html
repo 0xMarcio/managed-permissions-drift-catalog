@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="b0b88386-5164-ad86-c007-f97bf4e9b82b" />
 	
-		<meta name="updated_at" content="2026-07-01T23:48:00Z" />
+		<meta name="updated_at" content="2026-09-02T05:17:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/databases.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/1b4e136a1da731e1ed16444eb6ce5701bcd8c0f4/articles/role-based-access-control/built-in-roles/databases.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/51338d77681e0c20c9c72c22f38609c68fc30fba/articles/role-based-access-control/built-in-roles/databases.md" />
 	
-		<meta name="git_commit_id" content="1b4e136a1da731e1ed16444eb6ce5701bcd8c0f4" />
+		<meta name="git_commit_id" content="51338d77681e0c20c9c72c22f38609c68fc30fba" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="3219" />
+		<meta name="word_count" content="3279" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/databases" />
 	
@@ -172,7 +172,7 @@
 
 			<!-- assets and js globals -->
 			
-			<link rel="stylesheet" href="/static/assets/0.4.03524.8175-9553bcde/styles/site.css" />
+			<link rel="stylesheet" href="/static/assets/0.4.03529.8188-7f8df7ab/styles/site.css" />
 			
 			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
 			<!-- Keep this URL in sync with oneDSScriptSelector in instrumentation/one-ds.ts. -->
@@ -220,7 +220,7 @@
 
 			<!-- base scripts, msdocs global should be before this -->
 			<script
-				src="/static/assets/0.4.03524.8175-9553bcde/scripts/en-us/index-docs.js"
+				src="/static/assets/0.4.03529.8188-7f8df7ab/scripts/en-us/index-docs.js"
 				async
 			></script>
 			
@@ -753,8 +753,7 @@
 				In this article
 			</h2>
 		</nav>
-	
-					<div class="content"><p>This article lists the Azure built-in roles in the Databases category.</p>
+	 <div class="content"><p>This article lists the Azure built-in roles in the Databases category.</p>
 <h2 id="azure-connected-sql-server-onboarding">Azure Connected SQL Server Onboarding</h2>
 <p>Allows for read and write access to Azure resources for SQL Server on Arc-enabled servers.</p>
 <p><a href="/en-us/sql/sql-server/azure-arc/connect" data-linktype="absolute-path">Learn more</a></p>
@@ -1923,7 +1922,7 @@
 }
 </code></pre>
 <h2 id="sql-db-contributor">SQL DB Contributor</h2>
-<p>Lets you manage SQL databases, but not access to them. Also, you can't manage their security-related policies or their parent SQL servers.</p>
+<p>Lets you manage SQL databases, including copying, restoring, exporting, deleting, and configuring certain database-level security settings such as identities, encryption protectors, and enclaves. Although it grants no SQL query permissions directly, its data-movement capabilities can enable access to or exfiltration of database data. It cannot manage parent SQL servers and excludes the security-related operations listed in NotActions.</p>
 <p><a href="/en-us/azure/data-share/concepts-roles-permissions" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
 <table>
@@ -2721,7 +2720,7 @@
 }
 </code></pre>
 <h2 id="sql-server-contributor">SQL Server Contributor</h2>
-<p>Lets you manage SQL servers and databases, but not access to them, and not their security-related policies.</p>
+<p>Lets you manage SQL servers and databases, including server administrator credentials and certain server security and network settings. Although it grants no SQL data-plane permissions directly, control of administrator credentials can enable data-plane access. It excludes the security-related policies listed in NotActions.</p>
 <p><a href="/en-us/azure/azure-sql/database/authentication-aad-configure" data-linktype="absolute-path">Learn more</a></p>
 <div class="mx-tableFixed">
 <table>
