@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 07, 2017, 21:36 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 13, 2024, 19:39 UTC</p>
+                <p><b>Edited time:</b>  September 02, 2026, 14:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonECS_FullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonECS_FullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v21 (default)</p>
+        <p><b>Policy version:</b> v22 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -311,6 +311,23 @@
             "CreateRule",
             "CreateListener",
             "CreateLoadBalancer"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CloudFormationTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "cloudformation:CreateAction" : [
+            "CreateStack",
+            "UpdateStack"
           ]
         }
       }

@@ -1,0 +1,106 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:UntagResource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:TagResource",
+          "cloudformation:UntagResource"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonECS_FullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v22 (default)",
+          "before": "v21 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 02, 2026, 14:47 UTC",
+          "before": "August 13, 2024, 19:39 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 02, 2026, 14:47 UTC",
+          "before": "August 13, 2024, 19:39 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 10,
+          "before": 9,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECS_FullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonECS_FullAccess"
+    },
+    {
+      "display_name": "BedrockAgentCoreFullAccess",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v20 (default)",
+          "before": "v19 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 01, 2026, 22:17 UTC",
+          "before": "August 11, 2026, 19:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 01, 2026, 22:17 UTC",
+          "before": "August 11, 2026, 19:07 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 34,
+          "before": 33,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BedrockAgentCoreFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess"
+    }
+  ],
+  "compared_at_utc": "2026-09-03T08:06:32Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1585,
+    "previous_objects": 1585,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-03",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-02",
+  "removed_objects": []
+}

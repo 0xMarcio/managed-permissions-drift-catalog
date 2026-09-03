@@ -1,0 +1,2577 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "gcp:permission:apptopology.applicationTopologies.generate",
+        "gcp:permission:apptopology.devOpsDomainTopologies.generate",
+        "gcp:permission:apptopology.discoveredResourcesTopologies.generate",
+        "gcp:permission:apptopology.domains.get",
+        "gcp:permission:apptopology.domains.list",
+        "gcp:permission:apptopology.locations.get",
+        "gcp:permission:apptopology.locations.list",
+        "gcp:permission:apptopology.operations.get",
+        "gcp:permission:apptopology.operations.list",
+        "gcp:permission:apptopology.schemas.get",
+        "gcp:permission:apptopology.securityDomainTopologies.generate",
+        "gcp:permission:apptopology.sreDomainTopologies.generate",
+        "gcp:permission:apptopology.topologyViews.get",
+        "gcp:permission:apptopology.topologyViews.list",
+        "gcp:permission:resourcemanager.projects.get",
+        "gcp:permission:resourcemanager.projects.list"
+      ],
+      "display_name": "App Topology Admin Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/apptopology#apptopology.admin",
+      "stable_id": "roles/apptopology.admin"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "gcp:permission:apptopology.applicationTopologies.generate",
+      "gcp:permission:apptopology.devOpsDomainTopologies.generate",
+      "gcp:permission:apptopology.devOpsDomainTopologies.generate",
+      "gcp:permission:apptopology.devOpsDomainTopologies.generate",
+      "gcp:permission:apptopology.discoveredResourcesTopologies.generate",
+      "gcp:permission:apptopology.domains.get",
+      "gcp:permission:apptopology.domains.list",
+      "gcp:permission:apptopology.locations.get",
+      "gcp:permission:apptopology.locations.list",
+      "gcp:permission:apptopology.operations.get",
+      "gcp:permission:apptopology.operations.list",
+      "gcp:permission:apptopology.schemas.get",
+      "gcp:permission:apptopology.securityDomainTopologies.generate",
+      "gcp:permission:apptopology.securityDomainTopologies.generate",
+      "gcp:permission:apptopology.securityDomainTopologies.generate",
+      "gcp:permission:apptopology.sreDomainTopologies.generate",
+      "gcp:permission:apptopology.sreDomainTopologies.generate",
+      "gcp:permission:apptopology.sreDomainTopologies.generate",
+      "gcp:permission:apptopology.topologyViews.get",
+      "gcp:permission:apptopology.topologyViews.list",
+      "gcp:permission:backupdr.resourceBackupConfigs.fetch",
+      "gcp:permission:bigquery.tables.update",
+      "gcp:permission:cloudsql.instances.connect",
+      "gcp:permission:cloudsql.instances.connect",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.createTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.deleteTagBinding",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listEffectiveTags",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:dataform.repositories.listTagBindings",
+      "gcp:permission:datalineage.processes.markAsDeleted",
+      "gcp:permission:datalineage.processes.markAsDeleted",
+      "gcp:permission:datalineage.processes.markAsDeleted",
+      "gcp:permission:datalineage.processes.markAsDeleted",
+      "gcp:permission:dataplex.entryGroups.createTagBinding",
+      "gcp:permission:dataplex.entryGroups.createTagBinding",
+      "gcp:permission:dataplex.entryGroups.createTagBinding",
+      "gcp:permission:dataplex.entryGroups.createTagBinding",
+      "gcp:permission:dataplex.entryGroups.createTagBinding",
+      "gcp:permission:dataplex.entryGroups.createTagBinding",
+      "gcp:permission:dataplex.entryGroups.createTagBinding",
+      "gcp:permission:dataplex.entryGroups.createTagBinding",
+      "gcp:permission:dataplex.entryGroups.deleteTagBinding",
+      "gcp:permission:dataplex.entryGroups.deleteTagBinding",
+      "gcp:permission:dataplex.entryGroups.deleteTagBinding",
+      "gcp:permission:dataplex.entryGroups.deleteTagBinding",
+      "gcp:permission:dataplex.entryGroups.deleteTagBinding",
+      "gcp:permission:dataplex.entryGroups.deleteTagBinding",
+      "gcp:permission:dataplex.entryGroups.deleteTagBinding",
+      "gcp:permission:dataplex.entryGroups.deleteTagBinding",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listEffectiveTags",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryGroups.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.createTagBinding",
+      "gcp:permission:dataplex.entryTypes.createTagBinding",
+      "gcp:permission:dataplex.entryTypes.createTagBinding",
+      "gcp:permission:dataplex.entryTypes.createTagBinding",
+      "gcp:permission:dataplex.entryTypes.createTagBinding",
+      "gcp:permission:dataplex.entryTypes.createTagBinding",
+      "gcp:permission:dataplex.entryTypes.createTagBinding",
+      "gcp:permission:dataplex.entryTypes.deleteTagBinding",
+      "gcp:permission:dataplex.entryTypes.deleteTagBinding",
+      "gcp:permission:dataplex.entryTypes.deleteTagBinding",
+      "gcp:permission:dataplex.entryTypes.deleteTagBinding",
+      "gcp:permission:dataplex.entryTypes.deleteTagBinding",
+      "gcp:permission:dataplex.entryTypes.deleteTagBinding",
+      "gcp:permission:dataplex.entryTypes.deleteTagBinding",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listEffectiveTags",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.entryTypes.listTagBindings",
+      "gcp:permission:dataplex.governanceRules.createTagBinding",
+      "gcp:permission:dataplex.governanceRules.createTagBinding",
+      "gcp:permission:dataplex.governanceRules.createTagBinding",
+      "gcp:permission:dataplex.governanceRules.createTagBinding",
+      "gcp:permission:dataplex.governanceRules.deleteTagBinding",
+      "gcp:permission:dataplex.governanceRules.deleteTagBinding",
+      "gcp:permission:dataplex.governanceRules.deleteTagBinding",
+      "gcp:permission:dataplex.governanceRules.deleteTagBinding",
+      "gcp:permission:dataplex.governanceRules.listEffectiveTags",
+      "gcp:permission:dataplex.governanceRules.listEffectiveTags",
+      "gcp:permission:dataplex.governanceRules.listEffectiveTags",
+      "gcp:permission:dataplex.governanceRules.listEffectiveTags",
+      "gcp:permission:dataplex.governanceRules.listEffectiveTags",
+      "gcp:permission:dataplex.governanceRules.listTagBindings",
+      "gcp:permission:dataplex.governanceRules.listTagBindings",
+      "gcp:permission:dataplex.governanceRules.listTagBindings",
+      "gcp:permission:dataplex.governanceRules.listTagBindings",
+      "gcp:permission:dataplex.governanceRules.listTagBindings",
+      "gcp:permission:discoveryengine.accounts.create",
+      "gcp:permission:discoveryengine.accounts.create",
+      "gcp:permission:discoveryengine.audioOverviews.create",
+      "gcp:permission:discoveryengine.audioOverviews.create",
+      "gcp:permission:discoveryengine.audioOverviews.delete",
+      "gcp:permission:discoveryengine.audioOverviews.delete",
+      "gcp:permission:discoveryengine.audioOverviews.get",
+      "gcp:permission:discoveryengine.audioOverviews.get",
+      "gcp:permission:discoveryengine.audioOverviews.getIceConfig",
+      "gcp:permission:discoveryengine.audioOverviews.getIceConfig",
+      "gcp:permission:discoveryengine.audioOverviews.sendSdpOffer",
+      "gcp:permission:discoveryengine.audioOverviews.sendSdpOffer",
+      "gcp:permission:discoveryengine.cmekConfigs.delete",
+      "gcp:permission:discoveryengine.cmekConfigs.delete",
+      "gcp:permission:discoveryengine.collections.get",
+      "gcp:permission:discoveryengine.collections.get",
+      "gcp:permission:discoveryengine.dataStores.get",
+      "gcp:permission:discoveryengine.notebooks.create",
+      "gcp:permission:discoveryengine.notebooks.create",
+      "gcp:permission:discoveryengine.notebooks.generateGuide",
+      "gcp:permission:discoveryengine.notebooks.generateGuide",
+      "gcp:permission:discoveryengine.notebooks.get",
+      "gcp:permission:discoveryengine.notebooks.get",
+      "gcp:permission:discoveryengine.notebooks.getAnalytics",
+      "gcp:permission:discoveryengine.notebooks.getAnalytics",
+      "gcp:permission:discoveryengine.notebooks.getIamPolicy",
+      "gcp:permission:discoveryengine.notebooks.getIamPolicy",
+      "gcp:permission:discoveryengine.notebooks.interactSources",
+      "gcp:permission:discoveryengine.notebooks.interactSources",
+      "gcp:permission:discoveryengine.notebooks.list",
+      "gcp:permission:discoveryengine.notebooks.list",
+      "gcp:permission:discoveryengine.notebooks.removeSelf",
+      "gcp:permission:discoveryengine.notebooks.removeSelf",
+      "gcp:permission:discoveryengine.notebooks.setIamPolicy",
+      "gcp:permission:discoveryengine.notebooks.setIamPolicy",
+      "gcp:permission:discoveryengine.notebooks.update",
+      "gcp:permission:discoveryengine.notebooks.update",
+      "gcp:permission:discoveryengine.notes.create",
+      "gcp:permission:discoveryengine.notes.create",
+      "gcp:permission:discoveryengine.notes.delete",
+      "gcp:permission:discoveryengine.notes.delete",
+      "gcp:permission:discoveryengine.notes.get",
+      "gcp:permission:discoveryengine.notes.get",
+      "gcp:permission:discoveryengine.notes.update",
+      "gcp:permission:discoveryengine.notes.update",
+      "gcp:permission:discoveryengine.sources.checkFreshness",
+      "gcp:permission:discoveryengine.sources.checkFreshness",
+      "gcp:permission:discoveryengine.sources.create",
+      "gcp:permission:discoveryengine.sources.create",
+      "gcp:permission:discoveryengine.sources.delete",
+      "gcp:permission:discoveryengine.sources.delete",
+      "gcp:permission:discoveryengine.sources.generateDocumentGuide",
+      "gcp:permission:discoveryengine.sources.generateDocumentGuide",
+      "gcp:permission:discoveryengine.sources.get",
+      "gcp:permission:discoveryengine.sources.get",
+      "gcp:permission:discoveryengine.sources.refresh",
+      "gcp:permission:discoveryengine.sources.refresh",
+      "gcp:permission:discoveryengine.sources.update",
+      "gcp:permission:discoveryengine.sources.update",
+      "gcp:permission:monitoring.alertPolicies.create",
+      "gcp:permission:monitoring.alertPolicies.delete",
+      "gcp:permission:monitoring.alertPolicies.update",
+      "gcp:permission:notebooks.instances.createTagBinding",
+      "gcp:permission:notebooks.instances.createTagBinding",
+      "gcp:permission:notebooks.instances.createTagBinding",
+      "gcp:permission:notebooks.instances.createTagBinding",
+      "gcp:permission:notebooks.instances.createTagBinding",
+      "gcp:permission:notebooks.instances.deleteTagBinding",
+      "gcp:permission:notebooks.instances.deleteTagBinding",
+      "gcp:permission:notebooks.instances.deleteTagBinding",
+      "gcp:permission:notebooks.instances.deleteTagBinding",
+      "gcp:permission:notebooks.instances.deleteTagBinding",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listEffectiveTags",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:notebooks.instances.listTagBindings",
+      "gcp:permission:oracledatabase.dbSystems.update",
+      "gcp:permission:oracledatabase.dbSystems.update",
+      "gcp:permission:oracledatabase.exascaleDbStorageVaults.update",
+      "gcp:permission:oracledatabase.exascaleDbStorageVaults.update",
+      "gcp:permission:oracledatabase.goldenGateConnectionAssignments.update",
+      "gcp:permission:oracledatabase.goldenGateConnectionAssignments.update",
+      "gcp:permission:oracledatabase.goldenGateConnections.update",
+      "gcp:permission:oracledatabase.goldenGateConnections.update",
+      "gcp:permission:oracledatabase.goldenGateDeployments.update",
+      "gcp:permission:oracledatabase.goldenGateDeployments.update",
+      "gcp:permission:oracledatabase.odbNetworks.update",
+      "gcp:permission:oracledatabase.odbNetworks.update",
+      "gcp:permission:oracledatabase.odbNetworks.update",
+      "gcp:permission:oracledatabase.odbSubnets.update",
+      "gcp:permission:oracledatabase.odbSubnets.update",
+      "gcp:permission:oracledatabase.odbSubnets.update",
+      "gcp:permission:redis.clusters.createTagBinding",
+      "gcp:permission:redis.clusters.createTagBinding",
+      "gcp:permission:redis.clusters.createTagBinding",
+      "gcp:permission:redis.clusters.createTagBinding",
+      "gcp:permission:redis.clusters.deleteTagBinding",
+      "gcp:permission:redis.clusters.deleteTagBinding",
+      "gcp:permission:redis.clusters.deleteTagBinding",
+      "gcp:permission:redis.clusters.deleteTagBinding",
+      "gcp:permission:redis.clusters.listEffectiveTags",
+      "gcp:permission:redis.clusters.listEffectiveTags",
+      "gcp:permission:redis.clusters.listEffectiveTags",
+      "gcp:permission:redis.clusters.listEffectiveTags",
+      "gcp:permission:redis.clusters.listEffectiveTags",
+      "gcp:permission:redis.clusters.listEffectiveTags",
+      "gcp:permission:redis.clusters.listTagBindings",
+      "gcp:permission:redis.clusters.listTagBindings",
+      "gcp:permission:redis.clusters.listTagBindings",
+      "gcp:permission:redis.clusters.listTagBindings",
+      "gcp:permission:redis.clusters.listTagBindings",
+      "gcp:permission:redis.clusters.listTagBindings",
+      "gcp:permission:resourcemanager.projects.get",
+      "gcp:permission:resourcemanager.projects.list",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:storage.buckets.viewSecurityIntelligenceDetails",
+      "gcp:permission:vectorsearch.collections.create",
+      "gcp:permission:vectorsearch.collections.delete",
+      "gcp:permission:vectorsearch.dataObjects.create",
+      "gcp:permission:vectorsearch.dataObjects.delete",
+      "gcp:permission:vectorsearch.dataObjects.export",
+      "gcp:permission:vectorsearch.dataObjects.export",
+      "gcp:permission:vectorsearch.dataObjects.export",
+      "gcp:permission:vectorsearch.dataObjects.import",
+      "gcp:permission:vectorsearch.dataObjects.update",
+      "gcp:permission:vectorsearch.indexes.delete",
+      "gcp:permission:vectorsearch.indexes.update",
+      "gcp:permission:vectorsearch.indexes.update"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:included_permissions": [
+          "apptopology.applicationTopologies.generate",
+          "apptopology.devOpsDomainTopologies.generate",
+          "apptopology.devOpsDomainTopologies.generate",
+          "apptopology.devOpsDomainTopologies.generate",
+          "apptopology.discoveredResourcesTopologies.generate",
+          "apptopology.domains.get",
+          "apptopology.domains.list",
+          "apptopology.locations.get",
+          "apptopology.locations.list",
+          "apptopology.operations.get",
+          "apptopology.operations.list",
+          "apptopology.schemas.get",
+          "apptopology.securityDomainTopologies.generate",
+          "apptopology.securityDomainTopologies.generate",
+          "apptopology.securityDomainTopologies.generate",
+          "apptopology.sreDomainTopologies.generate",
+          "apptopology.sreDomainTopologies.generate",
+          "apptopology.sreDomainTopologies.generate",
+          "apptopology.topologyViews.get",
+          "apptopology.topologyViews.list",
+          "backupdr.resourceBackupConfigs.fetch",
+          "bigquery.tables.update",
+          "cloudsql.instances.connect",
+          "cloudsql.instances.connect",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.createTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.deleteTagBinding",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listEffectiveTags",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "dataform.repositories.listTagBindings",
+          "datalineage.processes.markAsDeleted",
+          "datalineage.processes.markAsDeleted",
+          "datalineage.processes.markAsDeleted",
+          "datalineage.processes.markAsDeleted",
+          "dataplex.entryGroups.createTagBinding",
+          "dataplex.entryGroups.createTagBinding",
+          "dataplex.entryGroups.createTagBinding",
+          "dataplex.entryGroups.createTagBinding",
+          "dataplex.entryGroups.createTagBinding",
+          "dataplex.entryGroups.createTagBinding",
+          "dataplex.entryGroups.createTagBinding",
+          "dataplex.entryGroups.createTagBinding",
+          "dataplex.entryGroups.deleteTagBinding",
+          "dataplex.entryGroups.deleteTagBinding",
+          "dataplex.entryGroups.deleteTagBinding",
+          "dataplex.entryGroups.deleteTagBinding",
+          "dataplex.entryGroups.deleteTagBinding",
+          "dataplex.entryGroups.deleteTagBinding",
+          "dataplex.entryGroups.deleteTagBinding",
+          "dataplex.entryGroups.deleteTagBinding",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listEffectiveTags",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryGroups.listTagBindings",
+          "dataplex.entryTypes.createTagBinding",
+          "dataplex.entryTypes.createTagBinding",
+          "dataplex.entryTypes.createTagBinding",
+          "dataplex.entryTypes.createTagBinding",
+          "dataplex.entryTypes.createTagBinding",
+          "dataplex.entryTypes.createTagBinding",
+          "dataplex.entryTypes.createTagBinding",
+          "dataplex.entryTypes.deleteTagBinding",
+          "dataplex.entryTypes.deleteTagBinding",
+          "dataplex.entryTypes.deleteTagBinding",
+          "dataplex.entryTypes.deleteTagBinding",
+          "dataplex.entryTypes.deleteTagBinding",
+          "dataplex.entryTypes.deleteTagBinding",
+          "dataplex.entryTypes.deleteTagBinding",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listEffectiveTags",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.entryTypes.listTagBindings",
+          "dataplex.governanceRules.createTagBinding",
+          "dataplex.governanceRules.createTagBinding",
+          "dataplex.governanceRules.createTagBinding",
+          "dataplex.governanceRules.createTagBinding",
+          "dataplex.governanceRules.deleteTagBinding",
+          "dataplex.governanceRules.deleteTagBinding",
+          "dataplex.governanceRules.deleteTagBinding",
+          "dataplex.governanceRules.deleteTagBinding",
+          "dataplex.governanceRules.listEffectiveTags",
+          "dataplex.governanceRules.listEffectiveTags",
+          "dataplex.governanceRules.listEffectiveTags",
+          "dataplex.governanceRules.listEffectiveTags",
+          "dataplex.governanceRules.listEffectiveTags",
+          "dataplex.governanceRules.listTagBindings",
+          "dataplex.governanceRules.listTagBindings",
+          "dataplex.governanceRules.listTagBindings",
+          "dataplex.governanceRules.listTagBindings",
+          "dataplex.governanceRules.listTagBindings",
+          "discoveryengine.accounts.create",
+          "discoveryengine.accounts.create",
+          "discoveryengine.audioOverviews.create",
+          "discoveryengine.audioOverviews.create",
+          "discoveryengine.audioOverviews.delete",
+          "discoveryengine.audioOverviews.delete",
+          "discoveryengine.audioOverviews.get",
+          "discoveryengine.audioOverviews.get",
+          "discoveryengine.audioOverviews.getIceConfig",
+          "discoveryengine.audioOverviews.getIceConfig",
+          "discoveryengine.audioOverviews.sendSdpOffer",
+          "discoveryengine.audioOverviews.sendSdpOffer",
+          "discoveryengine.cmekConfigs.delete",
+          "discoveryengine.cmekConfigs.delete",
+          "discoveryengine.collections.get",
+          "discoveryengine.collections.get",
+          "discoveryengine.dataStores.get",
+          "discoveryengine.notebooks.create",
+          "discoveryengine.notebooks.create",
+          "discoveryengine.notebooks.generateGuide",
+          "discoveryengine.notebooks.generateGuide",
+          "discoveryengine.notebooks.get",
+          "discoveryengine.notebooks.get",
+          "discoveryengine.notebooks.getAnalytics",
+          "discoveryengine.notebooks.getAnalytics",
+          "discoveryengine.notebooks.getIamPolicy",
+          "discoveryengine.notebooks.getIamPolicy",
+          "discoveryengine.notebooks.interactSources",
+          "discoveryengine.notebooks.interactSources",
+          "discoveryengine.notebooks.list",
+          "discoveryengine.notebooks.list",
+          "discoveryengine.notebooks.removeSelf",
+          "discoveryengine.notebooks.removeSelf",
+          "discoveryengine.notebooks.setIamPolicy",
+          "discoveryengine.notebooks.setIamPolicy",
+          "discoveryengine.notebooks.update",
+          "discoveryengine.notebooks.update",
+          "discoveryengine.notes.create",
+          "discoveryengine.notes.create",
+          "discoveryengine.notes.delete",
+          "discoveryengine.notes.delete",
+          "discoveryengine.notes.get",
+          "discoveryengine.notes.get",
+          "discoveryengine.notes.update",
+          "discoveryengine.notes.update",
+          "discoveryengine.sources.checkFreshness",
+          "discoveryengine.sources.checkFreshness",
+          "discoveryengine.sources.create",
+          "discoveryengine.sources.create",
+          "discoveryengine.sources.delete",
+          "discoveryengine.sources.delete",
+          "discoveryengine.sources.generateDocumentGuide",
+          "discoveryengine.sources.generateDocumentGuide",
+          "discoveryengine.sources.get",
+          "discoveryengine.sources.get",
+          "discoveryengine.sources.refresh",
+          "discoveryengine.sources.refresh",
+          "discoveryengine.sources.update",
+          "discoveryengine.sources.update",
+          "monitoring.alertPolicies.create",
+          "monitoring.alertPolicies.delete",
+          "monitoring.alertPolicies.update",
+          "notebooks.instances.createTagBinding",
+          "notebooks.instances.createTagBinding",
+          "notebooks.instances.createTagBinding",
+          "notebooks.instances.createTagBinding",
+          "notebooks.instances.createTagBinding",
+          "notebooks.instances.deleteTagBinding",
+          "notebooks.instances.deleteTagBinding",
+          "notebooks.instances.deleteTagBinding",
+          "notebooks.instances.deleteTagBinding",
+          "notebooks.instances.deleteTagBinding",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listEffectiveTags",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "notebooks.instances.listTagBindings",
+          "oracledatabase.dbSystems.update",
+          "oracledatabase.dbSystems.update",
+          "oracledatabase.exascaleDbStorageVaults.update",
+          "oracledatabase.exascaleDbStorageVaults.update",
+          "oracledatabase.goldenGateConnectionAssignments.update",
+          "oracledatabase.goldenGateConnectionAssignments.update",
+          "oracledatabase.goldenGateConnections.update",
+          "oracledatabase.goldenGateConnections.update",
+          "oracledatabase.goldenGateDeployments.update",
+          "oracledatabase.goldenGateDeployments.update",
+          "oracledatabase.odbNetworks.update",
+          "oracledatabase.odbNetworks.update",
+          "oracledatabase.odbNetworks.update",
+          "oracledatabase.odbSubnets.update",
+          "oracledatabase.odbSubnets.update",
+          "oracledatabase.odbSubnets.update",
+          "redis.clusters.createTagBinding",
+          "redis.clusters.createTagBinding",
+          "redis.clusters.createTagBinding",
+          "redis.clusters.createTagBinding",
+          "redis.clusters.deleteTagBinding",
+          "redis.clusters.deleteTagBinding",
+          "redis.clusters.deleteTagBinding",
+          "redis.clusters.deleteTagBinding",
+          "redis.clusters.listEffectiveTags",
+          "redis.clusters.listEffectiveTags",
+          "redis.clusters.listEffectiveTags",
+          "redis.clusters.listEffectiveTags",
+          "redis.clusters.listEffectiveTags",
+          "redis.clusters.listEffectiveTags",
+          "redis.clusters.listTagBindings",
+          "redis.clusters.listTagBindings",
+          "redis.clusters.listTagBindings",
+          "redis.clusters.listTagBindings",
+          "redis.clusters.listTagBindings",
+          "redis.clusters.listTagBindings",
+          "resourcemanager.projects.get",
+          "resourcemanager.projects.list",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "storage.buckets.viewSecurityIntelligenceDetails",
+          "vectorsearch.collections.create",
+          "vectorsearch.collections.delete",
+          "vectorsearch.dataObjects.create",
+          "vectorsearch.dataObjects.delete",
+          "vectorsearch.dataObjects.export",
+          "vectorsearch.dataObjects.export",
+          "vectorsearch.dataObjects.export",
+          "vectorsearch.dataObjects.import",
+          "vectorsearch.dataObjects.update",
+          "vectorsearch.indexes.delete",
+          "vectorsearch.indexes.update",
+          "vectorsearch.indexes.update"
+        ]
+      },
+      "removed": {
+        "grant:included_permissions": [
+          "prodactuation.dnsConfigs.create",
+          "prodactuation.dnsConfigs.delete",
+          "prodactuation.dnsConfigs.get",
+          "prodactuation.dnsConfigs.get",
+          "prodactuation.dnsConfigs.list",
+          "prodactuation.dnsConfigs.list",
+          "prodactuation.dnsConfigs.list",
+          "prodactuation.dnsConfigs.list",
+          "prodactuation.dnsConfigs.update",
+          "prodactuation.ganpatiGroups.create",
+          "prodactuation.ganpatiGroups.createMembership",
+          "prodactuation.ganpatiGroups.delete",
+          "prodactuation.ganpatiGroups.get",
+          "prodactuation.ganpatiGroups.get",
+          "prodactuation.ganpatiGroups.list",
+          "prodactuation.ganpatiGroups.list",
+          "prodactuation.ganpatiGroups.list",
+          "prodactuation.ganpatiGroups.list",
+          "prodactuation.ganpatiGroups.listMemberships",
+          "prodactuation.ganpatiGroups.listMemberships",
+          "prodactuation.ganpatiGroups.update",
+          "prodactuation.ganpatiMemberships.delete",
+          "prodactuation.ganpatiMemberships.get",
+          "prodactuation.ganpatiMemberships.get",
+          "prodactuation.ganpatiMemberships.update",
+          "prodactuation.locations.get",
+          "prodactuation.locations.get",
+          "prodactuation.locations.list",
+          "prodactuation.locations.list",
+          "prodactuation.locations.list",
+          "prodactuation.locations.list",
+          "prodactuation.operations.cancel",
+          "prodactuation.operations.delete",
+          "prodactuation.operations.get",
+          "prodactuation.operations.get",
+          "prodactuation.operations.list",
+          "prodactuation.operations.list",
+          "prodactuation.operations.list",
+          "prodactuation.operations.list",
+          "prodactuation.uberProxyServices.create",
+          "prodactuation.uberProxyServices.delete",
+          "prodactuation.uberProxyServices.get",
+          "prodactuation.uberProxyServices.get",
+          "prodactuation.uberProxyServices.list",
+          "prodactuation.uberProxyServices.list",
+          "prodactuation.uberProxyServices.list",
+          "prodactuation.uberProxyServices.list",
+          "prodactuation.uberProxyServices.update",
+          "resourcemanager.projects.get",
+          "resourcemanager.projects.get",
+          "resourcemanager.projects.list",
+          "resourcemanager.projects.list"
+        ]
+      }
+    },
+    "removed": [
+      "gcp:permission:prodactuation.dnsConfigs.create",
+      "gcp:permission:prodactuation.dnsConfigs.delete",
+      "gcp:permission:prodactuation.dnsConfigs.get",
+      "gcp:permission:prodactuation.dnsConfigs.get",
+      "gcp:permission:prodactuation.dnsConfigs.list",
+      "gcp:permission:prodactuation.dnsConfigs.list",
+      "gcp:permission:prodactuation.dnsConfigs.list",
+      "gcp:permission:prodactuation.dnsConfigs.list",
+      "gcp:permission:prodactuation.dnsConfigs.update",
+      "gcp:permission:prodactuation.ganpatiGroups.create",
+      "gcp:permission:prodactuation.ganpatiGroups.createMembership",
+      "gcp:permission:prodactuation.ganpatiGroups.delete",
+      "gcp:permission:prodactuation.ganpatiGroups.get",
+      "gcp:permission:prodactuation.ganpatiGroups.get",
+      "gcp:permission:prodactuation.ganpatiGroups.list",
+      "gcp:permission:prodactuation.ganpatiGroups.list",
+      "gcp:permission:prodactuation.ganpatiGroups.list",
+      "gcp:permission:prodactuation.ganpatiGroups.list",
+      "gcp:permission:prodactuation.ganpatiGroups.listMemberships",
+      "gcp:permission:prodactuation.ganpatiGroups.listMemberships",
+      "gcp:permission:prodactuation.ganpatiGroups.update",
+      "gcp:permission:prodactuation.ganpatiMemberships.delete",
+      "gcp:permission:prodactuation.ganpatiMemberships.get",
+      "gcp:permission:prodactuation.ganpatiMemberships.get",
+      "gcp:permission:prodactuation.ganpatiMemberships.update",
+      "gcp:permission:prodactuation.locations.get",
+      "gcp:permission:prodactuation.locations.get",
+      "gcp:permission:prodactuation.locations.list",
+      "gcp:permission:prodactuation.locations.list",
+      "gcp:permission:prodactuation.locations.list",
+      "gcp:permission:prodactuation.locations.list",
+      "gcp:permission:prodactuation.operations.cancel",
+      "gcp:permission:prodactuation.operations.delete",
+      "gcp:permission:prodactuation.operations.get",
+      "gcp:permission:prodactuation.operations.get",
+      "gcp:permission:prodactuation.operations.list",
+      "gcp:permission:prodactuation.operations.list",
+      "gcp:permission:prodactuation.operations.list",
+      "gcp:permission:prodactuation.operations.list",
+      "gcp:permission:prodactuation.uberProxyServices.create",
+      "gcp:permission:prodactuation.uberProxyServices.delete",
+      "gcp:permission:prodactuation.uberProxyServices.get",
+      "gcp:permission:prodactuation.uberProxyServices.get",
+      "gcp:permission:prodactuation.uberProxyServices.list",
+      "gcp:permission:prodactuation.uberProxyServices.list",
+      "gcp:permission:prodactuation.uberProxyServices.list",
+      "gcp:permission:prodactuation.uberProxyServices.list",
+      "gcp:permission:prodactuation.uberProxyServices.update",
+      "gcp:permission:resourcemanager.projects.get",
+      "gcp:permission:resourcemanager.projects.get",
+      "gcp:permission:resourcemanager.projects.list",
+      "gcp:permission:resourcemanager.projects.list"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "Agent Identity User",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Grants access to retrieve and exchange credentials from auth providers and authorizations.",
+          "before": "Grants access to retrieve credentials from auth providers.",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/agentidentity#agentidentity.user",
+      "stable_id": "roles/agentidentity.user"
+    },
+    {
+      "display_name": "Colab Enterprise Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/aiplatform#aiplatform.colabEnterpriseAdmin",
+      "stable_id": "roles/aiplatform.colabEnterpriseAdmin"
+    },
+    {
+      "display_name": "App Topology Viewer Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "apptopology.devOpsDomainTopologies.generate",
+              "apptopology.securityDomainTopologies.generate",
+              "apptopology.sreDomainTopologies.generate"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/apptopology#apptopology.viewer",
+      "stable_id": "roles/apptopology.viewer"
+    },
+    {
+      "display_name": "Audit Manager Auditing Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudsql.instances.connect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/auditmanager#auditmanager.serviceAgent",
+      "stable_id": "roles/auditmanager.serviceAgent"
+    },
+    {
+      "display_name": "Backup and DR Backup Config Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "backupdr.resourceBackupConfigs.fetch"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/backupdr#backupdr.backupConfigViewer",
+      "stable_id": "roles/backupdr.backupConfigViewer"
+    },
+    {
+      "display_name": "BigQuery Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquery#bigquery.admin",
+      "stable_id": "roles/bigquery.admin"
+    },
+    {
+      "display_name": "BigQuery Studio Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin",
+      "stable_id": "roles/bigquery.studioAdmin"
+    },
+    {
+      "display_name": "Customer Engagement Suite Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "discoveryengine.collections.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/ces#ces.serviceAgent",
+      "stable_id": "roles/ces.serviceAgent"
+    },
+    {
+      "display_name": "Cloud Hub Operator Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "apptopology.devOpsDomainTopologies.generate",
+              "apptopology.securityDomainTopologies.generate",
+              "apptopology.sreDomainTopologies.generate"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudhub#cloudhub.operator",
+      "stable_id": "roles/cloudhub.operator"
+    },
+    {
+      "display_name": "Cloud Security Compliance Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudsql.instances.connect"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudsecuritycompliance#cloudsecuritycompliance.serviceAgent",
+      "stable_id": "roles/cloudsecuritycompliance.serviceAgent"
+    },
+    {
+      "display_name": "Cloud Composer API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/composer#composer.serviceAgent",
+      "stable_id": "roles/composer.serviceAgent"
+    },
+    {
+      "display_name": "Composer Worker",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "datalineage.processes.markAsDeleted"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/composer#composer.worker",
+      "stable_id": "roles/composer.worker"
+    },
+    {
+      "display_name": "Data Catalog Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.createTagBinding",
+              "dataplex.entryGroups.deleteTagBinding",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.createTagBinding",
+              "dataplex.entryTypes.deleteTagBinding",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.admin",
+      "stable_id": "roles/datacatalog.admin"
+    },
+    {
+      "display_name": "Data Catalog Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.editor",
+      "stable_id": "roles/datacatalog.editor"
+    },
+    {
+      "display_name": "DataCatalog EntryGroup Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.createTagBinding",
+              "dataplex.entryGroups.deleteTagBinding",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner",
+      "stable_id": "roles/datacatalog.entryGroupOwner"
+    },
+    {
+      "display_name": "Data Catalog Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datacatalog#datacatalog.viewer",
+      "stable_id": "roles/datacatalog.viewer"
+    },
+    {
+      "display_name": "Cloud Dataflow Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings",
+              "monitoring.alertPolicies.create",
+              "monitoring.alertPolicies.delete",
+              "monitoring.alertPolicies.update",
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent",
+      "stable_id": "roles/dataflow.serviceAgent"
+    },
+    {
+      "display_name": "Dataform Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.admin",
+      "stable_id": "roles/dataform.admin"
+    },
+    {
+      "display_name": "Code Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.codeEditor",
+      "stable_id": "roles/dataform.codeEditor"
+    },
+    {
+      "display_name": "Code Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.codeOwner",
+      "stable_id": "roles/dataform.codeOwner"
+    },
+    {
+      "display_name": "Code Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.codeViewer",
+      "stable_id": "roles/dataform.codeViewer"
+    },
+    {
+      "display_name": "Dataform Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.editor",
+      "stable_id": "roles/dataform.editor"
+    },
+    {
+      "display_name": "Team Folder Commenter Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.teamFolderCommenter",
+      "stable_id": "roles/dataform.teamFolderCommenter"
+    },
+    {
+      "display_name": "Team Folder Contributor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.teamFolderContributor",
+      "stable_id": "roles/dataform.teamFolderContributor"
+    },
+    {
+      "display_name": "Team Folder Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.teamFolderOwner",
+      "stable_id": "roles/dataform.teamFolderOwner"
+    },
+    {
+      "display_name": "Team Folder Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.teamFolderViewer",
+      "stable_id": "roles/dataform.teamFolderViewer"
+    },
+    {
+      "display_name": "Dataform Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataform#dataform.viewer",
+      "stable_id": "roles/dataform.viewer"
+    },
+    {
+      "display_name": "Cloud Data Fusion API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datafusion#datafusion.serviceAgent",
+      "stable_id": "roles/datafusion.serviceAgent"
+    },
+    {
+      "display_name": "Data Lineage Administrator",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "datalineage.processes.markAsDeleted"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datalineage#datalineage.admin",
+      "stable_id": "roles/datalineage.admin"
+    },
+    {
+      "display_name": "Data Lineage Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "datalineage.processes.markAsDeleted"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datalineage#datalineage.editor",
+      "stable_id": "roles/datalineage.editor"
+    },
+    {
+      "display_name": "Data Lineage Events Producer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "datalineage.processes.markAsDeleted"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datalineage#datalineage.producer",
+      "stable_id": "roles/datalineage.producer"
+    },
+    {
+      "display_name": "Datapipelines Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datapipelines#datapipelines.serviceAgent",
+      "stable_id": "roles/datapipelines.serviceAgent"
+    },
+    {
+      "display_name": "Dataplex Administrator",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.createTagBinding",
+              "dataplex.entryGroups.deleteTagBinding",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.createTagBinding",
+              "dataplex.entryTypes.deleteTagBinding",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings",
+              "dataplex.governanceRules.createTagBinding",
+              "dataplex.governanceRules.deleteTagBinding",
+              "dataplex.governanceRules.listEffectiveTags",
+              "dataplex.governanceRules.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.admin",
+      "stable_id": "roles/dataplex.admin"
+    },
+    {
+      "display_name": "Dataplex Catalog Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.createTagBinding",
+              "dataplex.entryGroups.deleteTagBinding",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.createTagBinding",
+              "dataplex.entryTypes.deleteTagBinding",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.catalogAdmin",
+      "stable_id": "roles/dataplex.catalogAdmin"
+    },
+    {
+      "display_name": "Dataplex Catalog Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.catalogEditor",
+      "stable_id": "roles/dataplex.catalogEditor"
+    },
+    {
+      "display_name": "Dataplex Catalog Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.catalogViewer",
+      "stable_id": "roles/dataplex.catalogViewer"
+    },
+    {
+      "display_name": "Dataplex Entry Group Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryGroups.createTagBinding",
+              "dataplex.entryGroups.deleteTagBinding",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.entryGroupOwner",
+      "stable_id": "roles/dataplex.entryGroupOwner"
+    },
+    {
+      "display_name": "Dataplex Entry Type Owner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryTypes.createTagBinding",
+              "dataplex.entryTypes.deleteTagBinding",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.entryTypeOwner",
+      "stable_id": "roles/dataplex.entryTypeOwner"
+    },
+    {
+      "display_name": "Dataplex Entry Type User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.entryTypeUser",
+      "stable_id": "roles/dataplex.entryTypeUser"
+    },
+    {
+      "display_name": "Cloud Dataplex Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings",
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataplex#dataplex.serviceAgent",
+      "stable_id": "roles/dataplex.serviceAgent"
+    },
+    {
+      "display_name": "Dataproc Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent",
+      "stable_id": "roles/dataproc.serviceAgent"
+    },
+    {
+      "display_name": "Data Studio Managed Storage Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "bigquery.tables.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datastudio#datastudio.managedStorageServiceAgent",
+      "stable_id": "roles/datastudio.managedStorageServiceAgent"
+    },
+    {
+      "display_name": "Discovery Engine Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "discoveryengine.accounts.create",
+              "discoveryengine.audioOverviews.create",
+              "discoveryengine.audioOverviews.delete",
+              "discoveryengine.audioOverviews.get",
+              "discoveryengine.audioOverviews.getIceConfig",
+              "discoveryengine.audioOverviews.sendSdpOffer",
+              "discoveryengine.cmekConfigs.delete",
+              "discoveryengine.notebooks.create",
+              "discoveryengine.notebooks.generateGuide",
+              "discoveryengine.notebooks.get",
+              "discoveryengine.notebooks.getAnalytics",
+              "discoveryengine.notebooks.getIamPolicy",
+              "discoveryengine.notebooks.interactSources",
+              "discoveryengine.notebooks.list",
+              "discoveryengine.notebooks.removeSelf",
+              "discoveryengine.notebooks.setIamPolicy",
+              "discoveryengine.notebooks.update",
+              "discoveryengine.notes.create",
+              "discoveryengine.notes.delete",
+              "discoveryengine.notes.get",
+              "discoveryengine.notes.update",
+              "discoveryengine.sources.checkFreshness",
+              "discoveryengine.sources.create",
+              "discoveryengine.sources.delete",
+              "discoveryengine.sources.generateDocumentGuide",
+              "discoveryengine.sources.get",
+              "discoveryengine.sources.refresh",
+              "discoveryengine.sources.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin",
+      "stable_id": "roles/discoveryengine.admin"
+    },
+    {
+      "display_name": "Gemini Enterprise Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "discoveryengine.accounts.create",
+              "discoveryengine.audioOverviews.create",
+              "discoveryengine.audioOverviews.delete",
+              "discoveryengine.audioOverviews.get",
+              "discoveryengine.audioOverviews.getIceConfig",
+              "discoveryengine.audioOverviews.sendSdpOffer",
+              "discoveryengine.cmekConfigs.delete",
+              "discoveryengine.notebooks.create",
+              "discoveryengine.notebooks.generateGuide",
+              "discoveryengine.notebooks.get",
+              "discoveryengine.notebooks.getAnalytics",
+              "discoveryengine.notebooks.getIamPolicy",
+              "discoveryengine.notebooks.interactSources",
+              "discoveryengine.notebooks.list",
+              "discoveryengine.notebooks.removeSelf",
+              "discoveryengine.notebooks.setIamPolicy",
+              "discoveryengine.notebooks.update",
+              "discoveryengine.notes.create",
+              "discoveryengine.notes.delete",
+              "discoveryengine.notes.get",
+              "discoveryengine.notes.update",
+              "discoveryengine.sources.checkFreshness",
+              "discoveryengine.sources.create",
+              "discoveryengine.sources.delete",
+              "discoveryengine.sources.generateDocumentGuide",
+              "discoveryengine.sources.get",
+              "discoveryengine.sources.refresh",
+              "discoveryengine.sources.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin",
+      "stable_id": "roles/discoveryengine.agentspaceAdmin"
+    },
+    {
+      "display_name": "Gemini Enterprise Restricted User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "discoveryengine.collections.get",
+              "discoveryengine.dataStores.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceRestrictedUser",
+      "stable_id": "roles/discoveryengine.agentspaceRestrictedUser"
+    },
+    {
+      "display_name": "DLP Organization Data Profiles Driver",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings",
+              "dataplex.entryGroups.createTagBinding",
+              "dataplex.entryGroups.deleteTagBinding",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.createTagBinding",
+              "dataplex.entryTypes.deleteTagBinding",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings",
+              "dataplex.governanceRules.createTagBinding",
+              "dataplex.governanceRules.deleteTagBinding",
+              "dataplex.governanceRules.listEffectiveTags",
+              "dataplex.governanceRules.listTagBindings",
+              "notebooks.instances.createTagBinding",
+              "notebooks.instances.deleteTagBinding",
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings",
+              "redis.clusters.createTagBinding",
+              "redis.clusters.deleteTagBinding",
+              "redis.clusters.listEffectiveTags",
+              "redis.clusters.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dlp#dlp.orgdriver",
+      "stable_id": "roles/dlp.orgdriver"
+    },
+    {
+      "display_name": "DLP Project Data Profiles Driver",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings",
+              "dataplex.entryGroups.createTagBinding",
+              "dataplex.entryGroups.deleteTagBinding",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.createTagBinding",
+              "dataplex.entryTypes.deleteTagBinding",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings",
+              "dataplex.governanceRules.createTagBinding",
+              "dataplex.governanceRules.deleteTagBinding",
+              "dataplex.governanceRules.listEffectiveTags",
+              "dataplex.governanceRules.listTagBindings",
+              "notebooks.instances.createTagBinding",
+              "notebooks.instances.deleteTagBinding",
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings",
+              "redis.clusters.createTagBinding",
+              "redis.clusters.deleteTagBinding",
+              "redis.clusters.listEffectiveTags",
+              "redis.clusters.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dlp#dlp.projectdriver",
+      "stable_id": "roles/dlp.projectdriver"
+    },
+    {
+      "display_name": "DLP API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dlp#dlp.serviceAgent",
+      "stable_id": "roles/dlp.serviceAgent"
+    },
+    {
+      "display_name": "Firebase Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/firebase#firebase.admin",
+      "stable_id": "roles/firebase.admin"
+    },
+    {
+      "display_name": "Firebase Develop Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/firebase#firebase.developAdmin",
+      "stable_id": "roles/firebase.developAdmin"
+    },
+    {
+      "display_name": "Security Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [],
+            "removed": [
+              "prodactuation.dnsConfigs.list",
+              "prodactuation.ganpatiGroups.list",
+              "prodactuation.locations.list",
+              "prodactuation.operations.list",
+              "prodactuation.uberProxyServices.list"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityAdmin",
+      "stable_id": "roles/iam.securityAdmin"
+    },
+    {
+      "display_name": "Security Reviewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [],
+            "removed": [
+              "prodactuation.dnsConfigs.list",
+              "prodactuation.ganpatiGroups.list",
+              "prodactuation.locations.list",
+              "prodactuation.operations.list",
+              "prodactuation.uberProxyServices.list"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityReviewer",
+      "stable_id": "roles/iam.securityReviewer"
+    },
+    {
+      "display_name": "AI Platform Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/ml#ml.serviceAgent",
+      "stable_id": "roles/ml.serviceAgent"
+    },
+    {
+      "display_name": "Notebooks Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "notebooks.instances.createTagBinding",
+              "notebooks.instances.deleteTagBinding",
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.admin",
+      "stable_id": "roles/notebooks.admin"
+    },
+    {
+      "display_name": "Notebooks Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.editor",
+      "stable_id": "roles/notebooks.editor"
+    },
+    {
+      "display_name": "Notebooks Legacy Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "notebooks.instances.createTagBinding",
+              "notebooks.instances.deleteTagBinding",
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin",
+      "stable_id": "roles/notebooks.legacyAdmin"
+    },
+    {
+      "display_name": "Notebooks Legacy Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.legacyViewer",
+      "stable_id": "roles/notebooks.legacyViewer"
+    },
+    {
+      "display_name": "Notebooks Runner",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.runner",
+      "stable_id": "roles/notebooks.runner"
+    },
+    {
+      "display_name": "AI Platform Notebooks Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.serviceAgent",
+      "stable_id": "roles/notebooks.serviceAgent"
+    },
+    {
+      "display_name": "Notebooks Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/notebooks#notebooks.viewer",
+      "stable_id": "roles/notebooks.viewer"
+    },
+    {
+      "display_name": "Oracle Database@Google Cloud admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.dbSystems.update",
+              "oracledatabase.exascaleDbStorageVaults.update",
+              "oracledatabase.goldenGateConnectionAssignments.update",
+              "oracledatabase.goldenGateConnections.update",
+              "oracledatabase.goldenGateDeployments.update",
+              "oracledatabase.odbNetworks.update",
+              "oracledatabase.odbSubnets.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.admin",
+      "stable_id": "roles/oracledatabase.admin"
+    },
+    {
+      "display_name": "Oracle Database@Google Cloud DB System Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.dbSystems.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystemAdmin",
+      "stable_id": "roles/oracledatabase.dbSystemAdmin"
+    },
+    {
+      "display_name": "Oracle Database@Google Cloud Exadata Database Service on Exascale Infrastructure Storage Vault Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.exascaleDbStorageVaults.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.exascaleDbStorageVaultAdmin",
+      "stable_id": "roles/oracledatabase.exascaleDbStorageVaultAdmin"
+    },
+    {
+      "display_name": "Oracle Database@Google Cloud GoldenGate Connection Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.goldenGateConnections.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.goldenGateConnectionAdmin",
+      "stable_id": "roles/oracledatabase.goldenGateConnectionAdmin"
+    },
+    {
+      "display_name": "Oracle Database@Google Cloud GoldenGate Connection Assignment Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.goldenGateConnectionAssignments.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.goldenGateConnectionAssignmentAdmin",
+      "stable_id": "roles/oracledatabase.goldenGateConnectionAssignmentAdmin"
+    },
+    {
+      "display_name": "Oracle Database@Google Cloud GoldenGate Deployment Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.goldenGateDeployments.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.goldenGateDeploymentAdmin",
+      "stable_id": "roles/oracledatabase.goldenGateDeploymentAdmin"
+    },
+    {
+      "display_name": "Oracle Database@Google Network Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.odbNetworks.update",
+              "oracledatabase.odbSubnets.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.networkAdmin",
+      "stable_id": "roles/oracledatabase.networkAdmin"
+    },
+    {
+      "display_name": "Oracle Database@Google ODB Network Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.odbNetworks.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbNetworkAdmin",
+      "stable_id": "roles/oracledatabase.odbNetworkAdmin"
+    },
+    {
+      "display_name": "Oracle Database@Google ODB Subnet Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "oracledatabase.odbSubnets.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbSubnetAdmin",
+      "stable_id": "roles/oracledatabase.odbSubnetAdmin"
+    },
+    {
+      "display_name": "Cloud Memorystore Redis Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "redis.clusters.createTagBinding",
+              "redis.clusters.deleteTagBinding",
+              "redis.clusters.listEffectiveTags",
+              "redis.clusters.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/redis#redis.admin",
+      "stable_id": "roles/redis.admin"
+    },
+    {
+      "display_name": "Cloud Memorystore Redis Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "redis.clusters.listEffectiveTags",
+              "redis.clusters.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/redis#redis.viewer",
+      "stable_id": "roles/redis.viewer"
+    },
+    {
+      "display_name": "Tag User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.createTagBinding",
+              "dataform.repositories.deleteTagBinding",
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings",
+              "dataplex.entryGroups.createTagBinding",
+              "dataplex.entryGroups.deleteTagBinding",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.createTagBinding",
+              "dataplex.entryTypes.deleteTagBinding",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings",
+              "dataplex.governanceRules.createTagBinding",
+              "dataplex.governanceRules.deleteTagBinding",
+              "dataplex.governanceRules.listEffectiveTags",
+              "dataplex.governanceRules.listTagBindings",
+              "notebooks.instances.createTagBinding",
+              "notebooks.instances.deleteTagBinding",
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings",
+              "redis.clusters.createTagBinding",
+              "redis.clusters.deleteTagBinding",
+              "redis.clusters.listEffectiveTags",
+              "redis.clusters.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser",
+      "stable_id": "roles/resourcemanager.tagUser"
+    },
+    {
+      "display_name": "Tag Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "dataform.repositories.listEffectiveTags",
+              "dataform.repositories.listTagBindings",
+              "dataplex.entryGroups.listEffectiveTags",
+              "dataplex.entryGroups.listTagBindings",
+              "dataplex.entryTypes.listEffectiveTags",
+              "dataplex.entryTypes.listTagBindings",
+              "dataplex.governanceRules.listEffectiveTags",
+              "dataplex.governanceRules.listTagBindings",
+              "notebooks.instances.listEffectiveTags",
+              "notebooks.instances.listTagBindings",
+              "redis.clusters.listEffectiveTags",
+              "redis.clusters.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer",
+      "stable_id": "roles/resourcemanager.tagViewer"
+    },
+    {
+      "display_name": "Storage Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/storage#storage.admin",
+      "stable_id": "roles/storage.admin"
+    },
+    {
+      "display_name": "Storage Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/storage#storage.editor",
+      "stable_id": "roles/storage.editor"
+    },
+    {
+      "display_name": "Storage Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/storage#storage.viewer",
+      "stable_id": "roles/storage.viewer"
+    },
+    {
+      "display_name": "Vector Search Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "vectorsearch.dataObjects.export",
+              "vectorsearch.indexes.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/vectorsearch#vectorsearch.admin",
+      "stable_id": "roles/vectorsearch.admin"
+    },
+    {
+      "display_name": "Vector Search DataObject Writer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "vectorsearch.dataObjects.export"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/vectorsearch#vectorsearch.dataObjectWriter",
+      "stable_id": "roles/vectorsearch.dataObjectWriter"
+    },
+    {
+      "display_name": "Vector Search Index Writer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "vectorsearch.indexes.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/vectorsearch#vectorsearch.indexWriter",
+      "stable_id": "roles/vectorsearch.indexWriter"
+    },
+    {
+      "display_name": "Vector Search Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "vectorsearch.collections.create",
+              "vectorsearch.collections.delete",
+              "vectorsearch.dataObjects.create",
+              "vectorsearch.dataObjects.delete",
+              "vectorsearch.dataObjects.import",
+              "vectorsearch.dataObjects.update",
+              "vectorsearch.indexes.delete"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/vectorsearch#vectorsearch.serviceAgent",
+      "stable_id": "roles/vectorsearch.serviceAgent"
+    },
+    {
+      "display_name": "Vector Search Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "vectorsearch.dataObjects.export"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/vectorsearch#vectorsearch.viewer",
+      "stable_id": "roles/vectorsearch.viewer"
+    },
+    {
+      "display_name": "Visual Inspection AI Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "storage.buckets.viewSecurityIntelligenceDetails"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent",
+      "stable_id": "roles/visualinspection.serviceAgent"
+    }
+  ],
+  "compared_at_utc": "2026-09-03T08:06:32Z",
+  "counts": {
+    "added_atoms": 350,
+    "added_objects": 1,
+    "changed_objects": 82,
+    "current_objects": 2374,
+    "previous_objects": 2375,
+    "removed_atoms": 52,
+    "removed_objects": 2
+  },
+  "current_snapshot_date": "2026-09-03",
+  "dataset": "gcp-predefined-roles",
+  "platform": "gcp",
+  "previous_snapshot_date": "2026-08-26",
+  "removed_objects": [
+    {
+      "atoms_removed": [
+        "gcp:permission:prodactuation.dnsConfigs.create",
+        "gcp:permission:prodactuation.dnsConfigs.delete",
+        "gcp:permission:prodactuation.dnsConfigs.get",
+        "gcp:permission:prodactuation.dnsConfigs.list",
+        "gcp:permission:prodactuation.dnsConfigs.update",
+        "gcp:permission:prodactuation.ganpatiGroups.create",
+        "gcp:permission:prodactuation.ganpatiGroups.createMembership",
+        "gcp:permission:prodactuation.ganpatiGroups.delete",
+        "gcp:permission:prodactuation.ganpatiGroups.get",
+        "gcp:permission:prodactuation.ganpatiGroups.list",
+        "gcp:permission:prodactuation.ganpatiGroups.listMemberships",
+        "gcp:permission:prodactuation.ganpatiGroups.update",
+        "gcp:permission:prodactuation.ganpatiMemberships.delete",
+        "gcp:permission:prodactuation.ganpatiMemberships.get",
+        "gcp:permission:prodactuation.ganpatiMemberships.update",
+        "gcp:permission:prodactuation.locations.get",
+        "gcp:permission:prodactuation.locations.list",
+        "gcp:permission:prodactuation.operations.cancel",
+        "gcp:permission:prodactuation.operations.delete",
+        "gcp:permission:prodactuation.operations.get",
+        "gcp:permission:prodactuation.operations.list",
+        "gcp:permission:prodactuation.uberProxyServices.create",
+        "gcp:permission:prodactuation.uberProxyServices.delete",
+        "gcp:permission:prodactuation.uberProxyServices.get",
+        "gcp:permission:prodactuation.uberProxyServices.list",
+        "gcp:permission:prodactuation.uberProxyServices.update",
+        "gcp:permission:resourcemanager.projects.get",
+        "gcp:permission:resourcemanager.projects.list"
+      ],
+      "display_name": "ProdActuation API Admin Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/prodactuation#prodactuation.admin",
+      "stable_id": "roles/prodactuation.admin"
+    },
+    {
+      "atoms_removed": [
+        "gcp:permission:prodactuation.dnsConfigs.get",
+        "gcp:permission:prodactuation.dnsConfigs.list",
+        "gcp:permission:prodactuation.ganpatiGroups.get",
+        "gcp:permission:prodactuation.ganpatiGroups.list",
+        "gcp:permission:prodactuation.ganpatiGroups.listMemberships",
+        "gcp:permission:prodactuation.ganpatiMemberships.get",
+        "gcp:permission:prodactuation.locations.get",
+        "gcp:permission:prodactuation.locations.list",
+        "gcp:permission:prodactuation.operations.get",
+        "gcp:permission:prodactuation.operations.list",
+        "gcp:permission:prodactuation.uberProxyServices.get",
+        "gcp:permission:prodactuation.uberProxyServices.list",
+        "gcp:permission:resourcemanager.projects.get",
+        "gcp:permission:resourcemanager.projects.list"
+      ],
+      "display_name": "ProdActuation API Viewer Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/prodactuation#prodactuation.viewer",
+      "stable_id": "roles/prodactuation.viewer"
+    }
+  ]
+}
