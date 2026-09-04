@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 20, 2026, 20:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 28, 2026, 15:42 UTC</p>
+                <p><b>Edited time:</b>  September 02, 2026, 21:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch</code></p>
             </li></ul></div>
      
         <h2 id="AWSTransformInfrastructureExecutorAccessBatch-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -230,7 +230,8 @@
         "arn:aws:cloudformation:*:*:stack/AtxInfrastructureStack-*/*",
         "arn:aws:cloudformation:*:*:stack/atx-*",
         "arn:aws:cloudformation:*:*:stack/atx-*/*",
-        "arn:aws:cloudformation:*:*:stack/AtxSecurityAgentStack-*/*"
+        "arn:aws:cloudformation:*:*:stack/AtxSecurityAgentStack-*/*",
+        "arn:aws:cloudformation:*:*:stack/AtxDispatcherStack/*"
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
@@ -341,6 +342,17 @@
       "Effect" : "Allow",
       "Action" : "cloudformation:ListStacks",
       "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SQSEnqueueToDispatcher",
+      "Effect" : "Allow",
+      "Action" : "sqs:SendMessage",
+      "Resource" : "arn:aws:sqs:*:*:atx-dispatcher-queue",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"

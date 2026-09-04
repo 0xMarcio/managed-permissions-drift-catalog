@@ -1,0 +1,187 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:application-autoscaling:DescribeScalableTargets",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:sqs:SendMessage",
+      "aws:allow_action:sqs:SendMessage"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "application-autoscaling:DescribeScalableTargets",
+          "cloudformation:TagResource",
+          "sqs:SendMessage",
+          "sqs:SendMessage"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "sqs:SendMessage"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 02, 2026, 21:27 UTC",
+          "before": "July 28, 2026, 15:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 02, 2026, 21:27 UTC",
+          "before": "July 28, 2026, 15:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 17,
+          "before": 16,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+    },
+    {
+      "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "sqs:SendMessage"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 02, 2026, 21:27 UTC",
+          "before": "July 28, 2026, 15:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 02, 2026, 21:27 UTC",
+          "before": "July 28, 2026, 15:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+    },
+    {
+      "display_name": "DataScientist",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 02, 2026, 23:37 UTC",
+          "before": "December 03, 2019, 16:48 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 02, 2026, 23:37 UTC",
+          "before": "December 03, 2019, 16:48 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 10,
+          "before": 8,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DataScientist.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/DataScientist"
+    },
+    {
+      "display_name": "AmazonAppStreamServiceAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "application-autoscaling:DescribeScalableTargets"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v12 (default)",
+          "before": "v11 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 03, 2026, 16:57 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 03, 2026, 16:57 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAppStreamServiceAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonAppStreamServiceAccess"
+    }
+  ],
+  "compared_at_utc": "2026-09-04T08:01:33Z",
+  "counts": {
+    "added_atoms": 4,
+    "added_objects": 0,
+    "changed_objects": 4,
+    "current_objects": 1585,
+    "previous_objects": 1585,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-04",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-03",
+  "removed_objects": []
+}
