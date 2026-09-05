@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: October 30, 2019, 00:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  January 20, 2020, 23:20 UTC</p>
+                <p><b>Edited time:</b>  September 03, 2026, 20:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSForWordPressPluginPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSForWordPressPluginPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -136,6 +136,36 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/createdBy" : "AWSForWordPressPlugin"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CloudFormationTagOnCreateStack",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestedRegion" : "us-east-1",
+          "cloudformation:CreateAction" : "CreateStack"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CloudFormationTagOnUpdateStack",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/createdBy" : "AWSForWordPressPlugin",
+          "cloudformation:CreateAction" : "UpdateStack"
         }
       }
     }

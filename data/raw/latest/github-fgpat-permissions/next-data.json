@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "FgMY0-u7qLiMhWl4e4ZlQ",
+  "buildId": "0VrhWls5kQ-d8uIK0-ZhU",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -5264,6 +5264,15 @@
               "category": "activity",
               "requestPath": "/repos/{owner}/{repo}/stargazers/count",
               "slug": "get-stargazer-count",
+              "subcategory": "starring",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "activity",
+              "requestPath": "/repos/{owner}/{repo}/stargazers/history",
+              "slug": "get-repository-star-history",
               "subcategory": "starring",
               "verb": "get"
             },
