@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 23, 2026, 22:57 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 23, 2026, 22:57 UTC</p>
+                <p><b>Edited time:</b>  September 04, 2026, 21:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonODBFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonODBFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -91,6 +91,19 @@
         "odb:GetCloudAutonomousVmCluster",
         "odb:DeleteCloudAutonomousVmCluster",
         "odb:ListCloudAutonomousVmClusters",
+        "odb:CreateExascaleDbStorageVault",
+        "odb:GetExascaleDbStorageVault",
+        "odb:UpdateExascaleDbStorageVault",
+        "odb:DeleteExascaleDbStorageVault",
+        "odb:ListExascaleDbStorageVaults",
+        "odb:CreateExadbVmCluster",
+        "odb:GetExadbVmCluster",
+        "odb:UpdateExadbVmCluster",
+        "odb:DeleteExadbVmCluster",
+        "odb:ListExadbVmClusters",
+        "odb:AssociateVirtualMachinesToExadbVmCluster",
+        "odb:DisassociateVirtualMachinesFromExadbVmCluster",
+        "odb:ListGiMinorVersions",
         "odb:CreateAutonomousDatabase",
         "odb:GetAutonomousDatabase",
         "odb:UpdateAutonomousDatabase",
@@ -121,6 +134,8 @@
         "odb:ListDbNodes",
         "odb:GetDbServer",
         "odb:ListDbServers",
+        "odb:AssociateIamRoleToResource",
+        "odb:DisassociateIamRoleFromResource",
         "odb:CreateOdbNetwork",
         "odb:GetOdbNetwork",
         "odb:UpdateOdbNetwork",
@@ -133,6 +148,7 @@
         "odb:ListOdbPeeringConnections",
         "odb:ListAutonomousVirtualMachines",
         "odb:ListDbSystemShapes",
+        "odb:ListFlexComponents",
         "odb:ListGiVersions",
         "odb:ListSystemVersions",
         "odb:ListAutonomousDatabaseVersions",
@@ -140,7 +156,11 @@
         "odb:PutResourcePolicy",
         "odb:GetResourcePolicy",
         "odb:DeleteResourcePolicy",
+        "odb:CreateGrantShare",
+        "odb:UpdateGrantShare",
+        "odb:DeleteGrantShare",
         "odb:CreateOutboundIntegration",
+        "odb:UpdateOutboundIntegration",
         "odb:TagResource",
         "odb:UntagResource",
         "odb:ListTagsForResource"
@@ -164,12 +184,7 @@
         "ec2:ModifyOdbNetworkPeering",
         "ec2:DeleteOdbNetworkPeering"
       ],
-      "Resource" : "*",
-      "Condition" : <span>{</span>
-        "ForAnyValue:StringEquals" : <span>{</span>
-          "aws:CalledVia" : "odb.amazonaws.com"
-        }
-      }
+      "Resource" : "*"
     },
     <span>{</span>
       "Sid" : "AllowSLRActions",
@@ -205,4 +220,4 @@
                 </li><li class="listitem"><p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html">Understand versioning for IAM policies</a></p>
             </li><li class="listitem"><p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies">Get started with AWS managed policies and move toward least-privilege permissions</a></p>
             </li></ul></div>
-    <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="previous" class="prev-link" accesskey="p" href="./AmazonODBExadataInfrastructureAdmin.html">AmazonODBExadataInfrastructureAdmin</div><div id="next" class="next-link" accesskey="n" href="./AmazonODBNetworkAdmin.html">AmazonODBNetworkAdmin</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWSManagedPolicies&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-managed-policy/latest/reference/AmazonODBFullAccess.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWSManagedPolicies&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-managed-policy/latest/reference/AmazonODBFullAccess.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>
+    <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="previous" class="prev-link" accesskey="p" href="./AmazonODBExascaleVmClusterAdmin.html">AmazonODBExascaleVmClusterAdmin</div><div id="next" class="next-link" accesskey="n" href="./AmazonODBNetworkAdmin.html">AmazonODBNetworkAdmin</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWSManagedPolicies&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-managed-policy/latest/reference/AmazonODBFullAccess.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWSManagedPolicies&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-managed-policy/latest/reference/AmazonODBFullAccess.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

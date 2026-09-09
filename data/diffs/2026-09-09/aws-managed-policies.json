@@ -1,0 +1,875 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:DescribeAvailabilityZones",
+        "aws:allow_action:iam:CreateServiceLinkedRole",
+        "aws:allow_action:odb:CreateAutonomousDatabase",
+        "aws:allow_action:odb:CreateAutonomousDatabaseBackup",
+        "aws:allow_action:odb:CreateAutonomousDatabaseWallet",
+        "aws:allow_action:odb:CreateOutboundIntegration",
+        "aws:allow_action:odb:DeleteAutonomousDatabase",
+        "aws:allow_action:odb:DeleteAutonomousDatabaseBackup",
+        "aws:allow_action:odb:FailoverAutonomousDatabase",
+        "aws:allow_action:odb:GetAutonomousDatabase",
+        "aws:allow_action:odb:GetAutonomousDatabaseBackup",
+        "aws:allow_action:odb:GetAutonomousDatabaseWalletDetails",
+        "aws:allow_action:odb:GetOciOnboardingStatus",
+        "aws:allow_action:odb:GetOdbNetwork",
+        "aws:allow_action:odb:InitializeService",
+        "aws:allow_action:odb:ListAutonomousDatabaseBackups",
+        "aws:allow_action:odb:ListAutonomousDatabaseCharacterSets",
+        "aws:allow_action:odb:ListAutonomousDatabaseClones",
+        "aws:allow_action:odb:ListAutonomousDatabasePeers",
+        "aws:allow_action:odb:ListAutonomousDatabaseVersions",
+        "aws:allow_action:odb:ListAutonomousDatabases",
+        "aws:allow_action:odb:ListOdbNetworks",
+        "aws:allow_action:odb:ListTagsForResource",
+        "aws:allow_action:odb:RebootAutonomousDatabase",
+        "aws:allow_action:odb:RestoreAutonomousDatabase",
+        "aws:allow_action:odb:ShrinkAutonomousDatabase",
+        "aws:allow_action:odb:StartAutonomousDatabase",
+        "aws:allow_action:odb:StopAutonomousDatabase",
+        "aws:allow_action:odb:SwitchoverAutonomousDatabase",
+        "aws:allow_action:odb:TagResource",
+        "aws:allow_action:odb:UntagResource",
+        "aws:allow_action:odb:UpdateAutonomousDatabase",
+        "aws:allow_action:odb:UpdateAutonomousDatabaseBackup",
+        "aws:allow_action:odb:UpdateOutboundIntegration"
+      ],
+      "display_name": "AmazonODBAutonomousDatabaseAdmin",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBAutonomousDatabaseAdmin.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/AmazonODBAutonomousDatabaseAdmin"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:DescribeAvailabilityZones",
+        "aws:allow_action:odb:AssociateIamRoleToResource",
+        "aws:allow_action:odb:CreateCloudVmCluster",
+        "aws:allow_action:odb:CreateDbNode",
+        "aws:allow_action:odb:CreateOutboundIntegration",
+        "aws:allow_action:odb:DeleteCloudVmCluster",
+        "aws:allow_action:odb:DeleteDbNode",
+        "aws:allow_action:odb:DisassociateIamRoleFromResource",
+        "aws:allow_action:odb:GetCloudExadataInfrastructure",
+        "aws:allow_action:odb:GetCloudExadataInfrastructureUnallocatedResources",
+        "aws:allow_action:odb:GetCloudVmCluster",
+        "aws:allow_action:odb:GetDbNode",
+        "aws:allow_action:odb:GetDbServer",
+        "aws:allow_action:odb:GetOciOnboardingStatus",
+        "aws:allow_action:odb:GetOdbNetwork",
+        "aws:allow_action:odb:InitializeService",
+        "aws:allow_action:odb:ListCloudExadataInfrastructures",
+        "aws:allow_action:odb:ListCloudVmClusters",
+        "aws:allow_action:odb:ListDbNodes",
+        "aws:allow_action:odb:ListDbServers",
+        "aws:allow_action:odb:ListDbSystemShapes",
+        "aws:allow_action:odb:ListFlexComponents",
+        "aws:allow_action:odb:ListGiVersions",
+        "aws:allow_action:odb:ListOdbNetworks",
+        "aws:allow_action:odb:ListSystemVersions",
+        "aws:allow_action:odb:ListTagsForResource",
+        "aws:allow_action:odb:RebootDbNode",
+        "aws:allow_action:odb:StartDbNode",
+        "aws:allow_action:odb:StopDbNode",
+        "aws:allow_action:odb:TagResource",
+        "aws:allow_action:odb:UntagResource",
+        "aws:allow_action:odb:UpdateOutboundIntegration"
+      ],
+      "display_name": "AmazonODBExadataVmClusterAdmin",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBExadataVmClusterAdmin.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/AmazonODBExadataVmClusterAdmin"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:DescribeAvailabilityZones",
+        "aws:allow_action:iam:CreateServiceLinkedRole",
+        "aws:allow_action:odb:CreateExascaleDbStorageVault",
+        "aws:allow_action:odb:DeleteExascaleDbStorageVault",
+        "aws:allow_action:odb:DeleteResourcePolicy",
+        "aws:allow_action:odb:GetDbServer",
+        "aws:allow_action:odb:GetExascaleDbStorageVault",
+        "aws:allow_action:odb:GetOciOnboardingStatus",
+        "aws:allow_action:odb:GetResourcePolicy",
+        "aws:allow_action:odb:InitializeService",
+        "aws:allow_action:odb:ListDbServers",
+        "aws:allow_action:odb:ListDbSystemShapes",
+        "aws:allow_action:odb:ListExadbVmClusters",
+        "aws:allow_action:odb:ListExascaleDbStorageVaults",
+        "aws:allow_action:odb:ListFlexComponents",
+        "aws:allow_action:odb:ListTagsForResource",
+        "aws:allow_action:odb:PutResourcePolicy",
+        "aws:allow_action:odb:TagResource",
+        "aws:allow_action:odb:UntagResource",
+        "aws:allow_action:odb:UpdateExascaleDbStorageVault"
+      ],
+      "display_name": "AmazonODBExascaleStorageVaultAdmin",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBExascaleStorageVaultAdmin.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/AmazonODBExascaleStorageVaultAdmin"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:DescribeAvailabilityZones",
+        "aws:allow_action:odb:AssociateIamRoleToResource",
+        "aws:allow_action:odb:AssociateVirtualMachinesToExadbVmCluster",
+        "aws:allow_action:odb:CreateDbNode",
+        "aws:allow_action:odb:CreateExadbVmCluster",
+        "aws:allow_action:odb:CreateOutboundIntegration",
+        "aws:allow_action:odb:DeleteDbNode",
+        "aws:allow_action:odb:DeleteExadbVmCluster",
+        "aws:allow_action:odb:DisassociateIamRoleFromResource",
+        "aws:allow_action:odb:DisassociateVirtualMachinesFromExadbVmCluster",
+        "aws:allow_action:odb:GetDbNode",
+        "aws:allow_action:odb:GetDbServer",
+        "aws:allow_action:odb:GetExadbVmCluster",
+        "aws:allow_action:odb:GetExascaleDbStorageVault",
+        "aws:allow_action:odb:GetOciOnboardingStatus",
+        "aws:allow_action:odb:GetOdbNetwork",
+        "aws:allow_action:odb:InitializeService",
+        "aws:allow_action:odb:ListDbNodes",
+        "aws:allow_action:odb:ListDbServers",
+        "aws:allow_action:odb:ListDbSystemShapes",
+        "aws:allow_action:odb:ListExadbVmClusters",
+        "aws:allow_action:odb:ListExascaleDbStorageVaults",
+        "aws:allow_action:odb:ListFlexComponents",
+        "aws:allow_action:odb:ListGiMinorVersions",
+        "aws:allow_action:odb:ListGiVersions",
+        "aws:allow_action:odb:ListOdbNetworks",
+        "aws:allow_action:odb:ListSystemVersions",
+        "aws:allow_action:odb:ListTagsForResource",
+        "aws:allow_action:odb:RebootDbNode",
+        "aws:allow_action:odb:StartDbNode",
+        "aws:allow_action:odb:StopDbNode",
+        "aws:allow_action:odb:TagResource",
+        "aws:allow_action:odb:UntagResource",
+        "aws:allow_action:odb:UpdateExadbVmCluster",
+        "aws:allow_action:odb:UpdateOutboundIntegration"
+      ],
+      "display_name": "AmazonODBExascaleVmClusterAdmin",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBExascaleVmClusterAdmin.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/AmazonODBExascaleVmClusterAdmin"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:ec2:DescribeAvailabilityZones",
+      "aws:allow_action:ec2:DescribeAvailabilityZones",
+      "aws:allow_action:ec2:DescribeAvailabilityZones",
+      "aws:allow_action:ec2:DescribeAvailabilityZones",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:odb:AssociateIamRoleToResource",
+      "aws:allow_action:odb:AssociateIamRoleToResource",
+      "aws:allow_action:odb:AssociateIamRoleToResource",
+      "aws:allow_action:odb:AssociateIamRoleToResource",
+      "aws:allow_action:odb:AssociateVirtualMachinesToExadbVmCluster",
+      "aws:allow_action:odb:AssociateVirtualMachinesToExadbVmCluster",
+      "aws:allow_action:odb:CreateAutonomousDatabase",
+      "aws:allow_action:odb:CreateAutonomousDatabaseBackup",
+      "aws:allow_action:odb:CreateAutonomousDatabaseWallet",
+      "aws:allow_action:odb:CreateCloudVmCluster",
+      "aws:allow_action:odb:CreateDbNode",
+      "aws:allow_action:odb:CreateDbNode",
+      "aws:allow_action:odb:CreateExadbVmCluster",
+      "aws:allow_action:odb:CreateExadbVmCluster",
+      "aws:allow_action:odb:CreateExascaleDbStorageVault",
+      "aws:allow_action:odb:CreateExascaleDbStorageVault",
+      "aws:allow_action:odb:CreateGrantShare",
+      "aws:allow_action:odb:CreateOutboundIntegration",
+      "aws:allow_action:odb:CreateOutboundIntegration",
+      "aws:allow_action:odb:CreateOutboundIntegration",
+      "aws:allow_action:odb:DeleteAutonomousDatabase",
+      "aws:allow_action:odb:DeleteAutonomousDatabaseBackup",
+      "aws:allow_action:odb:DeleteCloudVmCluster",
+      "aws:allow_action:odb:DeleteDbNode",
+      "aws:allow_action:odb:DeleteDbNode",
+      "aws:allow_action:odb:DeleteExadbVmCluster",
+      "aws:allow_action:odb:DeleteExadbVmCluster",
+      "aws:allow_action:odb:DeleteExascaleDbStorageVault",
+      "aws:allow_action:odb:DeleteExascaleDbStorageVault",
+      "aws:allow_action:odb:DeleteGrantShare",
+      "aws:allow_action:odb:DeleteResourcePolicy",
+      "aws:allow_action:odb:DisassociateIamRoleFromResource",
+      "aws:allow_action:odb:DisassociateIamRoleFromResource",
+      "aws:allow_action:odb:DisassociateIamRoleFromResource",
+      "aws:allow_action:odb:DisassociateIamRoleFromResource",
+      "aws:allow_action:odb:DisassociateVirtualMachinesFromExadbVmCluster",
+      "aws:allow_action:odb:DisassociateVirtualMachinesFromExadbVmCluster",
+      "aws:allow_action:odb:FailoverAutonomousDatabase",
+      "aws:allow_action:odb:GetAutonomousDatabase",
+      "aws:allow_action:odb:GetAutonomousDatabaseBackup",
+      "aws:allow_action:odb:GetAutonomousDatabaseWalletDetails",
+      "aws:allow_action:odb:GetCloudExadataInfrastructure",
+      "aws:allow_action:odb:GetCloudExadataInfrastructureUnallocatedResources",
+      "aws:allow_action:odb:GetCloudVmCluster",
+      "aws:allow_action:odb:GetDbNode",
+      "aws:allow_action:odb:GetDbNode",
+      "aws:allow_action:odb:GetDbServer",
+      "aws:allow_action:odb:GetDbServer",
+      "aws:allow_action:odb:GetDbServer",
+      "aws:allow_action:odb:GetExadbVmCluster",
+      "aws:allow_action:odb:GetExadbVmCluster",
+      "aws:allow_action:odb:GetExadbVmCluster",
+      "aws:allow_action:odb:GetExascaleDbStorageVault",
+      "aws:allow_action:odb:GetExascaleDbStorageVault",
+      "aws:allow_action:odb:GetExascaleDbStorageVault",
+      "aws:allow_action:odb:GetExascaleDbStorageVault",
+      "aws:allow_action:odb:GetOciOnboardingStatus",
+      "aws:allow_action:odb:GetOciOnboardingStatus",
+      "aws:allow_action:odb:GetOciOnboardingStatus",
+      "aws:allow_action:odb:GetOciOnboardingStatus",
+      "aws:allow_action:odb:GetOdbNetwork",
+      "aws:allow_action:odb:GetOdbNetwork",
+      "aws:allow_action:odb:GetOdbNetwork",
+      "aws:allow_action:odb:GetResourcePolicy",
+      "aws:allow_action:odb:InitializeService",
+      "aws:allow_action:odb:InitializeService",
+      "aws:allow_action:odb:InitializeService",
+      "aws:allow_action:odb:InitializeService",
+      "aws:allow_action:odb:ListAutonomousDatabaseBackups",
+      "aws:allow_action:odb:ListAutonomousDatabaseCharacterSets",
+      "aws:allow_action:odb:ListAutonomousDatabaseClones",
+      "aws:allow_action:odb:ListAutonomousDatabasePeers",
+      "aws:allow_action:odb:ListAutonomousDatabaseVersions",
+      "aws:allow_action:odb:ListAutonomousDatabases",
+      "aws:allow_action:odb:ListCloudExadataInfrastructures",
+      "aws:allow_action:odb:ListCloudVmClusters",
+      "aws:allow_action:odb:ListDbNodes",
+      "aws:allow_action:odb:ListDbNodes",
+      "aws:allow_action:odb:ListDbServers",
+      "aws:allow_action:odb:ListDbServers",
+      "aws:allow_action:odb:ListDbServers",
+      "aws:allow_action:odb:ListDbSystemShapes",
+      "aws:allow_action:odb:ListDbSystemShapes",
+      "aws:allow_action:odb:ListDbSystemShapes",
+      "aws:allow_action:odb:ListExadbVmClusters",
+      "aws:allow_action:odb:ListExadbVmClusters",
+      "aws:allow_action:odb:ListExadbVmClusters",
+      "aws:allow_action:odb:ListExadbVmClusters",
+      "aws:allow_action:odb:ListExascaleDbStorageVaults",
+      "aws:allow_action:odb:ListExascaleDbStorageVaults",
+      "aws:allow_action:odb:ListExascaleDbStorageVaults",
+      "aws:allow_action:odb:ListExascaleDbStorageVaults",
+      "aws:allow_action:odb:ListFlexComponents",
+      "aws:allow_action:odb:ListFlexComponents",
+      "aws:allow_action:odb:ListFlexComponents",
+      "aws:allow_action:odb:ListFlexComponents",
+      "aws:allow_action:odb:ListFlexComponents",
+      "aws:allow_action:odb:ListFlexComponents",
+      "aws:allow_action:odb:ListGiMinorVersions",
+      "aws:allow_action:odb:ListGiMinorVersions",
+      "aws:allow_action:odb:ListGiMinorVersions",
+      "aws:allow_action:odb:ListGiVersions",
+      "aws:allow_action:odb:ListGiVersions",
+      "aws:allow_action:odb:ListOdbNetworks",
+      "aws:allow_action:odb:ListOdbNetworks",
+      "aws:allow_action:odb:ListOdbNetworks",
+      "aws:allow_action:odb:ListSystemVersions",
+      "aws:allow_action:odb:ListSystemVersions",
+      "aws:allow_action:odb:ListTagsForResource",
+      "aws:allow_action:odb:ListTagsForResource",
+      "aws:allow_action:odb:ListTagsForResource",
+      "aws:allow_action:odb:ListTagsForResource",
+      "aws:allow_action:odb:PutResourcePolicy",
+      "aws:allow_action:odb:RebootAutonomousDatabase",
+      "aws:allow_action:odb:RebootDbNode",
+      "aws:allow_action:odb:RebootDbNode",
+      "aws:allow_action:odb:RestoreAutonomousDatabase",
+      "aws:allow_action:odb:ShrinkAutonomousDatabase",
+      "aws:allow_action:odb:StartAutonomousDatabase",
+      "aws:allow_action:odb:StartDbNode",
+      "aws:allow_action:odb:StartDbNode",
+      "aws:allow_action:odb:StopAutonomousDatabase",
+      "aws:allow_action:odb:StopDbNode",
+      "aws:allow_action:odb:StopDbNode",
+      "aws:allow_action:odb:SwitchoverAutonomousDatabase",
+      "aws:allow_action:odb:TagResource",
+      "aws:allow_action:odb:TagResource",
+      "aws:allow_action:odb:TagResource",
+      "aws:allow_action:odb:TagResource",
+      "aws:allow_action:odb:UntagResource",
+      "aws:allow_action:odb:UntagResource",
+      "aws:allow_action:odb:UntagResource",
+      "aws:allow_action:odb:UntagResource",
+      "aws:allow_action:odb:UpdateAutonomousDatabase",
+      "aws:allow_action:odb:UpdateAutonomousDatabaseBackup",
+      "aws:allow_action:odb:UpdateExadbVmCluster",
+      "aws:allow_action:odb:UpdateExadbVmCluster",
+      "aws:allow_action:odb:UpdateExascaleDbStorageVault",
+      "aws:allow_action:odb:UpdateExascaleDbStorageVault",
+      "aws:allow_action:odb:UpdateGrantShare",
+      "aws:allow_action:odb:UpdateOutboundIntegration",
+      "aws:allow_action:odb:UpdateOutboundIntegration",
+      "aws:allow_action:odb:UpdateOutboundIntegration",
+      "aws:allow_action:odb:UpdateOutboundIntegration",
+      "aws:allow_action:odb:UpdateOutboundIntegration",
+      "aws:allow_action:sagemaker:DescribeAppImageConfig"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:TagResource",
+          "cloudformation:TagResource",
+          "cloudformation:TagResource",
+          "cloudformation:TagResource",
+          "cloudformation:UntagResource",
+          "cloudformation:UntagResource",
+          "cloudformation:UntagResource",
+          "cloudformation:UntagResource",
+          "ec2:DescribeAvailabilityZones",
+          "ec2:DescribeAvailabilityZones",
+          "ec2:DescribeAvailabilityZones",
+          "ec2:DescribeAvailabilityZones",
+          "iam:CreateServiceLinkedRole",
+          "iam:CreateServiceLinkedRole",
+          "odb:AssociateIamRoleToResource",
+          "odb:AssociateIamRoleToResource",
+          "odb:AssociateIamRoleToResource",
+          "odb:AssociateIamRoleToResource",
+          "odb:AssociateVirtualMachinesToExadbVmCluster",
+          "odb:AssociateVirtualMachinesToExadbVmCluster",
+          "odb:CreateAutonomousDatabase",
+          "odb:CreateAutonomousDatabaseBackup",
+          "odb:CreateAutonomousDatabaseWallet",
+          "odb:CreateCloudVmCluster",
+          "odb:CreateDbNode",
+          "odb:CreateDbNode",
+          "odb:CreateExadbVmCluster",
+          "odb:CreateExadbVmCluster",
+          "odb:CreateExascaleDbStorageVault",
+          "odb:CreateExascaleDbStorageVault",
+          "odb:CreateGrantShare",
+          "odb:CreateOutboundIntegration",
+          "odb:CreateOutboundIntegration",
+          "odb:CreateOutboundIntegration",
+          "odb:DeleteAutonomousDatabase",
+          "odb:DeleteAutonomousDatabaseBackup",
+          "odb:DeleteCloudVmCluster",
+          "odb:DeleteDbNode",
+          "odb:DeleteDbNode",
+          "odb:DeleteExadbVmCluster",
+          "odb:DeleteExadbVmCluster",
+          "odb:DeleteExascaleDbStorageVault",
+          "odb:DeleteExascaleDbStorageVault",
+          "odb:DeleteGrantShare",
+          "odb:DeleteResourcePolicy",
+          "odb:DisassociateIamRoleFromResource",
+          "odb:DisassociateIamRoleFromResource",
+          "odb:DisassociateIamRoleFromResource",
+          "odb:DisassociateIamRoleFromResource",
+          "odb:DisassociateVirtualMachinesFromExadbVmCluster",
+          "odb:DisassociateVirtualMachinesFromExadbVmCluster",
+          "odb:FailoverAutonomousDatabase",
+          "odb:GetAutonomousDatabase",
+          "odb:GetAutonomousDatabaseBackup",
+          "odb:GetAutonomousDatabaseWalletDetails",
+          "odb:GetCloudExadataInfrastructure",
+          "odb:GetCloudExadataInfrastructureUnallocatedResources",
+          "odb:GetCloudVmCluster",
+          "odb:GetDbNode",
+          "odb:GetDbNode",
+          "odb:GetDbServer",
+          "odb:GetDbServer",
+          "odb:GetDbServer",
+          "odb:GetExadbVmCluster",
+          "odb:GetExadbVmCluster",
+          "odb:GetExadbVmCluster",
+          "odb:GetExascaleDbStorageVault",
+          "odb:GetExascaleDbStorageVault",
+          "odb:GetExascaleDbStorageVault",
+          "odb:GetExascaleDbStorageVault",
+          "odb:GetOciOnboardingStatus",
+          "odb:GetOciOnboardingStatus",
+          "odb:GetOciOnboardingStatus",
+          "odb:GetOciOnboardingStatus",
+          "odb:GetOdbNetwork",
+          "odb:GetOdbNetwork",
+          "odb:GetOdbNetwork",
+          "odb:GetResourcePolicy",
+          "odb:InitializeService",
+          "odb:InitializeService",
+          "odb:InitializeService",
+          "odb:InitializeService",
+          "odb:ListAutonomousDatabaseBackups",
+          "odb:ListAutonomousDatabaseCharacterSets",
+          "odb:ListAutonomousDatabaseClones",
+          "odb:ListAutonomousDatabasePeers",
+          "odb:ListAutonomousDatabaseVersions",
+          "odb:ListAutonomousDatabases",
+          "odb:ListCloudExadataInfrastructures",
+          "odb:ListCloudVmClusters",
+          "odb:ListDbNodes",
+          "odb:ListDbNodes",
+          "odb:ListDbServers",
+          "odb:ListDbServers",
+          "odb:ListDbServers",
+          "odb:ListDbSystemShapes",
+          "odb:ListDbSystemShapes",
+          "odb:ListDbSystemShapes",
+          "odb:ListExadbVmClusters",
+          "odb:ListExadbVmClusters",
+          "odb:ListExadbVmClusters",
+          "odb:ListExadbVmClusters",
+          "odb:ListExascaleDbStorageVaults",
+          "odb:ListExascaleDbStorageVaults",
+          "odb:ListExascaleDbStorageVaults",
+          "odb:ListExascaleDbStorageVaults",
+          "odb:ListFlexComponents",
+          "odb:ListFlexComponents",
+          "odb:ListFlexComponents",
+          "odb:ListFlexComponents",
+          "odb:ListFlexComponents",
+          "odb:ListFlexComponents",
+          "odb:ListGiMinorVersions",
+          "odb:ListGiMinorVersions",
+          "odb:ListGiMinorVersions",
+          "odb:ListGiVersions",
+          "odb:ListGiVersions",
+          "odb:ListOdbNetworks",
+          "odb:ListOdbNetworks",
+          "odb:ListOdbNetworks",
+          "odb:ListSystemVersions",
+          "odb:ListSystemVersions",
+          "odb:ListTagsForResource",
+          "odb:ListTagsForResource",
+          "odb:ListTagsForResource",
+          "odb:ListTagsForResource",
+          "odb:PutResourcePolicy",
+          "odb:RebootAutonomousDatabase",
+          "odb:RebootDbNode",
+          "odb:RebootDbNode",
+          "odb:RestoreAutonomousDatabase",
+          "odb:ShrinkAutonomousDatabase",
+          "odb:StartAutonomousDatabase",
+          "odb:StartDbNode",
+          "odb:StartDbNode",
+          "odb:StopAutonomousDatabase",
+          "odb:StopDbNode",
+          "odb:StopDbNode",
+          "odb:SwitchoverAutonomousDatabase",
+          "odb:TagResource",
+          "odb:TagResource",
+          "odb:TagResource",
+          "odb:TagResource",
+          "odb:UntagResource",
+          "odb:UntagResource",
+          "odb:UntagResource",
+          "odb:UntagResource",
+          "odb:UpdateAutonomousDatabase",
+          "odb:UpdateAutonomousDatabaseBackup",
+          "odb:UpdateExadbVmCluster",
+          "odb:UpdateExadbVmCluster",
+          "odb:UpdateExascaleDbStorageVault",
+          "odb:UpdateExascaleDbStorageVault",
+          "odb:UpdateGrantShare",
+          "odb:UpdateOutboundIntegration",
+          "odb:UpdateOutboundIntegration",
+          "odb:UpdateOutboundIntegration",
+          "odb:UpdateOutboundIntegration",
+          "odb:UpdateOutboundIntegration",
+          "sagemaker:DescribeAppImageConfig"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSQuickSetupDeploymentRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v14 (default)",
+          "before": "v13 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 07, 2026, 15:07 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 07, 2026, 15:07 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupDeploymentRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupDeploymentRolePolicy"
+    },
+    {
+      "display_name": "AWSQuickSetupJITNADeploymentRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 07, 2026, 12:27 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 07, 2026, 12:27 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 8,
+          "before": 7,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupJITNADeploymentRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupJITNADeploymentRolePolicy"
+    },
+    {
+      "display_name": "AWSQuickSetupSSMDeploymentRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 07, 2026, 12:27 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 07, 2026, 12:27 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupSSMDeploymentRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupSSMDeploymentRolePolicy"
+    },
+    {
+      "display_name": "AmazonODBFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "odb:AssociateIamRoleToResource",
+              "odb:AssociateVirtualMachinesToExadbVmCluster",
+              "odb:CreateExadbVmCluster",
+              "odb:CreateExascaleDbStorageVault",
+              "odb:CreateGrantShare",
+              "odb:DeleteExadbVmCluster",
+              "odb:DeleteExascaleDbStorageVault",
+              "odb:DeleteGrantShare",
+              "odb:DisassociateIamRoleFromResource",
+              "odb:DisassociateVirtualMachinesFromExadbVmCluster",
+              "odb:GetExadbVmCluster",
+              "odb:GetExascaleDbStorageVault",
+              "odb:ListExadbVmClusters",
+              "odb:ListExascaleDbStorageVaults",
+              "odb:ListFlexComponents",
+              "odb:ListGiMinorVersions",
+              "odb:UpdateExadbVmCluster",
+              "odb:UpdateExascaleDbStorageVault",
+              "odb:UpdateGrantShare",
+              "odb:UpdateOutboundIntegration"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 04, 2026, 21:37 UTC",
+          "before": "July 23, 2026, 22:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 04, 2026, 21:37 UTC",
+          "before": "July 23, 2026, 22:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonODBFullAccess"
+    },
+    {
+      "display_name": "AmazonODBReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "odb:GetExadbVmCluster",
+              "odb:GetExascaleDbStorageVault",
+              "odb:ListExadbVmClusters",
+              "odb:ListExascaleDbStorageVaults",
+              "odb:ListFlexComponents",
+              "odb:ListGiMinorVersions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 04, 2026, 21:27 UTC",
+          "before": "August 07, 2026, 01:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 04, 2026, 21:27 UTC",
+          "before": "August 07, 2026, 01:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonODBReadOnlyAccess"
+    },
+    {
+      "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "sagemaker:DescribeAppImageConfig"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v43 (default)",
+          "before": "v42 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 04, 2026, 18:57 UTC",
+          "before": "August 11, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 04, 2026, 18:57 UTC",
+          "before": "August 11, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+    },
+    {
+      "display_name": "AmazonODBAutonomousVmClusterAdmin",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "odb:AssociateIamRoleToResource",
+              "odb:DisassociateIamRoleFromResource",
+              "odb:UpdateOutboundIntegration"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 04, 2026, 21:17 UTC",
+          "before": "August 07, 2026, 01:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 04, 2026, 21:17 UTC",
+          "before": "August 07, 2026, 01:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBAutonomousVmClusterAdmin.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/AmazonODBAutonomousVmClusterAdmin"
+    },
+    {
+      "display_name": "AmazonODBExadataInfrastructureAdmin",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "odb:ListFlexComponents"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 04, 2026, 21:27 UTC",
+          "before": "August 07, 2026, 01:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 04, 2026, 21:27 UTC",
+          "before": "August 07, 2026, 01:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBExadataInfrastructureAdmin.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/AmazonODBExadataInfrastructureAdmin"
+    },
+    {
+      "display_name": "AmazonODBNetworkAdmin",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 04, 2026, 21:37 UTC",
+          "before": "August 07, 2026, 01:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 04, 2026, 21:37 UTC",
+          "before": "August 07, 2026, 01:12 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBNetworkAdmin.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/AmazonODBNetworkAdmin"
+    },
+    {
+      "display_name": "AWSCodeStarServiceRole",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v12 (default)",
+          "before": "v11 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 08, 2026, 12:47 UTC",
+          "before": "September 20, 2021, 19:11 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 08, 2026, 12:47 UTC",
+          "before": "September 20, 2021, 19:11 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 15,
+          "before": 14,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCodeStarServiceRole.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSCodeStarServiceRole"
+    }
+  ],
+  "compared_at_utc": "2026-09-09T08:12:40Z",
+  "counts": {
+    "added_atoms": 160,
+    "added_objects": 4,
+    "changed_objects": 10,
+    "current_objects": 1589,
+    "previous_objects": 1585,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-09",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-05",
+  "removed_objects": []
+}

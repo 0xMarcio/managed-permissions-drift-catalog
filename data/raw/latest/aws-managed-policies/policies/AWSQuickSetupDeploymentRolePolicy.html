@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: June 26, 2024, 09:55 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:00 UTC</p>
+                <p><b>Edited time:</b>  September 07, 2026, 15:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSQuickSetupDeploymentRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSQuickSetupDeploymentRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v13 (default)</p>
+        <p><b>Policy version:</b> v14 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -101,6 +101,27 @@
       "Resource" : [
         "arn:aws:cloudformation:*:*:stack/StackSet-AWS-QuickSetup-*"
       ]
+    },
+    <span>{</span>
+      "Sid" : "CfnTagOnMutate",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : [
+        "arn:aws:cloudformation:*:*:stack/StackSet-AWS-QuickSetup-*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "cloudformation:CreateAction" : [
+            "CreateStack",
+            "UpdateStack",
+            "CreateChangeSet",
+            "ExecuteChangeSet"
+          ]
+        }
+      }
     },
     <span>{</span>
       "Sid" : "RGroupsGet",
