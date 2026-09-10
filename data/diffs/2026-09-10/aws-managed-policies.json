@@ -1,0 +1,75 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:drs:CreateSourceServerForDrs",
+      "aws:allow_action:drs:DescribeReplicationConfigurationTemplates"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "drs:CreateSourceServerForDrs",
+          "drs:DescribeReplicationConfigurationTemplates"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSElasticDisasterRecoveryStagingAccountPolicy_v2",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "drs:CreateSourceServerForDrs",
+              "drs:DescribeReplicationConfigurationTemplates"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 09, 2026, 13:47 UTC",
+          "before": "November 27, 2023, 13:32 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 09, 2026, 13:47 UTC",
+          "before": "November 27, 2023, 13:32 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticDisasterRecoveryStagingAccountPolicy_v2.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSElasticDisasterRecoveryStagingAccountPolicy_v2"
+    }
+  ],
+  "compared_at_utc": "2026-09-10T08:11:41Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1589,
+    "previous_objects": 1589,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-10",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-09",
+  "removed_objects": []
+}
