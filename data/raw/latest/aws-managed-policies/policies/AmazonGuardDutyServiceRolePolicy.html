@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: November 28, 2017, 20:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  April 24, 2026, 20:12 UTC</p>
+                <p><b>Edited time:</b>  September 09, 2026, 21:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonGuardDutyServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonGuardDutyServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v12 (default)</p>
+        <p><b>Policy version:</b> v13 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -341,6 +341,23 @@
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "GdLatticeCreateManagedSnvaAssociation",
+      "Effect" : "Allow",
+      "Action" : "vpc-lattice:CreateServiceNetworkVpcAssociation",
+      "Resource" : "arn:aws:vpc-lattice:*:*:servicenetworkvpcassociation/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "GdLatticeAssociateViaAwsService",
+      "Effect" : "Allow",
+      "Action" : "vpc-lattice:AssociateViaAWSService",
+      "Resource" : "*"
     }
   ]
 }</code></pre>

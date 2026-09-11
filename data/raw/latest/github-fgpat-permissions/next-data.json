@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "g5AgSZsJEZoSXPFHeW03x",
+  "buildId": "puikIvvo3FoGcn7HJQY9P",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -1263,6 +1263,15 @@
               "requestPath": "/repos/{owner}/{repo}/code-quality/setup",
               "slug": "update-a-code-quality-setup-configuration",
               "subcategory": "code-quality",
+              "verb": "patch"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "code-scanning",
+              "requestPath": "/repos/{owner}/{repo}/code-scanning/ai-scan",
+              "slug": "update-ai-scan-enablement-for-a-repository",
+              "subcategory": "code-scanning",
               "verb": "patch"
             },
             {
@@ -5981,6 +5990,24 @@
             {
               "access": "read",
               "additional-permissions": false,
+              "category": "code-scanning",
+              "requestPath": "/orgs/{org}/code-scanning/ai-scan",
+              "slug": "get-the-ai-scan-setting-for-an-organization",
+              "subcategory": "ai-scan",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "code-scanning",
+              "requestPath": "/orgs/{org}/code-scanning/ai-scan",
+              "slug": "update-the-ai-scan-setting-for-an-organization",
+              "subcategory": "ai-scan",
+              "verb": "patch"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
               "category": "code-security",
               "requestPath": "/orgs/{org}/code-security/configurations",
               "slug": "get-code-security-configurations-for-an-organization",
@@ -9471,6 +9498,15 @@
               "access": "read",
               "additional-permissions": false,
               "category": "code-scanning",
+              "requestPath": "/repos/{owner}/{repo}/code-scanning/ai-scan",
+              "slug": "get-ai-scan-enablement-for-a-repository",
+              "subcategory": "code-scanning",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "code-scanning",
               "requestPath": "/repos/{owner}/{repo}/code-scanning/alerts",
               "slug": "list-code-scanning-alerts-for-a-repository",
               "subcategory": "code-scanning",
@@ -11203,6 +11239,11 @@
             },
             {
               "childPages": [
+                {
+                  "childPages": [],
+                  "href": "/en/rest/code-scanning/ai-scan",
+                  "title": "AI Scan"
+                },
                 {
                   "childPages": [],
                   "href": "/en/rest/code-scanning/code-scanning",
