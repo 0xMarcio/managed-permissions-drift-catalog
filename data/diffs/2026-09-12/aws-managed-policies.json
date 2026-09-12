@@ -1,0 +1,418 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aidevops:ListWebhooks",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:cloudformation:UntagResource",
+      "aws:allow_action:eks:CreateAddon",
+      "aws:allow_action:eks:CreatePodIdentityAssociation",
+      "aws:allow_action:eks:DescribeAddon",
+      "aws:allow_action:eks:DescribePodIdentityAssociation",
+      "aws:allow_action:eks:ListPodIdentityAssociations",
+      "aws:allow_action:eks:UpdateAddon",
+      "aws:allow_action:eks:UpdatePodIdentityAssociation",
+      "aws:allow_action:iam:AttachRolePolicy",
+      "aws:allow_action:iam:CreateRole",
+      "aws:allow_action:iam:GetRole",
+      "aws:allow_action:iam:GetRoleTemplateVersion",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:iam:TagRole",
+      "aws:allow_action:license-manager:ListReceivedLicenses",
+      "aws:allow_action:payments:ListPaymentProgramStatus",
+      "aws:allow_action:signin:CreateOAuth2Token",
+      "aws:allow_action:wafv2:ListLoggingConfigurations"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aidevops:ListWebhooks",
+          "cloudformation:TagResource",
+          "cloudformation:TagResource",
+          "cloudformation:TagResource",
+          "cloudformation:TagResource",
+          "cloudformation:TagResource",
+          "cloudformation:TagResource",
+          "cloudformation:UntagResource",
+          "cloudformation:UntagResource",
+          "cloudformation:UntagResource",
+          "cloudformation:UntagResource",
+          "cloudformation:UntagResource",
+          "cloudformation:UntagResource",
+          "eks:CreateAddon",
+          "eks:CreatePodIdentityAssociation",
+          "eks:DescribeAddon",
+          "eks:DescribePodIdentityAssociation",
+          "eks:ListPodIdentityAssociations",
+          "eks:UpdateAddon",
+          "eks:UpdatePodIdentityAssociation",
+          "iam:AttachRolePolicy",
+          "iam:CreateRole",
+          "iam:GetRole",
+          "iam:GetRoleTemplateVersion",
+          "iam:PassRole",
+          "iam:TagRole",
+          "license-manager:ListReceivedLicenses",
+          "payments:ListPaymentProgramStatus",
+          "signin:CreateOAuth2Token",
+          "wafv2:ListLoggingConfigurations"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsOperatorAppAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:ListWebhooks"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 10, 2026, 17:47 UTC",
+          "before": "June 26, 2026, 23:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 10, 2026, 17:47 UTC",
+          "before": "June 26, 2026, 23:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+    },
+    {
+      "display_name": "AWSGlueConsoleFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 10, 2026, 20:27 UTC",
+          "before": "July 14, 2023, 14:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 10, 2026, 20:27 UTC",
+          "before": "July 14, 2023, 14:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 12,
+          "before": 11,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSGlueConsoleFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSGlueConsoleFullAccess"
+    },
+    {
+      "display_name": "AWSGlueConsoleSageMakerNotebookFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 10, 2026, 20:27 UTC",
+          "before": "July 15, 2021, 15:24 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 10, 2026, 20:27 UTC",
+          "before": "July 15, 2021, 15:24 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 15,
+          "before": 14,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSGlueConsoleSageMakerNotebookFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSGlueConsoleSageMakerNotebookFullAccess"
+    },
+    {
+      "display_name": "AWSMarketplaceFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource",
+              "license-manager:ListReceivedLicenses",
+              "payments:ListPaymentProgramStatus",
+              "signin:CreateOAuth2Token"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 11, 2026, 16:27 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 11, 2026, 16:27 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 5,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceFullAccess"
+    },
+    {
+      "display_name": "AWSObservabilityAdminTelemetryEnablementServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "eks:CreateAddon",
+              "eks:CreatePodIdentityAssociation",
+              "eks:DescribeAddon",
+              "eks:DescribePodIdentityAssociation",
+              "eks:ListPodIdentityAssociations",
+              "eks:UpdateAddon",
+              "eks:UpdatePodIdentityAssociation",
+              "iam:AttachRolePolicy",
+              "iam:CreateRole",
+              "iam:GetRole",
+              "iam:GetRoleTemplateVersion",
+              "iam:PassRole",
+              "iam:TagRole",
+              "wafv2:ListLoggingConfigurations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 11, 2026, 00:37 UTC",
+          "before": "July 24, 2026, 19:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 11, 2026, 00:37 UTC",
+          "before": "July 24, 2026, 19:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 50,
+          "before": 37,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSControlTowerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v22 (default)",
+          "before": "v21 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 10, 2026, 19:47 UTC",
+          "before": "May 20, 2026, 20:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 10, 2026, 19:47 UTC",
+          "before": "May 20, 2026, 20:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 16,
+          "before": 15,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSControlTowerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSControlTowerServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSTransformApplicationDeploymentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 11, 2026, 00:27 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 11, 2026, 00:27 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformApplicationDeploymentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSTransformApplicationDeploymentPolicy"
+    },
+    {
+      "display_name": "AWSTransformApplicationECSDeploymentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 11, 2026, 00:27 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 11, 2026, 00:27 UTC",
+          "before": "February 12, 2026, 18:02 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformApplicationECSDeploymentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSTransformApplicationECSDeploymentPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-09-12T07:58:39Z",
+  "counts": {
+    "added_atoms": 30,
+    "added_objects": 0,
+    "changed_objects": 8,
+    "current_objects": 1590,
+    "previous_objects": 1590,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-12",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-11",
+  "removed_objects": []
+}

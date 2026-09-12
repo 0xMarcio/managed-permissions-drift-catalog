@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 14, 2017, 13:37 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 14, 2023, 14:37 UTC</p>
+                <p><b>Edited time:</b>  September 10, 2026, 20:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSGlueConsoleFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSGlueConsoleFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v14 (default)</p>
+        <p><b>Policy version:</b> v15 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -163,6 +163,22 @@
         "cloudformation:DeleteStack"
       ],
       "Resource" : "arn:aws:cloudformation:*:*:stack/aws-glue*/*"
+    },
+    <span>{</span>
+      "Sid" : "CloudFormationTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : "arn:aws:cloudformation:*:*:stack/aws-glue*/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "cloudformation:CreateAction" : [
+            "CreateStack"
+          ]
+        }
+      }
     },
     <span>{</span>
       "Effect" : "Allow",

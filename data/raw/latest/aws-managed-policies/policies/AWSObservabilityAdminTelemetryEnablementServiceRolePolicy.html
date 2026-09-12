@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: August 01, 2025, 18:04 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 24, 2026, 19:12 UTC</p>
+                <p><b>Edited time:</b>  September 11, 2026, 00:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSObservabilityAdminTelemetryEnablementServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v14 (default)</p>
+        <p><b>Policy version:</b> v15 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -274,6 +274,19 @@
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "wafv2:LogScope" : "CloudwatchTelemetryRuleManaged"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TelemetryReadForWafLoggingConfigurations",
+      "Effect" : "Allow",
+      "Action" : [
+        "wafv2:ListLoggingConfigurations"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -655,6 +668,145 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:PrincipalOrgId" : "$<span>{</span>aws:ResourceOrgId}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "InspectTemplate",
+      "Effect" : "Allow",
+      "Action" : "iam:GetRoleTemplateVersion",
+      "Resource" : "arn:aws:iam::aws:role-template/telemetry-enablement.observabilityadmin.amazonaws.com/CloudWatchTelemetryRuleEKSAddonRoleTemplate:1"
+    },
+    <span>{</span>
+      "Sid" : "AcquireRoleFromTemplate",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateRole",
+        "iam:TagRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/service-role/CloudWatchTelemetryRuleEKSAddonRole",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:RoleTemplateARN" : "arn:aws:iam::aws:role-template/telemetry-enablement.observabilityadmin.amazonaws.com/CloudWatchTelemetryRuleEKSAddonRoleTemplate:1"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AttachManagedPolicyFromTemplate",
+      "Effect" : "Allow",
+      "Action" : "iam:AttachRolePolicy",
+      "Resource" : "arn:aws:iam::*:role/service-role/CloudWatchTelemetryRuleEKSAddonRole",
+      "Condition" : <span>{</span>
+        "ArnEquals" : <span>{</span>
+          "iam:PolicyARN" : "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:RoleTemplateARN" : "arn:aws:iam::aws:role-template/telemetry-enablement.observabilityadmin.amazonaws.com/CloudWatchTelemetryRuleEKSAddonRoleTemplate:1"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ReadRole",
+      "Effect" : "Allow",
+      "Action" : "iam:GetRole",
+      "Resource" : [
+        "arn:aws:iam::*:role/service-role/CloudWatchTelemetryRuleEKSAddonRole",
+        "arn:aws:iam::*:role/CloudWatchTelemetryRuleEKSAddonRole"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "PassRoleToPodIdentity",
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : "arn:aws:iam::*:role/service-role/CloudWatchTelemetryRuleEKSAddonRole",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:PassedToService" : "pods.eks.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "InstallAddon",
+      "Effect" : "Allow",
+      "Action" : "eks:CreateAddon",
+      "Resource" : "arn:aws:eks:*:*:cluster/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "FixAddon",
+      "Effect" : "Allow",
+      "Action" : "eks:UpdateAddon",
+      "Resource" : "arn:aws:eks:*:*:addon/*/amazon-cloudwatch-observability/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreatePodIdentityAssociation",
+      "Effect" : "Allow",
+      "Action" : "eks:CreatePodIdentityAssociation",
+      "Resource" : "arn:aws:eks:*:*:cluster/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "FixPodIdentityAssociation",
+      "Effect" : "Allow",
+      "Action" : "eks:UpdatePodIdentityAssociation",
+      "Resource" : "arn:aws:eks:*:*:podidentityassociation/*/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "EvaluateAddon",
+      "Effect" : "Allow",
+      "Action" : "eks:DescribeAddon",
+      "Resource" : "arn:aws:eks:*:*:addon/*/amazon-cloudwatch-observability/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ListPodIdentityAssociations",
+      "Effect" : "Allow",
+      "Action" : "eks:ListPodIdentityAssociations",
+      "Resource" : "arn:aws:eks:*:*:cluster/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "EvaluatePodIdentityAssociation",
+      "Effect" : "Allow",
+      "Action" : "eks:DescribePodIdentityAssociation",
+      "Resource" : "arn:aws:eks:*:*:podidentityassociation/*/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     }

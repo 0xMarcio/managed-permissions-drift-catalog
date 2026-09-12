@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: May 03, 2019, 18:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 20, 2026, 20:12 UTC</p>
+                <p><b>Edited time:</b>  September 10, 2026, 19:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/AWSControlTowerServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSControlTowerServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v21 (default)</p>
+        <p><b>Policy version:</b> v22 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -279,6 +279,29 @@
         "cloudformation:DescribeOrganizationsAccess"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "CloudFormationTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : [
+        "arn:aws:cloudformation:*:*:type/resource/AWS-IAM-Role",
+        "arn:aws:cloudformation:*:*:stack/AWSControlTower*/*",
+        "arn:aws:cloudformation:*:*:stack/StackSet-AWSControlTower*/*",
+        "arn:aws:cloudformation:*:*:stackset/AWSControlTower*:*",
+        "arn:aws:cloudformation:*:*:stackset-target/AWSControlTower*/*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "cloudformation:CreateAction" : [
+            "CreateStack",
+            "UpdateStack"
+          ]
+        }
+      }
     }
   ]
 }</code></pre>
