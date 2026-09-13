@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 11, 2019, 15:19 UTC</p>
+                <p><b>Edited time:</b>  September 11, 2026, 17:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonElasticMapReduceFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonElasticMapReduceFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v7 (default)</p>
+        <p><b>Policy version:</b> v8 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -126,6 +126,22 @@
           "iam:AWSServiceName" : [
             "elasticmapreduce.amazonaws.com",
             "elasticmapreduce.amazonaws.com.cn"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CloudFormationTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "cloudformation:CreateAction" : [
+            "CreateStack"
           ]
         }
       }

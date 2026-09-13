@@ -1,0 +1,75 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:cloudformation:UntagResource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:TagResource",
+          "cloudformation:UntagResource"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonElasticMapReduceFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource",
+              "cloudformation:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 11, 2026, 17:07 UTC",
+          "before": "October 11, 2019, 15:19 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 11, 2026, 17:07 UTC",
+          "before": "October 11, 2019, 15:19 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticMapReduceFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonElasticMapReduceFullAccess"
+    }
+  ],
+  "compared_at_utc": "2026-09-13T08:22:38Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1590,
+    "previous_objects": 1590,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-13",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-12",
+  "removed_objects": []
+}
