@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 10, 2025, 09:04 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 30, 2026, 07:42 UTC</p>
+                <p><b>Edited time:</b>  September 15, 2026, 13:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount</code></p>
             </li></ul></div>
      
         <h2 id="AWSApplicationMigrationNetworkMigrationMultiAccount-version">Policy version</h2>
-        <p><b>Policy version:</b> v6 (default)</p>
+        <p><b>Policy version:</b> v7 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -1141,6 +1141,21 @@
         },
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CreateTransitGatewaySLR",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/transitgateway.amazonaws.com/AWSServiceRoleForVPCTransitGateway"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "transitgateway.amazonaws.com"
         }
       }
     },

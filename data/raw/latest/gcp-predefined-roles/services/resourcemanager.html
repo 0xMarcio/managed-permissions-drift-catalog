@@ -437,12 +437,6 @@
 
 
 
-
-
-
-
-
-
  
  
 
@@ -486,6 +480,9 @@
 
  
  
+
+
+
 
 
 
@@ -1806,15 +1803,15 @@
     data-label="Site header link: Console"
     
       
-        track-type="globalNav"
-      
-        track-metadata-position="nav"
-      
         track-metadata-eventDetail="nav"
       
         referrerpolicy="no-referrer-when-downgrade"
       
+        track-metadata-position="nav"
+      
         track-name="console"
+      
+        track-type="globalNav"
       
     >
   Console
@@ -2005,11 +2002,11 @@
       
         track-metadata-position="nav"
       
-        track-name="gcpCta"
+        track-type="freeTrial"
       
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-type="freeTrial"
+        track-name="gcpCta"
       
         track-metadata-eventDetail="nav"
       
@@ -2558,15 +2555,15 @@
 
     
       
-        track-type="globalNav"
-      
-        track-metadata-position="nav"
-      
         track-metadata-eventDetail="nav"
       
         referrerpolicy="no-referrer-when-downgrade"
       
+        track-metadata-position="nav"
+      
         track-name="console"
+      
+        track-type="globalNav"
       
     
      data-category="Site-Wide Custom Events"
@@ -5151,7 +5148,7 @@
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Service Consumer Management</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/servicedirectory"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Service Directory</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/networkactions"
+      ><span class="devsite-nav-text" tooltip>Service Directory</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/serviceextensions"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Service Extensions</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/servicemanagement"
         class="devsite-nav-title"
@@ -6751,6 +6748,96 @@ devsite-expandable.arrow-icon a.exw-control>.showalways:before {
 <tbody class="list">
 <tr>
 <td class="role-description">
+<h4 class="role-title add-link" id="resourcemanager.editor" data-text="Resource Manager Editor " tabindex="-1">Resource Manager Editor
+</h4>
+<p class="iamperm-marginless">(<code translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)</p>
+<span class="role-description">
+<p>
+Access to manage Resource Manager resources
+</p>
+</span>
+</td>
+<td class="role-permissions">
+  <devsite-expandable id="expandable-resourcemanager.editor-resourcemanager.boundaries.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">resourcemanager.boundaries.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>associateToCapabilityConfig</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.boundaries.get</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>list</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-resourcemanager.editor-resourcemanager.boundaryConfigs.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">resourcemanager.<wbr>boundaryConfigs.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>boundaryConfigs.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>boundaryConfigs.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-resourcemanager.editor-resourcemanager.capabilities.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">resourcemanager.capabilities.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>capabilities.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>capabilities.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
+  <devsite-expandable id="expandable-resourcemanager.editor-resourcemanager.capabilityConfigs.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>list</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
+  <p><code translate="no" dir="ltr">resourcemanager.folders.create</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.folders.delete</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.folders.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.folders.list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>folders.<wbr>undelete</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.folders.update</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>organizations.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>projects.<wbr>associateToCapabilityConfig</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>projects.<wbr>create</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.projects.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.projects.list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.projects.move</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>projects.<wbr>update</code></p>
+  <devsite-expandable id="expandable-resourcemanager.editor-resourcemanager.tagHolds.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">resourcemanager.tagHolds.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>tagHolds.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.<wbr>tagHolds.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">resourcemanager.tagHolds.list</code></li>
+    </ul>
+  </devsite-expandable>
+  <p><code translate="no" dir="ltr">resourcemanager.tagKeys.create</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagKeys.delete</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagKeys.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagKeys.list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagKeys.update</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>tagValues.<wbr>create</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>tagValues.<wbr>delete</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagValues.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagValues.list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>tagValues.<wbr>update</code></p>
+</td>
+</tr>
+<tr>
+<td class="role-description">
 <h4 class="role-title add-link" id="resourcemanager.folderAdmin" data-text="Folder Admin " tabindex="-1">Folder Admin
 </h4>
 <p class="iamperm-marginless">(<code translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)</p>
@@ -7426,6 +7513,18 @@ Access to list Tags and manage their associations with resources
   <p><code translate="no" dir="ltr">datafusion.<wbr>instances.<wbr>deleteTagBinding</code></p>
   <p><code translate="no" dir="ltr">datafusion.<wbr>instances.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">datafusion.<wbr>instances.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>connectionprofiles.<wbr>createTagBinding</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>connectionprofiles.<wbr>deleteTagBinding</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>connectionprofiles.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>connectionprofiles.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>migrationjobs.<wbr>createTagBinding</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>migrationjobs.<wbr>deleteTagBinding</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>migrationjobs.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>migrationjobs.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>privateconnections.<wbr>createTagBinding</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>privateconnections.<wbr>deleteTagBinding</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>privateconnections.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>privateconnections.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>createTagBinding</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>deleteTagBinding</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>listEffectiveTags</code></p>
@@ -7712,6 +7811,10 @@ Access to list Tags and manage their associations with resources
   <p><code translate="no" dir="ltr">storage.<wbr>buckets.<wbr>deleteTagBinding</code></p>
   <p><code translate="no" dir="ltr">storage.<wbr>buckets.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">storage.<wbr>buckets.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">tpu.nodes.createTagBinding</code></p>
+  <p><code translate="no" dir="ltr">tpu.nodes.deleteTagBinding</code></p>
+  <p><code translate="no" dir="ltr">tpu.nodes.listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">tpu.nodes.listTagBindings</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobTemplates.<wbr>createTagBinding</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobTemplates.<wbr>deleteTagBinding</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobTemplates.<wbr>listEffectiveTags</code></p>
@@ -7720,6 +7823,22 @@ Access to list Tags and manage their associations with resources
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobs.<wbr>deleteTagBinding</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobs.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobs.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>cdnKeys.<wbr>createTagBinding</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>cdnKeys.<wbr>deleteTagBinding</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>cdnKeys.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>cdnKeys.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>liveConfigs.<wbr>createTagBinding</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>liveConfigs.<wbr>deleteTagBinding</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>liveConfigs.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>liveConfigs.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>slates.<wbr>createTagBinding</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>slates.<wbr>deleteTagBinding</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>slates.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>slates.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>vodConfigs.<wbr>createTagBinding</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>vodConfigs.<wbr>deleteTagBinding</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>vodConfigs.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>vodConfigs.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">vmmigration.<wbr>groups.<wbr>createTagBinding</code></p>
   <p><code translate="no" dir="ltr">vmmigration.<wbr>groups.<wbr>deleteTagBinding</code></p>
   <p><code translate="no" dir="ltr">vmmigration.<wbr>groups.<wbr>listEffectiveTags</code></p>
@@ -7958,6 +8077,12 @@ Access to list Tags and their associations with resources
   <p><code translate="no" dir="ltr">dataform.<wbr>repositories.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">datafusion.<wbr>instances.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">datafusion.<wbr>instances.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>connectionprofiles.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>connectionprofiles.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>migrationjobs.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>migrationjobs.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>privateconnections.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">datamigration.<wbr>privateconnections.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryTypes.<wbr>listEffectiveTags</code></p>
@@ -8085,10 +8210,20 @@ Access to list Tags and their associations with resources
   <p><code translate="no" dir="ltr">spanner.<wbr>instances.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">storage.<wbr>buckets.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">storage.<wbr>buckets.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">tpu.nodes.listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">tpu.nodes.listTagBindings</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobTemplates.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobTemplates.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobs.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">transcoder.<wbr>jobs.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>cdnKeys.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>cdnKeys.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>liveConfigs.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>liveConfigs.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>slates.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>slates.<wbr>listTagBindings</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>vodConfigs.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">videostitcher.<wbr>vodConfigs.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">vmmigration.<wbr>groups.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">vmmigration.<wbr>groups.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">vmmigration.<wbr>sources.<wbr>listEffectiveTags</code></p>
@@ -8107,6 +8242,36 @@ Access to list Tags and their associations with resources
   <p><code translate="no" dir="ltr">workflows.<wbr>workflows.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">workstations.<wbr>workstationClusters.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">workstations.<wbr>workstationClusters.<wbr>listTagBindings</code></p>
+</td>
+</tr>
+<tr>
+<td class="role-description">
+<h4 class="role-title add-link" id="resourcemanager.viewer" data-text="Resource Manager Viewer " tabindex="-1">Resource Manager Viewer
+</h4>
+<p class="iamperm-marginless">(<code translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)</p>
+<span class="role-description">
+<p>
+Access to view Resource Manager resources
+</p>
+</span>
+</td>
+<td class="role-permissions">
+  <p><code translate="no" dir="ltr">resourcemanager.boundaries.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>boundaryConfigs.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>capabilities.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.folders.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.folders.list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.<wbr>organizations.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.projects.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.projects.list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagHolds.list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagKeys.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagKeys.list</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagValues.get</code></p>
+  <p><code translate="no" dir="ltr">resourcemanager.tagValues.list</code></p>
 </td>
 </tr>
 <tr>
@@ -8439,6 +8604,170 @@ Access to create, delete and list TagHolds under a TagValue
   <tbody class="list">
     <tr>
       <td>
+        <h4 class="permission-name add-link" id="resourcemanager.boundaries.associateToCapabilityConfig" data-text="resourcemanager.boundaries.associateToCapabilityConfig" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>associateToCapabilityConfig</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.boundaries.create" data-text="resourcemanager.boundaries.create" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>create</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.boundaries.delete" data-text="resourcemanager.boundaries.delete" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>delete</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.boundaries.get" data-text="resourcemanager.boundaries.get" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.boundaries.get</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.boundaries.list" data-text="resourcemanager.boundaries.list" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>list</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.boundaries.update" data-text="resourcemanager.boundaries.update" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>boundaries.<wbr>update</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.boundaryConfigs.get" data-text="resourcemanager.boundaryConfigs.get" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>boundaryConfigs.<wbr>get</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.boundaryConfigs.update" data-text="resourcemanager.boundaryConfigs.update" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>boundaryConfigs.<wbr>update</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <h4 class="permission-name add-link" id="resourcemanager.capabilities.get" data-text="resourcemanager.capabilities.get" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>capabilities.<wbr>get</wbr></wbr></code></h4>
       </td>
       <td>
@@ -8452,10 +8781,16 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin">Organization Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.organizationAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
@@ -8483,6 +8818,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8490,6 +8828,113 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderEditor">Folder Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderEditor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.capabilityConfigs.create" data-text="resourcemanager.capabilityConfigs.create" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>create</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.capabilityConfigs.delete" data-text="resourcemanager.capabilityConfigs.delete" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>delete</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.capabilityConfigs.get" data-text="resourcemanager.capabilityConfigs.get" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>get</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.capabilityConfigs.list" data-text="resourcemanager.capabilityConfigs.list" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>list</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="resourcemanager.capabilityConfigs.update" data-text="resourcemanager.capabilityConfigs.update" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>capabilityConfigs.<wbr>update</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
         </p>
       </td>
     </tr>
@@ -8503,6 +8948,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/assuredworkloads#assuredworkloads.editor">Assured Workloads Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredworkloads.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
@@ -8550,6 +8998,9 @@ Access to create, delete and list TagHolds under a TagValue
         <h4 class="permission-name add-link" id="resourcemanager.folders.delete" data-text="resourcemanager.folders.delete" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.folders.delete</code></h4>
       </td>
       <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
@@ -8618,10 +9069,16 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/cloudprivatecatalog#cloudprivatecatalogproducer.admin">Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudprivatecatalogproducer.admin</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin">Organization Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.organizationAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.admin">Security Center Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.admin</code>)
@@ -8834,10 +9291,16 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin">Organization Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.organizationAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.admin">Security Center Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.admin</code>)
@@ -9028,6 +9491,9 @@ Access to create, delete and list TagHolds under a TagValue
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -9040,6 +9506,9 @@ Access to create, delete and list TagHolds under a TagValue
         <h4 class="permission-name add-link" id="resourcemanager.folders.update" data-text="resourcemanager.folders.update" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.folders.update</code></h4>
       </td>
       <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
@@ -9434,7 +9903,13 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/policysimulator#policysimulator.orgPolicyAdmin">OrgPolicy Simulator Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>policysimulator.orgPolicyAdmin</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin">Organization Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.organizationAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.admin">Security Center Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.admin</code>)
@@ -9825,6 +10300,22 @@ Access to create, delete and list TagHolds under a TagValue
     </tr>
     <tr>
       <td>
+        <h4 class="permission-name add-link" id="resourcemanager.projects.associateToCapabilityConfig" data-text="resourcemanager.projects.associateToCapabilityConfig" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>projects.<wbr>associateToCapabilityConfig</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <h4 class="permission-name add-link" id="resourcemanager.projects.create" data-text="resourcemanager.projects.create" tabindex="-1"><code translate="no" dir="ltr">resourcemanager.<wbr>projects.<wbr>create</wbr></wbr></code></h4>
       </td>
       <td>
@@ -9833,6 +10324,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/assuredworkloads#assuredworkloads.editor">Assured Workloads Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredworkloads.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.projectCreator">Project Creator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.projectCreator</code>)
@@ -10456,6 +10950,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/cloudlocationfinder#cloudlocationfinder.viewer">Cloud Location Finder Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudlocationfinder.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebasecloudmessaging#cloudmessaging.editor">Firebase Cloud Messaging Service Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudmessaging.editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/cloudprivatecatalog#cloudprivatecatalog.admin">Cloudprivatecatalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudprivatecatalog.admin</code>)
@@ -11688,6 +12185,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/remotebuildexecution#remotebuildexecution.viewer">Remotebuildexecution Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>remotebuildexecution.viewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -11701,6 +12201,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser">Tag User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/retail#retail.admin">Retail Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>retail.admin</code>)
@@ -15258,6 +15761,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/cloudlocationfinder#cloudlocationfinder.viewer">Cloud Location Finder Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudlocationfinder.viewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebasecloudmessaging#cloudmessaging.editor">Firebase Cloud Messaging Service Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudmessaging.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/cloudprivatecatalog#cloudprivatecatalog.admin">Cloudprivatecatalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudprivatecatalog.admin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -16449,10 +16955,16 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/remotebuildexecution#remotebuildexecution.viewer">Remotebuildexecution Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>remotebuildexecution.viewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin">Organization Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.organizationAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/retail#retail.admin">Retail Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>retail.admin</code>)
@@ -19212,6 +19724,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.folderAdmin">Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.folderAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -19337,6 +19852,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.projectMover">Project Mover</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.projectMover</code>)
         </p>
         <p class="iamrole-marginless">
@@ -19434,6 +19952,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -19468,6 +19989,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
@@ -19515,10 +20039,16 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer">Tag Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
@@ -19563,6 +20093,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="resourcemanager.tagKeys.create-service-agent-roles">
@@ -19594,6 +20127,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
@@ -19629,6 +20165,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -19636,6 +20175,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer">Tag Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
@@ -19743,6 +20285,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -19750,6 +20295,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer">Tag Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
@@ -19825,6 +20373,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
@@ -19956,6 +20507,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="resourcemanager.tagValues.create-service-agent-roles">
@@ -19987,6 +20541,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
@@ -20022,6 +20579,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -20029,6 +20589,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer">Tag Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.admin">Security Center Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.admin</code>)
@@ -20160,6 +20723,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -20167,6 +20733,9 @@ Access to create, delete and list TagHolds under a TagValue
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer">Tag Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.viewer">Resource Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
@@ -20230,6 +20799,9 @@ Access to create, delete and list TagHolds under a TagValue
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.editor">Resource Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagAdmin">Tag Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagAdmin</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="resourcemanager.tagValues.update-service-agent-roles">
@@ -20257,7 +20829,7 @@ Access to create, delete and list TagHolds under a TagValue
 
   
     <devsite-hats-survey class="nocontent" data-nosnippet
-      hats-id="mwETRvWii0eU5NUYprb0Y9z5GVbc"
+      hats-id="Nd7nTix2o0eU5NUYprb0ThtUc5jf"
       listnr-id="83405"></devsite-hats-survey>
   
 
@@ -20313,7 +20885,7 @@ Access to create, delete and list TagHolds under a TagValue
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-09-14 UTC.</p>
+  <p>Last updated 2026-09-16 UTC.</p>
 </devsite-content-footer>
 
 
@@ -20362,7 +20934,7 @@ Access to create, delete and list TagHolds under a TagValue
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-14 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-16 UTC."],[],[]]
     </template>
   
 </div>
@@ -20394,7 +20966,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="see all products"track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/products/"track-type="footer link">
+            track-metadata-eventDetail="cloud.google.com/products/"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="products and pricing"track-name="see all products"track-metadata-module="footer">
             
           
             See all products
@@ -20411,7 +20983,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="products and pricing"track-metadata-module="footer"track-name="google cloud pricing"track-metadata-eventDetail="cloud.google.com/pricing/"track-type="footer link"track-metadata-position="footer">
+            track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-module="footer"track-metadata-child_headline="products and pricing"track-name="google cloud pricing"track-metadata-position="footer"track-type="footer link">
             
           
             Google Cloud pricing
@@ -20428,7 +21000,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="google cloud marketplace"track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-module="footer">
+            track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="resources"track-name="google cloud marketplace"track-metadata-eventDetail="cloud.google.com/marketplace/"track-type="footer link">
             
           
             Google Cloud Marketplace
@@ -20445,7 +21017,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/contact/"track-name="contact sales"track-metadata-position="footer"track-metadata-child_headline="engage">
+            track-type="footer link"track-metadata-module="footer"track-name="contact sales"track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/contact/">
             
               
               
@@ -20472,7 +21044,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            target="_blank"track-name="google cloud community"track-metadata-module="footer"rel="noopener"track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-child_headline="engage"track-type="footer link"track-metadata-position="footer">
+            track-name="google cloud community"target="_blank"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-eventDetail="www.googlecloudcommunity.com"rel="noopener">
             
           
             Community forums
@@ -20489,7 +21061,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-name="support"track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="resources"track-type="footer link">
+            track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/support-hub/"track-name="support"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer">
             
           
             Support
@@ -20506,7 +21078,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="release notes"track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-module="footer"track-metadata-child_headline="resources">
+            track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="resources"track-type="footer link"track-name="release notes">
             
           
             Release Notes
@@ -20523,7 +21095,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            target="_blank"track-name="system status"track-metadata-position="footer"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="resources"track-metadata-eventDetail="status.cloud.google.com">
+            track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer"target="_blank"track-metadata-eventDetail="status.cloud.google.com"track-metadata-module="footer"track-name="system status">
             
               
               
@@ -20550,7 +21122,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="github"track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="github.com/googlecloudPlatform/">
+            track-metadata-position="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-child_headline="resources"track-type="footer link"track-metadata-module="footer"track-name="github">
             
           
             GitHub
@@ -20567,7 +21139,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-name="google cloud quickstarts"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-module="footer"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer">
+            track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-type="footer link"track-metadata-position="footer"track-name="google cloud quickstarts"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             Getting Started with Google Cloud
@@ -20584,7 +21156,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/docs/samples"track-type="footer link"track-name="code samples"track-metadata-module="footer"track-metadata-position="footer">
+            track-type="footer link"track-name="code samples"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             Code samples
@@ -20601,7 +21173,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-eventDetail="cloud.google.com/architecture/"track-name="cloud architecture center"track-metadata-module="footer"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer">
+            track-metadata-position="footer"track-metadata-child_headline="resources"track-type="footer link"track-metadata-module="footer"track-name="cloud architecture center"track-metadata-eventDetail="cloud.google.com/architecture/">
             
           
             Cloud Architecture Center
@@ -20618,7 +21190,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-child_headline="resources"track-name="training"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-position="footer"track-metadata-module="footer"track-type="footer link">
+            track-metadata-eventDetail="cloud.google.com/learn/training/"track-name="training"track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-module="footer"track-type="footer link">
             
               
               
@@ -20645,7 +21217,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="blog"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="engage">
+            track-metadata-module="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-position="footer"track-name="blog"track-type="footer link">
             
           
             Blog
@@ -20662,7 +21234,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/events/"track-metadata-module="footer"track-name="events"track-metadata-child_headline="engage"track-type="footer link"track-metadata-position="footer">
+            track-metadata-child_headline="engage"track-metadata-module="footer"track-name="events"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/events/"track-type="footer link">
             
           
             Events
@@ -20679,7 +21251,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-position="footer"track-metadata-eventDetail="x.com/googlecloud"rel="noopener"target="_blank"track-type="footer link"track-metadata-child_headline="engage"track-metadata-module="footer"track-name="follow on x">
+            track-metadata-eventDetail="x.com/googlecloud"target="_blank"rel="noopener"track-metadata-module="footer"track-name="follow on x"track-metadata-position="footer"track-metadata-child_headline="engage"track-type="footer link">
             
           
             X (Twitter)
@@ -20696,7 +21268,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="engage"rel="noopener"track-metadata-position="footer"track-type="footer link"target="_blank"track-metadata-module="footer"track-name="google cloud on youtube"track-metadata-eventDetail="www.youtube.com/googlecloud">
+            track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="www.youtube.com/googlecloud"track-name="google cloud on youtube"track-metadata-module="footer"track-metadata-child_headline="engage"rel="noopener"target="_blank">
             
           
             Google Cloud on YouTube
@@ -20713,7 +21285,7 @@ Access to create, delete and list TagHolds under a TagValue
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-name="google cloud tech on youtube"track-metadata-child_headline="engage"target="_blank"rel="noopener"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-type="footer link">
+            track-metadata-eventDetail="www.youtube.com/googlecloudplatform"target="_blank"track-metadata-child_headline="engage"track-type="footer link"track-metadata-module="footer"rel="noopener"track-name="google cloud tech on youtube"track-metadata-position="footer">
             
               
               
@@ -20830,17 +21402,17 @@ Access to create, delete and list TagHolds under a TagValue
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-metadata-position="footer"
+           track-metadata-eventDetail="//about.google/"
          
            target="_blank"
-         
-           track-name="about google"
          
            track-type="footer link"
          
            track-metadata-module="utility footer"
          
-           track-metadata-eventDetail="//about.google/"
+           track-name="about google"
+         
+           track-metadata-position="footer"
          >
           About Google
         </a>
@@ -20856,17 +21428,17 @@ Access to create, delete and list TagHolds under a TagValue
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
+           target="_blank"
+         
            track-metadata-eventDetail="//policies.google.com/privacy"
-         
-           track-name="privacy"
-         
-           track-metadata-module="utility footer"
          
            track-type="footer link"
          
            track-metadata-position="footer"
          
-           target="_blank"
+           track-metadata-module="utility footer"
+         
+           track-name="privacy"
          >
           Privacy
         </a>
@@ -20882,17 +21454,17 @@ Access to create, delete and list TagHolds under a TagValue
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           target="_blank"
-         
-           track-type="footer link"
-         
-           track-metadata-position="footer"
-         
-           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
-         
            track-metadata-module="utility footer"
          
            track-name="site terms"
+         
+           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
+         
+           target="_blank"
+         
+           track-metadata-position="footer"
+         
+           track-type="footer link"
          >
           Site terms
         </a>
@@ -20908,13 +21480,13 @@ Access to create, delete and list TagHolds under a TagValue
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-type="footer link"
-         
-           track-metadata-module="utility footer"
+           track-metadata-eventDetail="//cloud.google.com/product-terms"
          
            track-name="google cloud terms"
          
-           track-metadata-eventDetail="//cloud.google.com/product-terms"
+           track-type="footer link"
+         
+           track-metadata-module="utility footer"
          
            track-metadata-position="footer"
          >
@@ -20932,13 +21504,13 @@ Access to create, delete and list TagHolds under a TagValue
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-name="Manage cookies"
+           aria-hidden="true"
          
            track-metadata-module="utility footer"
          
            track-metadata-position="footer"
          
-           aria-hidden="true"
+           track-name="Manage cookies"
          
            track-metadata-eventDetail="#"
          
@@ -20958,11 +21530,11 @@ Access to create, delete and list TagHolds under a TagValue
            data-category="Site-Wide Custom Events"
            data-label="Footer Our third decade of climate action: join us link"
          
-           track-metadata-position="footer"
+           track-name="Our third decade of climate action: join us"
          
            track-type="footer link"
          
-           track-name="Our third decade of climate action: join us"
+           track-metadata-position="footer"
          
            track-metadata-eventDetail="/sustainability/"
          
@@ -20984,15 +21556,15 @@ Access to create, delete and list TagHolds under a TagValue
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-name="subscribe"
+           track-metadata-position="footer"
+         
+           track-type="footer link"
          
            track-metadata-module="utility footer"
          
            track-metadata-eventDetail="/newsletter/"
          
-           track-metadata-position="footer"
-         
-           track-type="footer link"
+           track-name="subscribe"
          >
           Subscribe
         </a>
@@ -21084,12 +21656,12 @@ Access to create, delete and list TagHolds under a TagValue
   
 
     
-<script nonce="HAhkLC6A8f69flZ156zze+CgUwsuLe">
+<script nonce="5aocqY8EyKJGSgzC1lDVDJLSK3ExdR">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["DevPro__enable_g1_integration","Profiles__enable_join_program_group_endpoint","MiscFeatureFlags__enable_variable_operator_index_yaml","MiscFeatureFlags__enable_appearance_cookies","Profiles__require_profile_eligibility_for_signin","Cloud__fast_free_trial","Profiles__enable_page_saving","BookNav__enable_tenant_cache_key","Cloud__enable_legacy_calculator_redirect","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_complete_playlist_endpoint","DevPro__enable_embed_profile_creation","DevPro__enable_firebase_workspaces_card","Analytics__enable_clearcut_logging","MiscFeatureFlags__developers_footer_dark_image","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_public_developer_profiles","DevPro__enable_vertex_credit_card","DevPro__enable_devpro_offers","OnSwitch__enable","CloudShell__cloud_code_overflow_menu","MiscFeatureFlags__enable_project_variables","Profiles__enable_completequiz_endpoint","DevPro__enable_enterprise","MiscFeatureFlags__enable_explain_this_code","Cloud__cache_serialized_dynamic_content","MiscFeatureFlags__enable_view_transitions","Cloud__enable_cloud_shell_fte_user_flow","Concierge__enable_concierge_restricted","Search__enable_dynamic_content_confidential_banner","Cloud__enable_cloud_shell","Profiles__enable_awarding_url","DevPro__enable_google_payments_buyflow","Profiles__enable_stripe_subscription_management","DevPro__enable_devsite_captcha","CloudShell__cloud_shell_button","Profiles__enable_callout_notifications","Profiles__enable_targeted_hero","DevPro__enable_credits_banner","Profiles__enable_profile_collections","DevPro__enable_code_assist","MiscFeatureFlags__fix_lower_breadcrumbs","DevPro__enable_cloud_innovators_plus","AIStudioInteractionsToggle__interactions_are_default","Profiles__enable_purchase_prompts","MiscFeatureFlags__developers_footer_image","DevPro__enable_google_payments","Concierge__enable_actions_menu","Search__enable_ai_eligibility_checks","DevPro__enable_free_benefits","MiscFeatureFlags__enable_dark_theme","Profiles__enable_user_type","Concierge__enable_pushui","SignIn__enable_l1_signup_flow","Profiles__enable_developer_profiles_callout","Profiles__enable_playlist_community_acl","DevPro__enable_g1_ineligible_redirect","Concierge__enable_devsite_llm_tools","Profiles__enable_completecodelab_endpoint","DevPro__remove_eu_tax_intake_form","MiscFeatureFlags__enable_framebox_badge_methods","Analytics__enable_devpro_interaction_logging","Search__enable_page_map","TpcFeatures__proxy_prod_host","TpcFeatures__enable_unmirrored_page_left_nav","Profiles__enable_dashboard_curated_recommendations","DevPro__enable_google_one_card","DevPro__enable_nvidia_credits_card","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__remove_cross_domain_tracking_params","Cloud__enable_free_trial_server_call","Search__enable_ai_search_summaries_for_all","Search__enable_suggestions_from_borg","DevPro__enable_developer_subscriptions","Experiments__reqs_query_experiments","Profiles__enable_developer_profile_pages_as_content","MiscFeatureFlags__enable_explicit_template_dependencies","EngEduTelemetry__enable_engedu_telemetry","Profiles__enable_developer_profile_benefits_ui_redesign","MiscFeatureFlags__enable_variable_operator","Profiles__enable_recognition_badges","Profiles__enable_auto_apply_credits","Cloud__enable_cloud_dlp_service"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Profiles__enable_awarding_url","Search__enable_suggestions_from_borg","Profiles__enable_purchase_prompts","Profiles__enable_stripe_subscription_management","MiscFeatureFlags__enable_variable_operator","AIStudioInteractionsToggle__interactions_are_default","MiscFeatureFlags__enable_appearance_cookies","Cloud__enable_legacy_calculator_redirect","SignIn__enable_l1_signup_flow","Cloud__enable_free_trial_server_call","Profiles__enable_profile_collections","Search__enable_dynamic_content_confidential_banner","Concierge__enable_pushui","DevPro__enable_google_payments_buyflow","MiscFeatureFlags__enable_explicit_template_dependencies","Profiles__enable_recognition_badges","Search__enable_ai_search_summaries_for_all","Profiles__enable_completecodelab_endpoint","DevPro__enable_cloud_innovators_plus","TpcFeatures__proxy_prod_host","Profiles__enable_targeted_hero","Profiles__require_profile_eligibility_for_signin","DevPro__enable_devsite_captcha","Profiles__enable_callout_notifications","Concierge__enable_actions_menu","DevPro__enable_credits_banner","DevPro__enable_g1_ineligible_redirect","CloudShell__cloud_code_overflow_menu","Cloud__enable_cloudx_experiment_ids","Cloud__fast_free_trial","DevPro__enable_g1_integration","MiscFeatureFlags__enable_explain_this_code","DevPro__enable_firebase_workspaces_card","MiscFeatureFlags__enable_project_variables","Concierge__enable_concierge_restricted","MiscFeatureFlags__enable_firebase_utm","Search__enable_page_map","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__enable_framebox_badge_methods","Experiments__reqs_query_experiments","MiscFeatureFlags__remove_cross_domain_tracking_params","Profiles__enable_completequiz_endpoint","OnSwitch__enable","DevPro__enable_developer_subscriptions","Cloud__enable_cloud_dlp_service","DevPro__enable_enterprise","DevPro__enable_vertex_credit_card","MiscFeatureFlags__developers_footer_dark_image","MiscFeatureFlags__gdp_dashboard_reskin_enabled","DevPro__enable_embed_profile_creation","Profiles__enable_developer_profiles_callout","Profiles__enable_developer_profile_pages_as_content","MiscFeatureFlags__enable_variable_operator_index_yaml","MiscFeatureFlags__enable_view_transitions","Profiles__enable_complete_playlist_endpoint","DevPro__enable_google_one_card","TpcFeatures__enable_unmirrored_page_left_nav","Profiles__enable_playlist_community_acl","Cloud__enable_cloud_shell","MiscFeatureFlags__enable_dark_theme","DevPro__enable_free_benefits","Profiles__enable_public_developer_profiles","Profiles__enable_page_saving","Concierge__enable_devsite_llm_tools","MiscFeatureFlags__developers_footer_image","DevPro__enable_code_assist","Profiles__enable_join_program_group_endpoint","CloudShell__cloud_shell_button","Profiles__enable_user_type","Concierge__enable_remove_info_panel_tags","DevPro__remove_eu_tax_intake_form","Profiles__enable_developer_profile_benefits_ui_redesign","Profiles__enable_auto_apply_credits","Analytics__enable_devpro_interaction_logging","Cloud__cache_serialized_dynamic_content","EngEduTelemetry__enable_engedu_telemetry","DevPro__enable_devpro_offers","MiscFeatureFlags__fix_lower_breadcrumbs","BookNav__enable_tenant_cache_key","DevPro__enable_nvidia_credits_card","DevPro__enable_google_payments","Search__enable_ai_eligibility_checks","Analytics__enable_clearcut_logging","Cloud__enable_cloud_shell_fte_user_flow"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 

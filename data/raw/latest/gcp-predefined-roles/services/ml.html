@@ -437,12 +437,6 @@
 
 
 
-
-
-
-
-
-
  
  
 
@@ -486,6 +480,9 @@
 
  
  
+
+
+
 
 
 
@@ -1806,15 +1803,15 @@
     data-label="Site header link: Console"
     
       
-        track-metadata-position="nav"
-      
         track-type="globalNav"
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-name="console"
       
-        track-metadata-eventDetail="nav"
+        track-metadata-position="nav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
     >
   Console
@@ -2003,15 +2000,15 @@
     
     
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-type="freeTrial"
-      
-        track-metadata-eventDetail="nav"
       
         track-metadata-position="nav"
       
         track-name="gcpCta"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
     
     >Start free</a>
@@ -2558,15 +2555,15 @@
 
     
       
-        track-metadata-position="nav"
-      
         track-type="globalNav"
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-name="console"
       
-        track-metadata-eventDetail="nav"
+        track-metadata-position="nav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
     
      data-category="Site-Wide Custom Events"
@@ -5151,7 +5148,7 @@
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Service Consumer Management</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/servicedirectory"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Service Directory</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/networkactions"
+      ><span class="devsite-nav-text" tooltip>Service Directory</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/serviceextensions"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Service Extensions</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/servicemanagement"
         class="devsite-nav-title"
@@ -7275,8 +7272,20 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
   <p><code translate="no" dir="ltr">iam.serviceAccounts.signJwt</code></p>
   <p><code translate="no" dir="ltr">logging.logEntries.create</code></p>
   <p><code translate="no" dir="ltr">logging.logEntries.route</code></p>
+  <p><code translate="no" dir="ltr">monitoring.dashboards.get</code></p>
+  <p><code translate="no" dir="ltr">monitoring.dashboards.list</code></p>
+  <p><code translate="no" dir="ltr">monitoring.groups.get</code></p>
+  <p><code translate="no" dir="ltr">monitoring.groups.list</code></p>
   <p><code translate="no" dir="ltr">monitoring.<wbr>metricDescriptors.<wbr>list</code></p>
-  <p><code translate="no" dir="ltr">monitoring.<wbr>monitoredResourceDescriptors.<wbr>list</code></p>
+  <devsite-expandable id="expandable-ml.serviceAgent-monitoring.monitoredResourceDescriptors.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">monitoring.<wbr>monitoredResourceDescriptors.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">monitoring.<wbr>monitoredResourceDescriptors.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">monitoring.<wbr>monitoredResourceDescriptors.<wbr>list</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-ml.serviceAgent-monitoring.timeSeries.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">monitoring.timeSeries.*</code></span>
@@ -7330,6 +7339,8 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
   <p><code translate="no" dir="ltr">resourcemanager.<wbr>hierarchyNodes.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">resourcemanager.projects.get</code></p>
   <p><code translate="no" dir="ltr">resourcemanager.projects.list</code></p>
+  <p><code translate="no" dir="ltr">stackdriver.projects.get</code></p>
+  <p><code translate="no" dir="ltr">stackdriver.<wbr>resourceMetadata.<wbr>list</code></p>
   <devsite-expandable id="expandable-ml.serviceAgent-storage.anywhereCaches.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">storage.anywhereCaches.*</code></span>
@@ -7424,6 +7435,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
       <li><code translate="no" dir="ltr">storage.<wbr>managedFolders.<wbr>getIamPolicy</code></li>
       <li><code translate="no" dir="ltr">storage.managedFolders.list</code></li>
       <li><code translate="no" dir="ltr">storage.<wbr>managedFolders.<wbr>setIamPolicy</code></li>
+      <li><code translate="no" dir="ltr">storage.managedFolders.update</code></li>
     </ul>
   </devsite-expandable>
   <devsite-expandable id="expandable-ml.serviceAgent-storage.multipartUploads.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -9182,7 +9194,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
 
   
     <devsite-hats-survey class="nocontent" data-nosnippet
-      hats-id="Nd7nTix2o0eU5NUYprb0ThtUc5jf"
+      hats-id="mwETRvWii0eU5NUYprb0Y9z5GVbc"
       listnr-id="83405"></devsite-hats-survey>
   
 
@@ -9238,7 +9250,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-09-14 UTC.</p>
+  <p>Last updated 2026-09-16 UTC.</p>
 </devsite-content-footer>
 
 
@@ -9287,7 +9299,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-14 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-16 UTC."],[],[]]
     </template>
   
 </div>
@@ -9319,7 +9331,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="see all products"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/products/"track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-type="footer link">
+            track-name="see all products"track-metadata-module="footer"track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/products/"track-type="footer link">
             
           
             See all products
@@ -9336,7 +9348,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/pricing/"track-type="footer link"track-name="google cloud pricing"track-metadata-child_headline="products and pricing"track-metadata-position="footer">
+            track-metadata-child_headline="products and pricing"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/pricing/"track-name="google cloud pricing"track-type="footer link"track-metadata-position="footer">
             
           
             Google Cloud pricing
@@ -9353,7 +9365,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-type="footer link"track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/marketplace/"track-name="google cloud marketplace"track-metadata-position="footer">
+            track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/marketplace/"track-name="google cloud marketplace"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             Google Cloud Marketplace
@@ -9370,7 +9382,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-position="footer"track-metadata-child_headline="engage"track-type="footer link"track-metadata-eventDetail="cloud.google.com/contact/"track-name="contact sales"track-metadata-module="footer">
+            track-metadata-child_headline="engage"track-name="contact sales"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/contact/"track-metadata-position="footer"track-type="footer link">
             
               
               
@@ -9397,7 +9409,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="engage"target="_blank"track-type="footer link"track-name="google cloud community"rel="noopener">
+            track-metadata-position="footer"track-metadata-module="footer"rel="noopener"track-name="google cloud community"track-type="footer link"target="_blank"track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-child_headline="engage">
             
           
             Community forums
@@ -9414,7 +9426,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-position="footer"track-metadata-module="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/support-hub/"track-name="support"track-metadata-child_headline="resources">
+            track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-child_headline="resources"track-name="support"track-metadata-module="footer">
             
           
             Support
@@ -9431,7 +9443,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-type="footer link"track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/release-notes/"track-name="release notes">
+            track-name="release notes"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-child_headline="resources">
             
           
             Release Notes
@@ -9448,7 +9460,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-metadata-eventDetail="status.cloud.google.com"track-metadata-position="footer"track-name="system status"track-metadata-child_headline="resources"track-metadata-module="footer"target="_blank">
+            track-metadata-eventDetail="status.cloud.google.com"track-name="system status"target="_blank"track-metadata-child_headline="resources"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer">
             
               
               
@@ -9475,7 +9487,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="github"track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="github.com/googlecloudPlatform/">
+            track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="github"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-child_headline="resources">
             
           
             GitHub
@@ -9492,7 +9504,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="resources"track-metadata-position="footer"track-type="footer link"track-name="google cloud quickstarts"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-module="footer">
+            track-metadata-position="footer"track-metadata-module="footer"track-name="google cloud quickstarts"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-type="footer link">
             
           
             Getting Started with Google Cloud
@@ -9509,7 +9521,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-module="footer"track-metadata-child_headline="resources"track-name="code samples"track-metadata-position="footer">
+            track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-child_headline="resources"track-name="code samples">
             
           
             Code samples
@@ -9526,7 +9538,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="resources"track-type="footer link"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer"track-name="cloud architecture center"track-metadata-position="footer">
+            track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="cloud architecture center"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer">
             
           
             Cloud Architecture Center
@@ -9543,7 +9555,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="resources"track-name="training"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-module="footer">
+            track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-name="training"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-child_headline="resources">
             
               
               
@@ -9570,7 +9582,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="blog"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-child_headline="engage"track-type="footer link"track-metadata-module="footer">
+            track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/blog/"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-name="blog">
             
           
             Blog
@@ -9587,7 +9599,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-position="footer"track-metadata-module="footer"track-name="events"track-type="footer link"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/events/">
+            track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-name="events"track-metadata-eventDetail="cloud.google.com/events/"track-metadata-child_headline="engage">
             
           
             Events
@@ -9604,7 +9616,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-child_headline="engage"track-name="follow on x"rel="noopener"target="_blank"track-metadata-eventDetail="x.com/googlecloud"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer">
+            rel="noopener"track-name="follow on x"track-metadata-position="footer"track-metadata-child_headline="engage"target="_blank"track-metadata-module="footer"track-metadata-eventDetail="x.com/googlecloud"track-type="footer link">
             
           
             X (Twitter)
@@ -9621,7 +9633,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-position="footer"track-type="footer link"track-name="google cloud on youtube"track-metadata-module="footer"rel="noopener"track-metadata-child_headline="engage"target="_blank"track-metadata-eventDetail="www.youtube.com/googlecloud">
+            track-metadata-module="footer"track-type="footer link"rel="noopener"track-metadata-child_headline="engage"target="_blank"track-metadata-position="footer"track-metadata-eventDetail="www.youtube.com/googlecloud"track-name="google cloud on youtube">
             
           
             Google Cloud on YouTube
@@ -9638,7 +9650,7 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-type="footer link"track-metadata-position="footer"target="_blank"track-metadata-module="footer"rel="noopener"track-metadata-child_headline="engage"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-name="google cloud tech on youtube">
+            track-name="google cloud tech on youtube"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-metadata-child_headline="engage"track-type="footer link"target="_blank"track-metadata-position="footer"rel="noopener"track-metadata-module="footer">
             
               
               
@@ -9755,17 +9767,17 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
+           track-metadata-position="footer"
+         
            target="_blank"
          
            track-metadata-module="utility footer"
          
-           track-type="footer link"
-         
            track-name="about google"
          
-           track-metadata-eventDetail="//about.google/"
+           track-type="footer link"
          
-           track-metadata-position="footer"
+           track-metadata-eventDetail="//about.google/"
          >
           About Google
         </a>
@@ -9781,13 +9793,13 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           track-metadata-module="utility footer"
+           target="_blank"
          
            track-name="privacy"
          
            track-type="footer link"
          
-           target="_blank"
+           track-metadata-module="utility footer"
          
            track-metadata-eventDetail="//policies.google.com/privacy"
          
@@ -9807,17 +9819,17 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           track-type="footer link"
+           track-name="site terms"
          
-           track-metadata-module="utility footer"
+           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
          
            target="_blank"
          
            track-metadata-position="footer"
          
-           track-name="site terms"
+           track-type="footer link"
          
-           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
+           track-metadata-module="utility footer"
          >
           Site terms
         </a>
@@ -9833,15 +9845,15 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-name="google cloud terms"
-         
            track-type="footer link"
          
            track-metadata-eventDetail="//cloud.google.com/product-terms"
          
+           track-metadata-module="utility footer"
+         
            track-metadata-position="footer"
          
-           track-metadata-module="utility footer"
+           track-name="google cloud terms"
          >
           Google Cloud terms
         </a>
@@ -9857,15 +9869,15 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-type="footer link"
+           track-metadata-module="utility footer"
          
            aria-hidden="true"
+         
+           track-type="footer link"
          
            track-name="Manage cookies"
          
            track-metadata-eventDetail="#"
-         
-           track-metadata-module="utility footer"
          
            track-metadata-position="footer"
          >
@@ -9885,13 +9897,13 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
          
            track-metadata-eventDetail="/sustainability/"
          
-           track-type="footer link"
+           track-name="Our third decade of climate action: join us"
          
-           track-metadata-position="footer"
+           track-type="footer link"
          
            track-metadata-module="utility footer"
          
-           track-name="Our third decade of climate action: join us"
+           track-metadata-position="footer"
          >
           Our third decade of climate action: join us
         </a>
@@ -9909,15 +9921,15 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-metadata-module="utility footer"
-         
-           track-type="footer link"
-         
-           track-name="subscribe"
-         
            track-metadata-eventDetail="/newsletter/"
          
            track-metadata-position="footer"
+         
+           track-metadata-module="utility footer"
+         
+           track-name="subscribe"
+         
+           track-type="footer link"
          >
           Subscribe
         </a>
@@ -10009,12 +10021,12 @@ AI Platform service agent can act as log writer, Cloud Storage admin, Artifact R
   
 
     
-<script nonce="w936hyw3bblLbkn6t/CqoK8SFi9VQJ">
+<script nonce="zbWfKrE74WfUPGLcbTDSiNbAdqhj9o">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Concierge__enable_concierge_restricted","Experiments__reqs_query_experiments","Profiles__enable_user_type","DevPro__enable_devsite_captcha","Search__enable_dynamic_content_confidential_banner","Search__enable_ai_eligibility_checks","Profiles__enable_callout_notifications","Profiles__enable_complete_playlist_endpoint","Profiles__enable_targeted_hero","MiscFeatureFlags__enable_variable_operator_index_yaml","Profiles__enable_dashboard_curated_recommendations","Profiles__enable_recognition_badges","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__enable_project_variables","Profiles__enable_public_developer_profiles","Concierge__enable_actions_menu","MiscFeatureFlags__enable_framebox_badge_methods","DevPro__enable_nvidia_credits_card","DevPro__enable_credits_banner","Cloud__cache_serialized_dynamic_content","BookNav__enable_tenant_cache_key","Profiles__enable_join_program_group_endpoint","Concierge__enable_devsite_llm_tools","Profiles__enable_completecodelab_endpoint","DevPro__enable_cloud_innovators_plus","MiscFeatureFlags__enable_view_transitions","Cloud__enable_cloud_shell","Search__enable_ai_search_summaries_for_all","Profiles__enable_profile_collections","DevPro__enable_enterprise","DevPro__remove_eu_tax_intake_form","Profiles__enable_developer_profiles_callout","MiscFeatureFlags__remove_cross_domain_tracking_params","MiscFeatureFlags__developers_footer_image","MiscFeatureFlags__enable_appearance_cookies","MiscFeatureFlags__enable_explain_this_code","MiscFeatureFlags__enable_variable_operator","DevPro__enable_firebase_workspaces_card","Analytics__enable_devpro_interaction_logging","Cloud__enable_legacy_calculator_redirect","Concierge__enable_pushui","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_stripe_subscription_management","AIStudioInteractionsToggle__interactions_are_default","Profiles__enable_purchase_prompts","Profiles__require_profile_eligibility_for_signin","Cloud__enable_cloud_shell_fte_user_flow","DevPro__enable_google_one_card","Profiles__enable_developer_profile_pages_as_content","DevPro__enable_google_payments_buyflow","TpcFeatures__proxy_prod_host","EngEduTelemetry__enable_engedu_telemetry","Profiles__enable_page_saving","Cloud__enable_cloud_dlp_service","Profiles__enable_developer_profile_benefits_ui_redesign","DevPro__enable_embed_profile_creation","Profiles__enable_completequiz_endpoint","Search__enable_page_map","MiscFeatureFlags__enable_dark_theme","DevPro__enable_vertex_credit_card","DevPro__enable_devpro_offers","SignIn__enable_l1_signup_flow","CloudShell__cloud_code_overflow_menu","Analytics__enable_clearcut_logging","DevPro__enable_code_assist","Search__enable_suggestions_from_borg","Profiles__enable_playlist_community_acl","MiscFeatureFlags__enable_explicit_template_dependencies","Cloud__fast_free_trial","DevPro__enable_developer_subscriptions","MiscFeatureFlags__fix_lower_breadcrumbs","Cloud__enable_free_trial_server_call","MiscFeatureFlags__developers_footer_dark_image","Concierge__enable_remove_info_panel_tags","Cloud__enable_cloudx_experiment_ids","CloudShell__cloud_shell_button","DevPro__enable_free_benefits","OnSwitch__enable","Profiles__enable_awarding_url","Profiles__enable_auto_apply_credits","DevPro__enable_g1_integration","DevPro__enable_google_payments","DevPro__enable_g1_ineligible_redirect","MiscFeatureFlags__gdp_dashboard_reskin_enabled"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["MiscFeatureFlags__enable_variable_operator","DevPro__enable_firebase_workspaces_card","DevPro__enable_google_one_card","DevPro__enable_free_benefits","BookNav__enable_tenant_cache_key","MiscFeatureFlags__enable_explicit_template_dependencies","Profiles__require_profile_eligibility_for_signin","Search__enable_dynamic_content_confidential_banner","Cloud__enable_legacy_calculator_redirect","Profiles__enable_recognition_badges","Profiles__enable_callout_notifications","Search__enable_ai_eligibility_checks","Profiles__enable_completecodelab_endpoint","Profiles__enable_complete_playlist_endpoint","Cloud__enable_cloud_shell","DevPro__enable_embed_profile_creation","DevPro__enable_credits_banner","Cloud__enable_cloud_shell_fte_user_flow","Profiles__enable_targeted_hero","DevPro__enable_devsite_captcha","MiscFeatureFlags__enable_appearance_cookies","DevPro__enable_devpro_offers","Profiles__enable_developer_profile_pages_as_content","Search__enable_suggestions_from_borg","DevPro__enable_cloud_innovators_plus","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_developer_profile_benefits_ui_redesign","MiscFeatureFlags__enable_view_transitions","DevPro__enable_google_payments","Profiles__enable_awarding_url","MiscFeatureFlags__fix_lower_breadcrumbs","DevPro__enable_enterprise","AIStudioInteractionsToggle__interactions_are_default","DevPro__enable_google_payments_buyflow","MiscFeatureFlags__developers_footer_image","Profiles__enable_user_type","Analytics__enable_devpro_interaction_logging","CloudShell__cloud_shell_button","OnSwitch__enable","Cloud__fast_free_trial","Experiments__reqs_query_experiments","Profiles__enable_join_program_group_endpoint","Profiles__enable_completequiz_endpoint","Concierge__enable_actions_menu","MiscFeatureFlags__developers_footer_dark_image","Profiles__enable_playlist_community_acl","Search__enable_page_map","Cloud__cache_serialized_dynamic_content","Profiles__enable_developer_profiles_callout","Cloud__enable_free_trial_server_call","DevPro__enable_nvidia_credits_card","SignIn__enable_l1_signup_flow","TpcFeatures__proxy_prod_host","MiscFeatureFlags__enable_project_variables","Profiles__enable_auto_apply_credits","CloudShell__cloud_code_overflow_menu","Concierge__enable_devsite_llm_tools","Profiles__enable_purchase_prompts","MiscFeatureFlags__enable_variable_operator_index_yaml","Concierge__enable_remove_info_panel_tags","Profiles__enable_page_saving","MiscFeatureFlags__enable_framebox_badge_methods","EngEduTelemetry__enable_engedu_telemetry","Analytics__enable_clearcut_logging","DevPro__enable_code_assist","Cloud__enable_cloud_dlp_service","DevPro__enable_developer_subscriptions","DevPro__enable_g1_ineligible_redirect","DevPro__remove_eu_tax_intake_form","Cloud__enable_cloudx_experiment_ids","Search__enable_ai_search_summaries_for_all","Profiles__enable_stripe_subscription_management","TpcFeatures__enable_unmirrored_page_left_nav","Concierge__enable_concierge_restricted","MiscFeatureFlags__remove_cross_domain_tracking_params","DevPro__enable_g1_integration","Concierge__enable_pushui","Profiles__enable_profile_collections","Profiles__enable_public_developer_profiles","MiscFeatureFlags__enable_explain_this_code","DevPro__enable_vertex_credit_card","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__enable_dark_theme","MiscFeatureFlags__gdp_dashboard_reskin_enabled"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 

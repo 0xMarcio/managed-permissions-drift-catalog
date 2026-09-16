@@ -437,12 +437,6 @@
 
 
 
-
-
-
-
-
-
  
  
 
@@ -486,6 +480,9 @@
 
  
  
+
+
+
 
 
 
@@ -1806,15 +1803,15 @@
     data-label="Site header link: Console"
     
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-name="console"
       
-        track-type="globalNav"
-      
         track-metadata-position="nav"
       
-        track-metadata-eventDetail="nav"
+        track-type="globalNav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
     >
   Console
@@ -2003,15 +2000,15 @@
     
     
       
-        track-type="freeTrial"
-      
-        track-name="gcpCta"
-      
         track-metadata-eventDetail="nav"
       
         track-metadata-position="nav"
       
+        track-name="gcpCta"
+      
         referrerpolicy="no-referrer-when-downgrade"
+      
+        track-type="freeTrial"
       
     
     >Start free</a>
@@ -2558,15 +2555,15 @@
 
     
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-name="console"
       
-        track-type="globalNav"
-      
         track-metadata-position="nav"
       
-        track-metadata-eventDetail="nav"
+        track-type="globalNav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
     
      data-category="Site-Wide Custom Events"
@@ -5151,7 +5148,7 @@
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Service Consumer Management</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/servicedirectory"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Service Directory</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/networkactions"
+      ><span class="devsite-nav-text" tooltip>Service Directory</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/serviceextensions"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Service Extensions</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/servicemanagement"
         class="devsite-nav-title"
@@ -6785,8 +6782,20 @@ Bucket
   <p><code translate="no" dir="ltr">cloudkms.operations.get</code></p>
   <p><code translate="no" dir="ltr">cloudkms.<wbr>projects.<wbr>showEffectiveAutokeyConfig</code></p>
   <p><code translate="no" dir="ltr">firebase.projects.get</code></p>
+  <p><code translate="no" dir="ltr">monitoring.dashboards.get</code></p>
+  <p><code translate="no" dir="ltr">monitoring.dashboards.list</code></p>
+  <p><code translate="no" dir="ltr">monitoring.groups.get</code></p>
+  <p><code translate="no" dir="ltr">monitoring.groups.list</code></p>
   <p><code translate="no" dir="ltr">monitoring.<wbr>metricDescriptors.<wbr>list</code></p>
-  <p><code translate="no" dir="ltr">monitoring.<wbr>monitoredResourceDescriptors.<wbr>list</code></p>
+  <devsite-expandable id="expandable-storage.admin-monitoring.monitoredResourceDescriptors.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">monitoring.<wbr>monitoredResourceDescriptors.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">monitoring.<wbr>monitoredResourceDescriptors.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">monitoring.<wbr>monitoredResourceDescriptors.<wbr>list</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-storage.admin-monitoring.timeSeries.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">monitoring.timeSeries.*</code></span>
@@ -6840,6 +6849,8 @@ Bucket
   <p><code translate="no" dir="ltr">resourcemanager.<wbr>hierarchyNodes.<wbr>listEffectiveTags</code></p>
   <p><code translate="no" dir="ltr">resourcemanager.projects.get</code></p>
   <p><code translate="no" dir="ltr">resourcemanager.projects.list</code></p>
+  <p><code translate="no" dir="ltr">stackdriver.projects.get</code></p>
+  <p><code translate="no" dir="ltr">stackdriver.<wbr>resourceMetadata.<wbr>list</code></p>
   <devsite-expandable id="expandable-storage.admin-storage.anywhereCaches.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">storage.anywhereCaches.*</code></span>
@@ -6934,6 +6945,7 @@ Bucket
       <li><code translate="no" dir="ltr">storage.<wbr>managedFolders.<wbr>getIamPolicy</code></li>
       <li><code translate="no" dir="ltr">storage.managedFolders.list</code></li>
       <li><code translate="no" dir="ltr">storage.<wbr>managedFolders.<wbr>setIamPolicy</code></li>
+      <li><code translate="no" dir="ltr">storage.managedFolders.update</code></li>
     </ul>
   </devsite-expandable>
   <devsite-expandable id="expandable-storage.admin-storage.multipartUploads.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -7105,6 +7117,7 @@ Grants full control over folders and objects, including listing, creating, viewi
       <li><code translate="no" dir="ltr">storage.<wbr>managedFolders.<wbr>getIamPolicy</code></li>
       <li><code translate="no" dir="ltr">storage.managedFolders.list</code></li>
       <li><code translate="no" dir="ltr">storage.<wbr>managedFolders.<wbr>setIamPolicy</code></li>
+      <li><code translate="no" dir="ltr">storage.managedFolders.update</code></li>
     </ul>
   </devsite-expandable>
   <devsite-expandable id="expandable-storage.folderAdmin-storage.multipartUploads.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -7226,6 +7239,7 @@ Bucket
       <li><code translate="no" dir="ltr">storage.<wbr>managedFolders.<wbr>getIamPolicy</code></li>
       <li><code translate="no" dir="ltr">storage.managedFolders.list</code></li>
       <li><code translate="no" dir="ltr">storage.<wbr>managedFolders.<wbr>setIamPolicy</code></li>
+      <li><code translate="no" dir="ltr">storage.managedFolders.update</code></li>
     </ul>
   </devsite-expandable>
   <devsite-expandable id="expandable-storage.legacyBucketOwner-storage.multipartUploads.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -7325,6 +7339,7 @@ Bucket
   <p><code translate="no" dir="ltr">storage.managedFolders.delete</code></p>
   <p><code translate="no" dir="ltr">storage.managedFolders.get</code></p>
   <p><code translate="no" dir="ltr">storage.managedFolders.list</code></p>
+  <p><code translate="no" dir="ltr">storage.managedFolders.update</code></p>
   <devsite-expandable id="expandable-storage.legacyBucketWriter-storage.multipartUploads.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">storage.multipartUploads.*</code></span>
@@ -7434,6 +7449,7 @@ Bucket
   <p><code translate="no" dir="ltr">storage.managedFolders.delete</code></p>
   <p><code translate="no" dir="ltr">storage.managedFolders.get</code></p>
   <p><code translate="no" dir="ltr">storage.managedFolders.list</code></p>
+  <p><code translate="no" dir="ltr">storage.managedFolders.update</code></p>
   <devsite-expandable id="expandable-storage.objectAdmin-storage.multipartUploads.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">storage.multipartUploads.*</code></span>
@@ -7531,6 +7547,7 @@ Access to create, read, update and delete objects and multipart uploads in GCS.
   <p><code translate="no" dir="ltr">storage.managedFolders.delete</code></p>
   <p><code translate="no" dir="ltr">storage.managedFolders.get</code></p>
   <p><code translate="no" dir="ltr">storage.managedFolders.list</code></p>
+  <p><code translate="no" dir="ltr">storage.managedFolders.update</code></p>
   <devsite-expandable id="expandable-storage.objectUser-storage.multipartUploads.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">storage.multipartUploads.*</code></span>
@@ -8601,6 +8618,9 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
               <a href="/iam/docs/roles-permissions/designcenter#designcenter.serviceAgent">DesignCenter Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>designcenter.serviceAgent</code>)
             </li>
             <li>
+              <a href="/iam/docs/roles-permissions/devicerun#devicerun.serviceAgent">Device Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>devicerun.serviceAgent</code>)
+            </li>
+            <li>
               <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.serviceAgent">Discovery Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.serviceAgent</code>)
             </li>
             <li>
@@ -9216,6 +9236,9 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
               <a href="/iam/docs/roles-permissions/designcenter#designcenter.serviceAgent">DesignCenter Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>designcenter.serviceAgent</code>)
             </li>
             <li>
+              <a href="/iam/docs/roles-permissions/devicerun#devicerun.serviceAgent">Device Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>devicerun.serviceAgent</code>)
+            </li>
+            <li>
               <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.serviceAgent">Discovery Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.serviceAgent</code>)
             </li>
             <li>
@@ -9739,6 +9762,9 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/designcenter#designcenter.serviceAgent">DesignCenter Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>designcenter.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/devicerun#devicerun.serviceAgent">Device Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>devicerun.serviceAgent</code>)
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/dlp#dlp.serviceAgent">DLP API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.serviceAgent</code>)
@@ -12723,6 +12749,117 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
     </tr>
     <tr>
       <td>
+        <h4 class="permission-name add-link" id="storage.managedFolders.update" data-text="storage.managedFolders.update" tabindex="-1"><code translate="no" dir="ltr">storage.managedFolders.update</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/designcenter#designcenter.admin">Application Design Center Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>designcenter.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.admin">Firebase Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/storage#storage.admin">Storage Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>storage.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/storage#storage.folderAdmin">Storage Folder Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>storage.folderAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/storage#storage.legacyBucketOwner">Storage Legacy Bucket Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>storage.legacyBucketOwner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/storage#storage.legacyBucketWriter">Storage Legacy Bucket Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>storage.legacyBucketWriter</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/storage#storage.objectAdmin">Storage Object Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>storage.objectAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/storage#storage.objectUser">Storage Object User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>storage.objectUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectAdmin">Environment and Storage Object Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.worker">Composer Worker</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.worker</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dataproc#dataproc.worker">Dataproc Worker</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataproc.worker</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/designcenter#designcenter.user">Application Design Center User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>designcenter.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.computeRunner">Firebase App Hosting Compute Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.computeRunner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.databasesAdmin">Databases Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.databasesAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.devOps">Dev Ops</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.devOps</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.infrastructureAdmin">Infrastructure Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.infrastructureAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.mlEngineer">ML Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.mlEngineer</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="storage.managedFolders.update-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.extensionCustomCodeServiceAgent">Vertex AI Extension Custom Code Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.extensionCustomCodeServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/composer#composer.serviceAgent">Cloud Composer API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent">Cloud Dataflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataflow.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datafusion#datafusion.serviceAgent">Cloud Data Fusion API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datafusion.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datapipelines#datapipelines.serviceAgent">Datapipelines Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datapipelines.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataplex#dataplex.serviceAgent">Cloud Dataplex Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataplex.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataprep#dataprep.serviceAgent">Dataprep Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent">Dataproc Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataproc.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dlp#dlp.serviceAgent">DLP API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebase#firebase.sdkAdminServiceAgent">Firebase Admin SDK Administrator Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.sdkAdminServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/ml#ml.serviceAgent">AI Platform Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>ml.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent">Visual Inspection AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>visualinspection.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <h4 class="permission-name add-link" id="storage.multipartUploads.abort" data-text="storage.multipartUploads.abort" tabindex="-1"><code translate="no" dir="ltr">storage.multipartUploads.abort</code></h4>
       </td>
       <td>
@@ -13450,6 +13587,9 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
               <a href="/iam/docs/roles-permissions/designcenter#designcenter.serviceAgent">DesignCenter Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>designcenter.serviceAgent</code>)
             </li>
             <li>
+              <a href="/iam/docs/roles-permissions/devicerun#devicerun.serviceAgent">Device Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>devicerun.serviceAgent</code>)
+            </li>
+            <li>
               <a href="/iam/docs/roles-permissions/dialogflow#dialogflow.serviceAgent">Dialogflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dialogflow.serviceAgent</code>)
             </li>
             <li>
@@ -13847,6 +13987,9 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/designcenter#designcenter.serviceAgent">DesignCenter Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>designcenter.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/devicerun#devicerun.serviceAgent">Device Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>devicerun.serviceAgent</code>)
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/dialogflow#dialogflow.serviceAgent">Dialogflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dialogflow.serviceAgent</code>)
@@ -14348,6 +14491,9 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/designcenter#designcenter.serviceAgent">DesignCenter Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>designcenter.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/devicerun#devicerun.serviceAgent">Device Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>devicerun.serviceAgent</code>)
             </li>
             <li>
               <a href="/iam/docs/roles-permissions/dialogflow#dialogflow.serviceAgent">Dialogflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dialogflow.serviceAgent</code>)
@@ -15850,7 +15996,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
 
   
     <devsite-hats-survey class="nocontent" data-nosnippet
-      hats-id="Nd7nTix2o0eU5NUYprb0ThtUc5jf"
+      hats-id="mwETRvWii0eU5NUYprb0Y9z5GVbc"
       listnr-id="83405"></devsite-hats-survey>
   
 
@@ -15906,7 +16052,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-09-14 UTC.</p>
+  <p>Last updated 2026-09-16 UTC.</p>
 </devsite-content-footer>
 
 
@@ -15955,7 +16101,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-14 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-16 UTC."],[],[]]
     </template>
   
 </div>
@@ -15987,7 +16133,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"track-name="see all products"track-metadata-eventDetail="cloud.google.com/products/"track-type="footer link"track-metadata-child_headline="products and pricing"track-metadata-module="footer">
+            track-type="footer link"track-name="see all products"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/products/"track-metadata-module="footer"track-metadata-child_headline="products and pricing">
             
           
             See all products
@@ -16004,7 +16150,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-name="google cloud pricing"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="products and pricing">
+            track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/pricing/"track-name="google cloud pricing"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="products and pricing">
             
           
             Google Cloud pricing
@@ -16021,7 +16167,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-type="footer link"track-name="google cloud marketplace"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-child_headline="resources">
+            track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-child_headline="resources"track-name="google cloud marketplace"track-type="footer link"track-metadata-module="footer"track-metadata-position="footer">
             
           
             Google Cloud Marketplace
@@ -16038,7 +16184,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-position="footer"track-metadata-child_headline="engage"track-name="contact sales"track-metadata-eventDetail="cloud.google.com/contact/"track-type="footer link"track-metadata-module="footer">
+            track-metadata-child_headline="engage"track-name="contact sales"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/contact/"track-type="footer link">
             
               
               
@@ -16065,7 +16211,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"track-metadata-module="footer"track-name="google cloud community"track-metadata-eventDetail="www.googlecloudcommunity.com"track-type="footer link"target="_blank"rel="noopener"track-metadata-child_headline="engage">
+            track-name="google cloud community"track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-module="footer"track-type="footer link"rel="noopener"track-metadata-child_headline="engage"target="_blank"track-metadata-position="footer">
             
           
             Community forums
@@ -16082,7 +16228,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-name="support"track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/support-hub/">
+            track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-position="footer"track-name="support"track-type="footer link"track-metadata-child_headline="resources"track-metadata-module="footer">
             
           
             Support
@@ -16099,7 +16245,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="release notes"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/release-notes/">
+            track-metadata-eventDetail="cloud.google.com/release-notes/"track-name="release notes"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer">
             
           
             Release Notes
@@ -16116,7 +16262,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-metadata-eventDetail="status.cloud.google.com"track-name="system status"track-metadata-child_headline="resources"target="_blank"track-metadata-module="footer"track-metadata-position="footer">
+            track-name="system status"track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="status.cloud.google.com"track-metadata-child_headline="resources"target="_blank"track-metadata-module="footer">
             
               
               
@@ -16143,7 +16289,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="github"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-eventDetail="github.com/googlecloudPlatform/">
+            track-metadata-eventDetail="github.com/googlecloudPlatform/"track-name="github"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             GitHub
@@ -16160,7 +16306,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="resources"track-name="google cloud quickstarts"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-position="footer">
+            track-name="google cloud quickstarts"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-child_headline="resources"track-type="footer link"track-metadata-module="footer">
             
           
             Getting Started with Google Cloud
@@ -16177,7 +16323,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/samples"track-name="code samples"track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-position="footer">
+            track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-module="footer"track-name="code samples"track-type="footer link"track-metadata-position="footer"track-metadata-child_headline="resources">
             
           
             Code samples
@@ -16194,7 +16340,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-name="cloud architecture center"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="resources">
+            track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer"track-type="footer link"track-name="cloud architecture center">
             
           
             Cloud Architecture Center
@@ -16211,7 +16357,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-child_headline="resources"track-type="footer link"track-name="training">
+            track-name="training"track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/learn/training/">
             
               
               
@@ -16238,7 +16384,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-child_headline="engage"track-metadata-position="footer"track-type="footer link"track-name="blog">
+            track-name="blog"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-module="footer"track-metadata-child_headline="engage">
             
           
             Blog
@@ -16255,7 +16401,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/events/"track-type="footer link"track-metadata-module="footer"track-name="events">
+            track-type="footer link"track-name="events"track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/events/">
             
           
             Events
@@ -16272,7 +16418,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            rel="noopener"track-metadata-eventDetail="x.com/googlecloud"track-name="follow on x"track-metadata-module="footer"target="_blank"track-type="footer link"track-metadata-child_headline="engage"track-metadata-position="footer">
+            track-type="footer link"track-metadata-eventDetail="x.com/googlecloud"track-metadata-position="footer"track-metadata-child_headline="engage"track-name="follow on x"rel="noopener"target="_blank"track-metadata-module="footer">
             
           
             X (Twitter)
@@ -16289,7 +16435,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-name="google cloud on youtube"track-metadata-position="footer"target="_blank"track-metadata-eventDetail="www.youtube.com/googlecloud"rel="noopener"track-metadata-module="footer"track-metadata-child_headline="engage">
+            target="_blank"track-metadata-position="footer"track-metadata-eventDetail="www.youtube.com/googlecloud"track-metadata-module="footer"track-name="google cloud on youtube"track-metadata-child_headline="engage"track-type="footer link"rel="noopener">
             
           
             Google Cloud on YouTube
@@ -16306,7 +16452,7 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="engage"rel="noopener"track-name="google cloud tech on youtube"target="_blank"track-metadata-eventDetail="www.youtube.com/googlecloudplatform">
+            track-metadata-child_headline="engage"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"rel="noopener"track-name="google cloud tech on youtube"target="_blank"track-type="footer link"track-metadata-module="footer"track-metadata-position="footer">
             
               
               
@@ -16423,15 +16569,15 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-metadata-position="footer"
+           track-type="footer link"
          
            target="_blank"
          
-           track-metadata-eventDetail="//about.google/"
-         
            track-name="about google"
          
-           track-type="footer link"
+           track-metadata-eventDetail="//about.google/"
+         
+           track-metadata-position="footer"
          
            track-metadata-module="utility footer"
          >
@@ -16449,17 +16595,17 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           target="_blank"
-         
            track-metadata-eventDetail="//policies.google.com/privacy"
-         
-           track-metadata-module="utility footer"
          
            track-type="footer link"
          
+           track-metadata-position="footer"
+         
+           track-metadata-module="utility footer"
+         
            track-name="privacy"
          
-           track-metadata-position="footer"
+           target="_blank"
          >
           Privacy
         </a>
@@ -16475,17 +16621,17 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           track-metadata-position="footer"
-         
            track-metadata-module="utility footer"
          
            target="_blank"
          
+           track-metadata-position="footer"
+         
            track-name="site terms"
          
-           track-type="footer link"
-         
            track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
+         
+           track-type="footer link"
          >
           Site terms
         </a>
@@ -16501,15 +16647,15 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-metadata-module="utility footer"
-         
-           track-metadata-eventDetail="//cloud.google.com/product-terms"
-         
            track-metadata-position="footer"
+         
+           track-type="footer link"
+         
+           track-metadata-module="utility footer"
          
            track-name="google cloud terms"
          
-           track-type="footer link"
+           track-metadata-eventDetail="//cloud.google.com/product-terms"
          >
           Google Cloud terms
         </a>
@@ -16525,17 +16671,17 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-metadata-position="footer"
-         
-           track-metadata-module="utility footer"
-         
            track-name="Manage cookies"
+         
+           aria-hidden="true"
          
            track-type="footer link"
          
-           track-metadata-eventDetail="#"
+           track-metadata-module="utility footer"
          
-           aria-hidden="true"
+           track-metadata-position="footer"
+         
+           track-metadata-eventDetail="#"
          >
           Manage cookies
         </a>
@@ -16553,13 +16699,13 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
          
            track-metadata-module="utility footer"
          
-           track-metadata-eventDetail="/sustainability/"
+           track-name="Our third decade of climate action: join us"
          
            track-metadata-position="footer"
          
-           track-name="Our third decade of climate action: join us"
-         
            track-type="footer link"
+         
+           track-metadata-eventDetail="/sustainability/"
          >
           Our third decade of climate action: join us
         </a>
@@ -16577,13 +16723,13 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-type="footer link"
-         
-           track-name="subscribe"
-         
            track-metadata-module="utility footer"
          
+           track-type="footer link"
+         
            track-metadata-eventDetail="/newsletter/"
+         
+           track-name="subscribe"
          
            track-metadata-position="footer"
          >
@@ -16677,12 +16823,12 @@ Read-only access to Cloud Storage Inventory metadata for Storage Insights.
   
 
     
-<script nonce="iufRTsB2e3tlRIduFfCyyil6/R++Mv">
+<script nonce="zlxbk88+tPugKHk5rNHUkFyzWnAevn">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Analytics__enable_devpro_interaction_logging","Profiles__enable_completecodelab_endpoint","Cloud__enable_legacy_calculator_redirect","DevPro__enable_google_payments","EngEduTelemetry__enable_engedu_telemetry","DevPro__enable_credits_banner","Profiles__enable_page_saving","AIStudioInteractionsToggle__interactions_are_default","DevPro__enable_free_benefits","Analytics__enable_clearcut_logging","DevPro__enable_embed_profile_creation","CloudShell__cloud_code_overflow_menu","TpcFeatures__proxy_prod_host","DevPro__enable_g1_integration","MiscFeatureFlags__enable_variable_operator_index_yaml","Cloud__enable_free_trial_server_call","DevPro__enable_cloud_innovators_plus","DevPro__enable_developer_subscriptions","MiscFeatureFlags__enable_firebase_utm","MiscFeatureFlags__enable_dark_theme","TpcFeatures__enable_unmirrored_page_left_nav","Profiles__enable_developer_profile_pages_as_content","SignIn__enable_l1_signup_flow","MiscFeatureFlags__developers_footer_image","Experiments__reqs_query_experiments","Profiles__enable_recognition_badges","Profiles__enable_join_program_group_endpoint","Cloud__enable_cloud_shell","Cloud__enable_cloudx_experiment_ids","DevPro__enable_vertex_credit_card","Profiles__enable_stripe_subscription_management","MiscFeatureFlags__fix_lower_breadcrumbs","Profiles__enable_user_type","Profiles__enable_auto_apply_credits","DevPro__remove_eu_tax_intake_form","Profiles__enable_profile_collections","DevPro__enable_firebase_workspaces_card","MiscFeatureFlags__developers_footer_dark_image","Profiles__require_profile_eligibility_for_signin","CloudShell__cloud_shell_button","DevPro__enable_code_assist","Search__enable_page_map","Profiles__enable_purchase_prompts","DevPro__enable_devsite_captcha","MiscFeatureFlags__enable_appearance_cookies","Profiles__enable_complete_playlist_endpoint","MiscFeatureFlags__gdp_dashboard_reskin_enabled","DevPro__enable_google_one_card","MiscFeatureFlags__enable_framebox_badge_methods","Search__enable_ai_search_summaries_for_all","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_callout_notifications","MiscFeatureFlags__remove_cross_domain_tracking_params","DevPro__enable_nvidia_credits_card","BookNav__enable_tenant_cache_key","Concierge__enable_actions_menu","Profiles__enable_developer_profiles_callout","Profiles__enable_playlist_community_acl","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__enable_variable_operator","Concierge__enable_devsite_llm_tools","Search__enable_ai_eligibility_checks","Cloud__enable_cloud_shell_fte_user_flow","Cloud__cache_serialized_dynamic_content","Profiles__enable_awarding_url","Concierge__enable_pushui","MiscFeatureFlags__enable_view_transitions","Profiles__enable_targeted_hero","Profiles__enable_dashboard_curated_recommendations","DevPro__enable_google_payments_buyflow","DevPro__enable_g1_ineligible_redirect","Profiles__enable_completequiz_endpoint","Cloud__fast_free_trial","Profiles__enable_public_developer_profiles","MiscFeatureFlags__enable_explicit_template_dependencies","Search__enable_suggestions_from_borg","OnSwitch__enable","Search__enable_dynamic_content_confidential_banner","DevPro__enable_enterprise","Profiles__enable_developer_profile_benefits_ui_redesign","Cloud__enable_cloud_dlp_service","MiscFeatureFlags__enable_project_variables","Concierge__enable_concierge_restricted","DevPro__enable_devpro_offers"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/veec7311b6c5f99ef32994eb65aab7022195f72bfa4f3d934bdc7556da7fa7c3b/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Profiles__enable_completequiz_endpoint","DevPro__enable_google_payments","Profiles__enable_purchase_prompts","Profiles__enable_public_developer_profiles","Search__enable_ai_eligibility_checks","DevPro__enable_g1_integration","Cloud__enable_cloud_shell_fte_user_flow","CloudShell__cloud_shell_button","Profiles__enable_developer_profiles_callout","MiscFeatureFlags__enable_variable_operator_index_yaml","DevPro__enable_developer_subscriptions","MiscFeatureFlags__enable_appearance_cookies","TpcFeatures__proxy_prod_host","DevPro__enable_code_assist","DevPro__enable_devsite_captcha","MiscFeatureFlags__gdp_dashboard_reskin_enabled","MiscFeatureFlags__enable_project_variables","DevPro__enable_credits_banner","DevPro__enable_g1_ineligible_redirect","Experiments__reqs_query_experiments","DevPro__enable_vertex_credit_card","Search__enable_ai_search_summaries_for_all","MiscFeatureFlags__developers_footer_image","MiscFeatureFlags__remove_cross_domain_tracking_params","Concierge__enable_concierge_restricted","Concierge__enable_remove_info_panel_tags","Profiles__enable_auto_apply_credits","Concierge__enable_devsite_llm_tools","Profiles__enable_page_saving","Profiles__enable_stripe_subscription_management","DevPro__remove_eu_tax_intake_form","Cloud__enable_cloudx_experiment_ids","Search__enable_suggestions_from_borg","Profiles__enable_completecodelab_endpoint","Analytics__enable_devpro_interaction_logging","MiscFeatureFlags__enable_explicit_template_dependencies","Concierge__enable_pushui","MiscFeatureFlags__enable_dark_theme","TpcFeatures__enable_unmirrored_page_left_nav","SignIn__enable_l1_signup_flow","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_awarding_url","AIStudioInteractionsToggle__interactions_are_default","DevPro__enable_devpro_offers","Profiles__enable_dashboard_curated_recommendations","DevPro__enable_firebase_workspaces_card","Profiles__enable_callout_notifications","Profiles__enable_user_type","Profiles__require_profile_eligibility_for_signin","Cloud__enable_free_trial_server_call","DevPro__enable_nvidia_credits_card","MiscFeatureFlags__developers_footer_dark_image","Analytics__enable_clearcut_logging","OnSwitch__enable","CloudShell__cloud_code_overflow_menu","DevPro__enable_enterprise","Profiles__enable_targeted_hero","Search__enable_page_map","Profiles__enable_developer_profile_pages_as_content","Profiles__enable_join_program_group_endpoint","MiscFeatureFlags__enable_variable_operator","DevPro__enable_google_payments_buyflow","MiscFeatureFlags__enable_explain_this_code","Cloud__enable_cloud_dlp_service","Profiles__enable_profile_collections","EngEduTelemetry__enable_engedu_telemetry","Profiles__enable_playlist_community_acl","Concierge__enable_actions_menu","BookNav__enable_tenant_cache_key","Cloud__cache_serialized_dynamic_content","Search__enable_dynamic_content_confidential_banner","DevPro__enable_google_one_card","Cloud__enable_cloud_shell","Cloud__fast_free_trial","MiscFeatureFlags__fix_lower_breadcrumbs","Profiles__enable_developer_profile_benefits_ui_redesign","DevPro__enable_embed_profile_creation","Profiles__enable_recognition_badges","DevPro__enable_cloud_innovators_plus","MiscFeatureFlags__enable_view_transitions","MiscFeatureFlags__enable_framebox_badge_methods","Profiles__enable_complete_playlist_endpoint","Cloud__enable_legacy_calculator_redirect","DevPro__enable_free_benefits"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 
