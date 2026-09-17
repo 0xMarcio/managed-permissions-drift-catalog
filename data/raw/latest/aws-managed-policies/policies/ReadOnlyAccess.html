@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:39 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 21, 2026, 18:42 UTC</p>
+                <p><b>Edited time:</b>  September 15, 2026, 18:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/ReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="ReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v188 (default)</p>
+        <p><b>Policy version:</b> v189 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -393,6 +393,7 @@
         "bedrock-agentcore:GetBrowser",
         "bedrock-agentcore:GetBrowserProfile",
         "bedrock-agentcore:GetBrowserSession",
+        "bedrock-agentcore:GetCapacityProvider",
         "bedrock-agentcore:GetCodeInterpreter",
         "bedrock-agentcore:GetCodeInterpreterSession",
         "bedrock-agentcore:GetConfigurationBundle",
@@ -413,6 +414,8 @@
         "bedrock-agentcore:GetRecommendation",
         "bedrock-agentcore:GetTokenVault",
         "bedrock-agentcore:GetWorkloadIdentity",
+        "bedrock-agentcore:ListAgentRuntimeVersionsByCapacityProvider",
+        "bedrock-agentcore:ListCapacityProviders",
         "bedrock-agentcore:ListABTests",
         "bedrock-agentcore:ListAgentRuntimeEndpoints",
         "bedrock-agentcore:ListAgentRuntimes",
@@ -1009,6 +1012,8 @@
         "devops-guru:SearchInsights",
         "devops-guru:StartCostEstimation",
         "directconnect:Describe*",
+        "directconnect:ListVirtualInterfaceRoutes",
+        "directconnect:ListVirtualInterfaceTestHistory",
         "discovery:Describe*",
         "discovery:Get*",
         "discovery:List*",
@@ -2809,6 +2814,8 @@
         "sustainability:GetCarbonFootprintSummary",
         "sustainability:GetEstimatedCarbonEmissions",
         "sustainability:GetEstimatedCarbonEmissionsDimensionValues",
+        "sustainability:GetEstimatedWaterAllocation",
+        "sustainability:GetEstimatedWaterAllocationDimensionValues",
         "swf:Count*",
         "swf:Describe*",
         "swf:Get*",

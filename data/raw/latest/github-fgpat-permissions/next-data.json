@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "d6vk-8IgzVamJNjsQwys4",
+  "buildId": "ZRrri5rXRQR-Ht_xwYBT_",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -769,6 +769,51 @@
               "slug": "set-default-workflow-permissions-for-a-repository",
               "subcategory": "permissions",
               "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/policies",
+              "slug": "list-repository-actions-policies",
+              "subcategory": "policies",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/policies",
+              "slug": "create-a-repository-actions-policy",
+              "subcategory": "policies",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/policies/{policy_id}",
+              "slug": "get-a-repository-actions-policy",
+              "subcategory": "policies",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/policies/{policy_id}",
+              "slug": "update-a-repository-actions-policy",
+              "subcategory": "policies",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/policies/{policy_id}",
+              "slug": "delete-a-repository-actions-policy",
+              "subcategory": "policies",
+              "verb": "delete"
             },
             {
               "access": "read",
@@ -6024,6 +6069,51 @@
               "verb": "put"
             },
             {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/orgs/{org}/actions/policies",
+              "slug": "list-organization-actions-policies",
+              "subcategory": "policies",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/orgs/{org}/actions/policies",
+              "slug": "create-an-organization-actions-policy",
+              "subcategory": "policies",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/orgs/{org}/actions/policies/{policy_id}",
+              "slug": "get-an-organization-actions-policy",
+              "subcategory": "policies",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/orgs/{org}/actions/policies/{policy_id}",
+              "slug": "update-an-organization-actions-policy",
+              "subcategory": "policies",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/orgs/{org}/actions/policies/{policy_id}",
+              "slug": "delete-an-organization-actions-policy",
+              "subcategory": "policies",
+              "verb": "delete"
+            },
+            {
               "access": "read",
               "additional-permissions": false,
               "category": "code-scanning",
@@ -11029,6 +11119,11 @@
                   "childPages": [],
                   "href": "/en/rest/actions/permissions",
                   "title": "Permissions"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/actions/policies",
+                  "title": "Actions policies"
                 },
                 {
                   "childPages": [],

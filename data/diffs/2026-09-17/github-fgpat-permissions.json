@@ -1,0 +1,83 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /orgs/{org}/actions/policies/{policy_id} -> write",
+          "DELETE /repos/{owner}/{repo}/actions/policies/{policy_id} -> write",
+          "GET /orgs/{org}/actions/policies -> write",
+          "GET /orgs/{org}/actions/policies/{policy_id} -> write",
+          "GET /repos/{owner}/{repo}/actions/policies -> write",
+          "GET /repos/{owner}/{repo}/actions/policies/{policy_id} -> write",
+          "POST /orgs/{org}/actions/policies -> write",
+          "POST /repos/{owner}/{repo}/actions/policies -> write",
+          "PUT /orgs/{org}/actions/policies/{policy_id} -> write",
+          "PUT /repos/{owner}/{repo}/actions/policies/{policy_id} -> write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Administration",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "DELETE /orgs/{org}/actions/policies/{policy_id} -> write",
+              "GET /orgs/{org}/actions/policies -> write",
+              "GET /orgs/{org}/actions/policies/{policy_id} -> write",
+              "POST /orgs/{org}/actions/policies -> write",
+              "PUT /orgs/{org}/actions/policies/{policy_id} -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-administration",
+      "stable_id": "github-fgpat:organization:administration"
+    },
+    {
+      "display_name": "Administration",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "DELETE /repos/{owner}/{repo}/actions/policies/{policy_id} -> write",
+              "GET /repos/{owner}/{repo}/actions/policies -> write",
+              "GET /repos/{owner}/{repo}/actions/policies/{policy_id} -> write",
+              "POST /repos/{owner}/{repo}/actions/policies -> write",
+              "PUT /repos/{owner}/{repo}/actions/policies/{policy_id} -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-administration",
+      "stable_id": "github-fgpat:repository:administration"
+    }
+  ],
+  "compared_at_utc": "2026-09-17T08:43:36Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 73,
+    "previous_objects": 73,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-17",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-09-12",
+  "removed_objects": []
+}

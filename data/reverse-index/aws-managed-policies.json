@@ -26904,6 +26904,13 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
+    "aws:allow_action:bedrock-agentcore:GetCapacityProvider": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:bedrock-agentcore:GetCodeInterpreter": [
       {
         "display_name": "ReadOnlyAccess",
@@ -27584,6 +27591,13 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
       }
     ],
+    "aws:allow_action:bedrock-agentcore:ListAgentRuntimeVersionsByCapacityProvider": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:bedrock-agentcore:ListAgentRuntimes": [
       {
         "display_name": "ReadOnlyAccess",
@@ -27714,6 +27728,13 @@
         "display_name": "AWS_ConfigRole",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_ConfigRole.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole"
+      }
+    ],
+    "aws:allow_action:bedrock-agentcore:ListCapacityProviders": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
     "aws:allow_action:bedrock-agentcore:ListCodeInterpreterSessions": [
@@ -79067,6 +79088,20 @@
         "display_name": "AWSDirectConnectReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDirectConnectReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSDirectConnectReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:directconnect:ListVirtualInterfaceRoutes": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:directconnect:ListVirtualInterfaceTestHistory": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
     "aws:allow_action:directconnect:TagResource": [
@@ -218609,6 +218644,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSUserNotificationsServiceLinkedRolePolicy"
       },
       {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
+      },
+      {
         "display_name": "AWSWellArchitectedOrganizationsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedOrganizationsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedOrganizationsServiceRolePolicy"
@@ -219225,6 +219265,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSUserNotificationsServiceLinkedRolePolicy"
       },
       {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
+      },
+      {
         "display_name": "AWSWellArchitectedOrganizationsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedOrganizationsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedOrganizationsServiceRolePolicy"
@@ -219500,6 +219545,11 @@
         "display_name": "AWSUserNotificationsServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSUserNotificationsServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSUserNotificationsServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
       },
       {
         "display_name": "AWSZoneGroupAccessManagementServiceRolePolicy",
@@ -220164,6 +220214,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSUserNotificationsServiceLinkedRolePolicy"
       },
       {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
+      },
+      {
         "display_name": "AWSWellArchitectedOrganizationsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedOrganizationsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedOrganizationsServiceRolePolicy"
@@ -220556,6 +220611,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSUserNotificationsServiceLinkedRolePolicy"
       },
       {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
+      },
+      {
         "display_name": "AWSWellArchitectedOrganizationsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedOrganizationsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedOrganizationsServiceRolePolicy"
@@ -220823,6 +220883,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorReportingServiceRolePolicy"
       },
       {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
+      },
+      {
         "display_name": "AWSWellArchitectedOrganizationsServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedOrganizationsServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedOrganizationsServiceRolePolicy"
@@ -221013,6 +221078,11 @@
         "display_name": "AWSUserNotificationsServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSUserNotificationsServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSUserNotificationsServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
       },
       {
         "display_name": "AWSWellArchitectedOrganizationsServiceRolePolicy",
@@ -221327,6 +221397,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSUserNotificationsServiceLinkedRolePolicy"
       },
       {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
+      },
+      {
         "display_name": "AWSZoneGroupAccessManagementServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSZoneGroupAccessManagementServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSZoneGroupAccessManagementServiceRolePolicy"
@@ -221603,6 +221678,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorReportingServiceRolePolicy"
       },
       {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
+      },
+      {
         "display_name": "AccessAnalyzerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccessAnalyzerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AccessAnalyzerServiceRolePolicy"
@@ -221758,6 +221838,11 @@
         "display_name": "AWSUserNotificationsServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSUserNotificationsServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSUserNotificationsServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
       },
       {
         "display_name": "AWSWellArchitectedOrganizationsServiceRolePolicy",
@@ -222119,6 +222204,11 @@
         "display_name": "AWSSystemsManagerAccountDiscoveryServicePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSystemsManagerAccountDiscoveryServicePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSystemsManagerAccountDiscoveryServicePolicy"
+      },
+      {
+        "display_name": "AWSWellArchitectedAgentOrganizationsServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentOrganizationsServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentOrganizationsServiceRolePolicy"
       },
       {
         "display_name": "AWSWellArchitectedOrganizationsServiceRolePolicy",
@@ -306288,6 +306378,20 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
+    "aws:allow_action:sustainability:GetEstimatedWaterAllocation": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:sustainability:GetEstimatedWaterAllocationDimensionValues": [
+      {
+        "display_name": "ReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:sustainability:getEstimatedCarbonEmissions": [
       {
         "display_name": "AWSSupportServiceRolePolicy",
@@ -329826,7 +329930,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-09-16T08:39:09Z",
+  "generated_at_utc": "2026-09-17T08:43:36Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
