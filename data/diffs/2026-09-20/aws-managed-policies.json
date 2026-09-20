@@ -1,0 +1,76 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:securityagent:BatchGetValidationRuns",
+      "aws:allow_action:securityagent:ListDiscoveredDomains",
+      "aws:allow_action:securityagent:StartValidationRun",
+      "aws:allow_action:securityagent:UpdateDiscoveredDomains"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "securityagent:BatchGetValidationRuns",
+          "securityagent:ListDiscoveredDomains",
+          "securityagent:StartValidationRun",
+          "securityagent:UpdateDiscoveredDomains"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSSecurityAgentWebAppPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "securityagent:BatchGetValidationRuns",
+              "securityagent:ListDiscoveredDomains",
+              "securityagent:StartValidationRun",
+              "securityagent:UpdateDiscoveredDomains"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 18, 2026, 17:17 UTC",
+          "before": "June 11, 2026, 18:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 18, 2026, 17:17 UTC",
+          "before": "June 11, 2026, 18:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-09-20T08:39:23Z",
+  "counts": {
+    "added_atoms": 4,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1591,
+    "previous_objects": 1591,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-20",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-19",
+  "removed_objects": []
+}
