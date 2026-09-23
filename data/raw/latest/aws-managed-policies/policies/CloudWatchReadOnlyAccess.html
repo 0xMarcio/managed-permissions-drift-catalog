@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:01 UTC</p>
+                <p><b>Edited time:</b>  September 22, 2026, 16:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v24 (default)</p>
+        <p><b>Policy version:</b> v25 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -86,6 +86,7 @@
         "cloudwatch:GenerateQuery",
         "cloudwatch:Get*",
         "cloudwatch:List*",
+        "cloudwatch:CreateOneTimeDeepLinkCode",
         "logs:Get*",
         "logs:List*",
         "logs:StartQuery",
@@ -114,6 +115,8 @@
         "observabilityadmin:ValidateTelemetryPipelineConfiguration",
         "observabilityadmin:GetS3TableIntegration",
         "observabilityadmin:ListS3TableIntegrations",
+        "observabilityadmin:GetDatasetIntegration",
+        "observabilityadmin:ListDatasetIntegrations",
         "sns:Get*",
         "sns:List*",
         "rum:BatchGet*",

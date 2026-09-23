@@ -1,0 +1,1563 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "gcp:permission:universalledger.endpoints.get",
+        "gcp:permission:universalledger.endpoints.list",
+        "gcp:permission:universalledger.endpoints.readNetwork",
+        "gcp:permission:universalledger.endpoints.submit",
+        "gcp:permission:universalledger.locations.get",
+        "gcp:permission:universalledger.locations.list"
+      ],
+      "display_name": "Universal Ledger Admin Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/universalledger#universalledger.admin",
+      "stable_id": "roles/universalledger.admin"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:universalledger.endpoints.get",
+        "gcp:permission:universalledger.endpoints.list",
+        "gcp:permission:universalledger.endpoints.readNetwork",
+        "gcp:permission:universalledger.endpoints.submit",
+        "gcp:permission:universalledger.locations.get",
+        "gcp:permission:universalledger.locations.list"
+      ],
+      "display_name": "Universal Ledger Editor Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/universalledger#universalledger.editor",
+      "stable_id": "roles/universalledger.editor"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:universalledger.endpoints.get",
+        "gcp:permission:universalledger.endpoints.list",
+        "gcp:permission:universalledger.locations.get",
+        "gcp:permission:universalledger.locations.list"
+      ],
+      "display_name": "Universal Ledger Endpoint Viewer Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/universalledger#universalledger.endpointViewer",
+      "stable_id": "roles/universalledger.endpointViewer"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:universalledger.endpoints.get",
+        "gcp:permission:universalledger.endpoints.list",
+        "gcp:permission:universalledger.endpoints.readNetwork",
+        "gcp:permission:universalledger.endpoints.submit",
+        "gcp:permission:universalledger.locations.get",
+        "gcp:permission:universalledger.locations.list"
+      ],
+      "display_name": "Universal Ledger Network User Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/universalledger#universalledger.networkUser",
+      "stable_id": "roles/universalledger.networkUser"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:universalledger.endpoints.get",
+        "gcp:permission:universalledger.endpoints.list",
+        "gcp:permission:universalledger.endpoints.readNetwork",
+        "gcp:permission:universalledger.locations.get",
+        "gcp:permission:universalledger.locations.list"
+      ],
+      "display_name": "Universal Ledger Network Viewer Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/universalledger#universalledger.networkViewer",
+      "stable_id": "roles/universalledger.networkViewer"
+    },
+    {
+      "atoms_added": [
+        "gcp:permission:universalledger.endpoints.get",
+        "gcp:permission:universalledger.endpoints.list",
+        "gcp:permission:universalledger.endpoints.readNetwork",
+        "gcp:permission:universalledger.locations.get",
+        "gcp:permission:universalledger.locations.list"
+      ],
+      "display_name": "Universal Ledger Viewer Beta",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/universalledger#universalledger.viewer",
+      "stable_id": "roles/universalledger.viewer"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "gcp:permission:agentidentity.authProviders.create",
+      "gcp:permission:agentidentity.authProviders.delete",
+      "gcp:permission:agentidentity.authProviders.get",
+      "gcp:permission:agentidentity.authProviders.update",
+      "gcp:permission:agentregistry.bindings.create",
+      "gcp:permission:agentregistry.bindings.delete",
+      "gcp:permission:agentregistry.bindings.get",
+      "gcp:permission:agentregistry.bindings.update",
+      "gcp:permission:aiplatform.endpoints.get",
+      "gcp:permission:aiplatform.endpoints.predict",
+      "gcp:permission:aiplatform.locations.get",
+      "gcp:permission:aiplatform.locations.list",
+      "gcp:permission:aiplatform.provisionedThroughputs.changeScope",
+      "gcp:permission:aiplatform.provisionedThroughputs.changeScope",
+      "gcp:permission:aiplatform.provisionedThroughputs.changeScope",
+      "gcp:permission:aiplatform.provisionedThroughputs.changeScope",
+      "gcp:permission:artifactregistry.tags.get",
+      "gcp:permission:artifactregistry.tags.get",
+      "gcp:permission:artifactregistry.tags.get",
+      "gcp:permission:cloudsql.workloadCaptures.list",
+      "gcp:permission:cloudsql.workloadCaptures.list",
+      "gcp:permission:cloudsql.workloadCaptures.list",
+      "gcp:permission:cloudsql.workloadCaptures.list",
+      "gcp:permission:cloudsql.workloadCaptures.list",
+      "gcp:permission:cloudsql.workloadCaptures.list",
+      "gcp:permission:cloudsql.workloadCaptures.start",
+      "gcp:permission:cloudsql.workloadCaptures.start",
+      "gcp:permission:cloudsql.workloadCaptures.start",
+      "gcp:permission:cloudsql.workloadCaptures.startReplay",
+      "gcp:permission:cloudsql.workloadCaptures.startReplay",
+      "gcp:permission:cloudsql.workloadCaptures.startReplay",
+      "gcp:permission:cloudsql.workloadCaptures.stop",
+      "gcp:permission:cloudsql.workloadCaptures.stop",
+      "gcp:permission:cloudsql.workloadCaptures.stop",
+      "gcp:permission:cloudsql.workloadCaptures.stopReplay",
+      "gcp:permission:cloudsql.workloadCaptures.stopReplay",
+      "gcp:permission:cloudsql.workloadCaptures.stopReplay",
+      "gcp:permission:compute.addresses.create",
+      "gcp:permission:compute.addresses.createInternal",
+      "gcp:permission:compute.addresses.delete",
+      "gcp:permission:compute.addresses.deleteInternal",
+      "gcp:permission:compute.addresses.get",
+      "gcp:permission:compute.addresses.list",
+      "gcp:permission:compute.addresses.use",
+      "gcp:permission:compute.addresses.useInternal",
+      "gcp:permission:compute.networks.get",
+      "gcp:permission:compute.networks.use",
+      "gcp:permission:compute.subnetworks.get",
+      "gcp:permission:compute.subnetworks.list",
+      "gcp:permission:compute.subnetworks.use",
+      "gcp:permission:config.deploymentgroups.createTagBinding",
+      "gcp:permission:config.deploymentgroups.createTagBinding",
+      "gcp:permission:config.deploymentgroups.createTagBinding",
+      "gcp:permission:config.deploymentgroups.createTagBinding",
+      "gcp:permission:config.deploymentgroups.deleteTagBinding",
+      "gcp:permission:config.deploymentgroups.deleteTagBinding",
+      "gcp:permission:config.deploymentgroups.deleteTagBinding",
+      "gcp:permission:config.deploymentgroups.deleteTagBinding",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listEffectiveTags",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deploymentgroups.listTagBindings",
+      "gcp:permission:config.deployments.createTagBinding",
+      "gcp:permission:config.deployments.createTagBinding",
+      "gcp:permission:config.deployments.createTagBinding",
+      "gcp:permission:config.deployments.createTagBinding",
+      "gcp:permission:config.deployments.deleteTagBinding",
+      "gcp:permission:config.deployments.deleteTagBinding",
+      "gcp:permission:config.deployments.deleteTagBinding",
+      "gcp:permission:config.deployments.deleteTagBinding",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listEffectiveTags",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.deployments.listTagBindings",
+      "gcp:permission:config.previews.createTagBinding",
+      "gcp:permission:config.previews.createTagBinding",
+      "gcp:permission:config.previews.createTagBinding",
+      "gcp:permission:config.previews.createTagBinding",
+      "gcp:permission:config.previews.deleteTagBinding",
+      "gcp:permission:config.previews.deleteTagBinding",
+      "gcp:permission:config.previews.deleteTagBinding",
+      "gcp:permission:config.previews.deleteTagBinding",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listEffectiveTags",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:config.previews.listTagBindings",
+      "gcp:permission:discoveryengine.dataStores.list",
+      "gcp:permission:discoveryengine.dataStores.list",
+      "gcp:permission:discoveryengine.projects.get",
+      "gcp:permission:recommender.computeIdleResourceInsights.get",
+      "gcp:permission:recommender.computeIdleResourceInsights.get",
+      "gcp:permission:recommender.computeIdleResourceInsights.get",
+      "gcp:permission:recommender.computeIdleResourceInsights.get",
+      "gcp:permission:recommender.computeIdleResourceInsights.get",
+      "gcp:permission:recommender.computeIdleResourceInsights.get",
+      "gcp:permission:recommender.computeIdleResourceInsights.get",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.list",
+      "gcp:permission:recommender.computeIdleResourceInsights.update",
+      "gcp:permission:recommender.computeIdleResourceInsights.update",
+      "gcp:permission:recommender.computeIdleResourceInsights.update",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.get",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.get",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.get",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.get",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.get",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.get",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.get",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.list",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.update",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.update",
+      "gcp:permission:recommender.computeIdleResourceRecommendations.update",
+      "gcp:permission:recommender.computeIdleResourceRecommenderConfig.get",
+      "gcp:permission:recommender.computeIdleResourceRecommenderConfig.get",
+      "gcp:permission:recommender.computeIdleResourceRecommenderConfig.get",
+      "gcp:permission:recommender.computeIdleResourceRecommenderConfig.get",
+      "gcp:permission:recommender.computeIdleResourceRecommenderConfig.get",
+      "gcp:permission:recommender.computeIdleResourceRecommenderConfig.update",
+      "gcp:permission:recommender.computeIdleResourceRecommenderConfig.update",
+      "gcp:permission:saasservicemgmt.poolKinds.create",
+      "gcp:permission:saasservicemgmt.poolKinds.get",
+      "gcp:permission:saasservicemgmt.poolKinds.list",
+      "gcp:permission:saasservicemgmt.pools.create",
+      "gcp:permission:saasservicemgmt.pools.get",
+      "gcp:permission:saasservicemgmt.pools.list",
+      "gcp:permission:saasservicemgmt.saasReleases.create",
+      "gcp:permission:saasservicemgmt.saasReleases.get",
+      "gcp:permission:saasservicemgmt.saasReleases.list",
+      "gcp:permission:saasservicemgmt.saasReleases.update",
+      "gcp:permission:saasservicemgmt.tenantOperations.create",
+      "gcp:permission:saasservicemgmt.tenantOperations.get",
+      "gcp:permission:saasservicemgmt.tenantOperations.list",
+      "gcp:permission:saasservicemgmt.unitGroupOperations.create",
+      "gcp:permission:saasservicemgmt.unitGroupOperations.delete",
+      "gcp:permission:saasservicemgmt.unitGroupOperations.get",
+      "gcp:permission:saasservicemgmt.unitGroupOperations.list",
+      "gcp:permission:saasservicemgmt.unitGroupOperations.update",
+      "gcp:permission:saasservicemgmt.unitGroups.create",
+      "gcp:permission:saasservicemgmt.unitGroups.delete",
+      "gcp:permission:saasservicemgmt.unitGroups.get",
+      "gcp:permission:saasservicemgmt.unitGroups.list",
+      "gcp:permission:saasservicemgmt.unitGroups.update",
+      "gcp:permission:securitycentermanagement.securityCenterServices.get",
+      "gcp:permission:securitycentermanagement.securityCenterServices.get",
+      "gcp:permission:securitycentermanagement.securityCenterServices.list",
+      "gcp:permission:securitycentermanagement.securityCenterServices.list",
+      "gcp:permission:securitycentermanagement.securityCenterServices.update",
+      "gcp:permission:securitycentermanagement.securityCenterServices.update",
+      "gcp:permission:universalledger.endpoints.get",
+      "gcp:permission:universalledger.endpoints.get",
+      "gcp:permission:universalledger.endpoints.get",
+      "gcp:permission:universalledger.endpoints.get",
+      "gcp:permission:universalledger.endpoints.get",
+      "gcp:permission:universalledger.endpoints.get",
+      "gcp:permission:universalledger.endpoints.list",
+      "gcp:permission:universalledger.endpoints.list",
+      "gcp:permission:universalledger.endpoints.list",
+      "gcp:permission:universalledger.endpoints.list",
+      "gcp:permission:universalledger.endpoints.list",
+      "gcp:permission:universalledger.endpoints.list",
+      "gcp:permission:universalledger.endpoints.list",
+      "gcp:permission:universalledger.endpoints.list",
+      "gcp:permission:universalledger.endpoints.readNetwork",
+      "gcp:permission:universalledger.endpoints.readNetwork",
+      "gcp:permission:universalledger.endpoints.readNetwork",
+      "gcp:permission:universalledger.endpoints.readNetwork",
+      "gcp:permission:universalledger.endpoints.readNetwork",
+      "gcp:permission:universalledger.endpoints.submit",
+      "gcp:permission:universalledger.endpoints.submit",
+      "gcp:permission:universalledger.endpoints.submit",
+      "gcp:permission:universalledger.locations.get",
+      "gcp:permission:universalledger.locations.get",
+      "gcp:permission:universalledger.locations.get",
+      "gcp:permission:universalledger.locations.get",
+      "gcp:permission:universalledger.locations.get",
+      "gcp:permission:universalledger.locations.get",
+      "gcp:permission:universalledger.locations.list",
+      "gcp:permission:universalledger.locations.list",
+      "gcp:permission:universalledger.locations.list",
+      "gcp:permission:universalledger.locations.list",
+      "gcp:permission:universalledger.locations.list",
+      "gcp:permission:universalledger.locations.list",
+      "gcp:permission:universalledger.locations.list",
+      "gcp:permission:universalledger.locations.list"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:included_permissions": [
+          "agentidentity.authProviders.create",
+          "agentidentity.authProviders.delete",
+          "agentidentity.authProviders.get",
+          "agentidentity.authProviders.update",
+          "agentregistry.bindings.create",
+          "agentregistry.bindings.delete",
+          "agentregistry.bindings.get",
+          "agentregistry.bindings.update",
+          "aiplatform.endpoints.get",
+          "aiplatform.endpoints.predict",
+          "aiplatform.locations.get",
+          "aiplatform.locations.list",
+          "aiplatform.provisionedThroughputs.changeScope",
+          "aiplatform.provisionedThroughputs.changeScope",
+          "aiplatform.provisionedThroughputs.changeScope",
+          "aiplatform.provisionedThroughputs.changeScope",
+          "artifactregistry.tags.get",
+          "artifactregistry.tags.get",
+          "artifactregistry.tags.get",
+          "cloudsql.workloadCaptures.list",
+          "cloudsql.workloadCaptures.list",
+          "cloudsql.workloadCaptures.list",
+          "cloudsql.workloadCaptures.list",
+          "cloudsql.workloadCaptures.list",
+          "cloudsql.workloadCaptures.list",
+          "cloudsql.workloadCaptures.start",
+          "cloudsql.workloadCaptures.start",
+          "cloudsql.workloadCaptures.start",
+          "cloudsql.workloadCaptures.startReplay",
+          "cloudsql.workloadCaptures.startReplay",
+          "cloudsql.workloadCaptures.startReplay",
+          "cloudsql.workloadCaptures.stop",
+          "cloudsql.workloadCaptures.stop",
+          "cloudsql.workloadCaptures.stop",
+          "cloudsql.workloadCaptures.stopReplay",
+          "cloudsql.workloadCaptures.stopReplay",
+          "cloudsql.workloadCaptures.stopReplay",
+          "compute.addresses.create",
+          "compute.addresses.createInternal",
+          "compute.addresses.delete",
+          "compute.addresses.deleteInternal",
+          "compute.addresses.get",
+          "compute.addresses.list",
+          "compute.addresses.use",
+          "compute.addresses.useInternal",
+          "compute.networks.get",
+          "compute.networks.use",
+          "compute.subnetworks.get",
+          "compute.subnetworks.list",
+          "compute.subnetworks.use",
+          "config.deploymentgroups.createTagBinding",
+          "config.deploymentgroups.createTagBinding",
+          "config.deploymentgroups.createTagBinding",
+          "config.deploymentgroups.createTagBinding",
+          "config.deploymentgroups.deleteTagBinding",
+          "config.deploymentgroups.deleteTagBinding",
+          "config.deploymentgroups.deleteTagBinding",
+          "config.deploymentgroups.deleteTagBinding",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listEffectiveTags",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deploymentgroups.listTagBindings",
+          "config.deployments.createTagBinding",
+          "config.deployments.createTagBinding",
+          "config.deployments.createTagBinding",
+          "config.deployments.createTagBinding",
+          "config.deployments.deleteTagBinding",
+          "config.deployments.deleteTagBinding",
+          "config.deployments.deleteTagBinding",
+          "config.deployments.deleteTagBinding",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listEffectiveTags",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.deployments.listTagBindings",
+          "config.previews.createTagBinding",
+          "config.previews.createTagBinding",
+          "config.previews.createTagBinding",
+          "config.previews.createTagBinding",
+          "config.previews.deleteTagBinding",
+          "config.previews.deleteTagBinding",
+          "config.previews.deleteTagBinding",
+          "config.previews.deleteTagBinding",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listEffectiveTags",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "config.previews.listTagBindings",
+          "discoveryengine.dataStores.list",
+          "discoveryengine.dataStores.list",
+          "discoveryengine.projects.get",
+          "recommender.computeIdleResourceInsights.get",
+          "recommender.computeIdleResourceInsights.get",
+          "recommender.computeIdleResourceInsights.get",
+          "recommender.computeIdleResourceInsights.get",
+          "recommender.computeIdleResourceInsights.get",
+          "recommender.computeIdleResourceInsights.get",
+          "recommender.computeIdleResourceInsights.get",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.list",
+          "recommender.computeIdleResourceInsights.update",
+          "recommender.computeIdleResourceInsights.update",
+          "recommender.computeIdleResourceInsights.update",
+          "recommender.computeIdleResourceRecommendations.get",
+          "recommender.computeIdleResourceRecommendations.get",
+          "recommender.computeIdleResourceRecommendations.get",
+          "recommender.computeIdleResourceRecommendations.get",
+          "recommender.computeIdleResourceRecommendations.get",
+          "recommender.computeIdleResourceRecommendations.get",
+          "recommender.computeIdleResourceRecommendations.get",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.list",
+          "recommender.computeIdleResourceRecommendations.update",
+          "recommender.computeIdleResourceRecommendations.update",
+          "recommender.computeIdleResourceRecommendations.update",
+          "recommender.computeIdleResourceRecommenderConfig.get",
+          "recommender.computeIdleResourceRecommenderConfig.get",
+          "recommender.computeIdleResourceRecommenderConfig.get",
+          "recommender.computeIdleResourceRecommenderConfig.get",
+          "recommender.computeIdleResourceRecommenderConfig.get",
+          "recommender.computeIdleResourceRecommenderConfig.update",
+          "recommender.computeIdleResourceRecommenderConfig.update",
+          "saasservicemgmt.poolKinds.create",
+          "saasservicemgmt.poolKinds.get",
+          "saasservicemgmt.poolKinds.list",
+          "saasservicemgmt.pools.create",
+          "saasservicemgmt.pools.get",
+          "saasservicemgmt.pools.list",
+          "saasservicemgmt.saasReleases.create",
+          "saasservicemgmt.saasReleases.get",
+          "saasservicemgmt.saasReleases.list",
+          "saasservicemgmt.saasReleases.update",
+          "saasservicemgmt.tenantOperations.create",
+          "saasservicemgmt.tenantOperations.get",
+          "saasservicemgmt.tenantOperations.list",
+          "saasservicemgmt.unitGroupOperations.create",
+          "saasservicemgmt.unitGroupOperations.delete",
+          "saasservicemgmt.unitGroupOperations.get",
+          "saasservicemgmt.unitGroupOperations.list",
+          "saasservicemgmt.unitGroupOperations.update",
+          "saasservicemgmt.unitGroups.create",
+          "saasservicemgmt.unitGroups.delete",
+          "saasservicemgmt.unitGroups.get",
+          "saasservicemgmt.unitGroups.list",
+          "saasservicemgmt.unitGroups.update",
+          "securitycentermanagement.securityCenterServices.get",
+          "securitycentermanagement.securityCenterServices.get",
+          "securitycentermanagement.securityCenterServices.list",
+          "securitycentermanagement.securityCenterServices.list",
+          "securitycentermanagement.securityCenterServices.update",
+          "securitycentermanagement.securityCenterServices.update",
+          "universalledger.endpoints.get",
+          "universalledger.endpoints.get",
+          "universalledger.endpoints.get",
+          "universalledger.endpoints.get",
+          "universalledger.endpoints.get",
+          "universalledger.endpoints.get",
+          "universalledger.endpoints.list",
+          "universalledger.endpoints.list",
+          "universalledger.endpoints.list",
+          "universalledger.endpoints.list",
+          "universalledger.endpoints.list",
+          "universalledger.endpoints.list",
+          "universalledger.endpoints.list",
+          "universalledger.endpoints.list",
+          "universalledger.endpoints.readNetwork",
+          "universalledger.endpoints.readNetwork",
+          "universalledger.endpoints.readNetwork",
+          "universalledger.endpoints.readNetwork",
+          "universalledger.endpoints.readNetwork",
+          "universalledger.endpoints.submit",
+          "universalledger.endpoints.submit",
+          "universalledger.endpoints.submit",
+          "universalledger.locations.get",
+          "universalledger.locations.get",
+          "universalledger.locations.get",
+          "universalledger.locations.get",
+          "universalledger.locations.get",
+          "universalledger.locations.get",
+          "universalledger.locations.list",
+          "universalledger.locations.list",
+          "universalledger.locations.list",
+          "universalledger.locations.list",
+          "universalledger.locations.list",
+          "universalledger.locations.list",
+          "universalledger.locations.list",
+          "universalledger.locations.list"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Agent Platform Administrator",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "aiplatform.provisionedThroughputs.changeScope"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/aiplatform#aiplatform.admin",
+      "stable_id": "roles/aiplatform.admin"
+    },
+    {
+      "display_name": "Aiplatform Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "aiplatform.provisionedThroughputs.changeScope"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/aiplatform#aiplatform.editor",
+      "stable_id": "roles/aiplatform.editor"
+    },
+    {
+      "display_name": "Vertex AI Platform Provisioned Throughput Admin Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "aiplatform.provisionedThroughputs.changeScope"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/aiplatform#aiplatform.provisionedThroughputAdmin",
+      "stable_id": "roles/aiplatform.provisionedThroughputAdmin"
+    },
+    {
+      "display_name": "App Engine Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "artifactregistry.tags.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/appengine#appengine.appAdmin",
+      "stable_id": "roles/appengine.appAdmin"
+    },
+    {
+      "display_name": "App Engine Deployer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "artifactregistry.tags.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/appengine#appengine.deployer",
+      "stable_id": "roles/appengine.deployer"
+    },
+    {
+      "display_name": "App Management Viewer Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings",
+              "recommender.computeIdleResourceInsights.get",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceRecommendations.get",
+              "recommender.computeIdleResourceRecommendations.list",
+              "recommender.computeIdleResourceRecommenderConfig.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/apphub#apphub.appManagementViewer",
+      "stable_id": "roles/apphub.appManagementViewer"
+    },
+    {
+      "display_name": "Audit Manager Auditing Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "discoveryengine.dataStores.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/auditmanager#auditmanager.serviceAgent",
+      "stable_id": "roles/auditmanager.serviceAgent"
+    },
+    {
+      "display_name": "Business AI Code Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "discoveryengine.projects.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/businessaicode#businessaicode.serviceAgent",
+      "stable_id": "roles/businessaicode.serviceAgent"
+    },
+    {
+      "display_name": "Cloud Hub Operator Beta",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings",
+              "recommender.computeIdleResourceInsights.get",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceRecommendations.get",
+              "recommender.computeIdleResourceRecommendations.list",
+              "recommender.computeIdleResourceRecommenderConfig.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudhub#cloudhub.operator",
+      "stable_id": "roles/cloudhub.operator"
+    },
+    {
+      "display_name": "Cloud Security Compliance Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "discoveryengine.dataStores.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudsecuritycompliance#cloudsecuritycompliance.serviceAgent",
+      "stable_id": "roles/cloudsecuritycompliance.serviceAgent"
+    },
+    {
+      "display_name": "Cloud SQL Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudsql.workloadCaptures.list",
+              "cloudsql.workloadCaptures.start",
+              "cloudsql.workloadCaptures.startReplay",
+              "cloudsql.workloadCaptures.stop",
+              "cloudsql.workloadCaptures.stopReplay"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudsql#cloudsql.admin",
+      "stable_id": "roles/cloudsql.admin"
+    },
+    {
+      "display_name": "Cloud SQL Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudsql.workloadCaptures.list",
+              "cloudsql.workloadCaptures.start",
+              "cloudsql.workloadCaptures.startReplay",
+              "cloudsql.workloadCaptures.stop",
+              "cloudsql.workloadCaptures.stopReplay"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudsql#cloudsql.editor",
+      "stable_id": "roles/cloudsql.editor"
+    },
+    {
+      "display_name": "Cloud SQL Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudsql.workloadCaptures.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/cloudsql#cloudsql.viewer",
+      "stable_id": "roles/cloudsql.viewer"
+    },
+    {
+      "display_name": "Cloud Composer API Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "artifactregistry.tags.get",
+              "cloudsql.workloadCaptures.list",
+              "cloudsql.workloadCaptures.start",
+              "cloudsql.workloadCaptures.startReplay",
+              "cloudsql.workloadCaptures.stop",
+              "cloudsql.workloadCaptures.stopReplay"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/composer#composer.serviceAgent",
+      "stable_id": "roles/composer.serviceAgent"
+    },
+    {
+      "display_name": "Cloud Infrastructure Manager Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.createTagBinding",
+              "config.deploymentgroups.deleteTagBinding",
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.createTagBinding",
+              "config.deployments.deleteTagBinding",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.createTagBinding",
+              "config.previews.deleteTagBinding",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/config#config.admin",
+      "stable_id": "roles/config.admin"
+    },
+    {
+      "display_name": "Cloud Infrastructure Manager Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/config#config.editor",
+      "stable_id": "roles/config.editor"
+    },
+    {
+      "display_name": "Cloud Infrastructure Manager Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/config#config.viewer",
+      "stable_id": "roles/config.viewer"
+    },
+    {
+      "display_name": "Application Design Center Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/designcenter#designcenter.admin",
+      "stable_id": "roles/designcenter.admin"
+    },
+    {
+      "display_name": "Application Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/designcenter#designcenter.applicationAdmin",
+      "stable_id": "roles/designcenter.applicationAdmin"
+    },
+    {
+      "display_name": "Application Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/designcenter#designcenter.applicationEditor",
+      "stable_id": "roles/designcenter.applicationEditor"
+    },
+    {
+      "display_name": "Application Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/designcenter#designcenter.applicationViewer",
+      "stable_id": "roles/designcenter.applicationViewer"
+    },
+    {
+      "display_name": "Discovery Engine Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "agentidentity.authProviders.create",
+              "agentidentity.authProviders.delete",
+              "agentidentity.authProviders.get",
+              "agentidentity.authProviders.update",
+              "agentregistry.bindings.create",
+              "agentregistry.bindings.delete",
+              "agentregistry.bindings.get",
+              "agentregistry.bindings.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/discoveryengine#discoveryengine.serviceAgent",
+      "stable_id": "roles/discoveryengine.serviceAgent"
+    },
+    {
+      "display_name": "DLP Organization Data Profiles Driver",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.createTagBinding",
+              "config.deploymentgroups.deleteTagBinding",
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.createTagBinding",
+              "config.deployments.deleteTagBinding",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.createTagBinding",
+              "config.previews.deleteTagBinding",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dlp#dlp.orgdriver",
+      "stable_id": "roles/dlp.orgdriver"
+    },
+    {
+      "display_name": "DLP Project Data Profiles Driver",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.createTagBinding",
+              "config.deploymentgroups.deleteTagBinding",
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.createTagBinding",
+              "config.deployments.deleteTagBinding",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.createTagBinding",
+              "config.previews.deleteTagBinding",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dlp#dlp.projectdriver",
+      "stable_id": "roles/dlp.projectdriver"
+    },
+    {
+      "display_name": "Cloud DNS Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "compute.addresses.create",
+              "compute.addresses.createInternal",
+              "compute.addresses.delete",
+              "compute.addresses.deleteInternal",
+              "compute.addresses.get",
+              "compute.addresses.list",
+              "compute.addresses.use",
+              "compute.addresses.useInternal",
+              "compute.networks.get",
+              "compute.networks.use",
+              "compute.subnetworks.get",
+              "compute.subnetworks.list",
+              "compute.subnetworks.use"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/dns#dns.serviceAgent",
+      "stable_id": "roles/dns.serviceAgent"
+    },
+    {
+      "display_name": "Cluster Director Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "aiplatform.endpoints.get",
+              "aiplatform.endpoints.predict",
+              "aiplatform.locations.get",
+              "aiplatform.locations.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/hypercomputecluster#hypercomputecluster.serviceAgent",
+      "stable_id": "roles/hypercomputecluster.serviceAgent"
+    },
+    {
+      "display_name": "Principal Access Boundary Policy Admin",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Full management of Principal Access Boundary policies and their bindings to principal sets, including the ability to simulate policy impacts.",
+          "before": "Principal Access Boundary admin role, with permissions to read and modify principal access boundary policies, and to bind and unbind principal access boundary policies to targets. Also includes permissions to read principal authorization activities analysis and permissions to list assets from Cloud Asset Inventory",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.principalAccessBoundaryAdmin",
+      "stable_id": "roles/iam.principalAccessBoundaryAdmin"
+    },
+    {
+      "display_name": "Principal Access Boundary Policy User",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "View Principal Access Boundary policies and manage policy bindings to associate them with principal sets.",
+          "before": "Principal Access Boundary Policies user role, with permissions to view principal access boundary policies, and to bind and unbind principal access boundary policies to targets",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.principalAccessBoundaryUser",
+      "stable_id": "roles/iam.principalAccessBoundaryUser"
+    },
+    {
+      "display_name": "Principal Access Boundary Policy Viewer",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Read-only access to Principal Access Boundary policies and their associated bindings.",
+          "before": "Principal Access Boundary Reviewer role, with permissions to read principal access boundary policies and view associated policy bindings",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.principalAccessBoundaryViewer",
+      "stable_id": "roles/iam.principalAccessBoundaryViewer"
+    },
+    {
+      "display_name": "Security Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudsql.workloadCaptures.list",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceRecommendations.list",
+              "universalledger.endpoints.list",
+              "universalledger.locations.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityAdmin",
+      "stable_id": "roles/iam.securityAdmin"
+    },
+    {
+      "display_name": "Security Reviewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "cloudsql.workloadCaptures.list",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceRecommendations.list",
+              "universalledger.endpoints.list",
+              "universalledger.locations.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/iam#iam.securityReviewer",
+      "stable_id": "roles/iam.securityReviewer"
+    },
+    {
+      "display_name": "(Legacy) Looker Service Agent",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "(Legacy) Looker Service Agent",
+          "before": "Looker Service Agent",
+          "field": "display_name"
+        },
+        {
+          "after": "Legacy role that gives the Looker service account permission to manage customer resources, including BigQuery",
+          "before": "Gives the Looker service account permission to manage customer resources",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/looker#looker.serviceAgent",
+      "stable_id": "roles/looker.serviceAgent"
+    },
+    {
+      "display_name": "Recommender Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "recommender.computeIdleResourceInsights.get",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceInsights.update",
+              "recommender.computeIdleResourceRecommendations.get",
+              "recommender.computeIdleResourceRecommendations.list",
+              "recommender.computeIdleResourceRecommendations.update",
+              "recommender.computeIdleResourceRecommenderConfig.get",
+              "recommender.computeIdleResourceRecommenderConfig.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/recommender#recommender.admin",
+      "stable_id": "roles/recommender.admin"
+    },
+    {
+      "display_name": "Compute Recommender Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "recommender.computeIdleResourceInsights.get",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceInsights.update",
+              "recommender.computeIdleResourceRecommendations.get",
+              "recommender.computeIdleResourceRecommendations.list",
+              "recommender.computeIdleResourceRecommendations.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/recommender#recommender.computeAdmin",
+      "stable_id": "roles/recommender.computeAdmin"
+    },
+    {
+      "display_name": "Compute Recommender Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "recommender.computeIdleResourceInsights.get",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceRecommendations.get",
+              "recommender.computeIdleResourceRecommendations.list"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/recommender#recommender.computeViewer",
+      "stable_id": "roles/recommender.computeViewer"
+    },
+    {
+      "display_name": "Recommender Editor",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "recommender.computeIdleResourceInsights.get",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceInsights.update",
+              "recommender.computeIdleResourceRecommendations.get",
+              "recommender.computeIdleResourceRecommendations.list",
+              "recommender.computeIdleResourceRecommendations.update",
+              "recommender.computeIdleResourceRecommenderConfig.get",
+              "recommender.computeIdleResourceRecommenderConfig.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/recommender#recommender.editor",
+      "stable_id": "roles/recommender.editor"
+    },
+    {
+      "display_name": "Recommender Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "recommender.computeIdleResourceInsights.get",
+              "recommender.computeIdleResourceInsights.list",
+              "recommender.computeIdleResourceRecommendations.get",
+              "recommender.computeIdleResourceRecommendations.list",
+              "recommender.computeIdleResourceRecommenderConfig.get"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/recommender#recommender.viewer",
+      "stable_id": "roles/recommender.viewer"
+    },
+    {
+      "display_name": "Tag User",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.createTagBinding",
+              "config.deploymentgroups.deleteTagBinding",
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.createTagBinding",
+              "config.deployments.deleteTagBinding",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.createTagBinding",
+              "config.previews.deleteTagBinding",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser",
+      "stable_id": "roles/resourcemanager.tagUser"
+    },
+    {
+      "display_name": "Tag Viewer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "config.deploymentgroups.listEffectiveTags",
+              "config.deploymentgroups.listTagBindings",
+              "config.deployments.listEffectiveTags",
+              "config.deployments.listTagBindings",
+              "config.previews.listEffectiveTags",
+              "config.previews.listTagBindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer",
+      "stable_id": "roles/resourcemanager.tagViewer"
+    },
+    {
+      "display_name": "SaaS Service Management Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "saasservicemgmt.poolKinds.create",
+              "saasservicemgmt.poolKinds.get",
+              "saasservicemgmt.poolKinds.list",
+              "saasservicemgmt.pools.create",
+              "saasservicemgmt.pools.get",
+              "saasservicemgmt.pools.list",
+              "saasservicemgmt.saasReleases.create",
+              "saasservicemgmt.saasReleases.get",
+              "saasservicemgmt.saasReleases.list",
+              "saasservicemgmt.saasReleases.update",
+              "saasservicemgmt.tenantOperations.create",
+              "saasservicemgmt.tenantOperations.get",
+              "saasservicemgmt.tenantOperations.list",
+              "saasservicemgmt.unitGroupOperations.create",
+              "saasservicemgmt.unitGroupOperations.delete",
+              "saasservicemgmt.unitGroupOperations.get",
+              "saasservicemgmt.unitGroupOperations.list",
+              "saasservicemgmt.unitGroupOperations.update",
+              "saasservicemgmt.unitGroups.create",
+              "saasservicemgmt.unitGroups.delete",
+              "saasservicemgmt.unitGroups.get",
+              "saasservicemgmt.unitGroups.list",
+              "saasservicemgmt.unitGroups.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/saasservicemgmt#saasservicemgmt.serviceAgent",
+      "stable_id": "roles/saasservicemgmt.serviceAgent"
+    },
+    {
+      "display_name": "Security Posture Admin",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "securitycentermanagement.securityCenterServices.get",
+              "securitycentermanagement.securityCenterServices.list",
+              "securitycentermanagement.securityCenterServices.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/securityposture#securityposture.admin",
+      "stable_id": "roles/securityposture.admin"
+    },
+    {
+      "display_name": "Security Posture Deployer",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "securitycentermanagement.securityCenterServices.get",
+              "securitycentermanagement.securityCenterServices.list",
+              "securitycentermanagement.securityCenterServices.update"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/securityposture#securityposture.postureDeployer",
+      "stable_id": "roles/securityposture.postureDeployer"
+    },
+    {
+      "display_name": "Visual Inspection AI Service Agent",
+      "facet_changes": {
+        "grants": {
+          "included_permissions": {
+            "added": [
+              "aiplatform.provisionedThroughputs.changeScope"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/visualinspection#visualinspection.serviceAgent",
+      "stable_id": "roles/visualinspection.serviceAgent"
+    }
+  ],
+  "compared_at_utc": "2026-09-23T08:38:42Z",
+  "counts": {
+    "added_atoms": 265,
+    "added_objects": 6,
+    "changed_objects": 43,
+    "current_objects": 2387,
+    "previous_objects": 2381,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-23",
+  "dataset": "gcp-predefined-roles",
+  "platform": "gcp",
+  "previous_snapshot_date": "2026-09-16",
+  "removed_objects": []
+}
