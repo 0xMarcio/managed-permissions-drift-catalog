@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:58 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 24, 2026, 20:37 UTC</p>
+                <p><b>Edited time:</b>  September 22, 2026, 21:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectProvisioningRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v82 (default)</p>
+        <p><b>Policy version:</b> v83 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -201,6 +201,16 @@
       "Effect" : "Allow",
       "Action" : "s3:GetObject",
       "Resource" : "arn:aws:s3:::amazon-sagemaker-cf-templates*/*"
+    },
+    <span>{</span>
+      "Sid" : "DataZoneEnvironmentResources",
+      "Effect" : "Allow",
+      "Action" : [
+        "datazone:*Connection",
+        "datazone:*DataSource",
+        "datazone:*SubscriptionTarget"
+      ],
+      "Resource" : "*"
     },
     <span>{</span>
       "Sid" : "CcCreate",
@@ -731,6 +741,7 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "iam:PassedToService" : [
+            "datazone.amazonaws.com",
             "sagemaker.amazonaws.com",
             "redshift-serverless.amazonaws.com",
             "bedrock.amazonaws.com"

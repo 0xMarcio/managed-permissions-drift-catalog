@@ -1,19 +1,19 @@
 # AWS
 
-- Refreshed at: `2026-09-23T08:38:42Z`
+- Refreshed at: `2026-09-24T08:31:31Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | `1,597` | `+6 / ~3 / -0` | `+653 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-09-23/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
+| AWS managed policies | `1,598` | `+1 / ~1 / -0` | `+8 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-09-24/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
 
 ## Dataset details
 
 ### AWS managed policies
 
-- Inventory: `1,597` objects.
-- Today: +6 objects, ~3 changed, +653 atoms.
-- Biggest additions: `CloudWatchOmniAWSIntegrationPolicy` (+499 atoms), `CloudWatchOmniSpaceAccessPolicy` (+116 atoms), `AWSCloudWatchOmniServiceRolePolicy` (+15 atoms).
-- Biggest changes: `CloudWatchFullAccessV2` (+5), `AWSBillingConductorReadOnlyAccess` (+3), `CloudWatchReadOnlyAccess` (+3).
-- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-09-23/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
+- Inventory: `1,598` objects.
+- Today: +1 objects, ~1 changed, +8 atoms.
+- Biggest additions: `AWSTransferServiceRolePolicy` (+5 atoms).
+- Biggest changes: `SageMakerStudioProjectProvisioningRolePolicy` (+3).
+- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-09-24/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)

@@ -71365,11 +71365,25 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
       }
     ],
+    "aws:allow_action:datazone:*Connection": [
+      {
+        "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+      }
+    ],
     "aws:allow_action:datazone:*Conversation*": [
       {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+      }
+    ],
+    "aws:allow_action:datazone:*DataSource": [
+      {
+        "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
       }
     ],
     "aws:allow_action:datazone:*Message*": [
@@ -71394,6 +71408,13 @@
         "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+      }
+    ],
+    "aws:allow_action:datazone:*SubscriptionTarget": [
+      {
+        "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
       }
     ],
     "aws:allow_action:datazone:AcceptPredictions": [
@@ -282327,6 +282348,11 @@
         "display_name": "AWSSecretsManagerClientReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecretsManagerClientReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess"
+      },
+      {
+        "display_name": "AWSTransferServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTransferServiceRolePolicy"
       }
     ],
     "aws:allow_action:secretsmanager:CreateSecret": [
@@ -282730,6 +282756,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSPanoramaServiceLinkedRolePolicy"
       },
       {
+        "display_name": "AWSTransferServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTransferServiceRolePolicy"
+      },
+      {
         "display_name": "AWSVPCS2SVpnServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSVPCS2SVpnServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSVPCS2SVpnServiceRolePolicy"
@@ -283002,6 +283033,11 @@
         "display_name": "AWSResourceExplorerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSTransferServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTransferServiceRolePolicy"
       },
       {
         "display_name": "AWSVPCS2SVpnServiceRolePolicy",
@@ -283485,6 +283521,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAWSTransform"
       },
       {
+        "display_name": "AWSTransferServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTransferServiceRolePolicy"
+      },
+      {
         "display_name": "AWSVPCS2SVpnServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSVPCS2SVpnServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSVPCS2SVpnServiceRolePolicy"
@@ -283859,6 +283900,11 @@
         "display_name": "AWSResourceExplorerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSTransferServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTransferServiceRolePolicy"
       },
       {
         "display_name": "AccessAnalyzerServiceRolePolicy",
@@ -333500,7 +333546,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-09-23T08:38:42Z",
+  "generated_at_utc": "2026-09-24T08:31:31Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -344784,6 +344830,18 @@
       ]
     },
     {
+      "atom": "aws:allow_action:datazone:*Connection",
+      "object": {
+        "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+      },
+      "terms": [
+        "datazone:*Connection",
+        "aws:allow_action:datazone:*Connection"
+      ]
+    },
+    {
       "atom": "aws:allow_action:datazone:*Conversation*",
       "object": {
         "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
@@ -344793,6 +344851,18 @@
       "terms": [
         "datazone:*Conversation*",
         "aws:allow_action:datazone:*Conversation*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:datazone:*DataSource",
+      "object": {
+        "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+      },
+      "terms": [
+        "datazone:*DataSource",
+        "aws:allow_action:datazone:*DataSource"
       ]
     },
     {
@@ -344841,6 +344911,18 @@
       "terms": [
         "datazone:*Notebook*",
         "aws:allow_action:datazone:*Notebook*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:datazone:*SubscriptionTarget",
+      "object": {
+        "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+      },
+      "terms": [
+        "datazone:*SubscriptionTarget",
+        "aws:allow_action:datazone:*SubscriptionTarget"
       ]
     },
     {

@@ -1,0 +1,101 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:secretsmanager:BatchGetSecretValue",
+        "aws:allow_action:secretsmanager:DeleteSecret",
+        "aws:allow_action:secretsmanager:DescribeSecret",
+        "aws:allow_action:secretsmanager:GetSecretValue",
+        "aws:allow_action:secretsmanager:ListSecrets"
+      ],
+      "display_name": "AWSTransferServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransferServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSTransferServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:datazone:*Connection",
+      "aws:allow_action:datazone:*DataSource",
+      "aws:allow_action:datazone:*SubscriptionTarget",
+      "aws:allow_action:secretsmanager:BatchGetSecretValue",
+      "aws:allow_action:secretsmanager:DeleteSecret",
+      "aws:allow_action:secretsmanager:DescribeSecret",
+      "aws:allow_action:secretsmanager:GetSecretValue",
+      "aws:allow_action:secretsmanager:ListSecrets"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "datazone:*Connection",
+          "datazone:*DataSource",
+          "datazone:*SubscriptionTarget",
+          "secretsmanager:BatchGetSecretValue",
+          "secretsmanager:DeleteSecret",
+          "secretsmanager:DescribeSecret",
+          "secretsmanager:GetSecretValue",
+          "secretsmanager:ListSecrets"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:*Connection",
+              "datazone:*DataSource",
+              "datazone:*SubscriptionTarget"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v83 (default)",
+          "before": "v82 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 22, 2026, 21:57 UTC",
+          "before": "August 24, 2026, 20:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 22, 2026, 21:57 UTC",
+          "before": "August 24, 2026, 20:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 163,
+          "before": 162,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-09-24T08:31:31Z",
+  "counts": {
+    "added_atoms": 8,
+    "added_objects": 1,
+    "changed_objects": 1,
+    "current_objects": 1598,
+    "previous_objects": 1597,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-24",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-23",
+  "removed_objects": []
+}
