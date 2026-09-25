@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "Kd0oTdbXPKlifQm8fCh_3",
+  "buildId": "64qDiVXPny2cO0VO1WQTi",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -574,7 +574,7 @@
           "permissions": [
             {
               "access": "write",
-              "additional-permissions": false,
+              "additional-permissions": true,
               "category": "repos",
               "requestPath": "/orgs/{org}/repos",
               "slug": "create-an-organization-repository",
@@ -1879,7 +1879,7 @@
             },
             {
               "access": "write",
-              "additional-permissions": false,
+              "additional-permissions": true,
               "category": "repos",
               "requestPath": "/user/repos",
               "slug": "create-a-repository-for-the-authenticated-user",
@@ -3370,6 +3370,15 @@
               "slug": "download-a-repository-archive-zip",
               "subcategory": "contents",
               "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": true,
+              "category": "repos",
+              "requestPath": "/repos/{template_owner}/{template_repo}/generate",
+              "slug": "create-a-repository-using-a-template",
+              "subcategory": "repos",
+              "verb": "post"
             },
             {
               "access": "read",
@@ -9323,6 +9332,39 @@
           ],
           "title": "Repository security advisories"
         },
+        "repository_creation": {
+          "displayTitle": "Repository permissions for \"Repository creation\"",
+          "permissions": [
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "repos",
+              "requestPath": "/orgs/{org}/repos",
+              "slug": "create-an-organization-repository",
+              "subcategory": "repos",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "repos",
+              "requestPath": "/repos/{template_owner}/{template_repo}/generate",
+              "slug": "create-a-repository-using-a-template",
+              "subcategory": "repos",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "repos",
+              "requestPath": "/user/repos",
+              "slug": "create-a-repository-for-the-authenticated-user",
+              "subcategory": "repos",
+              "verb": "post"
+            }
+          ],
+          "title": "Repository creation"
+        },
         "repository_custom_properties": {
           "displayTitle": "Repository permissions for \"Custom properties\"",
           "permissions": [
@@ -10233,6 +10275,12 @@
             "contents": {
               "href": "#repository-permissions-for-pull-requests",
               "title": "Repository permissions for \"Pull requests\""
+            }
+          },
+          {
+            "contents": {
+              "href": "#repository-permissions-for-repository-creation",
+              "title": "Repository permissions for \"Repository creation\""
             }
           },
           {
@@ -11597,27 +11645,6 @@
               ],
               "href": "/en/rest/emojis",
               "title": "Emojis"
-            },
-            {
-              "childPages": [
-                {
-                  "childPages": [],
-                  "href": "/en/rest/enterprise-teams/enterprise-team-members",
-                  "title": "Enterprise team members"
-                },
-                {
-                  "childPages": [],
-                  "href": "/en/rest/enterprise-teams/enterprise-team-organizations",
-                  "title": "Enterprise team organizations"
-                },
-                {
-                  "childPages": [],
-                  "href": "/en/rest/enterprise-teams/enterprise-teams",
-                  "title": "Enterprise teams"
-                }
-              ],
-              "href": "/en/rest/enterprise-teams",
-              "title": "Enterprise teams"
             },
             {
               "childPages": [
