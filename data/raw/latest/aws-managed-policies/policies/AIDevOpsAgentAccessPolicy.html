@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 12, 2026, 23:07 UTC</p>
+                <p><b>Edited time:</b>  September 24, 2026, 20:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsAgentAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v10 (default)</p>
+        <p><b>Policy version:</b> v11 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -104,6 +104,7 @@
         "aidevops:ListAssetTypes",
         "aidevops:ListAssetVersions",
         "aidevops:ListKnowledgeItems",
+        "airflow:GetEnvironment",
         "airflow:List*",
         "amplify:GetApp",
         "amplify:GetBranch",
@@ -244,6 +245,7 @@
         "cloudwatch:GetMetricData",
         "cloudwatch:GetMetricStatistics",
         "cloudwatch:GetMetricStream",
+        "cloudwatch:GetOTelEnrichment",
         "cloudwatch:GetService",
         "cloudwatch:GetServiceLevelObjective",
         "cloudwatch:List*",
@@ -331,6 +333,7 @@
         "config:List*",
         "config:SelectAggregateResourceConfig",
         "connect:Describe*",
+        "connect:GetMetricDataV2",
         "connect:GetTaskTemplate",
         "connect:List*",
         "cur:Describe*",
@@ -470,6 +473,7 @@
         "glue:GetDatabase",
         "glue:GetDatabases",
         "glue:GetDataCatalogEncryptionSettings",
+        "glue:GetDataQualityResult",
         "glue:GetJob",
         "glue:GetJobBookmark",
         "glue:GetJobRun",
@@ -527,6 +531,7 @@
         "iam:GetUserPolicy",
         "iam:ListAccountAliases",
         "iam:ListAttachedRolePolicies",
+        "iam:ListEntitiesForPolicy",
         "iam:ListOpenIDConnectProviders",
         "iam:ListRolePolicies",
         "iam:ListRoles",
@@ -818,6 +823,7 @@
         "rum:List*",
         "s3-outposts:ListEndpoints",
         "s3-outposts:ListOutpostsWithS3",
+        "s3:GetAccelerateConfiguration",
         "s3:GetAccessGrant",
         "s3:GetAccessGrantsInstance",
         "s3:GetAccessGrantsLocation",
@@ -827,6 +833,7 @@
         "s3:GetAccessPointPolicy",
         "s3:GetAccessPointPolicyForObjectLambda",
         "s3:GetAccessPointPolicyStatusForObjectLambda",
+        "s3:GetAnalyticsConfiguration",
         "s3:GetBucketAbac",
         "s3:GetBucketAcl",
         "s3:GetBucketCORS",
@@ -840,10 +847,12 @@
         "s3:GetBucketPublicAccessBlock",
         "s3:GetBucketTagging",
         "s3:GetBucketVersioning",
+        "s3:GetBucketWebsite",
         "s3:GetEncryptionConfiguration",
         "s3:GetIntelligentTieringConfiguration",
         "s3:GetInventoryConfiguration",
         "s3:GetLifecycleConfiguration",
+        "s3:GetMetricsConfiguration",
         "s3:GetMultiRegionAccessPoint",
         "s3:GetMultiRegionAccessPointPolicy",
         "s3:GetMultiRegionAccessPointPolicyStatus",
@@ -852,6 +861,7 @@
         "s3:GetStorageLensConfigurationTagging",
         "s3:GetStorageLensGroup",
         "s3:ListAllMyBuckets",
+        "s3:ListTagsForResource",
         "sagemaker:Describe*",
         "sagemaker:List*",
         "scheduler:GetSchedule",
@@ -975,9 +985,15 @@
         "wafv2:GetLoggingConfiguration",
         "wafv2:GetRegexPatternSet",
         "wafv2:GetRuleGroup",
+        "wafv2:GetSampledRequests",
         "wafv2:GetWebACL",
         "wafv2:GetWebACLForResource",
         "wafv2:List*",
+        "wisdom:Get*",
+        "wisdom:List*",
+        "wisdom:Query*",
+        "wisdom:Retrieve",
+        "wisdom:Search*",
         "workspaces-web:GetBrowserSettings",
         "workspaces-web:GetIdentityProvider",
         "workspaces-web:GetNetworkSettings",
@@ -1024,6 +1040,20 @@
         "arn:aws:apigateway:*::/domainnames",
         "arn:aws:apigateway:*::/domainnames/*"
       ]
+    },
+    <span>{</span>
+      "Sid" : "AllowListBucketAWSLogs",
+      "Effect" : "Allow",
+      "Action" : "s3:ListBucket",
+      "Resource" : "arn:aws:s3:::*",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "s3:prefix" : [
+            "AWSLogs/*",
+            "*/AWSLogs/*"
+          ]
+        }
+      }
     }
   ]
 }</code></pre>

@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: June 13, 2025, 20:07 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:57 UTC</p>
+                <p><b>Edited time:</b>  September 24, 2026, 18:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="NetworkSecurityDirectorServiceLinkedRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v6 (default)</p>
+        <p><b>Policy version:</b> v7 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -288,6 +288,19 @@
         }
       },
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "DisableNSDPolicyType",
+      "Effect" : "Allow",
+      "Action" : [
+        "organizations:DisablePolicyType"
+      ],
+      "Resource" : "arn:aws:organizations::*:root/o-*/r-*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "organizations:PolicyType" : "NETWORK_SECURITY_DIRECTOR_POLICY"
+        }
+      }
     }
   ]
 }</code></pre>
