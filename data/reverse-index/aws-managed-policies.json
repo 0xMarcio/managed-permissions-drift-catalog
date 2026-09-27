@@ -2316,6 +2316,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSForWordPressPluginPolicy"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceAccess"
@@ -2351,6 +2356,11 @@
         "display_name": "AWSForWordPressPluginPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSForWordPressPluginPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSForWordPressPluginPolicy"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonSageMakerHyperPodInferenceAccess",
@@ -2468,6 +2478,11 @@
         "display_name": "AWSForWordPressPluginPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSForWordPressPluginPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSForWordPressPluginPolicy"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonEKSLoadBalancingPolicy",
@@ -2922,6 +2937,11 @@
         "display_name": "AWSForWordPressPluginPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSForWordPressPluginPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSForWordPressPluginPolicy"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "CloudFrontFullAccess",
@@ -21466,11 +21486,6 @@
     ],
     "aws:allow_action:aws-external-anthropic:CallWithBearerToken": [
       {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
-      {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
@@ -21488,22 +21503,12 @@
     ],
     "aws:allow_action:aws-external-anthropic:CancelBatchInference": [
       {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
-      {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
       }
     ],
     "aws:allow_action:aws-external-anthropic:CountTokens": [
-      {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
       {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
@@ -21518,11 +21523,6 @@
       }
     ],
     "aws:allow_action:aws-external-anthropic:CreateBatchInference": [
-      {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
       {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
@@ -21544,11 +21544,6 @@
       }
     ],
     "aws:allow_action:aws-external-anthropic:CreateInference": [
-      {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
       {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
@@ -21598,11 +21593,6 @@
       }
     ],
     "aws:allow_action:aws-external-anthropic:DeleteBatchInference": [
-      {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
       {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
@@ -21660,11 +21650,6 @@
     ],
     "aws:allow_action:aws-external-anthropic:Get*": [
       {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
-      {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
@@ -21676,11 +21661,6 @@
       }
     ],
     "aws:allow_action:aws-external-anthropic:GetAccountStatus": [
-      {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
       {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
@@ -21697,6 +21677,18 @@
         "display_name": "AnthropicSelfHostedEnvironmentAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicSelfHostedEnvironmentAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AnthropicSelfHostedEnvironmentAccess"
+      }
+    ],
+    "aws:allow_action:aws-external-anthropic:GetKey": [
+      {
+        "display_name": "AnthropicLimitedAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+      },
+      {
+        "display_name": "AnthropicReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicReadOnlyAccess"
       }
     ],
     "aws:allow_action:aws-external-anthropic:GetSession": [
@@ -21727,11 +21719,6 @@
     ],
     "aws:allow_action:aws-external-anthropic:List*": [
       {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
-      {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
@@ -21745,6 +21732,18 @@
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
+      }
+    ],
+    "aws:allow_action:aws-external-anthropic:ListKeys": [
+      {
+        "display_name": "AnthropicLimitedAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+      },
+      {
+        "display_name": "AnthropicReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicReadOnlyAccess"
       }
     ],
     "aws:allow_action:aws-external-anthropic:ListTagsForResource": [
@@ -90222,6 +90221,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneProjectDeploymentPermissionsBoundary"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonElasticMapReduceFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticMapReduceFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonElasticMapReduceFullAccess"
@@ -90467,6 +90471,11 @@
         "display_name": "AmazonDataZoneProjectDeploymentPermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneProjectDeploymentPermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneProjectDeploymentPermissionsBoundary"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECS_FullAccess",
@@ -93110,6 +93119,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonDocDBConsoleFullAccess"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECS_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECS_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECS_FullAccess"
@@ -93823,6 +93837,11 @@
         "display_name": "AmazonEC2RolePolicyForLaunchWizard",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2RolePolicyForLaunchWizard.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEC2RolePolicyForLaunchWizard"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForManagedInstances",
@@ -96820,6 +96839,11 @@
         "display_name": "AmazonDataZoneProjectDeploymentPermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneProjectDeploymentPermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneProjectDeploymentPermissionsBoundary"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECS_FullAccess",
@@ -107238,6 +107262,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonEC2RolePolicyForLaunchWizard"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonEKSClusterPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSClusterPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
@@ -107757,6 +107786,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonLaunchWizardFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizardFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2"
@@ -108169,6 +108203,11 @@
         "display_name": "AmazonDynamoDBReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDynamoDBReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForManagedInstances",
@@ -110154,6 +110193,11 @@
         "display_name": "AmazonDynamoDBReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDynamoDBReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForManagedInstances",
@@ -114577,6 +114621,11 @@
         "display_name": "AmazonDynamoDBReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDynamoDBReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForManagedInstances",
@@ -120183,6 +120232,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneProjectDeploymentPermissionsBoundary"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonElasticMapReduceFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticMapReduceFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonElasticMapReduceFullAccess"
@@ -120388,6 +120442,11 @@
         "display_name": "AmazonDRSVPCManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDRSVPCManagement.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDRSVPCManagement"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonEKSClusterPolicy",
@@ -133888,6 +133947,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:AddListenerCertificates": [
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonEKSLoadBalancingPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
@@ -133928,6 +133992,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECS_FullAccess",
@@ -134087,6 +134156,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECS_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECS_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECS_FullAccess"
@@ -134152,6 +134226,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECS_FullAccess",
@@ -134245,6 +134324,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkEKSTagging"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECS_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECS_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECS_FullAccess"
@@ -134280,6 +134364,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECS_FullAccess",
@@ -134344,6 +134433,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "NetworkSecurityManagerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
@@ -134378,6 +134472,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECS_FullAccess",
@@ -134435,6 +134534,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECS_FullAccess",
@@ -134501,6 +134605,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:DeleteRule": [
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECS_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECS_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECS_FullAccess"
@@ -134531,6 +134640,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECS_FullAccess",
@@ -134593,6 +134707,11 @@
         "display_name": "AWSWAFFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "NetworkSecurityManagerServiceRolePolicy",
@@ -134659,6 +134778,11 @@
         "display_name": "AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForLoadBalancers",
@@ -135018,6 +135142,11 @@
         "display_name": "AWSTransformNetworkMigrationAgentPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForLoadBalancers",
@@ -135388,6 +135517,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSWAFConsoleReadOnlyAccess"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECS_FullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECS_FullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECS_FullAccess"
@@ -135658,6 +135792,11 @@
         "display_name": "AWSTransformNetworkMigrationAgentPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForLoadBalancers",
@@ -136020,6 +136159,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECSInfrastructureRolePolicyForLoadBalancers",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRolePolicyForLoadBalancers.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRolePolicyForLoadBalancers"
@@ -136235,6 +136379,11 @@
         "display_name": "AWSTransformNetworkMigrationAgentPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForLoadBalancers",
@@ -136489,6 +136638,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSWAFReadOnlyAccess"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "NetworkSecurityManagerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
@@ -136568,6 +136722,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSCodeDeployRoleForECSLimited"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECSInfrastructureRolePolicyForLoadBalancers",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRolePolicyForLoadBalancers.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRolePolicyForLoadBalancers"
@@ -136607,6 +136766,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:ModifyLoadBalancerAttributes": [
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonEKSClusterPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSClusterPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
@@ -136642,6 +136806,11 @@
         "display_name": "AWSCodeDeployRoleForECSLimited",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCodeDeployRoleForECSLimited.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCodeDeployRoleForECSLimited"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonECSInfrastructureRolePolicyForLoadBalancers",
@@ -136789,6 +136958,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECSInfrastructureRolePolicyForLoadBalancers",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRolePolicyForLoadBalancers.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRolePolicyForLoadBalancers"
@@ -136881,6 +137055,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:RemoveListenerCertificates": [
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonEKSLoadBalancingPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
@@ -136966,6 +137145,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonEKSLoadBalancingPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
@@ -136981,6 +137165,11 @@
         "display_name": "AdministratorAccess-AWSElasticBeanstalk",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-AWSElasticBeanstalk.html",
         "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonEKSLoadBalancingPolicy",
@@ -137020,6 +137209,11 @@
         "display_name": "AWSFMAdminFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSFMAdminFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSFMAdminFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "FMSServiceRolePolicy",
@@ -164770,6 +164964,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonECSInfrastructureRolePolicyForManagedInstances",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRolePolicyForManagedInstances.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRolePolicyForManagedInstances"
@@ -186673,6 +186872,13 @@
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
       }
     ],
+    "aws:allow_action:ivs:GetAdConfiguration": [
+      {
+        "display_name": "IVSReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IVSReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/IVSReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:ivs:GetChannel": [
       {
         "display_name": "AIDevOpsAgentAccessPolicy",
@@ -187073,6 +187279,13 @@
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
+      }
+    ],
+    "aws:allow_action:ivs:ListAdConfigurations": [
+      {
+        "display_name": "IVSReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IVSReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/IVSReadOnlyAccess"
       }
     ],
     "aws:allow_action:ivs:ListChannels": [
@@ -192610,6 +192823,16 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonWorkSpacesAdmin"
       },
       {
+        "display_name": "AnthropicFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicFullAccess"
+      },
+      {
+        "display_name": "AnthropicReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicReadOnlyAccess"
+      },
+      {
         "display_name": "AwsGlueDataBrewFullAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AwsGlueDataBrewFullAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AwsGlueDataBrewFullAccessPolicy"
@@ -194396,6 +194619,16 @@
         "display_name": "AmazonWorkSpacesAdmin",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonWorkSpacesAdmin.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonWorkSpacesAdmin"
+      },
+      {
+        "display_name": "AnthropicFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicFullAccess"
+      },
+      {
+        "display_name": "AnthropicReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AnthropicReadOnlyAccess"
       },
       {
         "display_name": "AwsGlueDataBrewFullAccessPolicy",
@@ -320479,11 +320712,6 @@
         "stable_id": "arn:aws:iam::aws:policy/AnthropicFullAccess"
       },
       {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
-      {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
@@ -320588,11 +320816,6 @@
         "display_name": "AnthropicFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AnthropicFullAccess"
-      },
-      {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
       },
       {
         "display_name": "AnthropicLimitedAccess",
@@ -330103,6 +330326,11 @@
     ],
     "aws:allow_action:wafv2:AssociateWebACL": [
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonEKSLoadBalancingPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
@@ -330261,6 +330489,11 @@
         "display_name": "AWSWAFFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonEKSLoadBalancingPolicy",
@@ -330449,6 +330682,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
       },
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonEKSLoadBalancingPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
@@ -330504,6 +330742,11 @@
         "display_name": "AIOpsAssistantPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOpsAssistantPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
+      },
+      {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
       },
       {
         "display_name": "AmazonEKSLoadBalancingPolicy",
@@ -346201,7 +346444,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-09-26T08:39:49Z",
+  "generated_at_utc": "2026-09-27T09:19:35Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -349327,18 +349570,6 @@
     {
       "atom": "aws:allow_action:aws-external-anthropic:Get*",
       "object": {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
-      "terms": [
-        "aws-external-anthropic:Get*",
-        "aws:allow_action:aws-external-anthropic:Get*"
-      ]
-    },
-    {
-      "atom": "aws:allow_action:aws-external-anthropic:Get*",
-      "object": {
         "display_name": "AnthropicLimitedAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
@@ -349358,18 +349589,6 @@
       "terms": [
         "aws-external-anthropic:Get*",
         "aws:allow_action:aws-external-anthropic:Get*"
-      ]
-    },
-    {
-      "atom": "aws:allow_action:aws-external-anthropic:List*",
-      "object": {
-        "display_name": "AnthropicInferenceAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
-      },
-      "terms": [
-        "aws-external-anthropic:List*",
-        "aws:allow_action:aws-external-anthropic:List*"
       ]
     },
     {

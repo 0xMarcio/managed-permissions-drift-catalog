@@ -1,0 +1,397 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:acm:AddTagsToCertificate",
+        "aws:allow_action:acm:DeleteCertificate",
+        "aws:allow_action:acm:DescribeCertificate",
+        "aws:allow_action:acm:RequestCertificate",
+        "aws:allow_action:ec2:AuthorizeSecurityGroupEgress",
+        "aws:allow_action:ec2:AuthorizeSecurityGroupIngress",
+        "aws:allow_action:ec2:CreateSecurityGroup",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteSecurityGroup",
+        "aws:allow_action:ec2:DescribeRouteTables",
+        "aws:allow_action:ec2:DescribeSecurityGroupRules",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:ec2:RevokeSecurityGroupEgress",
+        "aws:allow_action:ec2:RevokeSecurityGroupIngress",
+        "aws:allow_action:elasticloadbalancing:AddListenerCertificates",
+        "aws:allow_action:elasticloadbalancing:AddTags",
+        "aws:allow_action:elasticloadbalancing:CreateListener",
+        "aws:allow_action:elasticloadbalancing:CreateLoadBalancer",
+        "aws:allow_action:elasticloadbalancing:CreateRule",
+        "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+        "aws:allow_action:elasticloadbalancing:CreateWebACLAssociation",
+        "aws:allow_action:elasticloadbalancing:DeleteListener",
+        "aws:allow_action:elasticloadbalancing:DeleteLoadBalancer",
+        "aws:allow_action:elasticloadbalancing:DeleteRule",
+        "aws:allow_action:elasticloadbalancing:DeleteTargetGroup",
+        "aws:allow_action:elasticloadbalancing:DeleteWebACLAssociation",
+        "aws:allow_action:elasticloadbalancing:DeregisterTargets",
+        "aws:allow_action:elasticloadbalancing:DescribeListeners",
+        "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+        "aws:allow_action:elasticloadbalancing:DescribeRules",
+        "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+        "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+        "aws:allow_action:elasticloadbalancing:GetLoadBalancerWebACL",
+        "aws:allow_action:elasticloadbalancing:ModifyListener",
+        "aws:allow_action:elasticloadbalancing:ModifyLoadBalancerAttributes",
+        "aws:allow_action:elasticloadbalancing:ModifyRule",
+        "aws:allow_action:elasticloadbalancing:RegisterTargets",
+        "aws:allow_action:elasticloadbalancing:RemoveListenerCertificates",
+        "aws:allow_action:elasticloadbalancing:SetRulePriorities",
+        "aws:allow_action:elasticloadbalancing:SetSecurityGroups",
+        "aws:allow_action:elasticloadbalancing:SetWebACL",
+        "aws:allow_action:iam:CreateServiceLinkedRole",
+        "aws:allow_action:wafv2:AssociateWebACL",
+        "aws:allow_action:wafv2:DisassociateWebACL",
+        "aws:allow_action:wafv2:GetWebACL",
+        "aws:allow_action:wafv2:GetWebACLForResource"
+      ],
+      "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:acm:AddTagsToCertificate",
+      "aws:allow_action:acm:DeleteCertificate",
+      "aws:allow_action:acm:DescribeCertificate",
+      "aws:allow_action:acm:RequestCertificate",
+      "aws:allow_action:aws-external-anthropic:GetKey",
+      "aws:allow_action:aws-external-anthropic:GetKey",
+      "aws:allow_action:aws-external-anthropic:ListKeys",
+      "aws:allow_action:aws-external-anthropic:ListKeys",
+      "aws:allow_action:ec2:AuthorizeSecurityGroupEgress",
+      "aws:allow_action:ec2:AuthorizeSecurityGroupIngress",
+      "aws:allow_action:ec2:CreateSecurityGroup",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteSecurityGroup",
+      "aws:allow_action:ec2:DescribeRouteTables",
+      "aws:allow_action:ec2:DescribeSecurityGroupRules",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ec2:RevokeSecurityGroupEgress",
+      "aws:allow_action:ec2:RevokeSecurityGroupIngress",
+      "aws:allow_action:elasticloadbalancing:AddListenerCertificates",
+      "aws:allow_action:elasticloadbalancing:AddTags",
+      "aws:allow_action:elasticloadbalancing:CreateListener",
+      "aws:allow_action:elasticloadbalancing:CreateLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:CreateRule",
+      "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+      "aws:allow_action:elasticloadbalancing:CreateWebACLAssociation",
+      "aws:allow_action:elasticloadbalancing:DeleteListener",
+      "aws:allow_action:elasticloadbalancing:DeleteLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:DeleteRule",
+      "aws:allow_action:elasticloadbalancing:DeleteTargetGroup",
+      "aws:allow_action:elasticloadbalancing:DeleteWebACLAssociation",
+      "aws:allow_action:elasticloadbalancing:DeregisterTargets",
+      "aws:allow_action:elasticloadbalancing:DescribeListeners",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+      "aws:allow_action:elasticloadbalancing:DescribeRules",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+      "aws:allow_action:elasticloadbalancing:GetLoadBalancerWebACL",
+      "aws:allow_action:elasticloadbalancing:ModifyListener",
+      "aws:allow_action:elasticloadbalancing:ModifyLoadBalancerAttributes",
+      "aws:allow_action:elasticloadbalancing:ModifyRule",
+      "aws:allow_action:elasticloadbalancing:RegisterTargets",
+      "aws:allow_action:elasticloadbalancing:RemoveListenerCertificates",
+      "aws:allow_action:elasticloadbalancing:SetRulePriorities",
+      "aws:allow_action:elasticloadbalancing:SetSecurityGroups",
+      "aws:allow_action:elasticloadbalancing:SetWebACL",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:ivs:GetAdConfiguration",
+      "aws:allow_action:ivs:ListAdConfigurations",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:ListKeys",
+      "aws:allow_action:kms:ListKeys",
+      "aws:allow_action:wafv2:AssociateWebACL",
+      "aws:allow_action:wafv2:DisassociateWebACL",
+      "aws:allow_action:wafv2:GetWebACL",
+      "aws:allow_action:wafv2:GetWebACLForResource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "acm:AddTagsToCertificate",
+          "acm:DeleteCertificate",
+          "acm:DescribeCertificate",
+          "acm:RequestCertificate",
+          "aws-external-anthropic:GetKey",
+          "aws-external-anthropic:GetKey",
+          "aws-external-anthropic:ListKeys",
+          "aws-external-anthropic:ListKeys",
+          "ec2:AuthorizeSecurityGroupEgress",
+          "ec2:AuthorizeSecurityGroupIngress",
+          "ec2:CreateSecurityGroup",
+          "ec2:CreateTags",
+          "ec2:DeleteSecurityGroup",
+          "ec2:DescribeRouteTables",
+          "ec2:DescribeSecurityGroupRules",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcs",
+          "ec2:RevokeSecurityGroupEgress",
+          "ec2:RevokeSecurityGroupIngress",
+          "elasticloadbalancing:AddListenerCertificates",
+          "elasticloadbalancing:AddTags",
+          "elasticloadbalancing:CreateListener",
+          "elasticloadbalancing:CreateLoadBalancer",
+          "elasticloadbalancing:CreateRule",
+          "elasticloadbalancing:CreateTargetGroup",
+          "elasticloadbalancing:CreateWebACLAssociation",
+          "elasticloadbalancing:DeleteListener",
+          "elasticloadbalancing:DeleteLoadBalancer",
+          "elasticloadbalancing:DeleteRule",
+          "elasticloadbalancing:DeleteTargetGroup",
+          "elasticloadbalancing:DeleteWebACLAssociation",
+          "elasticloadbalancing:DeregisterTargets",
+          "elasticloadbalancing:DescribeListeners",
+          "elasticloadbalancing:DescribeLoadBalancers",
+          "elasticloadbalancing:DescribeRules",
+          "elasticloadbalancing:DescribeTargetGroups",
+          "elasticloadbalancing:DescribeTargetHealth",
+          "elasticloadbalancing:GetLoadBalancerWebACL",
+          "elasticloadbalancing:ModifyListener",
+          "elasticloadbalancing:ModifyLoadBalancerAttributes",
+          "elasticloadbalancing:ModifyRule",
+          "elasticloadbalancing:RegisterTargets",
+          "elasticloadbalancing:RemoveListenerCertificates",
+          "elasticloadbalancing:SetRulePriorities",
+          "elasticloadbalancing:SetSecurityGroups",
+          "elasticloadbalancing:SetWebACL",
+          "iam:CreateServiceLinkedRole",
+          "ivs:GetAdConfiguration",
+          "ivs:ListAdConfigurations",
+          "kms:DescribeKey",
+          "kms:DescribeKey",
+          "kms:ListKeys",
+          "kms:ListKeys",
+          "wafv2:AssociateWebACL",
+          "wafv2:DisassociateWebACL",
+          "wafv2:GetWebACL",
+          "wafv2:GetWebACLForResource"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "aws-external-anthropic:CallWithBearerToken",
+          "aws-external-anthropic:CancelBatchInference",
+          "aws-external-anthropic:CountTokens",
+          "aws-external-anthropic:CreateBatchInference",
+          "aws-external-anthropic:CreateInference",
+          "aws-external-anthropic:DeleteBatchInference",
+          "aws-external-anthropic:Get*",
+          "aws-external-anthropic:GetAccountStatus",
+          "aws-external-anthropic:List*",
+          "sts:GetWebIdentityToken",
+          "sts:TagGetWebIdentityToken"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:aws-external-anthropic:CallWithBearerToken",
+      "aws:allow_action:aws-external-anthropic:CancelBatchInference",
+      "aws:allow_action:aws-external-anthropic:CountTokens",
+      "aws:allow_action:aws-external-anthropic:CreateBatchInference",
+      "aws:allow_action:aws-external-anthropic:CreateInference",
+      "aws:allow_action:aws-external-anthropic:DeleteBatchInference",
+      "aws:allow_action:aws-external-anthropic:Get*",
+      "aws:allow_action:aws-external-anthropic:GetAccountStatus",
+      "aws:allow_action:aws-external-anthropic:List*",
+      "aws:allow_action:sts:GetWebIdentityToken",
+      "aws:allow_action:sts:TagGetWebIdentityToken"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AnthropicFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "kms:DescribeKey",
+              "kms:ListKeys"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 25, 2026, 20:17 UTC",
+          "before": "April 01, 2026, 22:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 25, 2026, 20:17 UTC",
+          "before": "April 01, 2026, 22:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 7,
+          "before": 6,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AnthropicFullAccess"
+    },
+    {
+      "display_name": "AnthropicLimitedAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-external-anthropic:GetKey",
+              "aws-external-anthropic:ListKeys"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 25, 2026, 20:17 UTC",
+          "before": "June 12, 2026, 16:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 25, 2026, 20:17 UTC",
+          "before": "June 12, 2026, 16:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+    },
+    {
+      "display_name": "AnthropicReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-external-anthropic:GetKey",
+              "aws-external-anthropic:ListKeys",
+              "kms:DescribeKey",
+              "kms:ListKeys"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 25, 2026, 20:17 UTC",
+          "before": "April 01, 2026, 22:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 25, 2026, 20:17 UTC",
+          "before": "April 01, 2026, 22:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AnthropicReadOnlyAccess"
+    },
+    {
+      "display_name": "IVSReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ivs:GetAdConfiguration",
+              "ivs:ListAdConfigurations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "September 25, 2026, 19:47 UTC",
+          "before": "February 12, 2026, 18:03 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "September 25, 2026, 19:47 UTC",
+          "before": "February 12, 2026, 18:03 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IVSReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/IVSReadOnlyAccess"
+    }
+  ],
+  "compared_at_utc": "2026-09-27T09:19:35Z",
+  "counts": {
+    "added_atoms": 58,
+    "added_objects": 1,
+    "changed_objects": 4,
+    "current_objects": 1598,
+    "previous_objects": 1598,
+    "removed_atoms": 11,
+    "removed_objects": 1
+  },
+  "current_snapshot_date": "2026-09-27",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-09-26",
+  "removed_objects": [
+    {
+      "atoms_removed": [
+        "aws:allow_action:aws-external-anthropic:CallWithBearerToken",
+        "aws:allow_action:aws-external-anthropic:CancelBatchInference",
+        "aws:allow_action:aws-external-anthropic:CountTokens",
+        "aws:allow_action:aws-external-anthropic:CreateBatchInference",
+        "aws:allow_action:aws-external-anthropic:CreateInference",
+        "aws:allow_action:aws-external-anthropic:DeleteBatchInference",
+        "aws:allow_action:aws-external-anthropic:Get*",
+        "aws:allow_action:aws-external-anthropic:GetAccountStatus",
+        "aws:allow_action:aws-external-anthropic:List*",
+        "aws:allow_action:sts:GetWebIdentityToken",
+        "aws:allow_action:sts:TagGetWebIdentityToken"
+      ],
+      "display_name": "AnthropicInferenceAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicInferenceAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AnthropicInferenceAccess"
+    }
+  ]
+}
