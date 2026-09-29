@@ -1,0 +1,53 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /repos/{owner}/{repo}/issues/{issue_number}/relates_to/{issue_id} -> write",
+          "GET /repos/{owner}/{repo}/issues/{issue_number}/relates_to -> read",
+          "POST /repos/{owner}/{repo}/issues/{issue_number}/relates_to -> write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Issues",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "DELETE /repos/{owner}/{repo}/issues/{issue_number}/relates_to/{issue_id} -> write",
+              "GET /repos/{owner}/{repo}/issues/{issue_number}/relates_to -> read",
+              "POST /repos/{owner}/{repo}/issues/{issue_number}/relates_to -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-issues",
+      "stable_id": "github-fgpat:repository:issues"
+    }
+  ],
+  "compared_at_utc": "2026-09-29T09:54:19Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 74,
+    "previous_objects": 74,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-29",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-09-25",
+  "removed_objects": []
+}
