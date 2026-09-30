@@ -232838,6 +232838,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSDashboardConsoleReadOnly"
       },
       {
+        "display_name": "AmazonGuardDutyFullAccess_v2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonGuardDutyFullAccess_v2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonGuardDutyFullAccess_v2"
+      },
+      {
         "display_name": "IAMAccessAdvisorReadOnly",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMAccessAdvisorReadOnly.html",
         "stable_id": "arn:aws:iam::aws:policy/IAMAccessAdvisorReadOnly"
@@ -235572,6 +235577,11 @@
     ],
     "aws:allow_action:payments:DeletePaymentInstrument": [
       {
+        "display_name": "AWSAccountSettingsManagementRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
+      {
         "display_name": "AWSMarketplaceSellerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
@@ -235804,6 +235814,11 @@
       }
     ],
     "aws:allow_action:payments:ListPaymentInstruments": [
+      {
+        "display_name": "AWSAccountSettingsManagementRole",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountSettingsManagementRole.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSAccountSettingsManagementRole"
+      },
       {
         "display_name": "AWSBillingReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html",
@@ -327987,6 +328002,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
       },
       {
+        "display_name": "AmazonECSInfrastructureRolePolicyForVpcLattice",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRolePolicyForVpcLattice.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRolePolicyForVpcLattice"
+      },
+      {
         "display_name": "CloudWatchOmniAWSIntegrationPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniAWSIntegrationPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniAWSIntegrationPolicy"
@@ -328727,6 +328747,20 @@
         "display_name": "ResourceGroupsTaggingAPITagUntagSupportedResources",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ResourceGroupsTaggingAPITagUntagSupportedResources.html",
         "stable_id": "arn:aws:iam::aws:policy/ResourceGroupsTaggingAPITagUntagSupportedResources"
+      }
+    ],
+    "aws:allow_action:vpc-lattice:UpdateListener": [
+      {
+        "display_name": "AmazonECSInfrastructureRolePolicyForVpcLattice",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRolePolicyForVpcLattice.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRolePolicyForVpcLattice"
+      }
+    ],
+    "aws:allow_action:vpc-lattice:UpdateRule": [
+      {
+        "display_name": "AmazonECSInfrastructureRolePolicyForVpcLattice",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRolePolicyForVpcLattice.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRolePolicyForVpcLattice"
       }
     ],
     "aws:allow_action:vpc-lattice:getAccessLogSubscription": [
@@ -346444,7 +346478,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-09-27T09:19:35Z",
+  "generated_at_utc": "2026-09-30T09:46:39Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

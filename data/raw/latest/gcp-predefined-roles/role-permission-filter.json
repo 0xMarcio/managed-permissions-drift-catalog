@@ -47,7 +47,7 @@
     },
     {
       "title": "Flow",
-      "name": "aisandbox.googleapis.com, flow.googleapis.com",
+      "name": "flow.googleapis.com, aisandbox.googleapis.com",
       "url": "/iam/docs/roles-permissions/flow"
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "anthosservicemesh.googleapis.com, trafficdirector.googleapis.com, meshdataplane.googleapis.com, meshconfig.googleapis.com",
+      "name": "meshconfig.googleapis.com, trafficdirector.googleapis.com, anthosservicemesh.googleapis.com, meshdataplane.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "title": "API Gateway",
-      "name": "apigateway.googleapis.com, apigateway.management.googleapis.com",
+      "name": "apigateway.management.googleapis.com, apigateway.googleapis.com",
       "url": "/iam/docs/roles-permissions/apigateway"
     },
     {
@@ -397,7 +397,7 @@
     },
     {
       "title": "Cloud Deployment Manager",
-      "name": "deploymentmanager.googleapis.com, clouddeploymentmanager.googleapis.com",
+      "name": "clouddeploymentmanager.googleapis.com, deploymentmanager.googleapis.com",
       "url": "/iam/docs/roles-permissions/deploymentmanager"
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "firebasenotifications.googleapis.com, firebasecloudmessaging.googleapis.com, cloudmessaging.googleapis.com",
+      "name": "cloudmessaging.googleapis.com, firebasenotifications.googleapis.com, firebasecloudmessaging.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
@@ -452,7 +452,7 @@
     },
     {
       "title": "Service Catalog",
-      "name": "cloudprivatecatalogproducer.googleapis.com, cloudprivatecatalog.googleapis.com",
+      "name": "cloudprivatecatalog.googleapis.com, cloudprivatecatalogproducer.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudprivatecatalog"
     },
     {
@@ -477,7 +477,7 @@
     },
     {
       "title": "Web Security Scanner",
-      "name": "cloudsecurityscanner.googleapis.com, websecurityscanner.googleapis.com",
+      "name": "websecurityscanner.googleapis.com, cloudsecurityscanner.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudsecurityscanner"
     },
     {
@@ -502,7 +502,7 @@
     },
     {
       "title": "Cloud TPU",
-      "name": "cloudtpu.googleapis.com, tpu.googleapis.com",
+      "name": "tpu.googleapis.com, cloudtpu.googleapis.com",
       "url": "/iam/docs/roles-permissions/tpu"
     },
     {
@@ -537,7 +537,7 @@
     },
     {
       "title": "Commerce Price Management",
-      "name": "commercepricemanagement.googleapis.com, commerceprice.googleapis.com",
+      "name": "commerceprice.googleapis.com, commercepricemanagement.googleapis.com",
       "url": "/iam/docs/roles-permissions/commercepricemanagement"
     },
     {
@@ -732,7 +732,7 @@
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
+      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -897,7 +897,7 @@
     },
     {
       "title": "Firebase Crashlytics",
-      "name": "firebasecrash.googleapis.com, firebasecrashlytics.googleapis.com",
+      "name": "firebasecrashlytics.googleapis.com, firebasecrash.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecrash"
     },
     {
@@ -1247,7 +1247,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "monitoring.googleapis.com, stackdriver.googleapis.com, opsconfigmonitoring.googleapis.com",
+      "name": "stackdriver.googleapis.com, monitoring.googleapis.com, opsconfigmonitoring.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1282,7 +1282,7 @@
     },
     {
       "title": "NetApp Cloud Volumes Service",
-      "name": "cloudvolumesgcp.api.netapp.com, netappcloudvolumes.googleapis.com",
+      "name": "netappcloudvolumes.googleapis.com, cloudvolumesgcp.api.netapp.com",
       "url": "/iam/docs/roles-permissions/netappcloudvolumes"
     },
     {
@@ -1417,7 +1417,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
+      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1442,7 +1442,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
+      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -1659,11 +1659,6 @@
       "title": "Google Threat Intelligence",
       "name": "threatintelligence.googleapis.com",
       "url": "/iam/docs/roles-permissions/threatintelligence"
-    },
-    {
-      "title": "Timeseries Insights API",
-      "name": "timeseriesinsights.googleapis.com",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights"
     },
     {
       "title": "Transcoder API",
@@ -2268,6 +2263,18 @@
       "name": "roles/aiplatform.tuningServiceAgent",
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.tuningServiceAgent",
       "priority": 2
+    },
+    {
+      "title": "Flow Admin",
+      "name": "roles/flow.admin",
+      "url": "/iam/docs/roles-permissions/flow#flow.admin",
+      "priority": 1
+    },
+    {
+      "title": "Flow Editor",
+      "name": "roles/flow.editor",
+      "url": "/iam/docs/roles-permissions/flow#flow.editor",
+      "priority": 1
     },
     {
       "title": "FlowService Service Agent",
@@ -6584,6 +6591,12 @@
       "priority": 2
     },
     {
+      "title": "Database Insights Service Agent",
+      "name": "roles/databaseinsights.serviceAgent",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.serviceAgent",
+      "priority": 2
+    },
+    {
       "title": "Database Insights virtual Dbx viewer",
       "name": "roles/databaseinsights.virtualDbxViewer",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbxViewer",
@@ -7217,6 +7230,18 @@
       "title": "Dataplex Entry Group Owner",
       "name": "roles/dataplex.entryGroupOwner",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroupOwner",
+      "priority": 2
+    },
+    {
+      "title": "Dataplex Entry Link Type Owner",
+      "name": "roles/dataplex.entryLinkTypeOwner",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypeOwner",
+      "priority": 2
+    },
+    {
+      "title": "Dataplex Entry Link Type User",
+      "name": "roles/dataplex.entryLinkTypeUser",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypeUser",
       "priority": 2
     },
     {
@@ -10013,12 +10038,6 @@
       "title": "Cluster Director Editor",
       "name": "roles/hypercomputecluster.editor",
       "url": "/iam/docs/roles-permissions/hypercomputecluster#hypercomputecluster.editor",
-      "priority": 1
-    },
-    {
-      "title": "Cluster Director Viewer",
-      "name": "roles/hypercomputecluster.viewer",
-      "url": "/iam/docs/roles-permissions/hypercomputecluster#hypercomputecluster.viewer",
       "priority": 1
     },
     {
@@ -15434,36 +15453,6 @@
       "priority": 2
     },
     {
-      "title": "Timeseriesinsights Admin",
-      "name": "roles/timeseriesinsights.admin",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.admin",
-      "priority": 1
-    },
-    {
-      "title": "Timeseriesinsights Viewer",
-      "name": "roles/timeseriesinsights.viewer",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.viewer",
-      "priority": 1
-    },
-    {
-      "title": "Timeseries Insights DataSet Editor",
-      "name": "roles/timeseriesinsights.datasetsEditor",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasetsEditor",
-      "priority": 2
-    },
-    {
-      "title": "Timeseries Insights DataSet Owner",
-      "name": "roles/timeseriesinsights.datasetsOwner",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasetsOwner",
-      "priority": 2
-    },
-    {
-      "title": "Timeseries Insights DataSet Viewer",
-      "name": "roles/timeseriesinsights.datasetsViewer",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasetsViewer",
-      "priority": 2
-    },
-    {
       "title": "Transcoder Admin",
       "name": "roles/transcoder.admin",
       "url": "/iam/docs/roles-permissions/transcoder#transcoder.admin",
@@ -16604,12 +16593,20 @@
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.get"
     },
     {
+      "title": "agentregistry.skills.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.getIamPolicy"
+    },
+    {
       "title": "agentregistry.skills.list",
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.list"
     },
     {
       "title": "agentregistry.skills.search",
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.search"
+    },
+    {
+      "title": "agentregistry.skills.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.skills.setIamPolicy"
     },
     {
       "title": "agentregistry.skills.update",
@@ -17866,6 +17863,10 @@
     {
       "title": "aiplatform.models.upload",
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.models.upload"
+    },
+    {
+      "title": "aiplatform.monitoredAgents.clearTrainingData",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.monitoredAgents.clearTrainingData"
     },
     {
       "title": "aiplatform.monitoredAgents.disable",
@@ -28436,6 +28437,26 @@
       "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.geminiGcpEnablementSettings.update"
     },
     {
+      "title": "cloudaicompanion.gibqObservabilitySettings.create",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.gibqObservabilitySettings.create"
+    },
+    {
+      "title": "cloudaicompanion.gibqObservabilitySettings.delete",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.gibqObservabilitySettings.delete"
+    },
+    {
+      "title": "cloudaicompanion.gibqObservabilitySettings.get",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.gibqObservabilitySettings.get"
+    },
+    {
+      "title": "cloudaicompanion.gibqObservabilitySettings.list",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.gibqObservabilitySettings.list"
+    },
+    {
+      "title": "cloudaicompanion.gibqObservabilitySettings.update",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.gibqObservabilitySettings.update"
+    },
+    {
       "title": "cloudaicompanion.instances.completeCode",
       "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.instances.completeCode"
     },
@@ -28650,6 +28671,30 @@
     {
       "title": "cloudaicompanion.settingBindings.geminiGcpEnablementSettingsUse",
       "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingBindings.geminiGcpEnablementSettingsUse"
+    },
+    {
+      "title": "cloudaicompanion.settingBindings.gibqObservabilitySettingsCreate",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingBindings.gibqObservabilitySettingsCreate"
+    },
+    {
+      "title": "cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete"
+    },
+    {
+      "title": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingBindings.gibqObservabilitySettingsGet"
+    },
+    {
+      "title": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingBindings.gibqObservabilitySettingsList"
+    },
+    {
+      "title": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate"
+    },
+    {
+      "title": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUse",
+      "url": "/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingBindings.gibqObservabilitySettingsUse"
     },
     {
       "title": "cloudaicompanion.settingBindings.loggingSettingsCreate",
@@ -35888,6 +35933,10 @@
       "url": "/iam/docs/roles-permissions/compute#compute.interconnects.setLabels"
     },
     {
+      "title": "compute.interconnects.setName",
+      "url": "/iam/docs/roles-permissions/compute#compute.interconnects.setName"
+    },
+    {
       "title": "compute.interconnects.update",
       "url": "/iam/docs/roles-permissions/compute#compute.interconnects.update"
     },
@@ -37084,6 +37133,10 @@
       "url": "/iam/docs/roles-permissions/compute#compute.regionSslPolicies.get"
     },
     {
+      "title": "compute.regionSslPolicies.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/compute#compute.regionSslPolicies.getIamPolicy"
+    },
+    {
       "title": "compute.regionSslPolicies.list",
       "url": "/iam/docs/roles-permissions/compute#compute.regionSslPolicies.list"
     },
@@ -37098,6 +37151,10 @@
     {
       "title": "compute.regionSslPolicies.listTagBindings",
       "url": "/iam/docs/roles-permissions/compute#compute.regionSslPolicies.listTagBindings"
+    },
+    {
+      "title": "compute.regionSslPolicies.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/compute#compute.regionSslPolicies.setIamPolicy"
     },
     {
       "title": "compute.regionSslPolicies.update",
@@ -37310,6 +37367,10 @@
     {
       "title": "compute.reservationBlocks.performMaintenance",
       "url": "/iam/docs/roles-permissions/compute#compute.reservationBlocks.performMaintenance"
+    },
+    {
+      "title": "compute.reservationConsumedInstances.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.reservationConsumedInstances.list"
     },
     {
       "title": "compute.reservationSlots.get",
@@ -37808,6 +37869,10 @@
       "url": "/iam/docs/roles-permissions/compute#compute.sslPolicies.get"
     },
     {
+      "title": "compute.sslPolicies.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/compute#compute.sslPolicies.getIamPolicy"
+    },
+    {
       "title": "compute.sslPolicies.list",
       "url": "/iam/docs/roles-permissions/compute#compute.sslPolicies.list"
     },
@@ -37822,6 +37887,10 @@
     {
       "title": "compute.sslPolicies.listTagBindings",
       "url": "/iam/docs/roles-permissions/compute#compute.sslPolicies.listTagBindings"
+    },
+    {
+      "title": "compute.sslPolicies.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/compute#compute.sslPolicies.setIamPolicy"
     },
     {
       "title": "compute.sslPolicies.update",
@@ -44336,6 +44405,10 @@
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useGraphProfileAspect"
     },
     {
+      "title": "dataplex.entryGroups.useManagedConnectorTypes",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useManagedConnectorTypes"
+    },
+    {
       "title": "dataplex.entryGroups.useMySQLConnectorTypes",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useMySQLConnectorTypes"
     },
@@ -44398,6 +44471,38 @@
     {
       "title": "dataplex.entryGroups.useSynonymEntryLink",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useSynonymEntryLink"
+    },
+    {
+      "title": "dataplex.entryLinkTypes.create",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypes.create"
+    },
+    {
+      "title": "dataplex.entryLinkTypes.delete",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypes.delete"
+    },
+    {
+      "title": "dataplex.entryLinkTypes.get",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypes.get"
+    },
+    {
+      "title": "dataplex.entryLinkTypes.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypes.getIamPolicy"
+    },
+    {
+      "title": "dataplex.entryLinkTypes.list",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypes.list"
+    },
+    {
+      "title": "dataplex.entryLinkTypes.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypes.setIamPolicy"
+    },
+    {
+      "title": "dataplex.entryLinkTypes.update",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypes.update"
+    },
+    {
+      "title": "dataplex.entryLinkTypes.use",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryLinkTypes.use"
     },
     {
       "title": "dataplex.entryLinks.create",
@@ -46316,6 +46421,14 @@
       "url": "/iam/docs/roles-permissions/devicerun#devicerun.sessions.list"
     },
     {
+      "title": "devicerun.softwareVersions.get",
+      "url": "/iam/docs/roles-permissions/devicerun#devicerun.softwareVersions.get"
+    },
+    {
+      "title": "devicerun.softwareVersions.list",
+      "url": "/iam/docs/roles-permissions/devicerun#devicerun.softwareVersions.list"
+    },
+    {
       "title": "devicestreaming.deviceSessions.cancel",
       "url": "/iam/docs/roles-permissions/devicestreaming#devicestreaming.deviceSessions.cancel"
     },
@@ -47730,6 +47843,10 @@
     {
       "title": "discoveryengine.licenseConfigs.update",
       "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.licenseConfigs.update"
+    },
+    {
+      "title": "discoveryengine.locations.buildAuthorizationUrl",
+      "url": "/iam/docs/roles-permissions/discoveryengine#discoveryengine.locations.buildAuthorizationUrl"
     },
     {
       "title": "discoveryengine.locations.completeExternalIdentities",
@@ -49694,6 +49811,22 @@
     {
       "title": "enterprisepurchasing.gcveNodePricingInfo.list",
       "url": "/iam/docs/roles-permissions/enterprisepurchasing#enterprisepurchasing.gcveNodePricingInfo.list"
+    },
+    {
+      "title": "enterprisepurchasing.licenseKeys.create",
+      "url": "/iam/docs/roles-permissions/enterprisepurchasing#enterprisepurchasing.licenseKeys.create"
+    },
+    {
+      "title": "enterprisepurchasing.licenseKeys.delete",
+      "url": "/iam/docs/roles-permissions/enterprisepurchasing#enterprisepurchasing.licenseKeys.delete"
+    },
+    {
+      "title": "enterprisepurchasing.licenseKeys.get",
+      "url": "/iam/docs/roles-permissions/enterprisepurchasing#enterprisepurchasing.licenseKeys.get"
+    },
+    {
+      "title": "enterprisepurchasing.licenseKeys.list",
+      "url": "/iam/docs/roles-permissions/enterprisepurchasing#enterprisepurchasing.licenseKeys.list"
     },
     {
       "title": "enterprisepurchasing.locations.get",
@@ -53794,6 +53927,10 @@
     {
       "title": "iam.googleapis.com/workforcePoolSubjects.delete",
       "url": "/iam/docs/roles-permissions/iam#iam.googleapis.com_workforcePoolSubjects.delete"
+    },
+    {
+      "title": "iam.googleapis.com/workforcePoolSubjects.revokeSessions",
+      "url": "/iam/docs/roles-permissions/iam#iam.googleapis.com_workforcePoolSubjects.revokeSessions"
     },
     {
       "title": "iam.googleapis.com/workforcePoolSubjects.undelete",
@@ -69094,38 +69231,6 @@
     {
       "title": "threatintelligence.findings.list",
       "url": "/iam/docs/roles-permissions/threatintelligence#threatintelligence.findings.list"
-    },
-    {
-      "title": "timeseriesinsights.datasets.create",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasets.create"
-    },
-    {
-      "title": "timeseriesinsights.datasets.delete",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasets.delete"
-    },
-    {
-      "title": "timeseriesinsights.datasets.evaluate",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasets.evaluate"
-    },
-    {
-      "title": "timeseriesinsights.datasets.list",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasets.list"
-    },
-    {
-      "title": "timeseriesinsights.datasets.query",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasets.query"
-    },
-    {
-      "title": "timeseriesinsights.datasets.update",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.datasets.update"
-    },
-    {
-      "title": "timeseriesinsights.locations.get",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.locations.get"
-    },
-    {
-      "title": "timeseriesinsights.locations.list",
-      "url": "/iam/docs/roles-permissions/timeseriesinsights#timeseriesinsights.locations.list"
     },
     {
       "title": "transcoder.jobTemplates.create",

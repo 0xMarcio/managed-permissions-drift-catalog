@@ -1,0 +1,77 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "github:fgpat:organization:external-custom-properties-for-repositories:admin"
+      ],
+      "display_name": "External custom properties for repositories",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-external-custom-properties-for-repositories",
+      "stable_id": "github-fgpat:organization:external-custom-properties-for-repositories"
+    },
+    {
+      "atoms_added": [
+        "github:fgpat:repository:github-app-installation-repository-access:write"
+      ],
+      "display_name": "GitHub App installation repository access",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-github-app-installation-repository-access",
+      "stable_id": "github-fgpat:repository:github-app-installation-repository-access"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "github:fgpat:organization:external-custom-properties-for-repositories:admin",
+      "github:fgpat:repository:github-app-installation-repository-access:write"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /user/installations/{installation_id}/repositories/{repository_id} -> write",
+          "GET /orgs/{org}/properties/installations -> admin",
+          "GET /repos/{owner}/{repo}/actions/jobs/{job_id}/steps/{step_number}/logs -> read",
+          "POST /orgs/{org}/properties/installations -> admin",
+          "PUT /user/installations/{installation_id}/repositories/{repository_id} -> write"
+        ],
+        "grant:levels": [
+          "admin",
+          "write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Actions",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "GET /repos/{owner}/{repo}/actions/jobs/{job_id}/steps/{step_number}/logs -> read"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#repository-permissions-for-actions",
+      "stable_id": "github-fgpat:repository:actions"
+    }
+  ],
+  "compared_at_utc": "2026-09-30T09:46:39Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 2,
+    "changed_objects": 1,
+    "current_objects": 76,
+    "previous_objects": 74,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-09-30",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-09-29",
+  "removed_objects": []
+}

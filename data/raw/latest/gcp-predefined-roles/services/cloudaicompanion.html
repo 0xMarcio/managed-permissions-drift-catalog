@@ -1808,15 +1808,15 @@
     data-label="Site header link: Console"
     
       
-        track-type="globalNav"
-      
         track-metadata-position="nav"
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-name="console"
       
-        track-metadata-eventDetail="nav"
+        track-type="globalNav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
     >
   Console
@@ -2005,7 +2005,7 @@
     
     
       
-        track-type="freeTrial"
+        referrerpolicy="no-referrer-when-downgrade"
       
         track-metadata-position="nav"
       
@@ -2013,7 +2013,7 @@
       
         track-name="gcpCta"
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-type="freeTrial"
       
     
     >Start free</a>
@@ -2560,15 +2560,15 @@
 
     
       
-        track-type="globalNav"
-      
         track-metadata-position="nav"
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-name="console"
       
-        track-metadata-eventDetail="nav"
+        track-type="globalNav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
     
      data-category="Site-Wide Custom Events"
@@ -5237,9 +5237,7 @@
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Telco Automation API</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/telemetry"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Telemetry API</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/timeseriesinsights"
-        class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Timeseries Insights API</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/transcoder"
+      ><span class="devsite-nav-text" tooltip>Telemetry API</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/transcoder"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Transcoder API</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/roles-permissions/transferappliance"
         class="devsite-nav-title"
@@ -6879,6 +6877,18 @@ Admin role for Gemini for Google Cloud
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>geminiGcpEnablementSettings.<wbr>update</code></li>
     </ul>
   </devsite-expandable>
+  <devsite-expandable id="expandable-cloudaicompanion.admin-cloudaicompanion.gibqObservabilitySettings.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>list</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-cloudaicompanion.admin-cloudaicompanion.instances.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">cloudaicompanion.instances.*</code></span>
@@ -6973,6 +6983,12 @@ Admin role for Gemini for Google Cloud
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsList</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsUpdate</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsUse</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsCreate</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsDelete</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsGet</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsList</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsUpdate</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsUse</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsCreate</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsDelete</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsGet</code></li>
@@ -7077,6 +7093,18 @@ Editor role for Gemini for Google Cloud
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>geminiGcpEnablementSettings.<wbr>update</code></li>
     </ul>
   </devsite-expandable>
+  <devsite-expandable id="expandable-cloudaicompanion.editor-cloudaicompanion.gibqObservabilitySettings.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>list</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
   <devsite-expandable id="expandable-cloudaicompanion.editor-cloudaicompanion.instances.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">cloudaicompanion.instances.*</code></span>
@@ -7163,6 +7191,12 @@ Editor role for Gemini for Google Cloud
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsList</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsUpdate</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsUse</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsCreate</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsDelete</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsGet</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsList</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsUpdate</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsUse</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsCreate</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsDelete</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsGet</code></li>
@@ -7278,6 +7312,8 @@ Viewer role for Gemini for Google Cloud
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>entitlements.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>geminiGcpEnablementSettings.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>geminiGcpEnablementSettings.<wbr>list</code></p>
+  <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>list</code></p>
   <devsite-expandable id="expandable-cloudaicompanion.viewer-cloudaicompanion.instances.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">cloudaicompanion.instances.*</code></span>
@@ -7310,6 +7346,8 @@ Viewer role for Gemini for Google Cloud
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>dataSharingWithGoogleSettingsList</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsGet</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsList</code></p>
+  <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsGet</code></p>
+  <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsList</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsGet</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsList</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>releaseChannelSettingsGet</code></p>
@@ -7658,6 +7696,18 @@ Grants read and write access to the Gemini for Cloud setting and their bindings.
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>geminiGcpEnablementSettings.<wbr>update</code></li>
     </ul>
   </devsite-expandable>
+  <devsite-expandable id="expandable-cloudaicompanion.settingsAdmin-cloudaicompanion.gibqObservabilitySettings.*" class="arrow-icon iamperm-wildcard-expandable">
+    <p class="showalways iamperm-marginless">
+      <span class="iamperm-wildcard"><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.*</code></span>
+    </p>
+    <ul class="iamperm-wildcard-list">
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>get</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>list</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>update</code></li>
+    </ul>
+  </devsite-expandable>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>instances.<wbr>queryEffectiveSetting</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>instances.<wbr>queryEffectiveSettingBindings</code></p>
   <devsite-expandable id="expandable-cloudaicompanion.settingsAdmin-cloudaicompanion.loggingSettings.*" class="arrow-icon iamperm-wildcard-expandable">
@@ -7713,6 +7763,12 @@ Grants read and write access to the Gemini for Cloud setting and their bindings.
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsList</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsUpdate</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsUse</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsCreate</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsDelete</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsGet</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsList</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsUpdate</code></li>
+      <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsUse</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsCreate</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsDelete</code></li>
       <li><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsGet</code></li>
@@ -7747,6 +7803,8 @@ Grants read access to the Gemini for Cloud setting and their bindings.
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>dataSharingWithGoogleSettings.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>geminiGcpEnablementSettings.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>geminiGcpEnablementSettings.<wbr>list</code></p>
+  <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>get</code></p>
+  <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>loggingSettings.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>loggingSettings.<wbr>list</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>releaseChannelSettings.<wbr>get</code></p>
@@ -7759,6 +7817,8 @@ Grants read access to the Gemini for Cloud setting and their bindings.
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>dataSharingWithGoogleSettingsList</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsGet</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>geminiGcpEnablementSettingsList</code></p>
+  <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsGet</code></p>
+  <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsList</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsGet</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsList</code></p>
   <p><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>releaseChannelSettingsGet</code></p>
@@ -9453,6 +9513,230 @@ Gives Gemini for Google Cloud components the proper permissions to function.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/geminicloudassist#geminicloudassist.editor">Gemini Cloud Assist Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>geminicloudassist.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.gibqObservabilitySettings.create" data-text="cloudaicompanion.gibqObservabilitySettings.create" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>create</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.gibqObservabilitySettings.delete" data-text="cloudaicompanion.gibqObservabilitySettings.delete" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>delete</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.gibqObservabilitySettings.get" data-text="cloudaicompanion.gibqObservabilitySettings.get" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>get</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.viewer">Gemini for Google Cloud Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsUser">Gemini for Google Cloud Settings User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.gibqObservabilitySettings.list" data-text="cloudaicompanion.gibqObservabilitySettings.list" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>list</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.viewer">Gemini for Google Cloud Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsUser">Gemini for Google Cloud Settings User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.gibqObservabilitySettings.update" data-text="cloudaicompanion.gibqObservabilitySettings.update" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>gibqObservabilitySettings.<wbr>update</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
@@ -12310,6 +12594,258 @@ Gives Gemini for Google Cloud components the proper permissions to function.
     </tr>
     <tr>
       <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.settingBindings.gibqObservabilitySettingsCreate" data-text="cloudaicompanion.settingBindings.gibqObservabilitySettingsCreate" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsCreate</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete" data-text="cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsDelete</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.settingBindings.gibqObservabilitySettingsGet" data-text="cloudaicompanion.settingBindings.gibqObservabilitySettingsGet" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsGet</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.viewer">Gemini for Google Cloud Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsUser">Gemini for Google Cloud Settings User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.settingBindings.gibqObservabilitySettingsList" data-text="cloudaicompanion.settingBindings.gibqObservabilitySettingsList" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsList</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.viewer">Gemini for Google Cloud Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsUser">Gemini for Google Cloud Settings User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate" data-text="cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsUpdate</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="cloudaicompanion.settingBindings.gibqObservabilitySettingsUse" data-text="cloudaicompanion.settingBindings.gibqObservabilitySettingsUse" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>gibqObservabilitySettingsUse</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/bigquery#bigquery.studioAdmin">BigQuery Studio Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>bigquery.studioAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.admin">Gemini for Google Cloud Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.editor">Gemini for Google Cloud Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.admin">Discovery Engine Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudaicompanion#cloudaicompanion.settingsAdmin">Gemini for Google Cloud Settings Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudaicompanion.settingsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceAdmin">Gemini Enterprise Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <h4 class="permission-name add-link" id="cloudaicompanion.settingBindings.loggingSettingsCreate" data-text="cloudaicompanion.settingBindings.loggingSettingsCreate" tabindex="-1"><code translate="no" dir="ltr">cloudaicompanion.<wbr>settingBindings.<wbr>loggingSettingsCreate</wbr></wbr></code></h4>
       </td>
       <td>
@@ -13054,7 +13590,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-09-24 UTC.</p>
+  <p>Last updated 2026-09-29 UTC.</p>
 </devsite-content-footer>
 
 
@@ -13103,7 +13639,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-24 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-29 UTC."],[],[]]
     </template>
   
 </div>
@@ -13135,7 +13671,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="products and pricing"track-metadata-eventDetail="cloud.google.com/products/"track-name="see all products">
+            track-type="footer link"track-metadata-child_headline="products and pricing"track-metadata-module="footer"track-metadata-position="footer"track-name="see all products"track-metadata-eventDetail="cloud.google.com/products/">
             
           
             See all products
@@ -13152,7 +13688,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-module="footer"track-metadata-child_headline="products and pricing"track-type="footer link"track-name="google cloud pricing"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-position="footer">
+            track-metadata-child_headline="products and pricing"track-metadata-module="footer"track-name="google cloud pricing"track-type="footer link"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-position="footer">
             
           
             Google Cloud pricing
@@ -13169,7 +13705,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-position="footer"track-type="footer link"track-name="google cloud marketplace"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-child_headline="resources"track-metadata-module="footer">
+            track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-module="footer"track-metadata-position="footer"track-name="google cloud marketplace"track-type="footer link"track-metadata-child_headline="resources">
             
           
             Google Cloud Marketplace
@@ -13186,7 +13722,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-eventDetail="cloud.google.com/contact/"track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-name="contact sales">
+            track-metadata-module="footer"track-name="contact sales"track-metadata-child_headline="engage"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/contact/">
             
               
               
@@ -13213,7 +13749,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"target="_blank"track-metadata-module="footer"track-name="google cloud community"track-metadata-eventDetail="www.googlecloudcommunity.com"rel="noopener"track-metadata-child_headline="engage"track-type="footer link">
+            track-name="google cloud community"rel="noopener"track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-child_headline="engage"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"target="_blank">
             
           
             Community forums
@@ -13230,7 +13766,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/support-hub/"track-type="footer link"track-metadata-position="footer"track-name="support"track-metadata-child_headline="resources"track-metadata-module="footer">
+            track-name="support"track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-module="footer"track-type="footer link">
             
           
             Support
@@ -13247,7 +13783,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="release notes"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-position="footer">
+            track-type="footer link"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-position="footer"track-metadata-module="footer"track-name="release notes">
             
           
             Release Notes
@@ -13264,7 +13800,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-module="footer"track-name="system status"target="_blank"track-type="footer link"track-metadata-eventDetail="status.cloud.google.com">
+            target="_blank"track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="status.cloud.google.com"track-name="system status"track-metadata-child_headline="resources"track-metadata-module="footer">
             
               
               
@@ -13291,7 +13827,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-name="github"track-type="footer link">
+            track-metadata-module="footer"track-name="github"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-position="footer"track-metadata-child_headline="resources"track-type="footer link">
             
           
             GitHub
@@ -13308,7 +13844,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="resources"track-name="google cloud quickstarts"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/get-started/">
+            track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-child_headline="resources"track-metadata-module="footer"track-type="footer link"track-name="google cloud quickstarts"track-metadata-position="footer">
             
           
             Getting Started with Google Cloud
@@ -13325,7 +13861,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="code samples"track-metadata-eventDetail="cloud.google.com/docs/samples"track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-module="footer">
+            track-metadata-child_headline="resources"track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-module="footer"track-metadata-position="footer"track-name="code samples">
             
           
             Code samples
@@ -13342,7 +13878,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-position="footer"track-metadata-module="footer"track-type="footer link"track-name="cloud architecture center">
+            track-type="footer link"track-name="cloud architecture center"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             Cloud Architecture Center
@@ -13359,7 +13895,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-name="training"track-type="footer link"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="resources">
+            track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="training"track-type="footer link"track-metadata-eventDetail="cloud.google.com/learn/training/">
             
               
               
@@ -13386,7 +13922,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-child_headline="engage"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="blog">
+            track-type="footer link"track-metadata-child_headline="engage"track-metadata-module="footer"track-name="blog"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-position="footer">
             
           
             Blog
@@ -13403,7 +13939,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-module="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/events/"track-metadata-position="footer"track-metadata-child_headline="engage"track-name="events">
+            track-metadata-eventDetail="cloud.google.com/events/"track-metadata-position="footer"track-metadata-child_headline="engage"track-name="events"track-type="footer link"track-metadata-module="footer">
             
           
             Events
@@ -13420,7 +13956,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-child_headline="engage"track-type="footer link"track-name="follow on x"rel="noopener"track-metadata-module="footer"track-metadata-eventDetail="x.com/googlecloud"target="_blank"track-metadata-position="footer">
+            track-metadata-eventDetail="x.com/googlecloud"track-type="footer link"target="_blank"track-metadata-position="footer"track-name="follow on x"rel="noopener"track-metadata-module="footer"track-metadata-child_headline="engage">
             
           
             X (Twitter)
@@ -13437,7 +13973,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-eventDetail="www.youtube.com/googlecloud"rel="noopener"target="_blank"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="engage"track-name="google cloud on youtube">
+            track-metadata-position="footer"track-name="google cloud on youtube"track-metadata-child_headline="engage"track-metadata-eventDetail="www.youtube.com/googlecloud"target="_blank"rel="noopener"track-metadata-module="footer"track-type="footer link">
             
           
             Google Cloud on YouTube
@@ -13454,7 +13990,7 @@ Gives Gemini for Google Cloud components the proper permissions to function.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"rel="noopener"track-type="footer link"target="_blank"track-metadata-position="footer"track-name="google cloud tech on youtube">
+            target="_blank"track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="engage"track-name="google cloud tech on youtube"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"rel="noopener">
             
               
               
@@ -13571,17 +14107,17 @@ Gives Gemini for Google Cloud components the proper permissions to function.
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-metadata-position="footer"
-         
            track-type="footer link"
          
-           target="_blank"
-         
-           track-name="about google"
+           track-metadata-eventDetail="//about.google/"
          
            track-metadata-module="utility footer"
          
-           track-metadata-eventDetail="//about.google/"
+           track-name="about google"
+         
+           target="_blank"
+         
+           track-metadata-position="footer"
          >
           About Google
         </a>
@@ -13599,15 +14135,15 @@ Gives Gemini for Google Cloud components the proper permissions to function.
          
            track-type="footer link"
          
-           track-metadata-eventDetail="//policies.google.com/privacy"
-         
-           track-name="privacy"
-         
            track-metadata-position="footer"
+         
+           target="_blank"
          
            track-metadata-module="utility footer"
          
-           target="_blank"
+           track-metadata-eventDetail="//policies.google.com/privacy"
+         
+           track-name="privacy"
          >
           Privacy
         </a>
@@ -13623,17 +14159,17 @@ Gives Gemini for Google Cloud components the proper permissions to function.
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
+           track-type="footer link"
          
            track-metadata-module="utility footer"
          
-           track-type="footer link"
+           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
+         
+           target="_blank"
          
            track-name="site terms"
          
            track-metadata-position="footer"
-         
-           target="_blank"
          >
           Site terms
         </a>
@@ -13649,15 +14185,15 @@ Gives Gemini for Google Cloud components the proper permissions to function.
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-metadata-eventDetail="//cloud.google.com/product-terms"
-         
-           track-name="google cloud terms"
-         
            track-metadata-position="footer"
          
            track-metadata-module="utility footer"
          
            track-type="footer link"
+         
+           track-metadata-eventDetail="//cloud.google.com/product-terms"
+         
+           track-name="google cloud terms"
          >
           Google Cloud terms
         </a>
@@ -13675,9 +14211,9 @@ Gives Gemini for Google Cloud components the proper permissions to function.
          
            track-name="Manage cookies"
          
-           track-metadata-module="utility footer"
-         
            track-metadata-position="footer"
+         
+           track-metadata-module="utility footer"
          
            aria-hidden="true"
          
@@ -13701,11 +14237,11 @@ Gives Gemini for Google Cloud components the proper permissions to function.
          
            track-name="Our third decade of climate action: join us"
          
-           track-metadata-eventDetail="/sustainability/"
+           track-type="footer link"
          
            track-metadata-module="utility footer"
          
-           track-type="footer link"
+           track-metadata-eventDetail="/sustainability/"
          
            track-metadata-position="footer"
          >
@@ -13725,15 +14261,15 @@ Gives Gemini for Google Cloud components the proper permissions to function.
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-metadata-position="footer"
-         
-           track-metadata-module="utility footer"
-         
            track-metadata-eventDetail="/newsletter/"
+         
+           track-type="footer link"
+         
+           track-metadata-position="footer"
          
            track-name="subscribe"
          
-           track-type="footer link"
+           track-metadata-module="utility footer"
          >
           Subscribe
         </a>
@@ -13825,12 +14361,12 @@ Gives Gemini for Google Cloud components the proper permissions to function.
   
 
     
-<script nonce="h5lsy+8oh44DuihgABXfIJwhPSyH5z">
+<script nonce="y1HEau1mFuMvdX2iyXJZw/5Y5m+dP1">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Cloud__fast_free_trial","Profiles__enable_purchase_prompts","MiscFeatureFlags__enable_view_transitions","DevPro__enable_google_payments","Profiles__enable_auto_apply_credits","Cloud__enable_cloud_dlp_service","DevPro__enable_vertex_credit_card","Search__enable_dynamic_content_confidential_banner","Profiles__enable_join_program_group_endpoint","Concierge__enable_actions_menu","Analytics__enable_devpro_interaction_logging","CloudShell__cloud_shell_button","Profiles__enable_awarding_url","Cloud__enable_cloud_shell_fte_user_flow","DevPro__enable_google_payments_buyflow","MiscFeatureFlags__developers_footer_image","CloudShell__cloud_code_overflow_menu","OnSwitch__enable","Analytics__enable_clearcut_logging","DevPro__enable_free_benefits","Cloud__enable_cloud_shell","EngEduTelemetry__enable_engedu_telemetry","Cloud__enable_free_trial_server_call","DevPro__enable_devpro_offers","DevPro__enable_developer_subscriptions","MiscFeatureFlags__fix_lower_breadcrumbs","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_stripe_subscription_management","Experiments__reqs_query_experiments","DevPro__enable_embed_profile_creation","MiscFeatureFlags__remove_cross_domain_tracking_params","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_user_type","Concierge__enable_remove_info_panel_tags","Profiles__enable_dashboard_curated_recommendations","Profiles__require_profile_eligibility_for_signin","Profiles__enable_page_saving","DevPro__enable_credits_banner","Search__enable_ai_search_summaries_for_all","Profiles__enable_public_developer_profiles","Cloud__cache_serialized_dynamic_content","Cloud__enable_legacy_calculator_redirect","Profiles__enable_complete_playlist_endpoint","BookNav__enable_tenant_cache_key","Search__enable_ai_eligibility_checks","DevPro__enable_g1_ineligible_redirect","TpcFeatures__proxy_prod_host","Cloud__enable_cloudx_experiment_ids","Profiles__enable_developer_profile_benefits_ui_redesign","Profiles__enable_profile_collections","DevPro__enable_devsite_captcha","DevPro__enable_enterprise","Search__enable_page_map","MiscFeatureFlags__enable_firebase_utm","Search__enable_suggestions_from_borg","MiscFeatureFlags__enable_explicit_template_dependencies","MiscFeatureFlags__enable_framebox_badge_methods","MiscFeatureFlags__enable_variable_operator_index_yaml","TpcFeatures__enable_unmirrored_page_left_nav","AIStudioInteractionsToggle__interactions_are_default","Profiles__enable_recognition_badges","Profiles__enable_completequiz_endpoint","MiscFeatureFlags__developers_footer_dark_image","Profiles__enable_developer_profile_pages_as_content","Profiles__enable_playlist_community_acl","Profiles__enable_completecodelab_endpoint","DevPro__enable_nvidia_credits_card","MiscFeatureFlags__enable_variable_operator","DevPro__remove_eu_tax_intake_form","DevPro__enable_g1_integration","DevPro__enable_firebase_workspaces_card","DevPro__enable_code_assist","Concierge__enable_concierge_restricted","DevPro__enable_cloud_innovators_plus","Concierge__enable_devsite_llm_tools","Profiles__enable_developer_profiles_callout","Concierge__enable_pushui","MiscFeatureFlags__enable_appearance_cookies","MiscFeatureFlags__enable_project_variables","DevPro__enable_google_one_card","MiscFeatureFlags__enable_dark_theme","SignIn__enable_l1_signup_flow","Profiles__enable_targeted_hero","Profiles__enable_callout_notifications"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Analytics__enable_devpro_interaction_logging","Analytics__enable_clearcut_logging","DevPro__enable_google_payments","Profiles__require_profile_eligibility_for_signin","DevPro__enable_g1_ineligible_redirect","DevPro__enable_g1_integration","MiscFeatureFlags__enable_appearance_cookies","DevPro__enable_google_one_card","DevPro__enable_vertex_credit_card","OnSwitch__enable","Experiments__reqs_query_experiments","CloudShell__cloud_shell_button","DevPro__enable_credits_banner","Profiles__enable_recognition_badges","Profiles__enable_developer_profile_benefits_ui_redesign","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_playlist_community_acl","MiscFeatureFlags__enable_view_transitions","Profiles__enable_profile_collections","SignIn__enable_l1_signup_flow","DevPro__enable_developer_subscriptions","Profiles__enable_completequiz_endpoint","MiscFeatureFlags__fix_lower_breadcrumbs","DevPro__enable_firebase_workspaces_card","CloudShell__cloud_code_overflow_menu","BookNav__enable_tenant_cache_key","Profiles__enable_completecodelab_endpoint","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__enable_explicit_template_dependencies","AIStudioInteractionsToggle__interactions_are_default","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__enable_project_variables","Concierge__enable_actions_menu","Cloud__enable_cloudx_experiment_ids","Cloud__enable_free_trial_server_call","Concierge__enable_pushui","Search__enable_ai_search_summaries_for_all","EngEduTelemetry__enable_engedu_telemetry","DevPro__enable_free_benefits","Cloud__enable_legacy_calculator_redirect","Cloud__enable_cloud_shell_fte_user_flow","MiscFeatureFlags__enable_framebox_badge_methods","DevPro__enable_cloud_innovators_plus","Profiles__enable_targeted_hero","Profiles__enable_page_saving","Search__enable_dynamic_content_confidential_banner","Profiles__enable_user_type","Profiles__enable_callout_notifications","Profiles__enable_public_developer_profiles","Cloud__cache_serialized_dynamic_content","Profiles__enable_auto_apply_credits","Cloud__enable_cloud_shell","Cloud__fast_free_trial","MiscFeatureFlags__enable_dark_theme","Profiles__enable_stripe_subscription_management","TpcFeatures__proxy_prod_host","Profiles__enable_developer_profile_pages_as_content","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__developers_footer_dark_image","DevPro__enable_enterprise","Profiles__enable_complete_playlist_endpoint","Search__enable_page_map","Cloud__enable_cloud_dlp_service","DevPro__enable_devpro_offers","MiscFeatureFlags__enable_firebase_utm","DevPro__enable_google_payments_buyflow","MiscFeatureFlags__enable_variable_operator_index_yaml","Concierge__enable_concierge_restricted","MiscFeatureFlags__enable_variable_operator","Concierge__enable_devsite_llm_tools","DevPro__enable_embed_profile_creation","DevPro__enable_nvidia_credits_card","Search__enable_ai_eligibility_checks","Profiles__enable_purchase_prompts","MiscFeatureFlags__remove_cross_domain_tracking_params","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_developer_profiles_callout","Profiles__enable_awarding_url","Search__enable_suggestions_from_borg","DevPro__enable_code_assist","Profiles__enable_join_program_group_endpoint","DevPro__enable_devsite_captcha","DevPro__remove_eu_tax_intake_form","MiscFeatureFlags__developers_footer_image"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 

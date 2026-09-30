@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "HXzuX365f1QUk7n0ed0mQ",
+  "buildId": "FjgdQsTzZ81uUNYBE6tYY",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -199,6 +199,15 @@
               "slug": "re-run-a-job-from-a-workflow-run",
               "subcategory": "workflow-runs",
               "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "actions",
+              "requestPath": "/repos/{owner}/{repo}/actions/jobs/{job_id}/steps/{step_number}/logs",
+              "slug": "download-step-logs-for-a-workflow-run-job",
+              "subcategory": "workflow-jobs",
+              "verb": "get"
             },
             {
               "access": "read",
@@ -3904,6 +3913,30 @@
             }
           ],
           "title": "GPG keys"
+        },
+        "installation_repositories": {
+          "displayTitle": "Repository permissions for \"GitHub App installation repository access\"",
+          "permissions": [
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "apps",
+              "requestPath": "/user/installations/{installation_id}/repositories/{repository_id}",
+              "slug": "add-a-repository-to-an-app-installation",
+              "subcategory": "installations",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "apps",
+              "requestPath": "/user/installations/{installation_id}/repositories/{repository_id}",
+              "slug": "remove-a-repository-from-an-app-installation",
+              "subcategory": "installations",
+              "verb": "delete"
+            }
+          ],
+          "title": "GitHub App installation repository access"
         },
         "interaction_limits": {
           "displayTitle": "User permissions for \"Interaction limits\"",
@@ -7619,6 +7652,30 @@
           ],
           "title": "Events"
         },
+        "organization_external_properties_for_repos": {
+          "displayTitle": "Organization permissions for \"External custom properties for repositories\"",
+          "permissions": [
+            {
+              "access": "admin",
+              "additional-permissions": false,
+              "category": "orgs",
+              "requestPath": "/orgs/{org}/properties/installations",
+              "slug": "get-registered-app-installations-for-external-custom-properties",
+              "subcategory": "custom-properties",
+              "verb": "get"
+            },
+            {
+              "access": "admin",
+              "additional-permissions": false,
+              "category": "orgs",
+              "requestPath": "/orgs/{org}/properties/installations",
+              "slug": "register-an-app-installation-for-external-custom-properties",
+              "subcategory": "custom-properties",
+              "verb": "post"
+            }
+          ],
+          "title": "External custom properties for repositories"
+        },
         "organization_hooks": {
           "displayTitle": "Organization permissions for \"Webhooks\"",
           "permissions": [
@@ -10060,6 +10117,12 @@
           },
           {
             "contents": {
+              "href": "#organization-permissions-for-external-custom-properties-for-repositories",
+              "title": "Organization permissions for \"External custom properties for repositories\""
+            }
+          },
+          {
+            "contents": {
               "href": "#organization-permissions-for-github-copilot-business",
               "title": "Organization permissions for \"GitHub Copilot Business\""
             }
@@ -10278,6 +10341,12 @@
             "contents": {
               "href": "#repository-permissions-for-environments",
               "title": "Repository permissions for \"Environments\""
+            }
+          },
+          {
+            "contents": {
+              "href": "#repository-permissions-for-github-app-installation-repository-access",
+              "title": "Repository permissions for \"GitHub App installation repository access\""
             }
           },
           {
