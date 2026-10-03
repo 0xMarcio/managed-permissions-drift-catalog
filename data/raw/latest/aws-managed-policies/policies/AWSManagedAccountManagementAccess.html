@@ -56,38 +56,53 @@
                 <p><b>Creation time</b>: July 20, 2026, 19:57 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 20, 2026, 19:57 UTC</p>
+                <p><b>Edited time:</b>  October 01, 2026, 19:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSManagedAccountManagementAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSManagedAccountManagementAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
         <h2 id="AWSManagedAccountManagementAccess-json">JSON policy document</h2>
         <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"><awsui-icon name="copy"></awsui-icon></div></div><!--DEBUG: cli (json)--><code class="json "><span>{</span>
   "Version" : "2012-10-17",
-  "Statement" : <span>{</span>
-    "Effect" : "Allow",
-    "Action" : [
-      "iam:AttachRolePolicy",
-      "iam:CreateRole",
-      "iam:DeleteRole",
-      "iam:DeleteRolePermissionsBoundary",
-      "iam:DeleteRolePolicy",
-      "iam:DetachRolePolicy",
-      "iam:PutRolePermissionsBoundary",
-      "iam:PutRolePolicy",
-      "iam:TagRole",
-      "iam:UntagRole",
-      "iam:UpdateAssumeRolePolicy",
-      "iam:UpdateRole"
-    ],
-    "Resource" : "arn:*:iam::*:role/managed/*"
-  }
+  "Statement" : [
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:AttachRolePolicy",
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:DeleteRolePermissionsBoundary",
+        "iam:DeleteRolePolicy",
+        "iam:DetachRolePolicy",
+        "iam:GetRole",
+        "iam:ListAttachedRolePolicies",
+        "iam:ListRolePolicies",
+        "iam:PutRolePermissionsBoundary",
+        "iam:PutRolePolicy",
+        "iam:TagRole",
+        "iam:UntagRole",
+        "iam:UpdateAssumeRolePolicy",
+        "iam:UpdateRole"
+      ],
+      "Resource" : "arn:*:iam::*:role/managed/*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "sts:AssumeRole",
+      "Resource" : "arn:*:iam::*:role/managed/AWSManagedAccountManagementAccessRole",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceOrgID" : "$<span>{</span>aws:PrincipalOrgID}"
+        }
+      }
+    }
+  ]
 }</code></pre>
      
         <h2 id="AWSManagedAccountManagementAccess-learn-more">Learn more</h2>

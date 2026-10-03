@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: April 01, 2026, 04:57 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  September 25, 2026, 20:17 UTC</p>
+                <p><b>Edited time:</b>  October 02, 2026, 16:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AnthropicLimitedAccess</code></p>
             </li></ul></div>
      
         <h2 id="AnthropicLimitedAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v7 (default)</p>
+        <p><b>Policy version:</b> v8 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -92,7 +92,6 @@
         "aws-external-anthropic:CreateMemoryStore",
         "aws-external-anthropic:CreateSession",
         "aws-external-anthropic:CreateSkill",
-        "aws-external-anthropic:CreateUserProfile",
         "aws-external-anthropic:CreateVault",
         "aws-external-anthropic:CreateWebhook",
         "aws-external-anthropic:DeleteBatchInference",
@@ -110,7 +109,6 @@
         "aws-external-anthropic:UpdateMemoryStore",
         "aws-external-anthropic:UpdateSession",
         "aws-external-anthropic:UpdateSkill",
-        "aws-external-anthropic:UpdateUserProfile",
         "aws-external-anthropic:UpdateVault",
         "aws-external-anthropic:UpdateWebhook"
       ],
@@ -123,7 +121,11 @@
         "aws-external-anthropic:GetAccountStatus",
         "aws-external-anthropic:CallWithBearerToken",
         "aws-external-anthropic:ListKeys",
-        "aws-external-anthropic:GetKey"
+        "aws-external-anthropic:GetKey",
+        "aws-external-anthropic:CreateUserProfile",
+        "aws-external-anthropic:GetUserProfile",
+        "aws-external-anthropic:UpdateUserProfile",
+        "aws-external-anthropic:ListUserProfiles"
       ],
       "Resource" : "*"
     },
