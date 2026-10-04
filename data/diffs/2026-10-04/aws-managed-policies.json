@@ -1,0 +1,162 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:billing:ListBillingViewSegments",
+      "aws:allow_action:cost-optimization-hub:GetPreferences",
+      "aws:allow_action:cost-optimization-hub:ListEnrollmentStatuses",
+      "aws:allow_action:rds:DescribeDBMajorEngineVersions",
+      "aws:allow_action:servicequotas:GetRequestedServiceQuotaChange",
+      "aws:allow_action:servicequotas:GetServiceQuota",
+      "aws:allow_action:servicequotas:RequestServiceQuotaIncrease",
+      "aws:allow_action:social-messaging:SendWhatsAppCallEvent"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "billing:ListBillingViewSegments",
+          "cost-optimization-hub:GetPreferences",
+          "cost-optimization-hub:ListEnrollmentStatuses",
+          "rds:DescribeDBMajorEngineVersions",
+          "servicequotas:GetRequestedServiceQuotaChange",
+          "servicequotas:GetServiceQuota",
+          "servicequotas:RequestServiceQuotaIncrease",
+          "social-messaging:SendWhatsAppCallEvent"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonApplicationRecoveryControllerRegionSwitchPlanExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "servicequotas:GetRequestedServiceQuotaChange",
+              "servicequotas:GetServiceQuota",
+              "servicequotas:RequestServiceQuotaIncrease"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 02, 2026, 18:57 UTC",
+          "before": "March 05, 2026, 19:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 02, 2026, 18:57 UTC",
+          "before": "March 05, 2026, 19:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 5,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonApplicationRecoveryControllerRegionSwitchPlanExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonApplicationRecoveryControllerRegionSwitchPlanExecutionPolicy"
+    },
+    {
+      "display_name": "FinOpsAgentAgentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "billing:ListBillingViewSegments",
+              "cost-optimization-hub:GetPreferences",
+              "cost-optimization-hub:ListEnrollmentStatuses",
+              "rds:DescribeDBMajorEngineVersions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 02, 2026, 18:27 UTC",
+          "before": "September 24, 2026, 13:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 02, 2026, 18:27 UTC",
+          "before": "September 24, 2026, 13:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinOpsAgentAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/FinOpsAgentAgentPolicy"
+    },
+    {
+      "display_name": "AmazonConnectServiceLinkedRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "social-messaging:SendWhatsAppCallEvent"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v56 (default)",
+          "before": "v55 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 02, 2026, 23:27 UTC",
+          "before": "May 27, 2026, 21:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 02, 2026, 23:27 UTC",
+          "before": "May 27, 2026, 21:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-04T09:52:32Z",
+  "counts": {
+    "added_atoms": 8,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1600,
+    "previous_objects": 1600,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-04",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-03",
+  "removed_objects": []
+}
