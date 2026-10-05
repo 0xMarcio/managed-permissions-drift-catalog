@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "v8tzYev8W2yaQ_JB_pNnv",
+  "buildId": "Awbxs6iKkQooqAj2uu2wZ",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -2351,7 +2351,7 @@
                 "schema": {
                   "properties": {
                     "days": {
-                      "description": "The number of days artifacts and logs are retained",
+                      "description": "The number of days checks, workflow runs, commit statuses, artifacts, and logs are retained",
                       "type": "integer"
                     },
                     "maximum_allowed_days": {
@@ -2369,7 +2369,7 @@
               }
             }
           ],
-          "descriptionHTML": "<p>Gets artifact and log retention settings for an organization.</p>\n<p>OAuth app tokens and personal access tokens (classic) need the <code>admin:org</code> scope or the \"Actions policies\" fine-grained permission to use this endpoint.</p>",
+          "descriptionHTML": "<p>Gets retention settings for checks, workflow runs, commit statuses, artifacts, and logs for an organization.</p>\n<p>Checks include check suites, check runs, and check annotations. These settings also apply to checks and commit statuses created by third-party integrations, and are not limited to data created by GitHub Actions.</p>\n<p>OAuth app tokens and personal access tokens (classic) need the <code>admin:org</code> scope or the \"Actions policies\" fine-grained permission to use this endpoint.</p>",
           "parameters": [
             {
               "description": "<p>The organization name. The name is not case sensitive.</p>",
@@ -2415,7 +2415,7 @@
         {
           "bodyParameters": [
             {
-              "description": "<p>The number of days to retain artifacts and logs</p>",
+              "description": "<p>The number of days to retain checks, workflow runs, commit statuses, artifacts, and logs</p>",
               "isRequired": true,
               "name": "days",
               "type": "integer"
@@ -2441,7 +2441,7 @@
               }
             }
           ],
-          "descriptionHTML": "<p>Sets artifact and log retention settings for an organization.</p>\n<p>OAuth app tokens and personal access tokens (classic) need the <code>admin:org</code> scope or the \"Actions policies\" fine-grained permission to use this endpoint.</p>",
+          "descriptionHTML": "<p>Sets retention settings for checks, workflow runs, commit statuses, artifacts, and logs for an organization.</p>\n<p>Checks include check suites, check runs, and check annotations. These settings also apply to checks and commit statuses created by third-party integrations, and are not limited to data created by GitHub Actions.</p>\n<p>OAuth app tokens and personal access tokens (classic) need the <code>admin:org</code> scope or the \"Actions policies\" fine-grained permission to use this endpoint.</p>",
           "parameters": [
             {
               "description": "<p>The organization name. The name is not case sensitive.</p>",
@@ -5887,7 +5887,7 @@
                 "schema": {
                   "properties": {
                     "days": {
-                      "description": "The number of days artifacts and logs are retained",
+                      "description": "The number of days checks, workflow runs, commit statuses, artifacts, and logs are retained",
                       "type": "integer"
                     },
                     "maximum_allowed_days": {
@@ -5905,7 +5905,7 @@
               }
             }
           ],
-          "descriptionHTML": "<p>Gets artifact and log retention settings for a repository.</p>\n<p>OAuth app tokens and personal access tokens (classic) need the <code>repo</code> scope to use this endpoint.</p>",
+          "descriptionHTML": "<p>Gets retention settings for checks, workflow runs, commit statuses, artifacts, and logs for a repository.</p>\n<p>Checks include check suites, check runs, and check annotations. These settings also apply to checks and commit statuses created by third-party integrations, and are not limited to data created by GitHub Actions.</p>\n<p>OAuth app tokens and personal access tokens (classic) need the <code>repo</code> scope to use this endpoint.</p>",
           "parameters": [
             {
               "description": "<p>The account owner of the repository. The name is not case sensitive.</p>",
@@ -5956,7 +5956,7 @@
         {
           "bodyParameters": [
             {
-              "description": "<p>The number of days to retain artifacts and logs</p>",
+              "description": "<p>The number of days to retain checks, workflow runs, commit statuses, artifacts, and logs</p>",
               "isRequired": true,
               "name": "days",
               "type": "integer"
@@ -5983,7 +5983,7 @@
               }
             }
           ],
-          "descriptionHTML": "<p>Sets artifact and log retention settings for a repository.</p>\n<p>OAuth app tokens and personal access tokens (classic) need the <code>repo</code> scope to use this endpoint.</p>",
+          "descriptionHTML": "<p>Sets retention settings for checks, workflow runs, commit statuses, artifacts, and logs for a repository.</p>\n<p>Checks include check suites, check runs, and check annotations. These settings also apply to checks and commit statuses created by third-party integrations, and are not limited to data created by GitHub Actions.</p>\n<p>OAuth app tokens and personal access tokens (classic) need the <code>repo</code> scope to use this endpoint.</p>",
           "parameters": [
             {
               "description": "<p>The account owner of the repository. The name is not case sensitive.</p>",
