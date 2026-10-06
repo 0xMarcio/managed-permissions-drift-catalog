@@ -1,0 +1,57 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:securityagent:BatchGetFindings",
+        "aws:allow_action:securityagent:BatchGetPentestJobs",
+        "aws:allow_action:securityagent:ListFindings",
+        "aws:allow_action:securityagent:ListIntegratedResources",
+        "aws:allow_action:securityagent:StartPentestJob",
+        "aws:allow_action:securityagent:StopPentestJob"
+      ],
+      "display_name": "AWSSecurityAgentContinuousPentestPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentContinuousPentestPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSSecurityAgentContinuousPentestPolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:securityagent:BatchGetFindings",
+      "aws:allow_action:securityagent:BatchGetPentestJobs",
+      "aws:allow_action:securityagent:ListFindings",
+      "aws:allow_action:securityagent:ListIntegratedResources",
+      "aws:allow_action:securityagent:StartPentestJob",
+      "aws:allow_action:securityagent:StopPentestJob"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "securityagent:BatchGetFindings",
+          "securityagent:BatchGetPentestJobs",
+          "securityagent:ListFindings",
+          "securityagent:ListIntegratedResources",
+          "securityagent:StartPentestJob",
+          "securityagent:StopPentestJob"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-10-06T10:24:15Z",
+  "counts": {
+    "added_atoms": 6,
+    "added_objects": 1,
+    "changed_objects": 0,
+    "current_objects": 1601,
+    "previous_objects": 1600,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-06",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-04",
+  "removed_objects": []
+}

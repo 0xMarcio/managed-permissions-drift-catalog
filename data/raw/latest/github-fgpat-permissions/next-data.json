@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "Awbxs6iKkQooqAj2uu2wZ",
+  "buildId": "tL0XnVXNOFBlXdSzR1aZI",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -9208,6 +9208,15 @@
               "slug": "remove-requested-reviewers-from-a-pull-request",
               "subcategory": "review-requests",
               "verb": "delete"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "pulls",
+              "requestPath": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers/rerequest",
+              "slug": "rerequest-reviewers-for-a-pull-request",
+              "subcategory": "review-requests",
+              "verb": "post"
             },
             {
               "access": "read",
