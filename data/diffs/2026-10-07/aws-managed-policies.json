@@ -1,0 +1,104 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:application-signals:StartDiscovery",
+      "aws:allow_action:xray:GetTraceSegmentDestination",
+      "aws:allow_action:xray:UpdateTraceSegmentDestination"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "application-signals:StartDiscovery",
+          "xray:GetTraceSegmentDestination",
+          "xray:UpdateTraceSegmentDestination"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSTransformLandingZoneAgentPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 06, 2026, 07:37 UTC",
+          "before": "September 01, 2026, 10:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 06, 2026, 07:37 UTC",
+          "before": "September 01, 2026, 10:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformLandingZoneAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformLandingZoneAgentPolicy"
+    },
+    {
+      "display_name": "AWSObservabilityAdminTelemetryEnablementServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "application-signals:StartDiscovery",
+              "xray:GetTraceSegmentDestination",
+              "xray:UpdateTraceSegmentDestination"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 05, 2026, 22:17 UTC",
+          "before": "September 23, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 05, 2026, 22:17 UTC",
+          "before": "September 23, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 56,
+          "before": 50,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-07T10:20:41Z",
+  "counts": {
+    "added_atoms": 3,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1601,
+    "previous_objects": 1601,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-07",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-06",
+  "removed_objects": []
+}
