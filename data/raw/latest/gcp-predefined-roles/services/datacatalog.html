@@ -1808,13 +1808,13 @@
     data-label="Site header link: Console"
     
       
-        track-type="globalNav"
-      
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-name="console"
-      
         track-metadata-position="nav"
+      
+        track-type="globalNav"
+      
+        track-name="console"
       
         track-metadata-eventDetail="nav"
       
@@ -2005,15 +2005,15 @@
     
     
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-name="gcpCta"
       
         track-metadata-position="nav"
       
-        track-name="gcpCta"
+        track-metadata-eventDetail="nav"
+      
+        referrerpolicy="no-referrer-when-downgrade"
       
         track-type="freeTrial"
-      
-        track-metadata-eventDetail="nav"
       
     
     >Start free</a>
@@ -2560,13 +2560,13 @@
 
     
       
-        track-type="globalNav"
-      
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-name="console"
-      
         track-metadata-position="nav"
+      
+        track-type="globalNav"
+      
+        track-name="console"
       
         track-metadata-eventDetail="nav"
       
@@ -6986,6 +6986,8 @@ Full access to all DataCatalog resources
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDatabaseDataPolicyAspect</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDefinitionEntryLink</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDescriptionsAspect</code></li>
+      <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDocumentAspect</code></li>
+      <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDocumentEntry</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGenericAspect</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGenericEntry</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGraphProfileAspect</code></li>
@@ -6995,6 +6997,7 @@ Full access to all DataCatalog resources
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useOverviewAspect</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>usePostgreSQLConnectorTypes</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useQueriesAspect</code></li>
+      <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useReferenceEntryLink</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useRefreshCadenceAspect</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useRelatedEntryLink</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useSQLAccessAspect</code></li>
@@ -7258,16 +7261,22 @@ and Pub/Sub
   <p><code translate="no" dir="ltr">bigquery.models.getMetadata</code></p>
   <p><code translate="no" dir="ltr">bigquery.routines.get</code></p>
   <p><code translate="no" dir="ltr">bigquery.tables.get</code></p>
+  <p><code translate="no" dir="ltr">datacatalog.catalogs.searchAll</code></p>
+  <p><code translate="no" dir="ltr">datacatalog.<wbr>categories.<wbr>getIamPolicy</code></p>
   <p><code translate="no" dir="ltr">datacatalog.entries.get</code></p>
+  <p><code translate="no" dir="ltr">datacatalog.<wbr>entries.<wbr>getIamPolicy</code></p>
   <p><code translate="no" dir="ltr">datacatalog.entries.list</code></p>
   <p><code translate="no" dir="ltr">datacatalog.entryGroups.get</code></p>
+  <p><code translate="no" dir="ltr">datacatalog.<wbr>entryGroups.<wbr>getIamPolicy</code></p>
   <p><code translate="no" dir="ltr">datacatalog.entryGroups.list</code></p>
   <p><code translate="no" dir="ltr">datacatalog.<wbr>migrationConfig.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">datacatalog.operations.list</code></p>
   <p><code translate="no" dir="ltr">datacatalog.relationships.list</code></p>
   <p><code translate="no" dir="ltr">datacatalog.tagTemplates.get</code></p>
+  <p><code translate="no" dir="ltr">datacatalog.<wbr>tagTemplates.<wbr>getIamPolicy</code></p>
   <p><code translate="no" dir="ltr">datacatalog.<wbr>tagTemplates.<wbr>getTag</code></p>
   <p><code translate="no" dir="ltr">datacatalog.taxonomies.get</code></p>
+  <p><code translate="no" dir="ltr">datacatalog.<wbr>taxonomies.<wbr>getIamPolicy</code></p>
   <p><code translate="no" dir="ltr">datacatalog.taxonomies.list</code></p>
   <p><code translate="no" dir="ltr">dataplex.aspectTypes.get</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>aspectTypes.<wbr>getIamPolicy</code></p>
@@ -7519,6 +7528,8 @@ Full access to entryGroups
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDatabaseDataPolicyAspect</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDefinitionEntryLink</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDescriptionsAspect</code></li>
+      <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDocumentAspect</code></li>
+      <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDocumentEntry</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGenericAspect</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGenericEntry</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGraphProfileAspect</code></li>
@@ -7528,6 +7539,7 @@ Full access to entryGroups
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useOverviewAspect</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>usePostgreSQLConnectorTypes</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useQueriesAspect</code></li>
+      <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useReferenceEntryLink</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useRefreshCadenceAspect</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useRelatedEntryLink</code></li>
       <li><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useSQLAccessAspect</code></li>
@@ -7638,6 +7650,8 @@ Full access to entries
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDatabaseDataPolicyAspect</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDefinitionEntryLink</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDescriptionsAspect</code></p>
+  <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDocumentAspect</code></p>
+  <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useDocumentEntry</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGenericAspect</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGenericEntry</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useGraphProfileAspect</code></p>
@@ -7647,6 +7661,7 @@ Full access to entries
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useOverviewAspect</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>usePostgreSQLConnectorTypes</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useQueriesAspect</code></p>
+  <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useReferenceEntryLink</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useRefreshCadenceAspect</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useRelatedEntryLink</code></p>
   <p><code translate="no" dir="ltr">dataplex.<wbr>entryGroups.<wbr>useSQLAccessAspect</code></p>
@@ -8045,10 +8060,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -8060,19 +8084,13 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.searchAdmin">DataCatalog Search Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.searchAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.catalogs.searchAll-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8126,10 +8144,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -8141,13 +8168,13 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
@@ -8157,12 +8184,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.categories.getIamPolicy-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8186,6 +8207,9 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8193,9 +8217,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
@@ -8222,7 +8243,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8234,9 +8261,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8244,9 +8268,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8256,7 +8277,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8268,9 +8295,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8278,9 +8302,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8290,7 +8311,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8302,9 +8329,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8312,9 +8336,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8324,7 +8345,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8336,9 +8363,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8346,9 +8370,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8358,7 +8379,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8370,9 +8397,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8380,9 +8404,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8392,7 +8413,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8404,9 +8431,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8414,9 +8438,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8426,7 +8447,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8438,9 +8465,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8448,9 +8472,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8460,7 +8481,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8472,9 +8499,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8482,9 +8506,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8494,10 +8515,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -8510,9 +8540,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.dataSteward">DataCatalog Data Steward</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.dataSteward</code>)
@@ -8534,12 +8561,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.entries.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8563,62 +8584,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryOwner">DataCatalog Entry Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h4 class="permission-name add-link" id="datacatalog.entries.list" data-text="datacatalog.entries.list" tabindex="-1"><code translate="no" dir="ltr">datacatalog.entries.list</code></h4>
-      </td>
-      <td>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
-        </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -8639,7 +8617,59 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryOwner">DataCatalog Entry Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryOwner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="datacatalog.entries.list" data-text="datacatalog.entries.list" tabindex="-1"><code translate="no" dir="ltr">datacatalog.entries.list</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.dataSteward">DataCatalog Data Steward</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.dataSteward</code>)
@@ -8665,12 +8695,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
       </td>
     </tr>
     <tr>
@@ -8679,6 +8703,9 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8686,9 +8713,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
@@ -8707,7 +8731,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8719,9 +8749,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8729,9 +8756,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8741,7 +8765,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8751,9 +8781,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.dataSteward">DataCatalog Data Steward</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.dataSteward</code>)
@@ -8766,9 +8793,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8778,7 +8802,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8790,9 +8820,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8800,9 +8827,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8812,7 +8836,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8824,9 +8854,6 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8834,9 +8861,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8846,7 +8870,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8856,9 +8886,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
@@ -8869,9 +8896,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
       </td>
     </tr>
     <tr>
@@ -8880,7 +8904,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8890,9 +8920,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.dataSteward">DataCatalog Data Steward</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.dataSteward</code>)
@@ -8906,9 +8933,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
       </td>
     </tr>
     <tr>
@@ -8917,7 +8941,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8927,9 +8957,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
@@ -8949,9 +8976,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
       </td>
     </tr>
     <tr>
@@ -8960,7 +8984,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8972,16 +9002,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupCreator">DataCatalog EntryGroup Creator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupCreator</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -8991,7 +9015,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9003,13 +9033,7 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9019,10 +9043,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9035,9 +9068,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.dataSteward">DataCatalog Data Steward</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.dataSteward</code>)
@@ -9057,12 +9087,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
       </td>
     </tr>
     <tr>
@@ -9071,56 +9095,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h4 class="permission-name add-link" id="datacatalog.entryGroups.list" data-text="datacatalog.entryGroups.list" tabindex="-1"><code translate="no" dir="ltr">datacatalog.entryGroups.list</code></h4>
-      </td>
-      <td>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
-        </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9141,7 +9128,53 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="datacatalog.entryGroups.list" data-text="datacatalog.entryGroups.list" tabindex="-1"><code translate="no" dir="ltr">datacatalog.entryGroups.list</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupCreator">DataCatalog EntryGroup Creator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupCreator</code>)
@@ -9155,12 +9188,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
       </td>
     </tr>
     <tr>
@@ -9169,6 +9196,9 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -9176,9 +9206,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
@@ -9191,7 +9218,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9203,13 +9236,7 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9219,7 +9246,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9229,9 +9262,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.entryGroupOwner">DataCatalog EntryGroup Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.entryGroupOwner</code>)
@@ -9245,9 +9275,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
       </td>
     </tr>
     <tr>
@@ -9256,10 +9283,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9272,9 +9308,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.dataSteward">DataCatalog Data Steward</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.dataSteward</code>)
@@ -9333,12 +9366,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.migrationConfig.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
             <span class="serviceagentrole">Service agent roles</span>
@@ -9361,7 +9388,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9373,13 +9406,7 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.migrationConfigAdmin">DataCatalog Migration Config Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.migrationConfigAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9389,10 +9416,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9413,19 +9449,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9435,7 +9462,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9447,16 +9480,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9466,7 +9493,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9478,16 +9511,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9497,7 +9524,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9509,16 +9542,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9528,7 +9555,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9540,16 +9573,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9559,7 +9586,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9571,16 +9604,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9590,7 +9617,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9602,16 +9635,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9621,7 +9648,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9633,16 +9666,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9652,7 +9679,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9664,16 +9697,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9683,7 +9710,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9695,16 +9728,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9714,7 +9741,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9726,16 +9759,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryOwner">DataCatalog Glossary Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryOwner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.glossaryUser">DataCatalog Glossary User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.glossaryUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
       </td>
     </tr>
@@ -9745,10 +9772,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9767,9 +9803,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.dataSteward">DataCatalog Data Steward</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.dataSteward</code>)
@@ -9789,12 +9822,6 @@ Read access to templates and tags created using the templates
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
       </td>
     </tr>
     <tr>
@@ -9803,7 +9830,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9813,9 +9846,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.tagTemplateCreator">Data Catalog TagTemplate Creator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.tagTemplateCreator</code>)
@@ -9828,9 +9858,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.tagTemplates.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9854,7 +9881,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9866,13 +9899,7 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.tagTemplateOwner">Data Catalog TagTemplate Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.tagTemplateOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.tagTemplates.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9896,10 +9923,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9912,9 +9948,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.tagTemplateCreator">Data Catalog TagTemplate Creator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.tagTemplateCreator</code>)
@@ -9936,12 +9969,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.tagTemplates.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9965,10 +9992,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9980,13 +10016,13 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.tagTemplateOwner">Data Catalog TagTemplate Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.tagTemplateOwner</code>)
@@ -9996,12 +10032,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.tagTemplates.getIamPolicy-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10025,10 +10055,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10041,9 +10080,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.tagTemplateOwner">Data Catalog TagTemplate Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.tagTemplateOwner</code>)
@@ -10062,12 +10098,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.tagTemplates.getTag-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10091,6 +10121,9 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -10098,9 +10131,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.tagTemplateOwner">Data Catalog TagTemplate Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.tagTemplateOwner</code>)
@@ -10127,7 +10157,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10139,13 +10175,7 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.tagTemplateOwner">Data Catalog TagTemplate Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.tagTemplateOwner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.tagTemplates.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10169,7 +10199,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10179,9 +10215,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.tagTemplateOwner">Data Catalog TagTemplate Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.tagTemplateOwner</code>)
@@ -10194,9 +10227,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.tagTemplates.use-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10220,13 +10250,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
@@ -10253,13 +10283,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
@@ -10286,10 +10316,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10304,19 +10343,10 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.taxonomies.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10343,56 +10373,19 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h4 class="permission-name add-link" id="datacatalog.taxonomies.list" data-text="datacatalog.taxonomies.list" tabindex="-1"><code translate="no" dir="ltr">datacatalog.taxonomies.list</code></h4>
-      </td>
-      <td>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
-        </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10413,7 +10406,53 @@ Read access to templates and tags created using the templates
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="datacatalog.taxonomies.list" data-text="datacatalog.taxonomies.list" tabindex="-1"><code translate="no" dir="ltr">datacatalog.taxonomies.list</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.editor">Data Catalog Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.viewer">Data Catalog Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
@@ -10423,12 +10462,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="datacatalog.taxonomies.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10452,6 +10485,9 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -10459,9 +10495,6 @@ Read access to templates and tags created using the templates
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
@@ -10474,13 +10507,13 @@ Read access to templates and tags created using the templates
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.admin">Data Catalog Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/datacatalog#datacatalog.categoryAdmin">Policy Tag Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datacatalog.categoryAdmin</code>)
@@ -10510,7 +10543,7 @@ Read access to templates and tags created using the templates
 
   
     <devsite-hats-survey class="nocontent" data-nosnippet
-      hats-id="Nd7nTix2o0eU5NUYprb0ThtUc5jf"
+      hats-id="mwETRvWii0eU5NUYprb0Y9z5GVbc"
       listnr-id="83405"></devsite-hats-survey>
   
 
@@ -10566,7 +10599,7 @@ Read access to templates and tags created using the templates
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-10-06 UTC.</p>
+  <p>Last updated 2026-10-08 UTC.</p>
 </devsite-content-footer>
 
 
@@ -10615,7 +10648,7 @@ Read access to templates and tags created using the templates
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-10-06 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-10-08 UTC."],[],[]]
     </template>
   
 </div>
@@ -10647,7 +10680,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="see all products"track-type="footer link"track-metadata-child_headline="products and pricing"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/products/"track-metadata-position="footer">
+            track-metadata-eventDetail="cloud.google.com/products/"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="products and pricing"track-name="see all products"track-metadata-position="footer">
             
           
             See all products
@@ -10664,7 +10697,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-name="google cloud pricing"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/pricing/"track-type="footer link">
+            track-metadata-child_headline="products and pricing"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="google cloud pricing">
             
           
             Google Cloud pricing
@@ -10681,7 +10714,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"track-name="google cloud marketplace"track-type="footer link"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-position="footer"track-metadata-child_headline="resources">
+            track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-name="google cloud marketplace"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/marketplace/">
             
           
             Google Cloud Marketplace
@@ -10698,7 +10731,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/contact/"track-type="footer link"track-name="contact sales"track-metadata-module="footer"track-metadata-position="footer">
+            track-metadata-module="footer"track-name="contact sales"track-metadata-eventDetail="cloud.google.com/contact/"track-metadata-child_headline="engage"track-type="footer link"track-metadata-position="footer">
             
               
               
@@ -10725,7 +10758,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="www.googlecloudcommunity.com"track-name="google cloud community"rel="noopener"track-type="footer link"track-metadata-child_headline="engage"target="_blank">
+            target="_blank"track-type="footer link"track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="www.googlecloudcommunity.com"track-name="google cloud community"rel="noopener">
             
           
             Community forums
@@ -10742,7 +10775,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/support-hub/"track-type="footer link"track-metadata-position="footer"track-metadata-child_headline="resources"track-name="support">
+            track-metadata-module="footer"track-name="support"track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-position="footer"track-metadata-child_headline="resources"track-type="footer link">
             
           
             Support
@@ -10759,7 +10792,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="release notes"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer">
+            track-name="release notes"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-child_headline="resources">
             
           
             Release Notes
@@ -10776,7 +10809,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="status.cloud.google.com"target="_blank"track-name="system status"track-metadata-child_headline="resources">
+            track-name="system status"track-metadata-module="footer"track-metadata-child_headline="resources"track-type="footer link"track-metadata-eventDetail="status.cloud.google.com"target="_blank"track-metadata-position="footer">
             
               
               
@@ -10803,7 +10836,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-module="footer"track-type="footer link"track-name="github"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-position="footer"track-metadata-child_headline="resources">
+            track-name="github"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-type="footer link"track-metadata-module="footer">
             
           
             GitHub
@@ -10820,7 +10853,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-module="footer"track-name="google cloud quickstarts"track-metadata-child_headline="resources"track-metadata-position="footer">
+            track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="resources"track-name="google cloud quickstarts"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-module="footer">
             
           
             Getting Started with Google Cloud
@@ -10837,7 +10870,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="resources"track-type="footer link"track-name="code samples"track-metadata-eventDetail="cloud.google.com/docs/samples">
+            track-metadata-child_headline="resources"track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-module="footer"track-name="code samples"track-metadata-position="footer">
             
           
             Code samples
@@ -10854,7 +10887,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-name="cloud architecture center"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/architecture/"track-type="footer link"track-metadata-module="footer">
+            track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-name="cloud architecture center"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-child_headline="resources">
             
           
             Cloud Architecture Center
@@ -10871,7 +10904,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-child_headline="resources"track-metadata-module="footer"track-name="training"track-type="footer link">
+            track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/learn/training/"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources"track-name="training">
             
               
               
@@ -10898,7 +10931,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-position="footer"track-metadata-child_headline="engage"track-type="footer link"track-metadata-module="footer"track-name="blog">
+            track-metadata-position="footer"track-name="blog"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="engage">
             
           
             Blog
@@ -10915,7 +10948,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-name="events"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/events/"track-metadata-child_headline="engage"track-metadata-module="footer">
+            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/events/"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="engage"track-name="events">
             
           
             Events
@@ -10932,7 +10965,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            target="_blank"track-name="follow on x"track-metadata-position="footer"track-metadata-module="footer"track-type="footer link"rel="noopener"track-metadata-eventDetail="x.com/googlecloud"track-metadata-child_headline="engage">
+            target="_blank"track-type="footer link"track-metadata-child_headline="engage"track-metadata-module="footer"track-name="follow on x"rel="noopener"track-metadata-position="footer"track-metadata-eventDetail="x.com/googlecloud">
             
           
             X (Twitter)
@@ -10949,7 +10982,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            rel="noopener"target="_blank"track-metadata-child_headline="engage"track-metadata-eventDetail="www.youtube.com/googlecloud"track-metadata-position="footer"track-name="google cloud on youtube"track-type="footer link"track-metadata-module="footer">
+            track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="www.youtube.com/googlecloud"track-metadata-child_headline="engage"target="_blank"track-name="google cloud on youtube"rel="noopener"track-metadata-module="footer">
             
           
             Google Cloud on YouTube
@@ -10966,7 +10999,7 @@ Read access to templates and tags created using the templates
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-name="google cloud tech on youtube"rel="noopener"track-type="footer link"target="_blank"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="engage">
+            track-metadata-module="footer"track-name="google cloud tech on youtube"track-metadata-position="footer"target="_blank"rel="noopener"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-type="footer link"track-metadata-child_headline="engage">
             
               
               
@@ -11083,17 +11116,17 @@ Read access to templates and tags created using the templates
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-type="footer link"
-         
            track-metadata-eventDetail="//about.google/"
-         
-           track-metadata-position="footer"
          
            track-name="about google"
          
-           target="_blank"
-         
            track-metadata-module="utility footer"
+         
+           track-metadata-position="footer"
+         
+           track-type="footer link"
+         
+           target="_blank"
          >
           About Google
         </a>
@@ -11109,17 +11142,17 @@ Read access to templates and tags created using the templates
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           target="_blank"
-         
            track-type="footer link"
-         
-           track-name="privacy"
          
            track-metadata-module="utility footer"
          
-           track-metadata-eventDetail="//policies.google.com/privacy"
-         
            track-metadata-position="footer"
+         
+           track-name="privacy"
+         
+           target="_blank"
+         
+           track-metadata-eventDetail="//policies.google.com/privacy"
          >
           Privacy
         </a>
@@ -11135,17 +11168,17 @@ Read access to templates and tags created using the templates
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
+           track-metadata-module="utility footer"
+         
+           track-name="site terms"
          
            target="_blank"
+         
+           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
          
            track-type="footer link"
          
            track-metadata-position="footer"
-         
-           track-name="site terms"
-         
-           track-metadata-module="utility footer"
          >
           Site terms
         </a>
@@ -11161,15 +11194,15 @@ Read access to templates and tags created using the templates
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-metadata-position="footer"
-         
            track-metadata-module="utility footer"
+         
+           track-type="footer link"
          
            track-metadata-eventDetail="//cloud.google.com/product-terms"
          
            track-name="google cloud terms"
          
-           track-type="footer link"
+           track-metadata-position="footer"
          >
           Google Cloud terms
         </a>
@@ -11187,15 +11220,15 @@ Read access to templates and tags created using the templates
          
            track-metadata-position="footer"
          
-           aria-hidden="true"
-         
-           track-name="Manage cookies"
-         
            track-type="footer link"
+         
+           track-metadata-eventDetail="#"
+         
+           aria-hidden="true"
          
            track-metadata-module="utility footer"
          
-           track-metadata-eventDetail="#"
+           track-name="Manage cookies"
          >
           Manage cookies
         </a>
@@ -11211,15 +11244,15 @@ Read access to templates and tags created using the templates
            data-category="Site-Wide Custom Events"
            data-label="Footer Our third decade of climate action: join us link"
          
-           track-type="footer link"
+           track-metadata-eventDetail="/sustainability/"
          
            track-metadata-module="utility footer"
-         
-           track-metadata-eventDetail="/sustainability/"
          
            track-name="Our third decade of climate action: join us"
          
            track-metadata-position="footer"
+         
+           track-type="footer link"
          >
           Our third decade of climate action: join us
         </a>
@@ -11237,15 +11270,15 @@ Read access to templates and tags created using the templates
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-metadata-eventDetail="/newsletter/"
+           track-type="footer link"
          
            track-metadata-position="footer"
          
-           track-metadata-module="utility footer"
-         
-           track-type="footer link"
-         
            track-name="subscribe"
+         
+           track-metadata-eventDetail="/newsletter/"
+         
+           track-metadata-module="utility footer"
          >
           Subscribe
         </a>
@@ -11337,12 +11370,12 @@ Read access to templates and tags created using the templates
   
 
     
-<script nonce="MounLSumtkNs5+BnQBx33smYU/fqbN">
+<script nonce="HNl31e29FWMs+jJ0fb7egYrin/oUtB">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Profiles__enable_complete_playlist_endpoint","BookNav__enable_tenant_cache_key","AIStudioInteractionsToggle__interactions_are_default","Profiles__enable_user_type","DevPro__enable_g1_ineligible_redirect","DevPro__enable_google_payments_buyflow","DevPro__enable_google_payments","DevPro__enable_enterprise","Concierge__enable_devsite_llm_tools","DevPro__enable_g1_integration","Profiles__enable_callout_notifications","MiscFeatureFlags__enable_appearance_cookies","Cloud__enable_cloudx_experiment_ids","Search__enable_ai_search_summaries_for_all","DevPro__enable_embed_profile_creation","DevPro__remove_eu_tax_intake_form","MiscFeatureFlags__enable_variable_operator_index_yaml","Concierge__enable_pushui","MiscFeatureFlags__developers_footer_dark_image","Profiles__enable_targeted_hero","Search__enable_suggestions_from_borg","DevPro__enable_free_benefits","Profiles__enable_completequiz_endpoint","Profiles__enable_completecodelab_endpoint","MiscFeatureFlags__fix_lower_breadcrumbs","MiscFeatureFlags__enable_framebox_badge_methods","Cloud__enable_cloud_shell","CloudShell__cloud_shell_button","MiscFeatureFlags__enable_project_variables","DevPro__enable_vertex_credit_card","MiscFeatureFlags__enable_explicit_template_dependencies","Profiles__enable_developer_profile_pages_as_content","Concierge__enable_concierge_restricted","Profiles__enable_stripe_subscription_management","Profiles__enable_join_program_group_endpoint","Profiles__enable_recognition_badges","Cloud__cache_serialized_dynamic_content","DevPro__enable_nvidia_credits_card","TpcFeatures__proxy_prod_host","MiscFeatureFlags__enable_firebase_utm","DevPro__enable_developer_subscriptions","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Analytics__enable_devpro_interaction_logging","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__enable_explain_this_code","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__developers_footer_image","DevPro__enable_devsite_captcha","Profiles__enable_auto_apply_credits","MiscFeatureFlags__enable_dark_theme","Profiles__enable_awarding_url","Profiles__enable_developer_profiles_callout","Cloud__enable_free_trial_server_call","MiscFeatureFlags__enable_view_transitions","DevPro__enable_code_assist","DevPro__enable_google_one_card","Search__enable_page_map","Profiles__enable_developer_profile_benefits_ui_redesign","Analytics__enable_clearcut_logging","Cloud__enable_cloud_dlp_service","Search__enable_ai_eligibility_checks","DevPro__enable_devpro_offers","MiscFeatureFlags__remove_cross_domain_tracking_params","Cloud__fast_free_trial","Profiles__enable_public_developer_profiles","Profiles__enable_playlist_community_acl","Concierge__enable_actions_menu","SignIn__enable_l1_signup_flow","EngEduTelemetry__enable_engedu_telemetry","Cloud__enable_legacy_calculator_redirect","OnSwitch__enable","DevPro__enable_credits_banner","Search__enable_dynamic_content_confidential_banner","Cloud__enable_cloud_shell_fte_user_flow","DevPro__enable_firebase_workspaces_card","Experiments__reqs_query_experiments","Profiles__require_profile_eligibility_for_signin","Profiles__enable_purchase_prompts","Profiles__enable_page_saving","CloudShell__cloud_code_overflow_menu","MiscFeatureFlags__enable_variable_operator","Profiles__enable_profile_collections","DevPro__enable_cloud_innovators_plus","Profiles__enable_dashboard_curated_recommendations"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Concierge__enable_remove_info_panel_tags","Profiles__enable_developer_profiles_callout","Profiles__enable_user_type","MiscFeatureFlags__enable_project_variables","DevPro__enable_embed_profile_creation","MiscFeatureFlags__enable_appearance_cookies","Profiles__enable_purchase_prompts","Profiles__enable_developer_profile_pages_as_content","Concierge__enable_devsite_llm_tools","EngEduTelemetry__enable_engedu_telemetry","Concierge__enable_actions_menu","DevPro__enable_enterprise","Cloud__enable_free_trial_server_call","DevPro__enable_devpro_offers","MiscFeatureFlags__enable_view_transitions","MiscFeatureFlags__enable_variable_operator_index_yaml","Profiles__enable_completecodelab_endpoint","MiscFeatureFlags__enable_variable_operator","DevPro__enable_google_payments_buyflow","Cloud__enable_cloud_shell_fte_user_flow","Cloud__fast_free_trial","DevPro__enable_devsite_captcha","Search__enable_page_map","Search__enable_suggestions_from_borg","Cloud__cache_serialized_dynamic_content","Cloud__enable_cloud_dlp_service","Concierge__enable_concierge_restricted","SignIn__enable_l1_signup_flow","MiscFeatureFlags__developers_footer_dark_image","TpcFeatures__proxy_prod_host","Analytics__enable_clearcut_logging","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_dashboard_curated_recommendations","Cloud__enable_cloudx_experiment_ids","DevPro__enable_g1_ineligible_redirect","Profiles__enable_profile_collections","DevPro__enable_firebase_workspaces_card","DevPro__enable_google_payments","Experiments__reqs_query_experiments","Profiles__enable_auto_apply_credits","DevPro__remove_eu_tax_intake_form","CloudShell__cloud_code_overflow_menu","MiscFeatureFlags__enable_dark_theme","Profiles__enable_complete_playlist_endpoint","Cloud__enable_cloud_shell","MiscFeatureFlags__enable_explicit_template_dependencies","AIStudioInteractionsToggle__interactions_are_default","DevPro__enable_g1_integration","BookNav__enable_tenant_cache_key","Profiles__enable_awarding_url","MiscFeatureFlags__enable_framebox_badge_methods","MiscFeatureFlags__developers_footer_image","DevPro__enable_free_benefits","MiscFeatureFlags__remove_cross_domain_tracking_params","DevPro__enable_cloud_innovators_plus","Profiles__enable_completequiz_endpoint","DevPro__enable_nvidia_credits_card","CloudShell__cloud_shell_button","DevPro__enable_developer_subscriptions","Profiles__enable_targeted_hero","Profiles__enable_developer_profile_benefits_ui_redesign","Concierge__enable_pushui","TpcFeatures__enable_unmirrored_page_left_nav","Profiles__enable_stripe_subscription_management","DevPro__enable_vertex_credit_card","Profiles__enable_public_developer_profiles","MiscFeatureFlags__fix_lower_breadcrumbs","Profiles__require_profile_eligibility_for_signin","MiscFeatureFlags__enable_firebase_utm","DevPro__enable_code_assist","Profiles__enable_join_program_group_endpoint","Search__enable_dynamic_content_confidential_banner","Search__enable_ai_search_summaries_for_all","Analytics__enable_devpro_interaction_logging","OnSwitch__enable","Search__enable_ai_eligibility_checks","Profiles__enable_page_saving","Cloud__enable_legacy_calculator_redirect","DevPro__enable_google_one_card","Profiles__enable_recognition_badges","Profiles__enable_callout_notifications","DevPro__enable_credits_banner","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_playlist_community_acl"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 

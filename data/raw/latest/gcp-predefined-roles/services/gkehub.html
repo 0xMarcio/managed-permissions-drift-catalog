@@ -1810,13 +1810,13 @@
       
         track-type="globalNav"
       
-        track-metadata-eventDetail="nav"
-      
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-name="console"
+        track-metadata-eventDetail="nav"
       
         track-metadata-position="nav"
+      
+        track-name="console"
       
     >
   Console
@@ -2007,13 +2007,13 @@
       
         track-metadata-eventDetail="nav"
       
-        referrerpolicy="no-referrer-when-downgrade"
-      
-        track-metadata-position="nav"
-      
         track-type="freeTrial"
       
         track-name="gcpCta"
+      
+        referrerpolicy="no-referrer-when-downgrade"
+      
+        track-metadata-position="nav"
       
     
     >Start free</a>
@@ -2562,13 +2562,13 @@
       
         track-type="globalNav"
       
-        track-metadata-eventDetail="nav"
-      
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-name="console"
+        track-metadata-eventDetail="nav"
       
         track-metadata-position="nav"
+      
+        track-name="console"
       
     
      data-category="Site-Wide Custom Events"
@@ -6809,6 +6809,7 @@ Full access to Fleet resources.
 </span>
 </td>
 <td class="role-permissions">
+  <p><code translate="no" dir="ltr">gkehub.endpoints.connect</code></p>
   <devsite-expandable id="expandable-gkehub.admin-gkehub.features.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">gkehub.features.*</code></span>
@@ -7098,6 +7099,7 @@ Read-only access to Fleets and related resources.
   <p><code translate="no" dir="ltr">gkehub.rbacrolebindings.get</code></p>
   <p><code translate="no" dir="ltr">gkehub.rbacrolebindings.list</code></p>
   <p><code translate="no" dir="ltr">gkehub.scopes.get</code></p>
+  <p><code translate="no" dir="ltr">gkehub.scopes.getIamPolicy</code></p>
   <p><code translate="no" dir="ltr">gkehub.scopes.list</code></p>
   <p><code translate="no" dir="ltr">gkehub.<wbr>scopes.<wbr>listBoundMemberships</code></p>
   <p><code translate="no" dir="ltr">resourcemanager.projects.get</code></p>
@@ -7630,10 +7632,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.admin">Fleet Admin (formerly GKE Hub Admin)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/cloudmigration#cloudmigration.inframanager">Velostrata Manager</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudmigration.inframanager</code>)
@@ -7659,6 +7664,12 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
             <li>
               <a href="/iam/docs/roles-permissions/edgecontainer#edgecontainer.serviceAgent">Edge Container Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>edgecontainer.serviceAgent</code>)
             </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/gkemulticloud#gkemulticloud.serviceAgent">Anthos Multi-Cloud Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkemulticloud.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/krmapihosting#krmapihosting.anthosApiEndpointServiceAgent">KRM API Hosting AnthosApiEndpoint Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>krmapihosting.anthosApiEndpointServiceAgent</code>)
+            </li>
           </ul>
         </devsite-expandable>
       </td>
@@ -7669,7 +7680,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -7679,12 +7696,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.features.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -7720,7 +7731,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -7730,12 +7747,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.features.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -7762,10 +7773,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -7780,16 +7800,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.features.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -7873,10 +7884,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -7897,19 +7917,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.features.getIamPolicy-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -7948,10 +7959,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -7972,19 +7992,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.features.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8032,6 +8043,9 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -8039,9 +8053,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.features.setIamPolicy-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8068,7 +8079,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8078,12 +8095,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.features.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8116,7 +8127,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8126,12 +8143,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.fleet.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8170,7 +8181,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8180,12 +8197,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.fleet.createFreeTrial-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8212,7 +8223,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8222,12 +8239,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.fleet.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8260,10 +8271,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -8278,16 +8298,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.fleet.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8338,10 +8349,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -8356,16 +8376,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.fleet.getFreeTrial-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8401,7 +8412,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8411,12 +8428,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.fleet.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8443,7 +8454,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -8453,12 +8470,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.fleet.updateFreeTrial-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8485,13 +8496,16 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
@@ -8501,9 +8515,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditorProjectLevel">Fleet Project-level Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditorProjectLevel</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.gateway.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8566,16 +8577,22 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
@@ -8594,12 +8611,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.gateway.generateCredentials-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8665,16 +8676,22 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
@@ -8693,12 +8710,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.gateway.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8764,13 +8775,16 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
@@ -8780,9 +8794,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditorProjectLevel">Fleet Project-level Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditorProjectLevel</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.gateway.patch-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8845,13 +8856,16 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
@@ -8861,9 +8875,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditorProjectLevel">Fleet Project-level Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditorProjectLevel</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.gateway.post-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -8926,13 +8937,16 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
@@ -8942,9 +8956,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditorProjectLevel">Fleet Project-level Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditorProjectLevel</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.gateway.put-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9007,19 +9018,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.gateway.stream-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9046,10 +9057,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9064,16 +9084,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.locations.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9157,10 +9168,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9181,19 +9201,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.locations.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9277,7 +9288,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9287,12 +9304,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipbindings.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9319,7 +9330,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9329,12 +9346,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipbindings.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9361,10 +9372,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9379,16 +9399,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipbindings.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9424,10 +9435,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9448,19 +9468,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipbindings.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9496,7 +9507,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9506,12 +9523,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipbindings.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9538,7 +9549,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9548,12 +9565,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipfeatures.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9580,7 +9591,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9590,12 +9607,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipfeatures.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9622,10 +9633,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9640,16 +9660,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipfeatures.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9685,10 +9696,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9709,19 +9729,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipfeatures.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9757,7 +9768,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9767,12 +9784,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.membershipfeatures.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9799,7 +9810,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9809,12 +9826,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.memberships.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9850,7 +9861,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -9860,12 +9877,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.memberships.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9901,10 +9912,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9919,16 +9939,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.memberships.generateConnectManifest-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -9973,10 +9984,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -9989,9 +10009,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
@@ -10010,12 +10027,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.memberships.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10105,10 +10116,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10129,19 +10149,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.memberships.getIamPolicy-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10180,10 +10191,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10204,19 +10224,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.memberships.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10300,6 +10311,9 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -10307,9 +10321,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.memberships.setIamPolicy-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10336,7 +10347,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10347,12 +10364,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
         </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
-        </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.memberships.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
             <span class="serviceagentrole">Service agent roles</span>
@@ -10362,6 +10373,9 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
             href="/iam/docs/service-agents">service agents</a>.
           </aside>
           <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/anthossupport#anthossupport.serviceAgent">Anthos Support Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthossupport.serviceAgent</code>)
+            </li>
             <li>
               <a href="/iam/docs/roles-permissions/edgecontainer#edgecontainer.clusterServiceAgent">Edge Container Cluster Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>edgecontainer.clusterServiceAgent</code>)
             </li>
@@ -10387,7 +10401,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10399,16 +10419,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditor">Fleet Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.namespaces.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10435,7 +10449,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10447,16 +10467,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditor">Fleet Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.namespaces.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10483,10 +10497,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10501,9 +10524,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -10514,12 +10534,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.namespaces.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10555,10 +10569,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10579,9 +10602,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -10595,12 +10615,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.namespaces.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10636,7 +10650,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10646,12 +10666,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.namespaces.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10678,7 +10692,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10688,12 +10708,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.operations.cancel-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10726,7 +10740,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10736,12 +10756,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.operations.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10774,10 +10788,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10792,19 +10815,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditorProjectLevel">Fleet Project-level Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditorProjectLevel</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.operations.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10852,10 +10866,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -10876,19 +10899,10 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.operations.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10930,7 +10944,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10942,13 +10962,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.rbacrolebindings.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -10975,7 +10989,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -10987,13 +11007,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.rbacrolebindings.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11020,10 +11034,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -11038,9 +11061,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -11051,12 +11071,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.rbacrolebindings.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11092,10 +11106,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -11116,9 +11139,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -11132,12 +11152,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.rbacrolebindings.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11173,7 +11187,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -11185,13 +11205,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.rbacrolebindings.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11218,7 +11232,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -11228,12 +11248,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.scopes.create-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11260,7 +11274,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -11270,12 +11290,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.scopes.delete-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11302,10 +11316,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -11320,9 +11343,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -11333,12 +11353,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.scopes.get-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11374,79 +11388,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/gkehub#gkehub.admin">Fleet Admin (formerly GKE Hub Admin)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditor">Fleet Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeViewer">Fleet Scope Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeViewer</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
-        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.scopes.getIamPolicy-service-agent-roles">
-          <p class="showalways iamrole-marginless">
-            <span class="serviceagentrole">Service agent roles</span>
-          </p>
-          <aside class="warning">
-            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
-            href="/iam/docs/service-agents">service agents</a>.
-          </aside>
-          <ul class="serviceagentrole-list">
-            <li>
-              <a href="/iam/docs/roles-permissions/gkemulticloud#gkemulticloud.serviceAgent">Anthos Multi-Cloud Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkemulticloud.serviceAgent</code>)
-            </li>
-            <li>
-              <a href="/iam/docs/roles-permissions/krmapihosting#krmapihosting.anthosApiEndpointServiceAgent">KRM API Hosting AnthosApiEndpoint Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>krmapihosting.anthosApiEndpointServiceAgent</code>)
-            </li>
-          </ul>
-        </devsite-expandable>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h4 class="permission-name add-link" id="gkehub.scopes.list" data-text="gkehub.scopes.list" tabindex="-1"><code translate="no" dir="ltr">gkehub.scopes.list</code></h4>
-      </td>
-      <td>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
-        </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -11467,7 +11421,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditor">Fleet Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeViewer">Fleet Scope Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeViewer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
@@ -11475,11 +11435,77 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.scopes.getIamPolicy-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/anthossupport#anthossupport.serviceAgent">Anthos Support Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthossupport.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/gameservices#gameservices.serviceAgent">Game Services Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gameservices.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/gkemulticloud#gkemulticloud.serviceAgent">Anthos Multi-Cloud Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkemulticloud.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/krmapihosting#krmapihosting.anthosApiEndpointServiceAgent">KRM API Hosting AnthosApiEndpoint Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>krmapihosting.anthosApiEndpointServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/meshcontrolplane#meshcontrolplane.serviceAgent">Mesh Managed Control Plane Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>meshcontrolplane.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="gkehub.scopes.list" data-text="gkehub.scopes.list" tabindex="-1"><code translate="no" dir="ltr">gkehub.scopes.list</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.admin">Fleet Admin (formerly GKE Hub Admin)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/iam#iam.securityReviewer">Security Reviewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityReviewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.scopes.list-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11515,10 +11541,19 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
@@ -11533,9 +11568,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.viewer">Fleet Viewer (formerly GKE Hub Viewer)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.viewer</code>)
         </p>
         <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
         </p>
         <p class="iamrole-marginless">
@@ -11546,12 +11578,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.scopes.listBoundMemberships-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11587,6 +11613,9 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
         </p>
         <p class="iamrole-marginless">
@@ -11594,9 +11623,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/iam#iam.securityAdmin">Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAdmin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeAdmin">Fleet Scope Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeAdmin</code>)
@@ -11609,7 +11635,13 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
       </td>
       <td>
         <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
@@ -11619,12 +11651,6 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/gkehub#gkehub.editor">Fleet Editor (formerly GKE Hub Editor)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.editor</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
-        </p>
-        <p class="iamrole-marginless">
-          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
         </p>
         <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="gkehub.scopes.update-service-agent-roles">
           <p class="showalways iamrole-marginless">
@@ -11654,7 +11680,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
 
   
     <devsite-hats-survey class="nocontent" data-nosnippet
-      hats-id="Nd7nTix2o0eU5NUYprb0ThtUc5jf"
+      hats-id="mwETRvWii0eU5NUYprb0Y9z5GVbc"
       listnr-id="83405"></devsite-hats-survey>
   
 
@@ -11710,7 +11736,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-10-06 UTC.</p>
+  <p>Last updated 2026-10-08 UTC.</p>
 </devsite-content-footer>
 
 
@@ -11759,7 +11785,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-10-06 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-10-08 UTC."],[],[]]
     </template>
   
 </div>
@@ -11791,7 +11817,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/products/"track-name="see all products"track-metadata-module="footer"track-metadata-child_headline="products and pricing"track-type="footer link">
+            track-metadata-position="footer"track-name="see all products"track-metadata-eventDetail="cloud.google.com/products/"track-metadata-child_headline="products and pricing"track-metadata-module="footer"track-type="footer link">
             
           
             See all products
@@ -11808,7 +11834,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/pricing/"track-name="google cloud pricing"track-metadata-module="footer">
+            track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-module="footer"track-name="google cloud pricing"track-metadata-child_headline="products and pricing"track-metadata-position="footer"track-type="footer link">
             
           
             Google Cloud pricing
@@ -11825,7 +11851,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="google cloud marketplace"track-metadata-eventDetail="cloud.google.com/marketplace/">
+            track-metadata-position="footer"track-name="google cloud marketplace"track-metadata-eventDetail="cloud.google.com/marketplace/"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             Google Cloud Marketplace
@@ -11842,7 +11868,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-name="contact sales"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/contact/">
+            track-type="footer link"track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/contact/"track-name="contact sales">
             
               
               
@@ -11869,7 +11895,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-type="footer link"target="_blank"rel="noopener"track-metadata-module="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="www.googlecloudcommunity.com"track-name="google cloud community"track-metadata-position="footer">
+            track-type="footer link"track-name="google cloud community"track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-module="footer"target="_blank"rel="noopener">
             
           
             Community forums
@@ -11886,7 +11912,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-name="support"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer">
+            track-name="support"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/support-hub/">
             
           
             Support
@@ -11903,7 +11929,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="resources"track-name="release notes"track-metadata-eventDetail="cloud.google.com/release-notes/">
+            track-name="release notes"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-child_headline="resources"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer">
             
           
             Release Notes
@@ -11920,7 +11946,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-eventDetail="status.cloud.google.com"track-metadata-position="footer"track-type="footer link"track-metadata-child_headline="resources"target="_blank"track-metadata-module="footer"track-name="system status">
+            track-name="system status"target="_blank"track-metadata-position="footer"track-metadata-child_headline="resources"track-type="footer link"track-metadata-eventDetail="status.cloud.google.com"track-metadata-module="footer">
             
               
               
@@ -11947,7 +11973,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-child_headline="resources"track-name="github">
+            track-name="github"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-type="footer link">
             
           
             GitHub
@@ -11964,7 +11990,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="resources"track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-name="google cloud quickstarts">
+            track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources"track-name="google cloud quickstarts"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-position="footer">
             
           
             Getting Started with Google Cloud
@@ -11981,7 +12007,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/docs/samples"track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer"track-name="code samples">
+            track-metadata-child_headline="resources"track-name="code samples"track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-position="footer"track-metadata-module="footer">
             
           
             Code samples
@@ -11998,7 +12024,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-name="cloud architecture center"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-child_headline="resources"track-type="footer link"track-metadata-module="footer"track-metadata-position="footer">
+            track-metadata-child_headline="resources"track-name="cloud architecture center"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer">
             
           
             Cloud Architecture Center
@@ -12015,7 +12041,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="resources"track-type="footer link"track-name="training"track-metadata-eventDetail="cloud.google.com/learn/training/">
+            track-name="training"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link">
             
               
               
@@ -12042,7 +12068,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="blog"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="engage"track-type="footer link">
+            track-name="blog"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-child_headline="engage"track-metadata-module="footer"track-type="footer link">
             
           
             Blog
@@ -12059,7 +12085,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/events/"track-name="events"track-metadata-child_headline="engage"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer">
+            track-type="footer link"track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/events/"track-name="events">
             
           
             Events
@@ -12076,7 +12102,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"track-name="follow on x"track-metadata-position="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="x.com/googlecloud"target="_blank"rel="noopener"track-type="footer link">
+            track-type="footer link"track-metadata-eventDetail="x.com/googlecloud"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="engage"target="_blank"track-name="follow on x"rel="noopener">
             
           
             X (Twitter)
@@ -12093,7 +12119,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="engage"target="_blank"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloud"rel="noopener"track-name="google cloud on youtube">
+            rel="noopener"target="_blank"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="engage"track-name="google cloud on youtube"track-metadata-eventDetail="www.youtube.com/googlecloud">
             
           
             Google Cloud on YouTube
@@ -12110,7 +12136,7 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-name="google cloud tech on youtube"target="_blank"track-metadata-module="footer"rel="noopener"track-metadata-child_headline="engage">
+            track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"target="_blank"rel="noopener"track-name="google cloud tech on youtube">
             
               
               
@@ -12227,17 +12253,17 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-name="about google"
-         
-           track-metadata-module="utility footer"
-         
            track-metadata-position="footer"
-         
-           target="_blank"
          
            track-type="footer link"
          
+           track-metadata-module="utility footer"
+         
+           track-name="about google"
+         
            track-metadata-eventDetail="//about.google/"
+         
+           target="_blank"
          >
           About Google
         </a>
@@ -12253,15 +12279,15 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           track-name="privacy"
-         
-           track-metadata-eventDetail="//policies.google.com/privacy"
-         
-           track-metadata-module="utility footer"
-         
            track-type="footer link"
          
            track-metadata-position="footer"
+         
+           track-metadata-module="utility footer"
+         
+           track-name="privacy"
+         
+           track-metadata-eventDetail="//policies.google.com/privacy"
          
            target="_blank"
          >
@@ -12279,17 +12305,17 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
-           target="_blank"
+           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
+         
+           track-type="footer link"
+         
+           track-metadata-module="utility footer"
          
            track-name="site terms"
          
            track-metadata-position="footer"
          
-           track-metadata-module="utility footer"
-         
-           track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
-         
-           track-type="footer link"
+           target="_blank"
          >
           Site terms
         </a>
@@ -12305,15 +12331,15 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-name="google cloud terms"
-         
            track-type="footer link"
-         
-           track-metadata-module="utility footer"
          
            track-metadata-position="footer"
          
+           track-name="google cloud terms"
+         
            track-metadata-eventDetail="//cloud.google.com/product-terms"
+         
+           track-metadata-module="utility footer"
          >
           Google Cloud terms
         </a>
@@ -12329,17 +12355,17 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-metadata-module="utility footer"
-         
-           track-type="footer link"
-         
-           track-metadata-eventDetail="#"
-         
            track-name="Manage cookies"
          
            aria-hidden="true"
          
+           track-metadata-eventDetail="#"
+         
+           track-metadata-module="utility footer"
+         
            track-metadata-position="footer"
+         
+           track-type="footer link"
          >
           Manage cookies
         </a>
@@ -12355,15 +12381,15 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
            data-category="Site-Wide Custom Events"
            data-label="Footer Our third decade of climate action: join us link"
          
+           track-metadata-module="utility footer"
+         
            track-type="footer link"
          
            track-metadata-position="footer"
          
-           track-metadata-eventDetail="/sustainability/"
-         
-           track-metadata-module="utility footer"
-         
            track-name="Our third decade of climate action: join us"
+         
+           track-metadata-eventDetail="/sustainability/"
          >
           Our third decade of climate action: join us
         </a>
@@ -12381,15 +12407,15 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-name="subscribe"
+           track-type="footer link"
          
            track-metadata-module="utility footer"
          
+           track-metadata-eventDetail="/newsletter/"
+         
            track-metadata-position="footer"
          
-           track-type="footer link"
-         
-           track-metadata-eventDetail="/newsletter/"
+           track-name="subscribe"
          >
           Subscribe
         </a>
@@ -12481,12 +12507,12 @@ Gives the GKE Hub service agent access to Cloud Platform resources.
   
 
     
-<script nonce="p/zGastKkqC/E0mm5AsmWvaK9vBc7e">
+<script nonce="VCNK2M+MxImGtu/oBEbf/nplLKcbFE">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["DevPro__enable_google_payments_buyflow","Search__enable_suggestions_from_borg","MiscFeatureFlags__enable_framebox_badge_methods","Cloud__enable_legacy_calculator_redirect","Profiles__enable_page_saving","Profiles__enable_developer_profile_pages_as_content","Concierge__enable_actions_menu","Search__enable_ai_search_summaries_for_all","DevPro__enable_google_payments","Profiles__enable_profile_collections","MiscFeatureFlags__enable_appearance_cookies","Profiles__enable_playlist_community_acl","Profiles__enable_completecodelab_endpoint","DevPro__enable_developer_subscriptions","DevPro__enable_vertex_credit_card","DevPro__enable_nvidia_credits_card","Concierge__enable_pushui","AIStudioInteractionsToggle__interactions_are_default","MiscFeatureFlags__enable_variable_operator","MiscFeatureFlags__enable_project_variables","MiscFeatureFlags__fix_lower_breadcrumbs","Profiles__enable_stripe_subscription_management","DevPro__enable_code_assist","DevPro__enable_cloud_innovators_plus","Concierge__enable_devsite_llm_tools","OnSwitch__enable","Cloud__cache_serialized_dynamic_content","MiscFeatureFlags__developers_footer_image","Analytics__enable_devpro_interaction_logging","Cloud__enable_cloud_shell_fte_user_flow","DevPro__enable_embed_profile_creation","DevPro__enable_credits_banner","MiscFeatureFlags__enable_variable_operator_index_yaml","CloudShell__cloud_code_overflow_menu","Profiles__enable_join_program_group_endpoint","MiscFeatureFlags__enable_explicit_template_dependencies","Profiles__enable_callout_notifications","Profiles__require_profile_eligibility_for_signin","Profiles__enable_purchase_prompts","Concierge__enable_concierge_restricted","Analytics__enable_clearcut_logging","Cloud__enable_cloud_shell","EngEduTelemetry__enable_engedu_telemetry","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__developers_footer_dark_image","TpcFeatures__proxy_prod_host","DevPro__enable_free_benefits","Cloud__enable_cloud_dlp_service","TpcFeatures__enable_unmirrored_page_left_nav","DevPro__enable_g1_ineligible_redirect","Search__enable_ai_eligibility_checks","SignIn__enable_l1_signup_flow","DevPro__enable_g1_integration","Profiles__enable_developer_profile_benefits_ui_redesign","Profiles__enable_user_type","Concierge__enable_remove_info_panel_tags","Profiles__enable_complete_playlist_endpoint","Profiles__enable_awarding_url","DevPro__enable_firebase_workspaces_card","Cloud__enable_free_trial_server_call","DevPro__enable_devsite_captcha","MiscFeatureFlags__remove_cross_domain_tracking_params","MiscFeatureFlags__enable_explain_this_code","MiscFeatureFlags__enable_view_transitions","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_public_developer_profiles","Profiles__enable_recognition_badges","CloudShell__cloud_shell_button","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__enable_firebase_utm","Search__enable_dynamic_content_confidential_banner","Experiments__reqs_query_experiments","Profiles__enable_completequiz_endpoint","Profiles__enable_developer_profiles_callout","DevPro__enable_devpro_offers","Search__enable_page_map","Profiles__enable_auto_apply_credits","Profiles__enable_targeted_hero","DevPro__enable_enterprise","MiscFeatureFlags__enable_dark_theme","DevPro__enable_google_one_card","DevPro__remove_eu_tax_intake_form","Cloud__fast_free_trial","BookNav__enable_tenant_cache_key"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Profiles__enable_complete_playlist_endpoint","Profiles__enable_join_program_group_endpoint","DevPro__enable_credits_banner","DevPro__enable_nvidia_credits_card","MiscFeatureFlags__enable_appearance_cookies","Concierge__enable_actions_menu","DevPro__enable_free_benefits","DevPro__enable_g1_ineligible_redirect","Concierge__enable_concierge_restricted","Profiles__enable_public_developer_profiles","Profiles__enable_developer_profile_pages_as_content","CloudShell__cloud_code_overflow_menu","Profiles__enable_completecodelab_endpoint","Profiles__enable_awarding_url","DevPro__enable_google_payments","DevPro__enable_code_assist","Profiles__require_profile_eligibility_for_signin","Concierge__enable_devsite_llm_tools","Profiles__enable_user_type","MiscFeatureFlags__enable_framebox_badge_methods","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_developer_profile_benefits_ui_redesign","DevPro__enable_devpro_offers","Profiles__enable_recognition_badges","BookNav__enable_tenant_cache_key","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_completequiz_endpoint","MiscFeatureFlags__enable_view_transitions","Profiles__enable_purchase_prompts","DevPro__remove_eu_tax_intake_form","DevPro__enable_google_one_card","Search__enable_ai_eligibility_checks","OnSwitch__enable","DevPro__enable_developer_subscriptions","DevPro__enable_g1_integration","Profiles__enable_targeted_hero","Profiles__enable_callout_notifications","MiscFeatureFlags__developers_footer_dark_image","DevPro__enable_firebase_workspaces_card","Cloud__enable_cloudx_experiment_ids","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__enable_variable_operator_index_yaml","Profiles__enable_auto_apply_credits","Analytics__enable_clearcut_logging","DevPro__enable_devsite_captcha","Search__enable_ai_search_summaries_for_all","MiscFeatureFlags__enable_variable_operator","Profiles__enable_profile_collections","Search__enable_suggestions_from_borg","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__enable_project_variables","MiscFeatureFlags__remove_cross_domain_tracking_params","AIStudioInteractionsToggle__interactions_are_default","MiscFeatureFlags__enable_explain_this_code","Concierge__enable_pushui","Profiles__enable_page_saving","MiscFeatureFlags__enable_dark_theme","Cloud__enable_cloud_shell","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__fix_lower_breadcrumbs","DevPro__enable_vertex_credit_card","MiscFeatureFlags__developers_footer_image","CloudShell__cloud_shell_button","DevPro__enable_embed_profile_creation","Cloud__enable_cloud_shell_fte_user_flow","Experiments__reqs_query_experiments","Cloud__enable_cloud_dlp_service","EngEduTelemetry__enable_engedu_telemetry","Search__enable_dynamic_content_confidential_banner","Search__enable_page_map","DevPro__enable_google_payments_buyflow","Cloud__cache_serialized_dynamic_content","DevPro__enable_cloud_innovators_plus","Profiles__enable_developer_profiles_callout","DevPro__enable_enterprise","Analytics__enable_devpro_interaction_logging","Profiles__enable_stripe_subscription_management","Cloud__enable_legacy_calculator_redirect","Cloud__enable_free_trial_server_call","SignIn__enable_l1_signup_flow","Cloud__fast_free_trial","TpcFeatures__proxy_prod_host","Profiles__enable_playlist_community_acl","MiscFeatureFlags__enable_explicit_template_dependencies"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 

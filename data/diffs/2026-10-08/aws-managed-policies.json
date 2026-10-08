@@ -1,0 +1,173 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:iam:GetRole",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:scheduler:CreateSchedule",
+      "aws:allow_action:scheduler:CreateScheduleGroup",
+      "aws:allow_action:scheduler:DeleteSchedule",
+      "aws:allow_action:scheduler:GetSchedule",
+      "aws:allow_action:scheduler:UpdateSchedule",
+      "aws:deny_action:connect:BatchGetAttachedFileMetadata",
+      "aws:deny_action:connect:CompleteAttachedFileUpload",
+      "aws:deny_action:connect:CreateAttachedFile",
+      "aws:deny_action:connect:DeleteAttachedFile",
+      "aws:deny_action:connect:GetAttachedFile"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "iam:GetRole",
+          "iam:PassRole",
+          "scheduler:CreateSchedule",
+          "scheduler:CreateScheduleGroup",
+          "scheduler:DeleteSchedule",
+          "scheduler:GetSchedule",
+          "scheduler:UpdateSchedule"
+        ],
+        "restriction:deny_actions": [
+          "connect:BatchGetAttachedFileMetadata",
+          "connect:CompleteAttachedFileUpload",
+          "connect:CreateAttachedFile",
+          "connect:DeleteAttachedFile",
+          "connect:GetAttachedFile"
+        ]
+      },
+      "removed": {
+        "restriction:deny_actions": [
+          "connect:*AttachedFile*"
+        ]
+      }
+    },
+    "removed": [
+      "aws:deny_action:connect:*AttachedFile*"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSServiceRoleForAWSTransformCustom",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 06, 2026, 18:47 UTC",
+          "before": "May 05, 2026, 19:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 06, 2026, 18:47 UTC",
+          "before": "May 05, 2026, 19:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForAWSTransformCustom.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAWSTransformCustom"
+    },
+    {
+      "display_name": "AmazonConnectSynchronizationServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "connect:BatchGetAttachedFileMetadata",
+              "connect:CompleteAttachedFileUpload",
+              "connect:CreateAttachedFile",
+              "connect:DeleteAttachedFile",
+              "connect:GetAttachedFile"
+            ],
+            "removed": [
+              "connect:*AttachedFile*"
+            ]
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 06, 2026, 17:57 UTC",
+          "before": "November 21, 2025, 20:19 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 06, 2026, 17:57 UTC",
+          "before": "November 21, 2025, 20:19 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectSynchronizationServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectSynchronizationServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSSecurityAgentWebAppPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:GetRole",
+              "iam:PassRole",
+              "scheduler:CreateSchedule",
+              "scheduler:CreateScheduleGroup",
+              "scheduler:DeleteSchedule",
+              "scheduler:GetSchedule",
+              "scheduler:UpdateSchedule"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 06, 2026, 17:27 UTC",
+          "before": "September 24, 2026, 23:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 06, 2026, 17:27 UTC",
+          "before": "September 24, 2026, 23:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 6,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-08T10:40:48Z",
+  "counts": {
+    "added_atoms": 12,
+    "added_objects": 0,
+    "changed_objects": 3,
+    "current_objects": 1601,
+    "previous_objects": 1601,
+    "removed_atoms": 1,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-08",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-07",
+  "removed_objects": []
+}
