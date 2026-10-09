@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "iiq9SFuubepyyhJPL_BrF",
+  "buildId": "HFwTLki3YbeJZmQJdZzLq",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -2919,6 +2919,15 @@
               "requestPath": "/repos/{owner}/{repo}/dispatches",
               "slug": "create-a-repository-dispatch-event",
               "subcategory": "repos",
+              "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": true,
+              "category": "repos",
+              "requestPath": "/repos/{owner}/{repo}/forks",
+              "slug": "create-a-fork",
+              "subcategory": "forks",
               "verb": "post"
             },
             {
@@ -9435,6 +9444,15 @@
               "requestPath": "/orgs/{org}/repos",
               "slug": "create-an-organization-repository",
               "subcategory": "repos",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": true,
+              "category": "repos",
+              "requestPath": "/repos/{owner}/{repo}/forks",
+              "slug": "create-a-fork",
+              "subcategory": "forks",
               "verb": "post"
             },
             {
