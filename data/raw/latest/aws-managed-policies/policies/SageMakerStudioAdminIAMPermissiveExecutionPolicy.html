@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 18, 2025, 17:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 14, 2026, 18:57 UTC</p>
+                <p><b>Edited time:</b>  October 08, 2026, 18:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioAdminIAMPermissiveExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v21 (default)</p>
+        <p><b>Policy version:</b> v22 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -281,7 +281,8 @@
             "emr-serverless.amazonaws.com",
             "elasticmapreduce.amazonaws.com",
             "airflow-serverless.amazonaws.com",
-            "pods.eks.amazonaws.com"
+            "pods.eks.amazonaws.com",
+            "access-grants.s3.amazonaws.com"
           ]
         }
       }
@@ -757,7 +758,11 @@
       "Sid" : "SSOApplicationPermissions",
       "Effect" : "Allow",
       "Action" : [
+        "identitystore:DescribeUser",
+        "identitystore:DescribeGroup",
         "sso:CreateApplication",
+        "sso:DescribeInstance",
+        "sso:DescribeApplication",
         "sso:PutApplicationGrant",
         "sso:PutApplicationAssignmentConfiguration",
         "sso:PutApplicationAuthenticationMethod",

@@ -1,0 +1,458 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudformation:ListStackResources",
+      "aws:allow_action:cloudformation:TagResource",
+      "aws:allow_action:deadline:ListMemberships",
+      "aws:allow_action:deadline:ListMemberships",
+      "aws:allow_action:deadline:ListMemberships",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:identitystore:DescribeGroup",
+      "aws:allow_action:identitystore:DescribeGroup",
+      "aws:allow_action:identitystore:DescribeGroup",
+      "aws:allow_action:identitystore:DescribeUser",
+      "aws:allow_action:identitystore:DescribeUser",
+      "aws:allow_action:identitystore:DescribeUser",
+      "aws:allow_action:resource-groups:SearchResources",
+      "aws:allow_action:s3:CreateAccessGrant",
+      "aws:allow_action:s3:CreateAccessGrantsLocation",
+      "aws:allow_action:s3:DeleteAccessGrant",
+      "aws:allow_action:s3:DeleteAccessGrantsLocation",
+      "aws:allow_action:s3:DeleteObjectVersion",
+      "aws:allow_action:s3:GetAccessGrantsInstance",
+      "aws:allow_action:s3:GetAccessGrantsInstanceForPrefix",
+      "aws:allow_action:s3:GetAccessGrantsLocation",
+      "aws:allow_action:s3:GetDataAccess",
+      "aws:allow_action:s3:GetObject",
+      "aws:allow_action:s3:GetObjectAcl",
+      "aws:allow_action:s3:GetObjectVersion",
+      "aws:allow_action:s3:GetObjectVersionAcl",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:s3:PutObjectAcl",
+      "aws:allow_action:s3:PutObjectVersionAcl",
+      "aws:allow_action:s3:TagResource",
+      "aws:allow_action:sso:DescribeApplication",
+      "aws:allow_action:sso:DescribeApplication",
+      "aws:allow_action:sso:DescribeApplication",
+      "aws:allow_action:sso:DescribeInstance",
+      "aws:allow_action:sso:DescribeInstance",
+      "aws:allow_action:sso:DescribeInstance"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudformation:ListStackResources",
+          "cloudformation:TagResource",
+          "deadline:ListMemberships",
+          "deadline:ListMemberships",
+          "deadline:ListMemberships",
+          "iam:CreateServiceLinkedRole",
+          "identitystore:DescribeGroup",
+          "identitystore:DescribeGroup",
+          "identitystore:DescribeGroup",
+          "identitystore:DescribeUser",
+          "identitystore:DescribeUser",
+          "identitystore:DescribeUser",
+          "resource-groups:SearchResources",
+          "s3:CreateAccessGrant",
+          "s3:CreateAccessGrantsLocation",
+          "s3:DeleteAccessGrant",
+          "s3:DeleteAccessGrantsLocation",
+          "s3:DeleteObjectVersion",
+          "s3:GetAccessGrantsInstance",
+          "s3:GetAccessGrantsInstanceForPrefix",
+          "s3:GetAccessGrantsLocation",
+          "s3:GetDataAccess",
+          "s3:GetObject",
+          "s3:GetObjectAcl",
+          "s3:GetObjectVersion",
+          "s3:GetObjectVersionAcl",
+          "s3:PutObject",
+          "s3:PutObjectAcl",
+          "s3:PutObjectVersionAcl",
+          "s3:TagResource",
+          "sso:DescribeApplication",
+          "sso:DescribeApplication",
+          "sso:DescribeApplication",
+          "sso:DescribeInstance",
+          "sso:DescribeInstance",
+          "sso:DescribeInstance"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSDeadlineCloud-UserAccessFarms",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "deadline:ListMemberships"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 09, 2026, 16:37 UTC",
+          "before": "May 29, 2026, 20:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 09, 2026, 16:37 UTC",
+          "before": "May 29, 2026, 20:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessFarms.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessFarms"
+    },
+    {
+      "display_name": "AWSDeadlineCloud-UserAccessFleets",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "deadline:ListMemberships"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 09, 2026, 16:47 UTC",
+          "before": "May 29, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 09, 2026, 16:47 UTC",
+          "before": "May 29, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessFleets.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessFleets"
+    },
+    {
+      "display_name": "AWSDeadlineCloud-UserAccessQueues",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "deadline:ListMemberships"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 09, 2026, 16:57 UTC",
+          "before": "October 07, 2024, 18:25 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 09, 2026, 16:57 UTC",
+          "before": "October 07, 2024, 18:25 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessQueues.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessQueues"
+    },
+    {
+      "display_name": "AmazonRoute53FullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:CreateServiceLinkedRole"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 08, 2026, 20:17 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 08, 2026, 20:17 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRoute53FullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonRoute53FullAccess"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "identitystore:DescribeGroup",
+              "identitystore:DescribeUser",
+              "s3:CreateAccessGrant",
+              "s3:CreateAccessGrantsLocation",
+              "s3:DeleteAccessGrant",
+              "s3:DeleteAccessGrantsLocation",
+              "s3:DeleteObjectVersion",
+              "s3:GetAccessGrantsInstance",
+              "s3:GetAccessGrantsInstanceForPrefix",
+              "s3:GetAccessGrantsLocation",
+              "s3:GetDataAccess",
+              "s3:GetObject",
+              "s3:GetObjectAcl",
+              "s3:GetObjectVersion",
+              "s3:GetObjectVersionAcl",
+              "s3:PutObject",
+              "s3:PutObjectAcl",
+              "s3:PutObjectVersionAcl",
+              "s3:TagResource",
+              "sso:DescribeApplication",
+              "sso:DescribeInstance"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v25 (default)",
+          "before": "v24 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 08, 2026, 18:57 UTC",
+          "before": "July 14, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 08, 2026, 18:57 UTC",
+          "before": "July 14, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 76,
+          "before": 72,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "identitystore:DescribeGroup",
+              "identitystore:DescribeUser",
+              "sso:DescribeApplication",
+              "sso:DescribeInstance"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v22 (default)",
+          "before": "v21 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 08, 2026, 18:57 UTC",
+          "before": "July 14, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 08, 2026, 18:57 UTC",
+          "before": "July 14, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "identitystore:DescribeGroup",
+              "identitystore:DescribeUser",
+              "sso:DescribeApplication",
+              "sso:DescribeInstance"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v25 (default)",
+          "before": "v24 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 08, 2026, 17:57 UTC",
+          "before": "August 13, 2026, 18:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 08, 2026, 17:57 UTC",
+          "before": "August 13, 2026, 18:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 37,
+          "before": 35,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "AWSWellArchitectedAgentResourceScanningServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:ListStackResources",
+              "resource-groups:SearchResources"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 08, 2026, 19:37 UTC",
+          "before": "September 24, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 08, 2026, 19:37 UTC",
+          "before": "September 24, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentResourceScanningServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentResourceScanningServiceRolePolicy"
+    },
+    {
+      "display_name": "CloudwatchApplicationInsightsServiceLinkedRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudformation:TagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v26 (default)",
+          "before": "v25 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 09, 2026, 16:27 UTC",
+          "before": "July 25, 2024, 16:24 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 09, 2026, 16:27 UTC",
+          "before": "July 25, 2024, 16:24 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 37,
+          "before": 36,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudwatchApplicationInsightsServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/CloudwatchApplicationInsightsServiceLinkedRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-10T09:55:27Z",
+  "counts": {
+    "added_atoms": 36,
+    "added_objects": 0,
+    "changed_objects": 9,
+    "current_objects": 1601,
+    "previous_objects": 1601,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-10",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-09",
+  "removed_objects": []
+}
