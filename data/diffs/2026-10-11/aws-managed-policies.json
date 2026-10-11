@@ -1,0 +1,102 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:deadline:ListMemberships",
+      "aws:allow_action:ec2:ValidateSecurityGroupQuotasForInterface"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "deadline:ListMemberships",
+          "ec2:ValidateSecurityGroupQuotasForInterface"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSDeadlineCloud-UserAccessJobs",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "deadline:ListMemberships"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 09, 2026, 17:07 UTC",
+          "before": "October 07, 2024, 18:24 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 09, 2026, 17:07 UTC",
+          "before": "October 07, 2024, 18:24 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDeadlineCloud-UserAccessJobs.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSDeadlineCloud-UserAccessJobs"
+    },
+    {
+      "display_name": "ElasticLoadBalancingFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:ValidateSecurityGroupQuotasForInterface"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 09, 2026, 19:27 UTC",
+          "before": "February 23, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 09, 2026, 19:27 UTC",
+          "before": "February 23, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ElasticLoadBalancingFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/ElasticLoadBalancingFullAccess"
+    }
+  ],
+  "compared_at_utc": "2026-10-11T10:04:55Z",
+  "counts": {
+    "added_atoms": 2,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1601,
+    "previous_objects": 1601,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-11",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-10",
+  "removed_objects": []
+}

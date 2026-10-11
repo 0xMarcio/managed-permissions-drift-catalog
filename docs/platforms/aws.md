@@ -1,18 +1,18 @@
 # AWS
 
-- Refreshed at: `2026-10-10T09:55:27Z`
+- Refreshed at: `2026-10-11T10:04:55Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | `1,601` | `+0 / ~9 / -0` | `+36 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-10/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
+| AWS managed policies | `1,601` | `+0 / ~2 / -0` | `+2 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-11/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
 
 ## Dataset details
 
 ### AWS managed policies
 
 - Inventory: `1,601` objects.
-- Today: ~9 changed, +36 atoms.
-- Biggest changes: `SageMakerStudioAdminIAMDefaultExecutionPolicy` (+21), `SageMakerStudioAdminIAMPermissiveExecutionPolicy` (+4), `SageMakerStudioUserIAMPermissiveExecutionPolicy` (+4).
-- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-10/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
+- Today: ~2 changed, +2 atoms.
+- Biggest changes: `AWSDeadlineCloud-UserAccessJobs` (+1), `ElasticLoadBalancingFullAccess` (+1).
+- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-11/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
