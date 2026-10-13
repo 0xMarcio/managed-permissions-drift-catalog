@@ -1,0 +1,105 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:glue:UpdateDatabase",
+      "aws:allow_action:securityagent:BatchDisassociateFindingIssue",
+      "aws:allow_action:securityagent:BatchExportFindings"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "glue:UpdateDatabase",
+          "securityagent:BatchDisassociateFindingIssue",
+          "securityagent:BatchExportFindings"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSSecurityAgentWebAppPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "securityagent:BatchDisassociateFindingIssue",
+              "securityagent:BatchExportFindings"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 12, 2026, 16:17 UTC",
+          "before": "October 06, 2026, 17:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 12, 2026, 16:17 UTC",
+          "before": "October 06, 2026, 17:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "glue:UpdateDatabase"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v84 (default)",
+          "before": "v83 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 12, 2026, 16:17 UTC",
+          "before": "September 22, 2026, 21:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 12, 2026, 16:17 UTC",
+          "before": "September 22, 2026, 21:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-13T10:41:48Z",
+  "counts": {
+    "added_atoms": 3,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1601,
+    "previous_objects": 1601,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-13",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-12",
+  "removed_objects": []
+}
