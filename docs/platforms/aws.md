@@ -1,18 +1,19 @@
 # AWS
 
-- Refreshed at: `2026-10-13T10:41:48Z`
+- Refreshed at: `2026-10-14T08:47:33Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | `1,601` | `+0 / ~2 / -0` | `+3 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-13/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
+| AWS managed policies | `1,603` | `+2 / ~1 / -0` | `+48 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-14/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
 
 ## Dataset details
 
 ### AWS managed policies
 
-- Inventory: `1,601` objects.
-- Today: ~2 changed, +3 atoms.
-- Biggest changes: `AWSSecurityAgentWebAppPolicy` (+2), `SageMakerStudioProjectProvisioningRolePolicy` (+1).
-- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-13/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
+- Inventory: `1,603` objects.
+- Today: +2 objects, ~1 changed, +48 atoms.
+- Biggest additions: `AmazonSageMakerTrainingSessionAccess` (+26 atoms), `AmazonSageMakerTrainingSessionFullAccess` (+21 atoms).
+- Biggest changes: `AWSElasticLoadBalancingClassicServiceRolePolicy` (+1).
+- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-14/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)

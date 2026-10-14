@@ -1,0 +1,223 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:iam:PassRole",
+        "aws:allow_action:kms:Decrypt",
+        "aws:allow_action:kms:GenerateDataKey",
+        "aws:allow_action:s3:CreateBucket",
+        "aws:allow_action:s3:DeleteObject",
+        "aws:allow_action:s3:ListBucket",
+        "aws:allow_action:sagemaker:AddTags",
+        "aws:allow_action:sagemaker:CallWithBearerToken",
+        "aws:allow_action:sagemaker:CreateModelPackageGroup",
+        "aws:allow_action:sagemaker:CreateTrainingSession",
+        "aws:allow_action:sagemaker:DeleteModelPackage",
+        "aws:allow_action:sagemaker:DeleteTrainingSession",
+        "aws:allow_action:sagemaker:DescribeHubContent",
+        "aws:allow_action:sagemaker:DescribeModelPackage",
+        "aws:allow_action:sagemaker:DescribeModelPackageGroup",
+        "aws:allow_action:sagemaker:DescribeTrainingSession",
+        "aws:allow_action:sagemaker:ExecuteSamplingOperation",
+        "aws:allow_action:sagemaker:ExecuteTrainingOperation",
+        "aws:allow_action:sagemaker:GetSamplingOperationResult",
+        "aws:allow_action:sagemaker:GetTrainingOperationResult",
+        "aws:allow_action:sagemaker:ListHubContents",
+        "aws:allow_action:sagemaker:ListModelPackages",
+        "aws:allow_action:sagemaker:ListTrainingSessions",
+        "aws:allow_action:sagemaker:SampleTrainingSession",
+        "aws:allow_action:sagemaker:SampleTrainingSessionWithResponseStream",
+        "aws:allow_action:sagemaker:StopTrainingSession"
+      ],
+      "display_name": "AmazonSageMakerTrainingSessionAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerTrainingSessionAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerTrainingSessionAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteNetworkInterface",
+        "aws:allow_action:ec2:DeleteNetworkInterfacePermission",
+        "aws:allow_action:ec2:DescribeDhcpOptions",
+        "aws:allow_action:ec2:DescribeNetworkInterfaces",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:kms:Decrypt",
+        "aws:allow_action:kms:DescribeKey",
+        "aws:allow_action:kms:GenerateDataKey",
+        "aws:allow_action:s3:GetObject",
+        "aws:allow_action:s3:ListBucket",
+        "aws:allow_action:s3:PutObject",
+        "aws:allow_action:sagemaker:AccessModelPackage",
+        "aws:allow_action:sagemaker:CreateModelPackage",
+        "aws:allow_action:sagemaker:DescribeHubContent",
+        "aws:allow_action:sagemaker:DescribeModelPackage",
+        "aws:allow_action:sagemaker:DescribeModelPackageGroup"
+      ],
+      "display_name": "AmazonSageMakerTrainingSessionFullAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerTrainingSessionFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerTrainingSessionFullAccess"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteNetworkInterface",
+      "aws:allow_action:ec2:DeleteNetworkInterfacePermission",
+      "aws:allow_action:ec2:DescribeDhcpOptions",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ec2:ValidateSecurityGroupQuotasForInterface",
+      "aws:allow_action:iam:PassRole",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:s3:CreateBucket",
+      "aws:allow_action:s3:DeleteObject",
+      "aws:allow_action:s3:GetObject",
+      "aws:allow_action:s3:ListBucket",
+      "aws:allow_action:s3:ListBucket",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:sagemaker:AccessModelPackage",
+      "aws:allow_action:sagemaker:AddTags",
+      "aws:allow_action:sagemaker:CallWithBearerToken",
+      "aws:allow_action:sagemaker:CreateModelPackage",
+      "aws:allow_action:sagemaker:CreateModelPackageGroup",
+      "aws:allow_action:sagemaker:CreateTrainingSession",
+      "aws:allow_action:sagemaker:DeleteModelPackage",
+      "aws:allow_action:sagemaker:DeleteTrainingSession",
+      "aws:allow_action:sagemaker:DescribeHubContent",
+      "aws:allow_action:sagemaker:DescribeHubContent",
+      "aws:allow_action:sagemaker:DescribeModelPackage",
+      "aws:allow_action:sagemaker:DescribeModelPackage",
+      "aws:allow_action:sagemaker:DescribeModelPackageGroup",
+      "aws:allow_action:sagemaker:DescribeModelPackageGroup",
+      "aws:allow_action:sagemaker:DescribeTrainingSession",
+      "aws:allow_action:sagemaker:ExecuteSamplingOperation",
+      "aws:allow_action:sagemaker:ExecuteTrainingOperation",
+      "aws:allow_action:sagemaker:GetSamplingOperationResult",
+      "aws:allow_action:sagemaker:GetTrainingOperationResult",
+      "aws:allow_action:sagemaker:ListHubContents",
+      "aws:allow_action:sagemaker:ListModelPackages",
+      "aws:allow_action:sagemaker:ListTrainingSessions",
+      "aws:allow_action:sagemaker:SampleTrainingSession",
+      "aws:allow_action:sagemaker:SampleTrainingSessionWithResponseStream",
+      "aws:allow_action:sagemaker:StopTrainingSession"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ec2:CreateNetworkInterface",
+          "ec2:CreateNetworkInterfacePermission",
+          "ec2:CreateTags",
+          "ec2:DeleteNetworkInterface",
+          "ec2:DeleteNetworkInterfacePermission",
+          "ec2:DescribeDhcpOptions",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcs",
+          "ec2:ValidateSecurityGroupQuotasForInterface",
+          "iam:PassRole",
+          "kms:Decrypt",
+          "kms:Decrypt",
+          "kms:DescribeKey",
+          "kms:GenerateDataKey",
+          "kms:GenerateDataKey",
+          "s3:CreateBucket",
+          "s3:DeleteObject",
+          "s3:GetObject",
+          "s3:ListBucket",
+          "s3:ListBucket",
+          "s3:PutObject",
+          "sagemaker:AccessModelPackage",
+          "sagemaker:AddTags",
+          "sagemaker:CallWithBearerToken",
+          "sagemaker:CreateModelPackage",
+          "sagemaker:CreateModelPackageGroup",
+          "sagemaker:CreateTrainingSession",
+          "sagemaker:DeleteModelPackage",
+          "sagemaker:DeleteTrainingSession",
+          "sagemaker:DescribeHubContent",
+          "sagemaker:DescribeHubContent",
+          "sagemaker:DescribeModelPackage",
+          "sagemaker:DescribeModelPackage",
+          "sagemaker:DescribeModelPackageGroup",
+          "sagemaker:DescribeModelPackageGroup",
+          "sagemaker:DescribeTrainingSession",
+          "sagemaker:ExecuteSamplingOperation",
+          "sagemaker:ExecuteTrainingOperation",
+          "sagemaker:GetSamplingOperationResult",
+          "sagemaker:GetTrainingOperationResult",
+          "sagemaker:ListHubContents",
+          "sagemaker:ListModelPackages",
+          "sagemaker:ListTrainingSessions",
+          "sagemaker:SampleTrainingSession",
+          "sagemaker:SampleTrainingSessionWithResponseStream",
+          "sagemaker:StopTrainingSession"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSElasticLoadBalancingClassicServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:ValidateSecurityGroupQuotasForInterface"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 12, 2026, 19:07 UTC",
+          "before": "October 07, 2019, 23:04 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 12, 2026, 19:07 UTC",
+          "before": "October 07, 2019, 23:04 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingClassicServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSElasticLoadBalancingClassicServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-14T08:47:33Z",
+  "counts": {
+    "added_atoms": 48,
+    "added_objects": 2,
+    "changed_objects": 1,
+    "current_objects": 1603,
+    "previous_objects": 1601,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-14",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-13",
+  "removed_objects": []
+}
