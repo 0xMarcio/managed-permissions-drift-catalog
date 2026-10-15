@@ -1,0 +1,156 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:datazone:CreateSubscriptionRequest",
+        "aws:allow_action:datazone:GetListing",
+        "aws:allow_action:datazone:GetSubscription",
+        "aws:allow_action:datazone:ListGroupsForUser",
+        "aws:allow_action:datazone:ListProjects",
+        "aws:allow_action:datazone:ListSharedDataApps",
+        "aws:allow_action:datazone:ListSubscriptionGrants",
+        "aws:allow_action:datazone:ListSubscriptions",
+        "aws:allow_action:datazone:SearchListings",
+        "aws:allow_action:s3:GetDataAccess",
+        "aws:allow_action:s3:ListCallerAccessGrants"
+      ],
+      "display_name": "SageMakerStudioDataAppsAccessRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDataAppsAccessRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDataAppsAccessRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aidevops:SendMessage",
+      "aws:allow_action:aidevops:UpdateBacklogTask",
+      "aws:allow_action:datazone:CreateSubscriptionRequest",
+      "aws:allow_action:datazone:GetListing",
+      "aws:allow_action:datazone:GetSubscription",
+      "aws:allow_action:datazone:ListGroupsForUser",
+      "aws:allow_action:datazone:ListProjects",
+      "aws:allow_action:datazone:ListSharedDataApps",
+      "aws:allow_action:datazone:ListSubscriptionGrants",
+      "aws:allow_action:datazone:ListSubscriptions",
+      "aws:allow_action:datazone:SearchListings",
+      "aws:allow_action:ec2:ValidateSecurityGroupQuotasForInterface",
+      "aws:allow_action:s3:GetDataAccess",
+      "aws:allow_action:s3:ListCallerAccessGrants"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aidevops:SendMessage",
+          "aidevops:UpdateBacklogTask",
+          "datazone:CreateSubscriptionRequest",
+          "datazone:GetListing",
+          "datazone:GetSubscription",
+          "datazone:ListGroupsForUser",
+          "datazone:ListProjects",
+          "datazone:ListSharedDataApps",
+          "datazone:ListSubscriptionGrants",
+          "datazone:ListSubscriptions",
+          "datazone:SearchListings",
+          "ec2:ValidateSecurityGroupQuotasForInterface",
+          "s3:GetDataAccess",
+          "s3:ListCallerAccessGrants"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSElasticLoadBalancingServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:ValidateSecurityGroupQuotasForInterface"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 13, 2026, 19:47 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 13, 2026, 19:47 UTC",
+          "before": "February 12, 2026, 17:58 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSElasticLoadBalancingServiceRolePolicy"
+    },
+    {
+      "display_name": "AIDevOpsConstellationAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:SendMessage",
+              "aidevops:UpdateBacklogTask"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 13, 2026, 20:37 UTC",
+          "before": "August 05, 2026, 16:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 13, 2026, 20:37 UTC",
+          "before": "August 05, 2026, 16:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsConstellationAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AIDevOpsConstellationAccessPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-15T08:22:04Z",
+  "counts": {
+    "added_atoms": 14,
+    "added_objects": 1,
+    "changed_objects": 2,
+    "current_objects": 1604,
+    "previous_objects": 1603,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-15",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-14",
+  "removed_objects": []
+}

@@ -47,7 +47,7 @@
     },
     {
       "title": "Flow",
-      "name": "aisandbox.googleapis.com, flow.googleapis.com",
+      "name": "flow.googleapis.com, aisandbox.googleapis.com",
       "url": "/iam/docs/roles-permissions/flow"
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "anthosservicemesh.googleapis.com, meshconfig.googleapis.com, meshdataplane.googleapis.com, trafficdirector.googleapis.com",
+      "name": "trafficdirector.googleapis.com, meshconfig.googleapis.com, meshdataplane.googleapis.com, anthosservicemesh.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "title": "Cloud IoT",
-      "name": "cloudiottoken.googleapis.com, cloudiot.googleapis.com",
+      "name": "cloudiot.googleapis.com, cloudiottoken.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudiot"
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "cloudmessaging.googleapis.com, firebasenotifications.googleapis.com, firebasecloudmessaging.googleapis.com",
+      "name": "firebasenotifications.googleapis.com, cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
@@ -477,7 +477,7 @@
     },
     {
       "title": "Web Security Scanner",
-      "name": "websecurityscanner.googleapis.com, cloudsecurityscanner.googleapis.com",
+      "name": "cloudsecurityscanner.googleapis.com, websecurityscanner.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudsecurityscanner"
     },
     {
@@ -502,7 +502,7 @@
     },
     {
       "title": "Cloud TPU",
-      "name": "cloudtpu.googleapis.com, tpu.googleapis.com",
+      "name": "tpu.googleapis.com, cloudtpu.googleapis.com",
       "url": "/iam/docs/roles-permissions/tpu"
     },
     {
@@ -537,7 +537,7 @@
     },
     {
       "title": "Commerce Price Management",
-      "name": "commerceprice.googleapis.com, commercepricemanagement.googleapis.com",
+      "name": "commercepricemanagement.googleapis.com, commerceprice.googleapis.com",
       "url": "/iam/docs/roles-permissions/commercepricemanagement"
     },
     {
@@ -717,7 +717,7 @@
     },
     {
       "title": "Firestore",
-      "name": "datastore.googleapis.com, firestore.googleapis.com",
+      "name": "firestore.googleapis.com, datastore.googleapis.com",
       "url": "/iam/docs/roles-permissions/firestore"
     },
     {
@@ -727,7 +727,7 @@
     },
     {
       "title": "Data Studio",
-      "name": "datastudio.googleapis.com, lookerstudio.googleapis.com",
+      "name": "lookerstudio.googleapis.com, datastudio.googleapis.com",
       "url": "/iam/docs/roles-permissions/datastudio"
     },
     {
@@ -777,7 +777,7 @@
     },
     {
       "title": "Document AI",
-      "name": "documentaicore.googleapis.com, documentai.googleapis.com",
+      "name": "documentai.googleapis.com, documentaicore.googleapis.com",
       "url": "/iam/docs/roles-permissions/clouddocumentai"
     },
     {
@@ -1716,6 +1716,11 @@
       "url": "/iam/docs/roles-permissions/vpcaccess"
     },
     {
+      "title": "Wiz",
+      "name": "wiz.googleapis.com",
+      "url": "/iam/docs/roles-permissions/wiz"
+    },
+    {
       "title": "Workflows",
       "name": "workflows.googleapis.com",
       "url": "/iam/docs/roles-permissions/workflows"
@@ -2034,6 +2039,30 @@
       "title": "Vertex AI Agent Sandbox Service Agent",
       "name": "roles/aiplatform.agentSandboxServiceAgent",
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentSandboxServiceAgent",
+      "priority": 2
+    },
+    {
+      "title": "Agent Platform Agents Admin Role",
+      "name": "roles/aiplatform.agentsAdmin",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentsAdmin",
+      "priority": 2
+    },
+    {
+      "title": "Agent Platform Agents Creator Role",
+      "name": "roles/aiplatform.agentsCreator",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentsCreator",
+      "priority": 2
+    },
+    {
+      "title": "Agent Platform Agents User Role",
+      "name": "roles/aiplatform.agentsUser",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentsUser",
+      "priority": 2
+    },
+    {
+      "title": "Agent Platform Agents Viewer Role",
+      "name": "roles/aiplatform.agentsViewer",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentsViewer",
       "priority": 2
     },
     {
@@ -6543,6 +6572,18 @@
       "priority": 1
     },
     {
+      "title": "Database Insights Admin",
+      "name": "roles/databaseinsights.admin",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.admin",
+      "priority": 1
+    },
+    {
+      "title": "Database Insights Editor",
+      "name": "roles/databaseinsights.editor",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.editor",
+      "priority": 1
+    },
+    {
       "title": "Database Insights Viewer",
       "name": "roles/databaseinsights.viewer",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.viewer",
@@ -6588,6 +6629,12 @@
       "title": "Database Insights Service Agent",
       "name": "roles/databaseinsights.serviceAgent",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.serviceAgent",
+      "priority": 2
+    },
+    {
+      "title": "Telemetry Config Fetcher",
+      "name": "roles/databaseinsights.telemetryConfigFetcher",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.telemetryConfigFetcher",
       "priority": 2
     },
     {
@@ -15969,6 +16016,36 @@
       "priority": 2
     },
     {
+      "title": "Wiz Cloud Inventory Viewer",
+      "name": "roles/wiz.cloudInventoryViewer",
+      "url": "/iam/docs/roles-permissions/wiz#wiz.cloudInventoryViewer",
+      "priority": 2
+    },
+    {
+      "title": "Wiz Data Security Manager",
+      "name": "roles/wiz.dataSecurityScanner",
+      "url": "/iam/docs/roles-permissions/wiz#wiz.dataSecurityScanner",
+      "priority": 2
+    },
+    {
+      "title": "Wiz Forensics Responder",
+      "name": "roles/wiz.forensicsResponder",
+      "url": "/iam/docs/roles-permissions/wiz#wiz.forensicsResponder",
+      "priority": 2
+    },
+    {
+      "title": "Wiz Serverless & Container Image Registry Scanner",
+      "name": "roles/wiz.serverlessImageRegistryScanner",
+      "url": "/iam/docs/roles-permissions/wiz#wiz.serverlessImageRegistryScanner",
+      "priority": 2
+    },
+    {
+      "title": "Wiz Workload Scanner",
+      "name": "roles/wiz.workloadScanner",
+      "url": "/iam/docs/roles-permissions/wiz#wiz.workloadScanner",
+      "priority": 2
+    },
+    {
       "title": "Workflows Admin",
       "name": "roles/workflows.admin",
       "url": "/iam/docs/roles-permissions/workflows#workflows.admin",
@@ -16661,6 +16738,26 @@
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentExamples.update"
     },
     {
+      "title": "aiplatform.agentMemories.delete",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentMemories.delete"
+    },
+    {
+      "title": "aiplatform.agentMemories.get",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentMemories.get"
+    },
+    {
+      "title": "aiplatform.agentMemories.list",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentMemories.list"
+    },
+    {
+      "title": "aiplatform.agentMemories.undelete",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentMemories.undelete"
+    },
+    {
+      "title": "aiplatform.agentMemories.update",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agentMemories.update"
+    },
+    {
       "title": "aiplatform.agents.create",
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agents.create"
     },
@@ -16673,8 +16770,20 @@
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agents.get"
     },
     {
+      "title": "aiplatform.agents.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agents.getIamPolicy"
+    },
+    {
       "title": "aiplatform.agents.list",
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agents.list"
+    },
+    {
+      "title": "aiplatform.agents.suspend",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agents.suspend"
+    },
+    {
+      "title": "aiplatform.agents.unsuspend",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.agents.unsuspend"
     },
     {
       "title": "aiplatform.agents.update",
@@ -24923,6 +25032,10 @@
     {
       "title": "capacityplanner.forecasts.list",
       "url": "/iam/docs/roles-permissions/capacityplanner#capacityplanner.forecasts.list"
+    },
+    {
+      "title": "capacityplanner.messages.generate",
+      "url": "/iam/docs/roles-permissions/capacityplanner#capacityplanner.messages.generate"
     },
     {
       "title": "capacityplanner.operations.get",
@@ -34845,6 +34958,34 @@
       "url": "/iam/docs/roles-permissions/compute#compute.firewalls.update"
     },
     {
+      "title": "compute.folderVmExtensionPolicies.create",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensionPolicies.create"
+    },
+    {
+      "title": "compute.folderVmExtensionPolicies.delete",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensionPolicies.delete"
+    },
+    {
+      "title": "compute.folderVmExtensionPolicies.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensionPolicies.get"
+    },
+    {
+      "title": "compute.folderVmExtensionPolicies.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensionPolicies.list"
+    },
+    {
+      "title": "compute.folderVmExtensionPolicies.update",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensionPolicies.update"
+    },
+    {
+      "title": "compute.folderVmExtensions.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensions.get"
+    },
+    {
+      "title": "compute.folderVmExtensions.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensions.list"
+    },
+    {
       "title": "compute.forwardingRules.create",
       "url": "/iam/docs/roles-permissions/compute#compute.forwardingRules.create"
     },
@@ -36455,6 +36596,34 @@
     {
       "title": "compute.orgRollouts.resume",
       "url": "/iam/docs/roles-permissions/compute#compute.orgRollouts.resume"
+    },
+    {
+      "title": "compute.orgVmExtensionPolicies.create",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensionPolicies.create"
+    },
+    {
+      "title": "compute.orgVmExtensionPolicies.delete",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensionPolicies.delete"
+    },
+    {
+      "title": "compute.orgVmExtensionPolicies.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensionPolicies.get"
+    },
+    {
+      "title": "compute.orgVmExtensionPolicies.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensionPolicies.list"
+    },
+    {
+      "title": "compute.orgVmExtensionPolicies.update",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensionPolicies.update"
+    },
+    {
+      "title": "compute.orgVmExtensions.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensions.get"
+    },
+    {
+      "title": "compute.orgVmExtensions.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensions.list"
     },
     {
       "title": "compute.organizations.disableXpnHost",
@@ -38487,6 +38656,14 @@
     {
       "title": "compute.vmExtensionPolicies.update",
       "url": "/iam/docs/roles-permissions/compute#compute.vmExtensionPolicies.update"
+    },
+    {
+      "title": "compute.vmExtensions.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.vmExtensions.get"
+    },
+    {
+      "title": "compute.vmExtensions.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.vmExtensions.list"
     },
     {
       "title": "compute.vpnGateways.create",
@@ -42185,8 +42362,28 @@
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.activeQuery.terminate"
     },
     {
+      "title": "databaseinsights.activeSessionHistory.query",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.activeSessionHistory.query"
+    },
+    {
       "title": "databaseinsights.activitySummary.fetch",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.activitySummary.fetch"
+    },
+    {
+      "title": "databaseinsights.agentPolicies.createAgentPolicy",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.agentPolicies.createAgentPolicy"
+    },
+    {
+      "title": "databaseinsights.agentPolicies.deleteAgentPolicy",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.agentPolicies.deleteAgentPolicy"
+    },
+    {
+      "title": "databaseinsights.agentPolicies.getAgentPolicy",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.agentPolicies.getAgentPolicy"
+    },
+    {
+      "title": "databaseinsights.agentPolicies.updateAgentPolicy",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.agentPolicies.updateAgentPolicy"
     },
     {
       "title": "databaseinsights.aggregatedEvents.query",
@@ -42213,6 +42410,74 @@
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.dbPerformance.query"
     },
     {
+      "title": "databaseinsights.genUiAgent.deleteBlueprint",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.genUiAgent.deleteBlueprint"
+    },
+    {
+      "title": "databaseinsights.genUiAgent.getBlueprint",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.genUiAgent.getBlueprint"
+    },
+    {
+      "title": "databaseinsights.genUiAgent.listBlueprints",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.genUiAgent.listBlueprints"
+    },
+    {
+      "title": "databaseinsights.genUiAgent.query",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.genUiAgent.query"
+    },
+    {
+      "title": "databaseinsights.genUiAgent.saveBlueprint",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.genUiAgent.saveBlueprint"
+    },
+    {
+      "title": "databaseinsights.goals.applyTaskRemediation",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.applyTaskRemediation"
+    },
+    {
+      "title": "databaseinsights.goals.createGoal",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.createGoal"
+    },
+    {
+      "title": "databaseinsights.goals.deleteGoal",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.deleteGoal"
+    },
+    {
+      "title": "databaseinsights.goals.dismissTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.dismissTask"
+    },
+    {
+      "title": "databaseinsights.goals.fixTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.fixTask"
+    },
+    {
+      "title": "databaseinsights.goals.getGoal",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.getGoal"
+    },
+    {
+      "title": "databaseinsights.goals.getTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.getTask"
+    },
+    {
+      "title": "databaseinsights.goals.listGoals",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.listGoals"
+    },
+    {
+      "title": "databaseinsights.goals.listTasks",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.listTasks"
+    },
+    {
+      "title": "databaseinsights.goals.markTaskAsDone",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.markTaskAsDone"
+    },
+    {
+      "title": "databaseinsights.goals.restoreTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.restoreTask"
+    },
+    {
+      "title": "databaseinsights.goals.updateGoal",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.goals.updateGoal"
+    },
+    {
       "title": "databaseinsights.indexRecommendations.query",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.indexRecommendations.query"
     },
@@ -42227,6 +42492,14 @@
     {
       "title": "databaseinsights.locations.list",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.locations.list"
+    },
+    {
+      "title": "databaseinsights.logs.fetch",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.logs.fetch"
+    },
+    {
+      "title": "databaseinsights.operations.get",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.operations.get"
     },
     {
       "title": "databaseinsights.performanceIssues.detect",
@@ -42253,6 +42526,10 @@
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.recommendations.query"
     },
     {
+      "title": "databaseinsights.resourceMetadata.fetch",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.resourceMetadata.fetch"
+    },
+    {
       "title": "databaseinsights.resourceRecommendations.query",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.resourceRecommendations.query"
     },
@@ -42261,8 +42538,92 @@
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.systemMetrics.fetch"
     },
     {
+      "title": "databaseinsights.telemetryConfig.fetch",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.telemetryConfig.fetch"
+    },
+    {
       "title": "databaseinsights.timeSeries.query",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.timeSeries.query"
+    },
+    {
+      "title": "databaseinsights.traces.fetch",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.traces.fetch"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.createAgentPolicy",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.createAgentPolicy"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.createContextService",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.createContextService"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.createGoal",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.createGoal"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.deleteAgentPolicy",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.deleteAgentPolicy"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.deleteContextService",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.deleteContextService"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.deleteGoal",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.deleteGoal"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.disable",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.disable"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.enable",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.enable"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.fetchContextService",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.fetchContextService"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.getAgentPolicy",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.getAgentPolicy"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.getGoal",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.getGoal"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.getTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.getTask"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.listGoals",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.listGoals"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.listTasks",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.listTasks"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.listTodos",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.listTodos"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.query",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.query"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.updateAgentPolicy",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.updateAgentPolicy"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.updateContextService",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.updateContextService"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.updateGoal",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.updateGoal"
     },
     {
       "title": "databaseinsights.virtualDbxAgent.query",
@@ -43857,6 +44218,42 @@
       "url": "/iam/docs/roles-permissions/datapipelines#datapipelines.pipelines.update"
     },
     {
+      "title": "dataplex.agentTasks.create",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.create"
+    },
+    {
+      "title": "dataplex.agentTasks.delete",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.delete"
+    },
+    {
+      "title": "dataplex.agentTasks.get",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.get"
+    },
+    {
+      "title": "dataplex.agentTasks.getData",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.getData"
+    },
+    {
+      "title": "dataplex.agentTasks.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.getIamPolicy"
+    },
+    {
+      "title": "dataplex.agentTasks.list",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.list"
+    },
+    {
+      "title": "dataplex.agentTasks.run",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.run"
+    },
+    {
+      "title": "dataplex.agentTasks.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.setIamPolicy"
+    },
+    {
+      "title": "dataplex.agentTasks.update",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.agentTasks.update"
+    },
+    {
       "title": "dataplex.aspectTypes.create",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.aspectTypes.create"
     },
@@ -44499,6 +44896,10 @@
     {
       "title": "dataplex.entryGroups.useSynonymEntryLink",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useSynonymEntryLink"
+    },
+    {
+      "title": "dataplex.entryGroups.useUsageAspect",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useUsageAspect"
     },
     {
       "title": "dataplex.entryLinkTypes.create",
@@ -57829,30 +58230,6 @@
       "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.templates.useToStreamSanitizeUserPrompt"
     },
     {
-      "title": "modelarmor.topics.create",
-      "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.topics.create"
-    },
-    {
-      "title": "modelarmor.topics.delete",
-      "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.topics.delete"
-    },
-    {
-      "title": "modelarmor.topics.get",
-      "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.topics.get"
-    },
-    {
-      "title": "modelarmor.topics.list",
-      "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.topics.list"
-    },
-    {
-      "title": "modelarmor.topics.test",
-      "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.topics.test"
-    },
-    {
-      "title": "modelarmor.topics.update",
-      "url": "/iam/docs/roles-permissions/modelarmor#modelarmor.topics.update"
-    },
-    {
       "title": "monitoring.alertPolicies.create",
       "url": "/iam/docs/roles-permissions/monitoring#monitoring.alertPolicies.create"
     },
@@ -59043,6 +59420,10 @@
     {
       "title": "networkconnectivity.spokes.update",
       "url": "/iam/docs/roles-permissions/networkconnectivity#networkconnectivity.spokes.update"
+    },
+    {
+      "title": "networkconnectivity.spokes.use",
+      "url": "/iam/docs/roles-permissions/networkconnectivity#networkconnectivity.spokes.use"
     },
     {
       "title": "networkconnectivity.transports.create",
@@ -61041,6 +61422,34 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseCharacterSets.list"
     },
     {
+      "title": "oracledatabase.databaseConnections.create",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.create"
+    },
+    {
+      "title": "oracledatabase.databaseConnections.delete",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.delete"
+    },
+    {
+      "title": "oracledatabase.databaseConnections.executeSql",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.executeSql"
+    },
+    {
+      "title": "oracledatabase.databaseConnections.get",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.get"
+    },
+    {
+      "title": "oracledatabase.databaseConnections.list",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.list"
+    },
+    {
+      "title": "oracledatabase.databaseConnections.test",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.test"
+    },
+    {
+      "title": "oracledatabase.databaseConnections.update",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.update"
+    },
+    {
       "title": "oracledatabase.databases.get",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databases.get"
     },
@@ -61275,6 +61684,10 @@
     {
       "title": "oracledatabase.odbNetworks.update",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbNetworks.update"
+    },
+    {
+      "title": "oracledatabase.odbNetworks.use",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbNetworks.use"
     },
     {
       "title": "oracledatabase.odbSubnets.create",
