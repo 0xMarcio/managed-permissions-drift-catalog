@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:55 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  September 14, 2026, 20:37 UTC</p>
+                <p><b>Edited time:</b>  October 14, 2026, 19:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectRoleMachineLearningPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v44 (default)</p>
+        <p><b>Policy version:</b> v45 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -1212,8 +1212,10 @@
       "Sid" : "ConsumerS3AGPermission",
       "Effect" : "Allow",
       "Action" : [
+        "s3:GetAccessGrantsInstance",
         "s3:GetAccessGrantsInstanceForPrefix",
         "s3:GetDataAccess",
+        "s3:ListAccessGrants",
         "s3:ListCallerAccessGrants",
         "ram:GetResourceShareInvitations"
       ],
@@ -1322,13 +1324,19 @@
       "Action" : [
         "datazone:GenerateCode",
         "datazone:CreateAsset*",
+        "datazone:Get*",
+        "datazone:CreateListingChangeSet",
+        "datazone:CreateSubscriptionRequest",
+        "datazone:RevokeSubscription",
         "datazone:List*",
         "datazone:Search*",
         "datazone:*Message*",
         "datazone:*Conversation*",
         "datazone:*Cell*",
         "datazone:*Notebook*",
-        "datazone:*Compute*"
+        "datazone:*Compute*",
+        "datazone:*Agent*",
+        "datazone:*DataApp*"
       ],
       "Resource" : "*"
     },
@@ -1358,6 +1366,22 @@
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
           "aws:ResourceTag/sqlworkbench-resource-owner" : "$<span>{</span>aws:userid}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SSOReadOnlyPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "identitystore:DescribeUser",
+        "identitystore:DescribeGroup",
+        "sso:DescribeInstance",
+        "sso:DescribeApplication"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "Bool" : <span>{</span>
+          "aws:ViaAWSService" : "true"
         }
       }
     }

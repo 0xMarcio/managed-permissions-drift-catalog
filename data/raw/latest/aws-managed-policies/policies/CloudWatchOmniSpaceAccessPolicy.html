@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: September 22, 2026, 01:47 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  September 22, 2026, 01:47 UTC</p>
+                <p><b>Edited time:</b>  October 14, 2026, 22:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchOmniSpaceAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -547,6 +547,50 @@
           "aws:ResourceTag/cw-omni" : "true"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "IdentityStoreReadForPrincipalSearch",
+      "Effect" : "Allow",
+      "Action" : [
+        "identitystore:ListUsers",
+        "identitystore:ListGroups",
+        "identitystore:DescribeUser",
+        "identitystore:DescribeGroup"
+      ],
+      "Resource" : [
+        "arn:aws:identitystore::*:identitystore/*",
+        "arn:aws:identitystore:::user/*",
+        "arn:aws:identitystore:::group/*"
+      ],
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "cloudwatch.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "KmsDecryptForIdentityStoreCMK",
+      "Effect" : "Allow",
+      "Action" : "kms:Decrypt",
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "kms:EncryptionContextKeys" : [
+            "aws:identitystore:identitystore-arn"
+          ]
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "identitystore.*.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SnsTopicDiscoveryForAlerts",
+      "Effect" : "Allow",
+      "Action" : "sns:ListTopics",
+      "Resource" : "*"
     }
   ]
 }</code></pre>

@@ -1,0 +1,465 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:bedrock-mantle:CallWithBearerToken",
+      "aws:allow_action:bedrock-mantle:GetCustomizedModel",
+      "aws:allow_action:bedrock-mantle:GetFineTuningJob",
+      "aws:allow_action:bedrock-mantle:GetModel",
+      "aws:allow_action:bedrock-mantle:GetProject",
+      "aws:allow_action:bedrock-mantle:GetReservation",
+      "aws:allow_action:bedrock-mantle:ListCustomizedModelAssociations",
+      "aws:allow_action:bedrock-mantle:ListCustomizedModels",
+      "aws:allow_action:bedrock-mantle:ListFiles",
+      "aws:allow_action:bedrock-mantle:ListFineTuningJobs",
+      "aws:allow_action:bedrock-mantle:ListModels",
+      "aws:allow_action:bedrock-mantle:ListProjects",
+      "aws:allow_action:bedrock-mantle:ListReservations",
+      "aws:allow_action:bedrock-mantle:ListTagsForResource",
+      "aws:allow_action:datazone:*Agent*",
+      "aws:allow_action:datazone:*Agent*",
+      "aws:allow_action:datazone:*DataApp*",
+      "aws:allow_action:datazone:*DataApp*",
+      "aws:allow_action:datazone:BatchGetAttributesMetadata",
+      "aws:allow_action:datazone:BatchGetAttributesMetadata",
+      "aws:allow_action:datazone:BatchPutAttributesMetadata",
+      "aws:allow_action:datazone:BatchPutAttributesMetadata",
+      "aws:allow_action:datazone:CreateDataApp",
+      "aws:allow_action:datazone:CreateListingChangeSet",
+      "aws:allow_action:datazone:CreateSubscriptionRequest",
+      "aws:allow_action:datazone:DeleteAgentApprovalPolicy",
+      "aws:allow_action:datazone:DeleteConversation",
+      "aws:allow_action:datazone:DeleteConversation",
+      "aws:allow_action:datazone:DeleteDataApp",
+      "aws:allow_action:datazone:DeregisterAgentArtifact",
+      "aws:allow_action:datazone:Get*",
+      "aws:allow_action:datazone:InvokeAgent",
+      "aws:allow_action:datazone:PutAgentApprovalPolicy",
+      "aws:allow_action:datazone:RegisterAgentArtifact",
+      "aws:allow_action:datazone:RevokeSubscription",
+      "aws:allow_action:datazone:StopAgent",
+      "aws:allow_action:datazone:UpdateConversation",
+      "aws:allow_action:datazone:UpdateConversation",
+      "aws:allow_action:datazone:UpdateDataApp",
+      "aws:allow_action:ec2:AssociateDhcpOptions",
+      "aws:allow_action:ec2:CreateDhcpOptions",
+      "aws:allow_action:ec2:DeleteDhcpOptions",
+      "aws:allow_action:ec2:DescribeDhcpOptions",
+      "aws:allow_action:identitystore:DescribeGroup",
+      "aws:allow_action:identitystore:DescribeGroup",
+      "aws:allow_action:identitystore:DescribeUser",
+      "aws:allow_action:identitystore:DescribeUser",
+      "aws:allow_action:identitystore:ListGroups",
+      "aws:allow_action:identitystore:ListUsers",
+      "aws:allow_action:route53:GetHostedZone",
+      "aws:allow_action:route53:ListHostedZones",
+      "aws:allow_action:route53:ListResourceRecordSets",
+      "aws:allow_action:route53:ListTagsForResource",
+      "aws:allow_action:s3:GetAccessGrantsInstance",
+      "aws:allow_action:s3:ListAccessGrants",
+      "aws:allow_action:sns:ListTopics",
+      "aws:allow_action:sso:DescribeApplication",
+      "aws:allow_action:sso:DescribeInstance"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "bedrock-mantle:CallWithBearerToken",
+          "bedrock-mantle:GetCustomizedModel",
+          "bedrock-mantle:GetFineTuningJob",
+          "bedrock-mantle:GetModel",
+          "bedrock-mantle:GetProject",
+          "bedrock-mantle:GetReservation",
+          "bedrock-mantle:ListCustomizedModelAssociations",
+          "bedrock-mantle:ListCustomizedModels",
+          "bedrock-mantle:ListFiles",
+          "bedrock-mantle:ListFineTuningJobs",
+          "bedrock-mantle:ListModels",
+          "bedrock-mantle:ListProjects",
+          "bedrock-mantle:ListReservations",
+          "bedrock-mantle:ListTagsForResource",
+          "datazone:*Agent*",
+          "datazone:*Agent*",
+          "datazone:*DataApp*",
+          "datazone:*DataApp*",
+          "datazone:BatchGetAttributesMetadata",
+          "datazone:BatchGetAttributesMetadata",
+          "datazone:BatchPutAttributesMetadata",
+          "datazone:BatchPutAttributesMetadata",
+          "datazone:CreateDataApp",
+          "datazone:CreateListingChangeSet",
+          "datazone:CreateSubscriptionRequest",
+          "datazone:DeleteAgentApprovalPolicy",
+          "datazone:DeleteConversation",
+          "datazone:DeleteConversation",
+          "datazone:DeleteDataApp",
+          "datazone:DeregisterAgentArtifact",
+          "datazone:Get*",
+          "datazone:InvokeAgent",
+          "datazone:PutAgentApprovalPolicy",
+          "datazone:RegisterAgentArtifact",
+          "datazone:RevokeSubscription",
+          "datazone:StopAgent",
+          "datazone:UpdateConversation",
+          "datazone:UpdateConversation",
+          "datazone:UpdateDataApp",
+          "ec2:AssociateDhcpOptions",
+          "ec2:CreateDhcpOptions",
+          "ec2:DeleteDhcpOptions",
+          "ec2:DescribeDhcpOptions",
+          "identitystore:DescribeGroup",
+          "identitystore:DescribeGroup",
+          "identitystore:DescribeUser",
+          "identitystore:DescribeUser",
+          "identitystore:ListGroups",
+          "identitystore:ListUsers",
+          "route53:GetHostedZone",
+          "route53:ListHostedZones",
+          "route53:ListResourceRecordSets",
+          "route53:ListTagsForResource",
+          "s3:GetAccessGrantsInstance",
+          "s3:ListAccessGrants",
+          "sns:ListTopics",
+          "sso:DescribeApplication",
+          "sso:DescribeInstance"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "CloudWatchOmniSpaceAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "identitystore:DescribeGroup",
+              "identitystore:DescribeUser",
+              "identitystore:ListGroups",
+              "identitystore:ListUsers",
+              "sns:ListTopics"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 14, 2026, 22:17 UTC",
+          "before": "September 22, 2026, 01:47 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 14, 2026, 22:17 UTC",
+          "before": "September 22, 2026, 01:47 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 29,
+          "before": 26,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v26 (default)",
+          "before": "v25 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "October 08, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "October 08, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v23 (default)",
+          "before": "v22 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "October 08, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "October 08, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:*Agent*",
+              "datazone:*DataApp*",
+              "datazone:CreateListingChangeSet",
+              "datazone:CreateSubscriptionRequest",
+              "datazone:Get*",
+              "datazone:RevokeSubscription",
+              "identitystore:DescribeGroup",
+              "identitystore:DescribeUser",
+              "s3:GetAccessGrantsInstance",
+              "s3:ListAccessGrants",
+              "sso:DescribeApplication",
+              "sso:DescribeInstance"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v45 (default)",
+          "before": "v44 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "September 14, 2026, 20:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "September 14, 2026, 20:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 79,
+          "before": 78,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:BatchGetAttributesMetadata",
+              "datazone:BatchPutAttributesMetadata",
+              "datazone:CreateDataApp",
+              "datazone:DeleteAgentApprovalPolicy",
+              "datazone:DeleteConversation",
+              "datazone:DeleteDataApp",
+              "datazone:DeregisterAgentArtifact",
+              "datazone:InvokeAgent",
+              "datazone:PutAgentApprovalPolicy",
+              "datazone:RegisterAgentArtifact",
+              "datazone:StopAgent",
+              "datazone:UpdateConversation",
+              "datazone:UpdateDataApp"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v31 (default)",
+          "before": "v30 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "October 08, 2026, 15:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "October 08, 2026, 15:17 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:*Agent*",
+              "datazone:*DataApp*",
+              "datazone:BatchGetAttributesMetadata",
+              "datazone:BatchPutAttributesMetadata",
+              "datazone:DeleteConversation",
+              "datazone:UpdateConversation"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v26 (default)",
+          "before": "v25 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "October 08, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 14, 2026, 19:37 UTC",
+          "before": "October 08, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "AWSIPAMServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:AssociateDhcpOptions",
+              "ec2:CreateDhcpOptions",
+              "ec2:DeleteDhcpOptions",
+              "ec2:DescribeDhcpOptions",
+              "route53:GetHostedZone",
+              "route53:ListHostedZones",
+              "route53:ListResourceRecordSets",
+              "route53:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 15, 2026, 15:57 UTC",
+          "before": "September 09, 2026, 18:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 15, 2026, 15:57 UTC",
+          "before": "September 09, 2026, 18:17 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 6,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIPAMServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSIPAMServiceRolePolicy"
+    },
+    {
+      "display_name": "ViewOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-mantle:CallWithBearerToken",
+              "bedrock-mantle:GetCustomizedModel",
+              "bedrock-mantle:GetFineTuningJob",
+              "bedrock-mantle:GetModel",
+              "bedrock-mantle:GetProject",
+              "bedrock-mantle:GetReservation",
+              "bedrock-mantle:ListCustomizedModelAssociations",
+              "bedrock-mantle:ListCustomizedModels",
+              "bedrock-mantle:ListFiles",
+              "bedrock-mantle:ListFineTuningJobs",
+              "bedrock-mantle:ListModels",
+              "bedrock-mantle:ListProjects",
+              "bedrock-mantle:ListReservations",
+              "bedrock-mantle:ListTagsForResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v47 (default)",
+          "before": "v46 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 14, 2026, 18:07 UTC",
+          "before": "September 30, 2026, 20:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 14, 2026, 18:07 UTC",
+          "before": "September 30, 2026, 20:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ViewOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
+    }
+  ],
+  "compared_at_utc": "2026-10-16T08:15:16Z",
+  "counts": {
+    "added_atoms": 58,
+    "added_objects": 0,
+    "changed_objects": 8,
+    "current_objects": 1604,
+    "previous_objects": 1604,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-16",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-15",
+  "removed_objects": []
+}
