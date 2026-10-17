@@ -1,0 +1,374 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:access-analyzer:ListAnalyzers",
+        "aws:allow_action:access-analyzer:ListFindings",
+        "aws:allow_action:apigateway:GET",
+        "aws:allow_action:ec2:CreateNetworkInsightsPath",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteNetworkInsightsAnalysis",
+        "aws:allow_action:ec2:DeleteNetworkInsightsPath",
+        "aws:allow_action:ec2:DescribeNetworkInsightsAnalyses",
+        "aws:allow_action:ec2:DescribeNetworkInsightsPaths",
+        "aws:allow_action:ec2:StartNetworkInsightsAnalysis",
+        "aws:allow_action:ecr:DescribeImages",
+        "aws:allow_action:eks:DescribeAccessEntry",
+        "aws:allow_action:eks:DescribePodIdentityAssociation",
+        "aws:allow_action:eks:ListAccessEntries",
+        "aws:allow_action:eks:ListAssociatedAccessPolicies",
+        "aws:allow_action:eks:ListPodIdentityAssociations",
+        "aws:allow_action:elasticloadbalancing:DescribeListenerAttributes",
+        "aws:allow_action:elasticloadbalancing:DescribeLoadBalancerAttributes",
+        "aws:allow_action:elasticloadbalancing:DescribeTargetGroupAttributes",
+        "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+        "aws:allow_action:guardduty:GetFindings",
+        "aws:allow_action:guardduty:ListFindings",
+        "aws:allow_action:iam:GetPolicy",
+        "aws:allow_action:iam:GetPolicyVersion",
+        "aws:allow_action:inspector2:ListFindings",
+        "aws:allow_action:lambda:GetFunction",
+        "aws:allow_action:lambda:GetLayerVersion",
+        "aws:allow_action:lambda:GetLayerVersionPolicy",
+        "aws:allow_action:lambda:GetPolicy",
+        "aws:allow_action:lambda:ListAliases",
+        "aws:allow_action:lambda:ListEventSourceMappings",
+        "aws:allow_action:lambda:ListFunctionUrlConfigs",
+        "aws:allow_action:lambda:ListVersionsByFunction",
+        "aws:allow_action:s3:GetAccountPublicAccessBlock",
+        "aws:allow_action:s3:GetBucketAcl",
+        "aws:allow_action:s3:GetBucketLocation",
+        "aws:allow_action:s3:GetBucketPolicyStatus",
+        "aws:allow_action:s3:GetBucketPublicAccessBlock",
+        "aws:allow_action:tiros:CreateQuery",
+        "aws:allow_action:tiros:GetQueryAnswer",
+        "aws:allow_action:wafv2:ListResourcesForWebACL"
+      ],
+      "display_name": "AWSContinuumCollectorServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSContinuumCollectorServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSContinuumCollectorServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:access-analyzer:ListAnalyzers",
+      "aws:allow_action:access-analyzer:ListFindings",
+      "aws:allow_action:apigateway:GET",
+      "aws:allow_action:aws-external-anthropic:CreateDeployment",
+      "aws:allow_action:ec2:CreateNetworkInsightsPath",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteNetworkInsightsAnalysis",
+      "aws:allow_action:ec2:DeleteNetworkInsightsPath",
+      "aws:allow_action:ec2:DescribeNetworkInsightsAnalyses",
+      "aws:allow_action:ec2:DescribeNetworkInsightsPaths",
+      "aws:allow_action:ec2:StartNetworkInsightsAnalysis",
+      "aws:allow_action:ecr:DescribeImages",
+      "aws:allow_action:eks:DescribeAccessEntry",
+      "aws:allow_action:eks:DescribePodIdentityAssociation",
+      "aws:allow_action:eks:ListAccessEntries",
+      "aws:allow_action:eks:ListAssociatedAccessPolicies",
+      "aws:allow_action:eks:ListPodIdentityAssociations",
+      "aws:allow_action:elasticloadbalancing:DescribeListenerAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancerAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroupAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+      "aws:allow_action:guardduty:GetFindings",
+      "aws:allow_action:guardduty:ListFindings",
+      "aws:allow_action:iam:GetPolicy",
+      "aws:allow_action:iam:GetPolicyVersion",
+      "aws:allow_action:inspector2:ListFindings",
+      "aws:allow_action:lambda:GetFunction",
+      "aws:allow_action:lambda:GetLayerVersion",
+      "aws:allow_action:lambda:GetLayerVersionPolicy",
+      "aws:allow_action:lambda:GetPolicy",
+      "aws:allow_action:lambda:ListAliases",
+      "aws:allow_action:lambda:ListEventSourceMappings",
+      "aws:allow_action:lambda:ListFunctionUrlConfigs",
+      "aws:allow_action:lambda:ListVersionsByFunction",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentDocument",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentDocument",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentMetadata",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentMetadata",
+      "aws:allow_action:partnercentral:ListPartnerCentralContent",
+      "aws:allow_action:partnercentral:ListPartnerCentralContent",
+      "aws:allow_action:partnercentral:SearchPartnerCentralContent",
+      "aws:allow_action:partnercentral:SearchPartnerCentralContent",
+      "aws:allow_action:s3:AssociateAccessGrantsIdentityCenter",
+      "aws:allow_action:s3:GetAccountPublicAccessBlock",
+      "aws:allow_action:s3:GetBucketAcl",
+      "aws:allow_action:s3:GetBucketLocation",
+      "aws:allow_action:s3:GetBucketPolicyStatus",
+      "aws:allow_action:s3:GetBucketPublicAccessBlock",
+      "aws:allow_action:sso:DeleteApplication",
+      "aws:allow_action:sso:DeleteApplication",
+      "aws:allow_action:tiros:CreateQuery",
+      "aws:allow_action:tiros:GetQueryAnswer",
+      "aws:allow_action:wafv2:ListResourcesForWebACL"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "access-analyzer:ListAnalyzers",
+          "access-analyzer:ListFindings",
+          "apigateway:GET",
+          "aws-external-anthropic:CreateDeployment",
+          "ec2:CreateNetworkInsightsPath",
+          "ec2:CreateTags",
+          "ec2:DeleteNetworkInsightsAnalysis",
+          "ec2:DeleteNetworkInsightsPath",
+          "ec2:DescribeNetworkInsightsAnalyses",
+          "ec2:DescribeNetworkInsightsPaths",
+          "ec2:StartNetworkInsightsAnalysis",
+          "ecr:DescribeImages",
+          "eks:DescribeAccessEntry",
+          "eks:DescribePodIdentityAssociation",
+          "eks:ListAccessEntries",
+          "eks:ListAssociatedAccessPolicies",
+          "eks:ListPodIdentityAssociations",
+          "elasticloadbalancing:DescribeListenerAttributes",
+          "elasticloadbalancing:DescribeLoadBalancerAttributes",
+          "elasticloadbalancing:DescribeTargetGroupAttributes",
+          "elasticloadbalancing:DescribeTargetHealth",
+          "guardduty:GetFindings",
+          "guardduty:ListFindings",
+          "iam:GetPolicy",
+          "iam:GetPolicyVersion",
+          "inspector2:ListFindings",
+          "lambda:GetFunction",
+          "lambda:GetLayerVersion",
+          "lambda:GetLayerVersionPolicy",
+          "lambda:GetPolicy",
+          "lambda:ListAliases",
+          "lambda:ListEventSourceMappings",
+          "lambda:ListFunctionUrlConfigs",
+          "lambda:ListVersionsByFunction",
+          "partnercentral:GetPartnerCentralContentDocument",
+          "partnercentral:GetPartnerCentralContentDocument",
+          "partnercentral:GetPartnerCentralContentMetadata",
+          "partnercentral:GetPartnerCentralContentMetadata",
+          "partnercentral:ListPartnerCentralContent",
+          "partnercentral:ListPartnerCentralContent",
+          "partnercentral:SearchPartnerCentralContent",
+          "partnercentral:SearchPartnerCentralContent",
+          "s3:AssociateAccessGrantsIdentityCenter",
+          "s3:GetAccountPublicAccessBlock",
+          "s3:GetBucketAcl",
+          "s3:GetBucketLocation",
+          "s3:GetBucketPolicyStatus",
+          "s3:GetBucketPublicAccessBlock",
+          "sso:DeleteApplication",
+          "sso:DeleteApplication",
+          "tiros:CreateQuery",
+          "tiros:GetQueryAnswer",
+          "wafv2:ListResourcesForWebACL"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSPartnerCentralMarketingManagement",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetPartnerCentralContentDocument",
+              "partnercentral:GetPartnerCentralContentMetadata",
+              "partnercentral:ListPartnerCentralContent",
+              "partnercentral:SearchPartnerCentralContent"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 16, 2026, 02:27 UTC",
+          "before": "February 14, 2026, 00:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 16, 2026, 02:27 UTC",
+          "before": "February 14, 2026, 00:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 9,
+          "before": 8,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralMarketingManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralMarketingManagement"
+    },
+    {
+      "display_name": "AnthropicLimitedAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-external-anthropic:CreateDeployment"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 15, 2026, 18:37 UTC",
+          "before": "October 02, 2026, 16:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 15, 2026, 18:37 UTC",
+          "before": "October 02, 2026, 16:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AnthropicLimitedAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AnthropicLimitedAccess"
+    },
+    {
+      "display_name": "PartnerCentralAccountManagementUserRoleAssociation",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetPartnerCentralContentDocument",
+              "partnercentral:GetPartnerCentralContentMetadata",
+              "partnercentral:ListPartnerCentralContent",
+              "partnercentral:SearchPartnerCentralContent"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 16, 2026, 01:27 UTC",
+          "before": "November 10, 2023, 02:03 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 16, 2026, 01:27 UTC",
+          "before": "November 10, 2023, 02:03 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PartnerCentralAccountManagementUserRoleAssociation.html",
+      "stable_id": "arn:aws:iam::aws:policy/PartnerCentralAccountManagementUserRoleAssociation"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "s3:AssociateAccessGrantsIdentityCenter",
+              "sso:DeleteApplication"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v27 (default)",
+          "before": "v26 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 15, 2026, 21:47 UTC",
+          "before": "October 14, 2026, 19:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 15, 2026, 21:47 UTC",
+          "before": "October 14, 2026, 19:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 77,
+          "before": 76,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "sso:DeleteApplication"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v24 (default)",
+          "before": "v23 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 15, 2026, 21:47 UTC",
+          "before": "October 14, 2026, 19:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 15, 2026, 21:47 UTC",
+          "before": "October 14, 2026, 19:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-17T07:51:52Z",
+  "counts": {
+    "added_atoms": 53,
+    "added_objects": 1,
+    "changed_objects": 5,
+    "current_objects": 1605,
+    "previous_objects": 1604,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-17",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-16",
+  "removed_objects": []
+}

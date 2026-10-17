@@ -1,18 +1,19 @@
 # AWS
 
-- Refreshed at: `2026-10-16T08:15:16Z`
+- Refreshed at: `2026-10-17T07:51:52Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | `1,604` | `+0 / ~8 / -0` | `+58 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-16/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
+| AWS managed policies | `1,605` | `+1 / ~5 / -0` | `+53 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-17/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
 
 ## Dataset details
 
 ### AWS managed policies
 
-- Inventory: `1,604` objects.
-- Today: ~8 changed, +58 atoms.
-- Biggest changes: `ViewOnlyAccess` (+14), `SageMakerStudioUserIAMDefaultExecutionPolicy` (+13), `SageMakerStudioProjectRoleMachineLearningPolicy` (+12).
-- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-16/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
+- Inventory: `1,605` objects.
+- Today: +1 objects, ~5 changed, +53 atoms.
+- Biggest additions: `AWSContinuumCollectorServiceRolePolicy` (+41 atoms).
+- Biggest changes: `AWSPartnerCentralMarketingManagement` (+4), `PartnerCentralAccountManagementUserRoleAssociation` (+4), `SageMakerStudioAdminIAMDefaultExecutionPolicy` (+2).
+- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-17/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
