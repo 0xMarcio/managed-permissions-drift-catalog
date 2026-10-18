@@ -1,0 +1,113 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aws-marketplace:DescribeChangeSet",
+      "aws:allow_action:aws-marketplace:ListChangeSets",
+      "aws:allow_action:aws-marketplace:ListTagsForResource",
+      "aws:allow_action:aws-marketplace:StartChangeSet",
+      "aws:allow_action:aws-marketplace:TagResource",
+      "aws:allow_action:aws-marketplace:UntagResource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aws-marketplace:DescribeChangeSet",
+          "aws-marketplace:ListChangeSets",
+          "aws-marketplace:ListTagsForResource",
+          "aws-marketplace:StartChangeSet",
+          "aws-marketplace:TagResource",
+          "aws-marketplace:UntagResource"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSPartnerCentralFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-marketplace:DescribeChangeSet",
+              "aws-marketplace:ListChangeSets",
+              "aws-marketplace:ListTagsForResource",
+              "aws-marketplace:StartChangeSet",
+              "aws-marketplace:TagResource",
+              "aws-marketplace:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 17, 2026, 11:37 UTC",
+          "before": "March 12, 2026, 17:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 17, 2026, 11:37 UTC",
+          "before": "March 12, 2026, 17:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 19,
+          "before": 15,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess"
+    },
+    {
+      "display_name": "AmazonSageMakerClusterInstanceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 16, 2026, 20:17 UTC",
+          "before": "November 29, 2023, 15:11 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 16, 2026, 20:17 UTC",
+          "before": "November 29, 2023, 15:11 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerClusterInstanceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerClusterInstanceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-18T08:06:14Z",
+  "counts": {
+    "added_atoms": 6,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1605,
+    "previous_objects": 1605,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-18",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-17",
+  "removed_objects": []
+}

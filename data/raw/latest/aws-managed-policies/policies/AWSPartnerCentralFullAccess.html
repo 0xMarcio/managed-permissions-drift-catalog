@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 18, 2024, 23:33 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 12, 2026, 17:12 UTC</p>
+                <p><b>Edited time:</b>  October 17, 2026, 11:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSPartnerCentralFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v14 (default)</p>
+        <p><b>Policy version:</b> v15 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -199,7 +199,8 @@
       "Resource" : [
         "arn:aws:aws-marketplace:*:*:AWSMarketplace*/Solution/*",
         "arn:aws:aws-marketplace:*:*:AWSMarketplace*/OfferSet/*",
-        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/Offer/*"
+        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/Offer/*",
+        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/CaseStudy/*"
       ]
     },
     <span>{</span>
@@ -248,6 +249,54 @@
           "aws:IsMcpServiceAction" : "true"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyStartChangeSet",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:StartChangeSet"
+      ],
+      "Resource" : [
+        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/CaseStudy/*",
+        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/ChangeSet/*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "catalog:ChangeType" : [
+            "CreateCaseStudy",
+            "UpdateInformation",
+            "ReleaseCaseStudy",
+            "RestrictCaseStudy",
+            "UpdateVisibility"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyDescribeChangeSet",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:DescribeChangeSet"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace*/ChangeSet/*"
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyListChangeSets",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:ListChangeSets"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyEntityTagAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:ListTagsForResource",
+        "aws-marketplace:TagResource",
+        "aws-marketplace:UntagResource"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace*/CaseStudy/*"
     }
   ]
 }</code></pre>
