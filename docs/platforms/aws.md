@@ -1,12 +1,12 @@
 # AWS
 
-- Refreshed at: `2026-10-19T08:58:47Z`
+- Refreshed at: `2026-10-20T08:37:21Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| AWS managed policies | `1,605` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-19/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
+| AWS managed policies | `1,605` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-20/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json) |
 
 ## Dataset details
 
@@ -14,4 +14,4 @@
 
 - Inventory: `1,605` objects.
 - Today: No drift detected.
-- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-19/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
+- Files: [snapshot](../../data/latest/aws-managed-policies.json) · [diff](../../data/diffs/2026-10-20/aws-managed-policies.json) · [reverse index](../../data/reverse-index/aws-managed-policies.json)
