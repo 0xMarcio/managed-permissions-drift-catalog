@@ -47,7 +47,7 @@
     },
     {
       "title": "Flow",
-      "name": "flow.googleapis.com, aisandbox.googleapis.com",
+      "name": "aisandbox.googleapis.com, flow.googleapis.com",
       "url": "/iam/docs/roles-permissions/flow"
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "trafficdirector.googleapis.com, meshconfig.googleapis.com, meshdataplane.googleapis.com, anthosservicemesh.googleapis.com",
+      "name": "meshdataplane.googleapis.com, trafficdirector.googleapis.com, anthosservicemesh.googleapis.com, meshconfig.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "title": "API Gateway",
-      "name": "apigateway.googleapis.com, apigateway.management.googleapis.com",
+      "name": "apigateway.management.googleapis.com, apigateway.googleapis.com",
       "url": "/iam/docs/roles-permissions/apigateway"
     },
     {
@@ -452,7 +452,7 @@
     },
     {
       "title": "Service Catalog",
-      "name": "cloudprivatecatalogproducer.googleapis.com, cloudprivatecatalog.googleapis.com",
+      "name": "cloudprivatecatalog.googleapis.com, cloudprivatecatalogproducer.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudprivatecatalog"
     },
     {
@@ -502,7 +502,7 @@
     },
     {
       "title": "Cloud TPU",
-      "name": "tpu.googleapis.com, cloudtpu.googleapis.com",
+      "name": "cloudtpu.googleapis.com, tpu.googleapis.com",
       "url": "/iam/docs/roles-permissions/tpu"
     },
     {
@@ -717,7 +717,7 @@
     },
     {
       "title": "Firestore",
-      "name": "firestore.googleapis.com, datastore.googleapis.com",
+      "name": "datastore.googleapis.com, firestore.googleapis.com",
       "url": "/iam/docs/roles-permissions/firestore"
     },
     {
@@ -732,7 +732,7 @@
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
+      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -777,7 +777,7 @@
     },
     {
       "title": "Document AI",
-      "name": "documentai.googleapis.com, documentaicore.googleapis.com",
+      "name": "documentaicore.googleapis.com, documentai.googleapis.com",
       "url": "/iam/docs/roles-permissions/clouddocumentai"
     },
     {
@@ -897,7 +897,7 @@
     },
     {
       "title": "Firebase Crashlytics",
-      "name": "firebasecrashlytics.googleapis.com, firebasecrash.googleapis.com",
+      "name": "firebasecrash.googleapis.com, firebasecrashlytics.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecrash"
     },
     {
@@ -1282,7 +1282,7 @@
     },
     {
       "title": "NetApp Cloud Volumes Service",
-      "name": "netappcloudvolumes.googleapis.com, cloudvolumesgcp.api.netapp.com",
+      "name": "cloudvolumesgcp.api.netapp.com, netappcloudvolumes.googleapis.com",
       "url": "/iam/docs/roles-permissions/netappcloudvolumes"
     },
     {
@@ -1417,7 +1417,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
+      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1442,7 +1442,7 @@
     },
     {
       "title": "Redis Enterprise Cloud",
-      "name": "gcp.redisenterprise.com, redisenterprisecloud.googleapis.com",
+      "name": "redisenterprisecloud.googleapis.com, gcp.redisenterprise.com",
       "url": "/iam/docs/roles-permissions/redisenterprisecloud"
     },
     {
@@ -1592,7 +1592,7 @@
     },
     {
       "title": "Cloud Source Repositories",
-      "name": "source.googleapis.com, sourcerepo.googleapis.com",
+      "name": "sourcerepo.googleapis.com, source.googleapis.com",
       "url": "/iam/docs/roles-permissions/source"
     },
     {
@@ -2804,7 +2804,7 @@
       "priority": 2
     },
     {
-      "title": "App Engine Admin",
+      "title": "App Engine Service Admin",
       "name": "roles/appengine.admin",
       "url": "/iam/docs/roles-permissions/appengine#appengine.admin",
       "priority": 1
@@ -5942,6 +5942,18 @@
       "priority": 1
     },
     {
+      "title": "Folder level Compute VM extension policies admin",
+      "name": "roles/compute.folderVmExtensionPolicyAdmin",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensionPolicyAdmin",
+      "priority": 2
+    },
+    {
+      "title": "Folder level Compute VM extension policies viewer",
+      "name": "roles/compute.folderVmExtensionPolicyViewer",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderVmExtensionPolicyViewer",
+      "priority": 2
+    },
+    {
       "title": "Compute Future Reservation Admin",
       "name": "roles/compute.futureReservationAdmin",
       "url": "/iam/docs/roles-permissions/compute#compute.futureReservationAdmin",
@@ -6017,6 +6029,18 @@
       "title": "Compute Organization Resource Admin",
       "name": "roles/compute.orgSecurityResourceAdmin",
       "url": "/iam/docs/roles-permissions/compute#compute.orgSecurityResourceAdmin",
+      "priority": 2
+    },
+    {
+      "title": "Organization level Compute VM extension policies admin",
+      "name": "roles/compute.orgVmExtensionPolicyAdmin",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensionPolicyAdmin",
+      "priority": 2
+    },
+    {
+      "title": "Organization level Compute VM extension policies viewer",
+      "name": "roles/compute.orgVmExtensionPolicyViewer",
+      "url": "/iam/docs/roles-permissions/compute#compute.orgVmExtensionPolicyViewer",
       "priority": 2
     },
     {
@@ -16490,6 +16514,10 @@
       "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.delete"
     },
     {
+      "title": "agentidentity.authProviders.exchangeCredentials",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.exchangeCredentials"
+    },
+    {
       "title": "agentidentity.authProviders.get",
       "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.get"
     },
@@ -16526,16 +16554,36 @@
       "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authProviders.update"
     },
     {
+      "title": "agentidentity.authorizations.create",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.create"
+    },
+    {
       "title": "agentidentity.authorizations.delete",
       "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.delete"
+    },
+    {
+      "title": "agentidentity.authorizations.exchangeCredentials",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.exchangeCredentials"
     },
     {
       "title": "agentidentity.authorizations.get",
       "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.get"
     },
     {
+      "title": "agentidentity.authorizations.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.getIamPolicy"
+    },
+    {
       "title": "agentidentity.authorizations.list",
       "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.list"
+    },
+    {
+      "title": "agentidentity.authorizations.retrieveCredentials",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.retrieveCredentials"
+    },
+    {
+      "title": "agentidentity.authorizations.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/agentidentity#agentidentity.authorizations.setIamPolicy"
     },
     {
       "title": "agentidentity.locations.get",
@@ -25406,6 +25454,10 @@
       "url": "/iam/docs/roles-permissions/ces#ces.apps.update"
     },
     {
+      "title": "ces.arcSessions.get",
+      "url": "/iam/docs/roles-permissions/ces#ces.arcSessions.get"
+    },
+    {
       "title": "ces.assistantSessions.create",
       "url": "/iam/docs/roles-permissions/ces#ces.assistantSessions.create"
     },
@@ -34202,6 +34254,26 @@
       "url": "/iam/docs/roles-permissions/commerceproducer#commerceproducer.analyticsHubListingProductConfigs.update"
     },
     {
+      "title": "commerceproducer.consumerEnforcementActions.create",
+      "url": "/iam/docs/roles-permissions/commerceproducer#commerceproducer.consumerEnforcementActions.create"
+    },
+    {
+      "title": "commerceproducer.consumerEnforcementActions.delete",
+      "url": "/iam/docs/roles-permissions/commerceproducer#commerceproducer.consumerEnforcementActions.delete"
+    },
+    {
+      "title": "commerceproducer.consumerEnforcementActions.get",
+      "url": "/iam/docs/roles-permissions/commerceproducer#commerceproducer.consumerEnforcementActions.get"
+    },
+    {
+      "title": "commerceproducer.consumerEnforcementActions.list",
+      "url": "/iam/docs/roles-permissions/commerceproducer#commerceproducer.consumerEnforcementActions.list"
+    },
+    {
+      "title": "commerceproducer.consumerEnforcementActions.update",
+      "url": "/iam/docs/roles-permissions/commerceproducer#commerceproducer.consumerEnforcementActions.update"
+    },
+    {
       "title": "commerceproducer.locations.get",
       "url": "/iam/docs/roles-permissions/commerceproducer#commerceproducer.locations.get"
     },
@@ -34956,6 +35028,46 @@
     {
       "title": "compute.firewalls.update",
       "url": "/iam/docs/roles-permissions/compute#compute.firewalls.update"
+    },
+    {
+      "title": "compute.folderRolloutPlans.create",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRolloutPlans.create"
+    },
+    {
+      "title": "compute.folderRolloutPlans.delete",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRolloutPlans.delete"
+    },
+    {
+      "title": "compute.folderRolloutPlans.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRolloutPlans.get"
+    },
+    {
+      "title": "compute.folderRolloutPlans.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRolloutPlans.list"
+    },
+    {
+      "title": "compute.folderRollouts.cancel",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRollouts.cancel"
+    },
+    {
+      "title": "compute.folderRollouts.delete",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRollouts.delete"
+    },
+    {
+      "title": "compute.folderRollouts.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRollouts.get"
+    },
+    {
+      "title": "compute.folderRollouts.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRollouts.list"
+    },
+    {
+      "title": "compute.folderRollouts.pause",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRollouts.pause"
+    },
+    {
+      "title": "compute.folderRollouts.resume",
+      "url": "/iam/docs/roles-permissions/compute#compute.folderRollouts.resume"
     },
     {
       "title": "compute.folderVmExtensionPolicies.create",
@@ -44678,12 +44790,24 @@
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.create"
     },
     {
+      "title": "dataplex.entries.createContext",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.createContext"
+    },
+    {
       "title": "dataplex.entries.delete",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.delete"
     },
     {
+      "title": "dataplex.entries.deleteContext",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.deleteContext"
+    },
+    {
       "title": "dataplex.entries.get",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.get"
+    },
+    {
+      "title": "dataplex.entries.getContext",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.getContext"
     },
     {
       "title": "dataplex.entries.getData",
@@ -44698,12 +44822,24 @@
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.list"
     },
     {
+      "title": "dataplex.entries.listContext",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.listContext"
+    },
+    {
       "title": "dataplex.entries.update",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.update"
     },
     {
+      "title": "dataplex.entries.updateContext",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entries.updateContext"
+    },
+    {
       "title": "dataplex.entryGroups.create",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.create"
+    },
+    {
+      "title": "dataplex.entryGroups.createContextSet",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.createContextSet"
     },
     {
       "title": "dataplex.entryGroups.createTagBinding",
@@ -44712,6 +44848,10 @@
     {
       "title": "dataplex.entryGroups.delete",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.delete"
+    },
+    {
+      "title": "dataplex.entryGroups.deleteContextSet",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.deleteContextSet"
     },
     {
       "title": "dataplex.entryGroups.deleteTagBinding",
@@ -44724,6 +44864,10 @@
     {
       "title": "dataplex.entryGroups.get",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.get"
+    },
+    {
+      "title": "dataplex.entryGroups.getContextSet",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.getContextSet"
     },
     {
       "title": "dataplex.entryGroups.getIamPolicy",
@@ -44750,12 +44894,24 @@
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.requestChanges"
     },
     {
+      "title": "dataplex.entryGroups.requestContextChanges",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.requestContextChanges"
+    },
+    {
       "title": "dataplex.entryGroups.setIamPolicy",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.setIamPolicy"
     },
     {
       "title": "dataplex.entryGroups.update",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.update"
+    },
+    {
+      "title": "dataplex.entryGroups.updateContextSet",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.updateContextSet"
+    },
+    {
+      "title": "dataplex.entryGroups.useCertificationAspect",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useCertificationAspect"
     },
     {
       "title": "dataplex.entryGroups.useContactsAspect",
@@ -44848,6 +45004,14 @@
     {
       "title": "dataplex.entryGroups.useQueriesAspect",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useQueriesAspect"
+    },
+    {
+      "title": "dataplex.entryGroups.useQueryTemplateAspect",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useQueryTemplateAspect"
+    },
+    {
+      "title": "dataplex.entryGroups.useQueryTemplateEntry",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useQueryTemplateEntry"
     },
     {
       "title": "dataplex.entryGroups.useReferenceEntryLink",
@@ -53606,6 +53770,14 @@
       "url": "/iam/docs/roles-permissions/gsuiteaddons#gsuiteaddons.authorizations.get"
     },
     {
+      "title": "gsuiteaddons.chatAppConfigs.get",
+      "url": "/iam/docs/roles-permissions/gsuiteaddons#gsuiteaddons.chatAppConfigs.get"
+    },
+    {
+      "title": "gsuiteaddons.chatAppConfigs.update",
+      "url": "/iam/docs/roles-permissions/gsuiteaddons#gsuiteaddons.chatAppConfigs.update"
+    },
+    {
       "title": "gsuiteaddons.deployments.create",
       "url": "/iam/docs/roles-permissions/gsuiteaddons#gsuiteaddons.deployments.create"
     },
@@ -61450,6 +61622,10 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.update"
     },
     {
+      "title": "oracledatabase.databaseConnections.use",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databaseConnections.use"
+    },
+    {
       "title": "oracledatabase.databases.get",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.databases.get"
     },
@@ -61666,6 +61842,22 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.minorVersions.list"
     },
     {
+      "title": "oracledatabase.odbDnsZones.create",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbDnsZones.create"
+    },
+    {
+      "title": "oracledatabase.odbDnsZones.delete",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbDnsZones.delete"
+    },
+    {
+      "title": "oracledatabase.odbDnsZones.get",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbDnsZones.get"
+    },
+    {
+      "title": "oracledatabase.odbDnsZones.list",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbDnsZones.list"
+    },
+    {
       "title": "oracledatabase.odbNetworks.create",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbNetworks.create"
     },
@@ -61736,6 +61928,22 @@
     {
       "title": "oracledatabase.pluggableDatabases.list",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.pluggableDatabases.list"
+    },
+    {
+      "title": "oracledatabase.serviceIntegrations.create",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.serviceIntegrations.create"
+    },
+    {
+      "title": "oracledatabase.serviceIntegrations.delete",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.serviceIntegrations.delete"
+    },
+    {
+      "title": "oracledatabase.serviceIntegrations.get",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.serviceIntegrations.get"
+    },
+    {
+      "title": "oracledatabase.serviceIntegrations.list",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.serviceIntegrations.list"
     },
     {
       "title": "oracledatabase.systemVersions.list",
@@ -68330,6 +68538,10 @@
       "url": "/iam/docs/roles-permissions/serviceusage#serviceusage.apiKeys.revert"
     },
     {
+      "title": "serviceusage.catalogs.listMembers",
+      "url": "/iam/docs/roles-permissions/serviceusage#serviceusage.catalogs.listMembers"
+    },
+    {
       "title": "serviceusage.consumerpolicy.analyze",
       "url": "/iam/docs/roles-permissions/serviceusage#serviceusage.consumerpolicy.analyze"
     },
@@ -68404,6 +68616,14 @@
     {
       "title": "serviceusage.services.list",
       "url": "/iam/docs/roles-permissions/serviceusage#serviceusage.services.list"
+    },
+    {
+      "title": "serviceusage.services.listApis",
+      "url": "/iam/docs/roles-permissions/serviceusage#serviceusage.services.listApis"
+    },
+    {
+      "title": "serviceusage.services.listDependentServices",
+      "url": "/iam/docs/roles-permissions/serviceusage#serviceusage.services.listDependentServices"
     },
     {
       "title": "serviceusage.services.use",

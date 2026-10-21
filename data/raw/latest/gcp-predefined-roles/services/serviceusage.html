@@ -1808,15 +1808,15 @@
     data-label="Site header link: Console"
     
       
-        track-metadata-eventDetail="nav"
+        referrerpolicy="no-referrer-when-downgrade"
+      
+        track-name="console"
       
         track-type="globalNav"
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-metadata-position="nav"
-      
-        track-name="console"
       
     >
   Console
@@ -2005,9 +2005,9 @@
     
     
       
-        track-name="gcpCta"
-      
         track-type="freeTrial"
+      
+        track-name="gcpCta"
       
         referrerpolicy="no-referrer-when-downgrade"
       
@@ -2560,15 +2560,15 @@
 
     
       
-        track-metadata-eventDetail="nav"
+        referrerpolicy="no-referrer-when-downgrade"
+      
+        track-name="console"
       
         track-type="globalNav"
       
-        referrerpolicy="no-referrer-when-downgrade"
+        track-metadata-eventDetail="nav"
       
         track-metadata-position="nav"
-      
-        track-name="console"
       
     
      data-category="Site-Wide Custom Events"
@@ -6861,6 +6861,7 @@ Ability to enable, disable, and inspect service states, inspect operations, and 
     </ul>
   </devsite-expandable>
   <p><code translate="no" dir="ltr">monitoring.timeSeries.list</code></p>
+  <p><code translate="no" dir="ltr">serviceusage.<wbr>catalogs.<wbr>listMembers</code></p>
   <devsite-expandable id="expandable-serviceusage.serviceUsageAdmin-serviceusage.consumerpolicy.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
       <span class="iamperm-wildcard"><code translate="no" dir="ltr">serviceusage.consumerpolicy.*</code></span>
@@ -6920,6 +6921,8 @@ Ability to enable, disable, and inspect service states, inspect operations, and 
       <li><code translate="no" dir="ltr">serviceusage.services.enable</code></li>
       <li><code translate="no" dir="ltr">serviceusage.services.get</code></li>
       <li><code translate="no" dir="ltr">serviceusage.services.list</code></li>
+      <li><code translate="no" dir="ltr">serviceusage.services.listApis</code></li>
+      <li><code translate="no" dir="ltr">serviceusage.<wbr>services.<wbr>listDependentServices</code></li>
       <li><code translate="no" dir="ltr">serviceusage.services.use</code></li>
     </ul>
   </devsite-expandable>
@@ -6939,6 +6942,7 @@ Ability to inspect service states and operations, and consume quota and billing 
 </td>
 <td class="role-permissions">
   <p><code translate="no" dir="ltr">monitoring.timeSeries.list</code></p>
+  <p><code translate="no" dir="ltr">serviceusage.<wbr>catalogs.<wbr>listMembers</code></p>
   <p><code translate="no" dir="ltr">serviceusage.<wbr>consumerpolicy.<wbr>analyze</code></p>
   <p><code translate="no" dir="ltr">serviceusage.<wbr>consumerpolicy.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">serviceusage.<wbr>contentsecuritypolicy.<wbr>get</code></p>
@@ -6959,6 +6963,8 @@ Ability to inspect service states and operations, and consume quota and billing 
   <p><code translate="no" dir="ltr">serviceusage.quotas.get</code></p>
   <p><code translate="no" dir="ltr">serviceusage.services.get</code></p>
   <p><code translate="no" dir="ltr">serviceusage.services.list</code></p>
+  <p><code translate="no" dir="ltr">serviceusage.services.listApis</code></p>
+  <p><code translate="no" dir="ltr">serviceusage.<wbr>services.<wbr>listDependentServices</code></p>
   <p><code translate="no" dir="ltr">serviceusage.services.use</code></p>
   <p><code translate="no" dir="ltr">serviceusage.values.test</code></p>
 </td>
@@ -6976,6 +6982,7 @@ Ability to inspect service states and operations for a consumer project.
 </td>
 <td class="role-permissions">
   <p><code translate="no" dir="ltr">monitoring.timeSeries.list</code></p>
+  <p><code translate="no" dir="ltr">serviceusage.<wbr>catalogs.<wbr>listMembers</code></p>
   <p><code translate="no" dir="ltr">serviceusage.<wbr>consumerpolicy.<wbr>analyze</code></p>
   <p><code translate="no" dir="ltr">serviceusage.<wbr>consumerpolicy.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">serviceusage.<wbr>contentsecuritypolicy.<wbr>get</code></p>
@@ -6996,6 +7003,8 @@ Ability to inspect service states and operations for a consumer project.
   <p><code translate="no" dir="ltr">serviceusage.quotas.get</code></p>
   <p><code translate="no" dir="ltr">serviceusage.services.get</code></p>
   <p><code translate="no" dir="ltr">serviceusage.services.list</code></p>
+  <p><code translate="no" dir="ltr">serviceusage.services.listApis</code></p>
+  <p><code translate="no" dir="ltr">serviceusage.<wbr>services.<wbr>listDependentServices</code></p>
   <p><code translate="no" dir="ltr">serviceusage.values.test</code></p>
 </td>
 </tr>
@@ -7113,6 +7122,573 @@ Ability to get and list API keys for a project.
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.apiKeysAdmin">API Keys Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.apiKeysAdmin</code>)
         </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="serviceusage.catalogs.listMembers" data-text="serviceusage.catalogs.listMembers" tabindex="-1"><code translate="no" dir="ltr">serviceusage.<wbr>catalogs.<wbr>listMembers</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.admin">ApiGateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.editor">ApiGateway Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.viewer">ApiGateway Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.admin">Assured OSS Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.admin">AutoML Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.editor">AutoML Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.viewer">AutoML Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.admin">Recommendations AI Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.editor">Recommendations AI Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.viewer">Recommendations AI Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.admin">Capacityplanner Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.viewer">Capacity Planner Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.admin">Cloud Scheduler Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.viewer">Cloud Scheduler Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.admin">Web Security Scanner Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.editor">Web Security Scanner Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.viewer">Web Security Scanner Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.admin">Cloud SQL Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.editor">Cloud SQL Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.viewer">Cloud SQL Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.editor">Commercepricemanagement Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.viewer">Commerce Price Management Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.admin">Composer Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.user">Composer User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.admin">Compute Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.editor">Compute Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin">Compute Instance Admin (beta)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin.v1">Compute Instance Admin (v1)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin.v1</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.loadBalancerAdmin">Compute Load Balancer Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.loadBalancerAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkAdmin">Compute Network Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkUser">Compute Network User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkViewer">Compute Network Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.osAdminLogin">Compute OS Admin Login</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.osAdminLogin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.osLogin">Compute OS Login</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.osLogin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.securityAdmin">Compute Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.storageAdmin">Compute Storage Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.storageAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.viewer">Compute Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dataprep#dataprep.admin">Dataprep Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.admin">Deployment Manager Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.editor">Deployment Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.viewer">Deployment Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.user">Discovery Engine User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.admin">Firebase Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.editor">Firebase Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.viewer">Firebase Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#monitoring.admin">Monitoring Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>monitoring.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#monitoring.editor">Monitoring Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>monitoring.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.admin">Notebooks Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.editor">Notebooks Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.viewer">Notebooks Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.admin">Pub/Sub Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.editor">Pub/Sub Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.viewer">Pub/Sub Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.admin">Security Center Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.admin">Service Management Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageAdmin">Service Usage Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageConsumer">Service Usage Consumer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageConsumer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageViewer">Service Usage Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/telcoautomation#telcoautomation.admin">Telco Automation Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>telcoautomation.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.admin">Workload Manager Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/androidmanagement#androidmanagement.user">Android Management User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>androidmanagement.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workspacemarketplace#appmetadata.workspaceMarketplaceAppConfigurationAdmin">Workspace Marketplace App Configuration Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appmetadata.workspaceMarketplaceAppConfigurationAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.projectAdmin">Assured OSS Project Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.projectAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.reader">Assured OSS Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.adminViewer">Recommendations AI Admin Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.adminViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.planner">Capacity Planner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.planner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudhub#cloudhub.operator">Cloud Hub Operator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudhub.operator</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudprofiler#cloudprofiler.user">Cloud Profiler User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudprofiler.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.jobRunner">Cloud Scheduler Job Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.jobRunner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.studioUser">Cloud SQL Studio User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.studioUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.privateOffersAdmin">Commerce Price Management Private Offers Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.privateOffersAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectAdmin">Environment and Storage Object Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectUser">Environment and Storage Object User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectViewer">Environment and Storage Object Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.worker">Composer Worker</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.worker</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.imageUser">Compute Image User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.imageUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.loadBalancerServiceUser">Compute Load Balancer Services User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.loadBalancerServiceUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgFirewallPolicyAdmin">Compute Organization Firewall Policy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgFirewallPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgFirewallPolicyUser">Compute Organization Firewall Policy User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgFirewallPolicyUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityPolicyAdmin">Compute Organization Security Policy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityPolicyUser">Compute Organization Security Policy User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityPolicyUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityResourceAdmin">Compute Organization Resource Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityResourceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.packetMirroringAdmin">Compute packet mirroring admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.packetMirroringAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.packetMirroringUser">Compute packet mirroring user</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.packetMirroringUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.entitlementManager">Consumer Procurement Entitlement Manager</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.entitlementManager</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.entitlementViewer">Consumer Procurement Entitlement Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.entitlementViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.procurementAdmin">Consumer Procurement Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.procurementAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.procurementViewer">Consumer Procurement Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.procurementViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dataprep#dataprep.projects.user">Dataprep User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.projects.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.typeEditor">Deployment Manager Type Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.typeEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.typeViewer">Deployment Manager Type Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.typeViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceUser">Gemini Enterprise User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.podcastApiUser">Podcast API User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.podcastApiUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/earthengine#earthengine.appsPublisher">Earth Engine Apps Publisher</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>earthengine.appsPublisher</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developViewer">Firebase Develop Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.growthAdmin">Firebase Grow Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.growthAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.growthViewer">Firebase Grow Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.growthViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.qualityAdmin">Firebase Quality Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.qualityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.qualityViewer">Firebase Quality Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.qualityViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayEditor">Connect Gateway Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayReader">Connect Gateway Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayReader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditorProjectLevel">Fleet Project-level Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditorProjectLevel</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeViewerProjectLevel">Fleet Project-level Scope Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeViewerProjectLevel</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.databasesAdmin">Databases Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.databasesAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.devOps">Dev Ops</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.devOps</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.infrastructureAdmin">Infrastructure Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.infrastructureAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.networkAdmin">Network Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.siteReliabilityEngineer">Site Reliability Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.siteReliabilityEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.serviceExtensionsAdmin">Service Extensions Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.serviceExtensionsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.serviceExtensionsViewer">Service Extensions Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.serviceExtensionsViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyViewer">Notebooks Legacy Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.runner">Notebooks Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.runner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/run#run.sourceDeveloper">Cloud Run Source Developer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.sourceDeveloper</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/run#run.sourceViewer">Cloud Run Source Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.sourceViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.adminEditor">Security Center Admin Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.adminEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.adminViewer">Security Center Admin Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.adminViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.quotaAdmin">Quota Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.quotaAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.quotaViewer">Quota Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.quotaViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#stackdriver.accounts.editor">Stackdriver Accounts Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>stackdriver.accounts.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/wiz#wiz.cloudInventoryViewer">Wiz Cloud Inventory Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>wiz.cloudInventoryViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.deploymentAdmin">Workload Manager Deployment Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.deploymentAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.workloadViewer">Workload Manager Workload Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.workloadViewer</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="serviceusage.catalogs.listMembers-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.onlinePredictionServiceAgent">Vertex AI Online Prediction Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.onlinePredictionServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthos#anthos.serviceAgent">Anthos Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthos.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthosservicemesh#anthosservicemesh.serviceAgent">Anthos Service Mesh Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthosservicemesh.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthossupport#anthossupport.serviceAgent">Anthos Support Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthossupport.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/apigateway#apigateway_management.serviceAgent">Cloud API Gateway Management Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway_management.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/appengine#appengine.serviceAgent">App Engine Standard Environment Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appengine.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/appengineflex#appengineflex.serviceAgent">App Engine flexible environment Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appengineflex.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/assuredworkloads#assuredworkloads.serviceAgent">Assured Workloads Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredworkloads.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/auditmanager#auditmanager.serviceAgent">Audit Manager Auditing Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>auditmanager.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/batch#batch.serviceAgent">Google Batch Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>batch.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/chronicle#chronicle.serviceAgent">Chronicle Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>chronicle.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/deploymentmanager#clouddeploymentmanager.serviceAgent">Cloud Deployment Manager Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>clouddeploymentmanager.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.serviceAgent">(Deprecated) Cloud Functions Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudfunctions.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/cloudsecuritycompliance#cloudsecuritycompliance.serviceAgent">Cloud Security Compliance Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecuritycompliance.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/tpu#cloudtpu.serviceAgent">Cloud TPU V2 API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudtpu.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/composer#composer.serviceAgent">Cloud Composer API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/container#container.serviceAgent">Kubernetes Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>container.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/containeranalysis#containeranalysis.ServiceAgent">Container Analysis Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>containeranalysis.ServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent">Cloud Dataflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataflow.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datafusion#datafusion.serviceAgent">Cloud Data Fusion API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datafusion.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datalabeling#datalabeling.serviceAgent">Data Labeling Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datalabeling.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datapipelines#datapipelines.serviceAgent">Datapipelines Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datapipelines.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataprep#dataprep.serviceAgent">Dataprep Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent">Dataproc Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataproc.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dlp#dlp.serviceAgent">DLP API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dspm#dspm.serviceAgent">DSPM Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dspm.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/edgecontainer#edgecontainer.clusterServiceAgent">Edge Container Cluster Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>edgecontainer.clusterServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/edgecontainer#edgecontainer.serviceAgent">Edge Container Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>edgecontainer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebase#firebase.managementServiceAgent">Firebase Service Management Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.managementServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebase#firebase.sdkProvisioningServiceAgent">Firebase SDK Provisioning Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.sdkProvisioningServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebasemods#firebasemods.serviceAgent">Firebase Extensions API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebasemods.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/fleetengine#fleetengine.serviceAgent">FleetEngine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>fleetengine.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#genomics.serviceAgent">Genomics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>genomics.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/gkehub#gkehub.serviceAgent">GKE Hub Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/hypercomputecluster#hypercomputecluster.sharedVpcServiceAgent">Cluster Director Shared VPC Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>hypercomputecluster.sharedVpcServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/integrations#integrations.serviceAgent">Application Integration Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>integrations.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/krmapihosting#krmapihosting.anthosApiEndpointServiceAgent">KRM API Hosting AnthosApiEndpoint Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>krmapihosting.anthosApiEndpointServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#lifesciences.serviceAgent">Cloud Life Sciences Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>lifesciences.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/meshcontrolplane#meshcontrolplane.serviceAgent">Mesh Managed Control Plane Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>meshcontrolplane.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/multiclusteringress#multiclusteringress.serviceAgent">Multi Cluster Ingress Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>multiclusteringress.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/notebooks#notebooks.serviceAgent">AI Platform Notebooks Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/run#run.serviceAgent">Cloud Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.automationServiceAgent">Security Center Automation Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.automationServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.controlServiceAgent">Security Center Control Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.controlServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.securityHealthAnalyticsServiceAgent">Security Health Analytics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.securityHealthAnalyticsServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.serviceAgent">Security Center Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/spectrumsas#spectrumsas.serviceAgent">Spectrum SAS Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>spectrumsas.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/workstations#workstations.serviceAgent">Workstations Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workstations.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
       </td>
     </tr>
     <tr>
@@ -13123,6 +13699,1176 @@ Ability to get and list API keys for a project.
     </tr>
     <tr>
       <td>
+        <h4 class="permission-name add-link" id="serviceusage.services.listApis" data-text="serviceusage.services.listApis" tabindex="-1"><code translate="no" dir="ltr">serviceusage.services.listApis</code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.admin">ApiGateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.editor">ApiGateway Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.viewer">ApiGateway Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.admin">Assured OSS Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.admin">AutoML Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.editor">AutoML Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.viewer">AutoML Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.admin">Recommendations AI Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.editor">Recommendations AI Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.viewer">Recommendations AI Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.admin">Capacityplanner Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.viewer">Capacity Planner Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.admin">Cloud Functions Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudfunctions.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.editor">Cloud Functions Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudfunctions.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.viewer">Cloud Functions Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudfunctions.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.admin">Cloud Scheduler Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.viewer">Cloud Scheduler Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.admin">Web Security Scanner Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.editor">Web Security Scanner Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.viewer">Web Security Scanner Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.admin">Cloud SQL Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.editor">Cloud SQL Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.viewer">Cloud SQL Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.editor">Commercepricemanagement Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.viewer">Commerce Price Management Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.admin">Composer Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.user">Composer User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.admin">Compute Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.editor">Compute Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin">Compute Instance Admin (beta)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin.v1">Compute Instance Admin (v1)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin.v1</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.loadBalancerAdmin">Compute Load Balancer Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.loadBalancerAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkAdmin">Compute Network Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkUser">Compute Network User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkViewer">Compute Network Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.osAdminLogin">Compute OS Admin Login</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.osAdminLogin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.osLogin">Compute OS Login</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.osLogin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.securityAdmin">Compute Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.storageAdmin">Compute Storage Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.storageAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.viewer">Compute Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dataprep#dataprep.admin">Dataprep Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.admin">Deployment Manager Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.editor">Deployment Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.viewer">Deployment Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.user">Discovery Engine User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.admin">Firebase Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.editor">Firebase Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.viewer">Firebase Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/managedkafka#managedkafka.admin">Managed Kafka Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>managedkafka.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/managedkafka#managedkafka.viewer">Managed Kafka Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>managedkafka.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/mapsanalytics#mapsanalytics.viewer">Maps Analytics Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>mapsanalytics.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#monitoring.admin">Monitoring Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>monitoring.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#monitoring.editor">Monitoring Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>monitoring.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.admin">Notebooks Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.editor">Notebooks Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.viewer">Notebooks Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.admin">Pub/Sub Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.editor">Pub/Sub Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.viewer">Pub/Sub Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.admin">Security Center Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.admin">Service Management Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageAdmin">Service Usage Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageConsumer">Service Usage Consumer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageConsumer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageViewer">Service Usage Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/telcoautomation#telcoautomation.admin">Telco Automation Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>telcoautomation.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.admin">Workload Manager Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/androidmanagement#androidmanagement.user">Android Management User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>androidmanagement.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workspacemarketplace#appmetadata.workspaceMarketplaceAppConfigurationAdmin">Workspace Marketplace App Configuration Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appmetadata.workspaceMarketplaceAppConfigurationAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.projectAdmin">Assured OSS Project Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.projectAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.reader">Assured OSS Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.adminViewer">Recommendations AI Admin Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.adminViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.planner">Capacity Planner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.planner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.developer">Cloud Functions Developer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudfunctions.developer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudhub#cloudhub.operator">Cloud Hub Operator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudhub.operator</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudprofiler#cloudprofiler.user">Cloud Profiler User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudprofiler.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.jobRunner">Cloud Scheduler Job Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.jobRunner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.studioUser">Cloud SQL Studio User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.studioUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.privateOffersAdmin">Commerce Price Management Private Offers Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.privateOffersAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectAdmin">Environment and Storage Object Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectUser">Environment and Storage Object User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectViewer">Environment and Storage Object Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.worker">Composer Worker</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.worker</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.imageUser">Compute Image User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.imageUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.loadBalancerServiceUser">Compute Load Balancer Services User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.loadBalancerServiceUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgFirewallPolicyAdmin">Compute Organization Firewall Policy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgFirewallPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgFirewallPolicyUser">Compute Organization Firewall Policy User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgFirewallPolicyUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityPolicyAdmin">Compute Organization Security Policy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityPolicyUser">Compute Organization Security Policy User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityPolicyUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityResourceAdmin">Compute Organization Resource Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityResourceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.packetMirroringAdmin">Compute packet mirroring admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.packetMirroringAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.packetMirroringUser">Compute packet mirroring user</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.packetMirroringUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.entitlementManager">Consumer Procurement Entitlement Manager</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.entitlementManager</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.entitlementViewer">Consumer Procurement Entitlement Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.entitlementViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.procurementAdmin">Consumer Procurement Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.procurementAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.procurementViewer">Consumer Procurement Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.procurementViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dataprep#dataprep.projects.user">Dataprep User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.projects.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.typeEditor">Deployment Manager Type Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.typeEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.typeViewer">Deployment Manager Type Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.typeViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceUser">Gemini Enterprise User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.podcastApiUser">Podcast API User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.podcastApiUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/earthengine#earthengine.appsPublisher">Earth Engine Apps Publisher</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>earthengine.appsPublisher</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developViewer">Firebase Develop Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.growthAdmin">Firebase Grow Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.growthAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.growthViewer">Firebase Grow Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.growthViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.qualityAdmin">Firebase Quality Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.qualityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.qualityViewer">Firebase Quality Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.qualityViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayEditor">Connect Gateway Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayReader">Connect Gateway Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayReader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditorProjectLevel">Fleet Project-level Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditorProjectLevel</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeViewerProjectLevel">Fleet Project-level Scope Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeViewerProjectLevel</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.databasesAdmin">Databases Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.databasesAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.devOps">Dev Ops</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.devOps</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.infrastructureAdmin">Infrastructure Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.infrastructureAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.networkAdmin">Network Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.siteReliabilityEngineer">Site Reliability Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.siteReliabilityEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/managedkafka#managedkafka.client">Managed Kafka Client</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>managedkafka.client</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/managedkafka#managedkafka.clusterEditor">Managed Kafka Cluster Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>managedkafka.clusterEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/managedkafka#managedkafka.connectorEditor">Managed Kafka Connector Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>managedkafka.connectorEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/managedkafka#managedkafka.consumerGroupEditor">Managed Kafka Consumer Group Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>managedkafka.consumerGroupEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/managedkafka#managedkafka.topicEditor">Managed Kafka Topic Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>managedkafka.topicEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.serviceExtensionsAdmin">Service Extensions Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.serviceExtensionsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.serviceExtensionsViewer">Service Extensions Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.serviceExtensionsViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyViewer">Notebooks Legacy Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.runner">Notebooks Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.runner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/run#run.sourceDeveloper">Cloud Run Source Developer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.sourceDeveloper</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/run#run.sourceViewer">Cloud Run Source Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.sourceViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.adminEditor">Security Center Admin Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.adminEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.adminViewer">Security Center Admin Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.adminViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.quotaAdmin">Quota Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.quotaAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.quotaViewer">Quota Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.quotaViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#stackdriver.accounts.editor">Stackdriver Accounts Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>stackdriver.accounts.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/wiz#wiz.cloudInventoryViewer">Wiz Cloud Inventory Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>wiz.cloudInventoryViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.deploymentAdmin">Workload Manager Deployment Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.deploymentAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.workloadViewer">Workload Manager Workload Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.workloadViewer</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="serviceusage.services.listApis-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.onlinePredictionServiceAgent">Vertex AI Online Prediction Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.onlinePredictionServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthos#anthos.serviceAgent">Anthos Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthos.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthosservicemesh#anthosservicemesh.serviceAgent">Anthos Service Mesh Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthosservicemesh.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthossupport#anthossupport.serviceAgent">Anthos Support Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthossupport.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/apigateway#apigateway_management.serviceAgent">Cloud API Gateway Management Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway_management.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/appengine#appengine.serviceAgent">App Engine Standard Environment Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appengine.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/appengineflex#appengineflex.serviceAgent">App Engine flexible environment Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appengineflex.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/assuredworkloads#assuredworkloads.serviceAgent">Assured Workloads Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredworkloads.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/auditmanager#auditmanager.serviceAgent">Audit Manager Auditing Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>auditmanager.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/batch#batch.serviceAgent">Google Batch Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>batch.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/chronicle#chronicle.serviceAgent">Chronicle Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>chronicle.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/deploymentmanager#clouddeploymentmanager.serviceAgent">Cloud Deployment Manager Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>clouddeploymentmanager.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.serviceAgent">(Deprecated) Cloud Functions Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudfunctions.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/cloudsecuritycompliance#cloudsecuritycompliance.serviceAgent">Cloud Security Compliance Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecuritycompliance.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/tpu#cloudtpu.serviceAgent">Cloud TPU V2 API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudtpu.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/composer#composer.serviceAgent">Cloud Composer API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/container#container.serviceAgent">Kubernetes Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>container.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/containeranalysis#containeranalysis.ServiceAgent">Container Analysis Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>containeranalysis.ServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent">Cloud Dataflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataflow.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datafusion#datafusion.serviceAgent">Cloud Data Fusion API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datafusion.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datalabeling#datalabeling.serviceAgent">Data Labeling Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datalabeling.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datapipelines#datapipelines.serviceAgent">Datapipelines Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datapipelines.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataprep#dataprep.serviceAgent">Dataprep Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent">Dataproc Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataproc.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dlp#dlp.serviceAgent">DLP API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dspm#dspm.serviceAgent">DSPM Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dspm.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/edgecontainer#edgecontainer.clusterServiceAgent">Edge Container Cluster Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>edgecontainer.clusterServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/edgecontainer#edgecontainer.serviceAgent">Edge Container Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>edgecontainer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebase#firebase.managementServiceAgent">Firebase Service Management Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.managementServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebase#firebase.sdkProvisioningServiceAgent">Firebase SDK Provisioning Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.sdkProvisioningServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebasemods#firebasemods.serviceAgent">Firebase Extensions API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebasemods.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/fleetengine#fleetengine.serviceAgent">FleetEngine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>fleetengine.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#genomics.serviceAgent">Genomics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>genomics.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/gkehub#gkehub.serviceAgent">GKE Hub Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/hypercomputecluster#hypercomputecluster.sharedVpcServiceAgent">Cluster Director Shared VPC Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>hypercomputecluster.sharedVpcServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/integrations#integrations.serviceAgent">Application Integration Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>integrations.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/krmapihosting#krmapihosting.anthosApiEndpointServiceAgent">KRM API Hosting AnthosApiEndpoint Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>krmapihosting.anthosApiEndpointServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#lifesciences.serviceAgent">Cloud Life Sciences Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>lifesciences.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/meshcontrolplane#meshcontrolplane.serviceAgent">Mesh Managed Control Plane Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>meshcontrolplane.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/multiclusteringress#multiclusteringress.serviceAgent">Multi Cluster Ingress Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>multiclusteringress.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/notebooks#notebooks.serviceAgent">AI Platform Notebooks Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/run#run.serviceAgent">Cloud Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.automationServiceAgent">Security Center Automation Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.automationServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.controlServiceAgent">Security Center Control Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.controlServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.securityHealthAnalyticsServiceAgent">Security Health Analytics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.securityHealthAnalyticsServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.serviceAgent">Security Center Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/spectrumsas#spectrumsas.serviceAgent">Spectrum SAS Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>spectrumsas.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/workstations#workstations.serviceAgent">Workstations Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workstations.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="serviceusage.services.listDependentServices" data-text="serviceusage.services.listDependentServices" tabindex="-1"><code translate="no" dir="ltr">serviceusage.<wbr>services.<wbr>listDependentServices</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.admin">ApiGateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.editor">ApiGateway Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/apigateway#apigateway.viewer">ApiGateway Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.admin">Assured OSS Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.admin">AutoML Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.editor">AutoML Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automl#automl.viewer">AutoML Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automl.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.admin">Recommendations AI Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.editor">Recommendations AI Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.viewer">Recommendations AI Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.admin">Capacityplanner Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.viewer">Capacity Planner Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.admin">Cloud Scheduler Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.viewer">Cloud Scheduler Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.admin">Web Security Scanner Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.editor">Web Security Scanner Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsecurityscanner#cloudsecurityscanner.viewer">Web Security Scanner Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecurityscanner.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.admin">Cloud SQL Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.editor">Cloud SQL Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.viewer">Cloud SQL Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.editor">Commercepricemanagement Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.viewer">Commerce Price Management Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.admin">Composer Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.user">Composer User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.admin">Compute Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.editor">Compute Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin">Compute Instance Admin (beta)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.instanceAdmin.v1">Compute Instance Admin (v1)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.instanceAdmin.v1</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.loadBalancerAdmin">Compute Load Balancer Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.loadBalancerAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkAdmin">Compute Network Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkUser">Compute Network User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.networkViewer">Compute Network Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.networkViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.osAdminLogin">Compute OS Admin Login</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.osAdminLogin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.osLogin">Compute OS Login</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.osLogin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.securityAdmin">Compute Security Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.securityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.storageAdmin">Compute Storage Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.storageAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.viewer">Compute Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dataprep#dataprep.admin">Dataprep Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.admin">Deployment Manager Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.editor">Deployment Manager Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.viewer">Deployment Manager Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.user">Discovery Engine User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.admin">Firebase Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.editor">Firebase Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.viewer">Firebase Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#monitoring.admin">Monitoring Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>monitoring.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#monitoring.editor">Monitoring Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>monitoring.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.admin">Notebooks Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.editor">Notebooks Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.viewer">Notebooks Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.admin">Pub/Sub Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.editor">Pub/Sub Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/pubsub#pubsub.viewer">Pub/Sub Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>pubsub.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.admin">Security Center Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.admin">Service Management Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageAdmin">Service Usage Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageConsumer">Service Usage Consumer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageConsumer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageViewer">Service Usage Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>serviceusage.serviceUsageViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/telcoautomation#telcoautomation.admin">Telco Automation Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>telcoautomation.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.admin">Workload Manager Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/androidmanagement#androidmanagement.user">Android Management User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>androidmanagement.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workspacemarketplace#appmetadata.workspaceMarketplaceAppConfigurationAdmin">Workspace Marketplace App Configuration Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appmetadata.workspaceMarketplaceAppConfigurationAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.projectAdmin">Assured OSS Project Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.projectAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/assuredoss#assuredoss.reader">Assured OSS Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredoss.reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/automlrecommendations#automlrecommendations.adminViewer">Recommendations AI Admin Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>automlrecommendations.adminViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/capacityplanner#capacityplanner.planner">Capacity Planner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>capacityplanner.planner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudhub#cloudhub.operator">Cloud Hub Operator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudhub.operator</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudprofiler#cloudprofiler.user">Cloud Profiler User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudprofiler.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudscheduler#cloudscheduler.jobRunner">Cloud Scheduler Job Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudscheduler.jobRunner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/cloudsql#cloudsql.studioUser">Cloud SQL Studio User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsql.studioUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/commercepricemanagement#commercepricemanagement.privateOffersAdmin">Commerce Price Management Private Offers Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>commercepricemanagement.privateOffersAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectAdmin">Environment and Storage Object Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectUser">Environment and Storage Object User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.environmentAndStorageObjectViewer">Environment and Storage Object Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.environmentAndStorageObjectViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/composer#composer.worker">Composer Worker</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.worker</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.imageUser">Compute Image User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.imageUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.loadBalancerServiceUser">Compute Load Balancer Services User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.loadBalancerServiceUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgFirewallPolicyAdmin">Compute Organization Firewall Policy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgFirewallPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgFirewallPolicyUser">Compute Organization Firewall Policy User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgFirewallPolicyUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityPolicyAdmin">Compute Organization Security Policy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityPolicyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityPolicyUser">Compute Organization Security Policy User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityPolicyUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.orgSecurityResourceAdmin">Compute Organization Resource Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.orgSecurityResourceAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.packetMirroringAdmin">Compute packet mirroring admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.packetMirroringAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/compute#compute.packetMirroringUser">Compute packet mirroring user</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>compute.packetMirroringUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.entitlementManager">Consumer Procurement Entitlement Manager</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.entitlementManager</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.entitlementViewer">Consumer Procurement Entitlement Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.entitlementViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.procurementAdmin">Consumer Procurement Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.procurementAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/consumerprocurement#consumerprocurement.procurementViewer">Consumer Procurement Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>consumerprocurement.procurementViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dataprep#dataprep.projects.user">Dataprep User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.projects.user</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.typeEditor">Deployment Manager Type Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.typeEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/deploymentmanager#deploymentmanager.typeViewer">Deployment Manager Type Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>deploymentmanager.typeViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.agentspaceUser">Gemini Enterprise User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.agentspaceUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/discoveryengine#discoveryengine.podcastApiUser">Podcast API User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>discoveryengine.podcastApiUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/earthengine#earthengine.appsPublisher">Earth Engine Apps Publisher</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>earthengine.appsPublisher</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developViewer">Firebase Develop Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.growthAdmin">Firebase Grow Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.growthAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.growthViewer">Firebase Grow Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.growthViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.qualityAdmin">Firebase Quality Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.qualityAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.qualityViewer">Firebase Quality Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.qualityViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayAdmin">Connect Gateway Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayEditor">Connect Gateway Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.gatewayReader">Connect Gateway Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.gatewayReader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeEditorProjectLevel">Fleet Project-level Scope Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeEditorProjectLevel</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/gkehub#gkehub.scopeViewerProjectLevel">Fleet Project-level Scope Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.scopeViewerProjectLevel</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.dataScientist">Data Scientist</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.dataScientist</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.databasesAdmin">Databases Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.databasesAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.devOps">Dev Ops</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.devOps</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.infrastructureAdmin">Infrastructure Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.infrastructureAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.networkAdmin">Network Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.networkAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.siteReliabilityEngineer">Site Reliability Engineer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.siteReliabilityEngineer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.serviceExtensionsAdmin">Service Extensions Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.serviceExtensionsAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/networkservices#networkservices.serviceExtensionsViewer">Service Extensions Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>networkservices.serviceExtensionsViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyAdmin">Notebooks Legacy Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.legacyViewer">Notebooks Legacy Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.legacyViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/notebooks#notebooks.runner">Notebooks Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.runner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/run#run.sourceDeveloper">Cloud Run Source Developer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.sourceDeveloper</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/run#run.sourceViewer">Cloud Run Source Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.sourceViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.adminEditor">Security Center Admin Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.adminEditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.adminViewer">Security Center Admin Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.adminViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.quotaAdmin">Quota Administrator</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.quotaAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/servicemanagement#servicemanagement.quotaViewer">Quota Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>servicemanagement.quotaViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/monitoring#stackdriver.accounts.editor">Stackdriver Accounts Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>stackdriver.accounts.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/wiz#wiz.cloudInventoryViewer">Wiz Cloud Inventory Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>wiz.cloudInventoryViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.deploymentAdmin">Workload Manager Deployment Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.deploymentAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/workloadmanager#workloadmanager.workloadViewer">Workload Manager Workload Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workloadmanager.workloadViewer</code>)
+        </p>
+        <devsite-expandable class="arrow-icon serviceagentrole-expandable" id="serviceusage.services.listDependentServices-service-agent-roles">
+          <p class="showalways iamrole-marginless">
+            <span class="serviceagentrole">Service agent roles</span>
+          </p>
+          <aside class="warning">
+            <strong>Warning:</strong> Don't grant service agent roles to any principals except <a
+            href="/iam/docs/service-agents">service agents</a>.
+          </aside>
+          <ul class="serviceagentrole-list">
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.onlinePredictionServiceAgent">Vertex AI Online Prediction Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.onlinePredictionServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent">Vertex AI Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>aiplatform.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthos#anthos.serviceAgent">Anthos Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthos.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthosservicemesh#anthosservicemesh.serviceAgent">Anthos Service Mesh Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthosservicemesh.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/anthossupport#anthossupport.serviceAgent">Anthos Support Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>anthossupport.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/apigateway#apigateway_management.serviceAgent">Cloud API Gateway Management Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>apigateway_management.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/appengine#appengine.serviceAgent">App Engine Standard Environment Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appengine.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/appengineflex#appengineflex.serviceAgent">App Engine flexible environment Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>appengineflex.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/assuredworkloads#assuredworkloads.serviceAgent">Assured Workloads Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>assuredworkloads.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/auditmanager#auditmanager.serviceAgent">Audit Manager Auditing Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>auditmanager.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/batch#batch.serviceAgent">Google Batch Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>batch.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/chronicle#chronicle.serviceAgent">Chronicle Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>chronicle.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/deploymentmanager#clouddeploymentmanager.serviceAgent">Cloud Deployment Manager Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>clouddeploymentmanager.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.serviceAgent">(Deprecated) Cloud Functions Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudfunctions.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/cloudsecuritycompliance#cloudsecuritycompliance.serviceAgent">Cloud Security Compliance Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudsecuritycompliance.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/tpu#cloudtpu.serviceAgent">Cloud TPU V2 API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>cloudtpu.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/composer#composer.serviceAgent">Cloud Composer API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>composer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/container#container.serviceAgent">Kubernetes Engine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>container.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/containeranalysis#containeranalysis.ServiceAgent">Container Analysis Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>containeranalysis.ServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataflow#dataflow.serviceAgent">Cloud Dataflow Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataflow.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datafusion#datafusion.serviceAgent">Cloud Data Fusion API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datafusion.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datalabeling#datalabeling.serviceAgent">Data Labeling Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datalabeling.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/datapipelines#datapipelines.serviceAgent">Datapipelines Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>datapipelines.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataprep#dataprep.serviceAgent">Dataprep Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataprep.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dataproc#dataproc.serviceAgent">Dataproc Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dataproc.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dlp#dlp.serviceAgent">DLP API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/dspm#dspm.serviceAgent">DSPM Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dspm.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/edgecontainer#edgecontainer.clusterServiceAgent">Edge Container Cluster Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>edgecontainer.clusterServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/edgecontainer#edgecontainer.serviceAgent">Edge Container Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>edgecontainer.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebase#firebase.managementServiceAgent">Firebase Service Management Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.managementServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebase#firebase.sdkProvisioningServiceAgent">Firebase SDK Provisioning Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.sdkProvisioningServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/firebasemods#firebasemods.serviceAgent">Firebase Extensions API Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebasemods.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/fleetengine#fleetengine.serviceAgent">FleetEngine Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>fleetengine.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#genomics.serviceAgent">Genomics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>genomics.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/gkehub#gkehub.serviceAgent">GKE Hub Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>gkehub.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/hypercomputecluster#hypercomputecluster.sharedVpcServiceAgent">Cluster Director Shared VPC Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>hypercomputecluster.sharedVpcServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/integrations#integrations.serviceAgent">Application Integration Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>integrations.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/krmapihosting#krmapihosting.anthosApiEndpointServiceAgent">KRM API Hosting AnthosApiEndpoint Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>krmapihosting.anthosApiEndpointServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/lifesciences#lifesciences.serviceAgent">Cloud Life Sciences Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>lifesciences.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/meshcontrolplane#meshcontrolplane.serviceAgent">Mesh Managed Control Plane Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>meshcontrolplane.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/multiclusteringress#multiclusteringress.serviceAgent">Multi Cluster Ingress Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>multiclusteringress.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/notebooks#notebooks.serviceAgent">AI Platform Notebooks Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>notebooks.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/run#run.serviceAgent">Cloud Run Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>run.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.automationServiceAgent">Security Center Automation Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.automationServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.controlServiceAgent">Security Center Control Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.controlServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.securityHealthAnalyticsServiceAgent">Security Health Analytics Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.securityHealthAnalyticsServiceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/securitycenter#securitycenter.serviceAgent">Security Center Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>securitycenter.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/spectrumsas#spectrumsas.serviceAgent">Spectrum SAS Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>spectrumsas.serviceAgent</code>)
+            </li>
+            <li>
+              <a href="/iam/docs/roles-permissions/workstations#workstations.serviceAgent">Workstations Service Agent</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>workstations.serviceAgent</code>)
+            </li>
+          </ul>
+        </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <h4 class="permission-name add-link" id="serviceusage.services.use" data-text="serviceusage.services.use" tabindex="-1"><code translate="no" dir="ltr">serviceusage.services.use</code></h4>
       </td>
       <td>
@@ -14131,7 +15877,7 @@ Ability to get and list API keys for a project.
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-10-14 UTC.</p>
+  <p>Last updated 2026-10-20 UTC.</p>
 </devsite-content-footer>
 
 
@@ -14180,7 +15926,7 @@ Ability to get and list API keys for a project.
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-10-14 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-10-20 UTC."],[],[]]
     </template>
   
 </div>
@@ -14212,7 +15958,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-child_headline="products and pricing"track-type="footer link"track-name="see all products"track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/products/">
+            track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/products/"track-metadata-child_headline="products and pricing"track-type="footer link"track-name="see all products">
             
           
             See all products
@@ -14229,7 +15975,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-type="footer link"track-metadata-module="footer"track-metadata-position="footer"track-name="google cloud pricing"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-child_headline="products and pricing">
+            track-metadata-child_headline="products and pricing"track-name="google cloud pricing"track-type="footer link"track-metadata-eventDetail="cloud.google.com/pricing/"track-metadata-module="footer"track-metadata-position="footer">
             
           
             Google Cloud pricing
@@ -14246,7 +15992,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-position="footer"track-name="google cloud marketplace"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="resources">
+            track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-name="google cloud marketplace"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/marketplace/">
             
           
             Google Cloud Marketplace
@@ -14263,7 +16009,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-child_headline="engage"track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/contact/"track-name="contact sales">
+            track-name="contact sales"track-type="footer link"track-metadata-position="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/contact/"track-metadata-module="footer">
             
               
               
@@ -14290,7 +16036,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-name="google cloud community"rel="noopener"track-type="footer link"track-metadata-eventDetail="www.googlecloudcommunity.com"target="_blank"track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-module="footer">
+            track-metadata-position="footer"track-metadata-child_headline="engage"target="_blank"track-metadata-module="footer"track-metadata-eventDetail="www.googlecloudcommunity.com"track-name="google cloud community"track-type="footer link"rel="noopener">
             
           
             Community forums
@@ -14307,7 +16053,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-module="footer"track-name="support"track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer">
+            track-metadata-eventDetail="cloud.google.com/support-hub/"track-metadata-child_headline="resources"track-type="footer link"track-name="support"track-metadata-module="footer"track-metadata-position="footer">
             
           
             Support
@@ -14324,7 +16070,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-child_headline="resources"track-metadata-module="footer"track-name="release notes"track-type="footer link"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/release-notes/">
+            track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-child_headline="resources"track-type="footer link"track-name="release notes"track-metadata-module="footer">
             
           
             Release Notes
@@ -14341,7 +16087,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-eventDetail="status.cloud.google.com"track-type="footer link"track-name="system status"track-metadata-module="footer"track-metadata-child_headline="resources"target="_blank"track-metadata-position="footer">
+            target="_blank"track-metadata-child_headline="resources"track-metadata-eventDetail="status.cloud.google.com"track-name="system status"track-type="footer link"track-metadata-module="footer"track-metadata-position="footer">
             
               
               
@@ -14368,7 +16114,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="resources"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-position="footer"track-name="github">
+            track-metadata-child_headline="resources"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-metadata-position="footer"track-metadata-module="footer"track-type="footer link"track-name="github">
             
           
             GitHub
@@ -14385,7 +16131,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources"track-name="google cloud quickstarts">
+            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-name="google cloud quickstarts"track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer">
             
           
             Getting Started with Google Cloud
@@ -14402,7 +16148,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-name="code samples"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="resources"track-metadata-position="footer">
+            track-metadata-eventDetail="cloud.google.com/docs/samples"track-name="code samples"track-type="footer link"track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-position="footer">
             
           
             Code samples
@@ -14419,7 +16165,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-name="cloud architecture center"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-position="footer">
+            track-metadata-child_headline="resources"track-metadata-position="footer"track-type="footer link"track-name="cloud architecture center"track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer">
             
           
             Cloud Architecture Center
@@ -14436,7 +16182,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-child_headline="resources"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="cloud.google.com/learn/training/"track-name="training"track-metadata-module="footer">
+            track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/learn/training/"track-metadata-module="footer"track-type="footer link"track-name="training">
             
           
             Training and Certification
@@ -14453,7 +16199,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 6)"
-            track-metadata-module="footer"track-metadata-position="footer"track-metadata-eventDetail="me.developers.google.com/"track-name="builders hub"track-metadata-child_headline="resources"track-type="footer link">
+            track-metadata-eventDetail="me.developers.google.com/"track-name="builders hub"track-type="footer link"track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-module="footer">
             
               
               
@@ -14480,7 +16226,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-eventDetail="cloud.google.com/blog/"track-metadata-module="footer"track-metadata-position="footer"track-type="footer link"track-name="blog"track-metadata-child_headline="engage">
+            track-metadata-module="footer"track-metadata-child_headline="engage"track-type="footer link"track-name="blog"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/blog/">
             
           
             Blog
@@ -14497,7 +16243,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/events/"track-metadata-position="footer"track-name="events"track-metadata-child_headline="engage"track-type="footer link"track-metadata-module="footer">
+            track-metadata-eventDetail="cloud.google.com/events/"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="engage"track-type="footer link"track-name="events">
             
           
             Events
@@ -14514,7 +16260,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            target="_blank"track-metadata-module="footer"track-metadata-eventDetail="x.com/googlecloud"track-metadata-child_headline="engage"track-metadata-position="footer"rel="noopener"track-name="follow on x"track-type="footer link">
+            track-metadata-child_headline="engage"track-type="footer link"track-name="follow on x"rel="noopener"track-metadata-position="footer"track-metadata-eventDetail="x.com/googlecloud"target="_blank"track-metadata-module="footer">
             
           
             X (Twitter)
@@ -14531,7 +16277,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-type="footer link"track-metadata-eventDetail="www.youtube.com/googlecloud"target="_blank"track-name="google cloud on youtube"rel="noopener"track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="engage">
+            track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloud"rel="noopener"track-metadata-child_headline="engage"track-metadata-position="footer"target="_blank"track-name="google cloud on youtube"track-type="footer link">
             
           
             Google Cloud on YouTube
@@ -14548,7 +16294,7 @@ Ability to get and list API keys for a project.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-child_headline="engage"target="_blank"rel="noopener"track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-type="footer link"track-name="google cloud tech on youtube"track-metadata-position="footer">
+            rel="noopener"track-metadata-position="footer"track-type="footer link"track-name="google cloud tech on youtube"track-metadata-child_headline="engage"target="_blank"track-metadata-module="footer"track-metadata-eventDetail="www.youtube.com/googlecloudplatform">
             
               
               
@@ -14665,17 +16411,17 @@ Ability to get and list API keys for a project.
            data-category="Site-Wide Custom Events"
            data-label="Footer About Google link"
          
-           track-metadata-position="footer"
-         
-           track-metadata-module="utility footer"
-         
-           track-name="about google"
+           target="_blank"
          
            track-metadata-eventDetail="//about.google/"
          
-           target="_blank"
+           track-name="about google"
          
            track-type="footer link"
+         
+           track-metadata-module="utility footer"
+         
+           track-metadata-position="footer"
          >
           About Google
         </a>
@@ -14691,17 +16437,17 @@ Ability to get and list API keys for a project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           track-type="footer link"
-         
-           track-metadata-module="utility footer"
-         
-           track-name="privacy"
+           track-metadata-position="footer"
          
            target="_blank"
          
+           track-name="privacy"
+         
+           track-type="footer link"
+         
            track-metadata-eventDetail="//policies.google.com/privacy"
          
-           track-metadata-position="footer"
+           track-metadata-module="utility footer"
          >
           Privacy
         </a>
@@ -14717,17 +16463,17 @@ Ability to get and list API keys for a project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
+           track-metadata-position="footer"
+         
+           target="_blank"
+         
+           track-metadata-module="utility footer"
+         
            track-name="site terms"
          
            track-type="footer link"
          
-           target="_blank"
-         
-           track-metadata-position="footer"
-         
            track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
-         
-           track-metadata-module="utility footer"
          >
           Site terms
         </a>
@@ -14743,15 +16489,15 @@ Ability to get and list API keys for a project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Google Cloud terms link"
          
-           track-name="google cloud terms"
-         
-           track-type="footer link"
-         
-           track-metadata-module="utility footer"
-         
            track-metadata-eventDetail="//cloud.google.com/product-terms"
          
            track-metadata-position="footer"
+         
+           track-type="footer link"
+         
+           track-name="google cloud terms"
+         
+           track-metadata-module="utility footer"
          >
           Google Cloud terms
         </a>
@@ -14767,17 +16513,17 @@ Ability to get and list API keys for a project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-type="footer link"
-         
            track-metadata-position="footer"
          
+           track-metadata-module="utility footer"
+         
            track-name="Manage cookies"
+         
+           track-type="footer link"
          
            track-metadata-eventDetail="#"
          
            aria-hidden="true"
-         
-           track-metadata-module="utility footer"
          >
           Manage cookies
         </a>
@@ -14795,13 +16541,13 @@ Ability to get and list API keys for a project.
          
            track-metadata-position="footer"
          
-           track-name="Our third decade of climate action: join us"
-         
            track-metadata-module="utility footer"
          
-           track-metadata-eventDetail="/sustainability/"
-         
            track-type="footer link"
+         
+           track-name="Our third decade of climate action: join us"
+         
+           track-metadata-eventDetail="/sustainability/"
          >
           Our third decade of climate action: join us
         </a>
@@ -14819,15 +16565,15 @@ Ability to get and list API keys for a project.
            data-category="Site-Wide Custom Events"
            data-label="Footer Subscribe link"
          
-           track-type="footer link"
-         
            track-metadata-module="utility footer"
-         
-           track-name="subscribe"
          
            track-metadata-eventDetail="/newsletter/"
          
            track-metadata-position="footer"
+         
+           track-name="subscribe"
+         
+           track-type="footer link"
          >
           Subscribe
         </a>
@@ -14920,12 +16666,12 @@ Ability to get and list API keys for a project.
   
 
     
-<script nonce="q0r+FQsnSTSCACXa4jEhs1l1fGuuHB">
+<script nonce="1Q0IJksu3Ef9BCVn8w2J9if484o1Vc">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["EngEduTelemetry__enable_engedu_telemetry","DevPro__enable_nvidia_credits_card","Profiles__enable_profile_collections","Profiles__enable_join_program_group_endpoint","Profiles__require_profile_eligibility_for_signin","MiscFeatureFlags__fix_lower_breadcrumbs","Concierge__enable_pushui","MiscFeatureFlags__developers_footer_image","Cloud__enable_cloud_shell_fte_user_flow","SignIn__enable_l1_signup_flow","DevPro__enable_g1_integration","MiscFeatureFlags__developers_footer_dark_image","Profiles__enable_completequiz_endpoint","TpcFeatures__enable_unmirrored_page_left_nav","Cloud__enable_cloud_shell","Concierge__enable_concierge_restricted","Experiments__reqs_query_experiments","Profiles__enable_awarding_url","Profiles__enable_user_type","DevPro__enable_embed_profile_creation","DevPro__enable_code_assist","DevPro__enable_cloud_innovators_plus","Profiles__enable_public_developer_profiles","Concierge__enable_actions_menu","DevPro__enable_devsite_captcha","Profiles__enable_developer_profiles_callout","Profiles__enable_auto_apply_credits","MiscFeatureFlags__enable_project_variables","MiscFeatureFlags__enable_dark_theme","DevPro__enable_enterprise","DevPro__enable_developer_subscriptions","MiscFeatureFlags__enable_framebox_badge_methods","Cloud__enable_legacy_calculator_redirect","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_stripe_subscription_management","Cloud__enable_cloud_dlp_service","DevPro__enable_firebase_workspaces_card","Search__enable_suggestions_from_borg","DevPro__enable_google_payments","MiscFeatureFlags__enable_appearance_cookies","DevPro__enable_credits_banner","DevPro__enable_google_one_card","MiscFeatureFlags__enable_variable_operator","CloudShell__cloud_code_overflow_menu","Profiles__enable_purchase_prompts","Profiles__enable_developer_profile_pages_as_content","Profiles__enable_page_saving","Search__enable_ai_search_summaries_for_all","Search__enable_dynamic_content_confidential_banner","Profiles__enable_targeted_hero","Concierge__enable_devsite_llm_tools","MiscFeatureFlags__enable_variable_operator_index_yaml","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_developer_profile_benefits_ui_redesign","Search__enable_ai_eligibility_checks","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__enable_explain_this_code","TpcFeatures__proxy_prod_host","Profiles__enable_playlist_community_acl","Cloud__cache_serialized_dynamic_content","Cloud__enable_cloudx_experiment_ids","CloudShell__cloud_shell_button","Search__enable_page_map","MiscFeatureFlags__remove_cross_domain_tracking_params","Analytics__enable_devpro_interaction_logging","DevPro__remove_eu_tax_intake_form","Profiles__enable_callout_notifications","DevPro__enable_google_payments_buyflow","DevPro__enable_g1_ineligible_redirect","DevPro__enable_vertex_credit_card","MiscFeatureFlags__enable_view_transitions","DevPro__enable_free_benefits","Cloud__enable_free_trial_server_call","Analytics__enable_clearcut_logging","BookNav__enable_tenant_cache_key","Profiles__enable_completecodelab_endpoint","DevPro__enable_devpro_offers","Profiles__enable_complete_playlist_endpoint","Cloud__fast_free_trial","Profiles__enable_recognition_badges","AIStudioInteractionsToggle__interactions_are_default","MiscFeatureFlags__enable_explicit_template_dependencies","OnSwitch__enable"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v9ce9cb5b22b62a465ff52c45061a0a6a2d86a80b685e9aa8a182b203fdfbf420/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Profiles__enable_page_saving","Concierge__enable_remove_info_panel_tags","DevPro__enable_vertex_credit_card","Profiles__enable_stripe_subscription_management","DevPro__enable_nvidia_credits_card","Analytics__enable_devpro_interaction_logging","MiscFeatureFlags__enable_framebox_badge_methods","Cloud__enable_legacy_calculator_redirect","Search__enable_page_map","MiscFeatureFlags__enable_variable_operator","Experiments__reqs_query_experiments","MiscFeatureFlags__remove_cross_domain_tracking_params","Profiles__enable_join_program_group_endpoint","Profiles__enable_developer_profiles_callout","Analytics__enable_clearcut_logging","Profiles__enable_dashboard_curated_recommendations","Profiles__enable_awarding_url","Search__enable_suggestions_from_borg","Profiles__enable_developer_profile_benefits_ui_redesign","DevPro__enable_devsite_captcha","SignIn__enable_l1_signup_flow","TpcFeatures__enable_unmirrored_page_left_nav","Concierge__enable_pushui","Cloud__enable_cloud_shell_fte_user_flow","MiscFeatureFlags__developers_footer_dark_image","DevPro__enable_devpro_offers","Cloud__enable_free_trial_server_call","DevPro__enable_google_payments_buyflow","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_public_developer_profiles","MiscFeatureFlags__enable_variable_operator_index_yaml","DevPro__enable_free_benefits","MiscFeatureFlags__enable_project_variables","Search__enable_ai_search_summaries_for_all","EngEduTelemetry__enable_engedu_telemetry","Profiles__enable_developer_profile_pages_as_content","Search__enable_ai_eligibility_checks","TpcFeatures__proxy_prod_host","BookNav__enable_tenant_cache_key","DevPro__enable_g1_integration","Cloud__enable_cloudx_experiment_ids","Profiles__enable_playlist_community_acl","MiscFeatureFlags__enable_view_transitions","Profiles__enable_completequiz_endpoint","DevPro__enable_credits_banner","DevPro__enable_cloud_innovators_plus","MiscFeatureFlags__developers_footer_image","Profiles__enable_targeted_hero","Concierge__enable_devsite_llm_tools","AIStudioInteractionsToggle__interactions_are_default","Profiles__enable_recognition_badges","Concierge__enable_actions_menu","DevPro__enable_code_assist","Cloud__enable_cloud_dlp_service","Concierge__enable_concierge_restricted","CloudShell__cloud_code_overflow_menu","Profiles__enable_purchase_prompts","DevPro__enable_embed_profile_creation","MiscFeatureFlags__fix_lower_breadcrumbs","Cloud__enable_cloud_shell","Profiles__enable_user_type","DevPro__enable_google_payments","Profiles__enable_callout_notifications","Search__enable_dynamic_content_confidential_banner","MiscFeatureFlags__enable_firebase_utm","DevPro__enable_developer_subscriptions","DevPro__remove_eu_tax_intake_form","Profiles__enable_complete_playlist_endpoint","Profiles__enable_auto_apply_credits","MiscFeatureFlags__enable_explicit_template_dependencies","Profiles__require_profile_eligibility_for_signin","CloudShell__cloud_shell_button","DevPro__enable_enterprise","Cloud__cache_serialized_dynamic_content","Cloud__fast_free_trial","OnSwitch__enable","DevPro__enable_g1_ineligible_redirect","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_profile_collections","MiscFeatureFlags__enable_appearance_cookies","MiscFeatureFlags__enable_dark_theme","Profiles__enable_completecodelab_endpoint","DevPro__enable_google_one_card","DevPro__enable_firebase_workspaces_card"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 
