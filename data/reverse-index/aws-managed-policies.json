@@ -17441,6 +17441,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:BatchGetControl": [
@@ -17448,6 +17453,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:BatchGetTask": [
@@ -17455,6 +17465,18 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:Chat": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:CreateAnnotation": [
@@ -17469,6 +17491,39 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:CreateControl": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:CreateControlGroup": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:CreateFramework": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:CreateProject": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:CreateTask": [
@@ -17485,11 +17540,79 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
       }
     ],
+    "aws:allow_action:assurance:DeleteComment": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:DeleteControl": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:DeleteControlGroup": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:DeleteEvidence": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:DeleteFramework": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:DeleteProject": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:DisableFramework": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
     "aws:allow_action:assurance:DownloadEvidence": [
       {
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:EnableFramework": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:GetAnnotation": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetAssessment": [
@@ -17497,6 +17620,32 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:GetAssessmentReportContent": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:GetAssessmentReportExport": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:GetChatMessages": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetComment": [
@@ -17504,6 +17653,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetControl": [
@@ -17511,6 +17665,18 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:GetControlGroup": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetControlStatus": [
@@ -17518,6 +17684,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetEnvironment": [
@@ -17525,6 +17696,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetEvidence": [
@@ -17532,6 +17708,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetEvidenceContent": [
@@ -17539,6 +17720,18 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:GetFramework": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetProject": [
@@ -17546,6 +17739,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:GetTask": [
@@ -17553,6 +17751,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListAssessmentAnnotations": [
@@ -17560,6 +17763,25 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:ListAssessmentJournalRecords": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:ListAssessmentOutcomes": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListAssessments": [
@@ -17567,6 +17789,18 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:ListChatSessions": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListComments": [
@@ -17574,6 +17808,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListConnectionItems": [
@@ -17581,6 +17820,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListControlGroups": [
@@ -17588,6 +17832,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListControls": [
@@ -17595,6 +17844,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListDiscoveredResources": [
@@ -17602,6 +17856,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListEnabledFrameworks": [
@@ -17609,6 +17868,18 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:ListEnvironmentConnections": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListEvidence": [
@@ -17616,6 +17887,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListEvidenceAnnotations": [
@@ -17623,6 +17899,18 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:ListFrameworks": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListProjects": [
@@ -17630,6 +17918,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListResourcesForControl": [
@@ -17637,6 +17930,25 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:ListTagsForResource": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:ListTaskHistory": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:ListTasks": [
@@ -17644,6 +17956,25 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:PublishFramework": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:PutControlStatusOverride": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:PutEvidence": [
@@ -17651,6 +17982,25 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:StartAssessment": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:StartAssessmentReportExport": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:StartResourceDiscovery": [
@@ -17658,6 +18008,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:UpdateAnnotation": [
@@ -17674,11 +18029,58 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
       }
     ],
+    "aws:allow_action:assurance:UpdateComment": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:UpdateControl": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:UpdateControlGroup": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:UpdateEvidence": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:UpdateFramework": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
+    "aws:allow_action:assurance:UpdateProject": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
     "aws:allow_action:assurance:UpdateTask": [
       {
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:UploadEvidence": [
@@ -17686,6 +18088,11 @@
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:athena:*": [
@@ -184135,6 +184542,11 @@
         "display_name": "AmazonQuickSuiteAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonQuickSuiteAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonQuickSuiteAccessPolicy"
+      },
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:identitystore:GetGroupId": [
@@ -203683,6 +204095,11 @@
         "display_name": "BedrockAgentCoreFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BedrockAgentCoreFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess"
+      },
+      {
+        "display_name": "CloudWatchFullAccessV2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
       },
       {
         "display_name": "CloudWatchLogsAPIKeyAccess",
@@ -363959,7 +364376,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-10-21T08:38:29Z",
+  "generated_at_utc": "2026-10-22T08:40:53Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
