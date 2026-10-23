@@ -1,0 +1,67 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:ec2:DescribeDhcpOptions"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "ec2:DescribeDhcpOptions"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AmazonEKSServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeDhcpOptions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v29 (default)",
+          "before": "v28 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 22, 2026, 16:37 UTC",
+          "before": "October 01, 2026, 16:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 22, 2026, 16:37 UTC",
+          "before": "October 01, 2026, 16:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-23T08:37:10Z",
+  "counts": {
+    "added_atoms": 1,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 1608,
+    "previous_objects": 1608,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-23",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-22",
+  "removed_objects": []
+}
