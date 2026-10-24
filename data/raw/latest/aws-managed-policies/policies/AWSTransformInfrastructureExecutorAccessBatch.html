@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 20, 2026, 20:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  September 02, 2026, 21:27 UTC</p>
+                <p><b>Edited time:</b>  October 22, 2026, 21:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch</code></p>
             </li></ul></div>
      
         <h2 id="AWSTransformInfrastructureExecutorAccessBatch-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -180,6 +180,37 @@
         "arn:aws:logs:*:*:log-group:/aws/batch/job*",
         "arn:aws:logs:*:*:log-group:AtxVpc*",
         "arn:aws:logs:*:*:log-group:/aws/lambda/atx-*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CmodCustomerLogGroupManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:CreateLogGroup",
+        "logs:PutRetentionPolicy"
+      ],
+      "Resource" : "arn:aws:logs:*:*:log-group:/aws/TransformContinuousModernization",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CmodCustomerLogStreamWrite",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource" : [
+        "arn:aws:logs:*:*:log-group:/aws/TransformContinuousModernization:log-stream:local/*",
+        "arn:aws:logs:*:*:log-group:/aws/TransformContinuousModernization:log-stream:batch/*"
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>

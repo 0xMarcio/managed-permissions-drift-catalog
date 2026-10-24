@@ -1,0 +1,340 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:budgets:ExecuteBudgetAction",
+      "aws:allow_action:ec2:CreateVolume",
+      "aws:allow_action:logs:CreateLogGroup",
+      "aws:allow_action:logs:CreateLogGroup",
+      "aws:allow_action:logs:CreateLogGroup",
+      "aws:allow_action:logs:CreateLogStream",
+      "aws:allow_action:logs:CreateLogStream",
+      "aws:allow_action:logs:CreateLogStream",
+      "aws:allow_action:logs:PutLogEvents",
+      "aws:allow_action:logs:PutLogEvents",
+      "aws:allow_action:logs:PutLogEvents",
+      "aws:allow_action:logs:PutRetentionPolicy",
+      "aws:allow_action:logs:PutRetentionPolicy",
+      "aws:allow_action:logs:PutRetentionPolicy",
+      "aws:allow_action:partnercentral:GetConnection",
+      "aws:allow_action:partnercentral:GetConnection",
+      "aws:allow_action:partnercentral:ListConnections",
+      "aws:allow_action:partnercentral:ListConnections"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "budgets:ExecuteBudgetAction",
+          "ec2:CreateVolume",
+          "logs:CreateLogGroup",
+          "logs:CreateLogGroup",
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:CreateLogStream",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents",
+          "logs:PutLogEvents",
+          "logs:PutLogEvents",
+          "logs:PutRetentionPolicy",
+          "logs:PutRetentionPolicy",
+          "logs:PutRetentionPolicy",
+          "partnercentral:GetConnection",
+          "partnercentral:GetConnection",
+          "partnercentral:ListConnections",
+          "partnercentral:ListConnections"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSManagedSettingsAdminAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "budgets:ExecuteBudgetAction"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 22, 2026, 22:57 UTC",
+          "before": "September 30, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 22, 2026, 22:57 UTC",
+          "before": "September 30, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+    },
+    {
+      "display_name": "AWSMarketplaceSellerFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetConnection",
+              "partnercentral:ListConnections"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v34 (default)",
+          "before": "v33 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 22, 2026, 17:47 UTC",
+          "before": "August 12, 2026, 16:47 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 22, 2026, 17:47 UTC",
+          "before": "August 12, 2026, 16:47 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 24,
+          "before": 22,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+    },
+    {
+      "display_name": "AWSMarketplaceSellerProductsFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetConnection",
+              "partnercentral:ListConnections"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 22, 2026, 17:47 UTC",
+          "before": "February 19, 2026, 19:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 22, 2026, 17:47 UTC",
+          "before": "February 19, 2026, 19:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 14,
+          "before": 12,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerProductsFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerProductsFullAccess"
+    },
+    {
+      "display_name": "AWSTransformInfrastructureExecutorAccessBatch",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "logs:CreateLogGroup",
+              "logs:CreateLogStream",
+              "logs:PutLogEvents",
+              "logs:PutRetentionPolicy"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 22, 2026, 21:47 UTC",
+          "before": "September 02, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 22, 2026, 21:47 UTC",
+          "before": "September 02, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 19,
+          "before": 17,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessBatch.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessBatch"
+    },
+    {
+      "display_name": "AWSTransformInfrastructureExecutorAccessEC2",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "logs:CreateLogGroup",
+              "logs:CreateLogStream",
+              "logs:PutLogEvents",
+              "logs:PutRetentionPolicy"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 22, 2026, 21:17 UTC",
+          "before": "September 02, 2026, 21:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 22, 2026, 21:17 UTC",
+          "before": "September 02, 2026, 21:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 23,
+          "before": 21,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformInfrastructureExecutorAccessEC2.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformInfrastructureExecutorAccessEC2"
+    },
+    {
+      "display_name": "AWSTransformSecurityAgentExecutorAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "logs:CreateLogGroup",
+              "logs:CreateLogStream",
+              "logs:PutLogEvents",
+              "logs:PutRetentionPolicy"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 22, 2026, 22:07 UTC",
+          "before": "July 28, 2026, 15:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 22, 2026, 22:07 UTC",
+          "before": "July 28, 2026, 15:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 8,
+          "before": 6,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformSecurityAgentExecutorAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformSecurityAgentExecutorAccess"
+    },
+    {
+      "display_name": "AmazonECSInfrastructureRolePolicyForManagedInstances",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:CreateVolume"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 22, 2026, 21:27 UTC",
+          "before": "September 15, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 22, 2026, 21:27 UTC",
+          "before": "September 15, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 14,
+          "before": 13,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRolePolicyForManagedInstances.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRolePolicyForManagedInstances"
+    }
+  ],
+  "compared_at_utc": "2026-10-24T08:12:23Z",
+  "counts": {
+    "added_atoms": 18,
+    "added_objects": 0,
+    "changed_objects": 7,
+    "current_objects": 1608,
+    "previous_objects": 1608,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-24",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-23",
+  "removed_objects": []
+}

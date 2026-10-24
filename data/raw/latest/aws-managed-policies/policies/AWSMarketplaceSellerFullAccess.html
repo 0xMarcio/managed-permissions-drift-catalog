@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 02, 2019, 20:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 12, 2026, 16:47 UTC</p>
+                <p><b>Edited time:</b>  October 22, 2026, 17:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceSellerFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v33 (default)</p>
+        <p><b>Policy version:</b> v34 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -367,6 +367,38 @@
         "aws-marketplace:ListTaxComplianceProfiles"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "ListAccountConnections",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:ListConnections"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ReadAccountConnections",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:GetConnection"
+      ],
+      "Resource" : "arn:aws:partnercentral:*::catalog/*/connection/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
     }
   ]
 }</code></pre>
