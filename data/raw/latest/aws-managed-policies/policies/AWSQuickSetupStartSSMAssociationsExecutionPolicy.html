@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 08, 2025, 12:04 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 05, 2026, 16:57 UTC</p>
+                <p><b>Edited time:</b>  October 27, 2026, 15:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSQuickSetupStartSSMAssociationsExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSQuickSetupStartSSMAssociationsExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v7 (default)</p>
+        <p><b>Policy version:</b> v8 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -100,6 +100,19 @@
             "arn:aws:ssm:*:*:automation-execution/*",
             "arn:aws:ssm:*:*:automation-definition/AWSQuickSetupType-Scheduler-ChangeCalendarState*"
           ]
+        }
+      }
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "ssm:GetCalendarState",
+      "Resource" : "arn:aws:ssm:*:*:document/*",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "aws:userid" : "*:SystemsManager-Automation-ChangeCalendar-Check"
+        },
+        "StringEquals" : <span>{</span>
+          "ssm:DocumentType" : "ChangeCalendar"
         }
       }
     }

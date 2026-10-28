@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: May 11, 2026, 16:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 11, 2026, 16:27 UTC</p>
+                <p><b>Edited time:</b>  October 26, 2026, 23:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonEKSBlockStoragePolicyV2</code></p>
             </li></ul></div>
      
         <h2 id="AmazonEKSBlockStoragePolicyV2-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -77,6 +77,7 @@
         "ec2:AttachVolume",
         "ec2:DetachVolume",
         "ec2:ModifyVolume",
+        "ec2:CopyVolumes",
         "ec2:EnableFastSnapshotRestores"
       ],
       "Resource" : "*",
@@ -94,6 +95,7 @@
         "StringEquals" : <span>{</span>
           "ec2:CreateAction" : [
             "CreateVolume",
+            "CopyVolumes",
             "CreateSnapshot"
           ]
         }
@@ -102,7 +104,8 @@
     <span>{</span>
       "Effect" : "Allow",
       "Action" : [
-        "ec2:CreateVolume"
+        "ec2:CreateVolume",
+        "ec2:CopyVolumes"
       ],
       "Resource" : "arn:aws:ec2:*:*:volume/*",
       "Condition" : <span>{</span>

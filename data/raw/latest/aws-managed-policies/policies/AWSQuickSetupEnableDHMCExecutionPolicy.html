@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 15, 2024, 21:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 15, 2024, 21:27 UTC</p>
+                <p><b>Edited time:</b>  October 27, 2026, 15:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSQuickSetupEnableDHMCExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSQuickSetupEnableDHMCExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -108,6 +108,19 @@
         "ssm:UpdateServiceSetting"
       ],
       "Resource" : "arn:aws:ssm:*:*:servicesetting/ssm/managed-instance/default-ec2-instance-management-role"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
+      "Action" : "ssm:GetCalendarState",
+      "Resource" : "arn:aws:ssm:*:*:document/*",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "aws:userid" : "*:SystemsManager-Automation-ChangeCalendar-Check"
+        },
+        "StringEquals" : <span>{</span>
+          "ssm:DocumentType" : "ChangeCalendar"
+        }
+      }
     }
   ]
 }</code></pre>

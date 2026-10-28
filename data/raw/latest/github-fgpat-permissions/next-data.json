@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "3BkXQ4cqSHeT_gs3Z6tmP",
+  "buildId": "O7OG1tv_Pu5_Llu3dH4YZ",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -4219,6 +4219,51 @@
               "slug": "update-an-issue",
               "subcategory": "issues",
               "verb": "patch"
+            },
+            {
+              "access": "read",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/artifacts",
+              "slug": "list-issue-artifacts",
+              "subcategory": "artifacts",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/artifacts",
+              "slug": "create-an-issue-artifact",
+              "subcategory": "artifacts",
+              "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}",
+              "slug": "get-an-issue-artifact",
+              "subcategory": "artifacts",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}",
+              "slug": "update-an-issue-artifact",
+              "subcategory": "artifacts",
+              "verb": "patch"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}",
+              "slug": "delete-an-issue-artifact",
+              "subcategory": "artifacts",
+              "verb": "delete"
             },
             {
               "access": "write",
@@ -8760,6 +8805,24 @@
               "verb": "patch"
             },
             {
+              "access": "read",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/artifacts",
+              "slug": "list-issue-artifacts",
+              "subcategory": "artifacts",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": true,
+              "category": "issues",
+              "requestPath": "/repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}",
+              "slug": "get-an-issue-artifact",
+              "subcategory": "artifacts",
+              "verb": "get"
+            },
+            {
               "access": "write",
               "additional-permissions": true,
               "category": "issues",
@@ -11850,6 +11913,11 @@
             },
             {
               "childPages": [
+                {
+                  "childPages": [],
+                  "href": "/en/rest/issues/artifacts",
+                  "title": "Artifacts"
+                },
                 {
                   "childPages": [],
                   "href": "/en/rest/issues/assignees",

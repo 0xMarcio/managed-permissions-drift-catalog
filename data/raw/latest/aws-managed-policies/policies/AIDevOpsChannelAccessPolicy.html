@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 26, 2026, 21:07 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 26, 2026, 21:07 UTC</p>
+                <p><b>Edited time:</b>  October 26, 2026, 22:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/AIDevOpsChannelAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsChannelAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -79,6 +79,48 @@
         "aidevops:SendMessage"
       ],
       "Resource" : "arn:aws:aidevops:*:*:agentspace/$<span>{</span>aws:PrincipalTag/AgentSpaceId}",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowAgentSpaceActions",
+      "Effect" : "Allow",
+      "Action" : [
+        "aidevops:CreateAsset",
+        "aidevops:UpdateAsset",
+        "aidevops:DeleteAsset",
+        "aidevops:CreateAssetFile",
+        "aidevops:UpdateAssetFile",
+        "aidevops:DeleteAssetFile",
+        "aidevops:GetAsset",
+        "aidevops:GetAssetContent",
+        "aidevops:GetAssetFile",
+        "aidevops:ListAssets",
+        "aidevops:ListAssetFiles",
+        "aidevops:CreateBacklogTask",
+        "aidevops:UpdateBacklogTask",
+        "aidevops:UpdateRecommendation",
+        "aidevops:CreateTrigger",
+        "aidevops:UpdateTrigger",
+        "aidevops:DeleteTrigger",
+        "aidevops:GetBacklogTask",
+        "aidevops:ListBacklogTasks",
+        "aidevops:GetRecommendation",
+        "aidevops:ListRecommendations",
+        "aidevops:ListTriggers",
+        "aidevops:ListGoals",
+        "aidevops:ListExecutions",
+        "aidevops:ListJournalRecords",
+        "aidevops:GetAssociation",
+        "aidevops:ListAssociations"
+      ],
+      "Resource" : [
+        "arn:aws:aidevops:*:*:agentspace/$<span>{</span>aws:PrincipalTag/AgentSpaceId}",
+        "arn:aws:aidevops:*:*:agentspace/$<span>{</span>aws:PrincipalTag/AgentSpaceId}/*"
+      ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
