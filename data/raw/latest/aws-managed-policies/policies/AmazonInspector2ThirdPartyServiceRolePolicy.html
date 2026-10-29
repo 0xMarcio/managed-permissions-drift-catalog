@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: June 26, 2026, 15:27 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 26, 2026, 15:27 UTC</p>
+                <p><b>Edited time:</b>  October 27, 2026, 20:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2ThirdPartyServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonInspector2ThirdPartyServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -101,6 +101,7 @@
       ],
       "Resource" : [
         "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnAzure*",
+        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnGcp*",
         "arn:aws:ssm:*:*:association/*"
       ]
     },
@@ -130,7 +131,8 @@
       ],
       "Resource" : [
         "arn:aws:ssm:*:*:document/AmazonInspector2-*",
-        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnAzure*"
+        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnAzure*",
+        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnGcp*"
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
@@ -150,6 +152,7 @@
       ],
       "Resource" : [
         "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnAzure*",
+        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnGcp*",
         "arn:aws:ssm:*:*:automation-execution/*"
       ]
     },
@@ -243,7 +246,8 @@
         },
         "ForAnyValue:StringLike" : <span>{</span>
           "sts:IdentityTokenAudience" : [
-            "api://AzureADTokenExchange"
+            "api://AzureADTokenExchange",
+            "https://sts.googleapis.com"
           ]
         }
       }

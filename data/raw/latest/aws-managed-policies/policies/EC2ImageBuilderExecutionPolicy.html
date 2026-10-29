@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: June 04, 2026, 17:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 08, 2026, 16:27 UTC</p>
+                <p><b>Edited time:</b>  October 27, 2026, 23:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/EC2ImageBuilderExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="EC2ImageBuilderExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -619,8 +619,11 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "iam:AWSServiceName" : [
-            "ssm.amazonaws.com",
-            "ec2fastlaunch.amazonaws.com"
+            "agentless.inspector2.amazonaws.com",
+            "ami.inspector2.amazonaws.com",
+            "ec2fastlaunch.amazonaws.com",
+            "inspector2.amazonaws.com",
+            "ssm.amazonaws.com"
           ]
         }
       }
@@ -649,6 +652,18 @@
         "inspector2:ListFindings"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "InspectorOnDemandScanningPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "inspector2:StartOnDemandScan",
+        "inspector2:GetOnDemandScanStatus",
+        "inspector2:ListOnDemandScans"
+      ],
+      "Resource" : [
+        "arn:aws:inspector2:*:*:*"
+      ]
     },
     <span>{</span>
       "Sid" : "CreateECRImageForInspectorScanningPermissions",

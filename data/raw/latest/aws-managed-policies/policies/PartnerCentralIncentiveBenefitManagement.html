@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 11, 2026, 16:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 12, 2026, 16:57 UTC</p>
+                <p><b>Edited time:</b>  October 28, 2026, 13:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/PartnerCentralIncentiveBenefitManagement</code></p>
             </li></ul></div>
      
         <h2 id="PartnerCentralIncentiveBenefitManagement-version">Policy version</h2>
-        <p><b>Policy version:</b> v4 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -151,6 +151,25 @@
         "partnercentral:ListOpportunities"
       ],
       "Resource" : "arn:aws:partnercentral:*:*:catalog/*/opportunity/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "PartnerCentralContentAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:GetPartnerCentralContentDocument",
+        "partnercentral:GetPartnerCentralContentMetadata",
+        "partnercentral:ListPartnerCentralContent",
+        "partnercentral:SearchPartnerCentralContent"
+      ],
+      "Resource" : "*",
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "partnercentral:Catalog" : [

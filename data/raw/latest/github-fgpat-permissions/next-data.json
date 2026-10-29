@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "O7OG1tv_Pu5_Llu3dH4YZ",
+  "buildId": "7VzE_k0Hlr5uC9vPpHrO5",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -9477,6 +9477,42 @@
               "verb": "patch"
             },
             {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "security-advisories",
+              "requestPath": "/repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments",
+              "slug": "list-repository-security-advisory-comments",
+              "subcategory": "repository-advisories",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "security-advisories",
+              "requestPath": "/repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments",
+              "slug": "create-a-repository-advisory-comment",
+              "subcategory": "repository-advisories",
+              "verb": "post"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "security-advisories",
+              "requestPath": "/repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}",
+              "slug": "get-a-repository-advisory-comment",
+              "subcategory": "repository-advisories",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "security-advisories",
+              "requestPath": "/repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}",
+              "slug": "update-a-repository-advisory-comment",
+              "subcategory": "repository-advisories",
+              "verb": "patch"
+            },
+            {
               "access": "write",
               "additional-permissions": false,
               "category": "security-advisories",
@@ -11115,6 +11151,7 @@
           "documentType": "article",
           "fullTitle": "Permissions required for fine-grained personal access tokens - GitHub Docs",
           "hidden": false,
+          "hideSidebar": false,
           "introPlainText": "For each permission granted to a fine-grained personal access token, these are the REST API endpoints that the app can use.",
           "noEarlyAccessBanner": false,
           "title": "Permissions required for fine-grained personal access tokens"
@@ -12204,6 +12241,11 @@
             },
             {
               "childPages": [
+                {
+                  "childPages": [],
+                  "href": "/en/rest/pulls/agent-merge",
+                  "title": "Agent Merge"
+                },
                 {
                   "childPages": [],
                   "href": "/en/rest/pulls/comments",

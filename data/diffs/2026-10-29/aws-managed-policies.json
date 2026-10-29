@@ -1,0 +1,398 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:xray:CallWithBearerToken",
+        "aws:allow_action:xray:PutTraceSegments"
+      ],
+      "display_name": "AWSXRayAPIKeyAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSXRayAPIKeyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSXRayAPIKeyAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:sts:GetWebIdentityToken"
+      ],
+      "display_name": "AWSIPAMOutboundServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIPAMOutboundServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSIPAMOutboundServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:config:BatchGetResourceConfig",
+      "aws:allow_action:config:ListDiscoveredResources",
+      "aws:allow_action:inspector2:GetOnDemandScanStatus",
+      "aws:allow_action:inspector2:GetOnDemandScanStatus",
+      "aws:allow_action:inspector2:ListOnDemandScans",
+      "aws:allow_action:inspector2:ListOnDemandScans",
+      "aws:allow_action:inspector2:StartOnDemandScan",
+      "aws:allow_action:inspector2:StartOnDemandScan",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentDocument",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentDocument",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentDocument",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentMetadata",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentMetadata",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentMetadata",
+      "aws:allow_action:partnercentral:ListPartnerCentralContent",
+      "aws:allow_action:partnercentral:ListPartnerCentralContent",
+      "aws:allow_action:partnercentral:ListPartnerCentralContent",
+      "aws:allow_action:partnercentral:SearchPartnerCentralContent",
+      "aws:allow_action:partnercentral:SearchPartnerCentralContent",
+      "aws:allow_action:partnercentral:SearchPartnerCentralContent",
+      "aws:allow_action:sts:GetWebIdentityToken",
+      "aws:allow_action:xray:CallWithBearerToken",
+      "aws:allow_action:xray:PutTraceSegments"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "config:BatchGetResourceConfig",
+          "config:ListDiscoveredResources",
+          "inspector2:GetOnDemandScanStatus",
+          "inspector2:GetOnDemandScanStatus",
+          "inspector2:ListOnDemandScans",
+          "inspector2:ListOnDemandScans",
+          "inspector2:StartOnDemandScan",
+          "inspector2:StartOnDemandScan",
+          "partnercentral:GetPartnerCentralContentDocument",
+          "partnercentral:GetPartnerCentralContentDocument",
+          "partnercentral:GetPartnerCentralContentDocument",
+          "partnercentral:GetPartnerCentralContentMetadata",
+          "partnercentral:GetPartnerCentralContentMetadata",
+          "partnercentral:GetPartnerCentralContentMetadata",
+          "partnercentral:ListPartnerCentralContent",
+          "partnercentral:ListPartnerCentralContent",
+          "partnercentral:ListPartnerCentralContent",
+          "partnercentral:SearchPartnerCentralContent",
+          "partnercentral:SearchPartnerCentralContent",
+          "partnercentral:SearchPartnerCentralContent",
+          "sts:GetWebIdentityToken",
+          "xray:CallWithBearerToken",
+          "xray:PutTraceSegments"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "ssm:GetParameters"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:ssm:GetParameters"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [],
+            "removed": [
+              "ssm:GetParameters"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v12 (default)",
+          "before": "v11 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 27, 2026, 18:07 UTC",
+          "before": "September 24, 2026, 20:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 27, 2026, 18:07 UTC",
+          "before": "September 24, 2026, 20:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "AWSPartnerCentralOpportunityManagement",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetPartnerCentralContentDocument",
+              "partnercentral:GetPartnerCentralContentMetadata",
+              "partnercentral:ListPartnerCentralContent",
+              "partnercentral:SearchPartnerCentralContent"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 28, 2026, 13:47 UTC",
+          "before": "June 16, 2026, 13:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 28, 2026, 13:47 UTC",
+          "before": "June 16, 2026, 13:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 11,
+          "before": 10,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+    },
+    {
+      "display_name": "AWSPartnerCentralRevenueAttributionManagement",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetPartnerCentralContentDocument",
+              "partnercentral:GetPartnerCentralContentMetadata",
+              "partnercentral:ListPartnerCentralContent",
+              "partnercentral:SearchPartnerCentralContent"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 28, 2026, 13:47 UTC",
+          "before": "June 30, 2026, 19:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 28, 2026, 13:47 UTC",
+          "before": "June 30, 2026, 19:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 13,
+          "before": 12,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralRevenueAttributionManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement"
+    },
+    {
+      "display_name": "EC2ImageBuilderExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "inspector2:GetOnDemandScanStatus",
+              "inspector2:ListOnDemandScans",
+              "inspector2:StartOnDemandScan"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 27, 2026, 23:47 UTC",
+          "before": "July 08, 2026, 16:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 27, 2026, 23:47 UTC",
+          "before": "July 08, 2026, 16:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 47,
+          "before": 46,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/EC2ImageBuilderExecutionPolicy"
+    },
+    {
+      "display_name": "PartnerCentralIncentiveBenefitManagement",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetPartnerCentralContentDocument",
+              "partnercentral:GetPartnerCentralContentMetadata",
+              "partnercentral:ListPartnerCentralContent",
+              "partnercentral:SearchPartnerCentralContent"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 28, 2026, 13:47 UTC",
+          "before": "March 12, 2026, 16:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 28, 2026, 13:47 UTC",
+          "before": "March 12, 2026, 16:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 10,
+          "before": 9,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/PartnerCentralIncentiveBenefitManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/PartnerCentralIncentiveBenefitManagement"
+    },
+    {
+      "display_name": "AWSServiceRoleForImageBuilder",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "inspector2:GetOnDemandScanStatus",
+              "inspector2:ListOnDemandScans",
+              "inspector2:StartOnDemandScan"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v29 (default)",
+          "before": "v28 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 27, 2026, 23:37 UTC",
+          "before": "July 09, 2026, 15:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 27, 2026, 23:37 UTC",
+          "before": "July 09, 2026, 15:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 39,
+          "before": 38,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForImageBuilder.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForImageBuilder"
+    },
+    {
+      "display_name": "AmazonInspector2ThirdPartyServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 27, 2026, 20:37 UTC",
+          "before": "June 26, 2026, 15:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 27, 2026, 20:37 UTC",
+          "before": "June 26, 2026, 15:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ThirdPartyServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2ThirdPartyServiceRolePolicy"
+    },
+    {
+      "display_name": "AssuranceServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "config:BatchGetResourceConfig",
+              "config:ListDiscoveredResources"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 28, 2026, 15:17 UTC",
+          "before": "October 20, 2026, 15:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 28, 2026, 15:17 UTC",
+          "before": "October 20, 2026, 15:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-10-29T10:03:31Z",
+  "counts": {
+    "added_atoms": 23,
+    "added_objects": 2,
+    "changed_objects": 8,
+    "current_objects": 1611,
+    "previous_objects": 1609,
+    "removed_atoms": 1,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-10-29",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-28",
+  "removed_objects": []
+}
