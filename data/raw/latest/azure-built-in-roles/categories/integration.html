@@ -76,7 +76,7 @@
 	
 		<meta name="ms.author" content="rolyon" />
 	
-		<meta name="ms.date" content="2026-07-01T00:00:00Z" />
+		<meta name="ms.date" content="2026-10-29T00:00:00Z" />
 	
 		<meta name="ms.custom" content="generated" />
 	
@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="5c56e594-1293-b1a9-2a94-78b190e25c32" />
 	
-		<meta name="updated_at" content="2026-08-11T05:12:00Z" />
+		<meta name="updated_at" content="2026-10-30T05:22:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/integration.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/7d290526a82106a7a5f4fb14377af1385f880a9a/articles/role-based-access-control/built-in-roles/integration.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/fc4457d51a412bb40668f5d629b12c2a66791396/articles/role-based-access-control/built-in-roles/integration.md" />
 	
-		<meta name="git_commit_id" content="7d290526a82106a7a5f4fb14377af1385f880a9a" />
+		<meta name="git_commit_id" content="fc4457d51a412bb40668f5d629b12c2a66791396" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="7373" />
+		<meta name="word_count" content="7401" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/integration" />
 	
@@ -112,15 +112,19 @@
 	
 		<meta name="source_path" content="articles/role-based-access-control/built-in-roles/integration.md" />
 	
-		<meta name="previous_tlsh_hash" content="1D8C7F230116C216FF02078F781FBF092BA86489B65436810E3A8226C1C4AA2E3A5D1466DF02BF9EF537C56732436D935892B53BE6CF7450EA0456ED8925C7F3BCDDA6364C" />
+		<meta name="previous_tlsh_hash" content="6445B0230116C216FF02078F781FBF092FA86489B65437810A3A8226C1C4AA2E3A5D1466DB02BF9EF537C56732436DD35892B53BE6CF7450EA0456ED8925C7F3BCDDA6364C" />
 	
 		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/role-based-access-control/built-in-roles/integration.md" />
 	
 		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration?accept=text/markdown" />
 	 
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d" data-source="generated" />
+	
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/bf4dbf7f-261c-4ae9-9fee-5989668a780a" data-source="generated" />
 	
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778" data-source="generated" />
 	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/1c4b5d48-3f26-4bd8-9592-816d9c1a3420" data-source="generated" />
 	
@@ -4340,6 +4344,10 @@
 <td>Allows user to perform bulk operations</td>
 </tr>
 <tr>
+<td><a href="../permissions/integration#microsofthealthcareapis" data-linktype="relative-path">Microsoft.HealthcareApis</a>/services/fhir/resources/editProfileDefinitions/action</td>
+<td>Allows user to perform Create Update Delete operations on profile resources.</td>
+</tr>
+<tr>
 <td><a href="../permissions/integration#microsofthealthcareapis" data-linktype="relative-path">Microsoft.HealthcareApis</a>/workspaces/fhirservices/resources/read</td>
 <td>Read FHIR resources (includes searching and versioned history).</td>
 </tr>
@@ -4372,6 +4380,10 @@
 <td>Allows user to perform bulk operations</td>
 </tr>
 <tr>
+<td><a href="../permissions/integration#microsofthealthcareapis" data-linktype="relative-path">Microsoft.HealthcareApis</a>/workspaces/fhirservices/resources/editProfileDefinitions/action</td>
+<td>Allows user to perform Create Update Delete operations on profile resources.</td>
+</tr>
+<tr>
 <td><strong>NotDataActions</strong></td>
 <td></td>
 </tr>
@@ -4402,6 +4414,7 @@
         "Microsoft.HealthcareApis/services/fhir/resources/import/action",
         "Microsoft.HealthcareApis/services/fhir/resources/hardDelete/action",
         "Microsoft.HealthcareApis/services/fhir/resources/bulkOperator/action",
+        "Microsoft.HealthcareApis/services/fhir/resources/editProfileDefinitions/action",
         "Microsoft.HealthcareApis/workspaces/fhirservices/resources/read",
         "Microsoft.HealthcareApis/workspaces/fhirservices/resources/write",
         "Microsoft.HealthcareApis/workspaces/fhirservices/resources/delete",
@@ -4409,7 +4422,8 @@
         "Microsoft.HealthcareApis/workspaces/fhirservices/resources/reindex/action",
         "Microsoft.HealthcareApis/workspaces/fhirservices/resources/import/action",
         "Microsoft.HealthcareApis/workspaces/fhirservices/resources/hardDelete/action",
-        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/bulkOperator/action"
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/bulkOperator/action",
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/editProfileDefinitions/action"
       ],
       "notDataActions": []
     }
@@ -6599,11 +6613,11 @@
 				<li class="visibility-hidden-visual-diff">
 			<span class="badge badge-sm text-wrap-pretty">
 				<span>Last updated on <local-time format="twoDigitNumeric"
-		datetime="2026-07-01T08:00:00.000Z"
+		datetime="2026-10-29T08:00:00.000Z"
 		data-article-date-source="calculated"
 		class="is-invisible"
 	>
-		2026-07-01
+		2026-10-29
 	</local-time></span>
 			</span>
 		</li>

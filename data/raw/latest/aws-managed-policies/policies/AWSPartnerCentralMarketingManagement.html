@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: December 01, 2025, 00:34 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 16, 2026, 02:27 UTC</p>
+                <p><b>Edited time:</b>  October 28, 2026, 17:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSPartnerCentralMarketingManagement</code></p>
             </li></ul></div>
      
         <h2 id="AWSPartnerCentralMarketingManagement-version">Policy version</h2>
-        <p><b>Policy version:</b> v5 (default)</p>
+        <p><b>Policy version:</b> v6 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -186,6 +186,89 @@
         "q:PassRequest"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyStartChangeSet",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:StartChangeSet"
+      ],
+      "Resource" : [
+        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/CaseStudy/*",
+        "arn:aws:aws-marketplace:*:*:AWSMarketplace*/ChangeSet/*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "catalog:ChangeType" : [
+            "CreateCaseStudy",
+            "UpdateInformation",
+            "ReleaseCaseStudy",
+            "RestrictCaseStudy",
+            "UpdateVisibility"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyDescribeChangeSet",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:DescribeChangeSet"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace*/ChangeSet/*"
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyListChangeSets",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:ListChangeSets"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyEntityTagAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:ListTagsForResource",
+        "aws-marketplace:TagResource",
+        "aws-marketplace:UntagResource"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace*/CaseStudy/*"
+    },
+    <span>{</span>
+      "Sid" : "CaseStudyEntityReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:ListEntities"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "DescribeEntityAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:DescribeEntity"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace*/CaseStudy/*"
+    },
+    <span>{</span>
+      "Sid" : "PartnerCentralAgentsSessionAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:UseSession"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        },
+        "Bool" : <span>{</span>
+          "aws:IsMcpServiceAction" : "true"
+        }
+      }
     }
   ]
 }</code></pre>
