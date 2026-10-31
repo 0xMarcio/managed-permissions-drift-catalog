@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:55 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 28, 2026, 17:07 UTC</p>
+                <p><b>Edited time:</b>  October 29, 2026, 22:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectRoleMachineLearningPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v46 (default)</p>
+        <p><b>Policy version:</b> v47 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -258,7 +258,9 @@
       "Sid" : "SageMakerPipelinesSTSPermissions",
       "Effect" : "Allow",
       "Action" : [
-        "sts:GetCallerIdentity"
+        "sts:GetCallerIdentity",
+        "ecr-public:GetAuthorizationToken",
+        "sts:GetServiceBearerToken"
       ],
       "Resource" : "*"
     },
@@ -632,7 +634,7 @@
       }
     },
     <span>{</span>
-      "Sid" : "SageMakerStudioAppListActionsPermissions",
+      "Sid" : "UnscopedListAndRead",
       "Effect" : "Allow",
       "Action" : [
         "sagemaker:ListApps",
@@ -643,7 +645,98 @@
       "Resource" : "*"
     },
     <span>{</span>
-      "Sid" : "SageMakerStudioAppDescribeDomainActionsPermissions",
+      "Sid" : "ACCreateHarnessEndpoint",
+      "Effect" : "Allow",
+      "Action" : "bedrock-agentcore:CreateHarnessEndpoint",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+        },
+        "StringEqualsIfExists" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACTagOwnResources",
+      "Effect" : "Allow",
+      "Action" : "bedrock-agentcore:TagResource",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACProjectResources",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:*Harness*",
+        "bedrock-agentcore:*AgentRuntime",
+        "bedrock-agentcore:*AgentRuntimeEndpoint",
+        "bedrock-agentcore:ListAgentRuntimeEndpoints",
+        "bedrock-agentcore:ListAgentRuntimeVersions",
+        "bedrock-agentcore:StopRuntimeSession",
+        "bedrock-agentcore:*Memory",
+        "bedrock-agentcore:*MemoryRecord*",
+        "bedrock-agentcore:*Event",
+        "bedrock-agentcore:ListEvents",
+        "bedrock-agentcore:ListActors",
+        "bedrock-agentcore:ListSessions",
+        "bedrock-agentcore:*Gateway",
+        "bedrock-agentcore:*GatewayTarget",
+        "bedrock-agentcore:*GatewayTargets",
+        "bedrock-agentcore:*Dataset*",
+        "bedrock-agentcore:*BatchEvaluation*",
+        "bedrock-agentcore:*WorkloadIdentity",
+        "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:GetWorkloadAccessTokenForJWT",
+        "bedrock-agentcore:ListTagsForResource",
+        "bedrock-agentcore:GetConfigurationBundleVersion"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACUnscopedMetadata",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:ListHarnesses",
+        "bedrock-agentcore:ListAgentRuntimes",
+        "bedrock-agentcore:ListGateways",
+        "bedrock-agentcore:ListDatasets",
+        "bedrock-agentcore:ListBatchEvaluations",
+        "bedrock-agentcore:ListEvaluators",
+        "bedrock-agentcore:ListMemories",
+        "bedrock-agentcore:GetEvaluator",
+        "bedrock-agentcore:ListCodeInterpreterSessions",
+        "bedrock-agentcore:ListBrowserSessions"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "ACManagedBuiltInTools",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:*CodeInterpreterSession",
+        "bedrock-agentcore:InvokeCodeInterpreter",
+        "bedrock-agentcore:*BrowserSession",
+        "bedrock-agentcore:ConnectBrowserAutomationStream"
+      ],
+      "Resource" : [
+        "arn:*:bedrock-agentcore:*:aws:code-interpreter/*",
+        "arn:*:bedrock-agentcore:*:aws:browser/*"
+      ]
+    },
+    <span>{</span>
+      "Sid" : "ProjectTaggedResourceAccess",
       "Effect" : "Allow",
       "Action" : [
         "sagemaker:DescribeDomain"
@@ -1316,7 +1409,11 @@
       "Action" : "iam:CreateServiceLinkedRole",
       "Resource" : [
         "arn:aws:iam::*:role/aws-service-role/airflow-serverless.amazonaws.com/AWSServiceRoleForAmazonMWAAServerless",
-        "arn:*:iam::*:role/aws-service-role/sagemaker.amazonaws.com/AWSServiceRoleForAmazonSageMakerNotebooks"
+        "arn:*:iam::*:role/aws-service-role/sagemaker.amazonaws.com/AWSServiceRoleForAmazonSageMakerNotebooks",
+        "arn:aws:iam::*:role/aws-service-role/runtime-identity.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreRuntimeIdentity",
+        "arn:aws:iam::*:role/aws-service-role/network.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreNetwork",
+        "arn:aws:iam::*:role/aws-service-role/bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreGatewayNetwork",
+        "arn:aws:iam::*:role/aws-service-role/identity-network.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreIdentity"
       ]
     },
     <span>{</span>
@@ -1367,6 +1464,94 @@
         "StringEquals" : <span>{</span>
           "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}",
           "aws:ResourceTag/sqlworkbench-resource-owner" : "$<span>{</span>aws:userid}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACIdentityDirectory",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:CreateWorkloadIdentity",
+        "bedrock-agentcore:DeleteWorkloadIdentity"
+      ],
+      "Resource" : "arn:*:bedrock-agentcore:*:*:workload-identity-directory/default",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACGatewayWorkloadIdentity",
+      "Effect" : "Allow",
+      "Action" : "bedrock-agentcore:CreateWorkloadIdentity",
+      "Resource" : "arn:*:bedrock-agentcore:*:*:workload-identity-directory/default/workload-identity/*",
+      "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACUnscoped",
+      "Effect" : "Allow",
+      "Action" : [
+        "xray:GetTraceSegmentDestination",
+        "xray:GetSamplingRules",
+        "xray:GetSamplingTargets",
+        "xray:PutTraceSegments",
+        "xray:PutTelemetryRecords",
+        "tag:GetResources"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "ACLogsQuery",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:StartQuery",
+        "logs:GetQueryResults"
+      ],
+      "Resource" : [
+        "arn:aws:logs:*:*:log-group:/aws/bedrock-agentcore/runtimes/*",
+        "arn:aws:logs:*:*:log-group:aws/spans"
+      ],
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : "bedrock-agentcore.amazonaws.com"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACLogRetention",
+      "Effect" : "Allow",
+      "Action" : "logs:PutRetentionPolicy",
+      "Resource" : "arn:aws:logs:*:*:log-group:/aws/bedrock-agentcore/*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : "bedrock-agentcore.amazonaws.com"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACResourcePolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:PutResourcePolicy"
+      ],
+      "Resource" : "arn:aws:logs:*:*:log-group:/aws/bedrock-agentcore/runtimes/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },

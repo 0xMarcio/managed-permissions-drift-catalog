@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 18, 2025, 17:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 15, 2026, 21:47 UTC</p>
+                <p><b>Edited time:</b>  October 29, 2026, 19:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioAdminIAMPermissiveExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v24 (default)</p>
+        <p><b>Policy version:</b> v25 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -89,7 +89,8 @@
         "sagemaker-data-science-assistant:*",
         "rds:*",
         "quicksight:*",
-        "events:*"
+        "events:*",
+        "xray:*"
       ],
       "Resource" : "*"
     },
@@ -99,6 +100,7 @@
       "Action" : [
         "athena:*",
         "bedrock:*",
+        "bedrock-agentcore:*",
         "codewhisperer:*",
         "sagemaker-unified-studio-mcp:*",
         "datazone:*",
@@ -205,7 +207,9 @@
         "iam:ListRoles",
         "iam:GetUser",
         "iam:ListUsers",
-        "sts:AssumeRole"
+        "sts:AssumeRole",
+        "ecr-public:GetAuthorizationToken",
+        "sts:GetServiceBearerToken"
       ],
       "Resource" : "*"
     },
@@ -223,7 +227,11 @@
         "arn:aws:iam::*:role/aws-service-role/elasticmapreduce.amazonaws.com/AWSServiceRoleForEMRCleanup",
         "arn:aws:iam::*:role/aws-service-role/sagemaker.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_SageMakerEndpoint",
         "arn:aws:iam::*:role/aws-service-role/observability.aoss.amazonaws.com/AWSServiceRoleForAmazonOpenSearchServerless",
-        "arn:aws:iam::*:role/aws-service-role/ops.athena.amazonaws.com/AWSServiceRoleForAmazonAthena"
+        "arn:aws:iam::*:role/aws-service-role/ops.athena.amazonaws.com/AWSServiceRoleForAmazonAthena",
+        "arn:aws:iam::*:role/aws-service-role/runtime-identity.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreRuntimeIdentity",
+        "arn:aws:iam::*:role/aws-service-role/network.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreNetwork",
+        "arn:aws:iam::*:role/aws-service-role/bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreGatewayNetwork",
+        "arn:aws:iam::*:role/aws-service-role/identity-network.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreIdentity"
       ]
     },
     <span>{</span>
@@ -242,6 +250,17 @@
           ]
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "UpdateDzManagedRoleTrustPolicy",
+      "Effect" : "Allow",
+      "Action" : "iam:UpdateAssumeRolePolicy",
+      "Resource" : [
+        "arn:aws:iam::*:role/service-role/AmazonSageMakerAdminIAMExecutionRole*",
+        "arn:aws:iam::*:role/service-role/AmazonSageMakerUserIAMExecutionRole*",
+        "arn:aws:iam::*:role/AmazonSageMakerAdminIAMExecutionRole*",
+        "arn:aws:iam::*:role/AmazonSageMakerUserIAMExecutionRole*"
+      ]
     },
     <span>{</span>
       "Sid" : "PassRoleForProvisioning",
@@ -274,6 +293,8 @@
         "StringEquals" : <span>{</span>
           "iam:PassedToService" : [
             "bedrock.amazonaws.com",
+            "bedrock-agentcore.amazonaws.com",
+            "agent-registry.amazonaws.com",
             "datazone.amazonaws.com",
             "redshift-serverless.amazonaws.com",
             "redshift.amazonaws.com",
@@ -875,6 +896,14 @@
           ]
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "TagLookup",
+      "Effect" : "Allow",
+      "Action" : [
+        "tag:GetResources"
+      ],
+      "Resource" : "*"
     }
   ]
 }</code></pre>

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 18, 2025, 17:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 14, 2026, 19:37 UTC</p>
+                <p><b>Edited time:</b>  October 29, 2026, 22:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioUserIAMDefaultExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v31 (default)</p>
+        <p><b>Policy version:</b> v32 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -87,6 +87,7 @@
         "datazone:CreateEnvironment",
         "datazone:CreateListingChangeSet",
         "datazone:CreateProject",
+        "datazone:CreateProjectMembership",
         "datazone:CreateSubscriptionGrant",
         "datazone:CreateSubscriptionRequest",
         "datazone:DeleteAsset*",
@@ -94,6 +95,7 @@
         "datazone:DeleteEnvironment",
         "datazone:DeleteListing",
         "datazone:DeleteProject",
+        "datazone:DeleteProjectMembership",
         "datazone:DeleteSubscriptionGrant",
         "datazone:DeleteSubscriptionRequest",
         "datazone:Get*",
@@ -167,7 +169,9 @@
       "Action" : [
         "iam:GetRole",
         "iam:ListRoles",
-        "sts:AssumeRole"
+        "sts:AssumeRole",
+        "ecr-public:GetAuthorizationToken",
+        "sts:GetServiceBearerToken"
       ],
       "Resource" : "*"
     },
@@ -184,7 +188,11 @@
         "arn:aws:iam::*:role/aws-service-role/airflow-serverless.amazonaws.com/AWSServiceRoleForAmazonMWAAServerless",
         "arn:aws:iam::*:role/aws-service-role/elasticmapreduce.amazonaws.com/AWSServiceRoleForEMRCleanup",
         "arn:aws:iam::*:role/aws-service-role/sagemaker.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_SageMakerEndpoint",
-        "arn:aws:iam::*:role/aws-service-role/observability.aoss.amazonaws.com/AWSServiceRoleForAmazonOpenSearchServerless"
+        "arn:aws:iam::*:role/aws-service-role/observability.aoss.amazonaws.com/AWSServiceRoleForAmazonOpenSearchServerless",
+        "arn:aws:iam::*:role/aws-service-role/runtime-identity.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreRuntimeIdentity",
+        "arn:aws:iam::*:role/aws-service-role/network.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreNetwork",
+        "arn:aws:iam::*:role/aws-service-role/bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreGatewayNetwork",
+        "arn:aws:iam::*:role/aws-service-role/identity-network.bedrock-agentcore.amazonaws.com/AWSServiceRoleForBedrockAgentCoreIdentity"
       ]
     },
     <span>{</span>
@@ -389,7 +397,8 @@
         "logs:Describe*",
         "logs:Get*",
         "logs:PutLogEvents",
-        "logs:StopQuery"
+        "logs:StopQuery",
+        "logs:StartQuery"
       ],
       "Resource" : "*"
     },
@@ -575,6 +584,8 @@
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "iam:PassedToService" : [
+            "bedrock-agentcore.amazonaws.com",
+            "agent-registry.amazonaws.com",
             "bedrock.amazonaws.com",
             "glue.amazonaws.com",
             "lakeformation.amazonaws.com",
@@ -1148,6 +1159,129 @@
       }
     },
     <span>{</span>
+      "Sid" : "ACActions",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:*Harness*",
+        "bedrock-agentcore:*AgentRuntime",
+        "bedrock-agentcore:*AgentRuntimeEndpoint",
+        "bedrock-agentcore:StopRuntimeSession",
+        "bedrock-agentcore:*Memory",
+        "bedrock-agentcore:*MemoryRecord*",
+        "bedrock-agentcore:*Event",
+        "bedrock-agentcore:ListEvents",
+        "bedrock-agentcore:*Gateway",
+        "bedrock-agentcore:*GatewayTarget",
+        "bedrock-agentcore:*GatewayTargets",
+        "bedrock-agentcore:*Dataset*",
+        "bedrock-agentcore:*BatchEvaluation*",
+        "bedrock-agentcore:*WorkloadIdentity",
+        "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:GetWorkloadAccessTokenForJWT",
+        "bedrock-agentcore:ListHarnesses",
+        "bedrock-agentcore:ListAgentRuntimes",
+        "bedrock-agentcore:ListAgentRuntimeEndpoints",
+        "bedrock-agentcore:ListGateways",
+        "bedrock-agentcore:ListDatasets",
+        "bedrock-agentcore:ListBatchEvaluations",
+        "bedrock-agentcore:ListEvaluators",
+        "bedrock-agentcore:ListMemories",
+        "bedrock-agentcore:ListAgentRuntimeVersions",
+        "bedrock-agentcore:ListActors",
+        "bedrock-agentcore:ListSessions",
+        "bedrock-agentcore:ListTagsForResource",
+        "bedrock-agentcore:GetEvaluator",
+        "bedrock-agentcore:GetConfigurationBundleVersion",
+        "bedrock-agentcore:ListCodeInterpreterSessions",
+        "bedrock-agentcore:ListBrowserSessions"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "ACManagedBuiltInTools",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:*CodeInterpreterSession",
+        "bedrock-agentcore:InvokeCodeInterpreter",
+        "bedrock-agentcore:*BrowserSession",
+        "bedrock-agentcore:ConnectBrowserAutomationStream"
+      ],
+      "Resource" : [
+        "arn:*:bedrock-agentcore:*:aws:code-interpreter/*",
+        "arn:*:bedrock-agentcore:*:aws:browser/*"
+      ]
+    },
+    <span>{</span>
+      "Sid" : "ACTagOwnProject",
+      "Effect" : "Allow",
+      "Action" : "bedrock-agentcore:TagResource",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEqualsIfExists" : <span>{</span>
+          "aws:RequestTag/AmazonDataZoneProject" : "$<span>{</span>datazone:projectId}",
+          "aws:ResourceTag/AmazonDataZoneProject" : "$<span>{</span>datazone:projectId}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACXRay",
+      "Effect" : "Allow",
+      "Action" : [
+        "xray:GetTraceSegmentDestination",
+        "xray:GetSamplingRules",
+        "xray:GetSamplingTargets",
+        "xray:PutTraceSegments",
+        "xray:PutTelemetryRecords"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "ACLogRetention",
+      "Effect" : "Allow",
+      "Action" : "logs:PutRetentionPolicy",
+      "Resource" : "arn:aws:logs:*:*:log-group:/aws/bedrock-agentcore/*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : "bedrock-agentcore.amazonaws.com"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ACResourcePolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:PutResourcePolicy"
+      ],
+      "Resource" : "arn:aws:logs:*:*:log-group:/aws/bedrock-agentcore/runtimes/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TagLookup",
+      "Effect" : "Allow",
+      "Action" : [
+        "tag:GetResources"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "ACIdentityDirectory",
+      "Effect" : "Allow",
+      "Action" : "bedrock-agentcore:DeleteWorkloadIdentity",
+      "Resource" : "arn:*:bedrock-agentcore:*:*:workload-identity-directory/default",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
       "Sid" : "S3AGObjectPermissions",
       "Effect" : "Allow",
       "Action" : [
@@ -1168,6 +1302,22 @@
           "s3:AccessGrantsInstanceArn" : [
             "arn:aws:s3:*:*:access-grants/default"
           ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "S3AGInstancePermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:GetAccessGrantsInstance",
+        "s3:CreateAccessGrantsInstance"
+      ],
+      "Resource" : [
+        "arn:aws:s3:*:*:access-grants/default"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
