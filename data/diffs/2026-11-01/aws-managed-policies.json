@@ -1,0 +1,396 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteNetworkInterface",
+        "aws:allow_action:ec2:DescribeNetworkInterfaces",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcs"
+      ],
+      "display_name": "Route53PrivateHealthChecksServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Route53PrivateHealthChecksServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/Route53PrivateHealthChecksServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:autoscaling:DescribeNotificationConfigurations",
+      "aws:allow_action:bedrock-agentcore:GatewayGetWebACLForResource",
+      "aws:allow_action:bedrock-agentcore:GatewayListResourcesForWebACL",
+      "aws:allow_action:bedrock-agentcore:GetAgentCard",
+      "aws:allow_action:bedrock-agentcore:GetConsentPortal",
+      "aws:allow_action:bedrock-agentcore:GetGatewayRateLimit",
+      "aws:allow_action:bedrock-agentcore:GetGatewayRule",
+      "aws:allow_action:bedrock-agentcore:GetPaymentConnector",
+      "aws:allow_action:bedrock-agentcore:GetPaymentCredentialProvider",
+      "aws:allow_action:bedrock-agentcore:GetPaymentInstrument",
+      "aws:allow_action:bedrock-agentcore:GetPaymentInstrumentBalance",
+      "aws:allow_action:bedrock-agentcore:GetPaymentManager",
+      "aws:allow_action:bedrock-agentcore:GetPaymentSession",
+      "aws:allow_action:bedrock-agentcore:GetRegistry",
+      "aws:allow_action:bedrock-agentcore:GetRegistryRecord",
+      "aws:allow_action:bedrock-mantle:CountTokens",
+      "aws:allow_action:bedrock-mantle:GetAccountDataRetention",
+      "aws:allow_action:bedrock:CallWithBearerToken",
+      "aws:allow_action:bedrock:GetModelEvaluationJob",
+      "aws:allow_action:bedrock:GetModelImportJob",
+      "aws:allow_action:bedrock:GetPromptRouter",
+      "aws:allow_action:bedrock:GetSession",
+      "aws:allow_action:bedrock:ListAdvancedPromptOptimizationJobs",
+      "aws:allow_action:bedrock:ListAsyncInvokes",
+      "aws:allow_action:bedrock:ListAutomatedReasoningPolicies",
+      "aws:allow_action:bedrock:ListAutomatedReasoningPolicyBuildWorkflows",
+      "aws:allow_action:bedrock:ListAutomatedReasoningPolicyTestCases",
+      "aws:allow_action:bedrock:ListAutomatedReasoningPolicyTestResults",
+      "aws:allow_action:bedrock:ListBlueprints",
+      "aws:allow_action:bedrock:ListCustomModelDeployments",
+      "aws:allow_action:bedrock:ListDataAutomationLibraries",
+      "aws:allow_action:bedrock:ListDataAutomationLibraryEntities",
+      "aws:allow_action:bedrock:ListDataAutomationLibraryIngestionJobs",
+      "aws:allow_action:bedrock:ListDataAutomationProjects",
+      "aws:allow_action:bedrock:ListFlowExecutionEvents",
+      "aws:allow_action:bedrock:ListFlowExecutions",
+      "aws:allow_action:bedrock:ListImportedModels",
+      "aws:allow_action:bedrock:ListInvocationSteps",
+      "aws:allow_action:bedrock:ListInvocations",
+      "aws:allow_action:bedrock:ListKnowledgeBaseDocuments",
+      "aws:allow_action:bedrock:ListMarketplaceModelEndpoints",
+      "aws:allow_action:bedrock:ListModelCopyJobs",
+      "aws:allow_action:bedrock:ListModelImportJobs",
+      "aws:allow_action:bedrock:ListPromptRouters",
+      "aws:allow_action:bedrock:ListSessions",
+      "aws:allow_action:bedrock:ListTagsForResource",
+      "aws:allow_action:bedrock:RenderPrompt",
+      "aws:allow_action:bedrock:Retrieve",
+      "aws:allow_action:bedrock:ValidateFlowDefinition",
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteNetworkInterface",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:neptune-graph:GetExportTask",
+      "aws:allow_action:neptune-graph:ListExportTasks",
+      "aws:allow_action:neptune-graph:ListGraphs",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentDocument",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentMetadata",
+      "aws:allow_action:partnercentral:ListPartnerCentralContent",
+      "aws:allow_action:partnercentral:SearchPartnerCentralContent",
+      "aws:allow_action:quicksight:DescribeAgent",
+      "aws:allow_action:quicksight:DescribeAgentPermissions",
+      "aws:allow_action:quicksight:DescribeBrand",
+      "aws:allow_action:quicksight:DescribeIngestion",
+      "aws:allow_action:quicksight:DescribeNamespace",
+      "aws:allow_action:quicksight:ListIngestions",
+      "aws:allow_action:quicksight:ListNamespaces",
+      "aws:allow_action:startups:GetSpendSummary",
+      "aws:deny_action:apigateway:GET"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "autoscaling:DescribeNotificationConfigurations",
+          "bedrock-agentcore:GatewayGetWebACLForResource",
+          "bedrock-agentcore:GatewayListResourcesForWebACL",
+          "bedrock-agentcore:GetAgentCard",
+          "bedrock-agentcore:GetConsentPortal",
+          "bedrock-agentcore:GetGatewayRateLimit",
+          "bedrock-agentcore:GetGatewayRule",
+          "bedrock-agentcore:GetPaymentConnector",
+          "bedrock-agentcore:GetPaymentCredentialProvider",
+          "bedrock-agentcore:GetPaymentInstrument",
+          "bedrock-agentcore:GetPaymentInstrumentBalance",
+          "bedrock-agentcore:GetPaymentManager",
+          "bedrock-agentcore:GetPaymentSession",
+          "bedrock-agentcore:GetRegistry",
+          "bedrock-agentcore:GetRegistryRecord",
+          "bedrock-mantle:CountTokens",
+          "bedrock-mantle:GetAccountDataRetention",
+          "bedrock:CallWithBearerToken",
+          "bedrock:GetModelEvaluationJob",
+          "bedrock:GetModelImportJob",
+          "bedrock:GetPromptRouter",
+          "bedrock:GetSession",
+          "bedrock:ListAdvancedPromptOptimizationJobs",
+          "bedrock:ListAsyncInvokes",
+          "bedrock:ListAutomatedReasoningPolicies",
+          "bedrock:ListAutomatedReasoningPolicyBuildWorkflows",
+          "bedrock:ListAutomatedReasoningPolicyTestCases",
+          "bedrock:ListAutomatedReasoningPolicyTestResults",
+          "bedrock:ListBlueprints",
+          "bedrock:ListCustomModelDeployments",
+          "bedrock:ListDataAutomationLibraries",
+          "bedrock:ListDataAutomationLibraryEntities",
+          "bedrock:ListDataAutomationLibraryIngestionJobs",
+          "bedrock:ListDataAutomationProjects",
+          "bedrock:ListFlowExecutionEvents",
+          "bedrock:ListFlowExecutions",
+          "bedrock:ListImportedModels",
+          "bedrock:ListInvocationSteps",
+          "bedrock:ListInvocations",
+          "bedrock:ListKnowledgeBaseDocuments",
+          "bedrock:ListMarketplaceModelEndpoints",
+          "bedrock:ListModelCopyJobs",
+          "bedrock:ListModelImportJobs",
+          "bedrock:ListPromptRouters",
+          "bedrock:ListSessions",
+          "bedrock:ListTagsForResource",
+          "bedrock:RenderPrompt",
+          "bedrock:Retrieve",
+          "bedrock:ValidateFlowDefinition",
+          "ec2:CreateNetworkInterface",
+          "ec2:CreateTags",
+          "ec2:DeleteNetworkInterface",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcs",
+          "neptune-graph:GetExportTask",
+          "neptune-graph:ListExportTasks",
+          "neptune-graph:ListGraphs",
+          "partnercentral:GetPartnerCentralContentDocument",
+          "partnercentral:GetPartnerCentralContentMetadata",
+          "partnercentral:ListPartnerCentralContent",
+          "partnercentral:SearchPartnerCentralContent",
+          "quicksight:DescribeAgent",
+          "quicksight:DescribeAgentPermissions",
+          "quicksight:DescribeBrand",
+          "quicksight:DescribeIngestion",
+          "quicksight:DescribeNamespace",
+          "quicksight:ListIngestions",
+          "quicksight:ListNamespaces",
+          "startups:GetSpendSummary"
+        ],
+        "restriction:deny_actions": [
+          "apigateway:GET"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSRevenueAttributionManagement",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetPartnerCentralContentDocument",
+              "partnercentral:GetPartnerCentralContentMetadata",
+              "partnercentral:ListPartnerCentralContent",
+              "partnercentral:SearchPartnerCentralContent"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 31, 2026, 13:37 UTC",
+          "before": "June 30, 2026, 16:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 31, 2026, 13:37 UTC",
+          "before": "June 30, 2026, 16:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 5,
+          "before": 4,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSRevenueAttributionManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSRevenueAttributionManagement"
+    },
+    {
+      "display_name": "ReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock-agentcore:GatewayGetWebACLForResource",
+              "bedrock-agentcore:GatewayListResourcesForWebACL",
+              "bedrock-agentcore:GetAgentCard",
+              "bedrock-agentcore:GetConsentPortal",
+              "bedrock-agentcore:GetGatewayRateLimit",
+              "bedrock-agentcore:GetGatewayRule",
+              "bedrock-agentcore:GetPaymentConnector",
+              "bedrock-agentcore:GetPaymentCredentialProvider",
+              "bedrock-agentcore:GetPaymentInstrument",
+              "bedrock-agentcore:GetPaymentInstrumentBalance",
+              "bedrock-agentcore:GetPaymentManager",
+              "bedrock-agentcore:GetPaymentSession",
+              "bedrock-agentcore:GetRegistry",
+              "bedrock-agentcore:GetRegistryRecord",
+              "bedrock-mantle:CountTokens",
+              "bedrock-mantle:GetAccountDataRetention",
+              "bedrock:CallWithBearerToken",
+              "bedrock:GetModelEvaluationJob",
+              "bedrock:GetModelImportJob",
+              "bedrock:GetPromptRouter",
+              "bedrock:GetSession",
+              "bedrock:ListAdvancedPromptOptimizationJobs",
+              "bedrock:ListAsyncInvokes",
+              "bedrock:ListAutomatedReasoningPolicies",
+              "bedrock:ListAutomatedReasoningPolicyBuildWorkflows",
+              "bedrock:ListAutomatedReasoningPolicyTestCases",
+              "bedrock:ListAutomatedReasoningPolicyTestResults",
+              "bedrock:ListBlueprints",
+              "bedrock:ListCustomModelDeployments",
+              "bedrock:ListDataAutomationLibraries",
+              "bedrock:ListDataAutomationLibraryEntities",
+              "bedrock:ListDataAutomationLibraryIngestionJobs",
+              "bedrock:ListDataAutomationProjects",
+              "bedrock:ListFlowExecutionEvents",
+              "bedrock:ListFlowExecutions",
+              "bedrock:ListImportedModels",
+              "bedrock:ListInvocationSteps",
+              "bedrock:ListInvocations",
+              "bedrock:ListKnowledgeBaseDocuments",
+              "bedrock:ListMarketplaceModelEndpoints",
+              "bedrock:ListModelCopyJobs",
+              "bedrock:ListModelImportJobs",
+              "bedrock:ListPromptRouters",
+              "bedrock:ListSessions",
+              "bedrock:ListTagsForResource",
+              "bedrock:RenderPrompt",
+              "bedrock:Retrieve",
+              "bedrock:ValidateFlowDefinition",
+              "startups:GetSpendSummary"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v191 (default)",
+          "before": "v190 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 30, 2026, 17:27 UTC",
+          "before": "September 24, 2026, 17:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 30, 2026, 17:27 UTC",
+          "before": "September 24, 2026, 17:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+    },
+    {
+      "display_name": "AWSResourceExplorerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "autoscaling:DescribeNotificationConfigurations",
+              "neptune-graph:GetExportTask",
+              "neptune-graph:ListExportTasks",
+              "neptune-graph:ListGraphs",
+              "quicksight:DescribeAgent",
+              "quicksight:DescribeAgentPermissions",
+              "quicksight:DescribeBrand",
+              "quicksight:DescribeIngestion",
+              "quicksight:DescribeNamespace",
+              "quicksight:ListIngestions",
+              "quicksight:ListNamespaces"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v59 (default)",
+          "before": "v58 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 30, 2026, 20:27 UTC",
+          "before": "October 28, 2026, 19:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 30, 2026, 20:27 UTC",
+          "before": "October 28, 2026, 19:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+    },
+    {
+      "display_name": "AssuranceServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "apigateway:GET"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "October 30, 2026, 19:57 UTC",
+          "before": "October 28, 2026, 15:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "October 30, 2026, 19:57 UTC",
+          "before": "October 28, 2026, 15:17 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 8,
+          "before": 7,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-11-01T10:32:29Z",
+  "counts": {
+    "added_atoms": 72,
+    "added_objects": 1,
+    "changed_objects": 4,
+    "current_objects": 1614,
+    "previous_objects": 1613,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-01",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-10-31",
+  "removed_objects": []
+}
