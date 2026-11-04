@@ -878,7 +878,9 @@
     </a>
     <section class="devsite-wrapper">
       <devsite-cookie-notification-bar></devsite-cookie-notification-bar>
-        <devsite-header role="banner" keep-tabs-visible>
+        <cloudx-track userCountry="US"></cloudx-track>
+
+<devsite-header role="banner" keep-tabs-visible>
   
     
 
@@ -1807,13 +1809,13 @@
       
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-metadata-eventDetail="nav"
-      
         track-name="console"
       
-        track-type="globalNav"
+        track-metadata-eventDetail="nav"
       
         track-metadata-position="nav"
+      
+        track-type="globalNav"
       
     >
   Console
@@ -2002,13 +2004,13 @@
     
     
       
-        referrerpolicy="no-referrer-when-downgrade"
-      
-        track-metadata-eventDetail="nav"
-      
         track-metadata-position="nav"
       
         track-name="gcpCta"
+      
+        referrerpolicy="no-referrer-when-downgrade"
+      
+        track-metadata-eventDetail="nav"
       
         track-type="freeTrial"
       
@@ -2559,13 +2561,13 @@
       
         referrerpolicy="no-referrer-when-downgrade"
       
-        track-metadata-eventDetail="nav"
-      
         track-name="console"
       
-        track-type="globalNav"
+        track-metadata-eventDetail="nav"
       
         track-metadata-position="nav"
+      
+        track-type="globalNav"
       
     
      data-category="Site-Wide Custom Events"
@@ -4452,26 +4454,50 @@
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/common/groups"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>groups</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/common/token"
+      ><span class="devsite-nav-text" tooltip>groups</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/common/revoke"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>revoke</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/common/token"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>token</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/common/userinfo"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>userinfo</span></a></li></ul></div></li><li class="devsite-nav-item
            devsite-nav-expandable"><div class="devsite-expandable-nav">
       <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>common.well-known</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/common.well-known"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/static/iam/docs/reference/cloudoauth/rest/v1/common.well-known/getJwks.json"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>getJwks.json</span></a></li></ul></div></li><li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
         <span class="devsite-nav-text" tooltip>organizations</span>
       </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/organizations"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/organizations/token"
+      ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/organizations/revoke"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>revoke</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/organizations/token"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>token</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/organizations/userinfo"
         class="devsite-nav-title"
       ><span class="devsite-nav-text" tooltip>userinfo</span></a></li></ul></div></li><li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>organizations.well-known</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/organizations.well-known"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/static/iam/docs/reference/cloudoauth/rest/v1/organizations.well-known/getJwks.json"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>getJwks.json</span></a></li></ul></div></li><li class="devsite-nav-item
            devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
         <span class="devsite-nav-text" tooltip>Types</span>
       </div></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/ExchangeTokenResponse"
         class="devsite-nav-title"
-      ><span class="devsite-nav-text" tooltip>ExchangeTokenResponse</span></a></li></ul></div></li></ul></div></li></ul></div></li>
+      ><span class="devsite-nav-text" tooltip>ExchangeTokenResponse</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/Jwks"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>Jwks</span></a></li><li class="devsite-nav-item"><a href="/iam/docs/reference/cloudoauth/rest/v1/RevokeTokenResponse"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>RevokeTokenResponse</span></a></li></ul></div></li></ul></div></li></ul></div></li>
 
   <li class="devsite-nav-item
            devsite-nav-expandable"><div class="devsite-expandable-nav">
@@ -6877,9 +6903,13 @@ Full access to Firebase App Hosting API resources.
     </p>
     <ul class="iamperm-wildcard-list">
       <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>create</code></li>
+      <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>createTagBinding</code></li>
       <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>delete</code></li>
+      <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>deleteTagBinding</code></li>
       <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>get</code></li>
       <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>list</code></li>
+      <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listEffectiveTags</code></li>
+      <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listTagBindings</code></li>
       <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>update</code></li>
       <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>builds.<wbr>create</code></li>
       <li><code translate="no" dir="ltr">firebaseapphosting.<wbr>builds.<wbr>delete</code></li>
@@ -6924,6 +6954,8 @@ Grants readonly access to Firebase App Hosting resources, but not permission to 
 <td class="role-permissions">
   <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>list</code></p>
+  <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.builds.get</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.builds.list</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.domains.get</code></p>
@@ -7050,6 +7082,8 @@ Contains the basic necessary permissions for building and running Apps on Fireba
   <p><code translate="no" dir="ltr">developerconnect.<wbr>gitRepositoryLinks.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>list</code></p>
+  <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.builds.get</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.builds.list</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>builds.<wbr>update</code></p>
@@ -7143,6 +7177,8 @@ Grants read & update access to Firebase App Hosting backend, builds, and release
 <td class="role-permissions">
   <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>get</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>list</code></p>
+  <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listEffectiveTags</code></p>
+  <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listTagBindings</code></p>
   <p><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>update</code></p>
   <devsite-expandable id="expandable-firebaseapphosting.developer-firebaseapphosting.builds.*" class="arrow-icon iamperm-wildcard-expandable">
     <p class="showalways iamperm-marginless">
@@ -7400,6 +7436,43 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
     </tr>
     <tr>
       <td>
+        <h4 class="permission-name add-link" id="firebaseapphosting.backends.createTagBinding" data-text="firebaseapphosting.backends.createTagBinding" tabindex="-1"><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>createTagBinding</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.admin">Firebase Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.admin">Firebase App Hosting Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser">Tag User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <h4 class="permission-name add-link" id="firebaseapphosting.backends.delete" data-text="firebaseapphosting.backends.delete" tabindex="-1"><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>delete</wbr></wbr></code></h4>
       </td>
       <td>
@@ -7420,6 +7493,43 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.admin">Firebase App Hosting Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="firebaseapphosting.backends.deleteTagBinding" data-text="firebaseapphosting.backends.deleteTagBinding" tabindex="-1"><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>deleteTagBinding</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.admin">Firebase Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.admin">Firebase App Hosting Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser">Tag User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
         </p>
         <p class="iamrole-marginless">
           <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
@@ -7571,6 +7681,146 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
             </li>
           </ul>
         </devsite-expandable>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="firebaseapphosting.backends.listEffectiveTags" data-text="firebaseapphosting.backends.listEffectiveTags" tabindex="-1"><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listEffectiveTags</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.admin">Firebase Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.editor">Firebase Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.viewer">Firebase Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.admin">Firebase App Hosting Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.viewer">Firebase App Hosting Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser">Tag User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer">Tag Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developViewer">Firebase Develop Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.computeRunner">Firebase App Hosting Compute Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.computeRunner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.developer">Firebase App Hosting Developer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.developer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="permission-name add-link" id="firebaseapphosting.backends.listTagBindings" data-text="firebaseapphosting.backends.listTagBindings" tabindex="-1"><code translate="no" dir="ltr">firebaseapphosting.<wbr>backends.<wbr>listTagBindings</wbr></wbr></code></h4>
+      </td>
+      <td>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Owner (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>owner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Writer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>writer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Editor (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Reader</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>reader</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-overview#basic">Viewer (Legacy)</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.admin">Firebase Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.editor">Firebase Editor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.editor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.viewer">Firebase Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.admin">Firebase App Hosting Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.admin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.viewer">Firebase App Hosting Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.viewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser">Tag User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagUser</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagViewer">Tag Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>resourcemanager.tagViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.orgdriver">DLP Organization Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.orgdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/dlp#dlp.projectdriver">DLP Project Data Profiles Driver</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>dlp.projectdriver</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developAdmin">Firebase Develop Admin</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developAdmin</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebase#firebase.developViewer">Firebase Develop Viewer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebase.developViewer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.computeRunner">Firebase App Hosting Compute Runner</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.computeRunner</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.developer">Firebase App Hosting Developer</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>firebaseapphosting.developer</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.securityAuditor">Security Auditor</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.securityAuditor</code>)
+        </p>
+        <p class="iamrole-marginless">
+          <a href="/iam/docs/roles-permissions/jobfunctions#iam.supportUser">Support User</a> (<code class="role-name" translate="no" dir="ltr">roles/<wbr>iam.supportUser</code>)
+        </p>
       </td>
     </tr>
     <tr>
@@ -8923,7 +9173,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
 
 <devsite-content-footer class="nocontent" data-nosnippet>
   <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
-  <p>Last updated 2026-10-29 UTC.</p>
+  <p>Last updated 2026-11-04 UTC.</p>
 </devsite-content-footer>
 
 
@@ -8972,7 +9222,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
   
   
     <template class="devsite-content-data-template">
-      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-10-29 UTC."],[],[]]
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Hard to understand","hardToUnderstand","thumb-down"],["Incorrect information or sample code","incorrectInformationOrSampleCode","thumb-down"],["Missing the information/samples I need","missingTheInformationSamplesINeed","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-11-04 UTC."],[],[]]
     </template>
   
 </div>
@@ -9004,7 +9254,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-eventDetail="cloud.google.com/products/"track-type="footer link"track-metadata-position="footer"track-metadata-child_headline="products and pricing"track-name="see all products"track-metadata-module="footer">
+            track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="products and pricing"track-metadata-eventDetail="cloud.google.com/products/"track-metadata-position="footer"track-name="see all products">
             
           
             See all products
@@ -9021,7 +9271,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/pricing/"track-type="footer link"track-name="google cloud pricing"track-metadata-child_headline="products and pricing"track-metadata-position="footer">
+            track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="products and pricing"track-name="google cloud pricing"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/pricing/">
             
           
             Google Cloud pricing
@@ -9038,7 +9288,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-child_headline="resources"track-type="footer link"track-name="google cloud marketplace"track-metadata-module="footer">
+            track-metadata-position="footer"track-name="google cloud marketplace"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/marketplace/"track-metadata-child_headline="resources"track-type="footer link">
             
           
             Google Cloud Marketplace
@@ -9055,7 +9305,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-position="footer"track-metadata-module="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/contact/"track-type="footer link"track-name="contact sales">
+            track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="engage"track-name="contact sales"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/contact/">
             
               
               
@@ -9082,7 +9332,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            rel="noopener"track-type="footer link"track-name="google cloud community"target="_blank"track-metadata-child_headline="engage"track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-position="footer"track-metadata-module="footer">
+            track-metadata-module="footer"rel="noopener"target="_blank"track-metadata-position="footer"track-type="footer link"track-metadata-eventDetail="www.googlecloudcommunity.com"track-metadata-child_headline="engage"track-name="google cloud community">
             
           
             Community forums
@@ -9099,7 +9349,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-module="footer"track-type="footer link"track-metadata-position="footer"track-name="support"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/support-hub/">
+            track-metadata-position="footer"track-name="support"track-metadata-eventDetail="cloud.google.com/support-hub/"track-type="footer link"track-metadata-module="footer"track-metadata-child_headline="resources">
             
           
             Support
@@ -9116,7 +9366,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"track-type="footer link"track-name="release notes"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-child_headline="resources">
+            track-metadata-module="footer"track-name="release notes"track-metadata-eventDetail="cloud.google.com/release-notes/"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer">
             
           
             Release Notes
@@ -9133,7 +9383,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-position="footer"track-metadata-module="footer"target="_blank"track-metadata-child_headline="resources"track-name="system status"track-type="footer link"track-metadata-eventDetail="status.cloud.google.com">
+            track-metadata-module="footer"track-metadata-eventDetail="status.cloud.google.com"track-name="system status"track-metadata-position="footer"track-type="footer link"target="_blank"track-metadata-child_headline="resources">
             
               
               
@@ -9160,7 +9410,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-child_headline="resources"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-name="github"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer">
+            track-name="github"track-metadata-position="footer"track-metadata-child_headline="resources"track-metadata-module="footer"track-metadata-eventDetail="github.com/googlecloudPlatform/"track-type="footer link">
             
           
             GitHub
@@ -9177,7 +9427,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-module="footer"track-metadata-position="footer"track-metadata-child_headline="resources"track-type="footer link"track-name="google cloud quickstarts">
+            track-metadata-child_headline="resources"track-type="footer link"track-metadata-eventDetail="cloud.google.com/docs/get-started/"track-metadata-module="footer"track-name="google cloud quickstarts"track-metadata-position="footer">
             
           
             Getting Started with Google Cloud
@@ -9194,7 +9444,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-metadata-module="footer"track-type="footer link"track-name="code samples"track-metadata-child_headline="resources"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-position="footer">
+            track-type="footer link"track-metadata-position="footer"track-metadata-child_headline="resources"track-name="code samples"track-metadata-eventDetail="cloud.google.com/docs/samples"track-metadata-module="footer">
             
           
             Code samples
@@ -9211,7 +9461,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-metadata-module="footer"track-metadata-child_headline="resources"track-metadata-position="footer"track-metadata-eventDetail="cloud.google.com/architecture/"track-type="footer link"track-name="cloud architecture center">
+            track-metadata-eventDetail="cloud.google.com/architecture/"track-metadata-module="footer"track-name="cloud architecture center"track-metadata-child_headline="resources"track-metadata-position="footer"track-type="footer link">
             
           
             Cloud Architecture Center
@@ -9228,7 +9478,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-child_headline="resources"track-name="training"track-metadata-position="footer"track-type="footer link"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/learn/training/">
+            track-name="training"track-metadata-child_headline="resources"track-type="footer link"track-metadata-position="footer"track-metadata-module="footer"track-metadata-eventDetail="cloud.google.com/learn/training/">
             
           
             Training and Certification
@@ -9245,7 +9495,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 6)"
-            track-type="footer link"track-name="builders hub"track-metadata-module="footer"track-metadata-eventDetail="me.developers.google.com/"track-metadata-child_headline="resources"track-metadata-position="footer">
+            track-metadata-module="footer"track-type="footer link"track-metadata-eventDetail="me.developers.google.com/"track-name="builders hub"track-metadata-child_headline="resources"track-metadata-position="footer">
             
               
               
@@ -9272,7 +9522,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 1)"
-            track-metadata-position="footer"track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/blog/"track-name="blog"track-type="footer link"track-metadata-module="footer">
+            track-metadata-child_headline="engage"track-metadata-module="footer"track-metadata-position="footer"track-name="blog"track-metadata-eventDetail="cloud.google.com/blog/"track-type="footer link">
             
           
             Blog
@@ -9289,7 +9539,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 2)"
-            track-metadata-child_headline="engage"track-metadata-eventDetail="cloud.google.com/events/"track-metadata-module="footer"track-name="events"track-type="footer link"track-metadata-position="footer">
+            track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-module="footer"track-name="events"track-metadata-eventDetail="cloud.google.com/events/"track-type="footer link">
             
           
             Events
@@ -9306,7 +9556,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 3)"
-            track-type="footer link"track-metadata-position="footer"track-name="follow on x"track-metadata-child_headline="engage"rel="noopener"track-metadata-eventDetail="x.com/googlecloud"track-metadata-module="footer"target="_blank">
+            track-name="follow on x"target="_blank"rel="noopener"track-metadata-module="footer"track-type="footer link"track-metadata-child_headline="engage"track-metadata-position="footer"track-metadata-eventDetail="x.com/googlecloud">
             
           
             X (Twitter)
@@ -9323,7 +9573,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 4)"
-            track-name="google cloud on youtube"track-metadata-position="footer"track-metadata-child_headline="engage"track-type="footer link"target="_blank"track-metadata-eventDetail="www.youtube.com/googlecloud"track-metadata-module="footer"rel="noopener">
+            track-metadata-module="footer"target="_blank"track-metadata-position="footer"track-name="google cloud on youtube"rel="noopener"track-type="footer link"track-metadata-eventDetail="www.youtube.com/googlecloud"track-metadata-child_headline="engage">
             
           
             Google Cloud on YouTube
@@ -9340,7 +9590,7 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
              data-category="Site-Wide Custom Events"
             
              data-label="Footer Link (index 5)"
-            track-metadata-module="footer"track-metadata-child_headline="engage"rel="noopener"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-name="google cloud tech on youtube"target="_blank"track-type="footer link"track-metadata-position="footer">
+            track-name="google cloud tech on youtube"track-metadata-module="footer"rel="noopener"target="_blank"track-metadata-eventDetail="www.youtube.com/googlecloudplatform"track-metadata-child_headline="engage"track-type="footer link"track-metadata-position="footer">
             
               
               
@@ -9459,15 +9709,15 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
          
            track-name="about google"
          
-           track-type="footer link"
-         
-           track-metadata-position="footer"
-         
            target="_blank"
          
            track-metadata-module="utility footer"
          
            track-metadata-eventDetail="//about.google/"
+         
+           track-type="footer link"
+         
+           track-metadata-position="footer"
          >
           About Google
         </a>
@@ -9483,17 +9733,17 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
            data-category="Site-Wide Custom Events"
            data-label="Footer Privacy link"
          
-           track-type="footer link"
-         
-           track-name="privacy"
-         
-           target="_blank"
+           track-metadata-eventDetail="//policies.google.com/privacy"
          
            track-metadata-module="utility footer"
          
+           target="_blank"
+         
+           track-name="privacy"
+         
            track-metadata-position="footer"
          
-           track-metadata-eventDetail="//policies.google.com/privacy"
+           track-type="footer link"
          >
           Privacy
         </a>
@@ -9509,17 +9759,17 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
            data-category="Site-Wide Custom Events"
            data-label="Footer Site terms link"
          
+           track-metadata-module="utility footer"
+         
            track-name="site terms"
+         
+           track-metadata-position="footer"
          
            track-metadata-eventDetail="//www.google.com/intl/en/policies/terms/regional.html"
          
-           target="_blank"
-         
-           track-metadata-module="utility footer"
-         
            track-type="footer link"
          
-           track-metadata-position="footer"
+           target="_blank"
          >
           Site terms
         </a>
@@ -9537,13 +9787,13 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
          
            track-type="footer link"
          
-           track-name="google cloud terms"
-         
-           track-metadata-module="utility footer"
-         
            track-metadata-eventDetail="//cloud.google.com/product-terms"
          
+           track-name="google cloud terms"
+         
            track-metadata-position="footer"
+         
+           track-metadata-module="utility footer"
          >
           Google Cloud terms
         </a>
@@ -9559,17 +9809,17 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
            data-category="Site-Wide Custom Events"
            data-label="Footer Manage cookies link"
          
-           track-metadata-eventDetail="#"
-         
            track-metadata-position="footer"
-         
-           aria-hidden="true"
-         
-           track-type="footer link"
          
            track-name="Manage cookies"
          
+           aria-hidden="true"
+         
            track-metadata-module="utility footer"
+         
+           track-type="footer link"
+         
+           track-metadata-eventDetail="#"
          >
           Manage cookies
         </a>
@@ -9585,15 +9835,15 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
            data-category="Site-Wide Custom Events"
            data-label="Footer Our third decade of climate action: join us link"
          
-           track-type="footer link"
+           track-name="Our third decade of climate action: join us"
          
            track-metadata-eventDetail="/sustainability/"
-         
-           track-name="Our third decade of climate action: join us"
          
            track-metadata-module="utility footer"
          
            track-metadata-position="footer"
+         
+           track-type="footer link"
          >
           Our third decade of climate action: join us
         </a>
@@ -9613,13 +9863,13 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
          
            track-metadata-module="utility footer"
          
-           track-type="footer link"
+           track-name="subscribe"
          
            track-metadata-position="footer"
          
-           track-name="subscribe"
-         
            track-metadata-eventDetail="/newsletter/"
+         
+           track-type="footer link"
          >
           Subscribe
         </a>
@@ -9702,13 +9952,22 @@ Gives Firebase App Hosting access to resource for Building & Deploying Backends.
     
     
     
+<cloudx-user></cloudx-user>
+
+
+
+
+  
+    <cloudx-free-trial-eligible-store freeTrialEligible="true"></cloudx-free-trial-eligible-store>
+  
+
     
-<script nonce="x/ZDj4SsxiwYTU3arspZ/WNmgVi/NH">
+<script nonce="0a2RSkzHjkwxlVY+96fFWvT3gUivug">
   
   (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
     t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
     E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["Profiles__enable_page_saving","MiscFeatureFlags__enable_firebase_utm","Analytics__enable_clearcut_logging","MiscFeatureFlags__enable_markdown_accept_header","MiscFeatureFlags__developers_footer_dark_image","DevPro__enable_vertex_credit_card","OnSwitch__enable","BookNav__enable_tenant_cache_key","Profiles__enable_callout_notifications","Cloud__enable_cloud_dlp_service","Search__enable_ai_eligibility_checks","Cloud__enable_free_trial_server_call","MiscFeatureFlags__fix_lower_breadcrumbs","Cloud__fast_free_trial","DevPro__enable_developer_subscriptions","Concierge__enable_concierge_restricted","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__enable_explicit_template_dependencies","DevPro__remove_eu_tax_intake_form","Profiles__enable_playlist_community_acl","DevPro__enable_embed_profile_creation","AIStudioInteractionsToggle__interactions_are_default","MiscFeatureFlags__enable_variable_operator_index_yaml","Profiles__enable_dashboard_curated_recommendations","Profiles__enable_awarding_url","Cloud__enable_legacy_calculator_redirect","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__gdp_dashboard_reskin_enabled","MiscFeatureFlags__enable_appearance_cookies","Profiles__enable_complete_playlist_endpoint","Profiles__enable_recognition_badges","Profiles__enable_developer_profile_pages_as_content","MiscFeatureFlags__remove_cross_domain_tracking_params","DevPro__enable_code_assist","Concierge__enable_pushui","Analytics__enable_devpro_interaction_logging","Concierge__enable_devsite_llm_tools","Profiles__enable_public_developer_profiles","DevPro__enable_google_one_card","MiscFeatureFlags__enable_framebox_badge_methods","SignIn__enable_l1_signup_flow","Profiles__enable_stripe_subscription_management","CloudShell__cloud_code_overflow_menu","DevPro__enable_nvidia_credits_card","DevPro__enable_g1_ineligible_redirect","Profiles__enable_targeted_hero","Profiles__enable_developer_profile_benefits_ui_redesign","MiscFeatureFlags__enable_dark_theme","Search__enable_ai_search_summaries_for_all","Profiles__enable_user_type","Cloud__enable_cloud_shell","DevPro__enable_g1_integration","CloudShell__cloud_shell_button","Profiles__enable_completequiz_endpoint","MiscFeatureFlags__developers_footer_image","Profiles__enable_join_program_group_endpoint","Search__enable_dynamic_content_confidential_banner","DevPro__enable_cloud_innovators_plus","TpcFeatures__proxy_prod_host","Profiles__enable_profile_collections","DevPro__enable_free_benefits","Search__enable_page_map","Concierge__enable_actions_menu","DevPro__enable_firebase_workspaces_card","Cloud__cache_serialized_dynamic_content","DevPro__enable_devpro_offers","DevPro__enable_google_payments_buyflow","Experiments__reqs_query_experiments","DevPro__enable_enterprise","Search__enable_suggestions_from_borg","Profiles__enable_auto_apply_credits","MiscFeatureFlags__enable_view_transitions","MiscFeatureFlags__enable_explain_this_code","Profiles__require_profile_eligibility_for_signin","Profiles__enable_purchase_prompts","DevPro__enable_devsite_captcha","EngEduTelemetry__enable_engedu_telemetry","DevPro__enable_credits_banner","Profiles__enable_completecodelab_endpoint","DevPro__enable_google_payments","Profiles__enable_developer_profiles_callout","MiscFeatureFlags__enable_project_variables","Cloud__enable_cloud_shell_fte_user_flow","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__enable_variable_operator"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,["cloud.google.com",["cloud.google.com","console.cloud.google.com","docs.cloud.google.com"]]],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
+    'https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/clouddocs/js/app_loader.js', '[39,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/clouddocs","https://clouddocs-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/clouddocs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/clouddocs/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/veed85ba0e3651062c793a40796e84fb34afbf8489308d45f92d5448e587e3f03/clouddocs/images/lockup_full_color.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","docs.cloud.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED",null,null,null,["DevPro__enable_google_payments_buyflow","Profiles__enable_recognition_badges","Search__enable_page_map","MiscFeatureFlags__enable_project_variables","Profiles__enable_purchase_prompts","DevPro__enable_google_one_card","Profiles__require_profile_eligibility_for_signin","DevPro__enable_g1_integration","Cloud__enable_cloud_dlp_service","MiscFeatureFlags__enable_markdown_accept_header","Profiles__enable_awarding_url","MiscFeatureFlags__enable_explain_this_code","MiscFeatureFlags__enable_dark_theme","MiscFeatureFlags__enable_appearance_cookies","Profiles__enable_dashboard_curated_recommendations","Cloud__enable_cloud_shell","DevPro__enable_firebase_workspaces_card","CloudShell__cloud_shell_button","DevPro__enable_developer_subscriptions","Profiles__enable_profile_collections","DevPro__enable_devsite_captcha","Cloud__enable_cloudx_experiment_ids","Profiles__enable_completecodelab_endpoint","Profiles__enable_auto_apply_credits","Search__enable_suggestions_from_borg","Cloud__enable_legacy_calculator_redirect","Profiles__enable_callout_notifications","DevPro__enable_vertex_credit_card","TpcFeatures__proxy_prod_host","MiscFeatureFlags__developers_footer_dark_image","MiscFeatureFlags__enable_explicit_template_dependencies","DevPro__remove_eu_tax_intake_form","DevPro__enable_devpro_offers","Experiments__reqs_query_experiments","DevPro__enable_credits_banner","Profiles__enable_developer_profile_benefits_ui_redesign","Profiles__enable_join_program_group_endpoint","DevPro__enable_nvidia_credits_card","Concierge__enable_devsite_llm_tools","Profiles__enable_developer_profiles_callout","Search__enable_ai_eligibility_checks","Cloud__fast_free_trial","CloudShell__cloud_code_overflow_menu","Cloud__enable_free_trial_server_call","MiscFeatureFlags__gdp_dashboard_reskin_enabled","BookNav__enable_tenant_cache_key","Profiles__enable_completequiz_endpoint","Profiles__enable_public_developer_profiles","Concierge__enable_actions_menu","DevPro__enable_code_assist","Profiles__enable_playlist_community_acl","Profiles__enable_stripe_subscription_management","Cloud__cache_serialized_dynamic_content","OnSwitch__enable","SignIn__enable_l1_signup_flow","DevPro__enable_cloud_innovators_plus","MiscFeatureFlags__enable_variable_operator_index_yaml","MiscFeatureFlags__enable_view_transitions","TpcFeatures__enable_unmirrored_page_left_nav","Profiles__enable_developer_profile_pages_as_content","Concierge__enable_pushui","Profiles__enable_user_type","AIStudioInteractionsToggle__interactions_are_default","DevPro__enable_g1_ineligible_redirect","Analytics__enable_clearcut_logging","MiscFeatureFlags__enable_variable_operator","Concierge__enable_concierge_restricted","Cloud__enable_cloud_shell_fte_user_flow","EngEduTelemetry__enable_engedu_telemetry","Search__enable_ai_search_summaries_for_all","Concierge__enable_remove_info_panel_tags","DevPro__enable_free_benefits","DevPro__enable_google_payments","DevPro__enable_embed_profile_creation","Profiles__enable_complete_playlist_endpoint","MiscFeatureFlags__developers_footer_image","Analytics__enable_devpro_interaction_logging","MiscFeatureFlags__fix_lower_breadcrumbs","Search__enable_dynamic_content_confidential_banner","DevPro__enable_enterprise","Profiles__enable_targeted_hero","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_page_saving","MiscFeatureFlags__enable_framebox_badge_methods","MiscFeatureFlags__remove_cross_domain_tracking_params"],null,null,"GOOGLE_API_KEY_REDACTED","https://developerscontentserving-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","https://developerscontentsearch-pa.clients6.google.com",1,4,1,"https://developerprofiles-pa.clients6.google.com",[39,"clouddocs","Google Cloud Documentation","docs.cloud.google.com",null,"clouddocs-dot-devsite-v2-prod.appspot.com",null,null,[1,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,1,[1],[null,null,null,[1,20],"/terms/recommendations"],[1],null,[1],[1,null,1],null,[1]],null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[54,null,null,null,null,null,"/images/lockup_full_color.svg","/images/favicons/onecloud/apple-icon.png",null,null,null,1,1,1,1,null,[],null,null,[[],[],[],[],[],[],[],[]],null,1,null,null,null,"/images/lockup_dark_theme.svg",[]],null,null,null,null,null,[6,1,14,15,22,23,29,37],null,[[null,null,null,null,null,null,[1,[["docType","Choose a content type",[["ApiReference",null,null,null,null,null,null,null,null,"API reference"],["Sample",null,null,null,null,null,null,null,null,"Code sample"],["ReferenceArchitecture",null,null,null,null,null,null,null,null,"Reference architecture"],["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"Artificial intelligence and machine learning (AI/ML)"],["ApplicationDevelopment",null,null,null,null,null,null,null,null,"Application development"],["BigDataAndAnalytics",null,null,null,null,null,null,null,null,"Big data and analytics"],["Compute",null,null,null,null,null,null,null,null,"Compute"],["Containers",null,null,null,null,null,null,null,null,"Containers"],["Databases",null,null,null,null,null,null,null,null,"Databases"],["HybridCloud",null,null,null,null,null,null,null,null,"Hybrid and multicloud"],["LoggingAndMonitoring",null,null,null,null,null,null,null,null,"Logging and monitoring"],["Migrations",null,null,null,null,null,null,null,null,"Migrations"],["Networking",null,null,null,null,null,null,null,null,"Networking"],["SecurityAndCompliance",null,null,null,null,null,null,null,null,"Security and compliance"],["Serverless",null,null,null,null,null,null,null,null,"Serverless"],["Storage",null,null,null,null,null,null,null,null,"Storage"]]]]]],[1],null,1],[[null,null,null,null,null,["GTM-5CVQBG"],null,null,null,null,null,[["GTM-5CVQBG",2]],1],null,null,null,null,null,1],"mwETRvWii0eU5NUYprb0Y9z5GVbc",4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,["cloud.google.com",["cloud.google.com","console.cloud.google.com","docs.cloud.google.com"]]],null,"STRIPE_PUBLISHABLE_KEY_REDACTED",1,1,"https://developerscontentinsights-pa.clients6.google.com","GOOGLE_API_KEY_REDACTED","GOOGLE_API_KEY_REDACTED","https://developers.clients6.google.com",null,null,"GOOGLE_API_KEY_REDACTED\n",null,null,"https://developers.googleapis.com"]')
   
 </script>
 

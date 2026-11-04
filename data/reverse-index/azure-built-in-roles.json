@@ -18873,6 +18873,28 @@
         "stable_id": "36243c78-bf99-498c-9df9-86d9f8d28608"
       }
     ],
+    "azure:action:Microsoft.PolicyInsights/*/read": [
+      {
+        "display_name": "Foundry User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-user",
+        "stable_id": "53ca6127-db72-4b80-b1b0-d745d6d5456d"
+      },
+      {
+        "display_name": "Foundry Owner",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-owner",
+        "stable_id": "c883944f-8b7b-4483-af10-35834be79c4a"
+      },
+      {
+        "display_name": "Foundry Account Owner",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-account-owner",
+        "stable_id": "e47c6f54-e4a2-4754-9501-8e0985b135e1"
+      },
+      {
+        "display_name": "Foundry Project Manager",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-project-manager",
+        "stable_id": "eadc314b-1a2d-4efa-be10-5d325db5065e"
+      }
+    ],
     "azure:action:Microsoft.PolicyInsights/policyStates/queryResults/action": [
       {
         "display_name": "App Compliance Automation Administrator",
@@ -28999,6 +29021,34 @@
         "stable_id": "b59867f0-fa02-499b-be73-45a86b5b3e1c"
       }
     ],
+    "azure:data_action:Microsoft.CognitiveServices/accounts/AIServices/endpoints/interact/action": [
+      {
+        "display_name": "Foundry Agent Consumer",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-agent-consumer",
+        "stable_id": "eed3b665-ab3a-47b6-8f48-c9382fb1dad6"
+      }
+    ],
+    "azure:data_action:Microsoft.CognitiveServices/accounts/AIServices/responses/delete": [
+      {
+        "display_name": "Foundry Project Runtime User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-project-runtime-user",
+        "stable_id": "142bfaed-a13f-4c2d-bed2-6db62c4a1009"
+      }
+    ],
+    "azure:data_action:Microsoft.CognitiveServices/accounts/AIServices/responses/read": [
+      {
+        "display_name": "Foundry Project Runtime User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-project-runtime-user",
+        "stable_id": "142bfaed-a13f-4c2d-bed2-6db62c4a1009"
+      }
+    ],
+    "azure:data_action:Microsoft.CognitiveServices/accounts/AIServices/responses/write": [
+      {
+        "display_name": "Foundry Project Runtime User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-project-runtime-user",
+        "stable_id": "142bfaed-a13f-4c2d-bed2-6db62c4a1009"
+      }
+    ],
     "azure:data_action:Microsoft.CognitiveServices/accounts/AudioContentCreation/*": [
       {
         "display_name": "Cognitive Services Speech Contributor",
@@ -36457,7 +36507,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-10-30T10:07:19Z",
+  "generated_at_utc": "2026-11-04T11:00:54Z",
   "platform": "azure",
   "wildcard_atoms": [
     {
@@ -48170,6 +48220,54 @@
       "terms": [
         "Microsoft.PolicyInsights/*",
         "azure:action:Microsoft.PolicyInsights/*"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.PolicyInsights/*/read",
+      "object": {
+        "display_name": "Foundry User",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-user",
+        "stable_id": "53ca6127-db72-4b80-b1b0-d745d6d5456d"
+      },
+      "terms": [
+        "Microsoft.PolicyInsights/*/read",
+        "azure:action:Microsoft.PolicyInsights/*/read"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.PolicyInsights/*/read",
+      "object": {
+        "display_name": "Foundry Owner",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-owner",
+        "stable_id": "c883944f-8b7b-4483-af10-35834be79c4a"
+      },
+      "terms": [
+        "Microsoft.PolicyInsights/*/read",
+        "azure:action:Microsoft.PolicyInsights/*/read"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.PolicyInsights/*/read",
+      "object": {
+        "display_name": "Foundry Account Owner",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-account-owner",
+        "stable_id": "e47c6f54-e4a2-4754-9501-8e0985b135e1"
+      },
+      "terms": [
+        "Microsoft.PolicyInsights/*/read",
+        "azure:action:Microsoft.PolicyInsights/*/read"
+      ]
+    },
+    {
+      "atom": "azure:action:Microsoft.PolicyInsights/*/read",
+      "object": {
+        "display_name": "Foundry Project Manager",
+        "source_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning#foundry-project-manager",
+        "stable_id": "eadc314b-1a2d-4efa-be10-5d325db5065e"
+      },
+      "terms": [
+        "Microsoft.PolicyInsights/*/read",
+        "azure:action:Microsoft.PolicyInsights/*/read"
       ]
     },
     {

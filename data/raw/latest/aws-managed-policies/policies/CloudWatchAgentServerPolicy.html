@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 07, 2018, 01:06 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 06, 2024, 16:37 UTC</p>
+                <p><b>Edited time:</b>  November 03, 2026, 13:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchAgentServerPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -76,6 +76,7 @@
       "Effect" : "Allow",
       "Action" : [
         "cloudwatch:PutMetricData",
+        "cloudwatch:PutProfileRecords",
         "ec2:DescribeVolumes",
         "ec2:DescribeTags",
         "logs:PutLogEvents",

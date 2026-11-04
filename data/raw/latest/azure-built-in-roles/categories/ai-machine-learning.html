@@ -84,13 +84,13 @@
 	
 		<meta name="document_version_independent_id" content="05bc9d15-de20-5a1d-6fd6-cb4fb443a5b3" />
 	
-		<meta name="updated_at" content="2026-09-03T22:14:00Z" />
+		<meta name="updated_at" content="2026-11-03T18:18:00Z" />
 	
 		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/9ee3c14a939f683c7aa2f81cb85a5303c4b9906d/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/c7b1a6f5c2e85d27cc421723f81471bf67c7a915/articles/role-based-access-control/built-in-roles/ai-machine-learning.md" />
 	
-		<meta name="git_commit_id" content="9ee3c14a939f683c7aa2f81cb85a5303c4b9906d" />
+		<meta name="git_commit_id" content="c7b1a6f5c2e85d27cc421723f81471bf67c7a915" />
 	
 		<meta name="site_name" content="Docs" />
 	
@@ -102,7 +102,7 @@
 	
 		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}" />
 	
-		<meta name="word_count" content="8111" />
+		<meta name="word_count" content="8247" />
 	
 		<meta name="asset_id" content="role-based-access-control/built-in-roles/ai-machine-learning" />
 	
@@ -122,13 +122,13 @@
 	
 		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/16cd61cd-9ecf-429b-b494-91576c41f8e4" data-source="generated" />
 	
-		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated" />
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/64b65f6c-101f-411a-9b83-9f577fab52d0" data-source="generated" />
 	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/55265cca-de9b-48dc-a77a-9047cc39a575" data-source="generated" />
 	
 		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/c4bdb33a-5524-4b66-b162-03f5621d7902" data-source="generated" />
 	
-		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d" data-source="generated" />
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/1a667fd1-8145-4b11-af0f-9f5de205a6e5" data-source="generated" />
 	
 
 			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
@@ -4940,6 +4940,10 @@
 <td>Read metrics</td>
 </tr>
 <tr>
+<td><a href="../permissions/management-and-governance#microsoftpolicyinsights" data-linktype="relative-path">Microsoft.PolicyInsights</a>/*/read</td>
+<td></td>
+</tr>
+<tr>
 <td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
 <td>Gets the availability statuses for all resources in the specified scope</td>
 </tr>
@@ -5028,6 +5032,7 @@
         "Microsoft.Insights/logDefinitions/read",
         "Microsoft.Insights/metricdefinitions/read",
         "Microsoft.Insights/metrics/read",
+        "Microsoft.PolicyInsights/*/read",
         "Microsoft.ResourceHealth/availabilityStatuses/read",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/deployments/operations/read",
@@ -5045,6 +5050,71 @@
     }
   ],
   "roleName": "Foundry Account Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="foundry-agent-consumer">Foundry Agent Consumer</h2>
+<p>Allows interacting with Foundry agents at runtime.</p>
+<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/AIServices/endpoints/interact/action</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows interacting with Foundry agents at runtime.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/eed3b665-ab3a-47b6-8f48-c9382fb1dad6",
+  "name": "eed3b665-ab3a-47b6-8f48-c9382fb1dad6",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/AIServices/endpoints/interact/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Foundry Agent Consumer",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
@@ -5107,6 +5177,10 @@
 </tr>
 <tr>
 <td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/scheduledqueryrules/*</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftpolicyinsights" data-linktype="relative-path">Microsoft.PolicyInsights</a>/*/read</td>
 <td></td>
 </tr>
 <tr>
@@ -5198,6 +5272,7 @@
         "Microsoft.Insights/activityLogAlerts/*",
         "Microsoft.Insights/metricalerts/*",
         "Microsoft.Insights/scheduledqueryrules/*",
+        "Microsoft.PolicyInsights/*/read",
         "Microsoft.ResourceHealth/availabilityStatuses/read",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/deployments/operations/read",
@@ -5262,6 +5337,10 @@
 <td>Create and manage a classic metric alert</td>
 </tr>
 <tr>
+<td><a href="../permissions/management-and-governance#microsoftpolicyinsights" data-linktype="relative-path">Microsoft.PolicyInsights</a>/*/read</td>
+<td></td>
+</tr>
+<tr>
 <td><a href="../permissions/management-and-governance#microsoftresources" data-linktype="relative-path">Microsoft.Resources</a>/deployments/*</td>
 <td>Create and manage a deployment</td>
 </tr>
@@ -5321,6 +5400,7 @@
         "Microsoft.CognitiveServices/locations/*/read",
         "Microsoft.Authorization/*/read",
         "Microsoft.Insights/alertRules/*",
+        "Microsoft.PolicyInsights/*/read",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/subscriptions/resourceGroups/read"
       ],
@@ -5334,6 +5414,81 @@
     }
   ],
   "roleName": "Foundry Project Manager",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+</code></pre>
+<h2 id="foundry-project-runtime-user">Foundry Project Runtime User</h2>
+<p>Allows interacting with Foundry agents at runtime with minimal required permissions.</p>
+<p><a href="/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry" data-linktype="absolute-path">Learn more</a></p>
+<div class="mx-tableFixed">
+<table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/AIServices/responses/read</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/AIServices/responses/write</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../permissions/ai-machine-learning#microsoftcognitiveservices" data-linktype="relative-path">Microsoft.CognitiveServices</a>/accounts/AIServices/responses/delete</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NotDataActions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><em>none</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code class="lang-json">{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows interacting with Foundry agents at runtime with minimal required permissions.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/142bfaed-a13f-4c2d-bed2-6db62c4a1009",
+  "name": "142bfaed-a13f-4c2d-bed2-6db62c4a1009",
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/AIServices/responses/read",
+        "Microsoft.CognitiveServices/accounts/AIServices/responses/write",
+        "Microsoft.CognitiveServices/accounts/AIServices/responses/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Foundry Project Runtime User",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
@@ -5381,6 +5536,10 @@
 <tr>
 <td><a href="../permissions/monitor#microsoftinsights" data-linktype="relative-path">Microsoft.Insights</a>/metrics/read</td>
 <td>Read metrics</td>
+</tr>
+<tr>
+<td><a href="../permissions/management-and-governance#microsoftpolicyinsights" data-linktype="relative-path">Microsoft.PolicyInsights</a>/*/read</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="../permissions/management-and-governance#microsoftresourcehealth" data-linktype="relative-path">Microsoft.ResourceHealth</a>/availabilityStatuses/read</td>
@@ -5451,6 +5610,7 @@
         "Microsoft.Insights/logDefinitions/read",
         "Microsoft.Insights/metricdefinitions/read",
         "Microsoft.Insights/metrics/read",
+        "Microsoft.PolicyInsights/*/read",
         "Microsoft.ResourceHealth/availabilityStatuses/read",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/subscriptions/operationresults/read",

@@ -60180,6 +60180,23 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AmazonPersonalizeFullAccess"
       }
     ],
+    "aws:allow_action:cloudwatch:PutProfileRecords": [
+      {
+        "display_name": "CloudWatchAPIKeyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAPIKeyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchAPIKeyAccess"
+      },
+      {
+        "display_name": "CloudWatchAgentAdminPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAgentAdminPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchAgentAdminPolicy"
+      },
+      {
+        "display_name": "CloudWatchAgentServerPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAgentServerPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
+      }
+    ],
     "aws:allow_action:cloudwatch:SearchPrincipals": [
       {
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
@@ -371052,7 +371069,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-11-01T10:32:30Z",
+  "generated_at_utc": "2026-11-04T11:00:42Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

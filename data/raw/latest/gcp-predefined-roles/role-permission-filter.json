@@ -47,7 +47,7 @@
     },
     {
       "title": "Flow",
-      "name": "aisandbox.googleapis.com, flow.googleapis.com",
+      "name": "flow.googleapis.com, aisandbox.googleapis.com",
       "url": "/iam/docs/roles-permissions/flow"
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "trafficdirector.googleapis.com, meshconfig.googleapis.com, anthosservicemesh.googleapis.com, meshdataplane.googleapis.com",
+      "name": "trafficdirector.googleapis.com, meshdataplane.googleapis.com, meshconfig.googleapis.com, anthosservicemesh.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -422,7 +422,7 @@
     },
     {
       "title": "Cloud Key Management Service",
-      "name": "cloudkms.googleapis.com, cloudkmskacls.googleapis.com",
+      "name": "cloudkmskacls.googleapis.com, cloudkms.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudkms"
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "cloudmessaging.googleapis.com, firebasenotifications.googleapis.com, firebasecloudmessaging.googleapis.com",
+      "name": "cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com, firebasenotifications.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
@@ -537,7 +537,7 @@
     },
     {
       "title": "Commerce Price Management",
-      "name": "commerceprice.googleapis.com, commercepricemanagement.googleapis.com",
+      "name": "commercepricemanagement.googleapis.com, commerceprice.googleapis.com",
       "url": "/iam/docs/roles-permissions/commercepricemanagement"
     },
     {
@@ -727,12 +727,12 @@
     },
     {
       "title": "Data Studio",
-      "name": "datastudio.googleapis.com, lookerstudio.googleapis.com",
+      "name": "lookerstudio.googleapis.com, datastudio.googleapis.com",
       "url": "/iam/docs/roles-permissions/datastudio"
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
+      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -777,7 +777,7 @@
     },
     {
       "title": "Document AI",
-      "name": "documentai.googleapis.com, documentaicore.googleapis.com",
+      "name": "documentaicore.googleapis.com, documentai.googleapis.com",
       "url": "/iam/docs/roles-permissions/clouddocumentai"
     },
     {
@@ -897,7 +897,7 @@
     },
     {
       "title": "Firebase Crashlytics",
-      "name": "firebasecrashlytics.googleapis.com, firebasecrash.googleapis.com",
+      "name": "firebasecrash.googleapis.com, firebasecrashlytics.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecrash"
     },
     {
@@ -1247,7 +1247,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "stackdriver.googleapis.com, opsconfigmonitoring.googleapis.com, monitoring.googleapis.com",
+      "name": "stackdriver.googleapis.com, monitoring.googleapis.com, opsconfigmonitoring.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1282,7 +1282,7 @@
     },
     {
       "title": "NetApp Cloud Volumes Service",
-      "name": "cloudvolumesgcp.api.netapp.com, netappcloudvolumes.googleapis.com",
+      "name": "netappcloudvolumes.googleapis.com, cloudvolumesgcp.api.netapp.com",
       "url": "/iam/docs/roles-permissions/netappcloudvolumes"
     },
     {
@@ -1472,7 +1472,7 @@
     },
     {
       "title": "RISC Configuration Service",
-      "name": "riscconfigs.googleapis.com, riscconfigurationservice.googleapis.com",
+      "name": "riscconfigurationservice.googleapis.com, riscconfigs.googleapis.com",
       "url": "/iam/docs/roles-permissions/riscconfigurationservice"
     },
     {
@@ -1592,7 +1592,7 @@
     },
     {
       "title": "Cloud Source Repositories",
-      "name": "sourcerepo.googleapis.com, source.googleapis.com",
+      "name": "source.googleapis.com, sourcerepo.googleapis.com",
       "url": "/iam/docs/roles-permissions/source"
     },
     {
@@ -12854,7 +12854,7 @@
       "priority": 1
     },
     {
-      "title": "Privilegedaccessmanager Editor",
+      "title": "Privileged Access Manager Editor",
       "name": "roles/privilegedaccessmanager.editor",
       "url": "/iam/docs/roles-permissions/privilegedaccessmanager#privilegedaccessmanager.editor",
       "priority": 1
@@ -16648,6 +16648,22 @@
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.agents.search"
     },
     {
+      "title": "agentregistry.aiApplications.get",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.get"
+    },
+    {
+      "title": "agentregistry.aiApplications.getIamPolicy",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.getIamPolicy"
+    },
+    {
+      "title": "agentregistry.aiApplications.list",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.list"
+    },
+    {
+      "title": "agentregistry.aiApplications.setIamPolicy",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.setIamPolicy"
+    },
+    {
       "title": "agentregistry.bindings.create",
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.bindings.create"
     },
@@ -17198,6 +17214,34 @@
     {
       "title": "aiplatform.deploymentResourcePools.update",
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.deploymentResourcePools.update"
+    },
+    {
+      "title": "aiplatform.detectors.create",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.detectors.create"
+    },
+    {
+      "title": "aiplatform.detectors.delete",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.detectors.delete"
+    },
+    {
+      "title": "aiplatform.detectors.disable",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.detectors.disable"
+    },
+    {
+      "title": "aiplatform.detectors.enable",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.detectors.enable"
+    },
+    {
+      "title": "aiplatform.detectors.get",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.detectors.get"
+    },
+    {
+      "title": "aiplatform.detectors.list",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.detectors.list"
+    },
+    {
+      "title": "aiplatform.detectors.update",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.detectors.update"
     },
     {
       "title": "aiplatform.edgeDeploymentJobs.create",
@@ -22472,6 +22516,10 @@
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.createForFilestoreInstance"
     },
     {
+      "title": "backupdr.backupPlanAssociations.createForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.createForNetappVolumes"
+    },
+    {
       "title": "backupdr.backupPlanAssociations.deleteForAlloydbCluster",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.deleteForAlloydbCluster"
     },
@@ -22490,6 +22538,10 @@
     {
       "title": "backupdr.backupPlanAssociations.deleteForFilestoreInstance",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.deleteForFilestoreInstance"
+    },
+    {
+      "title": "backupdr.backupPlanAssociations.deleteForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.deleteForNetappVolumes"
     },
     {
       "title": "backupdr.backupPlanAssociations.fetchForAlloydbCluster",
@@ -22512,6 +22564,10 @@
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.fetchForFilestoreInstance"
     },
     {
+      "title": "backupdr.backupPlanAssociations.fetchForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.fetchForNetappVolumes"
+    },
+    {
       "title": "backupdr.backupPlanAssociations.getForAlloydbCluster",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.getForAlloydbCluster"
     },
@@ -22530,6 +22586,10 @@
     {
       "title": "backupdr.backupPlanAssociations.getForFilestoreInstance",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.getForFilestoreInstance"
+    },
+    {
+      "title": "backupdr.backupPlanAssociations.getForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.getForNetappVolumes"
     },
     {
       "title": "backupdr.backupPlanAssociations.list",
@@ -22556,6 +22616,10 @@
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.triggerBackupForFilestoreInstance"
     },
     {
+      "title": "backupdr.backupPlanAssociations.triggerBackupForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.triggerBackupForNetappVolumes"
+    },
+    {
       "title": "backupdr.backupPlanAssociations.updateForAlloydbCluster",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.updateForAlloydbCluster"
     },
@@ -22574,6 +22638,10 @@
     {
       "title": "backupdr.backupPlanAssociations.updateForFilestoreInstance",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.updateForFilestoreInstance"
+    },
+    {
+      "title": "backupdr.backupPlanAssociations.updateForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlanAssociations.updateForNetappVolumes"
     },
     {
       "title": "backupdr.backupPlanRevisions.get",
@@ -22622,6 +22690,10 @@
     {
       "title": "backupdr.backupPlans.useForFilestoreInstance",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlans.useForFilestoreInstance"
+    },
+    {
+      "title": "backupdr.backupPlans.useForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.backupPlans.useForNetappVolumes"
     },
     {
       "title": "backupdr.backupVaults.associate",
@@ -22684,6 +22756,10 @@
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.fetchForComputeInstance"
     },
     {
+      "title": "backupdr.bvbackups.fetchForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.fetchForNetappVolumes"
+    },
+    {
       "title": "backupdr.bvbackups.get",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.get"
     },
@@ -22710,6 +22786,10 @@
     {
       "title": "backupdr.bvbackups.useReadOnlyForFilestoreInstance",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.useReadOnlyForFilestoreInstance"
+    },
+    {
+      "title": "backupdr.bvbackups.useReadOnlyForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.useReadOnlyForNetappVolumes"
     },
     {
       "title": "backupdr.bvdataSources.abandonBackup",
@@ -22772,6 +22852,10 @@
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.dataSourceReferences.fetchForFilestoreInstance"
     },
     {
+      "title": "backupdr.dataSourceReferences.fetchForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.dataSourceReferences.fetchForNetappVolumes"
+    },
+    {
       "title": "backupdr.dataSourceReferences.getForAlloydbCluster",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.dataSourceReferences.getForAlloydbCluster"
     },
@@ -22782,6 +22866,10 @@
     {
       "title": "backupdr.dataSourceReferences.getForFilestoreInstance",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.dataSourceReferences.getForFilestoreInstance"
+    },
+    {
+      "title": "backupdr.dataSourceReferences.getForNetappVolumes",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.dataSourceReferences.getForNetappVolumes"
     },
     {
       "title": "backupdr.dataSourceReferences.list",
@@ -25798,6 +25886,42 @@
     {
       "title": "chronicle.agentSettings.update",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.agentSettings.update"
+    },
+    {
+      "title": "chronicle.agenticCaseReportTemplates.delete",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.agenticCaseReportTemplates.delete"
+    },
+    {
+      "title": "chronicle.agenticCaseReportTemplates.get",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.agenticCaseReportTemplates.get"
+    },
+    {
+      "title": "chronicle.agenticCaseReportTemplates.update",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.agenticCaseReportTemplates.update"
+    },
+    {
+      "title": "chronicle.agenticCaseReports.delete",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.agenticCaseReports.delete"
+    },
+    {
+      "title": "chronicle.agenticCaseReports.get",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.agenticCaseReports.get"
+    },
+    {
+      "title": "chronicle.agenticCaseReports.publish",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.agenticCaseReports.publish"
+    },
+    {
+      "title": "chronicle.agenticCaseReports.update",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.agenticCaseReports.update"
+    },
+    {
+      "title": "chronicle.aiBillingSettings.get",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.aiBillingSettings.get"
+    },
+    {
+      "title": "chronicle.aiBillingSettings.update",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.aiBillingSettings.update"
     },
     {
       "title": "chronicle.ais.createFeedback",
@@ -34588,6 +34712,30 @@
       "url": "/iam/docs/roles-permissions/composer#composer.userworkloadssecrets.update"
     },
     {
+      "title": "compute.acceleratorInterconnectMemberInstances.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorInterconnectMemberInstances.list"
+    },
+    {
+      "title": "compute.acceleratorInterconnects.create",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorInterconnects.create"
+    },
+    {
+      "title": "compute.acceleratorInterconnects.delete",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorInterconnects.delete"
+    },
+    {
+      "title": "compute.acceleratorInterconnects.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorInterconnects.get"
+    },
+    {
+      "title": "compute.acceleratorInterconnects.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorInterconnects.list"
+    },
+    {
+      "title": "compute.acceleratorInterconnects.queryFormability",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorInterconnects.queryFormability"
+    },
+    {
       "title": "compute.acceleratorTypes.get",
       "url": "/iam/docs/roles-permissions/compute#compute.acceleratorTypes.get"
     },
@@ -42740,6 +42888,34 @@
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.systemMetrics.fetch"
     },
     {
+      "title": "databaseinsights.tasks.applyTaskRemediation",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.tasks.applyTaskRemediation"
+    },
+    {
+      "title": "databaseinsights.tasks.dismissTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.tasks.dismissTask"
+    },
+    {
+      "title": "databaseinsights.tasks.fixTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.tasks.fixTask"
+    },
+    {
+      "title": "databaseinsights.tasks.getTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.tasks.getTask"
+    },
+    {
+      "title": "databaseinsights.tasks.listTasks",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.tasks.listTasks"
+    },
+    {
+      "title": "databaseinsights.tasks.markTaskAsDone",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.tasks.markTaskAsDone"
+    },
+    {
+      "title": "databaseinsights.tasks.restoreTask",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.tasks.restoreTask"
+    },
+    {
       "title": "databaseinsights.telemetryConfig.fetch",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.telemetryConfig.fetch"
     },
@@ -42786,6 +42962,10 @@
     {
       "title": "databaseinsights.virtualDbaAgent.fetchContextService",
       "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.fetchContextService"
+    },
+    {
+      "title": "databaseinsights.virtualDbaAgent.get",
+      "url": "/iam/docs/roles-permissions/databaseinsights#databaseinsights.virtualDbaAgent.get"
     },
     {
       "title": "databaseinsights.virtualDbaAgent.getAgentPolicy",
@@ -44082,6 +44262,10 @@
     {
       "title": "datalineage.events.list",
       "url": "/iam/docs/roles-permissions/datalineage#datalineage.events.list"
+    },
+    {
+      "title": "datalineage.locations.importLineage",
+      "url": "/iam/docs/roles-permissions/datalineage#datalineage.locations.importLineage"
     },
     {
       "title": "datalineage.locations.processOpenLineageMessage",
@@ -46924,8 +47108,16 @@
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.connections.create"
     },
     {
+      "title": "developerconnect.connections.createTagBinding",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.connections.createTagBinding"
+    },
+    {
       "title": "developerconnect.connections.delete",
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.connections.delete"
+    },
+    {
+      "title": "developerconnect.connections.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.connections.deleteTagBinding"
     },
     {
       "title": "developerconnect.connections.fetchGitHubInstallations",
@@ -46956,6 +47148,14 @@
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.connections.list"
     },
     {
+      "title": "developerconnect.connections.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.connections.listEffectiveTags"
+    },
+    {
+      "title": "developerconnect.connections.listTagBindings",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.connections.listTagBindings"
+    },
+    {
       "title": "developerconnect.connections.processGitHubAppCreationCallback",
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.connections.processGitHubAppCreationCallback"
     },
@@ -46976,6 +47176,14 @@
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.deploymentEvents.list"
     },
     {
+      "title": "developerconnect.gitRepositoryLinks.addPullRequestComment",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.addPullRequestComment"
+    },
+    {
+      "title": "developerconnect.gitRepositoryLinks.addPullRequestReviewComment",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.addPullRequestReviewComment"
+    },
+    {
       "title": "developerconnect.gitRepositoryLinks.create",
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.create"
     },
@@ -46984,8 +47192,32 @@
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.delete"
     },
     {
+      "title": "developerconnect.gitRepositoryLinks.diffCommit",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.diffCommit"
+    },
+    {
+      "title": "developerconnect.gitRepositoryLinks.fetchCommit",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.fetchCommit"
+    },
+    {
+      "title": "developerconnect.gitRepositoryLinks.fetchCommitList",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.fetchCommitList"
+    },
+    {
+      "title": "developerconnect.gitRepositoryLinks.fetchFileBlame",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.fetchFileBlame"
+    },
+    {
       "title": "developerconnect.gitRepositoryLinks.fetchGitRefs",
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.fetchGitRefs"
+    },
+    {
+      "title": "developerconnect.gitRepositoryLinks.fetchPullRequest",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.fetchPullRequest"
+    },
+    {
+      "title": "developerconnect.gitRepositoryLinks.fetchPullRequestList",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.fetchPullRequestList"
     },
     {
       "title": "developerconnect.gitRepositoryLinks.fetchReadToken",
@@ -47010,6 +47242,14 @@
     {
       "title": "developerconnect.gitRepositoryLinks.list",
       "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.list"
+    },
+    {
+      "title": "developerconnect.gitRepositoryLinks.modifyPullRequest",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.modifyPullRequest"
+    },
+    {
+      "title": "developerconnect.gitRepositoryLinks.openPullRequest",
+      "url": "/iam/docs/roles-permissions/developerconnect#developerconnect.gitRepositoryLinks.openPullRequest"
     },
     {
       "title": "developerconnect.insightsConfigs.create",
@@ -49396,6 +49636,14 @@
       "url": "/iam/docs/roles-permissions/dns#dns.gkeClusters.bindPrivateDNSZone"
     },
     {
+      "title": "dns.locations.get",
+      "url": "/iam/docs/roles-permissions/dns#dns.locations.get"
+    },
+    {
+      "title": "dns.locations.list",
+      "url": "/iam/docs/roles-permissions/dns#dns.locations.list"
+    },
+    {
       "title": "dns.managedZoneOperations.get",
       "url": "/iam/docs/roles-permissions/dns#dns.managedZoneOperations.get"
     },
@@ -49450,6 +49698,50 @@
     {
       "title": "dns.networks.useHealthSignals",
       "url": "/iam/docs/roles-permissions/dns#dns.networks.useHealthSignals"
+    },
+    {
+      "title": "dns.operations.cancel",
+      "url": "/iam/docs/roles-permissions/dns#dns.operations.cancel"
+    },
+    {
+      "title": "dns.operations.delete",
+      "url": "/iam/docs/roles-permissions/dns#dns.operations.delete"
+    },
+    {
+      "title": "dns.operations.get",
+      "url": "/iam/docs/roles-permissions/dns#dns.operations.get"
+    },
+    {
+      "title": "dns.operations.list",
+      "url": "/iam/docs/roles-permissions/dns#dns.operations.list"
+    },
+    {
+      "title": "dns.outboundEndpoints.bindPrivateDNSPolicy",
+      "url": "/iam/docs/roles-permissions/dns#dns.outboundEndpoints.bindPrivateDNSPolicy"
+    },
+    {
+      "title": "dns.outboundEndpoints.bindPrivateDNSZone",
+      "url": "/iam/docs/roles-permissions/dns#dns.outboundEndpoints.bindPrivateDNSZone"
+    },
+    {
+      "title": "dns.outboundEndpoints.create",
+      "url": "/iam/docs/roles-permissions/dns#dns.outboundEndpoints.create"
+    },
+    {
+      "title": "dns.outboundEndpoints.delete",
+      "url": "/iam/docs/roles-permissions/dns#dns.outboundEndpoints.delete"
+    },
+    {
+      "title": "dns.outboundEndpoints.get",
+      "url": "/iam/docs/roles-permissions/dns#dns.outboundEndpoints.get"
+    },
+    {
+      "title": "dns.outboundEndpoints.list",
+      "url": "/iam/docs/roles-permissions/dns#dns.outboundEndpoints.list"
+    },
+    {
+      "title": "dns.outboundEndpoints.update",
+      "url": "/iam/docs/roles-permissions/dns#dns.outboundEndpoints.update"
     },
     {
       "title": "dns.policies.create",
@@ -51692,8 +51984,16 @@
       "url": "/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.backends.create"
     },
     {
+      "title": "firebaseapphosting.backends.createTagBinding",
+      "url": "/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.backends.createTagBinding"
+    },
+    {
       "title": "firebaseapphosting.backends.delete",
       "url": "/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.backends.delete"
+    },
+    {
+      "title": "firebaseapphosting.backends.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.backends.deleteTagBinding"
     },
     {
       "title": "firebaseapphosting.backends.get",
@@ -51702,6 +52002,14 @@
     {
       "title": "firebaseapphosting.backends.list",
       "url": "/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.backends.list"
+    },
+    {
+      "title": "firebaseapphosting.backends.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.backends.listEffectiveTags"
+    },
+    {
+      "title": "firebaseapphosting.backends.listTagBindings",
+      "url": "/iam/docs/roles-permissions/firebaseapphosting#firebaseapphosting.backends.listTagBindings"
     },
     {
       "title": "firebaseapphosting.backends.update",
@@ -52016,8 +52324,16 @@
       "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.create"
     },
     {
+      "title": "firebasedataconnect.services.createTagBinding",
+      "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.createTagBinding"
+    },
+    {
       "title": "firebasedataconnect.services.delete",
       "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.delete"
+    },
+    {
+      "title": "firebasedataconnect.services.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.deleteTagBinding"
     },
     {
       "title": "firebasedataconnect.services.executeGraphql",
@@ -52046,6 +52362,14 @@
     {
       "title": "firebasedataconnect.services.list",
       "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.list"
+    },
+    {
+      "title": "firebasedataconnect.services.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.listEffectiveTags"
+    },
+    {
+      "title": "firebasedataconnect.services.listTagBindings",
+      "url": "/iam/docs/roles-permissions/firebasedataconnect#firebasedataconnect.services.listTagBindings"
     },
     {
       "title": "firebasedataconnect.services.postgrestCallFunction",
@@ -52616,8 +52940,16 @@
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.hardware.create"
     },
     {
+      "title": "gdchardwaremanagement.hardware.createTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.hardware.createTagBinding"
+    },
+    {
       "title": "gdchardwaremanagement.hardware.delete",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.hardware.delete"
+    },
+    {
+      "title": "gdchardwaremanagement.hardware.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.hardware.deleteTagBinding"
     },
     {
       "title": "gdchardwaremanagement.hardware.get",
@@ -52626,6 +52958,14 @@
     {
       "title": "gdchardwaremanagement.hardware.list",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.hardware.list"
+    },
+    {
+      "title": "gdchardwaremanagement.hardware.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.hardware.listEffectiveTags"
+    },
+    {
+      "title": "gdchardwaremanagement.hardware.listTagBindings",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.hardware.listTagBindings"
     },
     {
       "title": "gdchardwaremanagement.hardware.update",
@@ -52680,8 +53020,16 @@
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.orders.create"
     },
     {
+      "title": "gdchardwaremanagement.orders.createTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.orders.createTagBinding"
+    },
+    {
       "title": "gdchardwaremanagement.orders.delete",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.orders.delete"
+    },
+    {
+      "title": "gdchardwaremanagement.orders.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.orders.deleteTagBinding"
     },
     {
       "title": "gdchardwaremanagement.orders.get",
@@ -52690,6 +53038,14 @@
     {
       "title": "gdchardwaremanagement.orders.list",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.orders.list"
+    },
+    {
+      "title": "gdchardwaremanagement.orders.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.orders.listEffectiveTags"
+    },
+    {
+      "title": "gdchardwaremanagement.orders.listTagBindings",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.orders.listTagBindings"
     },
     {
       "title": "gdchardwaremanagement.orders.submit",
@@ -52704,8 +53060,16 @@
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.sites.create"
     },
     {
+      "title": "gdchardwaremanagement.sites.createTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.sites.createTagBinding"
+    },
+    {
       "title": "gdchardwaremanagement.sites.delete",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.sites.delete"
+    },
+    {
+      "title": "gdchardwaremanagement.sites.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.sites.deleteTagBinding"
     },
     {
       "title": "gdchardwaremanagement.sites.get",
@@ -52714,6 +53078,14 @@
     {
       "title": "gdchardwaremanagement.sites.list",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.sites.list"
+    },
+    {
+      "title": "gdchardwaremanagement.sites.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.sites.listEffectiveTags"
+    },
+    {
+      "title": "gdchardwaremanagement.sites.listTagBindings",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.sites.listTagBindings"
     },
     {
       "title": "gdchardwaremanagement.sites.update",
@@ -52728,12 +53100,36 @@
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.skus.list"
     },
     {
+      "title": "gdchardwaremanagement.zoneOperations.createTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zoneOperations.createTagBinding"
+    },
+    {
+      "title": "gdchardwaremanagement.zoneOperations.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zoneOperations.deleteTagBinding"
+    },
+    {
+      "title": "gdchardwaremanagement.zoneOperations.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zoneOperations.listEffectiveTags"
+    },
+    {
+      "title": "gdchardwaremanagement.zoneOperations.listTagBindings",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zoneOperations.listTagBindings"
+    },
+    {
       "title": "gdchardwaremanagement.zones.create",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zones.create"
     },
     {
+      "title": "gdchardwaremanagement.zones.createTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zones.createTagBinding"
+    },
+    {
       "title": "gdchardwaremanagement.zones.delete",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zones.delete"
+    },
+    {
+      "title": "gdchardwaremanagement.zones.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zones.deleteTagBinding"
     },
     {
       "title": "gdchardwaremanagement.zones.get",
@@ -52742,6 +53138,14 @@
     {
       "title": "gdchardwaremanagement.zones.list",
       "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zones.list"
+    },
+    {
+      "title": "gdchardwaremanagement.zones.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zones.listEffectiveTags"
+    },
+    {
+      "title": "gdchardwaremanagement.zones.listTagBindings",
+      "url": "/iam/docs/roles-permissions/gdchardwaremanagement#gdchardwaremanagement.zones.listTagBindings"
     },
     {
       "title": "gdchardwaremanagement.zones.update",
@@ -57736,12 +58140,72 @@
       "url": "/iam/docs/roles-permissions/memcache#memcache.operations.list"
     },
     {
+      "title": "memorystore.aclPolicies.create",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.aclPolicies.create"
+    },
+    {
+      "title": "memorystore.aclPolicies.delete",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.aclPolicies.delete"
+    },
+    {
+      "title": "memorystore.aclPolicies.get",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.aclPolicies.get"
+    },
+    {
+      "title": "memorystore.aclPolicies.list",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.aclPolicies.list"
+    },
+    {
+      "title": "memorystore.aclPolicies.update",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.aclPolicies.update"
+    },
+    {
+      "title": "memorystore.aclPolicyRevisions.get",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.aclPolicyRevisions.get"
+    },
+    {
+      "title": "memorystore.aclPolicyRevisions.list",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.aclPolicyRevisions.list"
+    },
+    {
+      "title": "memorystore.authTokens.create",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.authTokens.create"
+    },
+    {
+      "title": "memorystore.authTokens.delete",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.authTokens.delete"
+    },
+    {
+      "title": "memorystore.authTokens.get",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.authTokens.get"
+    },
+    {
+      "title": "memorystore.authTokens.list",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.authTokens.list"
+    },
+    {
+      "title": "memorystore.backupCollections.createTagBinding",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.backupCollections.createTagBinding"
+    },
+    {
+      "title": "memorystore.backupCollections.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.backupCollections.deleteTagBinding"
+    },
+    {
       "title": "memorystore.backupCollections.get",
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.backupCollections.get"
     },
     {
       "title": "memorystore.backupCollections.list",
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.backupCollections.list"
+    },
+    {
+      "title": "memorystore.backupCollections.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.backupCollections.listEffectiveTags"
+    },
+    {
+      "title": "memorystore.backupCollections.listTagBindings",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.backupCollections.listTagBindings"
     },
     {
       "title": "memorystore.backups.delete",
@@ -57772,8 +58236,16 @@
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.create"
     },
     {
+      "title": "memorystore.instances.createTagBinding",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.createTagBinding"
+    },
+    {
       "title": "memorystore.instances.delete",
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.delete"
+    },
+    {
+      "title": "memorystore.instances.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.deleteTagBinding"
     },
     {
       "title": "memorystore.instances.finishMigration",
@@ -57786,6 +58258,14 @@
     {
       "title": "memorystore.instances.list",
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.list"
+    },
+    {
+      "title": "memorystore.instances.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.listEffectiveTags"
+    },
+    {
+      "title": "memorystore.instances.listTagBindings",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.instances.listTagBindings"
     },
     {
       "title": "memorystore.instances.startMigration",
@@ -57818,6 +58298,22 @@
     {
       "title": "memorystore.operations.list",
       "url": "/iam/docs/roles-permissions/memorystore#memorystore.operations.list"
+    },
+    {
+      "title": "memorystore.tokenAuthUsers.create",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.tokenAuthUsers.create"
+    },
+    {
+      "title": "memorystore.tokenAuthUsers.delete",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.tokenAuthUsers.delete"
+    },
+    {
+      "title": "memorystore.tokenAuthUsers.get",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.tokenAuthUsers.get"
+    },
+    {
+      "title": "memorystore.tokenAuthUsers.list",
+      "url": "/iam/docs/roles-permissions/memorystore#memorystore.tokenAuthUsers.list"
     },
     {
       "title": "metastore.backups.create",
@@ -61620,6 +62116,10 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabaseCharacterSets.list"
     },
     {
+      "title": "oracledatabase.autonomousDatabases.changeDisasterRecoveryConfig",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.changeDisasterRecoveryConfig"
+    },
+    {
       "title": "oracledatabase.autonomousDatabases.clone",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.clone"
     },
@@ -61628,8 +62128,16 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.create"
     },
     {
+      "title": "oracledatabase.autonomousDatabases.createTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.createTagBinding"
+    },
+    {
       "title": "oracledatabase.autonomousDatabases.delete",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.delete"
+    },
+    {
+      "title": "oracledatabase.autonomousDatabases.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.deleteTagBinding"
     },
     {
       "title": "oracledatabase.autonomousDatabases.failover",
@@ -61648,8 +62156,16 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.list"
     },
     {
+      "title": "oracledatabase.autonomousDatabases.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.listEffectiveTags"
+    },
+    {
       "title": "oracledatabase.autonomousDatabases.listRefreshableClones",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.listRefreshableClones"
+    },
+    {
+      "title": "oracledatabase.autonomousDatabases.listTagBindings",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.autonomousDatabases.listTagBindings"
     },
     {
       "title": "oracledatabase.autonomousDatabases.refresh",
@@ -61688,8 +62204,16 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudExadataInfrastructures.create"
     },
     {
+      "title": "oracledatabase.cloudExadataInfrastructures.createTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudExadataInfrastructures.createTagBinding"
+    },
+    {
       "title": "oracledatabase.cloudExadataInfrastructures.delete",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudExadataInfrastructures.delete"
+    },
+    {
+      "title": "oracledatabase.cloudExadataInfrastructures.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudExadataInfrastructures.deleteTagBinding"
     },
     {
       "title": "oracledatabase.cloudExadataInfrastructures.get",
@@ -61698,6 +62222,14 @@
     {
       "title": "oracledatabase.cloudExadataInfrastructures.list",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudExadataInfrastructures.list"
+    },
+    {
+      "title": "oracledatabase.cloudExadataInfrastructures.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudExadataInfrastructures.listEffectiveTags"
+    },
+    {
+      "title": "oracledatabase.cloudExadataInfrastructures.listTagBindings",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudExadataInfrastructures.listTagBindings"
     },
     {
       "title": "oracledatabase.cloudExadataInfrastructures.update",
@@ -61712,8 +62244,24 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.create"
     },
     {
+      "title": "oracledatabase.cloudVmClusters.createTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.createTagBinding"
+    },
+    {
       "title": "oracledatabase.cloudVmClusters.delete",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.delete"
+    },
+    {
+      "title": "oracledatabase.cloudVmClusters.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.deleteTagBinding"
+    },
+    {
+      "title": "oracledatabase.cloudVmClusters.disableIdentityConnector",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.disableIdentityConnector"
+    },
+    {
+      "title": "oracledatabase.cloudVmClusters.enableIdentityConnector",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.enableIdentityConnector"
     },
     {
       "title": "oracledatabase.cloudVmClusters.get",
@@ -61722,6 +62270,14 @@
     {
       "title": "oracledatabase.cloudVmClusters.list",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.list"
+    },
+    {
+      "title": "oracledatabase.cloudVmClusters.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.listEffectiveTags"
+    },
+    {
+      "title": "oracledatabase.cloudVmClusters.listTagBindings",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.cloudVmClusters.listTagBindings"
     },
     {
       "title": "oracledatabase.cloudVmClusters.update",
@@ -61796,8 +62352,16 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystems.create"
     },
     {
+      "title": "oracledatabase.dbSystems.createTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystems.createTagBinding"
+    },
+    {
       "title": "oracledatabase.dbSystems.delete",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystems.delete"
+    },
+    {
+      "title": "oracledatabase.dbSystems.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystems.deleteTagBinding"
     },
     {
       "title": "oracledatabase.dbSystems.get",
@@ -61808,6 +62372,14 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystems.list"
     },
     {
+      "title": "oracledatabase.dbSystems.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystems.listEffectiveTags"
+    },
+    {
+      "title": "oracledatabase.dbSystems.listTagBindings",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystems.listTagBindings"
+    },
+    {
       "title": "oracledatabase.dbSystems.update",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbSystems.update"
     },
@@ -61816,8 +62388,24 @@
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.dbVersions.list"
     },
     {
+      "title": "oracledatabase.entitlements.createTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.entitlements.createTagBinding"
+    },
+    {
+      "title": "oracledatabase.entitlements.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.entitlements.deleteTagBinding"
+    },
+    {
       "title": "oracledatabase.entitlements.list",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.entitlements.list"
+    },
+    {
+      "title": "oracledatabase.entitlements.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.entitlements.listEffectiveTags"
+    },
+    {
+      "title": "oracledatabase.entitlements.listTagBindings",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.entitlements.listTagBindings"
     },
     {
       "title": "oracledatabase.exadbVmClusters.create",
@@ -61826,6 +62414,14 @@
     {
       "title": "oracledatabase.exadbVmClusters.delete",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.exadbVmClusters.delete"
+    },
+    {
+      "title": "oracledatabase.exadbVmClusters.disableIdentityConnector",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.exadbVmClusters.disableIdentityConnector"
+    },
+    {
+      "title": "oracledatabase.exadbVmClusters.enableIdentityConnector",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.exadbVmClusters.enableIdentityConnector"
     },
     {
       "title": "oracledatabase.exadbVmClusters.get",
@@ -67184,12 +67780,52 @@
       "url": "/iam/docs/roles-permissions/saasservicemgmt#saasservicemgmt.units.update"
     },
     {
+      "title": "secretmanager.backups.create",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.backups.create"
+    },
+    {
+      "title": "secretmanager.backups.delete",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.backups.delete"
+    },
+    {
+      "title": "secretmanager.backups.get",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.backups.get"
+    },
+    {
+      "title": "secretmanager.backups.list",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.backups.list"
+    },
+    {
+      "title": "secretmanager.backups.restore",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.backups.restore"
+    },
+    {
+      "title": "secretmanager.backups.update",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.backups.update"
+    },
+    {
       "title": "secretmanager.locations.get",
       "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.locations.get"
     },
     {
       "title": "secretmanager.locations.list",
       "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.locations.list"
+    },
+    {
+      "title": "secretmanager.operations.cancel",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.operations.cancel"
+    },
+    {
+      "title": "secretmanager.operations.get",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.operations.get"
+    },
+    {
+      "title": "secretmanager.operations.list",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.operations.list"
+    },
+    {
+      "title": "secretmanager.secrets.backup",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.secrets.backup"
     },
     {
       "title": "secretmanager.secrets.create",
@@ -67230,6 +67866,10 @@
     {
       "title": "secretmanager.secrets.listTagBindings",
       "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.secrets.listTagBindings"
+    },
+    {
+      "title": "secretmanager.secrets.restore",
+      "url": "/iam/docs/roles-permissions/secretmanager#secretmanager.secrets.restore"
     },
     {
       "title": "secretmanager.secrets.rotate",
@@ -71566,6 +72206,10 @@
     {
       "title": "vmmigration.utilizationReports.list",
       "url": "/iam/docs/roles-permissions/vmmigration#vmmigration.utilizationReports.list"
+    },
+    {
+      "title": "vmwareengine.capacityAllocations.list",
+      "url": "/iam/docs/roles-permissions/vmwareengine#vmwareengine.capacityAllocations.list"
     },
     {
       "title": "vmwareengine.clusters.create",
