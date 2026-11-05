@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "sruyhSWnQIvvlKCGbcoIX",
+  "buildId": "r_l1lgYw46wNqC4PNHqBu",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -7246,6 +7246,33 @@
               "slug": "disable-a-repository-for-copilot-cloud-agent-in-an-organization",
               "subcategory": "copilot-coding-agent-management",
               "verb": "delete"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "copilot",
+              "requestPath": "/orgs/{org}/teams/{team_slug}/copilot/customizations",
+              "slug": "get-copilot-customizations-for-a-team",
+              "subcategory": "copilot-team-customizations",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "copilot",
+              "requestPath": "/orgs/{org}/teams/{team_slug}/copilot/customizations",
+              "slug": "set-copilot-customizations-for-a-team",
+              "subcategory": "copilot-team-customizations",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "copilot",
+              "requestPath": "/orgs/{org}/teams/{team_slug}/copilot/customizations",
+              "slug": "delete-copilot-customizations-for-a-team",
+              "subcategory": "copilot-team-customizations",
+              "verb": "delete"
             }
           ],
           "title": "Copilot agent settings"
@@ -10800,15 +10827,6 @@
             "version": "enterprise-cloud@latest",
             "versionTitle": "Enterprise Cloud"
           },
-          "enterprise-server@3.18": {
-            "apiVersions": [
-              "2022-11-28"
-            ],
-            "isGHES": true,
-            "latestApiVersion": "2022-11-28",
-            "version": "enterprise-server@3.18",
-            "versionTitle": "Enterprise Server 3.18"
-          },
           "enterprise-server@3.19": {
             "apiVersions": [
               "2022-11-28"
@@ -10888,8 +10906,7 @@
             "enterprise-server@3.22",
             "enterprise-server@3.21",
             "enterprise-server@3.20",
-            "enterprise-server@3.19",
-            "enterprise-server@3.18"
+            "enterprise-server@3.19"
           ],
           "wip": false
         },
@@ -11110,26 +11127,24 @@
           }
         },
         "enterpriseServerReleases": {
-          "isOldestReleaseDeprecated": true,
-          "nextDeprecationDate": "2026-10-16",
-          "oldestSupported": "3.18",
+          "isOldestReleaseDeprecated": false,
+          "nextDeprecationDate": "2026-12-09",
+          "oldestSupported": "3.19",
           "releasesWithOldestDeprecationDate": [
-            "3.18"
+            "3.19"
           ],
           "supported": [
             "3.22",
             "3.21",
             "3.20",
-            "3.19",
-            "3.18"
+            "3.19"
           ]
         },
         "enterpriseServerVersions": [
           "enterprise-server@3.22",
           "enterprise-server@3.21",
           "enterprise-server@3.20",
-          "enterprise-server@3.19",
-          "enterprise-server@3.18"
+          "enterprise-server@3.19"
         ],
         "error": "",
         "featureFlags": {},
@@ -11143,8 +11158,7 @@
             "enterprise-server@3.22",
             "enterprise-server@3.21",
             "enterprise-server@3.20",
-            "enterprise-server@3.19",
-            "enterprise-server@3.18"
+            "enterprise-server@3.19"
           ],
           "contentType": null,
           "docsTeamMetrics": null,
@@ -11727,6 +11741,11 @@
                   "childPages": [],
                   "href": "/en/rest/copilot/copilot-content-exclusion-management",
                   "title": "Copilot content exclusion management"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/copilot/copilot-team-customizations",
+                  "title": "Copilot team customizations"
                 },
                 {
                   "childPages": [],

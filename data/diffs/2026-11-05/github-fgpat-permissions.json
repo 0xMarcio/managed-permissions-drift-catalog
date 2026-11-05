@@ -1,0 +1,53 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /orgs/{org}/teams/{team_slug}/copilot/customizations -> write",
+          "GET /orgs/{org}/teams/{team_slug}/copilot/customizations -> read",
+          "PUT /orgs/{org}/teams/{team_slug}/copilot/customizations -> write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Copilot agent settings",
+      "facet_changes": {
+        "grants": {
+          "endpoints": {
+            "added": [
+              "DELETE /orgs/{org}/teams/{team_slug}/copilot/customizations -> write",
+              "GET /orgs/{org}/teams/{team_slug}/copilot/customizations -> read",
+              "PUT /orgs/{org}/teams/{team_slug}/copilot/customizations -> write"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [],
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#organization-permissions-for-copilot-agent-settings",
+      "stable_id": "github-fgpat:organization:copilot-agent-settings"
+    }
+  ],
+  "compared_at_utc": "2026-11-05T11:01:20Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 76,
+    "previous_objects": 76,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-05",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-10-29",
+  "removed_objects": []
+}
