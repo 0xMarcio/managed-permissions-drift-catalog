@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 29, 2026, 17:47 UTC</p>
+                <p><b>Edited time:</b>  November 05, 2026, 01:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsOperatorAppAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v11 (default)</p>
+        <p><b>Policy version:</b> v12 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -97,6 +97,7 @@
         "aidevops:GetAssetFile",
         "aidevops:GetAssociation",
         "aidevops:GetBacklogTask",
+        "aidevops:GetChat",
         "aidevops:GetKnowledgeItem",
         "aidevops:GetRecommendation",
         "aidevops:GetTrigger",
@@ -126,6 +127,7 @@
         "aidevops:UpdateAsset",
         "aidevops:UpdateAssetFile",
         "aidevops:UpdateBacklogTask",
+        "aidevops:UpdateChat",
         "aidevops:UpdateGoal",
         "aidevops:UpdateKnowledgeItem",
         "aidevops:UpdateRecommendation",
@@ -145,7 +147,11 @@
       "Sid" : "AllowOperatorAccountActions",
       "Effect" : "Allow",
       "Action" : [
-        "aidevops:GetAccountUsage"
+        "aidevops:GetAccountUsage",
+        "aidevops:GetCatalogCapability",
+        "aidevops:ListCatalogCapabilities",
+        "aidevops:ListCatalogCapabilityFiles",
+        "aidevops:ListCatalogCapabilityTypes"
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>

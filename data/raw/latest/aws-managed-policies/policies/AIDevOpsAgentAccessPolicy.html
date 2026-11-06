@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 27, 2026, 18:07 UTC</p>
+                <p><b>Edited time:</b>  November 04, 2026, 18:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsAgentAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v12 (default)</p>
+        <p><b>Policy version:</b> v13 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -382,7 +382,9 @@
         "dynamodb:GetResourcePolicy",
         "dynamodb:List*",
         "ec2:Describe*",
+        "ec2:GetActiveVpnTunnelStatus",
         "ec2:GetAssociatedEnclaveCertificateIamRoles",
+        "ec2:GetAwsNetworkPerformanceData",
         "ec2:GetCapacityManagerAttributes",
         "ec2:GetCapacityManagerMetricData",
         "ec2:GetCapacityManagerMonitoredTagKeys",
@@ -397,6 +399,8 @@
         "ec2:GetVerifiedAccessEndpointPolicy",
         "ec2:GetVerifiedAccessGroupPolicy",
         "ec2:GetVerifiedAccessInstanceWebAcl",
+        "ec2:GetVpnConnectionDeviceTypes",
+        "ec2:GetVpnTunnelReplacementStatus",
         "ec2:SearchLocalGatewayRoutes",
         "ec2:SearchTransitGatewayRoutes",
         "ecr:Describe*",
@@ -556,7 +560,11 @@
         "inspector2:SearchVulnerabilities",
         "inspector:Describe*",
         "inspector:List*",
+        "internetmonitor:GetHealthEvent",
+        "internetmonitor:GetInternetEvent",
         "internetmonitor:GetMonitor",
+        "internetmonitor:GetQueryResults",
+        "internetmonitor:GetQueryStatus",
         "internetmonitor:List*",
         "iot:Describe*",
         "iot:GetPackage",
@@ -705,6 +713,17 @@
         "mq:List*",
         "network-firewall:Describe*",
         "network-firewall:List*",
+        "networkflowmonitor:GetMonitor",
+        "networkflowmonitor:GetQueryResultsMonitorTopContributors",
+        "networkflowmonitor:GetQueryResultsWorkloadInsightsTopContributors",
+        "networkflowmonitor:GetQueryResultsWorkloadInsightsTopContributorsData",
+        "networkflowmonitor:GetQueryStatusMonitorTopContributors",
+        "networkflowmonitor:GetQueryStatusWorkloadInsightsTopContributors",
+        "networkflowmonitor:GetQueryStatusWorkloadInsightsTopContributorsData",
+        "networkflowmonitor:GetScope",
+        "networkflowmonitor:ListMonitors",
+        "networkflowmonitor:ListScopes",
+        "networkflowmonitor:ListTagsForResource",
         "networkmanager:Describe*",
         "networkmanager:GetConnectAttachment",
         "networkmanager:GetConnectPeer",
@@ -721,6 +740,10 @@
         "networkmanager:GetTransitGatewayRouteTableAttachment",
         "networkmanager:GetVpcAttachment",
         "networkmanager:List*",
+        "networkmonitor:GetMonitor",
+        "networkmonitor:GetProbe",
+        "networkmonitor:ListMonitors",
+        "networkmonitor:ListTagsForResource",
         "oam:GetLink",
         "oam:GetSink",
         "oam:GetSinkPolicy",

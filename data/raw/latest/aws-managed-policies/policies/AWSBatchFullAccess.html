@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: December 06, 2016, 19:35 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 24, 2022, 16:09 UTC</p>
+                <p><b>Edited time:</b>  November 04, 2026, 18:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSBatchFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSBatchFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v7 (default)</p>
+        <p><b>Policy version:</b> v8 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -121,6 +121,38 @@
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "iam:AWSServiceName" : "batch.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "BatchEksAccessEntryCreate",
+      "Effect" : "Allow",
+      "Action" : "eks:CreateAccessEntry",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ArnLike" : <span>{</span>
+          "eks:principalArn" : "arn:aws:iam::*:role/aws-service-role/batch.amazonaws.com/AWSServiceRoleForBatch"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "BatchEksAccessEntryManage",
+      "Effect" : "Allow",
+      "Action" : [
+        "eks:DescribeAccessEntry",
+        "eks:DeleteAccessEntry"
+      ],
+      "Resource" : "arn:aws:eks:*:*:access-entry/*/role/*/AWSServiceRoleForBatch/*"
+    },
+    <span>{</span>
+      "Sid" : "BatchEksAccessEntryAssociatePolicy",
+      "Effect" : "Allow",
+      "Action" : "eks:AssociateAccessPolicy",
+      "Resource" : "arn:aws:eks:*:*:access-entry/*/role/*/AWSServiceRoleForBatch/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "eks:policyArn" : "arn:aws:eks::aws:cluster-access-policy/AWSBatchClusterPolicy",
+          "eks:accessScope" : "cluster"
         }
       }
     }
