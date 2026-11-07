@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 18, 2024, 23:33 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 17, 2026, 11:37 UTC</p>
+                <p><b>Edited time:</b>  November 05, 2026, 23:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSPartnerCentralFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v15 (default)</p>
+        <p><b>Policy version:</b> v16 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -297,6 +297,25 @@
         "aws-marketplace:UntagResource"
       ],
       "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace*/CaseStudy/*"
+    },
+    <span>{</span>
+      "Sid" : "IAMGetRole",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:GetRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/partnercentral-account.amazonaws.com/AWSServiceRoleForPartnerCentralAccount"
+    },
+    <span>{</span>
+      "Sid" : "CreateServiceLinkedRole",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "partnercentral-account.amazonaws.com"
+        }
+      }
     }
   ]
 }</code></pre>

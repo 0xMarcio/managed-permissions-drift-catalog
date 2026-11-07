@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "M-PbtBu9We76kp6H7s4B5",
+  "buildId": "CdqVHMDr425Wy3HyLrRkv",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -1372,6 +1372,24 @@
               "slug": "remove-a-repository-collaborator",
               "subcategory": "collaborators",
               "verb": "delete"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "dependabot",
+              "requestPath": "/repos/{owner}/{repo}/dependabot/runner-settings",
+              "slug": "get-repository-dependabot-runner-settings",
+              "subcategory": "runner-settings",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "dependabot",
+              "requestPath": "/repos/{owner}/{repo}/dependabot/runner-settings",
+              "slug": "set-repository-dependabot-runner-settings",
+              "subcategory": "runner-settings",
+              "verb": "put"
             },
             {
               "access": "write",
@@ -11804,6 +11822,11 @@
                   "childPages": [],
                   "href": "/en/rest/dependabot/repository-access",
                   "title": "Repository access"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/dependabot/runner-settings",
+                  "title": "Runner settings"
                 },
                 {
                   "childPages": [],

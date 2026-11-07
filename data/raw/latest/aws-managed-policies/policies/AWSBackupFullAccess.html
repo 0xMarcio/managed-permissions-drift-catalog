@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 18, 2019, 22:21 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:02 UTC</p>
+                <p><b>Edited time:</b>  November 05, 2026, 18:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSBackupFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSBackupFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v30 (default)</p>
+        <p><b>Policy version:</b> v31 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -282,11 +282,11 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "ForAnyValue:StringEquals" : <span>{</span>
-          "kms:EncryptionContextKeys" : "aws:backup:backup-vault"
-        },
         "Bool" : <span>{</span>
           "kms:GrantIsForAWSResource" : true
+        },
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "kms:EncryptionContextKeys" : "aws:backup:backup-vault"
         },
         "StringLike" : <span>{</span>
           "kms:ViaService" : "backup.*.amazonaws.com"
@@ -503,13 +503,13 @@
         "arn:aws:redshift-serverless:*:*:snapshot/*"
       ],
       "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/aws:backup:source-resource" : "false"
-        },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : [
             "backup.amazonaws.com"
           ]
+        },
+        "Null" : <span>{</span>
+          "aws:ResourceTag/aws:backup:source-resource" : "false"
         }
       }
     },
@@ -561,6 +561,17 @@
         "eks:DescribeCluster"
       ],
       "Resource" : "arn:aws:eks:*:*:cluster/*"
+    },
+    <span>{</span>
+      "Sid" : "S3GetObjectPermissions",
+      "Effect" : "Allow",
+      "Action" : "s3:GetObject",
+      "Resource" : "arn:aws:s3:::*/*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : "backup.amazonaws.com"
+        }
+      }
     },
     <span>{</span>
       "Sid" : "IamPassRolePermissionsForGuardDuty",

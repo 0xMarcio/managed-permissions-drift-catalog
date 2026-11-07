@@ -8910,6 +8910,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentResourceScanningServiceRolePolicy"
       },
       {
+        "display_name": "AmazonConnectServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      },
+      {
         "display_name": "AmazonConnectSynchronizationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectSynchronizationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectSynchronizationServiceRolePolicy"
@@ -18420,6 +18425,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
+    "aws:allow_action:assurance:GetResourceActivitiesQueryResults": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
     "aws:allow_action:assurance:GetTask": [
       {
         "display_name": "AssuranceServiceRolePolicy",
@@ -18679,16 +18691,18 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
+    "aws:allow_action:assurance:StartResourceActivitiesQuery": [
+      {
+        "display_name": "AssuranceOperatorPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
+      }
+    ],
     "aws:allow_action:assurance:StartResourceDiscovery": [
       {
         "display_name": "AssuranceServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
-      },
-      {
-        "display_name": "AssuranceOperatorPolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
     "aws:allow_action:assurance:UpdateAnnotation": [
@@ -82761,6 +82775,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
       }
     ],
+    "aws:allow_action:datazone:ListDeployableEnvironmentBlueprints": [
+      {
+        "display_name": "SageMakerStudioDomainExecutionRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
+      }
+    ],
     "aws:allow_action:datazone:ListDesignations": [
       {
         "display_name": "SageMakerStudioDomainExecutionRolePolicy",
@@ -97888,6 +97909,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "NetworkAdministrator",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
@@ -101282,6 +101308,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "NetworkAdministrator",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
@@ -101940,6 +101971,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "NetworkAdministrator",
@@ -102642,6 +102678,11 @@
         "display_name": "MigrationHubServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/MigrationHubServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/MigrationHubServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "RTBFabricServiceRolePolicy",
@@ -105094,6 +105135,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "NetworkAdministrator",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
@@ -105640,6 +105686,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "NetworkAdministrator",
@@ -108069,6 +108120,11 @@
         "display_name": "NetworkSecurityDirectorServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityDirectorServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "RTBFabricServiceRolePolicy",
@@ -112959,6 +113015,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "DatabaseAdministrator",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DatabaseAdministrator.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/DatabaseAdministrator"
@@ -117262,6 +117323,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "NetworkAdministrator",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkAdministrator.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator"
@@ -120960,6 +121026,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "OpensearchIngestionSelfManagedVpcePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/OpensearchIngestionSelfManagedVpcePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/OpensearchIngestionSelfManagedVpcePolicy"
@@ -121385,6 +121456,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "NetworkAdministrator",
@@ -124409,6 +124485,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "OpensearchIngestionSelfManagedVpcePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/OpensearchIngestionSelfManagedVpcePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/OpensearchIngestionSelfManagedVpcePolicy"
@@ -125648,6 +125729,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "RTBFabricServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/RTBFabricServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/RTBFabricServiceRolePolicy"
@@ -126756,6 +126842,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "NetworkAdministrator",
@@ -131045,6 +131136,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "NetworkAdministrator",
@@ -177864,6 +177960,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPanoramaFullAccess"
       },
       {
+        "display_name": "AWSPartnerCentralFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess"
+      },
+      {
         "display_name": "AWSPrivateMarketplaceAdminFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceAdminFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceAdminFullAccess"
@@ -180830,6 +180931,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubStrategyConsoleFullAccess"
       },
       {
+        "display_name": "AWSPartnerCentralFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess"
+      },
+      {
         "display_name": "AWSPrivateMarketplaceAdminFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceAdminFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceAdminFullAccess"
@@ -181358,6 +181464,11 @@
         "display_name": "FSxDeleteServiceLinkedRoleAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FSxDeleteServiceLinkedRoleAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FSxDeleteServiceLinkedRoleAccess"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "DataScientist",
@@ -236805,6 +236916,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy"
       }
     ],
+    "aws:allow_action:network-firewall:AssociateAvailabilityZones": [
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      }
+    ],
     "aws:allow_action:network-firewall:AssociateFirewallPolicy": [
       {
         "display_name": "AWSNetworkFirewallFullAccess",
@@ -236815,6 +236933,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:AssociateSubnets": [
@@ -236827,6 +236950,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:CreateFirewall": [
@@ -236839,6 +236967,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:CreateFirewallPolicy": [
@@ -236851,6 +236984,18 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      }
+    ],
+    "aws:allow_action:network-firewall:CreateFirewallPolicyV2": [
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:CreateRuleGroup": [
@@ -236877,6 +237022,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:DeleteFirewallPolicy": [
@@ -236889,6 +237039,18 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      }
+    ],
+    "aws:allow_action:network-firewall:DeleteFirewallPolicyV2": [
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:DeleteResourcePolicy": [
@@ -236901,6 +237063,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:DeleteRuleGroup": [
@@ -237019,6 +237186,11 @@
         "display_name": "NetworkSecurityDirectorServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityDirectorServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:DescribeFirewallMetadata": [
@@ -237118,6 +237290,18 @@
         "display_name": "NetworkSecurityDirectorServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityDirectorServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      }
+    ],
+    "aws:allow_action:network-firewall:DescribeFirewallPolicyV2": [
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:DescribeFlowOperation": [
@@ -237167,6 +237351,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -237272,6 +237461,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:DescribeRuleGroup": [
@@ -237354,6 +237548,11 @@
         "display_name": "NetworkSecurityDirectorServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityDirectorServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:DescribeRuleGroupMetadata": [
@@ -237418,6 +237617,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:DescribeVpcEndpointAssociation": [
@@ -237437,6 +237641,13 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentResourceScanningServiceRolePolicy"
       }
     ],
+    "aws:allow_action:network-firewall:DisassociateAvailabilityZones": [
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      }
+    ],
     "aws:allow_action:network-firewall:DisassociateSubnets": [
       {
         "display_name": "AWSNetworkFirewallFullAccess",
@@ -237447,6 +237658,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:GetAnalysisReportResults": [
@@ -237570,6 +237786,18 @@
         "display_name": "NetworkSecurityDirectorServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityDirectorServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      }
+    ],
+    "aws:allow_action:network-firewall:ListFirewallPoliciesV2": [
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:ListFirewalls": [
@@ -237652,6 +237880,11 @@
         "display_name": "NetworkSecurityDirectorServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityDirectorServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -237799,6 +238032,11 @@
         "display_name": "NetworkSecurityDirectorServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityDirectorServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityDirectorServiceLinkedRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:ListTLSInspectionConfigurations": [
@@ -237836,6 +238074,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:ListTagsForResource": [
@@ -237897,6 +238140,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:StartAnalysisReport": [
@@ -237935,6 +238183,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:UntagResource": [
@@ -237947,6 +238200,11 @@
         "display_name": "ResourceGroupsTaggingAPITagUntagSupportedResources",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ResourceGroupsTaggingAPITagUntagSupportedResources.html",
         "stable_id": "arn:aws:iam::aws:policy/ResourceGroupsTaggingAPITagUntagSupportedResources"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:UpdateFirewallAnalysisSettings": [
@@ -237966,6 +238224,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:UpdateFirewallDescription": [
@@ -237992,6 +238255,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:UpdateFirewallPolicyChangeProtection": [
@@ -238004,6 +238272,18 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      }
+    ],
+    "aws:allow_action:network-firewall:UpdateFirewallPolicyV2": [
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:UpdateLoggingConfiguration": [
@@ -238016,6 +238296,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:UpdateRuleGroup": [
@@ -238035,6 +238320,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:network-firewall:UpdateTLSInspectionConfiguration": [
@@ -252495,6 +252785,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
       }
     ],
+    "aws:allow_action:partnercentral:SearchOpportunities": [
+      {
+        "display_name": "AWSPartnerCentralOpportunityManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:SearchPartnerCentralContent": [
       {
         "display_name": "AWSPartnerCentralMarketingManagement",
@@ -253133,6 +253430,13 @@
         "display_name": "AWSManagedSettingsAdminAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSManagedSettingsAdminAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess"
+      }
+    ],
+    "aws:allow_action:payments:GetConnectedAccount": [
+      {
+        "display_name": "AWSWAFFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSWAFFullAccess"
       }
     ],
     "aws:allow_action:payments:GetDefaultPaymentProfile": [
@@ -263228,6 +263532,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy"
@@ -263357,6 +263666,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy"
@@ -263442,6 +263756,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy",
@@ -263689,6 +264008,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "ViewOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ViewOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
@@ -263886,6 +264210,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "AWS_ConfigRole",
@@ -264176,6 +264505,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:ram:UntagResource": [
@@ -264225,6 +264559,11 @@
         "display_name": "FMSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       },
       {
         "display_name": "AmazonDataZoneGlueManageAccessRolePolicy",
@@ -289796,6 +290135,16 @@
         "display_name": "AWSAgentlessDiscoveryService",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAgentlessDiscoveryService.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSAgentlessDiscoveryService"
+      },
+      {
+        "display_name": "AWSBackupFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSBackupFullAccess"
+      },
+      {
+        "display_name": "AWSBackupOperatorAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupOperatorAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSBackupOperatorAccess"
       },
       {
         "display_name": "AWSBackupServiceRolePolicyForS3Backup",
@@ -323135,6 +323484,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonRedshiftServiceLinkedRolePolicy"
       },
       {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
+      },
+      {
         "display_name": "ROSAInstallerPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSAInstallerPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/ROSAInstallerPolicy"
@@ -344318,6 +344672,97 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSSupportAccess"
       }
     ],
+    "aws:allow_action:support-console:CheckSubscription": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:CreateCaseDraft": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:CreateContact": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:DeleteCaseDraft": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:DescribeDynamicHelp": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:GetAccountGovCloudEnabled": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:GetAccountState": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:GetBanner": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:GetCaseDraft": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:GetIssueClassificationPredictions": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:GetIssueTextSummary": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:GetQuestionnaire": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
+    "aws:allow_action:support-console:SaveFeedback": [
+      {
+        "display_name": "SupportUser",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SupportUser.html",
+        "stable_id": "arn:aws:iam::aws:policy/job-function/SupportUser"
+      }
+    ],
     "aws:allow_action:support:*": [
       {
         "display_name": "AWSSupportAccess",
@@ -354300,6 +354745,11 @@
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      {
+        "display_name": "NetworkSecurityManagerServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/NetworkSecurityManagerServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/NetworkSecurityManagerServiceRolePolicy"
       }
     ],
     "aws:allow_action:wafv2:CreateWebACL": [
@@ -359768,6 +360218,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:amplify:CreateDeployment": [
@@ -359780,6 +360235,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:apigateway:GET": [
@@ -359801,6 +360261,69 @@
         "display_name": "AmazonCloudWatchEvidentlyServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonCloudWatchEvidentlyServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonCloudWatchEvidentlyServiceRolePolicy"
+      }
+    ],
+    "aws:deny_action:application-autoscaling:PutScalingPolicy": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:application-autoscaling:RegisterScalableTarget": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:apprunner:CreateService": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:apprunner:DeleteService": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:apprunner:ResumeService": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:apprunner:StartDeployment": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:apprunner:TagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:apprunner:UntagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:apprunner:UpdateService": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:athena:GetResourceDashboard": [
@@ -359979,6 +360502,83 @@
         "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
       }
     ],
+    "aws:deny_action:autoscaling:CreateAutoScalingGroup": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:autoscaling:DeleteAutoScalingGroup": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:autoscaling:SetDesiredCapacity": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:autoscaling:UpdateAutoScalingGroup": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:aws-marketplace:AcceptAgreementApprovalRequest": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:aws-marketplace:Subscribe": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:backup:DeleteBackupVault": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:backup:DeleteRecoveryPoint": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:CallWithBearerToken": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:CreateInference": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock:CallWithBearerToken": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:bedrock:CreateFoundationModelAgreement": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV2",
@@ -359989,6 +360589,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:bedrock:CreateModelInvocationJob": [
@@ -360001,6 +360606,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:bedrock:InvokeModel": [
@@ -360013,6 +360623,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:bedrock:InvokeModelWithResponseStream": [
@@ -360025,6 +360640,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:bedrock:PutFoundationModelEntitlement": [
@@ -360037,6 +360657,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:cleanrooms:StartProtectedQuery": [
@@ -360053,6 +360678,20 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSCleanRoomsFullAccessNoQuerying"
       }
     ],
+    "aws:deny_action:cloudformation:DeleteStack": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:cloudtrail:DeleteTrail": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:cloudtrail:LookupEvents": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV2",
@@ -360063,6 +360702,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:cloudtrail:StopLogging": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:cloudwatch:ListTagsForResource": [
@@ -360096,6 +360747,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:connect:*AnalyticsData*": [
@@ -360357,6 +361013,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSDeepRacerDefaultMultiUserAccess"
       }
     ],
+    "aws:deny_action:dynamodb:CreateTable": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:ebs:GetSnapshotBlock": [
       {
         "display_name": "AmazonInspector2AmiScanServiceRolePolicy",
@@ -360381,6 +361044,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ec2:CreateLaunchTemplateVersion": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ec2:CreateReservedInstancesListing": [
@@ -360393,6 +361068,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ec2:CreateSnapshots": [
@@ -360421,6 +361101,13 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AWSTransformApplicationDeploymentPolicy"
       }
     ],
+    "aws:deny_action:ec2:ModifyLaunchTemplate": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:ec2:ModifySnapshotAttribute": [
       {
         "display_name": "AmazonGuardDutyMalwareProtectionServiceRolePolicy",
@@ -360438,6 +361125,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ec2:RequestSpotInstances": [
@@ -360455,6 +361147,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ec2:RunInstances": [
@@ -360472,6 +361169,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       },
       {
         "display_name": "AWSEC2SpotServiceRolePolicy",
@@ -360504,6 +361206,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ecr:GetAuthorizationToken": [
@@ -360516,6 +361223,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ecs:CreateCluster": [
@@ -360528,6 +361240,25 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:CreateDaemon": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:CreateExpressGatewayService": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ecs:CreateService": [
@@ -360540,6 +361271,32 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:CreateTaskSet": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:ExecuteCommand": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:RegisterDaemonTaskDefinition": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ecs:RegisterTaskDefinition": [
@@ -360552,6 +361309,60 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:RunTask": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:StartTask": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:UpdateDaemon": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:UpdateExpressGatewayService": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:UpdateService": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:UpdateServicePrimaryTaskSet": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ecs:UpdateTaskSet": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:elasticmapreduce:*Session*": [
@@ -360762,6 +361573,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:glue:CreateSession": [
@@ -361014,6 +361830,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:AttachGroupPolicy": [
@@ -361031,6 +361852,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:AttachRolePolicy": [
@@ -361048,6 +361874,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       },
       {
         "display_name": "AWSQuickSetupManagedInstanceProfileExecutionPolicy",
@@ -361070,6 +361901,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:ChangePassword": [
@@ -361087,6 +361923,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:CreateAccessKey": [
@@ -361104,6 +361945,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:CreateInstanceProfile": [
@@ -361121,6 +361967,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:CreateLoginProfile": [
@@ -361138,6 +361989,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:CreatePolicyVersion": [
@@ -361150,6 +362006,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:CreateRole": [
@@ -361167,6 +362028,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:iam:CreateServiceSpecificCredential": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:CreateUser": [
@@ -361184,6 +362057,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:DeleteAccessKey": [
@@ -361196,6 +362074,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:DeleteRole": [
@@ -361208,6 +362091,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:DetachUserPolicy": [
@@ -361225,6 +362113,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:ListUsers": [
@@ -361237,6 +362130,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:PassRole": [
@@ -361249,6 +362147,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:PutGroupPolicy": [
@@ -361261,6 +362164,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:PutRolePolicy": [
@@ -361273,6 +362181,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:PutUserPermissionsBoundary": [
@@ -361290,6 +362203,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:PutUserPolicy": [
@@ -361307,6 +362225,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:iam:ResetServiceSpecificCredential": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:SetDefaultPolicyVersion": [
@@ -361319,6 +362249,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:TagRole": [
@@ -361343,6 +362278,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:UpdateAccountPasswordPolicy": [
@@ -361360,6 +362300,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:UpdateAssumeRolePolicy": [
@@ -361372,6 +362317,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:UpdateLoginProfile": [
@@ -361384,6 +362334,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:iam:UpdateUser": [
@@ -361401,6 +362356,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:kms:*": [
@@ -361410,11 +362370,51 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneProjectDeploymentPermissionsBoundary"
       }
     ],
+    "aws:deny_action:kms:Cancel*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:Connect*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:CreateAlias": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:CreateCustomKeyStore": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:kms:CreateGrant": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:CreateKey": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:kms:Decrypt": [
@@ -361434,11 +362434,32 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2AmiScanServiceRolePolicy"
       }
     ],
+    "aws:deny_action:kms:Delete*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:kms:DeleteImportedKeyMaterial": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      }
+    ],
+    "aws:deny_action:kms:Disable*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:Enable*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:kms:GenerateDataKey": [
@@ -361448,11 +362469,32 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSecurityLakePermissionsBoundary"
       }
     ],
+    "aws:deny_action:kms:Put*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:kms:PutKeyPolicy": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      }
+    ],
+    "aws:deny_action:kms:Replicate*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:Retire*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:kms:RetireGrant": [
@@ -361462,6 +362504,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
       }
     ],
+    "aws:deny_action:kms:Revoke*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:kms:RevokeGrant": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV3",
@@ -361469,11 +362518,46 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
       }
     ],
+    "aws:deny_action:kms:Rotate*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:Schedule*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:kms:ScheduleKeyDeletion": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      }
+    ],
+    "aws:deny_action:kms:TagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:UntagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:kms:Update*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lakeformation:PutDataLakeSettings": [
@@ -361493,6 +362577,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:AddPermission": [
@@ -361505,6 +362594,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:CreateEventSourceMapping": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:CreateFunction": [
@@ -361522,6 +362623,39 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:CreateFunctionUrlConfig": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:CreateWebFunction": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:CreateWebFunctionEndpoint": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:CreateWebFunctionRevision": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:GetEventSourceMapping": [
@@ -361534,6 +362668,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:GetPolicy": [
@@ -361546,6 +362685,39 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:InvokeAsync": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:InvokeFunction": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:InvokeFunctionUrl": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:InvokeWebFunctionEndpoint": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:ListTags": [
@@ -361558,6 +362730,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:PutProvisionedConcurrencyConfig": [
@@ -361570,6 +362747,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:TagResource": [
@@ -361582,6 +362764,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:UntagResource": [
@@ -361594,6 +362781,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:UpdateEventSourceMapping": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lambda:UpdateFunctionCode": [
@@ -361606,6 +362805,25 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:UpdateFunctionUrlConfig": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:lambda:UpdateWebFunctionEndpoint": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lightsail:Create*": [
@@ -361623,6 +362841,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lightsail:Delete*": [
@@ -361640,6 +362863,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lightsail:DownloadDefaultKeyPair": [
@@ -361657,6 +362885,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lightsail:GetInstanceAccessDetails": [
@@ -361674,6 +362907,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lightsail:Start*": [
@@ -361691,6 +362929,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:lightsail:Update*": [
@@ -361708,6 +362951,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:logs:PutLogEvents": [
@@ -361715,6 +362963,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:mediapackagev2:CreateChannel": [
@@ -361727,6 +362980,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:organizations:AcceptHandshake": [
@@ -361734,6 +362992,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:organizations:CreateAccount": [
@@ -361751,6 +363014,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:organizations:CreateOrganization": [
@@ -361768,6 +363036,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:organizations:InviteAccountToOrganization": [
@@ -361785,6 +363058,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:organizations:LeaveOrganization": [
@@ -361792,6 +363070,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:profile:CreateDomain": [
@@ -361864,6 +363147,13 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
       }
     ],
+    "aws:deny_action:rds:DeleteDBSnapshot": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:redshift:CreateClusterUser": [
       {
         "display_name": "AmazonRedshiftDataFullAccess",
@@ -361888,6 +363178,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:DeleteBucket": [
@@ -361900,6 +363195,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       },
       {
         "display_name": "AmazonDataZoneProjectDeploymentPermissionsBoundary",
@@ -361917,6 +363217,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:DeleteObject": [
@@ -361929,6 +363234,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:DeleteObject*": [
@@ -361948,6 +363258,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:GetBucket*": [
@@ -361981,6 +363296,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       },
       {
         "display_name": "AmazonSecurityLakePermissionsBoundary",
@@ -362019,6 +363339,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:ListBucket": [
@@ -362031,6 +363356,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       },
       {
         "display_name": "AmazonSecurityLakePermissionsBoundary",
@@ -362055,6 +363385,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:PutAccountPublicAccessBlock": [
@@ -362067,6 +363402,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:PutBucketAcl": [
@@ -362079,6 +363419,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:PutBucketCors": [
@@ -362091,6 +363436,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:s3:PutBucketObjectLockConfiguration": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:PutBucketOwnershipControls": [
@@ -362103,6 +363460,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:PutBucketPolicy": [
@@ -362115,6 +363477,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:s3:PutBucketVersioning": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:PutEncryptionConfiguration": [
@@ -362122,6 +363496,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:PutLifecycleConfiguration": [
@@ -362134,6 +363513,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:s3:PutObject": [
@@ -362150,6 +363534,48 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneProjectDeploymentPermissionsBoundary"
       }
     ],
+    "aws:deny_action:s3:PutObjectLegalHold": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:s3:PutObjectRetention": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateApp": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateCluster": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateCompilationJob": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateEndpoint": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:sagemaker:CreateEndpointConfig": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV2",
@@ -362160,6 +363586,39 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateHyperParameterTuningJob": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateJob": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateMlflowTrackingServer": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateNotebookInstance": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:sagemaker:CreateNotebookInstanceLifecycleConfig": [
@@ -362167,6 +363626,20 @@
         "display_name": "AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateOptimizationJob": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreatePartnerApp": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:sagemaker:CreateProcessingJob": [
@@ -362179,6 +363652,25 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateTrainingJob": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sagemaker:CreateTransformJob": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:sagemaker:DeleteNotebookInstanceLifecycleConfig": [
@@ -362205,6 +363697,39 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:secretsmanager:GetSecretValue": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:secretsmanager:PutResourcePolicy": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:secretsmanager:TagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:secretsmanager:UntagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:securityhub:BatchUpdateFindings": [
@@ -362212,6 +363737,34 @@
         "display_name": "AWSSystemsManagerOpsDataSyncServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSystemsManagerOpsDataSyncServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSystemsManagerOpsDataSyncServiceRolePolicy"
+      }
+    ],
+    "aws:deny_action:ses:Create*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ses:Delete*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ses:Describe*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ses:Get*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:ses:GetSendQuota": [
@@ -362227,6 +363780,11 @@
       }
     ],
     "aws:deny_action:ses:List*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
       {
         "display_name": "AmazonCognitoIdpEmailServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonCognitoIdpEmailServiceRolePolicy.html",
@@ -362245,6 +363803,48 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
       }
     ],
+    "aws:deny_action:ses:Put*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ses:Send*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ses:Set*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ses:TagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ses:UntagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ses:Update*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:sns:GetSMSAttributes": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV2",
@@ -362255,6 +363855,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sns:Publish": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:sqs:ChangeMessageVisibility": [
@@ -362306,6 +363918,76 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonSecurityLakePermissionsBoundary"
       }
     ],
+    "aws:deny_action:ssm:DeleteParameter": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ssm:DeleteParameters": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ssm:DescribeParameters": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ssm:GetParameter*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ssm:PutParameter": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ssm:PutResourcePolicy": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ssm:ResumeSession": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ssm:SendCommand": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:ssm:StartSession": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:sts:AssumeRole": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
     "aws:deny_action:sts:GetFederationToken": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV2",
@@ -362316,6 +363998,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:sts:GetSessionToken": [
@@ -362328,6 +364015,11 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_action:tag:TagResources": [
@@ -362386,6 +364078,13 @@
         "display_name": "AmazonConnectServiceLinkedRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectServiceLinkedRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectServiceLinkedRolePolicy"
+      }
+    ],
+    "aws:deny_action:xray:CallWithBearerToken": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
     "aws:deny_notaction:airflow:CreateWebLoginToken": [
@@ -371343,7 +373042,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-11-06T10:59:19Z",
+  "generated_at_utc": "2026-11-07T10:18:06Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -413863,6 +415562,150 @@
       ]
     },
     {
+      "atom": "aws:deny_action:kms:Cancel*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Cancel*",
+        "aws:deny_action:kms:Cancel*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Connect*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Connect*",
+        "aws:deny_action:kms:Connect*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Delete*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Delete*",
+        "aws:deny_action:kms:Delete*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Disable*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Disable*",
+        "aws:deny_action:kms:Disable*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Enable*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Enable*",
+        "aws:deny_action:kms:Enable*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Put*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Put*",
+        "aws:deny_action:kms:Put*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Replicate*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Replicate*",
+        "aws:deny_action:kms:Replicate*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Retire*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Retire*",
+        "aws:deny_action:kms:Retire*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Revoke*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Revoke*",
+        "aws:deny_action:kms:Revoke*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Rotate*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Rotate*",
+        "aws:deny_action:kms:Rotate*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Schedule*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Schedule*",
+        "aws:deny_action:kms:Schedule*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:kms:Update*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "kms:Update*",
+        "aws:deny_action:kms:Update*"
+      ]
+    },
+    {
       "atom": "aws:deny_action:lightsail:Create*",
       "object": {
         "display_name": "AWSCompromisedKeyQuarantine",
@@ -413899,6 +415742,18 @@
       ]
     },
     {
+      "atom": "aws:deny_action:lightsail:Create*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "lightsail:Create*",
+        "aws:deny_action:lightsail:Create*"
+      ]
+    },
+    {
       "atom": "aws:deny_action:lightsail:Delete*",
       "object": {
         "display_name": "AWSCompromisedKeyQuarantine",
@@ -413928,6 +415783,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "lightsail:Delete*",
+        "aws:deny_action:lightsail:Delete*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:lightsail:Delete*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       },
       "terms": [
         "lightsail:Delete*",
@@ -413964,6 +415831,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "lightsail:Start*",
+        "aws:deny_action:lightsail:Start*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:lightsail:Start*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       },
       "terms": [
         "lightsail:Start*",
@@ -414000,6 +415879,18 @@
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "lightsail:Update*",
+        "aws:deny_action:lightsail:Update*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:lightsail:Update*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       },
       "terms": [
         "lightsail:Update*",
@@ -414079,6 +415970,66 @@
       ]
     },
     {
+      "atom": "aws:deny_action:ses:Create*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:Create*",
+        "aws:deny_action:ses:Create*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ses:Delete*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:Delete*",
+        "aws:deny_action:ses:Delete*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ses:Describe*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:Describe*",
+        "aws:deny_action:ses:Describe*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ses:Get*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:Get*",
+        "aws:deny_action:ses:Get*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ses:List*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:List*",
+        "aws:deny_action:ses:List*"
+      ]
+    },
+    {
       "atom": "aws:deny_action:ses:List*",
       "object": {
         "display_name": "AmazonCognitoIdpEmailServiceRolePolicy",
@@ -414088,6 +416039,66 @@
       "terms": [
         "ses:List*",
         "aws:deny_action:ses:List*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ses:Put*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:Put*",
+        "aws:deny_action:ses:Put*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ses:Send*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:Send*",
+        "aws:deny_action:ses:Send*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ses:Set*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:Set*",
+        "aws:deny_action:ses:Set*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ses:Update*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ses:Update*",
+        "aws:deny_action:ses:Update*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:ssm:GetParameter*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "ssm:GetParameter*",
+        "aws:deny_action:ssm:GetParameter*"
       ]
     },
     {
