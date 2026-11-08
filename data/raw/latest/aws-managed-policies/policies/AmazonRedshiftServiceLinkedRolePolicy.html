@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: September 18, 2017, 19:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 19, 2025, 17:22 UTC</p>
+                <p><b>Edited time:</b>  November 06, 2026, 19:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AmazonRedshiftServiceLinkedRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmazonRedshiftServiceLinkedRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v15 (default)</p>
+        <p><b>Policy version:</b> v16 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -335,6 +335,70 @@
         },
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : "glue.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowIdentityCenterSameAccount",
+      "Effect" : "Allow",
+      "Action" : [
+        "identitystore:GetUserId",
+        "identitystore:ListGroupMembershipsForMember",
+        "identitystore:DescribeGroup",
+        "sso:ListInstances"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowIdentityCenterSameOrg",
+      "Effect" : "Allow",
+      "Action" : [
+        "identitystore:GetUserId",
+        "identitystore:ListGroupMembershipsForMember",
+        "identitystore:DescribeGroup",
+        "sso:ListInstances"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceOrgID" : "$<span>{</span>aws:PrincipalOrgID}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowKmsAccessViaIdentityCenter",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ArnLike" : <span>{</span>
+          "kms:EncryptionContext:aws:sso:instance-arn" : "arn:*:sso:::instance/*"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "sso.*.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AllowKmsAccessViaIdentityStore",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ArnLike" : <span>{</span>
+          "kms:EncryptionContext:aws:identitystore:identitystore-arn" : "arn:*:identitystore::*:identitystore/*"
+        },
+        "StringLike" : <span>{</span>
+          "kms:ViaService" : "identitystore.*.amazonaws.com"
         }
       }
     }

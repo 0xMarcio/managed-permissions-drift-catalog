@@ -1,0 +1,399 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:cloudformation:CreateStackInstances",
+        "aws:allow_action:cloudformation:CreateStackSet",
+        "aws:allow_action:cloudformation:DeleteStackInstances",
+        "aws:allow_action:cloudformation:DeleteStackSet",
+        "aws:allow_action:cloudformation:DescribeStackSet",
+        "aws:allow_action:cloudformation:DescribeStackSetOperation",
+        "aws:allow_action:cloudformation:ListStackInstances",
+        "aws:allow_action:cloudformation:ListStackSetOperationResults",
+        "aws:allow_action:cloudformation:ListStackSetOperations",
+        "aws:allow_action:cloudformation:UpdateStackSet",
+        "aws:allow_action:organizations:DescribeAccount",
+        "aws:allow_action:organizations:DescribeOrganization",
+        "aws:allow_action:organizations:DescribeOrganizationalUnit",
+        "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+        "aws:allow_action:organizations:ListChildren",
+        "aws:allow_action:organizations:ListDelegatedAdministrators",
+        "aws:allow_action:organizations:ListDelegatedServicesForAccount",
+        "aws:allow_action:organizations:ListParents",
+        "aws:allow_action:organizations:ListRoots"
+      ],
+      "display_name": "AIDevOpsOrganizationsAccessPolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOrganizationsAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOrganizationsAccessPolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:iam:CreateRole",
+        "aws:allow_action:iam:CreateUser",
+        "aws:allow_action:iam:PutRolePermissionsBoundary",
+        "aws:allow_notaction:iam:CreateRole",
+        "aws:allow_notaction:iam:CreateUser",
+        "aws:allow_notaction:iam:DeleteRolePermissionsBoundary",
+        "aws:allow_notaction:iam:PutRolePermissionsBoundary",
+        "aws:allow_notaction:sts:AssumeRoot"
+      ],
+      "display_name": "AWSCODAPermissionsBoundary",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCODAPermissionsBoundary.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSCODAPermissionsBoundary"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:app-integrations:CreateApplicationAssociation",
+      "aws:allow_action:app-integrations:DeleteApplicationAssociation",
+      "aws:allow_action:cloudformation:CreateStackInstances",
+      "aws:allow_action:cloudformation:CreateStackSet",
+      "aws:allow_action:cloudformation:DeleteStackInstances",
+      "aws:allow_action:cloudformation:DeleteStackSet",
+      "aws:allow_action:cloudformation:DescribeStackSet",
+      "aws:allow_action:cloudformation:DescribeStackSetOperation",
+      "aws:allow_action:cloudformation:ListStackInstances",
+      "aws:allow_action:cloudformation:ListStackSetOperationResults",
+      "aws:allow_action:cloudformation:ListStackSetOperations",
+      "aws:allow_action:cloudformation:UpdateStackSet",
+      "aws:allow_action:cloudwatch:GetProfileRecords",
+      "aws:allow_action:cloudwatch:PutProfileRecords",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:iam:CreateRole",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:CreateUser",
+      "aws:allow_action:iam:PutRolePermissionsBoundary",
+      "aws:allow_action:identitystore:DescribeGroup",
+      "aws:allow_action:identitystore:GetUserId",
+      "aws:allow_action:identitystore:ListGroupMembershipsForMember",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:DescribeOrganizationalUnit",
+      "aws:allow_action:organizations:DescribeOrganizationalUnit",
+      "aws:allow_action:organizations:ListAWSServiceAccessForOrganization",
+      "aws:allow_action:organizations:ListChildren",
+      "aws:allow_action:organizations:ListChildren",
+      "aws:allow_action:organizations:ListDelegatedAdministrators",
+      "aws:allow_action:organizations:ListDelegatedServicesForAccount",
+      "aws:allow_action:organizations:ListParents",
+      "aws:allow_action:organizations:ListParents",
+      "aws:allow_action:organizations:ListRoots",
+      "aws:allow_action:s3:GetEncryptionConfiguration",
+      "aws:allow_action:s3:ListAllMyBuckets",
+      "aws:allow_action:s3:ListBucket",
+      "aws:allow_action:sso:ListInstances",
+      "aws:allow_notaction:iam:CreateRole",
+      "aws:allow_notaction:iam:CreateUser",
+      "aws:allow_notaction:iam:DeleteRolePermissionsBoundary",
+      "aws:allow_notaction:iam:PutRolePermissionsBoundary",
+      "aws:allow_notaction:sts:AssumeRoot"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "app-integrations:CreateApplicationAssociation",
+          "app-integrations:DeleteApplicationAssociation",
+          "cloudformation:CreateStackInstances",
+          "cloudformation:CreateStackSet",
+          "cloudformation:DeleteStackInstances",
+          "cloudformation:DeleteStackSet",
+          "cloudformation:DescribeStackSet",
+          "cloudformation:DescribeStackSetOperation",
+          "cloudformation:ListStackInstances",
+          "cloudformation:ListStackSetOperationResults",
+          "cloudformation:ListStackSetOperations",
+          "cloudformation:UpdateStackSet",
+          "cloudwatch:GetProfileRecords",
+          "cloudwatch:PutProfileRecords",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcs",
+          "iam:CreateRole",
+          "iam:CreateServiceLinkedRole",
+          "iam:CreateUser",
+          "iam:PutRolePermissionsBoundary",
+          "identitystore:DescribeGroup",
+          "identitystore:GetUserId",
+          "identitystore:ListGroupMembershipsForMember",
+          "kms:Decrypt",
+          "organizations:DescribeAccount",
+          "organizations:DescribeOrganization",
+          "organizations:DescribeOrganizationalUnit",
+          "organizations:DescribeOrganizationalUnit",
+          "organizations:ListAWSServiceAccessForOrganization",
+          "organizations:ListChildren",
+          "organizations:ListChildren",
+          "organizations:ListDelegatedAdministrators",
+          "organizations:ListDelegatedServicesForAccount",
+          "organizations:ListParents",
+          "organizations:ListParents",
+          "organizations:ListRoots",
+          "s3:GetEncryptionConfiguration",
+          "s3:ListAllMyBuckets",
+          "s3:ListBucket",
+          "sso:ListInstances"
+        ],
+        "restriction:allow_not_actions": [
+          "iam:CreateRole",
+          "iam:CreateUser",
+          "iam:DeleteRolePermissionsBoundary",
+          "iam:PutRolePermissionsBoundary",
+          "sts:AssumeRoot"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:GetProfileRecords"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v14 (default)",
+          "before": "v13 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 06, 2026, 21:57 UTC",
+          "before": "November 04, 2026, 18:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 06, 2026, 21:57 UTC",
+          "before": "November 04, 2026, 18:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "AmazonBioDiscoveryFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeSecurityGroups",
+              "ec2:DescribeSubnets",
+              "ec2:DescribeVpcs",
+              "iam:CreateServiceLinkedRole",
+              "s3:GetEncryptionConfiguration",
+              "s3:ListAllMyBuckets",
+              "s3:ListBucket"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 06, 2026, 22:37 UTC",
+          "before": "August 18, 2026, 06:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 06, 2026, 22:37 UTC",
+          "before": "August 18, 2026, 06:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 10,
+          "before": 6,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBioDiscoveryFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonBioDiscoveryFullAccess"
+    },
+    {
+      "display_name": "AmazonSageMakerClusterInstanceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:PutProfileRecords"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 06, 2026, 22:37 UTC",
+          "before": "October 16, 2026, 20:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 06, 2026, 22:37 UTC",
+          "before": "October 16, 2026, 20:17 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 6,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerClusterInstanceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerClusterInstanceRolePolicy"
+    },
+    {
+      "display_name": "AmazonConnectSynchronizationServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "app-integrations:CreateApplicationAssociation",
+              "app-integrations:DeleteApplicationAssociation"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 06, 2026, 19:27 UTC",
+          "before": "October 28, 2026, 19:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 06, 2026, 19:27 UTC",
+          "before": "October 28, 2026, 19:17 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 14,
+          "before": 13,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectSynchronizationServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectSynchronizationServiceRolePolicy"
+    },
+    {
+      "display_name": "AmazonRedshiftServiceLinkedRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "identitystore:DescribeGroup",
+              "identitystore:GetUserId",
+              "identitystore:ListGroupMembershipsForMember",
+              "kms:Decrypt",
+              "sso:ListInstances"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 06, 2026, 19:27 UTC",
+          "before": "February 19, 2025, 17:22 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 06, 2026, 19:27 UTC",
+          "before": "February 19, 2025, 17:22 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 21,
+          "before": 17,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRedshiftServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonRedshiftServiceLinkedRolePolicy"
+    },
+    {
+      "display_name": "ComputeOptimizerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "organizations:DescribeOrganizationalUnit",
+              "organizations:ListChildren",
+              "organizations:ListParents"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 06, 2026, 20:57 UTC",
+          "before": "May 27, 2026, 17:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 06, 2026, 20:57 UTC",
+          "before": "May 27, 2026, 17:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ComputeOptimizerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ComputeOptimizerServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-11-08T10:28:06Z",
+  "counts": {
+    "added_atoms": 46,
+    "added_objects": 2,
+    "changed_objects": 6,
+    "current_objects": 1618,
+    "previous_objects": 1616,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-08",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-11-07",
+  "removed_objects": []
+}
