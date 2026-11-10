@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "OhPtL02qu8te4xpccrZpM",
+  "buildId": "J6fTqqMZ5O7fbf-_pcpzh",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -1372,6 +1372,24 @@
               "slug": "remove-a-repository-collaborator",
               "subcategory": "collaborators",
               "verb": "delete"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "copilot",
+              "requestPath": "/repos/{owner}/{repo}/copilot/code-review/settings",
+              "slug": "get-copilot-code-review-settings-for-a-repository",
+              "subcategory": "copilot-code-review",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "copilot",
+              "requestPath": "/repos/{owner}/{repo}/copilot/code-review/settings",
+              "slug": "update-copilot-code-review-settings-for-a-repository",
+              "subcategory": "copilot-code-review",
+              "verb": "patch"
             },
             {
               "access": "read",
@@ -9282,6 +9300,15 @@
               "verb": "get"
             },
             {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "pulls",
+              "requestPath": "/repos/{owner}/{repo}/pulls/{pull_number}/copilot-code-review",
+              "slug": "request-a-copilot-code-review-for-a-pull-request",
+              "subcategory": "copilot-code-review",
+              "verb": "post"
+            },
+            {
               "access": "read",
               "additional-permissions": false,
               "category": "pulls",
@@ -11752,6 +11779,11 @@
                 },
                 {
                   "childPages": [],
+                  "href": "/en/rest/copilot/copilot-code-review",
+                  "title": "Copilot code review"
+                },
+                {
+                  "childPages": [],
                   "href": "/en/rest/copilot/copilot-coding-agent-management",
                   "title": "Copilot cloud agent management"
                 },
@@ -12292,6 +12324,11 @@
                   "childPages": [],
                   "href": "/en/rest/pulls/comments",
                   "title": "Review comments"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/pulls/copilot-code-review",
+                  "title": "Copilot code review"
                 },
                 {
                   "childPages": [],

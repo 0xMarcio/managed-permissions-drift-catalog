@@ -57832,6 +57832,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIOpsAssistantPolicy"
       },
       {
+        "display_name": "AWSApplicationMigrationFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess"
+      },
+      {
         "display_name": "AWSBackupFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSBackupFullAccess"
@@ -148635,6 +148640,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:ModifyTargetGroupAttributes": [
       {
+        "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+      },
+      {
         "display_name": "AmazonEKSClusterPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSClusterPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
@@ -234051,6 +234061,13 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSMigrationHubOrchestratorServiceRolePolicy"
       }
     ],
+    "aws:allow_action:mgn:GetLaunchConfigurationDefaults": [
+      {
+        "display_name": "AWSApplicationMigrationReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess"
+      }
+    ],
     "aws:allow_action:mgn:GetNetworkMigrationDefinition": [
       {
         "display_name": "AWSTransformNetworkMigrationAgentPolicy",
@@ -234304,6 +234321,34 @@
         "display_name": "AWSTransformNetworkMigrationAgentPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      }
+    ],
+    "aws:allow_action:mgn:ListRemoteSourceActionInvocationResults": [
+      {
+        "display_name": "AWSApplicationMigrationReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:mgn:ListRemoteSourceActionInvocations": [
+      {
+        "display_name": "AWSApplicationMigrationReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:mgn:ListRemoteSourceActionJobs": [
+      {
+        "display_name": "AWSApplicationMigrationReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess"
+      }
+    ],
+    "aws:allow_action:mgn:ListRemoteSourceActions": [
+      {
+        "display_name": "AWSApplicationMigrationReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess"
       }
     ],
     "aws:allow_action:mgn:ListSourceServerActions": [
@@ -285090,6 +285135,11 @@
         "display_name": "AIDevOpsAgentAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "AWSApplicationMigrationFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -373290,7 +373340,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-11-08T10:28:06Z",
+  "generated_at_utc": "2026-11-10T11:18:33Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

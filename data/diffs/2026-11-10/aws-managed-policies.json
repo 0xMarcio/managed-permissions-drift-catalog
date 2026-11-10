@@ -1,0 +1,188 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:cloudwatch:GetMetricData",
+      "aws:allow_action:elasticloadbalancing:ModifyTargetGroupAttributes",
+      "aws:allow_action:mgn:GetLaunchConfigurationDefaults",
+      "aws:allow_action:mgn:ListRemoteSourceActionInvocationResults",
+      "aws:allow_action:mgn:ListRemoteSourceActionInvocations",
+      "aws:allow_action:mgn:ListRemoteSourceActionJobs",
+      "aws:allow_action:mgn:ListRemoteSourceActions",
+      "aws:allow_action:s3-outposts:ListOutpostsWithS3"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "cloudwatch:GetMetricData",
+          "elasticloadbalancing:ModifyTargetGroupAttributes",
+          "mgn:GetLaunchConfigurationDefaults",
+          "mgn:ListRemoteSourceActionInvocationResults",
+          "mgn:ListRemoteSourceActionInvocations",
+          "mgn:ListRemoteSourceActionJobs",
+          "mgn:ListRemoteSourceActions",
+          "s3-outposts:ListOutpostsWithS3"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSApplicationMigrationFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:GetMetricData",
+              "s3-outposts:ListOutpostsWithS3"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 08:37 UTC",
+          "before": "August 03, 2026, 10:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 08:37 UTC",
+          "before": "August 03, 2026, 10:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 30,
+          "before": 27,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess"
+    },
+    {
+      "display_name": "AWSApplicationMigrationReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "mgn:GetLaunchConfigurationDefaults",
+              "mgn:ListRemoteSourceActionInvocationResults",
+              "mgn:ListRemoteSourceActionInvocations",
+              "mgn:ListRemoteSourceActionJobs",
+              "mgn:ListRemoteSourceActions"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 08:37 UTC",
+          "before": "July 01, 2026, 14:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 08:37 UTC",
+          "before": "July 01, 2026, 14:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationReadOnlyAccess"
+    },
+    {
+      "display_name": "AWSApplicationMigrationSSMAccess",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 08:37 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 08:37 UTC",
+          "before": "February 12, 2026, 18:00 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 6,
+          "before": 5,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationSSMAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationSSMAccess"
+    },
+    {
+      "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticloadbalancing:ModifyTargetGroupAttributes"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 15:47 UTC",
+          "before": "September 25, 2026, 21:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 15:47 UTC",
+          "before": "September 25, 2026, 21:17 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonECSInfrastructureRoleForGatewayHostSharedALB"
+    }
+  ],
+  "compared_at_utc": "2026-11-10T11:18:33Z",
+  "counts": {
+    "added_atoms": 8,
+    "added_objects": 0,
+    "changed_objects": 4,
+    "current_objects": 1618,
+    "previous_objects": 1618,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-10",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-11-08",
+  "removed_objects": []
+}
