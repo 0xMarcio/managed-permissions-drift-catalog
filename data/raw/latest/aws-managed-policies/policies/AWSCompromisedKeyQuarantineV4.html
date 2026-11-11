@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 06, 2026, 00:37 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 06, 2026, 00:37 UTC</p>
+                <p><b>Edited time:</b>  November 09, 2026, 22:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4</code></p>
             </li></ul></div>
      
         <h2 id="AWSCompromisedKeyQuarantineV4-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -107,6 +107,7 @@
         "iam:DeleteRole",
         "iam:DeleteAccessKey",
         "iam:ListUsers",
+        "iam:UpdateServiceSpecificCredential",
         "lambda:AddLayerVersionPermission",
         "lambda:AddPermission",
         "lambda:CreateFunction",
@@ -227,7 +228,16 @@
         "apprunner:UntagResource",
         "sagemaker:CreateTrainingJob",
         "sagemaker:CreateEndpoint",
-        "bedrock-mantle:CreateInference",
+        "bedrock-mantle:Create*",
+        "bedrock-mantle:Delete*",
+        "bedrock-mantle:Update*",
+        "bedrock-mantle:Put*",
+        "bedrock-mantle:Cancel*",
+        "bedrock-mantle:Associate*",
+        "bedrock-mantle:Disassociate*",
+        "bedrock-mantle:ArchiveProject",
+        "bedrock-mantle:TagResource",
+        "bedrock-mantle:UntagResource",
         "aws-marketplace:Subscribe",
         "aws-marketplace:AcceptAgreementApprovalRequest",
         "apprunner:DeleteService",

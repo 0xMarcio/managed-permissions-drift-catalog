@@ -18287,13 +18287,6 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
-    "aws:allow_action:assurance:DownloadEvidence": [
-      {
-        "display_name": "AssuranceServiceRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
-      }
-    ],
     "aws:allow_action:assurance:EnableFramework": [
       {
         "display_name": "AssuranceOperatorPolicy",
@@ -18541,6 +18534,11 @@
     ],
     "aws:allow_action:assurance:ListControlResources": [
       {
+        "display_name": "AssuranceServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+      },
+      {
         "display_name": "AssuranceOperatorPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
@@ -18632,13 +18630,6 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
-    "aws:allow_action:assurance:ListResourcesForControl": [
-      {
-        "display_name": "AssuranceServiceRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
-      }
-    ],
     "aws:allow_action:assurance:ListTagsForResource": [
       {
         "display_name": "AssuranceOperatorPolicy",
@@ -18712,13 +18703,6 @@
         "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
       }
     ],
-    "aws:allow_action:assurance:StartResourceDiscovery": [
-      {
-        "display_name": "AssuranceServiceRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
-      }
-    ],
     "aws:allow_action:assurance:UpdateAnnotation": [
       {
         "display_name": "AssuranceServiceRolePolicy",
@@ -18785,13 +18769,6 @@
         "display_name": "AssuranceOperatorPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceOperatorPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy"
-      }
-    ],
-    "aws:allow_action:assurance:UploadEvidence": [
-      {
-        "display_name": "AssuranceServiceRolePolicy",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
-        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
       }
     ],
     "aws:allow_action:athena:*": [
@@ -25110,6 +25087,13 @@
         "display_name": "AWSMarketplaceSellerFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+      }
+    ],
+    "aws:allow_action:aws-marketplace:GetSellerReportingData": [
+      {
+        "display_name": "AWSPartnerCentralFullAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess"
       }
     ],
     "aws:allow_action:aws-marketplace:GetTaxComplianceProfile": [
@@ -58232,6 +58216,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubV2ServiceRolePolicy"
       },
       {
+        "display_name": "AWSServiceRoleForAIDevOpsPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForAIDevOpsPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAIDevOpsPolicy"
+      },
+      {
         "display_name": "AWSWellArchitectedAgentResourceScanningServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedAgentResourceScanningServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedAgentResourceScanningServiceRolePolicy"
@@ -59289,6 +59278,11 @@
         "display_name": "AWSFinOpsAgentServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSFinOpsAgentServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSFinOpsAgentServiceRolePolicy"
+      },
+      {
+        "display_name": "AWSSecurityHubV2ServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubV2ServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubV2ServiceRolePolicy"
       },
       {
         "display_name": "AWSTrustedAdvisorServiceRolePolicy",
@@ -101067,6 +101061,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy"
       },
       {
+        "display_name": "AmazonEMRServerlessServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEMRServerlessServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEMRServerlessServiceRolePolicy"
+      },
+      {
         "display_name": "AmazonEVSServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEVSServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEVSServiceRolePolicy"
@@ -104978,6 +104977,11 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonECSServiceRolePolicy"
       },
       {
+        "display_name": "AmazonEMRServerlessServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEMRServerlessServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEMRServerlessServiceRolePolicy"
+      },
+      {
         "display_name": "AmazonMWAAServerlessServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonMWAAServerlessServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonMWAAServerlessServiceRolePolicy"
@@ -108714,6 +108718,11 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniAWSIntegrationPolicy"
       },
       {
+        "display_name": "AWSPCSServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPCSServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSPCSServiceRolePolicy"
+      },
+      {
         "display_name": "AWSResourceExplorerServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
@@ -111586,6 +111595,11 @@
         "display_name": "CloudWatchOmniAWSIntegrationPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniAWSIntegrationPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniAWSIntegrationPolicy"
+      },
+      {
+        "display_name": "AWSPCSServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPCSServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSPCSServiceRolePolicy"
       },
       {
         "display_name": "AWSResourceExplorerServiceRolePolicy",
@@ -128590,6 +128604,16 @@
       }
     ],
     "aws:allow_action:ec2:GetSecurityGroupsForVpc": [
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
       {
         "display_name": "AmazonEC2ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ReadOnlyAccess.html",
@@ -145692,6 +145716,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:AddTags": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy"
@@ -145705,6 +145734,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
@@ -145854,6 +145888,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:CreateListener": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSElasticBeanstalkEKSTagging",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkEKSTagging.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkEKSTagging"
@@ -145867,6 +145906,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
@@ -145921,6 +145965,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:CreateLoadBalancer": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSElasticBeanstalkEKSTagging",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkEKSTagging.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkEKSTagging"
@@ -145939,6 +145988,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
@@ -146064,6 +146118,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:CreateTargetGroup": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSElasticBeanstalkEKSTagging",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkEKSTagging.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkEKSTagging"
@@ -146077,6 +146136,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
@@ -146177,6 +146241,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:DeleteListener": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess"
@@ -146185,6 +146254,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
@@ -146234,6 +146308,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:DeleteLoadBalancer": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy"
@@ -146247,6 +146326,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
@@ -146345,6 +146429,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:DeleteTargetGroup": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess"
@@ -146353,6 +146442,11 @@
         "display_name": "AWSMigrationHubRefactorSpacesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpacesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpacesFullAccess"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
@@ -146689,6 +146783,16 @@
     ],
     "aws:allow_action:elasticloadbalancing:DescribeCapacityReservation": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -146778,6 +146882,16 @@
     ],
     "aws:allow_action:elasticloadbalancing:DescribeListenerAttributes": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
+      {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy"
@@ -146841,6 +146955,11 @@
       }
     ],
     "aws:allow_action:elasticloadbalancing:DescribeListeners": [
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
       {
         "display_name": "AWSCodeDeployRoleForECS",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCodeDeployRoleForECS.html",
@@ -147018,6 +147137,11 @@
       }
     ],
     "aws:allow_action:elasticloadbalancing:DescribeLoadBalancerAttributes": [
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
       {
         "display_name": "AWSTransformNetworkMigrationAgentPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
@@ -147208,6 +147332,11 @@
         "display_name": "AWSApplicationMigrationFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationFullAccess"
+      },
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
       },
       {
         "display_name": "AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy",
@@ -147673,6 +147802,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:DescribeTags": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess"
@@ -147790,6 +147924,11 @@
     ],
     "aws:allow_action:elasticloadbalancing:DescribeTargetGroupAttributes": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
         "display_name": "AWSTransformNetworkMigrationAgentPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
@@ -147886,6 +148025,11 @@
       }
     ],
     "aws:allow_action:elasticloadbalancing:DescribeTargetGroups": [
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
       {
         "display_name": "AWSCodeDeployRoleForECS",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCodeDeployRoleForECS.html",
@@ -148123,6 +148267,11 @@
       }
     ],
     "aws:allow_action:elasticloadbalancing:DescribeTargetHealth": [
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
       {
         "display_name": "AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy.html",
@@ -148542,12 +148691,32 @@
     ],
     "aws:allow_action:elasticloadbalancing:ModifyListenerAttributes": [
       {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
+      {
         "display_name": "AmazonEKSLoadBalancingPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSLoadBalancingPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
       }
     ],
     "aws:allow_action:elasticloadbalancing:ModifyLoadBalancerAttributes": [
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
@@ -148639,6 +148808,16 @@
       }
     ],
     "aws:allow_action:elasticloadbalancing:ModifyTargetGroupAttributes": [
+      {
+        "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+      },
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      },
       {
         "display_name": "AmazonECSInfrastructureRoleForGatewayHostSharedALB",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECSInfrastructureRoleForGatewayHostSharedALB.html",
@@ -234295,6 +234474,13 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
       }
     ],
+    "aws:allow_action:mgn:ListNetworkMigrationInsights": [
+      {
+        "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+      }
+    ],
     "aws:allow_action:mgn:ListNetworkMigrationMapperSegmentConstructs": [
       {
         "display_name": "AWSTransformNetworkMigrationAgentPolicy",
@@ -242013,6 +242199,11 @@
     ],
     "aws:allow_action:observabilityadmin:Get*": [
       {
+        "display_name": "CloudWatchReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
+      },
+      {
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
@@ -242023,11 +242214,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -242045,11 +242231,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       }
     ],
     "aws:allow_action:observabilityadmin:GetS3TableIntegration": [
@@ -242069,11 +242250,6 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchLogsReadOnlyAccess"
       },
       {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
-      },
-      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -242089,11 +242265,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -242118,11 +242289,6 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
       },
       {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
-      },
-      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -242138,11 +242304,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -242162,11 +242323,6 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
       },
       {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
-      },
-      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -242182,11 +242338,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -242206,11 +242357,6 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
       },
       {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
-      },
-      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -242223,6 +242369,11 @@
     ],
     "aws:allow_action:observabilityadmin:List*": [
       {
+        "display_name": "CloudWatchReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
+      },
+      {
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
@@ -242233,11 +242384,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -242255,11 +242401,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       }
     ],
     "aws:allow_action:observabilityadmin:ListResourceTelemetry": [
@@ -242267,11 +242408,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -242284,11 +242420,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -242313,11 +242444,6 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchLogsReadOnlyAccess"
       },
       {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
-      },
-      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -242333,11 +242459,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -242367,11 +242488,6 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchLogsReadOnlyAccess"
       },
       {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
-      },
-      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -242389,11 +242505,6 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
       },
       {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
-      },
-      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -242409,11 +242520,6 @@
         "display_name": "CloudWatchFullAccessV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
-      },
-      {
-        "display_name": "CloudWatchReadOnlyAccess",
-        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
-        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -252464,6 +252570,13 @@
         "stable_id": "arn:aws:iam::aws:policy/PartnerCentralIncentiveBenefitManagement"
       }
     ],
+    "aws:allow_action:partnercentral:GetOpportunityBulkJobReportUrl": [
+      {
+        "display_name": "AWSPartnerCentralOpportunityManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:GetPartner": [
       {
         "display_name": "AWSPartnerCentralChannelManagement",
@@ -252816,6 +252929,20 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
       }
     ],
+    "aws:allow_action:partnercentral:ListOpportunityBulkJobResults": [
+      {
+        "display_name": "AWSPartnerCentralOpportunityManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      }
+    ],
+    "aws:allow_action:partnercentral:ListOpportunityBulkJobs": [
+      {
+        "display_name": "AWSPartnerCentralOpportunityManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      }
+    ],
     "aws:allow_action:partnercentral:ListOpportunityFromEngagementTasks": [
       {
         "display_name": "AWSPartnerCentralOpportunityManagement",
@@ -253091,6 +253218,13 @@
       }
     ],
     "aws:allow_action:partnercentral:StartEngagementFromOpportunityTask": [
+      {
+        "display_name": "AWSPartnerCentralOpportunityManagement",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+      }
+    ],
+    "aws:allow_action:partnercentral:StartOpportunityBulkJob": [
       {
         "display_name": "AWSPartnerCentralOpportunityManagement",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
@@ -320782,6 +320916,13 @@
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubServiceRolePolicy"
       }
     ],
+    "aws:allow_action:securityhub:UpdateSecurityHubV2": [
+      {
+        "display_name": "AWSSecurityHubV2ServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubV2ServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubV2ServiceRolePolicy"
+      }
+    ],
     "aws:allow_action:securityhub:UpdateStandardsControl": [
       {
         "display_name": "AWSSecurityHubServiceRolePolicy",
@@ -360856,14 +360997,132 @@
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
-    "aws:deny_action:bedrock-mantle:CallWithBearerToken": [
+    "aws:deny_action:bedrock-mantle:ArchiveProject": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
       {
         "display_name": "AWSCompromisedKeyQuarantineV4",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
       }
     ],
-    "aws:deny_action:bedrock-mantle:CreateInference": [
+    "aws:deny_action:bedrock-mantle:Associate*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:CallWithBearerToken": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:Cancel*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:Create*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:Delete*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:Disassociate*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:Put*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:TagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:UntagResource": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:bedrock-mantle:Update*": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
       {
         "display_name": "AWSCompromisedKeyQuarantineV4",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
@@ -360871,6 +361130,11 @@
       }
     ],
     "aws:deny_action:bedrock:CallWithBearerToken": [
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
       {
         "display_name": "AWSCompromisedKeyQuarantineV4",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
@@ -362335,6 +362599,11 @@
     ],
     "aws:deny_action:iam:CreateServiceSpecificCredential": [
       {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
         "display_name": "AWSCompromisedKeyQuarantineV4",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
@@ -362532,6 +362801,11 @@
     ],
     "aws:deny_action:iam:ResetServiceSpecificCredential": [
       {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
         "display_name": "AWSCompromisedKeyQuarantineV4",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
@@ -362628,6 +362902,18 @@
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV2.html",
         "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV2"
       },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      }
+    ],
+    "aws:deny_action:iam:UpdateServiceSpecificCredential": [
       {
         "display_name": "AWSCompromisedKeyQuarantineV3",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
@@ -373340,7 +373626,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-11-10T11:18:33Z",
+  "generated_at_utc": "2026-11-11T11:04:01Z",
   "platform": "aws",
   "wildcard_atoms": [
     {
@@ -401378,6 +401664,18 @@
     {
       "atom": "aws:allow_action:observabilityadmin:Get*",
       "object": {
+        "display_name": "CloudWatchReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
+      },
+      "terms": [
+        "observabilityadmin:Get*",
+        "aws:allow_action:observabilityadmin:Get*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:observabilityadmin:Get*",
+      "object": {
         "display_name": "WellArchitectedAgentResourceScanning",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html",
         "stable_id": "arn:aws:iam::aws:policy/WellArchitectedAgentResourceScanning"
@@ -401385,6 +401683,18 @@
       "terms": [
         "observabilityadmin:Get*",
         "aws:allow_action:observabilityadmin:Get*"
+      ]
+    },
+    {
+      "atom": "aws:allow_action:observabilityadmin:List*",
+      "object": {
+        "display_name": "CloudWatchReadOnlyAccess",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
+      },
+      "terms": [
+        "observabilityadmin:List*",
+        "aws:allow_action:observabilityadmin:List*"
       ]
     },
     {
@@ -415413,6 +415723,174 @@
       "terms": [
         "*",
         "aws:deny_action:*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Associate*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "bedrock-mantle:Associate*",
+        "aws:deny_action:bedrock-mantle:Associate*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Associate*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "bedrock-mantle:Associate*",
+        "aws:deny_action:bedrock-mantle:Associate*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Cancel*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "bedrock-mantle:Cancel*",
+        "aws:deny_action:bedrock-mantle:Cancel*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Cancel*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "bedrock-mantle:Cancel*",
+        "aws:deny_action:bedrock-mantle:Cancel*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Create*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "bedrock-mantle:Create*",
+        "aws:deny_action:bedrock-mantle:Create*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Create*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "bedrock-mantle:Create*",
+        "aws:deny_action:bedrock-mantle:Create*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Delete*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "bedrock-mantle:Delete*",
+        "aws:deny_action:bedrock-mantle:Delete*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Delete*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "bedrock-mantle:Delete*",
+        "aws:deny_action:bedrock-mantle:Delete*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Disassociate*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "bedrock-mantle:Disassociate*",
+        "aws:deny_action:bedrock-mantle:Disassociate*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Disassociate*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "bedrock-mantle:Disassociate*",
+        "aws:deny_action:bedrock-mantle:Disassociate*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Put*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "bedrock-mantle:Put*",
+        "aws:deny_action:bedrock-mantle:Put*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Put*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "bedrock-mantle:Put*",
+        "aws:deny_action:bedrock-mantle:Put*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Update*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV3",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      },
+      "terms": [
+        "bedrock-mantle:Update*",
+        "aws:deny_action:bedrock-mantle:Update*"
+      ]
+    },
+    {
+      "atom": "aws:deny_action:bedrock-mantle:Update*",
+      "object": {
+        "display_name": "AWSCompromisedKeyQuarantineV4",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+        "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+      },
+      "terms": [
+        "bedrock-mantle:Update*",
+        "aws:deny_action:bedrock-mantle:Update*"
       ]
     },
     {

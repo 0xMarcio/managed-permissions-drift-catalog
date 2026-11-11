@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 21, 2024, 17:36 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  March 16, 2026, 16:27 UTC</p>
+                <p><b>Edited time:</b>  November 09, 2026, 21:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3</code></p>
             </li></ul></div>
      
         <h2 id="AWSCompromisedKeyQuarantineV3-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -107,6 +107,9 @@
         "iam:DeleteRole",
         "iam:DeleteAccessKey",
         "iam:ListUsers",
+        "iam:CreateServiceSpecificCredential",
+        "iam:ResetServiceSpecificCredential",
+        "iam:UpdateServiceSpecificCredential",
         "lambda:AddLayerVersionPermission",
         "lambda:AddPermission",
         "lambda:CreateFunction",
@@ -154,6 +157,18 @@
         "bedrock:CreateFoundationModelAgreement",
         "bedrock:PutFoundationModelEntitlement",
         "bedrock:InvokeModel",
+        "bedrock:CallWithBearerToken",
+        "bedrock-mantle:CallWithBearerToken",
+        "bedrock-mantle:Create*",
+        "bedrock-mantle:Delete*",
+        "bedrock-mantle:Update*",
+        "bedrock-mantle:Put*",
+        "bedrock-mantle:Cancel*",
+        "bedrock-mantle:ArchiveProject",
+        "bedrock-mantle:Associate*",
+        "bedrock-mantle:TagResource",
+        "bedrock-mantle:UntagResource",
+        "bedrock-mantle:Disassociate*",
         "sagemaker:CreateEndpointConfig",
         "sagemaker:CreateProcessingJob",
         "ses:GetSendQuota",

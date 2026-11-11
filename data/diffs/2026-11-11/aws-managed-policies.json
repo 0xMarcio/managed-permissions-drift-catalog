@@ -1,0 +1,819 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:assurance:ListControlResources",
+      "aws:allow_action:aws-marketplace:GetSellerReportingData",
+      "aws:allow_action:cloudwatch:GetMetricData",
+      "aws:allow_action:cloudwatch:ListMetrics",
+      "aws:allow_action:ec2:CreateNetworkInterfacePermission",
+      "aws:allow_action:ec2:DeleteNetworkInterfacePermission",
+      "aws:allow_action:ec2:DescribeCapacityReservationTopology",
+      "aws:allow_action:ec2:DescribeInstanceTopology",
+      "aws:allow_action:ec2:GetSecurityGroupsForVpc",
+      "aws:allow_action:ec2:GetSecurityGroupsForVpc",
+      "aws:allow_action:elasticloadbalancing:AddTags",
+      "aws:allow_action:elasticloadbalancing:AddTags",
+      "aws:allow_action:elasticloadbalancing:CreateListener",
+      "aws:allow_action:elasticloadbalancing:CreateListener",
+      "aws:allow_action:elasticloadbalancing:CreateLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:CreateLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+      "aws:allow_action:elasticloadbalancing:CreateTargetGroup",
+      "aws:allow_action:elasticloadbalancing:DeleteListener",
+      "aws:allow_action:elasticloadbalancing:DeleteListener",
+      "aws:allow_action:elasticloadbalancing:DeleteLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:DeleteLoadBalancer",
+      "aws:allow_action:elasticloadbalancing:DeleteTargetGroup",
+      "aws:allow_action:elasticloadbalancing:DeleteTargetGroup",
+      "aws:allow_action:elasticloadbalancing:DescribeCapacityReservation",
+      "aws:allow_action:elasticloadbalancing:DescribeCapacityReservation",
+      "aws:allow_action:elasticloadbalancing:DescribeListenerAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeListenerAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeListeners",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancerAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+      "aws:allow_action:elasticloadbalancing:DescribeTags",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroupAttributes",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+      "aws:allow_action:elasticloadbalancing:ModifyListenerAttributes",
+      "aws:allow_action:elasticloadbalancing:ModifyListenerAttributes",
+      "aws:allow_action:elasticloadbalancing:ModifyLoadBalancerAttributes",
+      "aws:allow_action:elasticloadbalancing:ModifyLoadBalancerAttributes",
+      "aws:allow_action:elasticloadbalancing:ModifyTargetGroupAttributes",
+      "aws:allow_action:elasticloadbalancing:ModifyTargetGroupAttributes",
+      "aws:allow_action:mgn:ListNetworkMigrationInsights",
+      "aws:allow_action:observabilityadmin:Get*",
+      "aws:allow_action:observabilityadmin:List*",
+      "aws:allow_action:partnercentral:GetOpportunityBulkJobReportUrl",
+      "aws:allow_action:partnercentral:ListOpportunityBulkJobResults",
+      "aws:allow_action:partnercentral:ListOpportunityBulkJobs",
+      "aws:allow_action:partnercentral:StartOpportunityBulkJob",
+      "aws:allow_action:securityhub:UpdateSecurityHubV2",
+      "aws:deny_action:bedrock-mantle:ArchiveProject",
+      "aws:deny_action:bedrock-mantle:ArchiveProject",
+      "aws:deny_action:bedrock-mantle:Associate*",
+      "aws:deny_action:bedrock-mantle:Associate*",
+      "aws:deny_action:bedrock-mantle:CallWithBearerToken",
+      "aws:deny_action:bedrock-mantle:Cancel*",
+      "aws:deny_action:bedrock-mantle:Cancel*",
+      "aws:deny_action:bedrock-mantle:Create*",
+      "aws:deny_action:bedrock-mantle:Create*",
+      "aws:deny_action:bedrock-mantle:Delete*",
+      "aws:deny_action:bedrock-mantle:Delete*",
+      "aws:deny_action:bedrock-mantle:Disassociate*",
+      "aws:deny_action:bedrock-mantle:Disassociate*",
+      "aws:deny_action:bedrock-mantle:Put*",
+      "aws:deny_action:bedrock-mantle:Put*",
+      "aws:deny_action:bedrock-mantle:TagResource",
+      "aws:deny_action:bedrock-mantle:TagResource",
+      "aws:deny_action:bedrock-mantle:UntagResource",
+      "aws:deny_action:bedrock-mantle:UntagResource",
+      "aws:deny_action:bedrock-mantle:Update*",
+      "aws:deny_action:bedrock-mantle:Update*",
+      "aws:deny_action:bedrock:CallWithBearerToken",
+      "aws:deny_action:iam:CreateServiceSpecificCredential",
+      "aws:deny_action:iam:ResetServiceSpecificCredential",
+      "aws:deny_action:iam:UpdateServiceSpecificCredential",
+      "aws:deny_action:iam:UpdateServiceSpecificCredential"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "assurance:ListControlResources",
+          "aws-marketplace:GetSellerReportingData",
+          "cloudwatch:GetMetricData",
+          "cloudwatch:ListMetrics",
+          "ec2:CreateNetworkInterfacePermission",
+          "ec2:DeleteNetworkInterfacePermission",
+          "ec2:DescribeCapacityReservationTopology",
+          "ec2:DescribeInstanceTopology",
+          "ec2:GetSecurityGroupsForVpc",
+          "ec2:GetSecurityGroupsForVpc",
+          "elasticloadbalancing:AddTags",
+          "elasticloadbalancing:AddTags",
+          "elasticloadbalancing:CreateListener",
+          "elasticloadbalancing:CreateListener",
+          "elasticloadbalancing:CreateLoadBalancer",
+          "elasticloadbalancing:CreateLoadBalancer",
+          "elasticloadbalancing:CreateTargetGroup",
+          "elasticloadbalancing:CreateTargetGroup",
+          "elasticloadbalancing:DeleteListener",
+          "elasticloadbalancing:DeleteListener",
+          "elasticloadbalancing:DeleteLoadBalancer",
+          "elasticloadbalancing:DeleteLoadBalancer",
+          "elasticloadbalancing:DeleteTargetGroup",
+          "elasticloadbalancing:DeleteTargetGroup",
+          "elasticloadbalancing:DescribeCapacityReservation",
+          "elasticloadbalancing:DescribeCapacityReservation",
+          "elasticloadbalancing:DescribeListenerAttributes",
+          "elasticloadbalancing:DescribeListenerAttributes",
+          "elasticloadbalancing:DescribeListeners",
+          "elasticloadbalancing:DescribeLoadBalancerAttributes",
+          "elasticloadbalancing:DescribeLoadBalancers",
+          "elasticloadbalancing:DescribeTags",
+          "elasticloadbalancing:DescribeTargetGroupAttributes",
+          "elasticloadbalancing:DescribeTargetGroups",
+          "elasticloadbalancing:DescribeTargetHealth",
+          "elasticloadbalancing:ModifyListenerAttributes",
+          "elasticloadbalancing:ModifyListenerAttributes",
+          "elasticloadbalancing:ModifyLoadBalancerAttributes",
+          "elasticloadbalancing:ModifyLoadBalancerAttributes",
+          "elasticloadbalancing:ModifyTargetGroupAttributes",
+          "elasticloadbalancing:ModifyTargetGroupAttributes",
+          "mgn:ListNetworkMigrationInsights",
+          "observabilityadmin:Get*",
+          "observabilityadmin:List*",
+          "partnercentral:GetOpportunityBulkJobReportUrl",
+          "partnercentral:ListOpportunityBulkJobResults",
+          "partnercentral:ListOpportunityBulkJobs",
+          "partnercentral:StartOpportunityBulkJob",
+          "securityhub:UpdateSecurityHubV2"
+        ],
+        "restriction:deny_actions": [
+          "bedrock-mantle:ArchiveProject",
+          "bedrock-mantle:ArchiveProject",
+          "bedrock-mantle:Associate*",
+          "bedrock-mantle:Associate*",
+          "bedrock-mantle:CallWithBearerToken",
+          "bedrock-mantle:Cancel*",
+          "bedrock-mantle:Cancel*",
+          "bedrock-mantle:Create*",
+          "bedrock-mantle:Create*",
+          "bedrock-mantle:Delete*",
+          "bedrock-mantle:Delete*",
+          "bedrock-mantle:Disassociate*",
+          "bedrock-mantle:Disassociate*",
+          "bedrock-mantle:Put*",
+          "bedrock-mantle:Put*",
+          "bedrock-mantle:TagResource",
+          "bedrock-mantle:TagResource",
+          "bedrock-mantle:UntagResource",
+          "bedrock-mantle:UntagResource",
+          "bedrock-mantle:Update*",
+          "bedrock-mantle:Update*",
+          "bedrock:CallWithBearerToken",
+          "iam:CreateServiceSpecificCredential",
+          "iam:ResetServiceSpecificCredential",
+          "iam:UpdateServiceSpecificCredential",
+          "iam:UpdateServiceSpecificCredential"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "assurance:DownloadEvidence",
+          "assurance:ListResourcesForControl",
+          "assurance:StartResourceDiscovery",
+          "assurance:UploadEvidence",
+          "observabilityadmin:GetCentralizationRuleForOrganization",
+          "observabilityadmin:GetDatasetIntegration",
+          "observabilityadmin:GetS3TableIntegration",
+          "observabilityadmin:GetTelemetryEnrichmentStatus",
+          "observabilityadmin:GetTelemetryEvaluationStatus",
+          "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+          "observabilityadmin:GetTelemetryPipeline",
+          "observabilityadmin:GetTelemetryRule",
+          "observabilityadmin:GetTelemetryRuleForOrganization",
+          "observabilityadmin:ListCentralizationRulesForOrganization",
+          "observabilityadmin:ListDatasetIntegrations",
+          "observabilityadmin:ListResourceTelemetry",
+          "observabilityadmin:ListResourceTelemetryForOrganization",
+          "observabilityadmin:ListS3TableIntegrations",
+          "observabilityadmin:ListTagsForResource",
+          "observabilityadmin:ListTelemetryPipelines",
+          "observabilityadmin:ListTelemetryRules",
+          "observabilityadmin:ListTelemetryRulesForOrganization"
+        ],
+        "restriction:deny_actions": [
+          "bedrock-mantle:CreateInference"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:assurance:DownloadEvidence",
+      "aws:allow_action:assurance:ListResourcesForControl",
+      "aws:allow_action:assurance:StartResourceDiscovery",
+      "aws:allow_action:assurance:UploadEvidence",
+      "aws:allow_action:observabilityadmin:GetCentralizationRuleForOrganization",
+      "aws:allow_action:observabilityadmin:GetDatasetIntegration",
+      "aws:allow_action:observabilityadmin:GetS3TableIntegration",
+      "aws:allow_action:observabilityadmin:GetTelemetryEnrichmentStatus",
+      "aws:allow_action:observabilityadmin:GetTelemetryEvaluationStatus",
+      "aws:allow_action:observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+      "aws:allow_action:observabilityadmin:GetTelemetryPipeline",
+      "aws:allow_action:observabilityadmin:GetTelemetryRule",
+      "aws:allow_action:observabilityadmin:GetTelemetryRuleForOrganization",
+      "aws:allow_action:observabilityadmin:ListCentralizationRulesForOrganization",
+      "aws:allow_action:observabilityadmin:ListDatasetIntegrations",
+      "aws:allow_action:observabilityadmin:ListResourceTelemetry",
+      "aws:allow_action:observabilityadmin:ListResourceTelemetryForOrganization",
+      "aws:allow_action:observabilityadmin:ListS3TableIntegrations",
+      "aws:allow_action:observabilityadmin:ListTagsForResource",
+      "aws:allow_action:observabilityadmin:ListTelemetryPipelines",
+      "aws:allow_action:observabilityadmin:ListTelemetryRules",
+      "aws:allow_action:observabilityadmin:ListTelemetryRulesForOrganization",
+      "aws:deny_action:bedrock-mantle:CreateInference"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSApplicationMigrationNetworkMigrationMultiAccount",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:GetSecurityGroupsForVpc",
+              "elasticloadbalancing:AddTags",
+              "elasticloadbalancing:CreateListener",
+              "elasticloadbalancing:CreateLoadBalancer",
+              "elasticloadbalancing:CreateTargetGroup",
+              "elasticloadbalancing:DeleteListener",
+              "elasticloadbalancing:DeleteLoadBalancer",
+              "elasticloadbalancing:DeleteTargetGroup",
+              "elasticloadbalancing:DescribeCapacityReservation",
+              "elasticloadbalancing:DescribeListenerAttributes",
+              "elasticloadbalancing:DescribeListeners",
+              "elasticloadbalancing:DescribeLoadBalancerAttributes",
+              "elasticloadbalancing:DescribeLoadBalancers",
+              "elasticloadbalancing:DescribeTags",
+              "elasticloadbalancing:DescribeTargetGroupAttributes",
+              "elasticloadbalancing:DescribeTargetGroups",
+              "elasticloadbalancing:DescribeTargetHealth",
+              "elasticloadbalancing:ModifyListenerAttributes",
+              "elasticloadbalancing:ModifyLoadBalancerAttributes",
+              "elasticloadbalancing:ModifyTargetGroupAttributes"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 10, 2026, 08:47 UTC",
+          "before": "September 15, 2026, 13:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 10, 2026, 08:47 UTC",
+          "before": "September 15, 2026, 13:17 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 59,
+          "before": 50,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationMigrationNetworkMigrationMultiAccount.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSApplicationMigrationNetworkMigrationMultiAccount"
+    },
+    {
+      "display_name": "AWSCompromisedKeyQuarantineV3",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "bedrock-mantle:ArchiveProject",
+              "bedrock-mantle:Associate*",
+              "bedrock-mantle:CallWithBearerToken",
+              "bedrock-mantle:Cancel*",
+              "bedrock-mantle:Create*",
+              "bedrock-mantle:Delete*",
+              "bedrock-mantle:Disassociate*",
+              "bedrock-mantle:Put*",
+              "bedrock-mantle:TagResource",
+              "bedrock-mantle:UntagResource",
+              "bedrock-mantle:Update*",
+              "bedrock:CallWithBearerToken",
+              "iam:CreateServiceSpecificCredential",
+              "iam:ResetServiceSpecificCredential",
+              "iam:UpdateServiceSpecificCredential"
+            ],
+            "removed": []
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 21:37 UTC",
+          "before": "March 16, 2026, 16:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 21:37 UTC",
+          "before": "March 16, 2026, 16:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV3.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+    },
+    {
+      "display_name": "AWSCompromisedKeyQuarantineV4",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "bedrock-mantle:ArchiveProject",
+              "bedrock-mantle:Associate*",
+              "bedrock-mantle:Cancel*",
+              "bedrock-mantle:Create*",
+              "bedrock-mantle:Delete*",
+              "bedrock-mantle:Disassociate*",
+              "bedrock-mantle:Put*",
+              "bedrock-mantle:TagResource",
+              "bedrock-mantle:UntagResource",
+              "bedrock-mantle:Update*",
+              "iam:UpdateServiceSpecificCredential"
+            ],
+            "removed": [
+              "bedrock-mantle:CreateInference"
+            ]
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 22:27 UTC",
+          "before": "November 06, 2026, 00:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 22:27 UTC",
+          "before": "November 06, 2026, 00:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCompromisedKeyQuarantineV4.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV4"
+    },
+    {
+      "display_name": "AWSPartnerCentralFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-marketplace:GetSellerReportingData"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v17 (default)",
+          "before": "v16 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 10, 2026, 08:27 UTC",
+          "before": "November 05, 2026, 23:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 10, 2026, 08:27 UTC",
+          "before": "November 05, 2026, 23:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess"
+    },
+    {
+      "display_name": "AWSPartnerCentralOpportunityManagement",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetOpportunityBulkJobReportUrl",
+              "partnercentral:ListOpportunityBulkJobResults",
+              "partnercentral:ListOpportunityBulkJobs",
+              "partnercentral:StartOpportunityBulkJob"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 10, 2026, 03:17 UTC",
+          "before": "November 06, 2026, 02:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 10, 2026, 03:17 UTC",
+          "before": "November 06, 2026, 02:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralOpportunityManagement"
+    },
+    {
+      "display_name": "AWSTransformNetworkMigrationAgentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:GetSecurityGroupsForVpc",
+              "elasticloadbalancing:AddTags",
+              "elasticloadbalancing:CreateListener",
+              "elasticloadbalancing:CreateLoadBalancer",
+              "elasticloadbalancing:CreateTargetGroup",
+              "elasticloadbalancing:DeleteListener",
+              "elasticloadbalancing:DeleteLoadBalancer",
+              "elasticloadbalancing:DeleteTargetGroup",
+              "elasticloadbalancing:DescribeCapacityReservation",
+              "elasticloadbalancing:DescribeListenerAttributes",
+              "elasticloadbalancing:ModifyListenerAttributes",
+              "elasticloadbalancing:ModifyLoadBalancerAttributes",
+              "elasticloadbalancing:ModifyTargetGroupAttributes",
+              "mgn:ListNetworkMigrationInsights"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 10, 2026, 08:47 UTC",
+          "before": "October 29, 2026, 10:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 10, 2026, 08:47 UTC",
+          "before": "October 29, 2026, 10:17 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 67,
+          "before": 58,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformNetworkMigrationAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy"
+    },
+    {
+      "display_name": "CloudWatchReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "observabilityadmin:Get*",
+              "observabilityadmin:List*"
+            ],
+            "removed": [
+              "observabilityadmin:GetCentralizationRuleForOrganization",
+              "observabilityadmin:GetDatasetIntegration",
+              "observabilityadmin:GetS3TableIntegration",
+              "observabilityadmin:GetTelemetryEnrichmentStatus",
+              "observabilityadmin:GetTelemetryEvaluationStatus",
+              "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+              "observabilityadmin:GetTelemetryPipeline",
+              "observabilityadmin:GetTelemetryRule",
+              "observabilityadmin:GetTelemetryRuleForOrganization",
+              "observabilityadmin:ListCentralizationRulesForOrganization",
+              "observabilityadmin:ListDatasetIntegrations",
+              "observabilityadmin:ListResourceTelemetry",
+              "observabilityadmin:ListResourceTelemetryForOrganization",
+              "observabilityadmin:ListS3TableIntegrations",
+              "observabilityadmin:ListTagsForResource",
+              "observabilityadmin:ListTelemetryPipelines",
+              "observabilityadmin:ListTelemetryRules",
+              "observabilityadmin:ListTelemetryRulesForOrganization"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v26 (default)",
+          "before": "v25 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 19:27 UTC",
+          "before": "September 22, 2026, 16:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 19:27 UTC",
+          "before": "September 22, 2026, 16:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
+    },
+    {
+      "display_name": "FinOpsAgentIdentityReaderPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 18:17 UTC",
+          "before": "October 29, 2026, 17:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 18:17 UTC",
+          "before": "October 29, 2026, 17:17 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinOpsAgentIdentityReaderPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/FinOpsAgentIdentityReaderPolicy"
+    },
+    {
+      "display_name": "AWSConfigThirdPartyServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 22:37 UTC",
+          "before": "June 22, 2026, 17:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 22:37 UTC",
+          "before": "June 22, 2026, 17:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigThirdPartyServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigThirdPartyServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSPCSServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:DescribeCapacityReservationTopology",
+              "ec2:DescribeInstanceTopology"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 10, 2026, 09:47 UTC",
+          "before": "September 30, 2026, 18:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 10, 2026, 09:47 UTC",
+          "before": "September 30, 2026, 18:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPCSServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSPCSServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSSecurityHubV2ServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:ListMetrics",
+              "securityhub:UpdateSecurityHubV2"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v9 (default)",
+          "before": "v8 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 20:37 UTC",
+          "before": "June 27, 2026, 00:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 20:37 UTC",
+          "before": "June 27, 2026, 00:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubV2ServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubV2ServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSServiceRoleForAIDevOpsPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:GetMetricData"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 20:07 UTC",
+          "before": "March 27, 2026, 00:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 20:07 UTC",
+          "before": "March 27, 2026, 00:42 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 8,
+          "before": 7,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForAIDevOpsPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAIDevOpsPolicy"
+    },
+    {
+      "display_name": "AmazonEKSServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v30 (default)",
+          "before": "v29 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 22:37 UTC",
+          "before": "October 22, 2026, 16:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 22:37 UTC",
+          "before": "October 22, 2026, 16:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEKSServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy"
+    },
+    {
+      "display_name": "AmazonEMRServerlessServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:CreateNetworkInterfacePermission",
+              "ec2:DeleteNetworkInterfacePermission"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 22:17 UTC",
+          "before": "January 25, 2024, 18:21 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 22:17 UTC",
+          "before": "January 25, 2024, 18:21 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEMRServerlessServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonEMRServerlessServiceRolePolicy"
+    },
+    {
+      "display_name": "AssuranceServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "assurance:ListControlResources"
+            ],
+            "removed": [
+              "assurance:DownloadEvidence",
+              "assurance:ListResourcesForControl",
+              "assurance:StartResourceDiscovery",
+              "assurance:UploadEvidence"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 09, 2026, 20:07 UTC",
+          "before": "October 30, 2026, 19:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 09, 2026, 20:07 UTC",
+          "before": "October 30, 2026, 19:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AssuranceServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-11-11T11:04:00Z",
+  "counts": {
+    "added_atoms": 75,
+    "added_objects": 0,
+    "changed_objects": 15,
+    "current_objects": 1618,
+    "previous_objects": 1618,
+    "removed_atoms": 23,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-11",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-11-10",
+  "removed_objects": []
+}

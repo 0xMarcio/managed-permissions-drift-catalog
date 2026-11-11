@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 18, 2024, 23:33 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 05, 2026, 23:37 UTC</p>
+                <p><b>Edited time:</b>  November 10, 2026, 08:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSPartnerCentralFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSPartnerCentralFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v16 (default)</p>
+        <p><b>Policy version:</b> v17 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -316,6 +316,18 @@
           "iam:AWSServiceName" : "partnercentral-account.amazonaws.com"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "SellerReportingDataAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetSellerReportingData"
+      ],
+      "Resource" : [
+        "arn:aws:aws-marketplace::*:AWSMarketplace/ReportingData/BillingEvent_V1/Dataset/BilledRevenue_V1",
+        "arn:aws:aws-marketplace::*:AWSMarketplace/ReportingData/Solution_V1/Dataset/Solution_V1",
+        "arn:aws:aws-marketplace::*:AWSMarketplace/ReportingData/Marketing_V1/Dataset/CaseStudy_V1"
+      ]
     }
   ]
 }</code></pre>
