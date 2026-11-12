@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "G2M-sh96z4QqsDbx2RPCD",
+  "buildId": "IWHOQ0hpHGl_MrIA1Gxg4",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -10103,6 +10103,90 @@
           ],
           "title": "Commit statuses"
         },
+        "user_issue_fields": {
+          "displayTitle": "User permissions for \"Issue Fields\"",
+          "permissions": [
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "users",
+              "requestPath": "/user/issue-fields",
+              "slug": "list-issue-fields",
+              "subcategory": "issue-fields",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "users",
+              "requestPath": "/user/issue-fields",
+              "slug": "create-an-issue-field",
+              "subcategory": "issue-fields",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "users",
+              "requestPath": "/user/issue-fields/{issue_field_id}",
+              "slug": "update-an-issue-field",
+              "subcategory": "issue-fields",
+              "verb": "patch"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "users",
+              "requestPath": "/user/issue-fields/{issue_field_id}",
+              "slug": "delete-an-issue-field",
+              "subcategory": "issue-fields",
+              "verb": "delete"
+            }
+          ],
+          "title": "Issue Fields"
+        },
+        "user_issue_types": {
+          "displayTitle": "User permissions for \"Issue Types\"",
+          "permissions": [
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "users",
+              "requestPath": "/user/issue-types",
+              "slug": "list-issue-types",
+              "subcategory": "issue-types",
+              "verb": "get"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "users",
+              "requestPath": "/user/issue-types",
+              "slug": "create-an-issue-type",
+              "subcategory": "issue-types",
+              "verb": "post"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "users",
+              "requestPath": "/user/issue-types/{issue_type_id}",
+              "slug": "update-an-issue-type",
+              "subcategory": "issue-types",
+              "verb": "put"
+            },
+            {
+              "access": "write",
+              "additional-permissions": false,
+              "category": "users",
+              "requestPath": "/user/issue-types/{issue_type_id}",
+              "slug": "delete-an-issue-type",
+              "subcategory": "issue-types",
+              "verb": "delete"
+            }
+          ],
+          "title": "Issue Types"
+        },
         "vulnerability_alerts": {
           "displayTitle": "Repository permissions for \"Dependabot alerts\"",
           "permissions": [
@@ -10663,6 +10747,18 @@
           },
           {
             "contents": {
+              "href": "#user-permissions-for-issue-fields",
+              "title": "User permissions for \"Issue Fields\""
+            }
+          },
+          {
+            "contents": {
+              "href": "#user-permissions-for-issue-types",
+              "title": "User permissions for \"Issue Types\""
+            }
+          },
+          {
+            "contents": {
               "href": "#user-permissions-for-plan",
               "title": "User permissions for \"Plan\""
             }
@@ -11087,11 +11183,6 @@
                 "done_loading_status_message": "Done loading Copilot response",
                 "loading_status_message": "Loading Copilot response...",
                 "references": "Copilot Sources",
-                "response": {
-                  "copied_code": "Copied!",
-                  "copy_code": "Copy code to clipboard",
-                  "copy_code_lang": "Copy {language} code to clipboard"
-                },
                 "responses": {
                   "asked_too_many_times": "Sorry, you've asked too many questions in a short time period. Please wait a few minutes and try again.",
                   "invalid_query": "Sorry, I'm unable to answer that question. Please try asking a different question.",
@@ -12538,6 +12629,16 @@
                   "childPages": [],
                   "href": "/en/rest/users/gpg-keys",
                   "title": "GPG keys"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/users/issue-fields",
+                  "title": "Issue fields"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/users/issue-types",
+                  "title": "Issue types"
                 },
                 {
                   "childPages": [],

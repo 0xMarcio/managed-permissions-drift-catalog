@@ -1,0 +1,410 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:aws-marketplace:GetSellerReportingData",
+        "aws:allow_action:partnercentral:AssociateBusinessPlan",
+        "aws:allow_action:partnercentral:CancelBusinessPlan",
+        "aws:allow_action:partnercentral:CancelBusinessPlanSubmissionTask",
+        "aws:allow_action:partnercentral:CreateBusinessPlan",
+        "aws:allow_action:partnercentral:CreateBusinessPlanItem",
+        "aws:allow_action:partnercentral:DeleteBusinessPlanAttachment",
+        "aws:allow_action:partnercentral:DeleteBusinessPlanItem",
+        "aws:allow_action:partnercentral:DisassociateBusinessPlan",
+        "aws:allow_action:partnercentral:GetBusinessPlan",
+        "aws:allow_action:partnercentral:GetBusinessPlanAttachment",
+        "aws:allow_action:partnercentral:GetBusinessPlanAttachmentImportTask",
+        "aws:allow_action:partnercentral:GetBusinessPlanItem",
+        "aws:allow_action:partnercentral:GetBusinessPlanItemSchema",
+        "aws:allow_action:partnercentral:GetBusinessPlanSettings",
+        "aws:allow_action:partnercentral:GetBusinessPlanSubmissionTask",
+        "aws:allow_action:partnercentral:GetPartnerReportingData",
+        "aws:allow_action:partnercentral:ListBusinessPlanAssociations",
+        "aws:allow_action:partnercentral:ListBusinessPlanAttachmentImportTasks",
+        "aws:allow_action:partnercentral:ListBusinessPlanAttachments",
+        "aws:allow_action:partnercentral:ListBusinessPlanHistory",
+        "aws:allow_action:partnercentral:ListBusinessPlanItems",
+        "aws:allow_action:partnercentral:ListBusinessPlanSubmissionTasks",
+        "aws:allow_action:partnercentral:ListBusinessPlans",
+        "aws:allow_action:partnercentral:PutBusinessPlanSettings",
+        "aws:allow_action:partnercentral:StartBusinessPlanAttachmentImportTask",
+        "aws:allow_action:partnercentral:StartBusinessPlanSubmissionTask",
+        "aws:allow_action:partnercentral:TagResource",
+        "aws:allow_action:partnercentral:UntagResource",
+        "aws:allow_action:partnercentral:UpdateBusinessPlan",
+        "aws:allow_action:partnercentral:UpdateBusinessPlanItem",
+        "aws:allow_action:s3:PutObject"
+      ],
+      "display_name": "AWSPartnerCentralBusinessPlanManagement",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralBusinessPlanManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralBusinessPlanManagement"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:cloudformation:DescribeStackInstance",
+        "aws:allow_action:cloudformation:DescribeStackSet",
+        "aws:allow_action:cloudformation:DescribeStackSetOperation",
+        "aws:allow_action:cloudformation:DescribeStacks",
+        "aws:allow_action:cloudformation:ListStackInstances",
+        "aws:allow_action:cloudformation:ListStackSetOperations",
+        "aws:allow_action:organizations:DescribeAccount",
+        "aws:allow_action:organizations:DescribeOrganization",
+        "aws:allow_action:organizations:DescribeOrganizationalUnit",
+        "aws:allow_action:organizations:ListAccounts",
+        "aws:allow_action:organizations:ListAccountsForParent",
+        "aws:allow_action:organizations:ListChildren",
+        "aws:allow_action:organizations:ListOrganizationalUnitsForParent",
+        "aws:allow_action:organizations:ListParents",
+        "aws:allow_action:organizations:ListRoots"
+      ],
+      "display_name": "AWSCODAServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCODAServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSCODAServiceRolePolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:notifications:AssociateManagedNotificationAccountContact",
+        "aws:allow_action:notifications:DisassociateManagedNotificationAccountContact",
+        "aws:allow_action:notifications:ListManagedNotificationChannelAssociations"
+      ],
+      "display_name": "AWSNotificationsContactAssociationsServiceLinkedRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSNotificationsContactAssociationsServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSNotificationsContactAssociationsServiceLinkedRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:aws-marketplace:GetSellerReportingData",
+      "aws:allow_action:cloudformation:DescribeStackInstance",
+      "aws:allow_action:cloudformation:DescribeStackSet",
+      "aws:allow_action:cloudformation:DescribeStackSetOperation",
+      "aws:allow_action:cloudformation:DescribeStacks",
+      "aws:allow_action:cloudformation:ListStackInstances",
+      "aws:allow_action:cloudformation:ListStackSetOperations",
+      "aws:allow_action:cloudwatch:DetectGroupOutliers",
+      "aws:allow_action:cloudwatch:GetAlert",
+      "aws:allow_action:cloudwatch:GetContextGraph",
+      "aws:allow_action:cloudwatch:GetIntelligenceConfiguration",
+      "aws:allow_action:cloudwatch:GetRecords",
+      "aws:allow_action:cloudwatch:GetSpace",
+      "aws:allow_action:cloudwatch:GetSpaceDataAccess",
+      "aws:allow_action:cloudwatch:GetTelemetryQueryResults",
+      "aws:allow_action:cloudwatch:StartTelemetryQuery",
+      "aws:allow_action:cloudwatch:StartTelemetryQuerySession",
+      "aws:allow_action:cloudwatch:StopTelemetryQuery",
+      "aws:allow_action:cloudwatch:StopTelemetryQuerySession",
+      "aws:allow_action:notifications:AssociateManagedNotificationAccountContact",
+      "aws:allow_action:notifications:DisassociateManagedNotificationAccountContact",
+      "aws:allow_action:notifications:ListManagedNotificationChannelAssociations",
+      "aws:allow_action:observabilityadmin:ListDatasetIntegrations",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:DescribeOrganizationalUnit",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:organizations:ListAccountsForParent",
+      "aws:allow_action:organizations:ListChildren",
+      "aws:allow_action:organizations:ListOrganizationalUnitsForParent",
+      "aws:allow_action:organizations:ListParents",
+      "aws:allow_action:organizations:ListRoots",
+      "aws:allow_action:partnercentral:AssociateBusinessPlan",
+      "aws:allow_action:partnercentral:CancelBusinessPlan",
+      "aws:allow_action:partnercentral:CancelBusinessPlanSubmissionTask",
+      "aws:allow_action:partnercentral:CreateBusinessPlan",
+      "aws:allow_action:partnercentral:CreateBusinessPlanItem",
+      "aws:allow_action:partnercentral:DeleteBusinessPlanAttachment",
+      "aws:allow_action:partnercentral:DeleteBusinessPlanItem",
+      "aws:allow_action:partnercentral:DisassociateBusinessPlan",
+      "aws:allow_action:partnercentral:GetBusinessPlan",
+      "aws:allow_action:partnercentral:GetBusinessPlanAttachment",
+      "aws:allow_action:partnercentral:GetBusinessPlanAttachmentImportTask",
+      "aws:allow_action:partnercentral:GetBusinessPlanItem",
+      "aws:allow_action:partnercentral:GetBusinessPlanItemSchema",
+      "aws:allow_action:partnercentral:GetBusinessPlanSettings",
+      "aws:allow_action:partnercentral:GetBusinessPlanSubmissionTask",
+      "aws:allow_action:partnercentral:GetPartnerReportingData",
+      "aws:allow_action:partnercentral:ListBusinessPlanAssociations",
+      "aws:allow_action:partnercentral:ListBusinessPlanAttachmentImportTasks",
+      "aws:allow_action:partnercentral:ListBusinessPlanAttachments",
+      "aws:allow_action:partnercentral:ListBusinessPlanHistory",
+      "aws:allow_action:partnercentral:ListBusinessPlanItems",
+      "aws:allow_action:partnercentral:ListBusinessPlanSubmissionTasks",
+      "aws:allow_action:partnercentral:ListBusinessPlans",
+      "aws:allow_action:partnercentral:PutBusinessPlanSettings",
+      "aws:allow_action:partnercentral:StartBusinessPlanAttachmentImportTask",
+      "aws:allow_action:partnercentral:StartBusinessPlanSubmissionTask",
+      "aws:allow_action:partnercentral:TagResource",
+      "aws:allow_action:partnercentral:UntagResource",
+      "aws:allow_action:partnercentral:UpdateBusinessPlan",
+      "aws:allow_action:partnercentral:UpdateBusinessPlanItem",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:secretsmanager:DeleteSecret",
+      "aws:allow_action:secretsmanager:DescribeSecret",
+      "aws:allow_action:secretsmanager:PutSecretValue",
+      "aws:allow_action:secretsmanager:RemoveRegionsFromReplication",
+      "aws:allow_action:secretsmanager:ReplicateSecretToRegions",
+      "aws:allow_action:secretsmanager:RestoreSecret",
+      "aws:allow_action:secretsmanager:RotateSecret",
+      "aws:allow_action:secretsmanager:UpdateSecretVersionStage"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "aws-marketplace:GetSellerReportingData",
+          "cloudformation:DescribeStackInstance",
+          "cloudformation:DescribeStackSet",
+          "cloudformation:DescribeStackSetOperation",
+          "cloudformation:DescribeStacks",
+          "cloudformation:ListStackInstances",
+          "cloudformation:ListStackSetOperations",
+          "cloudwatch:DetectGroupOutliers",
+          "cloudwatch:GetAlert",
+          "cloudwatch:GetContextGraph",
+          "cloudwatch:GetIntelligenceConfiguration",
+          "cloudwatch:GetRecords",
+          "cloudwatch:GetSpace",
+          "cloudwatch:GetSpaceDataAccess",
+          "cloudwatch:GetTelemetryQueryResults",
+          "cloudwatch:StartTelemetryQuery",
+          "cloudwatch:StartTelemetryQuerySession",
+          "cloudwatch:StopTelemetryQuery",
+          "cloudwatch:StopTelemetryQuerySession",
+          "notifications:AssociateManagedNotificationAccountContact",
+          "notifications:DisassociateManagedNotificationAccountContact",
+          "notifications:ListManagedNotificationChannelAssociations",
+          "observabilityadmin:ListDatasetIntegrations",
+          "organizations:DescribeAccount",
+          "organizations:DescribeOrganization",
+          "organizations:DescribeOrganizationalUnit",
+          "organizations:ListAccounts",
+          "organizations:ListAccountsForParent",
+          "organizations:ListChildren",
+          "organizations:ListOrganizationalUnitsForParent",
+          "organizations:ListParents",
+          "organizations:ListRoots",
+          "partnercentral:AssociateBusinessPlan",
+          "partnercentral:CancelBusinessPlan",
+          "partnercentral:CancelBusinessPlanSubmissionTask",
+          "partnercentral:CreateBusinessPlan",
+          "partnercentral:CreateBusinessPlanItem",
+          "partnercentral:DeleteBusinessPlanAttachment",
+          "partnercentral:DeleteBusinessPlanItem",
+          "partnercentral:DisassociateBusinessPlan",
+          "partnercentral:GetBusinessPlan",
+          "partnercentral:GetBusinessPlanAttachment",
+          "partnercentral:GetBusinessPlanAttachmentImportTask",
+          "partnercentral:GetBusinessPlanItem",
+          "partnercentral:GetBusinessPlanItemSchema",
+          "partnercentral:GetBusinessPlanSettings",
+          "partnercentral:GetBusinessPlanSubmissionTask",
+          "partnercentral:GetPartnerReportingData",
+          "partnercentral:ListBusinessPlanAssociations",
+          "partnercentral:ListBusinessPlanAttachmentImportTasks",
+          "partnercentral:ListBusinessPlanAttachments",
+          "partnercentral:ListBusinessPlanHistory",
+          "partnercentral:ListBusinessPlanItems",
+          "partnercentral:ListBusinessPlanSubmissionTasks",
+          "partnercentral:ListBusinessPlans",
+          "partnercentral:PutBusinessPlanSettings",
+          "partnercentral:StartBusinessPlanAttachmentImportTask",
+          "partnercentral:StartBusinessPlanSubmissionTask",
+          "partnercentral:TagResource",
+          "partnercentral:UntagResource",
+          "partnercentral:UpdateBusinessPlan",
+          "partnercentral:UpdateBusinessPlanItem",
+          "s3:PutObject",
+          "secretsmanager:DeleteSecret",
+          "secretsmanager:DescribeSecret",
+          "secretsmanager:PutSecretValue",
+          "secretsmanager:RemoveRegionsFromReplication",
+          "secretsmanager:ReplicateSecretToRegions",
+          "secretsmanager:RestoreSecret",
+          "secretsmanager:RotateSecret",
+          "secretsmanager:UpdateSecretVersionStage"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:GetAlert",
+              "cloudwatch:GetContextGraph",
+              "cloudwatch:GetIntelligenceConfiguration",
+              "cloudwatch:GetRecords",
+              "cloudwatch:GetSpace",
+              "cloudwatch:GetTelemetryQueryResults",
+              "cloudwatch:StartTelemetryQuery",
+              "cloudwatch:StartTelemetryQuerySession",
+              "cloudwatch:StopTelemetryQuery",
+              "cloudwatch:StopTelemetryQuerySession",
+              "observabilityadmin:ListDatasetIntegrations"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v15 (default)",
+          "before": "v14 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 11, 2026, 00:37 UTC",
+          "before": "November 06, 2026, 21:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 11, 2026, 00:37 UTC",
+          "before": "November 06, 2026, 21:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "CloudWatchOmniSpaceAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:GetSpaceDataAccess"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v3 (default)",
+          "before": "v2 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 11, 2026, 01:27 UTC",
+          "before": "October 14, 2026, 22:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 11, 2026, 01:27 UTC",
+          "before": "October 14, 2026, 22:17 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy"
+    },
+    {
+      "display_name": "CloudWatchReadOnlyAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:DetectGroupOutliers"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v27 (default)",
+          "before": "v26 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 11, 2026, 13:47 UTC",
+          "before": "November 09, 2026, 19:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 11, 2026, 13:47 UTC",
+          "before": "November 09, 2026, 19:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
+    },
+    {
+      "display_name": "AmazonCognitoIdpServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "secretsmanager:DeleteSecret",
+              "secretsmanager:DescribeSecret",
+              "secretsmanager:PutSecretValue",
+              "secretsmanager:RemoveRegionsFromReplication",
+              "secretsmanager:ReplicateSecretToRegions",
+              "secretsmanager:RestoreSecret",
+              "secretsmanager:RotateSecret",
+              "secretsmanager:UpdateSecretVersionStage"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 10, 2026, 19:27 UTC",
+          "before": "June 26, 2020, 22:30 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 10, 2026, 19:27 UTC",
+          "before": "June 26, 2020, 22:30 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonCognitoIdpServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonCognitoIdpServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-11-12T11:21:39Z",
+  "counts": {
+    "added_atoms": 71,
+    "added_objects": 3,
+    "changed_objects": 4,
+    "current_objects": 1621,
+    "previous_objects": 1618,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-12",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-11-11",
+  "removed_objects": []
+}

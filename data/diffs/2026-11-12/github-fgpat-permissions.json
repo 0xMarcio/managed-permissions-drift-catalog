@@ -1,0 +1,68 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "github:fgpat:user:issue-fields:read",
+        "github:fgpat:user:issue-fields:write"
+      ],
+      "display_name": "Issue Fields",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#user-permissions-for-issue-fields",
+      "stable_id": "github-fgpat:user:issue-fields"
+    },
+    {
+      "atoms_added": [
+        "github:fgpat:user:issue-types:read",
+        "github:fgpat:user:issue-types:write"
+      ],
+      "display_name": "Issue Types",
+      "source_url": "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens#user-permissions-for-issue-types",
+      "stable_id": "github-fgpat:user:issue-types"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "github:fgpat:user:issue-fields:read",
+      "github:fgpat:user:issue-fields:write",
+      "github:fgpat:user:issue-types:read",
+      "github:fgpat:user:issue-types:write"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:endpoints": [
+          "DELETE /user/issue-fields/{issue_field_id} -> write",
+          "DELETE /user/issue-types/{issue_type_id} -> write",
+          "GET /user/issue-fields -> read",
+          "GET /user/issue-types -> read",
+          "PATCH /user/issue-fields/{issue_field_id} -> write",
+          "POST /user/issue-fields -> write",
+          "POST /user/issue-types -> write",
+          "PUT /user/issue-types/{issue_type_id} -> write"
+        ],
+        "grant:levels": [
+          "read",
+          "read",
+          "write",
+          "write"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [],
+  "compared_at_utc": "2026-11-12T11:21:39Z",
+  "counts": {
+    "added_atoms": 4,
+    "added_objects": 2,
+    "changed_objects": 0,
+    "current_objects": 78,
+    "previous_objects": 76,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-12",
+  "dataset": "github-fgpat-permissions",
+  "platform": "github",
+  "previous_snapshot_date": "2026-11-10",
+  "removed_objects": []
+}
