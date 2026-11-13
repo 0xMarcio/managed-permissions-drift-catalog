@@ -1,0 +1,361 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:acm:DescribeCertificate",
+        "aws:allow_action:ec2:AllocateAddress",
+        "aws:allow_action:ec2:AssociateAddress",
+        "aws:allow_action:ec2:DescribeAddresses",
+        "aws:allow_action:ec2:DescribeInstances",
+        "aws:allow_action:ec2:DescribeInternetGateways",
+        "aws:allow_action:ec2:DescribeNetworkInterfaces",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:ec2:DisassociateAddress",
+        "aws:allow_action:ecs:DescribeContainerInstances",
+        "aws:allow_action:ecs:DescribeTasks",
+        "aws:allow_action:ecs:ListContainerInstances",
+        "aws:allow_action:ecs:ListTasks",
+        "aws:allow_action:resource-groups:ListGroupResources",
+        "aws:allow_action:tag:GetResources"
+      ],
+      "display_name": "AWSNetworkFirewallIGWServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSNetworkFirewallIGWServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSNetworkFirewallIGWServiceRolePolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:AssignPrivateIpAddresses",
+        "aws:allow_action:ec2:CreateNetworkInterface",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:DeleteNetworkInterface",
+        "aws:allow_action:ec2:DescribeAvailabilityZones",
+        "aws:allow_action:ec2:DescribeNetworkInterfaces",
+        "aws:allow_action:ec2:DescribeSecurityGroupRules",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeTags",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:ec2:GetSecurityGroupsForVpc",
+        "aws:allow_action:ec2:UnassignPrivateIpAddresses"
+      ],
+      "display_name": "AmazonBioDiscoveryServiceLinkedRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBioDiscoveryServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonBioDiscoveryServiceLinkedRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:acm:DescribeCertificate",
+      "aws:allow_action:aidevops:GetKnowledgeGraph",
+      "aws:allow_action:aidevops:GetPlan",
+      "aws:allow_action:aidevops:ListAgentSpaceMetrics",
+      "aws:allow_action:aidevops:ListAssetChanges",
+      "aws:allow_action:aidevops:StopPlan",
+      "aws:allow_action:cloudwatch:GetMetricData",
+      "aws:allow_action:datazone:CreateNotificationPreference",
+      "aws:allow_action:datazone:GetNotificationPreference",
+      "aws:allow_action:datazone:UpdateNotificationPreference",
+      "aws:allow_action:ec2:AllocateAddress",
+      "aws:allow_action:ec2:AssignPrivateIpAddresses",
+      "aws:allow_action:ec2:AssociateAddress",
+      "aws:allow_action:ec2:CreateNetworkInterface",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:DeleteNetworkInterface",
+      "aws:allow_action:ec2:DescribeAddresses",
+      "aws:allow_action:ec2:DescribeAvailabilityZones",
+      "aws:allow_action:ec2:DescribeInstanceTypeOfferings",
+      "aws:allow_action:ec2:DescribeInstances",
+      "aws:allow_action:ec2:DescribeInternetGateways",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeNetworkInterfaces",
+      "aws:allow_action:ec2:DescribeSecurityGroupRules",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeTags",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ec2:DisassociateAddress",
+      "aws:allow_action:ec2:GetSecurityGroupsForVpc",
+      "aws:allow_action:ec2:UnassignPrivateIpAddresses",
+      "aws:allow_action:ecs:DescribeContainerInstances",
+      "aws:allow_action:ecs:DescribeTasks",
+      "aws:allow_action:ecs:ListContainerInstances",
+      "aws:allow_action:ecs:ListTasks",
+      "aws:allow_action:elasticloadbalancing:DescribeTags",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+      "aws:allow_action:elasticloadbalancing:RegisterTargets",
+      "aws:allow_action:logs:CreateLogGroup",
+      "aws:allow_action:logs:CreateLogStream",
+      "aws:allow_action:logs:PutLogEvents",
+      "aws:allow_action:logs:PutRetentionPolicy",
+      "aws:allow_action:mgn:CreateRemoteSourceAction",
+      "aws:allow_action:mgn:DeleteRemoteSourceAction",
+      "aws:allow_action:mgn:GetLaunchConfigurationDefaults",
+      "aws:allow_action:mgn:ListRemoteSourceActionInvocationResults",
+      "aws:allow_action:mgn:ListRemoteSourceActionInvocations",
+      "aws:allow_action:mgn:ListRemoteSourceActionJobs",
+      "aws:allow_action:mgn:ListRemoteSourceActions",
+      "aws:allow_action:mgn:StartRemoteSourceActionJob",
+      "aws:allow_action:mgn:UpdateLaunchConfigurationDefaults",
+      "aws:allow_action:mgn:UpdateRemoteSourceAction",
+      "aws:allow_action:resource-groups:ListGroupResources",
+      "aws:allow_action:s3-outposts:ListOutpostsWithS3",
+      "aws:allow_action:tag:GetResources"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "acm:DescribeCertificate",
+          "aidevops:GetKnowledgeGraph",
+          "aidevops:GetPlan",
+          "aidevops:ListAgentSpaceMetrics",
+          "aidevops:ListAssetChanges",
+          "aidevops:StopPlan",
+          "cloudwatch:GetMetricData",
+          "datazone:CreateNotificationPreference",
+          "datazone:GetNotificationPreference",
+          "datazone:UpdateNotificationPreference",
+          "ec2:AllocateAddress",
+          "ec2:AssignPrivateIpAddresses",
+          "ec2:AssociateAddress",
+          "ec2:CreateNetworkInterface",
+          "ec2:CreateTags",
+          "ec2:DeleteNetworkInterface",
+          "ec2:DescribeAddresses",
+          "ec2:DescribeAvailabilityZones",
+          "ec2:DescribeInstanceTypeOfferings",
+          "ec2:DescribeInstances",
+          "ec2:DescribeInternetGateways",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeNetworkInterfaces",
+          "ec2:DescribeSecurityGroupRules",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeTags",
+          "ec2:DescribeVpcs",
+          "ec2:DescribeVpcs",
+          "ec2:DisassociateAddress",
+          "ec2:GetSecurityGroupsForVpc",
+          "ec2:UnassignPrivateIpAddresses",
+          "ecs:DescribeContainerInstances",
+          "ecs:DescribeTasks",
+          "ecs:ListContainerInstances",
+          "ecs:ListTasks",
+          "elasticloadbalancing:DescribeTags",
+          "elasticloadbalancing:DescribeTargetGroups",
+          "elasticloadbalancing:DescribeTargetHealth",
+          "elasticloadbalancing:RegisterTargets",
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents",
+          "logs:PutRetentionPolicy",
+          "mgn:CreateRemoteSourceAction",
+          "mgn:DeleteRemoteSourceAction",
+          "mgn:GetLaunchConfigurationDefaults",
+          "mgn:ListRemoteSourceActionInvocationResults",
+          "mgn:ListRemoteSourceActionInvocations",
+          "mgn:ListRemoteSourceActionJobs",
+          "mgn:ListRemoteSourceActions",
+          "mgn:StartRemoteSourceActionJob",
+          "mgn:UpdateLaunchConfigurationDefaults",
+          "mgn:UpdateRemoteSourceAction",
+          "resource-groups:ListGroupResources",
+          "s3-outposts:ListOutpostsWithS3",
+          "tag:GetResources"
+        ]
+      },
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsOperatorAppAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aidevops:GetKnowledgeGraph",
+              "aidevops:GetPlan",
+              "aidevops:ListAgentSpaceMetrics",
+              "aidevops:ListAssetChanges",
+              "aidevops:StopPlan"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v13 (default)",
+          "before": "v12 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 11, 2026, 18:07 UTC",
+          "before": "November 05, 2026, 01:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 11, 2026, 18:07 UTC",
+          "before": "November 05, 2026, 01:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsOperatorAppAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsOperatorAppAccessPolicy"
+    },
+    {
+      "display_name": "AWSTransformServerMigrationAgentPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "cloudwatch:GetMetricData",
+              "ec2:DescribeInstanceTypeOfferings",
+              "elasticloadbalancing:DescribeTags",
+              "elasticloadbalancing:DescribeTargetGroups",
+              "elasticloadbalancing:DescribeTargetHealth",
+              "elasticloadbalancing:RegisterTargets",
+              "mgn:CreateRemoteSourceAction",
+              "mgn:DeleteRemoteSourceAction",
+              "mgn:GetLaunchConfigurationDefaults",
+              "mgn:ListRemoteSourceActionInvocationResults",
+              "mgn:ListRemoteSourceActionInvocations",
+              "mgn:ListRemoteSourceActionJobs",
+              "mgn:ListRemoteSourceActions",
+              "mgn:StartRemoteSourceActionJob",
+              "mgn:UpdateLaunchConfigurationDefaults",
+              "mgn:UpdateRemoteSourceAction",
+              "s3-outposts:ListOutpostsWithS3"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 12, 2026, 06:37 UTC",
+          "before": "October 11, 2026, 08:47 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 12, 2026, 06:37 UTC",
+          "before": "October 11, 2026, 08:47 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 61,
+          "before": 52,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTransformServerMigrationAgentPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSTransformServerMigrationAgentPolicy"
+    },
+    {
+      "display_name": "AuroraDsqlServiceLinkedRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "logs:CreateLogGroup",
+              "logs:CreateLogStream",
+              "logs:PutLogEvents",
+              "logs:PutRetentionPolicy"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 12, 2026, 00:37 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 12, 2026, 00:37 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AuroraDsqlServiceLinkedRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AuroraDsqlServiceLinkedRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioDomainExecutionRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "datazone:CreateNotificationPreference",
+              "datazone:GetNotificationPreference",
+              "datazone:UpdateNotificationPreference"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v26 (default)",
+          "before": "v25 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 12, 2026, 14:17 UTC",
+          "before": "November 05, 2026, 22:47 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 12, 2026, 14:17 UTC",
+          "before": "November 05, 2026, 22:47 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioDomainExecutionRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioDomainExecutionRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-11-13T11:05:53Z",
+  "counts": {
+    "added_atoms": 57,
+    "added_objects": 2,
+    "changed_objects": 4,
+    "current_objects": 1623,
+    "previous_objects": 1621,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-13",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-11-12",
+  "removed_objects": []
+}
