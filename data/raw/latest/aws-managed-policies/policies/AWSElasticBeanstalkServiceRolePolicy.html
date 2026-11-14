@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: September 13, 2017, 23:46 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 18, 2026, 17:17 UTC</p>
+                <p><b>Edited time:</b>  November 12, 2026, 20:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSElasticBeanstalkServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSElasticBeanstalkServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v8 (default)</p>
+        <p><b>Policy version:</b> v9 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -246,6 +246,19 @@
             "pods.eks.amazonaws.com",
             "elasticbeanstalk.amazonaws.com"
           ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "EBIamSimulateRolePermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource" : "arn:aws:iam::*:role/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
