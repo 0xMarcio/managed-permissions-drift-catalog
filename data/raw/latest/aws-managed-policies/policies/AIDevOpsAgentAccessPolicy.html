@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 11, 2026, 00:37 UTC</p>
+                <p><b>Edited time:</b>  November 14, 2026, 00:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsAgentAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v15 (default)</p>
+        <p><b>Policy version:</b> v16 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -385,7 +385,9 @@
         "directconnect:DescribeInterconnects",
         "directconnect:DescribeLags",
         "directconnect:DescribeTags",
+        "directconnect:DescribeVirtualGateways",
         "directconnect:DescribeVirtualInterfaces",
+        "directconnect:ListVirtualInterfaceRoutes",
         "dms:Describe*",
         "dms:List*",
         "ds:Describe*",
@@ -395,21 +397,34 @@
         "ec2:Describe*",
         "ec2:GetActiveVpnTunnelStatus",
         "ec2:GetAssociatedEnclaveCertificateIamRoles",
+        "ec2:GetAssociatedIpv6PoolCidrs",
         "ec2:GetAwsNetworkPerformanceData",
         "ec2:GetCapacityManagerAttributes",
         "ec2:GetCapacityManagerMetricData",
         "ec2:GetCapacityManagerMonitoredTagKeys",
+        "ec2:GetIpamDiscoveredAccounts",
+        "ec2:GetIpamDiscoveredPublicAddresses",
+        "ec2:GetIpamDiscoveredResourceCidrs",
         "ec2:GetIpamPoolAllocations",
         "ec2:GetIpamPoolCidrs",
+        "ec2:GetIpamResourceCidrs",
+        "ec2:GetManagedPrefixListAssociations",
         "ec2:GetManagedPrefixListEntries",
         "ec2:GetNetworkInsightsAccessScopeContent",
+        "ec2:GetRouteServerPropagations",
+        "ec2:GetRouteServerRoutingDatabase",
         "ec2:GetSnapshotBlockPublicAccessState",
+        "ec2:GetSubnetCidrReservations",
+        "ec2:GetTransitGatewayAttachmentPropagations",
         "ec2:GetTransitGatewayMulticastDomainAssociations",
+        "ec2:GetTransitGatewayPolicyTableEntries",
+        "ec2:GetTransitGatewayPrefixListReferences",
         "ec2:GetTransitGatewayRouteTableAssociations",
         "ec2:GetTransitGatewayRouteTablePropagations",
         "ec2:GetVerifiedAccessEndpointPolicy",
         "ec2:GetVerifiedAccessGroupPolicy",
         "ec2:GetVerifiedAccessInstanceWebAcl",
+        "ec2:GetVpcResourcesBlockingEncryptionEnforcement",
         "ec2:GetVpnConnectionDeviceTypes",
         "ec2:GetVpnTunnelReplacementStatus",
         "ec2:SearchLocalGatewayRoutes",
@@ -577,6 +592,7 @@
         "internetmonitor:GetQueryResults",
         "internetmonitor:GetQueryStatus",
         "internetmonitor:List*",
+        "internetmonitor:StartQuery",
         "iot:Describe*",
         "iot:GetPackage",
         "iot:GetPackageVersion",
@@ -739,11 +755,18 @@
         "networkmanager:GetConnectAttachment",
         "networkmanager:GetConnectPeer",
         "networkmanager:GetCoreNetwork",
+        "networkmanager:GetCoreNetworkChangeEvents",
+        "networkmanager:GetCoreNetworkChangeSet",
         "networkmanager:GetCoreNetworkPolicy",
         "networkmanager:GetCustomerGatewayAssociations",
         "networkmanager:GetDevices",
+        "networkmanager:GetDirectConnectGatewayAttachment",
         "networkmanager:GetLinkAssociations",
         "networkmanager:GetLinks",
+        "networkmanager:GetNetworkResourceCounts",
+        "networkmanager:GetNetworkResourceRelationships",
+        "networkmanager:GetNetworkResources",
+        "networkmanager:GetNetworkRoutes",
         "networkmanager:GetSites",
         "networkmanager:GetSiteToSiteVpnAttachment",
         "networkmanager:GetTransitGatewayPeering",
@@ -801,6 +824,7 @@
         "qbusiness:GetWebExperience",
         "qbusiness:List*",
         "ram:GetPermission",
+        "ram:GetResourceShareAssociations",
         "ram:GetResourceShares",
         "ram:List*",
         "rds:Describe*",
@@ -1006,11 +1030,15 @@
         "verifiedpermissions:List*",
         "vpc-lattice:GetAccessLogSubscription",
         "vpc-lattice:GetAuthPolicy",
+        "vpc-lattice:GetDomainVerification",
         "vpc-lattice:GetListener",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:GetResourceGateway",
         "vpc-lattice:GetResourcePolicy",
         "vpc-lattice:GetRule",
         "vpc-lattice:GetService",
         "vpc-lattice:GetServiceNetwork",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
         "vpc-lattice:GetServiceNetworkServiceAssociation",
         "vpc-lattice:GetServiceNetworkVpcAssociation",
         "vpc-lattice:GetTargetGroup",

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:59 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 29, 2026, 22:37 UTC</p>
+                <p><b>Edited time:</b>  November 13, 2026, 20:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectUserRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v76 (default)</p>
+        <p><b>Policy version:</b> v77 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -426,7 +426,8 @@
         "glue:*DataQuality*"
       ],
       "Resource" : [
-        "arn:aws:glue:*:*:dataQualityRuleset/dq_etl_ruleset_$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}_*"
+        "arn:aws:glue:*:*:dataQualityRuleset/dq_etl_ruleset_$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}_*",
+        "arn:aws:glue:*:*:dataQualityEvaluationConfig/sagemaker_unified_studio_profiling_$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}_*"
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
@@ -1433,7 +1434,8 @@
             "access-grants.s3.amazonaws.com",
             "pods.eks.amazonaws.com",
             "bedrock-agentcore.amazonaws.com",
-            "agent-registry.amazonaws.com"
+            "agent-registry.amazonaws.com",
+            "bedrock.amazonaws.com"
           ]
         }
       }
@@ -2082,19 +2084,24 @@
         "bedrock:CreateBlueprint",
         "bedrock:CreateBlueprintVersion",
         "bedrock:CreateDataAutomationProject",
+        "bedrock:CreateDataSource",
         "bedrock:CreateEvaluationJob",
+        "bedrock:CreateKnowledgeBase",
         "bedrock:CreatePrompt",
         "bedrock:CreatePromptVersion",
         "bedrock:DeleteAgentAlias",
         "bedrock:DeleteAgentVersion",
         "bedrock:DeleteBlueprint",
         "bedrock:DeleteDataAutomationProject",
+        "bedrock:DeleteDataSource",
+        "bedrock:DeleteKnowledgeBase",
         "bedrock:DeletePrompt",
         "bedrock:GetAgentAlias",
         "bedrock:GetAgentVersion",
         "bedrock:GetBlueprint",
         "bedrock:GetDataAutomationProject",
         "bedrock:GetDataAutomationStatus",
+        "bedrock:GetDataSource",
         "bedrock:GetEvaluationJob",
         "bedrock:GetKnowledgeBase",
         "bedrock:GetIngestionJob",
@@ -2104,6 +2111,7 @@
         "bedrock:InvokeFlow",
         "bedrock:ListAgentAliases",
         "bedrock:ListAgentVersions",
+        "bedrock:ListDataSources",
         "bedrock:ListIngestionJobs",
         "bedrock:ListPrompts",
         "bedrock:ListTagsForResource",
@@ -2113,6 +2121,8 @@
         "bedrock:UpdateAgentAlias",
         "bedrock:UpdateBlueprint",
         "bedrock:UpdateDataAutomationProject",
+        "bedrock:UpdateDataSource",
+        "bedrock:UpdateKnowledgeBase",
         "bedrock:ListAgentActionGroups",
         "bedrock:ListAgentKnowledgeBases"
       ],

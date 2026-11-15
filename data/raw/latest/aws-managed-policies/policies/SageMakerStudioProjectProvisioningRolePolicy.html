@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 20, 2024, 21:58 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 12, 2026, 16:17 UTC</p>
+                <p><b>Edited time:</b>  November 13, 2026, 20:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioProjectProvisioningRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v84 (default)</p>
+        <p><b>Policy version:</b> v85 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -142,14 +142,14 @@
         "cloudformation:ValidateTemplate",
         "codecommit:ListRepositories",
         "eks:DescribeCluster",
-        "elasticmapreduce:CreateSecurityConfiguration",
-        "elasticmapreduce:DeleteSecurityConfiguration",
-        "elasticmapreduce:DescribeSecurityConfiguration",
+        "elasticmapreduce:*SecurityConfiguration",
         "glue:DescribeConnectionType",
         "glue:ListConnectionTypes",
         "glue:*GlueIdentityCenterConfiguration",
         "iam:ListPolicies",
         "logs:DescribeLogGroups",
+        "ram:GetResourceShare*",
+        "ram:ListResources",
         "redshift-data:DescribeStatement",
         "redshift-data:GetStatementResult",
         "redshift-serverless:ListNamespaces",
@@ -322,25 +322,6 @@
         "arn:aws:iam::*:role/BedrockStudio*",
         "arn:aws:iam::*:role/AmazonBedrockConsumptionRole*",
         "arn:aws:iam::*:role/AmazonBedrockEvaluation*"
-      ],
-      "Condition" : <span>{</span>
-        "Null" : <span>{</span>
-          "aws:ResourceTag/AmazonDataZoneProject" : "false"
-        },
-        "StringEquals" : <span>{</span>
-          "iam:PermissionsBoundary" : "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePermissionsBoundary"
-        }
-      }
-    },
-    <span>{</span>
-      "Sid" : "IamDzMng",
-      "Effect" : "Allow",
-      "Action" : [
-        "iam:DeleteRolePolicy",
-        "iam:PutRolePolicy"
-      ],
-      "Resource" : [
-        "arn:aws:iam::*:role/datazone*"
       ],
       "Condition" : <span>{</span>
         "Null" : <span>{</span>
@@ -736,7 +717,11 @@
       "Effect" : "Allow",
       "Action" : "iam:PassRole",
       "Resource" : [
-        "arn:aws:iam::*:role/datazone_usr_role_*"
+        "arn:aws:iam::*:role/datazone_usr_role_*",
+        "arn:aws:iam::*:role/service-role/AmazonSageMakerAdminIAMExecutionRole*",
+        "arn:aws:iam::*:role/service-role/AmazonSageMakerUserIAMExecutionRole*",
+        "arn:aws:iam::*:role/AmazonSageMakerAdminIAMExecutionRole*",
+        "arn:aws:iam::*:role/AmazonSageMakerUserIAMExecutionRole*"
       ],
       "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
@@ -744,7 +729,8 @@
             "datazone.amazonaws.com",
             "sagemaker.amazonaws.com",
             "redshift-serverless.amazonaws.com",
-            "bedrock.amazonaws.com"
+            "bedrock.amazonaws.com",
+            "pods.eks.amazonaws.com"
           ]
         }
       }
@@ -842,7 +828,8 @@
       "Effect" : "Allow",
       "Action" : [
         "glue:CreateDatabase",
-        "glue:GetDatabase"
+        "glue:GetDatabase",
+        "glue:GetDatabases"
       ],
       "Resource" : [
         "arn:aws:glue:*:*:database/default",
@@ -876,7 +863,8 @@
       "Sid" : "GlueDbTag",
       "Effect" : "Allow",
       "Action" : [
-        "glue:GetDatabase"
+        "glue:GetDatabase",
+        "glue:GetDatabases"
       ],
       "Resource" : [
         "arn:aws:glue:*:*:database/*",
@@ -924,25 +912,12 @@
       }
     },
     <span>{</span>
-      "Sid" : "GlueConnTag",
-      "Effect" : "Allow",
-      "Action" : "glue:GetConnection",
-      "Resource" : [
-        "arn:aws:glue:*:*:catalog",
-        "arn:aws:glue:*:*:connection/datazone-glue-network-connection-*"
-      ],
-      "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        }
-      }
-    },
-    <span>{</span>
       "Sid" : "GlueConnMng",
       "Effect" : "Allow",
       "Action" : [
         "glue:CreateConnection",
-        "glue:DeleteConnection"
+        "glue:DeleteConnection",
+        "glue:GetConnection"
       ],
       "Resource" : [
         "arn:aws:glue:*:*:connection/datazone-glue-network-connection-*",
@@ -1059,7 +1034,8 @@
       "Effect" : "Allow",
       "Action" : [
         "glue:DeleteConnection",
-        "glue:UpdateConnection"
+        "glue:UpdateConnection",
+        "glue:GetDataCatalogEncryptionSettings"
       ],
       "Resource" : [
         "arn:aws:glue:*:*:catalog"
@@ -1088,17 +1064,6 @@
           "kms:ViaService" : [
             "glue.*.amazonaws.com"
           ]
-        }
-      }
-    },
-    <span>{</span>
-      "Sid" : "GetDataCatalogEncSett",
-      "Effect" : "Allow",
-      "Action" : "glue:GetDataCatalogEncryptionSettings",
-      "Resource" : "arn:aws:glue:*:*:catalog",
-      "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
     },
@@ -1347,6 +1312,26 @@
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
           "lakeformation:EnabledOnlyForMetaDataAccess" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "S3TablesProvision",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3tables:GetTableBucket",
+        "s3tables:CreateTableBucket",
+        "s3tables:DeleteTableBucket",
+        "s3tables:ListNamespaces",
+        "s3tables:GetNamespace",
+        "s3tables:CreateNamespace",
+        "s3tables:DeleteNamespace",
+        "s3tables:TagResource"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "aws:ResourceTag/AmazonDataZoneProject" : "false"
         }
       }
     },
@@ -1709,22 +1694,6 @@
           "aws:ResourceTag/AmazonDataZoneProject" : "false",
           "aws:TagKeys" : "false"
         },
-        "StringEquals" : <span>{</span>
-          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
-        }
-      }
-    },
-    <span>{</span>
-      "Sid" : "TagRSS",
-      "Effect" : "Allow",
-      "Action" : [
-        "redshift-serverless:ListTagsForResource"
-      ],
-      "Resource" : [
-        "arn:aws:redshift-serverless:*:*:namespace/*",
-        "arn:aws:redshift-serverless:*:*:workgroup/*"
-      ],
-      "Condition" : <span>{</span>
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
@@ -2714,15 +2683,6 @@
       }
     },
     <span>{</span>
-      "Sid" : "EmrInstanceCleanup",
-      "Effect" : "Allow",
-      "Action" : [
-        "iam:RemoveRoleFromInstanceProfile",
-        "iam:DeleteInstanceProfile"
-      ],
-      "Resource" : "arn:aws:iam::*:instance-profile/datazone_emr_ec2_instance_profile_*"
-    },
-    <span>{</span>
       "Sid" : "Scheduler",
       "Effect" : "Allow",
       "Action" : [
@@ -3014,18 +2974,75 @@
         "sso:PutApplicationAssignmentConfiguration",
         "sso:PutApplicationAuthenticationMethod",
         "sso:PutApplicationGrant",
-        "sso:PutApplicationSessionConfiguration"
+        "sso:PutApplicationSessionConfiguration",
+        "sso-directory:DescribeUser",
+        "sso-directory:DescribeGroup",
+        "identitystore:GetUserId",
+        "identitystore:GetGroupId",
+        "identitystore:DescribeUser",
+        "identitystore:DescribeGroup"
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
         "ForAnyValue:StringLike" : <span>{</span>
           "aws:CalledVia" : [
+            "athena.amazonaws.com",
             "elasticmapreduce.amazonaws.com",
             "emr-containers.amazonaws.com",
             "glue.amazonaws.com",
             "lakeformation.amazonaws.com",
             "ops.emr-serverless.amazonaws.com"
           ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "RamShare",
+      "Effect" : "Allow",
+      "Action" : [
+        "ram:AcceptResourceShareInvitation",
+        "ram:DeleteResourceShare",
+        "ram:TagResource"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "ram:ResourceShareName" : "DataZone*"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "RamCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "ram:AssociateResourceShare",
+        "ram:CreateResourceShare"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEqualsIfExists" : <span>{</span>
+          "ram:RequestedResourceType" : [
+            "glue:Catalog",
+            "glue:Database",
+            "glue:Table"
+          ]
+        },
+        "StringLike" : <span>{</span>
+          "ram:ResourceShareName" : "DataZone*"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "GlueRamRP",
+      "Effect" : "Allow",
+      "Action" : [
+        "glue:DeleteResourcePolicy",
+        "glue:PutResourcePolicy"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : "ram.amazonaws.com"
         }
       }
     },
@@ -3042,7 +3059,8 @@
         "emr-containers:DescribeSecurityConfiguration",
         "emr-containers:DescribeVirtualCluster",
         "emr-containers:DescribeManagedEndpoint",
-        "emr-containers:TagResource"
+        "emr-containers:TagResource",
+        "emr-containers:UntagResource"
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>

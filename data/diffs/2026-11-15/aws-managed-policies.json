@@ -1,0 +1,1659 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:cloudtrail:CreateServiceLinkedChannel",
+        "aws:allow_action:cloudtrail:DeleteServiceLinkedChannel",
+        "aws:allow_action:cloudtrail:GetServiceLinkedChannel",
+        "aws:allow_action:cloudtrail:UpdateServiceLinkedChannel",
+        "aws:allow_action:config:DeleteServiceLinkedConfigurationRecorder",
+        "aws:allow_action:config:DescribeConfigurationRecorderStatus",
+        "aws:allow_action:config:PutServiceLinkedConfigurationRecorder",
+        "aws:allow_action:iam:CreateServiceLinkedRole"
+      ],
+      "display_name": "ContinuumThreatsServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ContinuumThreatsServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/ContinuumThreatsServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:access-analyzer:CheckNoNewAccess",
+      "aws:allow_action:access-analyzer:CheckNoNewAccess",
+      "aws:allow_action:agent-registry:*",
+      "aws:allow_action:agent-registry:*",
+      "aws:allow_action:agent-registry:*",
+      "aws:allow_action:agent-registry:CreateRegistryRecord",
+      "aws:allow_action:agent-registry:CreateRegistryRecord",
+      "aws:allow_action:agent-registry:DeleteRegistryRecord",
+      "aws:allow_action:agent-registry:DeleteRegistryRecord",
+      "aws:allow_action:agent-registry:GetDiscoverableRegistryRecord",
+      "aws:allow_action:agent-registry:GetDiscoverableRegistryRecord",
+      "aws:allow_action:agent-registry:GetRegistry",
+      "aws:allow_action:agent-registry:GetRegistry",
+      "aws:allow_action:agent-registry:GetRegistryRecord",
+      "aws:allow_action:agent-registry:GetRegistryRecord",
+      "aws:allow_action:agent-registry:List*",
+      "aws:allow_action:agent-registry:List*",
+      "aws:allow_action:agent-registry:SearchDiscoverableRegistryRecords",
+      "aws:allow_action:agent-registry:SearchDiscoverableRegistryRecords",
+      "aws:allow_action:agent-registry:SubmitRegistryRecordForApproval",
+      "aws:allow_action:agent-registry:SubmitRegistryRecordForApproval",
+      "aws:allow_action:agent-registry:TagResource",
+      "aws:allow_action:agent-registry:TagResource",
+      "aws:allow_action:agent-registry:UpdateRegistryRecord",
+      "aws:allow_action:agent-registry:UpdateRegistryRecord",
+      "aws:allow_action:agent-registry:UpdateRegistryRecordStatus",
+      "aws:allow_action:agent-registry:UpdateRegistryRecordStatus",
+      "aws:allow_action:autoscaling:DescribeTags",
+      "aws:allow_action:aws-marketplace:GetSellerReportingData",
+      "aws:allow_action:bedrock-agentcore:*ApiKeyCredentialProvider",
+      "aws:allow_action:bedrock-agentcore:*ApiKeyCredentialProvider",
+      "aws:allow_action:bedrock-agentcore:*TokenVault",
+      "aws:allow_action:bedrock-agentcore:*TokenVault",
+      "aws:allow_action:bedrock-agentcore:GetResourceApiKey",
+      "aws:allow_action:bedrock-agentcore:GetResourceApiKey",
+      "aws:allow_action:bedrock-agentcore:InvokeWebSearch",
+      "aws:allow_action:bedrock-agentcore:InvokeWebSearch",
+      "aws:allow_action:bedrock-agentcore:ListApiKeyCredentialProviders",
+      "aws:allow_action:bedrock-agentcore:ListApiKeyCredentialProviders",
+      "aws:allow_action:bedrock:CreateDataSource",
+      "aws:allow_action:bedrock:CreateKnowledgeBase",
+      "aws:allow_action:bedrock:DeleteDataSource",
+      "aws:allow_action:bedrock:DeleteKnowledgeBase",
+      "aws:allow_action:bedrock:GetDataSource",
+      "aws:allow_action:bedrock:ListDataSources",
+      "aws:allow_action:bedrock:UpdateDataSource",
+      "aws:allow_action:bedrock:UpdateKnowledgeBase",
+      "aws:allow_action:cloudtrail:CreateServiceLinkedChannel",
+      "aws:allow_action:cloudtrail:DeleteServiceLinkedChannel",
+      "aws:allow_action:cloudtrail:GetServiceLinkedChannel",
+      "aws:allow_action:cloudtrail:UpdateServiceLinkedChannel",
+      "aws:allow_action:config:DeleteServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:DescribeConfigurationRecorderStatus",
+      "aws:allow_action:config:PutServiceLinkedConfigurationRecorder",
+      "aws:allow_action:datazone:AssociateGovernedTerms",
+      "aws:allow_action:datazone:AssociateGovernedTerms",
+      "aws:allow_action:datazone:CreateDataProduct",
+      "aws:allow_action:datazone:CreateDataProduct",
+      "aws:allow_action:datazone:CreateDataProductRevision",
+      "aws:allow_action:datazone:CreateDataProductRevision",
+      "aws:allow_action:datazone:CreateFormType",
+      "aws:allow_action:datazone:CreateFormType",
+      "aws:allow_action:datazone:CreateGlossary",
+      "aws:allow_action:datazone:CreateGlossary",
+      "aws:allow_action:datazone:CreateGlossaryTerm",
+      "aws:allow_action:datazone:CreateGlossaryTerm",
+      "aws:allow_action:datazone:CreateNotificationPreference",
+      "aws:allow_action:datazone:CreateNotificationPreference",
+      "aws:allow_action:datazone:DeleteDataProduct",
+      "aws:allow_action:datazone:DeleteDataProduct",
+      "aws:allow_action:datazone:DeleteFormType",
+      "aws:allow_action:datazone:DeleteFormType",
+      "aws:allow_action:datazone:DeleteGlossary",
+      "aws:allow_action:datazone:DeleteGlossary",
+      "aws:allow_action:datazone:DeleteGlossaryTerm",
+      "aws:allow_action:datazone:DeleteGlossaryTerm",
+      "aws:allow_action:datazone:DisassociateGovernedTerms",
+      "aws:allow_action:datazone:DisassociateGovernedTerms",
+      "aws:allow_action:datazone:StartDataSourceRun",
+      "aws:allow_action:datazone:StartDataSourceRun",
+      "aws:allow_action:datazone:UpdateAssetOwner",
+      "aws:allow_action:datazone:UpdateAssetOwner",
+      "aws:allow_action:datazone:UpdateAssetOwner",
+      "aws:allow_action:datazone:UpdateGlossary",
+      "aws:allow_action:datazone:UpdateGlossary",
+      "aws:allow_action:datazone:UpdateGlossaryTerm",
+      "aws:allow_action:datazone:UpdateGlossaryTerm",
+      "aws:allow_action:datazone:UpdateNotificationPreference",
+      "aws:allow_action:datazone:UpdateNotificationPreference",
+      "aws:allow_action:directconnect:DescribeVirtualGateways",
+      "aws:allow_action:directconnect:ListVirtualInterfaceRoutes",
+      "aws:allow_action:ec2:AuthorizeSecurityGroupEgress",
+      "aws:allow_action:ec2:AuthorizeSecurityGroupIngress",
+      "aws:allow_action:ec2:CreateSecurityGroup",
+      "aws:allow_action:ec2:DeleteSecurityGroup",
+      "aws:allow_action:ec2:DescribeTags",
+      "aws:allow_action:ec2:GetAssociatedIpv6PoolCidrs",
+      "aws:allow_action:ec2:GetIpamDiscoveredAccounts",
+      "aws:allow_action:ec2:GetIpamDiscoveredPublicAddresses",
+      "aws:allow_action:ec2:GetIpamDiscoveredResourceCidrs",
+      "aws:allow_action:ec2:GetIpamResourceCidrs",
+      "aws:allow_action:ec2:GetManagedPrefixListAssociations",
+      "aws:allow_action:ec2:GetRouteServerPropagations",
+      "aws:allow_action:ec2:GetRouteServerRoutingDatabase",
+      "aws:allow_action:ec2:GetSubnetCidrReservations",
+      "aws:allow_action:ec2:GetTransitGatewayAttachmentNatConfiguration",
+      "aws:allow_action:ec2:GetTransitGatewayAttachmentNatConfiguration",
+      "aws:allow_action:ec2:GetTransitGatewayAttachmentNatConfiguration",
+      "aws:allow_action:ec2:GetTransitGatewayAttachmentPropagations",
+      "aws:allow_action:ec2:GetTransitGatewayPolicyTableEntries",
+      "aws:allow_action:ec2:GetTransitGatewayPrefixListReferences",
+      "aws:allow_action:ec2:GetVpcResourcesBlockingEncryptionEnforcement",
+      "aws:allow_action:ec2:RevokeSecurityGroupEgress",
+      "aws:allow_action:ec2:RevokeSecurityGroupIngress",
+      "aws:allow_action:eks:*",
+      "aws:allow_action:eks:*",
+      "aws:allow_action:eks:*PodIdentityAssociation*",
+      "aws:allow_action:eks:AssociateAccessPolicy",
+      "aws:allow_action:eks:CreateAccessEntry",
+      "aws:allow_action:eks:DeleteAccessEntry",
+      "aws:allow_action:eks:DescribeAccessEntry",
+      "aws:allow_action:eks:DescribeCluster",
+      "aws:allow_action:eks:DisassociateAccessPolicy",
+      "aws:allow_action:eks:ListAssociatedAccessPolicies",
+      "aws:allow_action:eks:TagResource",
+      "aws:allow_action:elasticmapreduce:*SecurityConfiguration",
+      "aws:allow_action:elasticmapreduce:*SecurityConfiguration",
+      "aws:allow_action:elasticmapreduce:ModifyInstanceFleet",
+      "aws:allow_action:elasticmapreduce:RunJobFlow",
+      "aws:allow_action:elasticmapreduce:SetTerminationProtection",
+      "aws:allow_action:emr-containers:CreateManagedEndpoint",
+      "aws:allow_action:emr-containers:DeleteManagedEndpoint",
+      "aws:allow_action:emr-containers:DescribeManagedEndpoint",
+      "aws:allow_action:emr-containers:GetManagedEndpointSessionCredentials",
+      "aws:allow_action:emr-containers:ListManagedEndpoints",
+      "aws:allow_action:emr-containers:UntagResource",
+      "aws:allow_action:emr-serverless:*Application*",
+      "aws:allow_action:emr-serverless:Stop*",
+      "aws:allow_action:glue:DeleteResourcePolicy",
+      "aws:allow_action:glue:GetDatabases",
+      "aws:allow_action:glue:PutResourcePolicy",
+      "aws:allow_action:iam:AddRoleToInstanceProfile",
+      "aws:allow_action:iam:AddRoleToInstanceProfile",
+      "aws:allow_action:iam:AttachRolePolicy",
+      "aws:allow_action:iam:CreateInstanceProfile",
+      "aws:allow_action:iam:CreateInstanceProfile",
+      "aws:allow_action:iam:CreateRole",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:DeleteInstanceProfile",
+      "aws:allow_action:iam:DeleteInstanceProfile",
+      "aws:allow_action:iam:DetachRolePolicy",
+      "aws:allow_action:iam:DetachRolePolicy",
+      "aws:allow_action:iam:GetInstanceProfile",
+      "aws:allow_action:iam:GetInstanceProfile",
+      "aws:allow_action:iam:GetRolePolicy",
+      "aws:allow_action:iam:GetRolePolicy",
+      "aws:allow_action:iam:ListAttachedRolePolicies",
+      "aws:allow_action:iam:ListAttachedRolePolicies",
+      "aws:allow_action:iam:ListRolePolicies",
+      "aws:allow_action:iam:ListRolePolicies",
+      "aws:allow_action:iam:RemoveRoleFromInstanceProfile",
+      "aws:allow_action:iam:RemoveRoleFromInstanceProfile",
+      "aws:allow_action:iam:TagRole",
+      "aws:allow_action:iam:UntagRole",
+      "aws:allow_action:iam:UntagRole",
+      "aws:allow_action:iam:UpdateAssumeRolePolicy",
+      "aws:allow_action:identitystore:DescribeGroup",
+      "aws:allow_action:identitystore:DescribeUser",
+      "aws:allow_action:identitystore:GetGroupId",
+      "aws:allow_action:identitystore:GetGroupId",
+      "aws:allow_action:identitystore:GetGroupId",
+      "aws:allow_action:identitystore:GetGroupId",
+      "aws:allow_action:identitystore:GetGroupId",
+      "aws:allow_action:identitystore:GetGroupId",
+      "aws:allow_action:identitystore:GetUserId",
+      "aws:allow_action:identitystore:GetUserId",
+      "aws:allow_action:identitystore:GetUserId",
+      "aws:allow_action:identitystore:GetUserId",
+      "aws:allow_action:identitystore:GetUserId",
+      "aws:allow_action:identitystore:GetUserId",
+      "aws:allow_action:internetmonitor:StartQuery",
+      "aws:allow_action:kms:DescribeKey",
+      "aws:allow_action:kms:GetPublicKey",
+      "aws:allow_action:kms:GetPublicKey",
+      "aws:allow_action:kms:RevokeGrant",
+      "aws:allow_action:kms:RevokeGrant",
+      "aws:allow_action:lakeformation:GetDataLakeSettings",
+      "aws:allow_action:lakeformation:GetDataLakeSettings",
+      "aws:allow_action:networkmanager:GetCoreNetworkChangeEvents",
+      "aws:allow_action:networkmanager:GetCoreNetworkChangeSet",
+      "aws:allow_action:networkmanager:GetDirectConnectGatewayAttachment",
+      "aws:allow_action:networkmanager:GetNetworkResourceCounts",
+      "aws:allow_action:networkmanager:GetNetworkResourceRelationships",
+      "aws:allow_action:networkmanager:GetNetworkResources",
+      "aws:allow_action:networkmanager:GetNetworkRoutes",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentDocument",
+      "aws:allow_action:partnercentral:GetPartnerCentralContentMetadata",
+      "aws:allow_action:partnercentral:ListPartnerCentralContent",
+      "aws:allow_action:partnercentral:SearchPartnerCentralContent",
+      "aws:allow_action:pricing:GetProducts",
+      "aws:allow_action:pricing:GetProducts",
+      "aws:allow_action:ram:AcceptResourceShareInvitation",
+      "aws:allow_action:ram:AcceptResourceShareInvitation",
+      "aws:allow_action:ram:AcceptResourceShareInvitation",
+      "aws:allow_action:ram:AssociateResourceShare",
+      "aws:allow_action:ram:CreateResourceShare",
+      "aws:allow_action:ram:CreateResourceShare",
+      "aws:allow_action:ram:CreateResourceShare",
+      "aws:allow_action:ram:DeleteResourceShare",
+      "aws:allow_action:ram:GetResourceShare*",
+      "aws:allow_action:ram:GetResourceShareAssociations",
+      "aws:allow_action:ram:ListResources",
+      "aws:allow_action:ram:TagResource",
+      "aws:allow_action:ram:TagResource",
+      "aws:allow_action:ram:TagResource",
+      "aws:allow_action:redshift-serverless:*Namespace",
+      "aws:allow_action:redshift-serverless:*Resource",
+      "aws:allow_action:redshift-serverless:*Workgroup",
+      "aws:allow_action:redshift:AssociateDataShareConsumer",
+      "aws:allow_action:redshift:AuthorizeDataShare",
+      "aws:allow_action:route53:ChangeTagsForResource",
+      "aws:allow_action:route53:CreateHostedZone",
+      "aws:allow_action:route53:DeleteHostedZone",
+      "aws:allow_action:route53:GetHostedZone",
+      "aws:allow_action:s3:PutAccessGrantsInstanceResourcePolicy",
+      "aws:allow_action:s3:PutAccessGrantsInstanceResourcePolicy",
+      "aws:allow_action:s3tables:CreateNamespace",
+      "aws:allow_action:s3tables:CreateTableBucket",
+      "aws:allow_action:s3tables:DeleteNamespace",
+      "aws:allow_action:s3tables:DeleteTableBucket",
+      "aws:allow_action:s3tables:GetNamespace",
+      "aws:allow_action:s3tables:GetNamespace",
+      "aws:allow_action:s3tables:GetTable",
+      "aws:allow_action:s3tables:GetTableBucket",
+      "aws:allow_action:s3tables:GetTableBucket",
+      "aws:allow_action:s3tables:GetTableData",
+      "aws:allow_action:s3tables:GetTableMetadataLocation",
+      "aws:allow_action:s3tables:ListNamespaces",
+      "aws:allow_action:s3tables:ListNamespaces",
+      "aws:allow_action:s3tables:ListTableBuckets",
+      "aws:allow_action:s3tables:ListTables",
+      "aws:allow_action:s3tables:TagResource",
+      "aws:allow_action:secretsmanager:CreateSecret",
+      "aws:allow_action:secretsmanager:DeleteSecret",
+      "aws:allow_action:secretsmanager:GetSecretValue",
+      "aws:allow_action:secretsmanager:PutSecretValue",
+      "aws:allow_action:securityagent:ResumePentestJob",
+      "aws:allow_action:sso-directory:DescribeGroup",
+      "aws:allow_action:sso-directory:DescribeGroup",
+      "aws:allow_action:sso-directory:DescribeGroup",
+      "aws:allow_action:sso-directory:DescribeGroup",
+      "aws:allow_action:sso-directory:DescribeGroup",
+      "aws:allow_action:sso-directory:DescribeGroup",
+      "aws:allow_action:sso-directory:DescribeUser",
+      "aws:allow_action:sso-directory:DescribeUser",
+      "aws:allow_action:sso-directory:DescribeUser",
+      "aws:allow_action:sso-directory:DescribeUser",
+      "aws:allow_action:sso-directory:DescribeUser",
+      "aws:allow_action:sso-directory:DescribeUser",
+      "aws:allow_action:sso:ListInstances",
+      "aws:allow_action:sso:ListInstances",
+      "aws:allow_action:sso:ListInstances",
+      "aws:allow_action:sts:SetContext",
+      "aws:allow_action:sts:SetContext",
+      "aws:allow_action:timestream-influxdb:ListDbInstancesForCluster",
+      "aws:allow_action:vpc-lattice:GetDomainVerification",
+      "aws:allow_action:vpc-lattice:GetResourceConfiguration",
+      "aws:allow_action:vpc-lattice:GetResourceGateway",
+      "aws:allow_action:vpc-lattice:GetServiceNetworkResourceAssociation",
+      "aws:deny_action:emr-containers:DeleteManagedEndpoint",
+      "aws:deny_action:emr-containers:DeleteManagedEndpoint",
+      "aws:deny_action:emr-containers:DeleteManagedEndpoint",
+      "aws:deny_action:emr-containers:GetManagedEndpointSessionCredentials",
+      "aws:deny_action:emr-containers:GetManagedEndpointSessionCredentials",
+      "aws:deny_action:emr-containers:GetManagedEndpointSessionCredentials"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "access-analyzer:CheckNoNewAccess",
+          "access-analyzer:CheckNoNewAccess",
+          "agent-registry:*",
+          "agent-registry:*",
+          "agent-registry:*",
+          "agent-registry:CreateRegistryRecord",
+          "agent-registry:CreateRegistryRecord",
+          "agent-registry:DeleteRegistryRecord",
+          "agent-registry:DeleteRegistryRecord",
+          "agent-registry:GetDiscoverableRegistryRecord",
+          "agent-registry:GetDiscoverableRegistryRecord",
+          "agent-registry:GetRegistry",
+          "agent-registry:GetRegistry",
+          "agent-registry:GetRegistryRecord",
+          "agent-registry:GetRegistryRecord",
+          "agent-registry:List*",
+          "agent-registry:List*",
+          "agent-registry:SearchDiscoverableRegistryRecords",
+          "agent-registry:SearchDiscoverableRegistryRecords",
+          "agent-registry:SubmitRegistryRecordForApproval",
+          "agent-registry:SubmitRegistryRecordForApproval",
+          "agent-registry:TagResource",
+          "agent-registry:TagResource",
+          "agent-registry:UpdateRegistryRecord",
+          "agent-registry:UpdateRegistryRecord",
+          "agent-registry:UpdateRegistryRecordStatus",
+          "agent-registry:UpdateRegistryRecordStatus",
+          "autoscaling:DescribeTags",
+          "aws-marketplace:GetSellerReportingData",
+          "bedrock-agentcore:*ApiKeyCredentialProvider",
+          "bedrock-agentcore:*ApiKeyCredentialProvider",
+          "bedrock-agentcore:*TokenVault",
+          "bedrock-agentcore:*TokenVault",
+          "bedrock-agentcore:GetResourceApiKey",
+          "bedrock-agentcore:GetResourceApiKey",
+          "bedrock-agentcore:InvokeWebSearch",
+          "bedrock-agentcore:InvokeWebSearch",
+          "bedrock-agentcore:ListApiKeyCredentialProviders",
+          "bedrock-agentcore:ListApiKeyCredentialProviders",
+          "bedrock:CreateDataSource",
+          "bedrock:CreateKnowledgeBase",
+          "bedrock:DeleteDataSource",
+          "bedrock:DeleteKnowledgeBase",
+          "bedrock:GetDataSource",
+          "bedrock:ListDataSources",
+          "bedrock:UpdateDataSource",
+          "bedrock:UpdateKnowledgeBase",
+          "cloudtrail:CreateServiceLinkedChannel",
+          "cloudtrail:DeleteServiceLinkedChannel",
+          "cloudtrail:GetServiceLinkedChannel",
+          "cloudtrail:UpdateServiceLinkedChannel",
+          "config:DeleteServiceLinkedConfigurationRecorder",
+          "config:DescribeConfigurationRecorderStatus",
+          "config:PutServiceLinkedConfigurationRecorder",
+          "datazone:AssociateGovernedTerms",
+          "datazone:AssociateGovernedTerms",
+          "datazone:CreateDataProduct",
+          "datazone:CreateDataProduct",
+          "datazone:CreateDataProductRevision",
+          "datazone:CreateDataProductRevision",
+          "datazone:CreateFormType",
+          "datazone:CreateFormType",
+          "datazone:CreateGlossary",
+          "datazone:CreateGlossary",
+          "datazone:CreateGlossaryTerm",
+          "datazone:CreateGlossaryTerm",
+          "datazone:CreateNotificationPreference",
+          "datazone:CreateNotificationPreference",
+          "datazone:DeleteDataProduct",
+          "datazone:DeleteDataProduct",
+          "datazone:DeleteFormType",
+          "datazone:DeleteFormType",
+          "datazone:DeleteGlossary",
+          "datazone:DeleteGlossary",
+          "datazone:DeleteGlossaryTerm",
+          "datazone:DeleteGlossaryTerm",
+          "datazone:DisassociateGovernedTerms",
+          "datazone:DisassociateGovernedTerms",
+          "datazone:StartDataSourceRun",
+          "datazone:StartDataSourceRun",
+          "datazone:UpdateAssetOwner",
+          "datazone:UpdateAssetOwner",
+          "datazone:UpdateAssetOwner",
+          "datazone:UpdateGlossary",
+          "datazone:UpdateGlossary",
+          "datazone:UpdateGlossaryTerm",
+          "datazone:UpdateGlossaryTerm",
+          "datazone:UpdateNotificationPreference",
+          "datazone:UpdateNotificationPreference",
+          "directconnect:DescribeVirtualGateways",
+          "directconnect:ListVirtualInterfaceRoutes",
+          "ec2:AuthorizeSecurityGroupEgress",
+          "ec2:AuthorizeSecurityGroupIngress",
+          "ec2:CreateSecurityGroup",
+          "ec2:DeleteSecurityGroup",
+          "ec2:DescribeTags",
+          "ec2:GetAssociatedIpv6PoolCidrs",
+          "ec2:GetIpamDiscoveredAccounts",
+          "ec2:GetIpamDiscoveredPublicAddresses",
+          "ec2:GetIpamDiscoveredResourceCidrs",
+          "ec2:GetIpamResourceCidrs",
+          "ec2:GetManagedPrefixListAssociations",
+          "ec2:GetRouteServerPropagations",
+          "ec2:GetRouteServerRoutingDatabase",
+          "ec2:GetSubnetCidrReservations",
+          "ec2:GetTransitGatewayAttachmentNatConfiguration",
+          "ec2:GetTransitGatewayAttachmentNatConfiguration",
+          "ec2:GetTransitGatewayAttachmentNatConfiguration",
+          "ec2:GetTransitGatewayAttachmentPropagations",
+          "ec2:GetTransitGatewayPolicyTableEntries",
+          "ec2:GetTransitGatewayPrefixListReferences",
+          "ec2:GetVpcResourcesBlockingEncryptionEnforcement",
+          "ec2:RevokeSecurityGroupEgress",
+          "ec2:RevokeSecurityGroupIngress",
+          "eks:*",
+          "eks:*",
+          "eks:*PodIdentityAssociation*",
+          "eks:AssociateAccessPolicy",
+          "eks:CreateAccessEntry",
+          "eks:DeleteAccessEntry",
+          "eks:DescribeAccessEntry",
+          "eks:DescribeCluster",
+          "eks:DisassociateAccessPolicy",
+          "eks:ListAssociatedAccessPolicies",
+          "eks:TagResource",
+          "elasticmapreduce:*SecurityConfiguration",
+          "elasticmapreduce:*SecurityConfiguration",
+          "elasticmapreduce:ModifyInstanceFleet",
+          "elasticmapreduce:RunJobFlow",
+          "elasticmapreduce:SetTerminationProtection",
+          "emr-containers:CreateManagedEndpoint",
+          "emr-containers:DeleteManagedEndpoint",
+          "emr-containers:DescribeManagedEndpoint",
+          "emr-containers:GetManagedEndpointSessionCredentials",
+          "emr-containers:ListManagedEndpoints",
+          "emr-containers:UntagResource",
+          "emr-serverless:*Application*",
+          "emr-serverless:Stop*",
+          "glue:DeleteResourcePolicy",
+          "glue:GetDatabases",
+          "glue:PutResourcePolicy",
+          "iam:AddRoleToInstanceProfile",
+          "iam:AddRoleToInstanceProfile",
+          "iam:AttachRolePolicy",
+          "iam:CreateInstanceProfile",
+          "iam:CreateInstanceProfile",
+          "iam:CreateRole",
+          "iam:CreateServiceLinkedRole",
+          "iam:DeleteInstanceProfile",
+          "iam:DeleteInstanceProfile",
+          "iam:DetachRolePolicy",
+          "iam:DetachRolePolicy",
+          "iam:GetInstanceProfile",
+          "iam:GetInstanceProfile",
+          "iam:GetRolePolicy",
+          "iam:GetRolePolicy",
+          "iam:ListAttachedRolePolicies",
+          "iam:ListAttachedRolePolicies",
+          "iam:ListRolePolicies",
+          "iam:ListRolePolicies",
+          "iam:RemoveRoleFromInstanceProfile",
+          "iam:RemoveRoleFromInstanceProfile",
+          "iam:TagRole",
+          "iam:UntagRole",
+          "iam:UntagRole",
+          "iam:UpdateAssumeRolePolicy",
+          "identitystore:DescribeGroup",
+          "identitystore:DescribeUser",
+          "identitystore:GetGroupId",
+          "identitystore:GetGroupId",
+          "identitystore:GetGroupId",
+          "identitystore:GetGroupId",
+          "identitystore:GetGroupId",
+          "identitystore:GetGroupId",
+          "identitystore:GetUserId",
+          "identitystore:GetUserId",
+          "identitystore:GetUserId",
+          "identitystore:GetUserId",
+          "identitystore:GetUserId",
+          "identitystore:GetUserId",
+          "internetmonitor:StartQuery",
+          "kms:DescribeKey",
+          "kms:GetPublicKey",
+          "kms:GetPublicKey",
+          "kms:RevokeGrant",
+          "kms:RevokeGrant",
+          "lakeformation:GetDataLakeSettings",
+          "lakeformation:GetDataLakeSettings",
+          "networkmanager:GetCoreNetworkChangeEvents",
+          "networkmanager:GetCoreNetworkChangeSet",
+          "networkmanager:GetDirectConnectGatewayAttachment",
+          "networkmanager:GetNetworkResourceCounts",
+          "networkmanager:GetNetworkResourceRelationships",
+          "networkmanager:GetNetworkResources",
+          "networkmanager:GetNetworkRoutes",
+          "partnercentral:GetPartnerCentralContentDocument",
+          "partnercentral:GetPartnerCentralContentMetadata",
+          "partnercentral:ListPartnerCentralContent",
+          "partnercentral:SearchPartnerCentralContent",
+          "pricing:GetProducts",
+          "pricing:GetProducts",
+          "ram:AcceptResourceShareInvitation",
+          "ram:AcceptResourceShareInvitation",
+          "ram:AcceptResourceShareInvitation",
+          "ram:AssociateResourceShare",
+          "ram:CreateResourceShare",
+          "ram:CreateResourceShare",
+          "ram:CreateResourceShare",
+          "ram:DeleteResourceShare",
+          "ram:GetResourceShare*",
+          "ram:GetResourceShareAssociations",
+          "ram:ListResources",
+          "ram:TagResource",
+          "ram:TagResource",
+          "ram:TagResource",
+          "redshift-serverless:*Namespace",
+          "redshift-serverless:*Resource",
+          "redshift-serverless:*Workgroup",
+          "redshift:AssociateDataShareConsumer",
+          "redshift:AuthorizeDataShare",
+          "route53:ChangeTagsForResource",
+          "route53:CreateHostedZone",
+          "route53:DeleteHostedZone",
+          "route53:GetHostedZone",
+          "s3:PutAccessGrantsInstanceResourcePolicy",
+          "s3:PutAccessGrantsInstanceResourcePolicy",
+          "s3tables:CreateNamespace",
+          "s3tables:CreateTableBucket",
+          "s3tables:DeleteNamespace",
+          "s3tables:DeleteTableBucket",
+          "s3tables:GetNamespace",
+          "s3tables:GetNamespace",
+          "s3tables:GetTable",
+          "s3tables:GetTableBucket",
+          "s3tables:GetTableBucket",
+          "s3tables:GetTableData",
+          "s3tables:GetTableMetadataLocation",
+          "s3tables:ListNamespaces",
+          "s3tables:ListNamespaces",
+          "s3tables:ListTableBuckets",
+          "s3tables:ListTables",
+          "s3tables:TagResource",
+          "secretsmanager:CreateSecret",
+          "secretsmanager:DeleteSecret",
+          "secretsmanager:GetSecretValue",
+          "secretsmanager:PutSecretValue",
+          "securityagent:ResumePentestJob",
+          "sso-directory:DescribeGroup",
+          "sso-directory:DescribeGroup",
+          "sso-directory:DescribeGroup",
+          "sso-directory:DescribeGroup",
+          "sso-directory:DescribeGroup",
+          "sso-directory:DescribeGroup",
+          "sso-directory:DescribeUser",
+          "sso-directory:DescribeUser",
+          "sso-directory:DescribeUser",
+          "sso-directory:DescribeUser",
+          "sso-directory:DescribeUser",
+          "sso-directory:DescribeUser",
+          "sso:ListInstances",
+          "sso:ListInstances",
+          "sso:ListInstances",
+          "sts:SetContext",
+          "sts:SetContext",
+          "timestream-influxdb:ListDbInstancesForCluster",
+          "vpc-lattice:GetDomainVerification",
+          "vpc-lattice:GetResourceConfiguration",
+          "vpc-lattice:GetResourceGateway",
+          "vpc-lattice:GetServiceNetworkResourceAssociation"
+        ],
+        "restriction:deny_actions": [
+          "emr-containers:DeleteManagedEndpoint",
+          "emr-containers:DeleteManagedEndpoint",
+          "emr-containers:DeleteManagedEndpoint",
+          "emr-containers:GetManagedEndpointSessionCredentials",
+          "emr-containers:GetManagedEndpointSessionCredentials",
+          "emr-containers:GetManagedEndpointSessionCredentials"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "elasticmapreduce:CreateSecurityConfiguration",
+          "elasticmapreduce:DeleteSecurityConfiguration",
+          "elasticmapreduce:DescribeSecurityConfiguration",
+          "emr-containers:*ManagedEndpoint*",
+          "iam:CreatePolicyVersion",
+          "iam:DeletePolicyVersion",
+          "redshift-serverless:GetManagedWorkgroup",
+          "redshift-serverless:GetNamespace",
+          "redshift-serverless:GetWorkgroup"
+        ],
+        "restriction:deny_actions": [
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*ManagedEndpoint*",
+          "emr-containers:*Resource"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:elasticmapreduce:CreateSecurityConfiguration",
+      "aws:allow_action:elasticmapreduce:DeleteSecurityConfiguration",
+      "aws:allow_action:elasticmapreduce:DescribeSecurityConfiguration",
+      "aws:allow_action:emr-containers:*ManagedEndpoint*",
+      "aws:allow_action:iam:CreatePolicyVersion",
+      "aws:allow_action:iam:DeletePolicyVersion",
+      "aws:allow_action:redshift-serverless:GetManagedWorkgroup",
+      "aws:allow_action:redshift-serverless:GetNamespace",
+      "aws:allow_action:redshift-serverless:GetWorkgroup",
+      "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "aws:deny_action:emr-containers:*ManagedEndpoint*",
+      "aws:deny_action:emr-containers:*Resource"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AIDevOpsAgentAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "directconnect:DescribeVirtualGateways",
+              "directconnect:ListVirtualInterfaceRoutes",
+              "ec2:GetAssociatedIpv6PoolCidrs",
+              "ec2:GetIpamDiscoveredAccounts",
+              "ec2:GetIpamDiscoveredPublicAddresses",
+              "ec2:GetIpamDiscoveredResourceCidrs",
+              "ec2:GetIpamResourceCidrs",
+              "ec2:GetManagedPrefixListAssociations",
+              "ec2:GetRouteServerPropagations",
+              "ec2:GetRouteServerRoutingDatabase",
+              "ec2:GetSubnetCidrReservations",
+              "ec2:GetTransitGatewayAttachmentPropagations",
+              "ec2:GetTransitGatewayPolicyTableEntries",
+              "ec2:GetTransitGatewayPrefixListReferences",
+              "ec2:GetVpcResourcesBlockingEncryptionEnforcement",
+              "internetmonitor:StartQuery",
+              "networkmanager:GetCoreNetworkChangeEvents",
+              "networkmanager:GetCoreNetworkChangeSet",
+              "networkmanager:GetDirectConnectGatewayAttachment",
+              "networkmanager:GetNetworkResourceCounts",
+              "networkmanager:GetNetworkResourceRelationships",
+              "networkmanager:GetNetworkResources",
+              "networkmanager:GetNetworkRoutes",
+              "ram:GetResourceShareAssociations",
+              "vpc-lattice:GetDomainVerification",
+              "vpc-lattice:GetResourceConfiguration",
+              "vpc-lattice:GetResourceGateway",
+              "vpc-lattice:GetServiceNetworkResourceAssociation"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "November 11, 2026, 00:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "November 11, 2026, 00:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+    },
+    {
+      "display_name": "AWSMarketplaceSellerFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "aws-marketplace:GetSellerReportingData"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v36 (default)",
+          "before": "v35 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 18:47 UTC",
+          "before": "November 02, 2026, 19:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 18:47 UTC",
+          "before": "November 02, 2026, 19:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess"
+    },
+    {
+      "display_name": "AWSPartnerCentralChannelManagement",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "partnercentral:GetPartnerCentralContentDocument",
+              "partnercentral:GetPartnerCentralContentMetadata",
+              "partnercentral:ListPartnerCentralContent",
+              "partnercentral:SearchPartnerCentralContent"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 17:37 UTC",
+          "before": "February 14, 2026, 00:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 17:37 UTC",
+          "before": "February 14, 2026, 00:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 8,
+          "before": 7,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralChannelManagement.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSPartnerCentralChannelManagement"
+    },
+    {
+      "display_name": "AmazonVPCNetworkAccessAnalyzerFullAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:GetTransitGatewayAttachmentNatConfiguration"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 18:17 UTC",
+          "before": "August 14, 2026, 17:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 18:17 UTC",
+          "before": "August 14, 2026, 17:17 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonVPCNetworkAccessAnalyzerFullAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonVPCNetworkAccessAnalyzerFullAccessPolicy"
+    },
+    {
+      "display_name": "AmazonVPCReachabilityAnalyzerFullAccessPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:GetTransitGatewayAttachmentNatConfiguration"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 18:17 UTC",
+          "before": "August 14, 2026, 17:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 18:17 UTC",
+          "before": "August 14, 2026, 17:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonVPCReachabilityAnalyzerFullAccessPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonVPCReachabilityAnalyzerFullAccessPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "access-analyzer:CheckNoNewAccess",
+              "agent-registry:*",
+              "eks:*PodIdentityAssociation*",
+              "eks:AssociateAccessPolicy",
+              "eks:CreateAccessEntry",
+              "eks:DeleteAccessEntry",
+              "eks:DescribeAccessEntry",
+              "eks:DescribeCluster",
+              "eks:DisassociateAccessPolicy",
+              "eks:ListAssociatedAccessPolicies",
+              "eks:TagResource",
+              "elasticmapreduce:*SecurityConfiguration",
+              "elasticmapreduce:ModifyInstanceFleet",
+              "elasticmapreduce:RunJobFlow",
+              "elasticmapreduce:SetTerminationProtection",
+              "emr-serverless:*Application*",
+              "iam:AddRoleToInstanceProfile",
+              "iam:CreateInstanceProfile",
+              "iam:DeleteInstanceProfile",
+              "iam:DetachRolePolicy",
+              "iam:GetInstanceProfile",
+              "iam:GetRolePolicy",
+              "iam:ListAttachedRolePolicies",
+              "iam:ListRolePolicies",
+              "iam:RemoveRoleFromInstanceProfile",
+              "iam:UntagRole",
+              "identitystore:GetGroupId",
+              "identitystore:GetUserId",
+              "ram:AcceptResourceShareInvitation",
+              "ram:TagResource",
+              "redshift-serverless:*Namespace",
+              "redshift-serverless:*Resource",
+              "redshift-serverless:*Workgroup",
+              "redshift:AssociateDataShareConsumer",
+              "redshift:AuthorizeDataShare",
+              "s3:PutAccessGrantsInstanceResourcePolicy",
+              "s3tables:GetNamespace",
+              "s3tables:GetTable",
+              "s3tables:GetTableBucket",
+              "s3tables:GetTableData",
+              "s3tables:GetTableMetadataLocation",
+              "s3tables:ListNamespaces",
+              "s3tables:ListTableBuckets",
+              "s3tables:ListTables",
+              "sso-directory:DescribeGroup",
+              "sso-directory:DescribeUser",
+              "sts:SetContext"
+            ],
+            "removed": [
+              "redshift-serverless:GetManagedWorkgroup",
+              "redshift-serverless:GetNamespace",
+              "redshift-serverless:GetWorkgroup"
+            ]
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-containers:DeleteManagedEndpoint",
+              "emr-containers:GetManagedEndpointSessionCredentials"
+            ],
+            "removed": [
+              "emr-containers:*ManagedEndpoint*"
+            ]
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v29 (default)",
+          "before": "v28 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "October 29, 2026, 19:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "October 29, 2026, 19:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 92,
+          "before": 83,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "access-analyzer:CheckNoNewAccess",
+              "agent-registry:*",
+              "eks:*",
+              "iam:AddRoleToInstanceProfile",
+              "iam:CreateInstanceProfile",
+              "iam:DeleteInstanceProfile",
+              "iam:DetachRolePolicy",
+              "iam:GetInstanceProfile",
+              "iam:GetRolePolicy",
+              "iam:ListAttachedRolePolicies",
+              "iam:ListRolePolicies",
+              "iam:RemoveRoleFromInstanceProfile",
+              "iam:UntagRole",
+              "identitystore:GetGroupId",
+              "identitystore:GetUserId",
+              "ram:AcceptResourceShareInvitation",
+              "ram:TagResource",
+              "sso-directory:DescribeGroup",
+              "sso-directory:DescribeUser",
+              "sts:SetContext"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-containers:DeleteManagedEndpoint",
+              "emr-containers:GetManagedEndpointSessionCredentials"
+            ],
+            "removed": [
+              "emr-containers:*ManagedEndpoint*"
+            ]
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v26 (default)",
+          "before": "v25 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "October 29, 2026, 19:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "October 29, 2026, 19:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 55,
+          "before": 51,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectRoleMachineLearningPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "agent-registry:CreateRegistryRecord",
+              "agent-registry:DeleteRegistryRecord",
+              "agent-registry:GetDiscoverableRegistryRecord",
+              "agent-registry:GetRegistry",
+              "agent-registry:GetRegistryRecord",
+              "agent-registry:List*",
+              "agent-registry:SearchDiscoverableRegistryRecords",
+              "agent-registry:SubmitRegistryRecordForApproval",
+              "agent-registry:TagResource",
+              "agent-registry:UpdateRegistryRecord",
+              "agent-registry:UpdateRegistryRecordStatus",
+              "bedrock-agentcore:*ApiKeyCredentialProvider",
+              "bedrock-agentcore:*TokenVault",
+              "bedrock-agentcore:GetResourceApiKey",
+              "bedrock-agentcore:InvokeWebSearch",
+              "bedrock-agentcore:ListApiKeyCredentialProviders",
+              "datazone:UpdateAssetOwner",
+              "identitystore:GetGroupId",
+              "identitystore:GetUserId",
+              "kms:DescribeKey",
+              "secretsmanager:CreateSecret",
+              "secretsmanager:DeleteSecret",
+              "secretsmanager:GetSecretValue",
+              "secretsmanager:PutSecretValue",
+              "sso-directory:DescribeGroup",
+              "sso-directory:DescribeUser",
+              "sso:ListInstances"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v48 (default)",
+          "before": "v47 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 20:47 UTC",
+          "before": "October 29, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 20:47 UTC",
+          "before": "October 29, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 96,
+          "before": 90,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectRoleMachineLearningPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectUserRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "bedrock:CreateDataSource",
+              "bedrock:CreateKnowledgeBase",
+              "bedrock:DeleteDataSource",
+              "bedrock:DeleteKnowledgeBase",
+              "bedrock:GetDataSource",
+              "bedrock:ListDataSources",
+              "bedrock:UpdateDataSource",
+              "bedrock:UpdateKnowledgeBase"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v77 (default)",
+          "before": "v76 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 20:47 UTC",
+          "before": "October 29, 2026, 22:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 20:47 UTC",
+          "before": "October 29, 2026, 22:37 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectUserRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "agent-registry:CreateRegistryRecord",
+              "agent-registry:DeleteRegistryRecord",
+              "agent-registry:GetDiscoverableRegistryRecord",
+              "agent-registry:GetRegistry",
+              "agent-registry:GetRegistryRecord",
+              "agent-registry:List*",
+              "agent-registry:SearchDiscoverableRegistryRecords",
+              "agent-registry:SubmitRegistryRecordForApproval",
+              "agent-registry:TagResource",
+              "agent-registry:UpdateRegistryRecord",
+              "agent-registry:UpdateRegistryRecordStatus",
+              "bedrock-agentcore:*ApiKeyCredentialProvider",
+              "bedrock-agentcore:*TokenVault",
+              "bedrock-agentcore:GetResourceApiKey",
+              "bedrock-agentcore:InvokeWebSearch",
+              "bedrock-agentcore:ListApiKeyCredentialProviders",
+              "datazone:AssociateGovernedTerms",
+              "datazone:CreateDataProduct",
+              "datazone:CreateDataProductRevision",
+              "datazone:CreateFormType",
+              "datazone:CreateGlossary",
+              "datazone:CreateGlossaryTerm",
+              "datazone:CreateNotificationPreference",
+              "datazone:DeleteDataProduct",
+              "datazone:DeleteFormType",
+              "datazone:DeleteGlossary",
+              "datazone:DeleteGlossaryTerm",
+              "datazone:DisassociateGovernedTerms",
+              "datazone:StartDataSourceRun",
+              "datazone:UpdateAssetOwner",
+              "datazone:UpdateGlossary",
+              "datazone:UpdateGlossaryTerm",
+              "datazone:UpdateNotificationPreference",
+              "emr-containers:CreateManagedEndpoint",
+              "emr-containers:DeleteManagedEndpoint",
+              "emr-containers:DescribeManagedEndpoint",
+              "emr-containers:GetManagedEndpointSessionCredentials",
+              "emr-containers:ListManagedEndpoints",
+              "emr-serverless:Stop*",
+              "identitystore:GetGroupId",
+              "identitystore:GetUserId",
+              "kms:GetPublicKey",
+              "kms:RevokeGrant",
+              "lakeformation:GetDataLakeSettings",
+              "pricing:GetProducts",
+              "ram:CreateResourceShare",
+              "s3:PutAccessGrantsInstanceResourcePolicy",
+              "sso-directory:DescribeGroup",
+              "sso-directory:DescribeUser",
+              "sso:ListInstances"
+            ],
+            "removed": [
+              "emr-containers:*ManagedEndpoint*"
+            ]
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [],
+            "removed": [
+              "emr-containers:*ManagedEndpoint*",
+              "emr-containers:*Resource"
+            ]
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v33 (default)",
+          "before": "v32 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "October 29, 2026, 22:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "October 29, 2026, 22:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 83,
+          "before": 78,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "agent-registry:*",
+              "datazone:AssociateGovernedTerms",
+              "datazone:CreateDataProduct",
+              "datazone:CreateDataProductRevision",
+              "datazone:CreateFormType",
+              "datazone:CreateGlossary",
+              "datazone:CreateGlossaryTerm",
+              "datazone:CreateNotificationPreference",
+              "datazone:DeleteDataProduct",
+              "datazone:DeleteFormType",
+              "datazone:DeleteGlossary",
+              "datazone:DeleteGlossaryTerm",
+              "datazone:DisassociateGovernedTerms",
+              "datazone:StartDataSourceRun",
+              "datazone:UpdateAssetOwner",
+              "datazone:UpdateGlossary",
+              "datazone:UpdateGlossaryTerm",
+              "datazone:UpdateNotificationPreference",
+              "ec2:AuthorizeSecurityGroupEgress",
+              "ec2:AuthorizeSecurityGroupIngress",
+              "ec2:CreateSecurityGroup",
+              "ec2:DeleteSecurityGroup",
+              "ec2:RevokeSecurityGroupEgress",
+              "ec2:RevokeSecurityGroupIngress",
+              "eks:*",
+              "iam:AttachRolePolicy",
+              "iam:CreateRole",
+              "iam:TagRole",
+              "iam:UpdateAssumeRolePolicy",
+              "identitystore:GetGroupId",
+              "identitystore:GetUserId",
+              "kms:GetPublicKey",
+              "kms:RevokeGrant",
+              "lakeformation:GetDataLakeSettings",
+              "pricing:GetProducts",
+              "ram:CreateResourceShare",
+              "sso-directory:DescribeGroup",
+              "sso-directory:DescribeUser",
+              "sso:ListInstances"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {
+          "deny_actions": {
+            "added": [
+              "emr-containers:DeleteManagedEndpoint",
+              "emr-containers:GetManagedEndpointSessionCredentials"
+            ],
+            "removed": [
+              "emr-containers:*ManagedEndpoint*"
+            ]
+          }
+        }
+      },
+      "metadata_changes": [
+        {
+          "after": "v28 (default)",
+          "before": "v27 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "October 29, 2026, 22:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 14, 2026, 00:07 UTC",
+          "before": "October 29, 2026, 22:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 44,
+          "before": 38,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "WellArchitectedConsoleFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [],
+            "removed": [
+              "iam:CreatePolicyVersion",
+              "iam:DeletePolicyVersion"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 19:37 UTC",
+          "before": "October 29, 2026, 22:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 19:37 UTC",
+          "before": "October 29, 2026, 22:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 12,
+          "before": 11,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedConsoleFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/WellArchitectedConsoleFullAccess"
+    },
+    {
+      "display_name": "AWSObservabilityAdminTelemetryEnablementServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "autoscaling:DescribeTags",
+              "ec2:DescribeTags"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v17 (default)",
+          "before": "v16 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 21:27 UTC",
+          "before": "October 05, 2026, 22:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 21:27 UTC",
+          "before": "October 05, 2026, 22:17 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 57,
+          "before": 56,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSReachabilityAnalyzerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "ec2:GetTransitGatewayAttachmentNatConfiguration"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v6 (default)",
+          "before": "v5 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 18:07 UTC",
+          "before": "August 14, 2026, 17:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 18:07 UTC",
+          "before": "August 14, 2026, 17:17 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSReachabilityAnalyzerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSReachabilityAnalyzerServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSResourceExplorerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "timestream-influxdb:ListDbInstancesForCluster"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v60 (default)",
+          "before": "v59 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 18:57 UTC",
+          "before": "October 30, 2026, 20:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 18:57 UTC",
+          "before": "October 30, 2026, 20:27 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy"
+    },
+    {
+      "display_name": "AmazonBraketServiceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 19:47 UTC",
+          "before": "July 06, 2026, 18:42 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 19:47 UTC",
+          "before": "July 06, 2026, 18:42 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBraketServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonBraketServiceRolePolicy"
+    },
+    {
+      "display_name": "AWSSecurityAgentWebAppPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "securityagent:ResumePentestJob"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 14, 2026, 02:37 UTC",
+          "before": "October 12, 2026, 16:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 14, 2026, 02:37 UTC",
+          "before": "October 12, 2026, 16:17 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityAgentWebAppPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AWSSecurityAgentWebAppPolicy"
+    },
+    {
+      "display_name": "ROSAControlPlaneOperatorPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "route53:ChangeTagsForResource",
+              "route53:CreateHostedZone",
+              "route53:DeleteHostedZone",
+              "route53:GetHostedZone"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v8 (default)",
+          "before": "v7 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 23:47 UTC",
+          "before": "July 28, 2026, 23:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 23:47 UTC",
+          "before": "July 28, 2026, 23:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 16,
+          "before": 14,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSAControlPlaneOperatorPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/ROSAControlPlaneOperatorPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioEMRContainersSystemNamespaceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v7 (default)",
+          "before": "v6 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 21:17 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 21:17 UTC",
+          "before": "February 12, 2026, 18:01 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioEMRContainersSystemNamespaceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioEMRContainersSystemNamespaceRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioEMRInstanceRolePolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 21:17 UTC",
+          "before": "June 01, 2026, 23:27 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 21:17 UTC",
+          "before": "June 01, 2026, 23:27 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 8,
+          "before": 7,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioEMRInstanceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioEMRInstanceRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "elasticmapreduce:*SecurityConfiguration",
+              "emr-containers:UntagResource",
+              "glue:DeleteResourcePolicy",
+              "glue:GetDatabases",
+              "glue:PutResourcePolicy",
+              "identitystore:DescribeGroup",
+              "identitystore:DescribeUser",
+              "identitystore:GetGroupId",
+              "identitystore:GetUserId",
+              "ram:AcceptResourceShareInvitation",
+              "ram:AssociateResourceShare",
+              "ram:CreateResourceShare",
+              "ram:DeleteResourceShare",
+              "ram:GetResourceShare*",
+              "ram:ListResources",
+              "ram:TagResource",
+              "s3tables:CreateNamespace",
+              "s3tables:CreateTableBucket",
+              "s3tables:DeleteNamespace",
+              "s3tables:DeleteTableBucket",
+              "s3tables:GetNamespace",
+              "s3tables:GetTableBucket",
+              "s3tables:ListNamespaces",
+              "s3tables:TagResource",
+              "sso-directory:DescribeGroup",
+              "sso-directory:DescribeUser"
+            ],
+            "removed": [
+              "elasticmapreduce:CreateSecurityConfiguration",
+              "elasticmapreduce:DeleteSecurityConfiguration",
+              "elasticmapreduce:DescribeSecurityConfiguration"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v85 (default)",
+          "before": "v84 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 13, 2026, 20:07 UTC",
+          "before": "October 12, 2026, 16:17 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 13, 2026, 20:07 UTC",
+          "before": "October 12, 2026, 16:17 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 162,
+          "before": 163,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-11-15T11:01:00Z",
+  "counts": {
+    "added_atoms": 275,
+    "added_objects": 1,
+    "changed_objects": 21,
+    "current_objects": 1625,
+    "previous_objects": 1624,
+    "removed_atoms": 14,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-15",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-11-14",
+  "removed_objects": []
+}
