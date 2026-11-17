@@ -1,12 +1,12 @@
 # Azure
 
-- Refreshed at: `2026-11-16T11:30:16Z`
+- Refreshed at: `2026-11-17T11:58:11Z`
 
 ## Dataset overview
 
 | Dataset | Inventory | Objects (+/~/-) | Atoms (+/-) | Files |
 | --- | ---: | ---: | ---: | --- |
-| Azure built-in roles | `506` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/azure-built-in-roles.json) · [diff](../../data/diffs/2026-11-16/azure-built-in-roles.json) · [reverse index](../../data/reverse-index/azure-built-in-roles.json) |
+| Azure built-in roles | `506` | `+0 / ~0 / -0` | `+0 / -0` | [snapshot](../../data/latest/azure-built-in-roles.json) · [diff](../../data/diffs/2026-11-17/azure-built-in-roles.json) · [reverse index](../../data/reverse-index/azure-built-in-roles.json) |
 
 ## Dataset details
 
@@ -14,4 +14,4 @@
 
 - Inventory: `506` objects.
 - Today: No drift detected.
-- Files: [snapshot](../../data/latest/azure-built-in-roles.json) · [diff](../../data/diffs/2026-11-16/azure-built-in-roles.json) · [reverse index](../../data/reverse-index/azure-built-in-roles.json)
+- Files: [snapshot](../../data/latest/azure-built-in-roles.json) · [diff](../../data/diffs/2026-11-17/azure-built-in-roles.json) · [reverse index](../../data/reverse-index/azure-built-in-roles.json)
