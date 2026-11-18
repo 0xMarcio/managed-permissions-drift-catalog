@@ -1,6 +1,6 @@
 {
   "appGip": true,
-  "buildId": "HWUGWhhElZudFN1WMbe6N",
+  "buildId": "APScvrVgQX2AZ_rChH_qb",
   "defaultLocale": "en",
   "gssp": true,
   "isExperimentalCompile": false,
@@ -4722,6 +4722,15 @@
               "requestPath": "/repos/{owner}/{repo}/milestones/{milestone_number}/labels",
               "slug": "list-labels-for-issues-in-a-milestone",
               "subcategory": "labels",
+              "verb": "get"
+            },
+            {
+              "access": "read",
+              "additional-permissions": false,
+              "category": "repos",
+              "requestPath": "/repos/{owner}/{repo}/planning-statuses",
+              "slug": "list-planning-statuses-for-a-repository",
+              "subcategory": "planning-statuses",
               "verb": "get"
             }
           ],
@@ -12514,6 +12523,11 @@
                   "childPages": [],
                   "href": "/en/rest/repos/issue-types",
                   "title": "Issue types"
+                },
+                {
+                  "childPages": [],
+                  "href": "/en/rest/repos/planning-statuses",
+                  "title": "Planning statuses"
                 },
                 {
                   "childPages": [],

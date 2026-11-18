@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: September 22, 2026, 01:47 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 11, 2026, 01:27 UTC</p>
+                <p><b>Edited time:</b>  November 17, 2026, 16:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchOmniSpaceAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -355,6 +355,255 @@
           "iam:AWSServiceName" : "config.amazonaws.com"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedReadOutboundWebIdentityFederation",
+      "Effect" : "Allow",
+      "Action" : "iam:GetOutboundWebIdentityFederationInfo",
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedGetDatasetIntegration",
+      "Effect" : "Allow",
+      "Action" : "observabilityadmin:GetDatasetIntegration",
+      "Resource" : "arn:aws:observabilityadmin:*:*:dataset-integration/default",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedCreateAndListConnectors",
+      "Effect" : "Allow",
+      "Action" : [
+        "observabilityadmin:CreateConnector",
+        "observabilityadmin:ListConnectors"
+      ],
+      "Resource" : "arn:aws:observabilityadmin:*:*:connector/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedPassConnectorRole",
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : "arn:aws:iam::*:role/*",
+      "Condition" : <span>{</span>
+        "ArnLike" : <span>{</span>
+          "iam:AssociatedResourceArn" : "arn:aws:observabilityadmin:*:*:connector/*"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:PassedToService" : "observabilityadmin.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedConnectorAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "observabilityadmin:GetConnector",
+        "observabilityadmin:DeleteConnector",
+        "observabilityadmin:ListResourcesByConnector",
+        "observabilityadmin:PutConnectorTelemetryManifest",
+        "observabilityadmin:GetConnectorTelemetryManifest",
+        "observabilityadmin:GetConnectorTelemetrySetup"
+      ],
+      "Resource" : "arn:aws:observabilityadmin:*:*:connector/azure/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedListTelemetryPipelines",
+      "Effect" : "Allow",
+      "Action" : "observabilityadmin:ListTelemetryPipelines",
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedCreateTelemetryPipeline",
+      "Effect" : "Allow",
+      "Action" : "observabilityadmin:CreateTelemetryPipeline",
+      "Resource" : "arn:aws:observabilityadmin:*:*:telemetry-pipeline/*",
+      "Condition" : <span>{</span>
+        "Null" : <span>{</span>
+          "aws:TagKeys" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "observabilityadmin:SourceType" : "cloudwatch_connector"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedManageTelemetryPipelines",
+      "Effect" : "Allow",
+      "Action" : [
+        "observabilityadmin:UpdateTelemetryPipeline",
+        "observabilityadmin:GetTelemetryPipeline",
+        "observabilityadmin:DeleteTelemetryPipeline",
+        "observabilityadmin:StartTelemetryPipelineRefresh"
+      ],
+      "Resource" : "arn:aws:observabilityadmin:*:*:telemetry-pipeline/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedLogGroupManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:CreateLogGroup",
+        "logs:PutRetentionPolicy",
+        "logs:DeleteRetentionPolicy"
+      ],
+      "Resource" : "arn:aws:logs:*:*:log-group:/az/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedPassPipelineWriterRole",
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : "arn:aws:iam::*:role/*",
+      "Condition" : <span>{</span>
+        "ArnLike" : <span>{</span>
+          "iam:AssociatedResourceArn" : "arn:aws:observabilityadmin:*:*:telemetry-pipeline/*"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:PassedToService" : "telemetry-pipelines.observabilityadmin.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedListTelemetryEnrichments",
+      "Effect" : "Allow",
+      "Action" : "observabilityadmin:ListThirdPartyTelemetryEnrichments",
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedStartTelemetryEnrichment",
+      "Effect" : "Allow",
+      "Action" : "observabilityadmin:StartThirdPartyTelemetryEnrichment",
+      "Resource" : "arn:aws:observabilityadmin:*:*:telemetry-enrichments/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureVendedManageTelemetryEnrichments",
+      "Effect" : "Allow",
+      "Action" : [
+        "observabilityadmin:GetThirdPartyTelemetryEnrichment",
+        "observabilityadmin:StopThirdPartyTelemetryEnrichment"
+      ],
+      "Resource" : "arn:aws:observabilityadmin:*:*:telemetry-enrichments/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureResourceContextDiscovery",
+      "Effect" : "Allow",
+      "Action" : "config:ListConnectors",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureResourceContextRead",
+      "Effect" : "Allow",
+      "Action" : "config:GetConnector",
+      "Resource" : "arn:aws:config:*:*:connector/azure/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureResourceContextConnectorCreation",
+      "Effect" : "Allow",
+      "Action" : "config:PutConnector",
+      "Resource" : "arn:aws:config:*:*:connector/azure/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureResourceContextServiceLinkedRole",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/thirdparty.config.amazonaws.com/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:AWSServiceName" : "thirdparty.config.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureResourceContextEnablement",
+      "Effect" : "Allow",
+      "Action" : "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+      "Resource" : "arn:aws:config:*:*:configuration-recorder/*",
+      "Condition" : <span>{</span>
+        "Bool" : <span>{</span>
+          "aws:ViaAWSService" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "config:ConfigurationRecorderServicePrincipal" : [
+            "azure.cloudwatch.amazonaws.com",
+            "azure.telemetry-enrichment.observabilityadmin.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureResourceContextDisablement",
+      "Effect" : "Allow",
+      "Action" : "config:DeleteServiceLinkedConfigurationRecorder",
+      "Resource" : "arn:aws:config:*:*:configuration-recorder/*",
+      "Condition" : <span>{</span>
+        "Bool" : <span>{</span>
+          "aws:ViaAWSService" : "true"
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "config:ConfigurationRecorderServicePrincipal" : [
+            "azure.cloudwatch.amazonaws.com",
+            "azure.telemetry-enrichment.observabilityadmin.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AzureTraceReadiness",
+      "Effect" : "Allow",
+      "Action" : "xray:GetTraceSegmentDestination",
+      "Resource" : "*"
     },
     <span>{</span>
       "Sid" : "AgentCoreEvaluator",
