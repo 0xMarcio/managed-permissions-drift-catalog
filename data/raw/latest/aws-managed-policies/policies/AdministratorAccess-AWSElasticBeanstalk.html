@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: January 22, 2021, 19:36 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 19, 2026, 20:12 UTC</p>
+                <p><b>Edited time:</b>  November 18, 2026, 15:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk</code></p>
             </li></ul></div>
      
         <h2 id="AdministratorAccess-AWSElasticBeanstalk-version">Policy version</h2>
-        <p><b>Policy version:</b> v10 (default)</p>
+        <p><b>Policy version:</b> v11 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -284,6 +284,11 @@
     },
     <span>{</span>
       "Effect" : "Allow",
+      "Action" : "iam:SimulatePrincipalPolicy",
+      "Resource" : "arn:aws:iam::*:role/*"
+    },
+    <span>{</span>
+      "Effect" : "Allow",
       "Action" : "iam:PassRole",
       "Resource" : "arn:aws:iam::*:role/*",
       "Condition" : <span>{</span>
@@ -295,7 +300,10 @@
             "autoscaling.amazonaws.com",
             "elasticloadbalancing.amazonaws.com",
             "ecs.amazonaws.com",
-            "cloudformation.amazonaws.com"
+            "cloudformation.amazonaws.com",
+            "eks.amazonaws.com",
+            "pods.eks.amazonaws.com",
+            "codebuild.amazonaws.com"
           ]
         }
       }

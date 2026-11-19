@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 18, 2025, 17:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 14, 2026, 00:07 UTC</p>
+                <p><b>Edited time:</b>  November 17, 2026, 21:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioAdminIAMDefaultExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v29 (default)</p>
+        <p><b>Policy version:</b> v30 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -1267,7 +1267,8 @@
       "Condition" : <span>{</span>
         "StringLike" : <span>{</span>
           "ram:ResourceShareName" : [
-            "DataZone*"
+            "DataZone*",
+            "LakeFormation-*"
           ]
         }
       }
@@ -1472,9 +1473,31 @@
       "Sid" : "S3TablesList",
       "Effect" : "Allow",
       "Action" : [
-        "s3tables:ListTableBuckets"
+        "s3tables:ListTableBuckets",
+        "s3tables:GetTableBucket"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "S3TablesProjectCatalogPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3tables:CreateNamespace",
+        "s3tables:CreateTableBucket",
+        "s3tables:DeleteNamespace",
+        "s3tables:DeleteTableBucket",
+        "s3tables:DeleteTableBucketPolicy",
+        "s3tables:GetNamespace",
+        "s3tables:GetTableBucketPolicy",
+        "s3tables:ListNamespaces",
+        "s3tables:ListTables",
+        "s3tables:ListTagsForResource",
+        "s3tables:PutTableBucketEncryption",
+        "s3tables:PutTableBucketPolicy",
+        "s3tables:TagResource",
+        "s3tables:UntagResource"
+      ],
+      "Resource" : "arn:aws:s3tables:*:*:bucket/amazon-sagemaker*"
     },
     <span>{</span>
       "Sid" : "SystemTablesRead",

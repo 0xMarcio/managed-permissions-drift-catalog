@@ -1,0 +1,939 @@
+{
+  "added_objects": [
+    {
+      "atoms_added": [
+        "aws:allow_action:eks:AccessKubernetesApi",
+        "aws:allow_action:eks:MutateViaKubernetesApi",
+        "aws:allow_action:kms:Decrypt",
+        "aws:allow_action:s3:GetObject",
+        "aws:allow_action:sagemaker:DescribeCluster"
+      ],
+      "display_name": "AmazonSageMakerGlobalInferenceGatewayExecutionAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerGlobalInferenceGatewayExecutionAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerGlobalInferenceGatewayExecutionAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:ec2:AuthorizeSecurityGroupIngress",
+        "aws:allow_action:ec2:CreateSecurityGroup",
+        "aws:allow_action:ec2:CreateTags",
+        "aws:allow_action:ec2:CreateVpcEndpoint",
+        "aws:allow_action:ec2:CreateVpcEndpointServiceConfiguration",
+        "aws:allow_action:ec2:DeleteSecurityGroup",
+        "aws:allow_action:ec2:DeleteVpcEndpointServiceConfigurations",
+        "aws:allow_action:ec2:DeleteVpcEndpoints",
+        "aws:allow_action:ec2:DescribeRegions",
+        "aws:allow_action:ec2:DescribeSecurityGroups",
+        "aws:allow_action:ec2:DescribeSubnets",
+        "aws:allow_action:ec2:DescribeVpcEndpointConnections",
+        "aws:allow_action:ec2:DescribeVpcEndpointServiceConfigurations",
+        "aws:allow_action:ec2:DescribeVpcEndpointServicePermissions",
+        "aws:allow_action:ec2:DescribeVpcEndpointServices",
+        "aws:allow_action:ec2:DescribeVpcEndpoints",
+        "aws:allow_action:ec2:DescribeVpcs",
+        "aws:allow_action:ec2:ModifyVpcEndpoint",
+        "aws:allow_action:ec2:ModifyVpcEndpointServiceConfiguration",
+        "aws:allow_action:ec2:ModifyVpcEndpointServicePermissions",
+        "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+        "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+        "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+        "aws:allow_action:kms:GenerateDataKey",
+        "aws:allow_action:s3:DeleteObject",
+        "aws:allow_action:s3:PutObject",
+        "aws:allow_action:s3:PutObjectTagging",
+        "aws:allow_action:sagemaker:DescribeCluster",
+        "aws:allow_action:vpce:AllowMultiRegion"
+      ],
+      "display_name": "AmazonSageMakerHyperPodInferenceGatewayGlobalRoutingAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceGatewayGlobalRoutingAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceGatewayGlobalRoutingAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:kinesis:PutRecords",
+        "aws:allow_action:kms:GenerateDataKey"
+      ],
+      "display_name": "AmazonSageMakerHyperPodInferenceGatewayMetricsPublisherAccess",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerHyperPodInferenceGatewayMetricsPublisherAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonSageMakerHyperPodInferenceGatewayMetricsPublisherAccess"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:config:AssociateResourceTypes",
+        "aws:allow_action:config:DeleteServiceLinkedConfigurationRecorder",
+        "aws:allow_action:config:DescribeConfigurationRecorderStatus",
+        "aws:allow_action:config:DescribeConfigurationRecorders",
+        "aws:allow_action:config:DisassociateResourceTypes",
+        "aws:allow_action:config:PutServiceLinkedConfigurationRecorder",
+        "aws:allow_action:iam:CreateServiceLinkedRole",
+        "aws:allow_action:organizations:DescribeAccount",
+        "aws:allow_action:organizations:DescribeOrganization",
+        "aws:allow_action:organizations:DescribeOrganizationalUnit",
+        "aws:allow_action:organizations:ListAccounts",
+        "aws:allow_action:organizations:ListChildren",
+        "aws:allow_action:organizations:ListDelegatedAdministrators",
+        "aws:allow_action:organizations:ListParents",
+        "aws:allow_action:wafv2:ListEvents"
+      ],
+      "display_name": "AWSAPIPortalServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAPIPortalServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSAPIPortalServiceRolePolicy"
+    },
+    {
+      "atoms_added": [
+        "aws:allow_action:partnercentral:CreateEngagement"
+      ],
+      "display_name": "AWSPartnerCentralMarketingServiceRolePolicy",
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralMarketingServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSPartnerCentralMarketingServiceRolePolicy"
+    }
+  ],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:config:AssociateResourceTypes",
+      "aws:allow_action:config:DeleteServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:DeleteServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:DeleteServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:DescribeConfigurationRecorderStatus",
+      "aws:allow_action:config:DescribeConfigurationRecorderStatus",
+      "aws:allow_action:config:DescribeConfigurationRecorders",
+      "aws:allow_action:config:DescribeConfigurationRecorders",
+      "aws:allow_action:config:DisassociateResourceTypes",
+      "aws:allow_action:config:GetConnector",
+      "aws:allow_action:config:PutServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:PutServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:PutThirdPartyServiceLinkedConfigurationRecorder",
+      "aws:allow_action:config:SelectResourceConfig",
+      "aws:allow_action:ec2:AuthorizeSecurityGroupIngress",
+      "aws:allow_action:ec2:CreateSecurityGroup",
+      "aws:allow_action:ec2:CreateTags",
+      "aws:allow_action:ec2:CreateVpcEndpoint",
+      "aws:allow_action:ec2:CreateVpcEndpointServiceConfiguration",
+      "aws:allow_action:ec2:DeleteSecurityGroup",
+      "aws:allow_action:ec2:DeleteVpcEndpointServiceConfigurations",
+      "aws:allow_action:ec2:DeleteVpcEndpoints",
+      "aws:allow_action:ec2:DescribeRegions",
+      "aws:allow_action:ec2:DescribeSecurityGroups",
+      "aws:allow_action:ec2:DescribeSubnets",
+      "aws:allow_action:ec2:DescribeVpcEndpointConnections",
+      "aws:allow_action:ec2:DescribeVpcEndpointServiceConfigurations",
+      "aws:allow_action:ec2:DescribeVpcEndpointServicePermissions",
+      "aws:allow_action:ec2:DescribeVpcEndpointServices",
+      "aws:allow_action:ec2:DescribeVpcEndpoints",
+      "aws:allow_action:ec2:DescribeVpcs",
+      "aws:allow_action:ec2:ModifyVpcEndpoint",
+      "aws:allow_action:ec2:ModifyVpcEndpointServiceConfiguration",
+      "aws:allow_action:ec2:ModifyVpcEndpointServicePermissions",
+      "aws:allow_action:eks:AccessKubernetesApi",
+      "aws:allow_action:eks:CreatePodIdentityAssociation",
+      "aws:allow_action:eks:DeletePodIdentityAssociation",
+      "aws:allow_action:eks:ListPodIdentityAssociations",
+      "aws:allow_action:eks:MutateViaKubernetesApi",
+      "aws:allow_action:eks:TagResource",
+      "aws:allow_action:elasticloadbalancing:DescribeLoadBalancers",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetGroups",
+      "aws:allow_action:elasticloadbalancing:DescribeTargetHealth",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:CreateServiceLinkedRole",
+      "aws:allow_action:iam:SimulatePrincipalPolicy",
+      "aws:allow_action:kinesis:PutRecords",
+      "aws:allow_action:kms:Decrypt",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:kms:GenerateDataKey",
+      "aws:allow_action:observabilityadmin:*",
+      "aws:allow_action:organizations:DescribeAccount",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:DescribeOrganization",
+      "aws:allow_action:organizations:DescribeOrganizationalUnit",
+      "aws:allow_action:organizations:ListAccounts",
+      "aws:allow_action:organizations:ListChildren",
+      "aws:allow_action:organizations:ListDelegatedAdministrators",
+      "aws:allow_action:organizations:ListParents",
+      "aws:allow_action:partnercentral:CreateEngagement",
+      "aws:allow_action:ram:DisassociateResourceShare",
+      "aws:allow_action:ram:ListResource*",
+      "aws:allow_action:s3:DeleteObject",
+      "aws:allow_action:s3:GetObject",
+      "aws:allow_action:s3:PutObject",
+      "aws:allow_action:s3:PutObjectTagging",
+      "aws:allow_action:s3tables:CreateNamespace",
+      "aws:allow_action:s3tables:DeleteNamespace",
+      "aws:allow_action:s3tables:DeleteTableBucket",
+      "aws:allow_action:s3tables:DeleteTableBucketPolicy",
+      "aws:allow_action:s3tables:GetTableBucket",
+      "aws:allow_action:s3tables:GetTableBucketPolicy",
+      "aws:allow_action:s3tables:ListTableBuckets",
+      "aws:allow_action:s3tables:ListTagsForResource",
+      "aws:allow_action:s3tables:PutTableBucketEncryption",
+      "aws:allow_action:s3tables:TagResource",
+      "aws:allow_action:s3tables:UntagResource",
+      "aws:allow_action:sagemaker:DescribeCluster",
+      "aws:allow_action:sagemaker:DescribeCluster",
+      "aws:allow_action:secretsmanager:DeleteSecret",
+      "aws:allow_action:secretsmanager:DescribeSecret",
+      "aws:allow_action:secretsmanager:PutSecretValue",
+      "aws:allow_action:secretsmanager:RotateSecret",
+      "aws:allow_action:secretsmanager:UpdateSecretVersionStage",
+      "aws:allow_action:signin:CreateBearerToken",
+      "aws:allow_action:signin:CreateBearerToken",
+      "aws:allow_action:signin:CreateBearerToken",
+      "aws:allow_action:tag:GetResources",
+      "aws:allow_action:vpce:AllowMultiRegion",
+      "aws:allow_action:wafv2:ListEvents"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "config:AssociateResourceTypes",
+          "config:DeleteServiceLinkedConfigurationRecorder",
+          "config:DeleteServiceLinkedConfigurationRecorder",
+          "config:DeleteServiceLinkedConfigurationRecorder",
+          "config:DescribeConfigurationRecorderStatus",
+          "config:DescribeConfigurationRecorderStatus",
+          "config:DescribeConfigurationRecorders",
+          "config:DescribeConfigurationRecorders",
+          "config:DisassociateResourceTypes",
+          "config:GetConnector",
+          "config:PutServiceLinkedConfigurationRecorder",
+          "config:PutServiceLinkedConfigurationRecorder",
+          "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+          "config:SelectResourceConfig",
+          "ec2:AuthorizeSecurityGroupIngress",
+          "ec2:CreateSecurityGroup",
+          "ec2:CreateTags",
+          "ec2:CreateVpcEndpoint",
+          "ec2:CreateVpcEndpointServiceConfiguration",
+          "ec2:DeleteSecurityGroup",
+          "ec2:DeleteVpcEndpointServiceConfigurations",
+          "ec2:DeleteVpcEndpoints",
+          "ec2:DescribeRegions",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcEndpointConnections",
+          "ec2:DescribeVpcEndpointServiceConfigurations",
+          "ec2:DescribeVpcEndpointServicePermissions",
+          "ec2:DescribeVpcEndpointServices",
+          "ec2:DescribeVpcEndpoints",
+          "ec2:DescribeVpcs",
+          "ec2:ModifyVpcEndpoint",
+          "ec2:ModifyVpcEndpointServiceConfiguration",
+          "ec2:ModifyVpcEndpointServicePermissions",
+          "eks:AccessKubernetesApi",
+          "eks:CreatePodIdentityAssociation",
+          "eks:DeletePodIdentityAssociation",
+          "eks:ListPodIdentityAssociations",
+          "eks:MutateViaKubernetesApi",
+          "eks:TagResource",
+          "elasticloadbalancing:DescribeLoadBalancers",
+          "elasticloadbalancing:DescribeTargetGroups",
+          "elasticloadbalancing:DescribeTargetHealth",
+          "iam:CreateServiceLinkedRole",
+          "iam:CreateServiceLinkedRole",
+          "iam:SimulatePrincipalPolicy",
+          "kinesis:PutRecords",
+          "kms:Decrypt",
+          "kms:GenerateDataKey",
+          "kms:GenerateDataKey",
+          "observabilityadmin:*",
+          "organizations:DescribeAccount",
+          "organizations:DescribeOrganization",
+          "organizations:DescribeOrganization",
+          "organizations:DescribeOrganizationalUnit",
+          "organizations:ListAccounts",
+          "organizations:ListChildren",
+          "organizations:ListDelegatedAdministrators",
+          "organizations:ListParents",
+          "partnercentral:CreateEngagement",
+          "ram:DisassociateResourceShare",
+          "ram:ListResource*",
+          "s3:DeleteObject",
+          "s3:GetObject",
+          "s3:PutObject",
+          "s3:PutObjectTagging",
+          "s3tables:CreateNamespace",
+          "s3tables:DeleteNamespace",
+          "s3tables:DeleteTableBucket",
+          "s3tables:DeleteTableBucketPolicy",
+          "s3tables:GetTableBucket",
+          "s3tables:GetTableBucketPolicy",
+          "s3tables:ListTableBuckets",
+          "s3tables:ListTagsForResource",
+          "s3tables:PutTableBucketEncryption",
+          "s3tables:TagResource",
+          "s3tables:UntagResource",
+          "sagemaker:DescribeCluster",
+          "sagemaker:DescribeCluster",
+          "secretsmanager:DeleteSecret",
+          "secretsmanager:DescribeSecret",
+          "secretsmanager:PutSecretValue",
+          "secretsmanager:RotateSecret",
+          "secretsmanager:UpdateSecretVersionStage",
+          "signin:CreateBearerToken",
+          "signin:CreateBearerToken",
+          "signin:CreateBearerToken",
+          "tag:GetResources",
+          "vpce:AllowMultiRegion",
+          "wafv2:ListEvents"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "observabilityadmin:CreateCentralizationRuleForOrganization",
+          "observabilityadmin:CreateDatasetIntegration",
+          "observabilityadmin:CreateS3TableIntegration",
+          "observabilityadmin:CreateTelemetryPipeline",
+          "observabilityadmin:CreateTelemetryRule",
+          "observabilityadmin:CreateTelemetryRuleForOrganization",
+          "observabilityadmin:DeleteCentralizationRuleForOrganization",
+          "observabilityadmin:DeleteDatasetIntegration",
+          "observabilityadmin:DeleteS3TableIntegration",
+          "observabilityadmin:DeleteTelemetryPipeline",
+          "observabilityadmin:DeleteTelemetryRule",
+          "observabilityadmin:DeleteTelemetryRuleForOrganization",
+          "observabilityadmin:GetCentralizationRuleForOrganization",
+          "observabilityadmin:GetDatasetIntegration",
+          "observabilityadmin:GetS3TableIntegration",
+          "observabilityadmin:GetTelemetryEnrichmentStatus",
+          "observabilityadmin:GetTelemetryEvaluationStatus",
+          "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+          "observabilityadmin:GetTelemetryPipeline",
+          "observabilityadmin:GetTelemetryRule",
+          "observabilityadmin:GetTelemetryRuleForOrganization",
+          "observabilityadmin:ListCentralizationRulesForOrganization",
+          "observabilityadmin:ListDatasetIntegrations",
+          "observabilityadmin:ListResourceTelemetry",
+          "observabilityadmin:ListResourceTelemetryForOrganization",
+          "observabilityadmin:ListS3TableIntegrations",
+          "observabilityadmin:ListTagsForResource",
+          "observabilityadmin:ListTelemetryPipelines",
+          "observabilityadmin:ListTelemetryRules",
+          "observabilityadmin:ListTelemetryRulesForOrganization",
+          "observabilityadmin:StartTelemetryEnrichment",
+          "observabilityadmin:StartTelemetryEvaluation",
+          "observabilityadmin:StartTelemetryEvaluationForOrganization",
+          "observabilityadmin:StopTelemetryEnrichment",
+          "observabilityadmin:StopTelemetryEvaluation",
+          "observabilityadmin:StopTelemetryEvaluationForOrganization",
+          "observabilityadmin:TagResource",
+          "observabilityadmin:TestTelemetryPipeline",
+          "observabilityadmin:UntagResource",
+          "observabilityadmin:UpdateCentralizationRuleForOrganization",
+          "observabilityadmin:UpdateDatasetIntegration",
+          "observabilityadmin:UpdateTelemetryPipeline",
+          "observabilityadmin:UpdateTelemetryRule",
+          "observabilityadmin:UpdateTelemetryRuleForOrganization",
+          "observabilityadmin:ValidateTelemetryPipelineConfiguration",
+          "ram:ListResources"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:observabilityadmin:CreateCentralizationRuleForOrganization",
+      "aws:allow_action:observabilityadmin:CreateDatasetIntegration",
+      "aws:allow_action:observabilityadmin:CreateS3TableIntegration",
+      "aws:allow_action:observabilityadmin:CreateTelemetryPipeline",
+      "aws:allow_action:observabilityadmin:CreateTelemetryRule",
+      "aws:allow_action:observabilityadmin:CreateTelemetryRuleForOrganization",
+      "aws:allow_action:observabilityadmin:DeleteCentralizationRuleForOrganization",
+      "aws:allow_action:observabilityadmin:DeleteDatasetIntegration",
+      "aws:allow_action:observabilityadmin:DeleteS3TableIntegration",
+      "aws:allow_action:observabilityadmin:DeleteTelemetryPipeline",
+      "aws:allow_action:observabilityadmin:DeleteTelemetryRule",
+      "aws:allow_action:observabilityadmin:DeleteTelemetryRuleForOrganization",
+      "aws:allow_action:observabilityadmin:GetCentralizationRuleForOrganization",
+      "aws:allow_action:observabilityadmin:GetDatasetIntegration",
+      "aws:allow_action:observabilityadmin:GetS3TableIntegration",
+      "aws:allow_action:observabilityadmin:GetTelemetryEnrichmentStatus",
+      "aws:allow_action:observabilityadmin:GetTelemetryEvaluationStatus",
+      "aws:allow_action:observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+      "aws:allow_action:observabilityadmin:GetTelemetryPipeline",
+      "aws:allow_action:observabilityadmin:GetTelemetryRule",
+      "aws:allow_action:observabilityadmin:GetTelemetryRuleForOrganization",
+      "aws:allow_action:observabilityadmin:ListCentralizationRulesForOrganization",
+      "aws:allow_action:observabilityadmin:ListDatasetIntegrations",
+      "aws:allow_action:observabilityadmin:ListResourceTelemetry",
+      "aws:allow_action:observabilityadmin:ListResourceTelemetryForOrganization",
+      "aws:allow_action:observabilityadmin:ListS3TableIntegrations",
+      "aws:allow_action:observabilityadmin:ListTagsForResource",
+      "aws:allow_action:observabilityadmin:ListTelemetryPipelines",
+      "aws:allow_action:observabilityadmin:ListTelemetryRules",
+      "aws:allow_action:observabilityadmin:ListTelemetryRulesForOrganization",
+      "aws:allow_action:observabilityadmin:StartTelemetryEnrichment",
+      "aws:allow_action:observabilityadmin:StartTelemetryEvaluation",
+      "aws:allow_action:observabilityadmin:StartTelemetryEvaluationForOrganization",
+      "aws:allow_action:observabilityadmin:StopTelemetryEnrichment",
+      "aws:allow_action:observabilityadmin:StopTelemetryEvaluation",
+      "aws:allow_action:observabilityadmin:StopTelemetryEvaluationForOrganization",
+      "aws:allow_action:observabilityadmin:TagResource",
+      "aws:allow_action:observabilityadmin:TestTelemetryPipeline",
+      "aws:allow_action:observabilityadmin:UntagResource",
+      "aws:allow_action:observabilityadmin:UpdateCentralizationRuleForOrganization",
+      "aws:allow_action:observabilityadmin:UpdateDatasetIntegration",
+      "aws:allow_action:observabilityadmin:UpdateTelemetryPipeline",
+      "aws:allow_action:observabilityadmin:UpdateTelemetryRule",
+      "aws:allow_action:observabilityadmin:UpdateTelemetryRuleForOrganization",
+      "aws:allow_action:observabilityadmin:ValidateTelemetryPipelineConfiguration",
+      "aws:allow_action:ram:ListResources"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "AWSQuickSetupManagedInstanceProfileExecutionPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v10 (default)",
+          "before": "v9 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 18, 2026, 09:57 UTC",
+          "before": "October 27, 2026, 15:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 18, 2026, 09:57 UTC",
+          "before": "October 27, 2026, 15:57 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupManagedInstanceProfileExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/AWSQuickSetupManagedInstanceProfileExecutionPolicy"
+    },
+    {
+      "display_name": "AdministratorAccess-AWSElasticBeanstalk",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "iam:SimulatePrincipalPolicy"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v11 (default)",
+          "before": "v10 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 18, 2026, 15:27 UTC",
+          "before": "May 19, 2026, 20:12 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 18, 2026, 15:27 UTC",
+          "before": "May 19, 2026, 20:12 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess-AWSElasticBeanstalk.html",
+      "stable_id": "arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk"
+    },
+    {
+      "display_name": "AmazonEC2ContainerRegistryFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "signin:CreateBearerToken"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 21:07 UTC",
+          "before": "December 05, 2020, 00:04 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 21:07 UTC",
+          "before": "December 05, 2020, 00:04 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ContainerRegistryFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess"
+    },
+    {
+      "display_name": "AmazonEC2ContainerRegistryPowerUser",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "signin:CreateBearerToken"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v4 (default)",
+          "before": "v3 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 21:17 UTC",
+          "before": "December 10, 2019, 20:48 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 21:17 UTC",
+          "before": "December 10, 2019, 20:48 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ContainerRegistryPowerUser.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser"
+    },
+    {
+      "display_name": "AmazonEC2ContainerRegistryPullOnly",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "signin:CreateBearerToken"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 21:27 UTC",
+          "before": "October 04, 2024, 16:58 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 21:27 UTC",
+          "before": "October 04, 2024, 16:58 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ContainerRegistryPullOnly.html",
+      "stable_id": "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPullOnly"
+    },
+    {
+      "display_name": "CloudWatchFullAccessV2",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "config:DeleteServiceLinkedConfigurationRecorder",
+              "config:GetConnector",
+              "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+              "observabilityadmin:*"
+            ],
+            "removed": [
+              "observabilityadmin:CreateCentralizationRuleForOrganization",
+              "observabilityadmin:CreateDatasetIntegration",
+              "observabilityadmin:CreateS3TableIntegration",
+              "observabilityadmin:CreateTelemetryPipeline",
+              "observabilityadmin:CreateTelemetryRule",
+              "observabilityadmin:CreateTelemetryRuleForOrganization",
+              "observabilityadmin:DeleteCentralizationRuleForOrganization",
+              "observabilityadmin:DeleteDatasetIntegration",
+              "observabilityadmin:DeleteS3TableIntegration",
+              "observabilityadmin:DeleteTelemetryPipeline",
+              "observabilityadmin:DeleteTelemetryRule",
+              "observabilityadmin:DeleteTelemetryRuleForOrganization",
+              "observabilityadmin:GetCentralizationRuleForOrganization",
+              "observabilityadmin:GetDatasetIntegration",
+              "observabilityadmin:GetS3TableIntegration",
+              "observabilityadmin:GetTelemetryEnrichmentStatus",
+              "observabilityadmin:GetTelemetryEvaluationStatus",
+              "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+              "observabilityadmin:GetTelemetryPipeline",
+              "observabilityadmin:GetTelemetryRule",
+              "observabilityadmin:GetTelemetryRuleForOrganization",
+              "observabilityadmin:ListCentralizationRulesForOrganization",
+              "observabilityadmin:ListDatasetIntegrations",
+              "observabilityadmin:ListResourceTelemetry",
+              "observabilityadmin:ListResourceTelemetryForOrganization",
+              "observabilityadmin:ListS3TableIntegrations",
+              "observabilityadmin:ListTagsForResource",
+              "observabilityadmin:ListTelemetryPipelines",
+              "observabilityadmin:ListTelemetryRules",
+              "observabilityadmin:ListTelemetryRulesForOrganization",
+              "observabilityadmin:StartTelemetryEnrichment",
+              "observabilityadmin:StartTelemetryEvaluation",
+              "observabilityadmin:StartTelemetryEvaluationForOrganization",
+              "observabilityadmin:StopTelemetryEnrichment",
+              "observabilityadmin:StopTelemetryEvaluation",
+              "observabilityadmin:StopTelemetryEvaluationForOrganization",
+              "observabilityadmin:TagResource",
+              "observabilityadmin:TestTelemetryPipeline",
+              "observabilityadmin:UntagResource",
+              "observabilityadmin:UpdateCentralizationRuleForOrganization",
+              "observabilityadmin:UpdateDatasetIntegration",
+              "observabilityadmin:UpdateTelemetryPipeline",
+              "observabilityadmin:UpdateTelemetryRule",
+              "observabilityadmin:UpdateTelemetryRuleForOrganization",
+              "observabilityadmin:ValidateTelemetryPipelineConfiguration"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v20 (default)",
+          "before": "v18 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 18, 2026, 15:07 UTC",
+          "before": "October 20, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 18, 2026, 15:07 UTC",
+          "before": "October 20, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 21,
+          "before": 17,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
+      "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "s3tables:CreateNamespace",
+              "s3tables:DeleteNamespace",
+              "s3tables:DeleteTableBucket",
+              "s3tables:DeleteTableBucketPolicy",
+              "s3tables:GetTableBucketPolicy",
+              "s3tables:ListTagsForResource",
+              "s3tables:PutTableBucketEncryption",
+              "s3tables:TagResource",
+              "s3tables:UntagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v30 (default)",
+          "before": "v29 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 21:17 UTC",
+          "before": "November 14, 2026, 00:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 21:17 UTC",
+          "before": "November 14, 2026, 00:07 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 93,
+          "before": 92,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioAdminIAMPermissiveExecutionPolicy",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v27 (default)",
+          "before": "v26 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 18:07 UTC",
+          "before": "November 14, 2026, 00:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 18:07 UTC",
+          "before": "November 14, 2026, 00:07 UTC",
+          "field": "metadata.edited_time"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMPermissiveExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+    },
+    {
+      "display_name": "SageMakerStudioUserIAMDefaultExecutionPolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "s3tables:GetTableBucket",
+              "s3tables:ListTableBuckets"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v34 (default)",
+          "before": "v33 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 18:07 UTC",
+          "before": "November 14, 2026, 00:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 18:07 UTC",
+          "before": "November 14, 2026, 00:07 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 84,
+          "before": 83,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioUserIAMDefaultExecutionPolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy"
+    },
+    {
+      "display_name": "AWSElasticLoadBalancingServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "secretsmanager:DeleteSecret",
+              "secretsmanager:DescribeSecret",
+              "secretsmanager:PutSecretValue",
+              "secretsmanager:RotateSecret",
+              "secretsmanager:UpdateSecretVersionStage"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v16 (default)",
+          "before": "v15 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 22:27 UTC",
+          "before": "October 13, 2026, 19:47 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 22:27 UTC",
+          "before": "October 13, 2026, 19:47 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSElasticLoadBalancingServiceRolePolicy"
+    },
+    {
+      "display_name": "AccessAnalyzerServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "config:DeleteServiceLinkedConfigurationRecorder",
+              "config:DescribeConfigurationRecorderStatus",
+              "config:DescribeConfigurationRecorders",
+              "config:PutServiceLinkedConfigurationRecorder",
+              "config:SelectResourceConfig",
+              "iam:CreateServiceLinkedRole",
+              "tag:GetResources"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v24 (default)",
+          "before": "v23 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 20:17 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 20:17 UTC",
+          "before": "February 12, 2026, 17:59 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_conditions"
+        },
+        {
+          "after": true,
+          "before": false,
+          "field": "metadata.has_non_wildcard_resource_scopes"
+        },
+        {
+          "after": 4,
+          "before": 1,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccessAnalyzerServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AccessAnalyzerServiceRolePolicy"
+    },
+    {
+      "display_name": "SageMakerStudioProjectProvisioningRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "eks:CreatePodIdentityAssociation",
+              "eks:DeletePodIdentityAssociation",
+              "eks:ListPodIdentityAssociations",
+              "eks:TagResource",
+              "organizations:DescribeOrganization",
+              "ram:DisassociateResourceShare",
+              "ram:ListResource*"
+            ],
+            "removed": [
+              "ram:ListResources"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v86 (default)",
+          "before": "v85 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 17, 2026, 21:17 UTC",
+          "before": "November 13, 2026, 20:07 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 17, 2026, 21:17 UTC",
+          "before": "November 13, 2026, 20:07 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 161,
+          "before": 162,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-11-19T11:46:06Z",
+  "counts": {
+    "added_atoms": 90,
+    "added_objects": 5,
+    "changed_objects": 12,
+    "current_objects": 1632,
+    "previous_objects": 1627,
+    "removed_atoms": 46,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-19",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-11-18",
+  "removed_objects": []
+}

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 01, 2023, 11:32 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 20, 2026, 18:57 UTC</p>
+                <p><b>Edited time:</b>  November 18, 2026, 15:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchFullAccessV2</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchFullAccessV2-version">Policy version</h2>
-        <p><b>Policy version:</b> v18 (default)</p>
+        <p><b>Policy version:</b> v20 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -90,51 +90,7 @@
         "iam:GetPolicyVersion",
         "iam:GetRole",
         "oam:ListSinks",
-        "observabilityadmin:GetCentralizationRuleForOrganization",
-        "observabilityadmin:ListCentralizationRulesForOrganization",
-        "observabilityadmin:CreateCentralizationRuleForOrganization",
-        "observabilityadmin:UpdateCentralizationRuleForOrganization",
-        "observabilityadmin:DeleteCentralizationRuleForOrganization",
-        "observabilityadmin:StartTelemetryEvaluation",
-        "observabilityadmin:GetTelemetryEvaluationStatus",
-        "observabilityadmin:ListResourceTelemetry",
-        "observabilityadmin:StopTelemetryEvaluation",
-        "observabilityadmin:StartTelemetryEvaluationForOrganization",
-        "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
-        "observabilityadmin:ListResourceTelemetryForOrganization",
-        "observabilityadmin:StopTelemetryEvaluationForOrganization",
-        "observabilityadmin:CreateTelemetryRule",
-        "observabilityadmin:GetTelemetryRule",
-        "observabilityadmin:ListTelemetryRules",
-        "observabilityadmin:UpdateTelemetryRule",
-        "observabilityadmin:DeleteTelemetryRule",
-        "observabilityadmin:CreateTelemetryRuleForOrganization",
-        "observabilityadmin:GetTelemetryRuleForOrganization",
-        "observabilityadmin:ListTelemetryRulesForOrganization",
-        "observabilityadmin:UpdateTelemetryRuleForOrganization",
-        "observabilityadmin:DeleteTelemetryRuleForOrganization",
-        "observabilityadmin:GetTelemetryEnrichmentStatus",
-        "observabilityadmin:StartTelemetryEnrichment",
-        "observabilityadmin:StopTelemetryEnrichment",
-        "observabilityadmin:TagResource",
-        "observabilityadmin:UntagResource",
-        "observabilityadmin:ListTagsForResource",
-        "observabilityadmin:CreateTelemetryPipeline",
-        "observabilityadmin:GetTelemetryPipeline",
-        "observabilityadmin:UpdateTelemetryPipeline",
-        "observabilityadmin:DeleteTelemetryPipeline",
-        "observabilityadmin:ListTelemetryPipelines",
-        "observabilityadmin:TestTelemetryPipeline",
-        "observabilityadmin:ValidateTelemetryPipelineConfiguration",
-        "observabilityadmin:CreateS3TableIntegration",
-        "observabilityadmin:GetS3TableIntegration",
-        "observabilityadmin:ListS3TableIntegrations",
-        "observabilityadmin:DeleteS3TableIntegration",
-        "observabilityadmin:CreateDatasetIntegration",
-        "observabilityadmin:GetDatasetIntegration",
-        "observabilityadmin:ListDatasetIntegrations",
-        "observabilityadmin:UpdateDatasetIntegration",
-        "observabilityadmin:DeleteDatasetIntegration",
+        "observabilityadmin:*",
         "rum:*",
         "synthetics:*",
         "xray:*"
@@ -325,12 +281,55 @@
       "Resource" : "arn:aws:kms:*:*:key/*",
       "Condition" : <span>{</span>
         "StringLike" : <span>{</span>
-          "kms:ViaService" : "logs.*.amazonaws.com"
+          "kms:ViaService" : [
+            "logs.*.amazonaws.com",
+            "cloudwatch.*.amazonaws.com"
+          ]
         },
         "StringEquals" : <span>{</span>
           "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "ObservabilityAdminConnectorPassRolePermissions",
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:PassedToService" : "observabilityadmin.amazonaws.com"
+        },
+        "ArnLike" : <span>{</span>
+          "iam:AssociatedResourceArn" : "arn:aws:observabilityadmin:*:*:connector/*"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ObservabilityAdminThirdPartyEnrichmentConfigRecorderPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+        "config:DeleteServiceLinkedConfigurationRecorder"
+      ],
+      "Resource" : "arn:aws:config:*:*:configuration-recorder/*ConfigurationRecorderForCloudWatchTelemetryEnrichment*"
+    },
+    <span>{</span>
+      "Sid" : "ObservabilityAdminThirdPartyEnrichmentConfigSLRPermissions",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "config.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ObservabilityAdminThirdPartyEnrichmentConfigConnectorRead",
+      "Effect" : "Allow",
+      "Action" : "config:GetConnector",
+      "Resource" : "arn:aws:config:*:*:connector/*"
     }
   ]
 }</code></pre>

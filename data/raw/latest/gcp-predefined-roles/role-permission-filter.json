@@ -92,7 +92,7 @@
     },
     {
       "title": "Cloud Service Mesh",
-      "name": "trafficdirector.googleapis.com, meshdataplane.googleapis.com, meshconfig.googleapis.com, anthosservicemesh.googleapis.com",
+      "name": "meshconfig.googleapis.com, trafficdirector.googleapis.com, meshdataplane.googleapis.com, anthosservicemesh.googleapis.com",
       "url": "/iam/docs/roles-permissions/anthosservicemesh"
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "title": "API Gateway",
-      "name": "apigateway.googleapis.com, apigateway.management.googleapis.com",
+      "name": "apigateway.management.googleapis.com, apigateway.googleapis.com",
       "url": "/iam/docs/roles-permissions/apigateway"
     },
     {
@@ -149,6 +149,11 @@
       "title": "App Hub",
       "name": "apphub.googleapis.com",
       "url": "/iam/docs/roles-permissions/apphub"
+    },
+    {
+      "title": "App Hub Endpoint",
+      "name": "apphubendpoint.googleapis.com",
+      "url": "/iam/docs/roles-permissions/apphubendpoint"
     },
     {
       "title": "Appliance Activation Service",
@@ -412,7 +417,7 @@
     },
     {
       "title": "Cloud IoT",
-      "name": "cloudiot.googleapis.com, cloudiottoken.googleapis.com",
+      "name": "cloudiottoken.googleapis.com, cloudiot.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudiot"
     },
     {
@@ -432,7 +437,7 @@
     },
     {
       "title": "Firebase Cloud Messaging",
-      "name": "cloudmessaging.googleapis.com, firebasecloudmessaging.googleapis.com, firebasenotifications.googleapis.com",
+      "name": "firebasecloudmessaging.googleapis.com, firebasenotifications.googleapis.com, cloudmessaging.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasecloudmessaging"
     },
     {
@@ -452,7 +457,7 @@
     },
     {
       "title": "Service Catalog",
-      "name": "cloudprivatecatalog.googleapis.com, cloudprivatecatalogproducer.googleapis.com",
+      "name": "cloudprivatecatalogproducer.googleapis.com, cloudprivatecatalog.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudprivatecatalog"
     },
     {
@@ -477,7 +482,7 @@
     },
     {
       "title": "Web Security Scanner",
-      "name": "websecurityscanner.googleapis.com, cloudsecurityscanner.googleapis.com",
+      "name": "cloudsecurityscanner.googleapis.com, websecurityscanner.googleapis.com",
       "url": "/iam/docs/roles-permissions/cloudsecurityscanner"
     },
     {
@@ -502,7 +507,7 @@
     },
     {
       "title": "Cloud TPU",
-      "name": "cloudtpu.googleapis.com, tpu.googleapis.com",
+      "name": "tpu.googleapis.com, cloudtpu.googleapis.com",
       "url": "/iam/docs/roles-permissions/tpu"
     },
     {
@@ -732,7 +737,7 @@
     },
     {
       "title": "Dell EMC Cloud OneFS",
-      "name": "dellemccloudonefs.googleapis.com, cloudonefs.isiloncloud.com",
+      "name": "cloudonefs.isiloncloud.com, dellemccloudonefs.googleapis.com",
       "url": "/iam/docs/roles-permissions/dellemccloudonefs"
     },
     {
@@ -969,6 +974,11 @@
       "title": "Firebase Telemetry",
       "name": "firebasetelemetry.googleapis.com",
       "url": "/iam/docs/roles-permissions/firebasetelemetry"
+    },
+    {
+      "title": "Firebase Telemetry Admin",
+      "name": "firebasetelemetryadmin.googleapis.com",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin"
     },
     {
       "title": "Firebase AI Logic",
@@ -1247,7 +1257,7 @@
     },
     {
       "title": "Cloud Monitoring",
-      "name": "stackdriver.googleapis.com, monitoring.googleapis.com, opsconfigmonitoring.googleapis.com",
+      "name": "monitoring.googleapis.com, opsconfigmonitoring.googleapis.com, stackdriver.googleapis.com",
       "url": "/iam/docs/roles-permissions/monitoring"
     },
     {
@@ -1417,7 +1427,7 @@
     },
     {
       "title": "Rapid Migration Assessment",
-      "name": "rma.googleapis.com, rapidmigrationassessment.googleapis.com",
+      "name": "rapidmigrationassessment.googleapis.com, rma.googleapis.com",
       "url": "/iam/docs/roles-permissions/rapidmigrationassessment"
     },
     {
@@ -1739,6 +1749,11 @@
       "title": "Workload Manager",
       "name": "workloadmanager.googleapis.com",
       "url": "/iam/docs/roles-permissions/workloadmanager"
+    },
+    {
+      "title": "Workspace Key Access",
+      "name": "workspacekeyaccess.googleapis.com",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess"
     },
     {
       "title": "Cloud Workstations",
@@ -2904,6 +2919,12 @@
       "name": "roles/apphub.appManagementViewer",
       "url": "/iam/docs/roles-permissions/apphub#apphub.appManagementViewer",
       "priority": 2
+    },
+    {
+      "title": "App Hub Endpoint Viewer",
+      "name": "roles/apphubendpoint.viewer",
+      "url": "/iam/docs/roles-permissions/apphubendpoint#apphubendpoint.viewer",
+      "priority": 1
     },
     {
       "title": "Appliance Admin",
@@ -9374,6 +9395,18 @@
       "priority": 2
     },
     {
+      "title": "Firebase Telemetry Admin Admin",
+      "name": "roles/firebasetelemetryadmin.admin",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.admin",
+      "priority": 1
+    },
+    {
+      "title": "Firebase Telemetry Admin Viewer",
+      "name": "roles/firebasetelemetryadmin.viewer",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.viewer",
+      "priority": 1
+    },
+    {
       "title": "Firebase AI Logic Admin",
       "name": "roles/firebasevertexai.admin",
       "url": "/iam/docs/roles-permissions/firebasevertexai#firebasevertexai.admin",
@@ -12101,6 +12134,36 @@
       "title": "Security Profile Admin",
       "name": "roles/networksecurity.securityProfileAdmin",
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.securityProfileAdmin",
+      "priority": 2
+    },
+    {
+      "title": "Ull Mirroring Collector Admin",
+      "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectorAdmin",
+      "priority": 2
+    },
+    {
+      "title": "Ull Mirroring Collector Viewer",
+      "name": "roles/networksecurity.ullMirroringCollectorViewer",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectorViewer",
+      "priority": 2
+    },
+    {
+      "title": "Ull Mirroring Engine Admin",
+      "name": "roles/networksecurity.ullMirroringEngineAdmin",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngineAdmin",
+      "priority": 2
+    },
+    {
+      "title": "Ull Mirroring Engine User",
+      "name": "roles/networksecurity.ullMirroringEngineUser",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngineUser",
+      "priority": 2
+    },
+    {
+      "title": "Ull Mirroring Engine Viewer",
+      "name": "roles/networksecurity.ullMirroringEngineViewer",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngineViewer",
       "priority": 2
     },
     {
@@ -16244,6 +16307,24 @@
       "priority": 2
     },
     {
+      "title": "Workspace Key Access API Admin",
+      "name": "roles/workspacekeyaccess.admin",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.admin",
+      "priority": 1
+    },
+    {
+      "title": "Workspace Key Access API Editor",
+      "name": "roles/workspacekeyaccess.editor",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.editor",
+      "priority": 1
+    },
+    {
+      "title": "Workspace Key Access API Viewer",
+      "name": "roles/workspacekeyaccess.viewer",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.viewer",
+      "priority": 1
+    },
+    {
       "title": "Cloud Workstations Admin",
       "name": "roles/workstations.admin",
       "url": "/iam/docs/roles-permissions/workstations#workstations.admin",
@@ -16648,6 +16729,14 @@
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.agents.search"
     },
     {
+      "title": "agentregistry.aiApplications.createPolicyBinding",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.createPolicyBinding"
+    },
+    {
+      "title": "agentregistry.aiApplications.deletePolicyBinding",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.deletePolicyBinding"
+    },
+    {
       "title": "agentregistry.aiApplications.get",
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.get"
     },
@@ -16660,8 +16749,16 @@
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.list"
     },
     {
+      "title": "agentregistry.aiApplications.searchPolicyBindings",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.searchPolicyBindings"
+    },
+    {
       "title": "agentregistry.aiApplications.setIamPolicy",
       "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.setIamPolicy"
+    },
+    {
+      "title": "agentregistry.aiApplications.updatePolicyBinding",
+      "url": "/iam/docs/roles-permissions/agentregistry#agentregistry.aiApplications.updatePolicyBinding"
     },
     {
       "title": "agentregistry.bindings.create",
@@ -17400,6 +17497,10 @@
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.evaluationExperiments.update"
     },
     {
+      "title": "aiplatform.evaluationItemRevisions.get",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.evaluationItemRevisions.get"
+    },
+    {
       "title": "aiplatform.evaluationItems.create",
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.evaluationItems.create"
     },
@@ -17462,6 +17563,14 @@
     {
       "title": "aiplatform.evaluationRuns.update",
       "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.evaluationRuns.update"
+    },
+    {
+      "title": "aiplatform.evaluationSetRevisions.delete",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.evaluationSetRevisions.delete"
+    },
+    {
+      "title": "aiplatform.evaluationSetRevisions.get",
+      "url": "/iam/docs/roles-permissions/aiplatform#aiplatform.evaluationSetRevisions.get"
     },
     {
       "title": "aiplatform.evaluationSets.create",
@@ -21336,8 +21445,16 @@
       "url": "/iam/docs/roles-permissions/apphub#apphub.applications.create"
     },
     {
+      "title": "apphub.applications.createTagBinding",
+      "url": "/iam/docs/roles-permissions/apphub#apphub.applications.createTagBinding"
+    },
+    {
       "title": "apphub.applications.delete",
       "url": "/iam/docs/roles-permissions/apphub#apphub.applications.delete"
+    },
+    {
+      "title": "apphub.applications.deleteTagBinding",
+      "url": "/iam/docs/roles-permissions/apphub#apphub.applications.deleteTagBinding"
     },
     {
       "title": "apphub.applications.get",
@@ -21350,6 +21467,14 @@
     {
       "title": "apphub.applications.list",
       "url": "/iam/docs/roles-permissions/apphub#apphub.applications.list"
+    },
+    {
+      "title": "apphub.applications.listEffectiveTags",
+      "url": "/iam/docs/roles-permissions/apphub#apphub.applications.listEffectiveTags"
+    },
+    {
+      "title": "apphub.applications.listTagBindings",
+      "url": "/iam/docs/roles-permissions/apphub#apphub.applications.listTagBindings"
     },
     {
       "title": "apphub.applications.setIamPolicy",
@@ -21494,6 +21619,10 @@
     {
       "title": "apphub.workloads.update",
       "url": "/iam/docs/roles-permissions/apphub#apphub.workloads.update"
+    },
+    {
+      "title": "apphubendpoint.locations.lookup",
+      "url": "/iam/docs/roles-permissions/apphubendpoint#apphubendpoint.locations.lookup"
     },
     {
       "title": "applianceactivation.rttCommands.approve",
@@ -22784,6 +22913,14 @@
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.useReadOnlyForCloudSqlInstance"
     },
     {
+      "title": "backupdr.bvbackups.useReadOnlyForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.useReadOnlyForComputeDisk"
+    },
+    {
+      "title": "backupdr.bvbackups.useReadOnlyForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.useReadOnlyForComputeInstance"
+    },
+    {
       "title": "backupdr.bvbackups.useReadOnlyForFilestoreInstance",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvbackups.useReadOnlyForFilestoreInstance"
     },
@@ -22834,6 +22971,14 @@
     {
       "title": "backupdr.bvdataSources.useReadOnlyForCloudSqlInstance",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvdataSources.useReadOnlyForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.bvdataSources.useReadOnlyForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvdataSources.useReadOnlyForComputeDisk"
+    },
+    {
+      "title": "backupdr.bvdataSources.useReadOnlyForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.bvdataSources.useReadOnlyForComputeInstance"
     },
     {
       "title": "backupdr.compute.restoreFromBackupVault",
@@ -23094,6 +23239,194 @@
     {
       "title": "backupdr.resourceBackupConfigs.list",
       "url": "/iam/docs/roles-permissions/backupdr#backupdr.resourceBackupConfigs.list"
+    },
+    {
+      "title": "backupdr.restoreTargets.useForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTargets.useForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplateExecutions.getForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplateExecutions.getForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplateExecutions.getForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplateExecutions.getForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplateExecutions.getForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplateExecutions.getForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplateExecutions.list",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplateExecutions.list"
+    },
+    {
+      "title": "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplateExecutions.triggerRestoreCleanupForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplateExecutions.triggerRestoreCleanupForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplateExecutions.triggerRestoreCleanupForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.createForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.createForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.createForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.createForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplates.createForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.createForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.deleteForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.deleteForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.deleteForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.deleteForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplates.deleteForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.deleteForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.getForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.getForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.getForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.getForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplates.getForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.getForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.list",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.list"
+    },
+    {
+      "title": "backupdr.restoreTemplates.runForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.runForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.runForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.runForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplates.runForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.runForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.runWithCleanupForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.runWithCleanupForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.runWithCleanupForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.runWithCleanupForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplates.runWithCleanupForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.runWithCleanupForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.updateForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.updateForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.updateForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.updateForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplates.updateForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.updateForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.useForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.useForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreTemplates.useForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.useForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreTemplates.useForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreTemplates.useForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.createForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.createForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.createForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.createForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.createForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.createForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.deleteForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.deleteForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.deleteForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.deleteForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.deleteForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.deleteForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.getForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.getForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.getForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.getForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.getForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.getForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.list",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.list"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForCloudSqlInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForCloudSqlInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForComputeDisk",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForComputeDisk"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForComputeInstance",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForComputeInstance"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlans.create",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlans.create"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlans.delete",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlans.delete"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlans.get",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlans.get"
+    },
+    {
+      "title": "backupdr.restoreVerificationPlans.list",
+      "url": "/iam/docs/roles-permissions/backupdr#backupdr.restoreVerificationPlans.list"
     },
     {
       "title": "backupdr.serviceConfig.initialize",
@@ -23640,12 +23973,24 @@
       "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.securityGateways.list"
     },
     {
+      "title": "beyondcorp.securityGateways.networkAccess",
+      "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.securityGateways.networkAccess"
+    },
+    {
+      "title": "beyondcorp.securityGateways.routeDiscovery",
+      "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.securityGateways.routeDiscovery"
+    },
+    {
       "title": "beyondcorp.securityGateways.setIamPolicy",
       "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.securityGateways.setIamPolicy"
     },
     {
       "title": "beyondcorp.securityGateways.update",
       "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.securityGateways.update"
+    },
+    {
+      "title": "beyondcorp.sgApplications.access",
+      "url": "/iam/docs/roles-permissions/beyondcorp#beyondcorp.sgApplications.access"
     },
     {
       "title": "beyondcorp.sgApplications.create",
@@ -27900,6 +28245,10 @@
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.messages.create"
     },
     {
+      "title": "chronicle.messages.createLongRunning",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.messages.createLongRunning"
+    },
+    {
       "title": "chronicle.messages.delete",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.messages.delete"
     },
@@ -28016,6 +28365,14 @@
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.operations.wait"
     },
     {
+      "title": "chronicle.parserAnalysisReports.get",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.parserAnalysisReports.get"
+    },
+    {
+      "title": "chronicle.parserAnalysisReports.list",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.parserAnalysisReports.list"
+    },
+    {
       "title": "chronicle.parserExtensions.activate",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.parserExtensions.activate"
     },
@@ -28082,6 +28439,10 @@
     {
       "title": "chronicle.parsers.list",
       "url": "/iam/docs/roles-permissions/chronicle#chronicle.parsers.list"
+    },
+    {
+      "title": "chronicle.parsers.runAnalysis",
+      "url": "/iam/docs/roles-permissions/chronicle#chronicle.parsers.runAnalysis"
     },
     {
       "title": "chronicle.parsers.runParser",
@@ -33308,6 +33669,18 @@
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.blueGreenDeployments.switchover"
     },
     {
+      "title": "cloudsql.customerManagedCertificates.delete",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.customerManagedCertificates.delete"
+    },
+    {
+      "title": "cloudsql.customerManagedCertificates.list",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.customerManagedCertificates.list"
+    },
+    {
+      "title": "cloudsql.customerManagedCertificates.update",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.customerManagedCertificates.update"
+    },
+    {
       "title": "cloudsql.databases.create",
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.databases.create"
     },
@@ -33382,6 +33755,10 @@
     {
       "title": "cloudsql.instances.executeSql",
       "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.executeSql"
+    },
+    {
+      "title": "cloudsql.instances.executeSqlReadOnly",
+      "url": "/iam/docs/roles-permissions/cloudsql#cloudsql.instances.executeSqlReadOnly"
     },
     {
       "title": "cloudsql.instances.export",
@@ -34734,6 +35111,26 @@
     {
       "title": "compute.acceleratorInterconnects.queryFormability",
       "url": "/iam/docs/roles-permissions/compute#compute.acceleratorInterconnects.queryFormability"
+    },
+    {
+      "title": "compute.acceleratorPodControllers.create",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorPodControllers.create"
+    },
+    {
+      "title": "compute.acceleratorPodControllers.delete",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorPodControllers.delete"
+    },
+    {
+      "title": "compute.acceleratorPodControllers.get",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorPodControllers.get"
+    },
+    {
+      "title": "compute.acceleratorPodControllers.list",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorPodControllers.list"
+    },
+    {
+      "title": "compute.acceleratorPodControllers.update",
+      "url": "/iam/docs/roles-permissions/compute#compute.acceleratorPodControllers.update"
     },
     {
       "title": "compute.acceleratorTypes.get",
@@ -45236,6 +45633,10 @@
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useContextEntryLink"
     },
     {
+      "title": "dataplex.entryGroups.useDataContractAspect",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useDataContractAspect"
+    },
+    {
       "title": "dataplex.entryGroups.useDataProfileAspect",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useDataProfileAspect"
     },
@@ -45286,6 +45687,10 @@
     {
       "title": "dataplex.entryGroups.useGraphProfileAspect",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useGraphProfileAspect"
+    },
+    {
+      "title": "dataplex.entryGroups.useGuidelinesAspect",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useGuidelinesAspect"
     },
     {
       "title": "dataplex.entryGroups.useManagedConnectorTypes",
@@ -45362,6 +45767,10 @@
     {
       "title": "dataplex.entryGroups.useStorageAspect",
       "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useStorageAspect"
+    },
+    {
+      "title": "dataplex.entryGroups.useStructuredDataAspect",
+      "url": "/iam/docs/roles-permissions/dataplex#dataplex.entryGroups.useStructuredDataAspect"
     },
     {
       "title": "dataplex.entryGroups.useSynonymEntryLink",
@@ -47402,6 +47811,10 @@
     {
       "title": "devicestreaming.deviceSessions.update",
       "url": "/iam/docs/roles-permissions/devicestreaming#devicestreaming.deviceSessions.update"
+    },
+    {
+      "title": "devicestreaming.deviceSessions.use",
+      "url": "/iam/docs/roles-permissions/devicestreaming#devicestreaming.deviceSessions.use"
     },
     {
       "title": "dialogflow.agents.create",
@@ -52666,6 +53079,70 @@
     {
       "title": "firebasestorage.defaultBucket.get",
       "url": "/iam/docs/roles-permissions/firebasestorage#firebasestorage.defaultBucket.get"
+    },
+    {
+      "title": "firebasetelemetryadmin.configs.create",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.configs.create"
+    },
+    {
+      "title": "firebasetelemetryadmin.configs.delete",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.configs.delete"
+    },
+    {
+      "title": "firebasetelemetryadmin.configs.get",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.configs.get"
+    },
+    {
+      "title": "firebasetelemetryadmin.configs.list",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.configs.list"
+    },
+    {
+      "title": "firebasetelemetryadmin.configs.update",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.configs.update"
+    },
+    {
+      "title": "firebasetelemetryadmin.locations.get",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.locations.get"
+    },
+    {
+      "title": "firebasetelemetryadmin.locations.list",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.locations.list"
+    },
+    {
+      "title": "firebasetelemetryadmin.mappingFiles.create",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.mappingFiles.create"
+    },
+    {
+      "title": "firebasetelemetryadmin.mappingFiles.delete",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.mappingFiles.delete"
+    },
+    {
+      "title": "firebasetelemetryadmin.mappingFiles.get",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.mappingFiles.get"
+    },
+    {
+      "title": "firebasetelemetryadmin.mappingFiles.list",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.mappingFiles.list"
+    },
+    {
+      "title": "firebasetelemetryadmin.mappingFiles.update",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.mappingFiles.update"
+    },
+    {
+      "title": "firebasetelemetryadmin.operations.cancel",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.operations.cancel"
+    },
+    {
+      "title": "firebasetelemetryadmin.operations.delete",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.operations.delete"
+    },
+    {
+      "title": "firebasetelemetryadmin.operations.get",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.operations.get"
+    },
+    {
+      "title": "firebasetelemetryadmin.operations.list",
+      "url": "/iam/docs/roles-permissions/firebasetelemetryadmin#firebasetelemetryadmin.operations.list"
     },
     {
       "title": "firebasevertexai.configs.get",
@@ -61068,6 +61545,74 @@
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.tlsInspectionPolicies.use"
     },
     {
+      "title": "networksecurity.ullMirroringCollectorRules.create",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectorRules.create"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectorRules.delete",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectorRules.delete"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectorRules.get",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectorRules.get"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectorRules.list",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectorRules.list"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectorRules.update",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectorRules.update"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectors.create",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectors.create"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectors.delete",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectors.delete"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectors.get",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectors.get"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectors.list",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectors.list"
+    },
+    {
+      "title": "networksecurity.ullMirroringCollectors.update",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringCollectors.update"
+    },
+    {
+      "title": "networksecurity.ullMirroringEngines.create",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngines.create"
+    },
+    {
+      "title": "networksecurity.ullMirroringEngines.delete",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngines.delete"
+    },
+    {
+      "title": "networksecurity.ullMirroringEngines.get",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngines.get"
+    },
+    {
+      "title": "networksecurity.ullMirroringEngines.list",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngines.list"
+    },
+    {
+      "title": "networksecurity.ullMirroringEngines.listNetworks",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngines.listNetworks"
+    },
+    {
+      "title": "networksecurity.ullMirroringEngines.update",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngines.update"
+    },
+    {
+      "title": "networksecurity.ullMirroringEngines.use",
+      "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.ullMirroringEngines.use"
+    },
+    {
       "title": "networksecurity.urlLists.create",
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.urlLists.create"
     },
@@ -61090,6 +61635,26 @@
     {
       "title": "networksecurity.urlLists.use",
       "url": "/iam/docs/roles-permissions/networksecurity#networksecurity.urlLists.use"
+    },
+    {
+      "title": "networkservices.agentConnectivityTemplates.create",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.agentConnectivityTemplates.create"
+    },
+    {
+      "title": "networkservices.agentConnectivityTemplates.delete",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.agentConnectivityTemplates.delete"
+    },
+    {
+      "title": "networkservices.agentConnectivityTemplates.get",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.agentConnectivityTemplates.get"
+    },
+    {
+      "title": "networkservices.agentConnectivityTemplates.list",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.agentConnectivityTemplates.list"
+    },
+    {
+      "title": "networkservices.agentConnectivityTemplates.update",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.agentConnectivityTemplates.update"
     },
     {
       "title": "networkservices.agentGateways.create",
@@ -61234,6 +61799,22 @@
     {
       "title": "networkservices.googleTagGatewayPolicies.update",
       "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleTagGatewayPolicies.update"
+    },
+    {
+      "title": "networkservices.googleapis.com/agentGateways.createPolicyBinding",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleapis.com_agentGateways.createPolicyBinding"
+    },
+    {
+      "title": "networkservices.googleapis.com/agentGateways.deletePolicyBinding",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleapis.com_agentGateways.deletePolicyBinding"
+    },
+    {
+      "title": "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleapis.com_agentGateways.searchPolicyBindings"
+    },
+    {
+      "title": "networkservices.googleapis.com/agentGateways.updatePolicyBinding",
+      "url": "/iam/docs/roles-permissions/networkservices#networkservices.googleapis.com_agentGateways.updatePolicyBinding"
     },
     {
       "title": "networkservices.grpcRoutes.create",
@@ -62590,6 +63171,10 @@
     {
       "title": "oracledatabase.odbDnsZones.list",
       "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbDnsZones.list"
+    },
+    {
+      "title": "oracledatabase.odbDnsZones.update",
+      "url": "/iam/docs/roles-permissions/oracledatabase#oracledatabase.odbDnsZones.update"
     },
     {
       "title": "oracledatabase.odbNetworks.create",
@@ -73034,6 +73619,66 @@
     {
       "title": "workloadmanager.workloads.list",
       "url": "/iam/docs/roles-permissions/workloadmanager#workloadmanager.workloads.list"
+    },
+    {
+      "title": "workspacekeyaccess.configs.create",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.configs.create"
+    },
+    {
+      "title": "workspacekeyaccess.configs.delete",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.configs.delete"
+    },
+    {
+      "title": "workspacekeyaccess.configs.get",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.configs.get"
+    },
+    {
+      "title": "workspacekeyaccess.configs.list",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.configs.list"
+    },
+    {
+      "title": "workspacekeyaccess.configs.update",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.configs.update"
+    },
+    {
+      "title": "workspacekeyaccess.endpoints.create",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.endpoints.create"
+    },
+    {
+      "title": "workspacekeyaccess.endpoints.get",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.endpoints.get"
+    },
+    {
+      "title": "workspacekeyaccess.endpoints.list",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.endpoints.list"
+    },
+    {
+      "title": "workspacekeyaccess.endpoints.update",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.endpoints.update"
+    },
+    {
+      "title": "workspacekeyaccess.locations.get",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.locations.get"
+    },
+    {
+      "title": "workspacekeyaccess.locations.list",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.locations.list"
+    },
+    {
+      "title": "workspacekeyaccess.operations.cancel",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.operations.cancel"
+    },
+    {
+      "title": "workspacekeyaccess.operations.delete",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.operations.delete"
+    },
+    {
+      "title": "workspacekeyaccess.operations.get",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.operations.get"
+    },
+    {
+      "title": "workspacekeyaccess.operations.list",
+      "url": "/iam/docs/roles-permissions/workspacekeyaccess#workspacekeyaccess.operations.list"
     },
     {
       "title": "workstations.operations.get",
