@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 18, 2025, 17:19 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 17, 2026, 18:07 UTC</p>
+                <p><b>Edited time:</b>  November 18, 2026, 17:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioUserIAMDefaultExecutionPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v34 (default)</p>
+        <p><b>Policy version:</b> v35 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -564,6 +564,19 @@
       "Resource" : "*"
     },
     <span>{</span>
+      "Sid" : "LfFilters",
+      "Effect" : "Allow",
+      "Action" : [
+        "lakeformation:GetResourceLFTags",
+        "lakeformation:CreateDataCellsFilter",
+        "lakeformation:GetDataCellsFilter",
+        "lakeformation:ListDataCellsFilter",
+        "lakeformation:UpdateDataCellsFilter",
+        "lakeformation:DeleteDataCellsFilter"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
       "Sid" : "SQLWorkBench",
       "Effect" : "Allow",
       "Action" : [
@@ -670,7 +683,11 @@
         "s3:GetAccessGrantsInstance",
         "s3:GetAccessGrantsInstanceForPrefix",
         "s3:GetDataAccess",
-        "s3:List*"
+        "s3:List*",
+        "s3:GetBucketLocation",
+        "s3:GetAccountPublicAccessBlock",
+        "s3:GetBucketPublicAccessBlock",
+        "s3:GetEncryptionConfiguration"
       ],
       "Resource" : "*"
     },
@@ -1498,6 +1515,42 @@
       "Condition" : <span>{</span>
         "StringEqualsIfExists" : <span>{</span>
           "ram:RequestedResourceType" : "s3:AccessGrants"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "RamRead",
+      "Effect" : "Allow",
+      "Action" : [
+        "ram:GetResourceShareInvitations",
+        "ram:ListResources"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "RamViaLf",
+      "Effect" : "Allow",
+      "Action" : "ram:*ResourceShare*",
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "lakeformation.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "RamAccept",
+      "Effect" : "Allow",
+      "Action" : "ram:AcceptResourceShareInvitation",
+      "Resource" : "arn:*:ram:*:*:resource-share-invitation/*",
+      "Condition" : <span>{</span>
+        "StringLike" : <span>{</span>
+          "ram:ResourceShareName" : [
+            "LakeFormation*",
+            "DataZoneS3AG*"
+          ]
         }
       }
     },

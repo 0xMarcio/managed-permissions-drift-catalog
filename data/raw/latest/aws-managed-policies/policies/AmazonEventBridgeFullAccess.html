@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 11, 2019, 14:08 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 17:58 UTC</p>
+                <p><b>Edited time:</b>  November 19, 2026, 18:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonEventBridgeFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonEventBridgeFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v7 (default)</p>
+        <p><b>Policy version:</b> v8 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -115,6 +115,18 @@
         "secretsmanager:PutSecretValue"
       ],
       "Resource" : "arn:aws:secretsmanager:*:*:secret:events!*"
+    },
+    <span>{</span>
+      "Sid" : "SecretsManagerAccessForWebhookEvents",
+      "Effect" : "Allow",
+      "Action" : [
+        "secretsmanager:CreateSecret",
+        "secretsmanager:UpdateSecret",
+        "secretsmanager:DeleteSecret",
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:PutSecretValue"
+      ],
+      "Resource" : "arn:aws:secretsmanager:*:*:secret:events-webhook!*"
     },
     <span>{</span>
       "Sid" : "IAMPassRoleAccessForEventBridge",

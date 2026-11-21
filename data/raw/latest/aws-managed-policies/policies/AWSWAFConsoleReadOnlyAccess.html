@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: April 06, 2020, 18:43 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  July 01, 2026, 04:12 UTC</p>
+                <p><b>Edited time:</b>  November 19, 2026, 17:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSWAFConsoleReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSWAFConsoleReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v21 (default)</p>
+        <p><b>Policy version:</b> v22 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -390,6 +390,42 @@
       "Action" : [
         "bedrock-agentcore:GatewayListResourcesForWebACL",
         "bedrock-agentcore:ListGateways"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AllowListActionsForObservabilityAdmin",
+      "Effect" : "Allow",
+      "Action" : [
+        "observabilityadmin:ListTelemetryRules",
+        "observabilityadmin:GetTelemetryEvaluationStatus"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AllowListConnectedAccountsForPayments",
+      "Effect" : "Allow",
+      "Action" : [
+        "payments:ListConnectedAccounts"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AllowMarketplaceAgreementActions",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:SearchAgreements",
+        "aws-marketplace:ListEntitlementDetails"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AllowApexQueryActions",
+      "Effect" : "Allow",
+      "Action" : [
+        "apex:GetStatistics",
+        "apex:GetStatisticsTimeSeries",
+        "apex:Search"
       ],
       "Resource" : "*"
     }

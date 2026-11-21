@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: July 02, 2019, 20:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 13, 2026, 18:47 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 05:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceSellerFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceSellerFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v36 (default)</p>
+        <p><b>Policy version:</b> v39 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -86,6 +86,10 @@
         "aws-marketplace:DescribeEntity",
         "aws-marketplace:GetSellerDashboard",
         "aws-marketplace:GetSellerReportingData",
+        "aws-marketplace:CreateDataSubscription",
+        "aws-marketplace:GetDataSubscription",
+        "aws-marketplace:ListDataSubscriptions",
+        "aws-marketplace:DeleteDataSubscription",
         "aws-marketplace:ListAssessments",
         "aws-marketplace:DescribeAssessment",
         "ec2:DescribeImages",
@@ -105,13 +109,13 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws-marketplace:PartyType" : "Proposer"
-        },
         "ForAllValues:StringEquals" : <span>{</span>
           "aws-marketplace:AgreementType" : [
             "PurchaseAgreement"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws-marketplace:PartyType" : "Proposer"
         }
       }
     },
@@ -162,7 +166,8 @@
         "arn:aws:aws-marketplace:*:*:catalog/AWSMarketplace*/*",
         "arn:aws:aws-marketplace:*:*:verification-type/*/verification-evidence/*",
         "arn:aws:aws-marketplace:*:*:tax-compliance-profile/*",
-        "arn:aws:aws-marketplace:*:*:tax-compliance-profile-change-task/*"
+        "arn:aws:aws-marketplace:*:*:tax-compliance-profile-change-task/*",
+        "arn:aws:aws-marketplace:*:*:DeploymentConfiguration:catalogs/AWSMarketplace/*"
       ]
     },
     <span>{</span>
@@ -238,14 +243,6 @@
       ]
     },
     <span>{</span>
-      "Sid" : "Support",
-      "Effect" : "Allow",
-      "Action" : [
-        "support:CreateCase"
-      ],
-      "Resource" : "*"
-    },
-    <span>{</span>
       "Sid" : "ResourcePolicyManagement",
       "Effect" : "Allow",
       "Action" : [
@@ -280,13 +277,13 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws-marketplace:PartyType" : "Proposer"
-        },
         "ForAllValues:StringEquals" : <span>{</span>
           "aws-marketplace:AgreementType" : [
             "PurchaseAgreement"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws-marketplace:PartyType" : "Proposer"
         }
       }
     },
@@ -334,13 +331,13 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringEquals" : <span>{</span>
-          "aws-marketplace:PartyType" : "Proposer"
-        },
         "ForAllValues:StringEquals" : <span>{</span>
           "aws-marketplace:AgreementType" : [
             "PurchaseAgreement"
           ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws-marketplace:PartyType" : "Proposer"
         }
       }
     },
@@ -403,6 +400,71 @@
           ]
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "DeploymentConfigurationManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:StartDeploymentConfigurationJob",
+        "aws-marketplace:GetDeploymentConfigurationJob",
+        "aws-marketplace:ListDeploymentConfigurationJobs",
+        "aws-marketplace:GetDeploymentConfiguration"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:DeploymentConfiguration:catalogs/AWSMarketplace/*"
+    },
+    <span>{</span>
+      "Sid" : "AWSMarketplaceAgreementContactsReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetAgreementContacts"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws-marketplace:AgreementType" : [
+            "PurchaseAgreement"
+          ]
+        },
+        "Null" : <span>{</span>
+          "aws-marketplace:AgreementType" : "false"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "MarketplaceStartAssessment",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:StartAssessment"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:AWSMarketplace*/*"
+    },
+    <span>{</span>
+      "Sid" : "Support",
+      "Effect" : "Allow",
+      "Action" : [
+        "support:CreateCase",
+        "support:DescribeCases",
+        "support:DescribeCommunications",
+        "support:DescribeAttachment",
+        "support:AddCommunicationToCase",
+        "support:ResolveCase",
+        "support:AddAttachmentsToSet",
+        "support:SearchForCases",
+        "support:DescribeServices",
+        "support:DescribeCreateCaseOptions"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "SupportConsole",
+      "Effect" : "Allow",
+      "Action" : [
+        "support-console:GetAccountState",
+        "support-console:GetAccountGovCloudEnabled",
+        "support-console:CheckSubscription",
+        "support-console:GetBanner"
+      ],
+      "Resource" : "*"
     }
   ]
 }</code></pre>

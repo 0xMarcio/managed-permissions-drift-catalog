@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: August 01, 2025, 18:04 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 13, 2026, 21:27 UTC</p>
+                <p><b>Edited time:</b>  November 19, 2026, 22:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSObservabilityAdminTelemetryEnablementServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSObservabilityAdminTelemetryEnablementServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v17 (default)</p>
+        <p><b>Policy version:</b> v18 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -881,6 +881,55 @@
         "cloudtrail:CreateServiceLinkedChannel"
       ],
       "Resource" : "arn:aws:cloudtrail:*:*:channel/aws-service-channel/application-signals/*"
+    },
+    <span>{</span>
+      "Sid" : "TelemetryOperationsForNetworkFirewallLoggingConfigurations",
+      "Effect" : "Allow",
+      "Action" : [
+        "network-firewall:DescribeLoggingConfiguration",
+        "network-firewall:UpdateLoggingConfiguration"
+      ],
+      "Resource" : "arn:aws:network-firewall:*:*:firewall/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TelemetryOperationsForNetworkFirewallLogs",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:CalledViaLast" : "network-firewall.amazonaws.com",
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "TelemetryOperationsForEventsManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "events:PutRule",
+        "events:PutTargets",
+        "events:RemoveTargets",
+        "events:DescribeRule",
+        "events:ListTargetsByRule",
+        "events:TagResource",
+        "events:DeleteRule"
+      ],
+      "Resource" : "arn:aws:events:*:*:rule/aws-events-managed-omni-rule",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
     }
   ]
 }</code></pre>

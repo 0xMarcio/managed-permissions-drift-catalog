@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: June 30, 2026, 19:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 28, 2026, 13:47 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 04:27 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSPartnerCentralRevenueAttributionManagement</code></p>
             </li></ul></div>
      
         <h2 id="AWSPartnerCentralRevenueAttributionManagement-version">Policy version</h2>
-        <p><b>Policy version:</b> v2 (default)</p>
+        <p><b>Policy version:</b> v3 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -133,6 +133,7 @@
       "Effect" : "Allow",
       "Action" : [
         "partnercentral:GetMarketplaceRevenueShare",
+        "partnercentral:UpdateMarketplaceRevenueShare",
         "partnercentral:GetMarketplaceRevenueShareAllocation",
         "partnercentral:UpdateMarketplaceRevenueShareAllocation"
       ],
@@ -277,6 +278,34 @@
         "q:GetConversation",
         "q:ListConversations",
         "q:PassRequest"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "Support",
+      "Effect" : "Allow",
+      "Action" : [
+        "support:CreateCase",
+        "support:DescribeCases",
+        "support:DescribeCommunications",
+        "support:DescribeAttachment",
+        "support:AddCommunicationToCase",
+        "support:ResolveCase",
+        "support:AddAttachmentsToSet",
+        "support:SearchForCases",
+        "support:DescribeServices",
+        "support:DescribeCreateCaseOptions"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "SupportConsole",
+      "Effect" : "Allow",
+      "Action" : [
+        "support-console:GetAccountState",
+        "support-console:GetAccountGovCloudEnabled",
+        "support-console:CheckSubscription",
+        "support-console:GetBanner"
       ],
       "Resource" : "*"
     }

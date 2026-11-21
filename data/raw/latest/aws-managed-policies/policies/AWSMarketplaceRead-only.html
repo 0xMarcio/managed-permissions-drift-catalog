@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  May 07, 2026, 17:12 UTC</p>
+                <p><b>Edited time:</b>  November 18, 2026, 17:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceRead-only</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceRead-only-version">Policy version</h2>
-        <p><b>Policy version:</b> v13 (default)</p>
+        <p><b>Policy version:</b> v14 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -142,6 +142,62 @@
         "aws-marketplace:GetAgreementCancellationRequest"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AWSMarketplaceAgreementRequestAndApprovalReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetAgreementRequest",
+        "aws-marketplace:GetAgreementRequestTerms",
+        "aws-marketplace:GetAgreementRequestApprovalPlans",
+        "aws-marketplace:GetAgreementApproval"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws-marketplace:AgreementType" : [
+            "PurchaseAgreement"
+          ]
+        },
+        "Null" : <span>{</span>
+          "aws-marketplace:AgreementType" : "false"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AWSMarketplaceAgreementRequestAndApprovalListAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:ListAgreementRequests",
+        "aws-marketplace:ListAgreementApprovals"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AWSMarketplaceAgreementContactsReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetAgreementContacts"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws-marketplace:AgreementType" : [
+            "PurchaseAgreement"
+          ]
+        },
+        "Null" : <span>{</span>
+          "aws-marketplace:AgreementType" : "false"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AWSMarketplaceDeploymentConfigurationReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetDeploymentConfiguration"
+      ],
+      "Resource" : "arn:aws:aws-marketplace:*:*:DeploymentConfiguration:catalogs/AWSMarketplace/*"
     }
   ]
 }</code></pre>

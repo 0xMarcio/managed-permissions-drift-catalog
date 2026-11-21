@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 19, 2024, 00:41 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 27, 2026, 00:47 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 03:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSMarketplaceSellerOfferManagement</code></p>
             </li></ul></div>
      
         <h2 id="AWSMarketplaceSellerOfferManagement-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v5 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -169,6 +169,62 @@
           "aws-marketplace:PartyType" : "Proposer"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "AWSMarketplaceAgreementContactsReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "aws-marketplace:GetAgreementContacts"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws-marketplace:AgreementType" : [
+            "PurchaseAgreement"
+          ]
+        },
+        "Null" : <span>{</span>
+          "aws-marketplace:AgreementType" : "false"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "MarketplaceEphemeralWriteS3Access",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:PutObject"
+      ],
+      "Resource" : [
+        "arn:aws:s3:::aws-partner-central-marketplace-ephemeral-writeonly-files/$<span>{</span>aws:PrincipalAccount}/*"
+      ]
+    },
+    <span>{</span>
+      "Sid" : "Support",
+      "Effect" : "Allow",
+      "Action" : [
+        "support:CreateCase",
+        "support:DescribeCases",
+        "support:DescribeCommunications",
+        "support:DescribeAttachment",
+        "support:AddCommunicationToCase",
+        "support:ResolveCase",
+        "support:AddAttachmentsToSet",
+        "support:SearchForCases",
+        "support:DescribeServices",
+        "support:DescribeCreateCaseOptions"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "SupportConsole",
+      "Effect" : "Allow",
+      "Action" : [
+        "support-console:GetAccountState",
+        "support-console:GetAccountGovCloudEnabled",
+        "support-console:CheckSubscription",
+        "support-console:GetBanner"
+      ],
+      "Resource" : "*"
     }
   ]
 }</code></pre>

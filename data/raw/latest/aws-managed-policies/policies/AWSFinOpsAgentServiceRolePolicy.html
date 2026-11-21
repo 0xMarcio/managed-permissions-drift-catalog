@@ -57,14 +57,14 @@
                 <p><b>Creation time</b>: October 20, 2026, 16:07 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 20, 2026, 16:07 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 01:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/aws-service-role/AWSFinOpsAgentServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AWSFinOpsAgentServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -277,7 +277,7 @@
       ],
       "Resource" : "*",
       "Condition" : <span>{</span>
-        "StringLikeIfExists" : <span>{</span>
+        "StringEquals" : <span>{</span>
           "organizations:ServicePrincipal" : [
             "finops-agent.amazonaws.com"
           ]
@@ -527,6 +527,21 @@
           "events:ManagedBy" : "finops-agent.amazonaws.com"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "BCMDataHubQueryAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "bcm-data-hub:ListDatasets",
+        "bcm-data-hub:GetDataset",
+        "bcm-data-hub:GetDatasetSchema",
+        "bcm-data-hub:StartQueryExecution",
+        "bcm-data-hub:GetQueryExecution",
+        "bcm-data-hub:GetQueryExecutionResults",
+        "bcm-data-hub:CancelQueryExecution",
+        "bcm-data-hub:ListQueryExecutions"
+      ],
+      "Resource" : "*"
     },
     <span>{</span>
       "Sid" : "EventBridgeManagedRuleManagementReadPermissions",

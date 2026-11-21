@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: December 01, 2025, 00:34 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 28, 2026, 17:47 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 04:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AWSPartnerCentralMarketingManagement</code></p>
             </li></ul></div>
      
         <h2 id="AWSPartnerCentralMarketingManagement-version">Policy version</h2>
-        <p><b>Policy version:</b> v6 (default)</p>
+        <p><b>Policy version:</b> v7 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -269,6 +269,221 @@
           "aws:IsMcpServiceAction" : "true"
         }
       }
+    },
+    <span>{</span>
+      "Sid" : "PartnerBusinessPlanAccountAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:ListBusinessPlans",
+        "partnercentral:ListBusinessPlanItems",
+        "partnercentral:GetBusinessPlanItemSchema",
+        "partnercentral:ListBusinessPlanAssociations"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "PartnerBusinessPlanContributorAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:ListBusinessPlanAttachments",
+        "partnercentral:GetBusinessPlanAttachmentImportTask",
+        "partnercentral:ListBusinessPlanAttachmentImportTasks",
+        "partnercentral:AssociateBusinessPlan",
+        "partnercentral:DisassociateBusinessPlan",
+        "partnercentral:StartBusinessPlanAttachmentImportTask"
+      ],
+      "Resource" : "arn:aws:partnercentral:*:*:catalog/*/business-plan/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "PartnerBusinessPlanItemAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:CreateBusinessPlanItem",
+        "partnercentral:GetBusinessPlanItem",
+        "partnercentral:UpdateBusinessPlanItem",
+        "partnercentral:DeleteBusinessPlanItem"
+      ],
+      "Resource" : "arn:aws:partnercentral:*:*:catalog/*/business-plan/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ],
+          "partnercentral:BusinessPlanItemType" : [
+            "INITIATIVE",
+            "ACTIVITY"
+          ],
+          "partnercentral:BusinessPlanItemStage" : [
+            "MARKET"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "Support",
+      "Effect" : "Allow",
+      "Action" : [
+        "support:CreateCase",
+        "support:DescribeCases",
+        "support:DescribeCommunications",
+        "support:DescribeAttachment",
+        "support:AddCommunicationToCase",
+        "support:ResolveCase",
+        "support:AddAttachmentsToSet",
+        "support:SearchForCases",
+        "support:DescribeServices",
+        "support:DescribeCreateCaseOptions"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "SupportConsole",
+      "Effect" : "Allow",
+      "Action" : [
+        "support-console:GetAccountState",
+        "support-console:GetAccountGovCloudEnabled",
+        "support-console:CheckSubscription",
+        "support-console:GetBanner"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "DemandCenterCampaignAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:CreateCampaign",
+        "partnercentral:GetCampaign",
+        "partnercentral:UpdateCampaign",
+        "partnercentral:DeleteCampaign",
+        "partnercentral:BatchCreateCampaignAsset",
+        "partnercentral:GetCampaignAsset",
+        "partnercentral:ListCampaignAssets",
+        "partnercentral:UpdateCampaignAsset",
+        "partnercentral:DeleteCampaignAsset",
+        "partnercentral:StartCampaignAssetActivationTask",
+        "partnercentral:GetCampaignAssetActivationTask",
+        "partnercentral:DeactivateCampaignAsset",
+        "partnercentral:StartCampaignAssetExportTask",
+        "partnercentral:GetCampaignAssetExportTask"
+      ],
+      "Resource" : "arn:aws:partnercentral:*:*:catalog/*/campaign/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DemandCenterTaggingAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:TagResource",
+        "partnercentral:UntagResource",
+        "partnercentral:ListTagsForResource"
+      ],
+      "Resource" : "arn:aws:partnercentral:*:*:catalog/*/campaign/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DemandCenterSocialConnectionAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:DeleteSocialConnection"
+      ],
+      "Resource" : "arn:aws:partnercentral:*:*:catalog/*/social-connection/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DemandCenterCatalogAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:ListCampaigns",
+        "partnercentral:SearchCampaignTemplates",
+        "partnercentral:GetCampaignTemplate",
+        "partnercentral:ListSocialConnections",
+        "partnercentral:CreateSocialConnectionAuthorizationUrl"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DemandCenterEngagementAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "partnercentral:SearchEngagements",
+        "partnercentral:ListEngagementGroups"
+      ],
+      "Resource" : "*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "partnercentral:Catalog" : [
+            "AWS",
+            "Sandbox"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DemandCenterServiceLinkedRoleCreation",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/partnercentral-marketing.amazonaws.com/AWSServiceRoleForPartnerCentralMarketing",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "partnercentral-marketing.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "DemandCenterServiceLinkedRoleRead",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:GetRole"
+      ],
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/partnercentral-marketing.amazonaws.com/AWSServiceRoleForPartnerCentralMarketing"
     }
   ]
 }</code></pre>
