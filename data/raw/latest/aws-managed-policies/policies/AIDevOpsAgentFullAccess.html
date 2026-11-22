@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: March 26, 2026, 03:42 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  June 26, 2026, 23:57 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 22:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AIDevOpsAgentFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v6 (default)</p>
+        <p><b>Policy version:</b> v7 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -77,6 +77,11 @@
       "Action" : [
         "aidevops:AllowVendedLogDeliveryForResource",
         "aidevops:AssociateService",
+        "aidevops:BatchCreateAccessProfileAssignment",
+        "aidevops:BatchDeleteAccessProfileAssignment",
+        "aidevops:BatchDeleteAccessProfileEntitlement",
+        "aidevops:BatchPutAccessProfileEntitlement",
+        "aidevops:CreateAccessProfile",
         "aidevops:CreateAccessToken",
         "aidevops:CreateAgentSpace",
         "aidevops:CreateAsset",
@@ -87,6 +92,7 @@
         "aidevops:CreateOneTimeLoginSession",
         "aidevops:CreatePrivateConnection",
         "aidevops:CreateTrigger",
+        "aidevops:DeleteAccessProfile",
         "aidevops:DeleteAgentSpace",
         "aidevops:DeleteAsset",
         "aidevops:DeleteAssetFile",
@@ -102,6 +108,7 @@
         "aidevops:DiscoverTopology",
         "aidevops:EnableOperatorApp",
         "aidevops:EndChatForCase",
+        "aidevops:GetAccessProfile",
         "aidevops:GetAccessToken",
         "aidevops:GetAccountUsage",
         "aidevops:GetAgentSpace",
@@ -116,6 +123,9 @@
         "aidevops:GetService",
         "aidevops:GetTrigger",
         "aidevops:InitiateChatForCase",
+        "aidevops:ListAccessProfileAssignments",
+        "aidevops:ListAccessProfileEntitlements",
+        "aidevops:ListAccessProfiles",
         "aidevops:ListAccessTokens",
         "aidevops:ListAgentSpaces",
         "aidevops:ListAssetFiles",
@@ -144,6 +154,8 @@
         "aidevops:SendMessage",
         "aidevops:TagResource",
         "aidevops:UntagResource",
+        "aidevops:UpdateAccessProfile",
+        "aidevops:UpdateAccessProfilesOrder",
         "aidevops:UpdateAgentSpace",
         "aidevops:UpdateApprovalAction",
         "aidevops:UpdateAsset",

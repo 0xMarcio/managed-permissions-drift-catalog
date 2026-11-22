@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 10, 2016, 17:33 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 26, 2026, 17:07 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 22:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/job-function/Billing</code></p>
             </li></ul></div>
      
         <h2 id="Billing-version">Policy version</h2>
-        <p><b>Policy version:</b> v31 (default)</p>
+        <p><b>Policy version:</b> v32 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -178,6 +178,7 @@
         "mapcredits:ListQuarterSpend",
         "mapcredits:ListAssociatedPrograms",
         "mapcredits:ListQuarterCredits",
+        "payments:CreateConnectedAccount",
         "payments:CreateFinancingApplication",
         "payments:CreatePaymentInstrument",
         "payments:DeletePaymentInstrument",
@@ -187,6 +188,7 @@
         "payments:GetFinancingOption",
         "payments:GetPaymentInstrument",
         "payments:GetPaymentStatus",
+        "payments:ListConnectedAccounts",
         "payments:ListFinancingApplications",
         "payments:ListFinancingLines",
         "payments:ListFinancingLineWithdrawals",
@@ -245,6 +247,15 @@
         "billing:ListContractualInvestmentSummaries"
       ],
       "Resource" : "arn:aws:billing::*:contract/*"
+    },
+    <span>{</span>
+      "Sid" : "ConnectedAccountAdministration",
+      "Effect" : "Allow",
+      "Action" : [
+        "payments:DeleteConnectedAccount",
+        "payments:GetConnectedAccount"
+      ],
+      "Resource" : "arn:aws:payments::*:connectedaccount/*"
     }
   ]
 }</code></pre>

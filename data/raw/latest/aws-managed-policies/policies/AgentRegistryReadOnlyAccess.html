@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: August 06, 2026, 18:12 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  August 06, 2026, 18:12 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 20:57 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AgentRegistryReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="AgentRegistryReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -76,16 +76,34 @@
       "Effect" : "Allow",
       "Action" : [
         "agent-registry:GetRegistry",
-        "agent-registry:ListRegistries",
         "agent-registry:GetRegistryRecord",
         "agent-registry:ListRegistryRecords",
         "agent-registry:ListDiscoverableRegistryRecords",
+        "agent-registry:SearchDiscoverableRegistryRecords",
         "agent-registry:GetDiscoverableRegistryRecord",
         "agent-registry:InvokeRegistryMcp",
-        "agent-registry:SearchDiscoverableRegistryRecords",
-        "agent-registry:ListTagsForResource"
+        "agent-registry:GetPublisher",
+        "agent-registry:ListPublisherAssociations"
       ],
       "Resource" : "arn:aws:agent-registry:*:*:*"
+    },
+    <span>{</span>
+      "Sid" : "AgentRegistryReadOnlyAccessNoResource",
+      "Effect" : "Allow",
+      "Action" : [
+        "agent-registry:ListRegistries",
+        "agent-registry:ListPublishers",
+        "agent-registry:ListTagsForResource"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AgentRegistryPublicDiscoveryAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "agent-discovery:SearchPublicRecords"
+      ],
+      "Resource" : "*"
     }
   ]
 }</code></pre>

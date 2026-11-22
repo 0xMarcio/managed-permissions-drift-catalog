@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 27, 2025, 00:22 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 13, 2026, 21:17 UTC</p>
+                <p><b>Edited time:</b>  November 20, 2026, 17:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/SageMakerStudioEMRInstanceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="SageMakerStudioEMRInstanceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v5 (default)</p>
+        <p><b>Policy version:</b> v6 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -115,7 +115,10 @@
       "Sid" : "AccessBootstrapActionScriptS3Permission",
       "Effect" : "Allow",
       "Action" : "s3:GetObject",
-      "Resource" : "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneScopeName}/sys/emr/bootstrap-script/*",
+      "Resource" : [
+        "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneScopeName}/sys/emr/bootstrap-script/*",
+        "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/shared/sys/emr/bootstrap-script/*"
+      ],
       "Condition" : <span>{</span>
         "StringNotEquals" : <span>{</span>
           "aws:PrincipalTag/DomainBucketName" : "",
@@ -135,7 +138,10 @@
       "Sid" : "EMRClusterLogUploadS3Permission",
       "Effect" : "Allow",
       "Action" : "s3:PutObject",
-      "Resource" : "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneScopeName}/sys/emr/*",
+      "Resource" : [
+        "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneDomain}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneProject}/$<span>{</span>aws:PrincipalTag/AmazonDataZoneScopeName}/sys/emr/*",
+        "arn:aws:s3:::$<span>{</span>aws:PrincipalTag/DomainBucketName}/shared/sys/emr/*"
+      ],
       "Condition" : <span>{</span>
         "StringNotEquals" : <span>{</span>
           "aws:PrincipalTag/DomainBucketName" : "",
