@@ -1,0 +1,44 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [],
+    "by_facet": {
+      "added": {},
+      "removed": {}
+    },
+    "removed": []
+  },
+  "changed_objects": [
+    {
+      "display_name": "Data pipelines Invoker",
+      "facet_changes": {
+        "grants": {},
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "Lets you trigger runs of existing Data Pipelines batch pipelines. Triggered jobs run as the Dataflow worker service account configured on the pipeline, even if the caller doesn't have the iam.serviceAccounts.actAs permission on that service account. Grant this role only to principals who should be allowed to run pipelines using the worker service accounts configured on those pipelines.",
+          "before": "Invoker of Data pipelines jobs",
+          "field": "description"
+        }
+      ],
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/datapipelines#datapipelines.invoker",
+      "stable_id": "roles/datapipelines.invoker"
+    }
+  ],
+  "compared_at_utc": "2026-11-24T13:49:53Z",
+  "counts": {
+    "added_atoms": 0,
+    "added_objects": 0,
+    "changed_objects": 1,
+    "current_objects": 2422,
+    "previous_objects": 2422,
+    "removed_atoms": 0,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-24",
+  "dataset": "gcp-predefined-roles",
+  "platform": "gcp",
+  "previous_snapshot_date": "2026-11-19",
+  "removed_objects": []
+}
