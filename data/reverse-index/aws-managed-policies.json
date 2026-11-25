@@ -5731,6 +5731,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentFullAccess"
       },
       {
+        "display_name": "CloudWatchFullAccessV2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
+      },
+      {
         "display_name": "ReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
@@ -63125,6 +63130,13 @@
         "stable_id": "arn:aws:iam::aws:policy/ReadOnlyAccess"
       }
     ],
+    "aws:allow_action:cloudwatch:CreateSpace": [
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
+      }
+    ],
     "aws:allow_action:cloudwatch:CreateView": [
       {
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
@@ -63457,6 +63469,13 @@
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy"
+      }
+    ],
+    "aws:allow_action:cloudwatch:DeleteSpace": [
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
       }
     ],
     "aws:allow_action:cloudwatch:DeleteView": [
@@ -64503,6 +64522,11 @@
       }
     ],
     "aws:allow_action:cloudwatch:GetDataset": [
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
+      },
       {
         "display_name": "AWSConfigServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSConfigServiceRolePolicy.html",
@@ -65711,6 +65735,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
       },
       {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
+      },
+      {
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy"
@@ -66427,6 +66456,11 @@
       }
     ],
     "aws:allow_action:cloudwatch:ListSpaces": [
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
+      },
       {
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
@@ -84593,6 +84627,11 @@
       }
     ],
     "aws:allow_action:connect:StartTaskContact": [
+      {
+        "display_name": "AmazonConnectCampaignsServiceLinkedRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonConnectCampaignsServiceLinkedRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy"
+      },
       {
         "display_name": "ConnectCampaignsInternalReserveRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ConnectCampaignsInternalReserveRolePolicy.html",
@@ -118819,6 +118858,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonEKSComputePolicy"
       },
       {
+        "display_name": "AmazonLaunchWizardFullAccessV2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizardFullAccessV2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2"
+      },
+      {
         "display_name": "BedrockAgentCoreRuntimeInstancesOperatorRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BedrockAgentCoreRuntimeInstancesOperatorRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/BedrockAgentCoreRuntimeInstancesOperatorRolePolicy"
@@ -138944,6 +138988,11 @@
     ],
     "aws:allow_action:ec2:GetGroupsForCapacityReservation": [
       {
+        "display_name": "AmazonLaunchWizardFullAccessV2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizardFullAccessV2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2"
+      },
+      {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
@@ -156821,6 +156870,11 @@
         "stable_id": "arn:aws:iam::aws:policy/AmazonElasticFileSystemFullAccess"
       },
       {
+        "display_name": "AmazonLaunchWizardFullAccessV2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizardFullAccessV2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2"
+      },
+      {
         "display_name": "AmazonElasticFileSystemServiceRolePolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemServiceRolePolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AmazonElasticFileSystemServiceRolePolicy"
@@ -157453,6 +157507,11 @@
         "display_name": "AmazonElasticFileSystemReadOnlyAccess",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemReadOnlyAccess.html",
         "stable_id": "arn:aws:iam::aws:policy/AmazonElasticFileSystemReadOnlyAccess"
+      },
+      {
+        "display_name": "AmazonLaunchWizardFullAccessV2",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonLaunchWizardFullAccessV2.html",
+        "stable_id": "arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2"
       },
       {
         "display_name": "SecurityAudit",
@@ -200345,6 +200404,11 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
       },
       {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
+      },
+      {
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy"
@@ -200929,6 +200993,11 @@
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy"
+      },
+      {
+        "display_name": "AWSCloudWatchOmniServiceRolePolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudWatchOmniServiceRolePolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/aws-service-role/AWSCloudWatchOmniServiceRolePolicy"
       },
       {
         "display_name": "AWSSDMPServiceRolePolicy",
@@ -223216,6 +223285,11 @@
         "display_name": "CloudWatchOmniAWSIntegrationPolicyV2",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniAWSIntegrationPolicyV2.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniAWSIntegrationPolicyV2"
+      },
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
       },
       {
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
@@ -260295,6 +260369,13 @@
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy"
       }
     ],
+    "aws:allow_action:observabilityadmin:CreateDatasetIntegration": [
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
+      }
+    ],
     "aws:allow_action:observabilityadmin:CreateTelemetryPipeline": [
       {
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
@@ -260307,6 +260388,13 @@
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy"
+      }
+    ],
+    "aws:allow_action:observabilityadmin:DeleteDatasetIntegration": [
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
       }
     ],
     "aws:allow_action:observabilityadmin:DeleteTelemetryPipeline": [
@@ -260377,6 +260465,11 @@
       }
     ],
     "aws:allow_action:observabilityadmin:GetDatasetIntegration": [
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
+      },
       {
         "display_name": "CloudWatchOmniSpaceAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniSpaceAccessPolicy.html",
@@ -260675,6 +260768,11 @@
         "display_name": "AIDevOpsAgentAccessPolicy",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDevOpsAgentAccessPolicy.html",
         "stable_id": "arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy"
+      },
+      {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
       },
       {
         "display_name": "ReadOnlyAccess",
@@ -368266,6 +368364,11 @@
     ],
     "aws:allow_action:sso:ListRegions": [
       {
+        "display_name": "CloudWatchOmniProvisioningPolicy",
+        "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchOmniProvisioningPolicy.html",
+        "stable_id": "arn:aws:iam::aws:policy/CloudWatchOmniProvisioningPolicy"
+      },
+      {
         "display_name": "SecurityAudit",
         "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html",
         "stable_id": "arn:aws:iam::aws:policy/SecurityAudit"
@@ -402022,7 +402125,7 @@
       }
     ]
   },
-  "generated_at_utc": "2026-11-24T13:49:53Z",
+  "generated_at_utc": "2026-11-25T13:02:01Z",
   "platform": "aws",
   "wildcard_atoms": [
     {

@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: September 01, 2023, 17:14 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  October 20, 2026, 16:37 UTC</p>
+                <p><b>Edited time:</b>  November 23, 2026, 20:37 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2</code></p>
             </li></ul></div>
      
         <h2 id="AmazonLaunchWizardFullAccessV2-version">Policy version</h2>
-        <p><b>Policy version:</b> v3 (default)</p>
+        <p><b>Policy version:</b> v4 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -235,7 +235,9 @@
         "arn:aws:ec2:*:*:volume/*",
         "arn:aws:ec2:*:*:key-pair/*",
         "arn:aws:ec2:*:*:placement-group/*",
-        "arn:aws:ec2:*:*:launch-template/*"
+        "arn:aws:ec2:*:*:launch-template/*",
+        "arn:aws:ec2:*:*:capacity-reservation/*",
+        "arn:aws:resource-groups:*:*:group/*"
       ],
       "Condition" : <span>{</span>
         "ForAnyValue:StringEquals" : <span>{</span>
@@ -273,7 +275,8 @@
         "arn:aws:ec2:*:*:vpc/*",
         "arn:aws:ec2:*:*:subnet/*",
         "arn:aws:ec2:*:*:elastic-ip/*",
-        "arn:aws:ec2:*:*:route-table/*"
+        "arn:aws:ec2:*:*:route-table/*",
+        "arn:aws:ec2:*:*:launch-template/*"
       ],
       "Condition" : <span>{</span>
         "ForAnyValue:StringEquals" : <span>{</span>
@@ -541,6 +544,8 @@
         "ec2:DescribeStaleSecurityGroups",
         "ec2:DescribeInstanceTypeOfferings",
         "ec2:DescribePlacementGroups",
+        "ec2:DescribeCapacityReservations",
+        "ec2:GetGroupsForCapacityReservation",
         "iam:GetRole",
         "iam:GetRolePolicy",
         "iam:GetUser",
@@ -674,7 +679,9 @@
       "Effect" : "Allow",
       "Action" : [
         "elasticfilesystem:UntagResource",
-        "elasticfilesystem:TagResource"
+        "elasticfilesystem:TagResource",
+        "elasticfilesystem:DeleteReplicationConfiguration",
+        "elasticfilesystem:DescribeReplicationConfigurations"
       ],
       "Resource" : "arn:aws:elasticfilesystem:*:*:file-system/*",
       "Condition" : <span>{</span>
