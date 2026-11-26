@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: February 06, 2015, 18:40 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 23, 2026, 11:47 UTC</p>
+                <p><b>Edited time:</b>  November 24, 2026, 23:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchReadOnlyAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v28 (default)</p>
+        <p><b>Policy version:</b> v29 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -170,6 +170,14 @@
         "arn:aws:resource-explorer-2:*::view/AWSServiceViewForApplicationSignals/service-view",
         "arn:aws:resource-explorer-2:*::view/AWSServiceViewForApplicationSignalsOrgScopeProd/service-view"
       ]
+    },
+    <span>{</span>
+      "Sid" : "CloudWatchDevOpsAgentListPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "aidevops:ListAgentSpaces"
+      ],
+      "Resource" : "*"
     }
   ]
 }</code></pre>
