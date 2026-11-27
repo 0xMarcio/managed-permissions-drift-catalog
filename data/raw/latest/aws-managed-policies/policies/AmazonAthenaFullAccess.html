@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 30, 2016, 16:46 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  February 12, 2026, 18:03 UTC</p>
+                <p><b>Edited time:</b>  November 26, 2026, 00:07 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/AmazonAthenaFullAccess</code></p>
             </li></ul></div>
      
         <h2 id="AmazonAthenaFullAccess-version">Policy version</h2>
-        <p><b>Policy version:</b> v15 (default)</p>
+        <p><b>Policy version:</b> v16 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -211,6 +211,21 @@
       "Resource" : [
         "*"
       ]
+    },
+    <span>{</span>
+      "Sid" : "AthenaServiceLinkedRolePermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/ops.athena.amazonaws.com/AWSServiceRoleForAmazonAthena"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "iam:AWSServiceName" : "ops.athena.amazonaws.com"
+        }
+      }
     }
   ]
 }</code></pre>

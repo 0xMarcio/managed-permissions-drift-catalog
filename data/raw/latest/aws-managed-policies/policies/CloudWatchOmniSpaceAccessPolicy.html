@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: September 22, 2026, 01:47 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 19, 2026, 23:37 UTC</p>
+                <p><b>Edited time:</b>  November 25, 2026, 19:47 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/CloudWatchOmniSpaceAccessPolicy</code></p>
             </li></ul></div>
      
         <h2 id="CloudWatchOmniSpaceAccessPolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v5 (default)</p>
+        <p><b>Policy version:</b> v6 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -99,6 +99,12 @@
         "cloudwatch:UpdateAlert",
         "cloudwatch:DeleteAlert",
         "cloudwatch:ListAlerts",
+        "cloudwatch:CreateOmniSlo",
+        "cloudwatch:GetOmniSlo",
+        "cloudwatch:UpdateOmniSlo",
+        "cloudwatch:DeleteOmniSlo",
+        "cloudwatch:ListOmniSlos",
+        "cloudwatch:BatchGetOmniSloReport",
         "cloudwatch:CreateOmniDashboard",
         "cloudwatch:GetOmniDashboard",
         "cloudwatch:UpdateOmniDashboard",
@@ -115,6 +121,11 @@
         "cloudwatch:UpdateView",
         "cloudwatch:DeleteView",
         "cloudwatch:ListViews",
+        "cloudwatch:CreateLookup",
+        "cloudwatch:GetLookup",
+        "cloudwatch:UpdateLookup",
+        "cloudwatch:DeleteLookup",
+        "cloudwatch:ListLookups",
         "cloudwatch:GetPreferences",
         "cloudwatch:UpdatePreferences",
         "cloudwatch:CreateOmniThread",
@@ -128,12 +139,25 @@
         "cloudwatch:UpdateOmniAgentAsset",
         "cloudwatch:ListOmniAgentAssets",
         "cloudwatch:DeleteOmniAgentAsset",
+        "cloudwatch:CreateExperiment",
+        "cloudwatch:GetExperiment",
+        "cloudwatch:UpdateExperiment",
+        "cloudwatch:DeleteExperiment",
+        "cloudwatch:ListExperiments",
+        "cloudwatch:StartExperimentRun",
+        "cloudwatch:StopExperimentRun",
+        "cloudwatch:GetExperimentRun",
+        "cloudwatch:ListExperimentRuns",
+        "cloudwatch:DeleteExperimentRun",
         "cloudwatch:SubmitFeedback",
+        "cloudwatch:ListObservations",
+        "cloudwatch:ListAnomalies",
         "cloudwatch:CreateIntegration",
         "cloudwatch:UpdateIntegration",
         "cloudwatch:GetIntegration",
         "cloudwatch:DeleteIntegration",
         "cloudwatch:ListIntegrations",
+        "cloudwatch:ListIntegrationTargets",
         "cloudwatch:InvokeIntegration",
         "cloudwatch:GetIntelligenceConfiguration",
         "cloudwatch:PutIntelligenceConfiguration",
@@ -170,7 +194,10 @@
         "arn:aws:cloudwatch:*:*:view/*",
         "arn:aws:cloudwatch:*:*:integration/*",
         "arn:aws:cloudwatch:*:*:dataset/*",
-        "arn:aws:cloudwatch:*:*:omni-agent-asset/*"
+        "arn:aws:cloudwatch:*:*:omni-agent-asset/*",
+        "arn:aws:cloudwatch:*:*:experiment/*",
+        "arn:aws:cloudwatch:*:*:omni-slo/*",
+        "arn:aws:cloudwatch:*:*:lookup/*"
       ]
     },
     <span>{</span>
@@ -273,6 +300,29 @@
         },
         "StringLike" : <span>{</span>
           "kms:EncryptionContext:aws:cloudwatch:arn" : "arn:aws:cloudwatch:*:$<span>{</span>aws:PrincipalAccount}:dataset/*"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "KmsCryptoOpsForLookups",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "cloudwatch.amazonaws.com"
+          ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "aws:ResourceTag/cw-omni" : "true"
+        },
+        "StringLike" : <span>{</span>
+          "kms:EncryptionContext:aws:cloudwatch:arn" : "arn:aws:cloudwatch:*:$<span>{</span>aws:PrincipalAccount}:lookup/*"
         }
       }
     },
@@ -681,11 +731,63 @@
       }
     },
     <span>{</span>
+      "Sid" : "AgentCorePrimitiveReads",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:GetMemory",
+        "bedrock-agentcore:GetGateway",
+        "bedrock-agentcore:GetBrowser",
+        "bedrock-agentcore:GetCodeInterpreter",
+        "bedrock-agentcore:GetPaymentManager",
+        "bedrock-agentcore:GetOauth2CredentialProvider",
+        "bedrock-agentcore:GetApiKeyCredentialProvider",
+        "bedrock-agentcore:GetPaymentCredentialProvider",
+        "bedrock-agentcore:ListGatewayTargets",
+        "bedrock-agentcore:GetGatewayTarget",
+        "bedrock-agentcore:GetPolicyEngine"
+      ],
+      "Resource" : [
+        "arn:aws:bedrock-agentcore:*:*:memory/*",
+        "arn:aws:bedrock-agentcore:*:*:gateway/*",
+        "arn:aws:bedrock-agentcore:*:*:browser-custom/*",
+        "arn:aws:bedrock-agentcore:*:*:code-interpreter-custom/*",
+        "arn:aws:bedrock-agentcore:*:*:payment-manager/*",
+        "arn:aws:bedrock-agentcore:*:*:token-vault/*",
+        "arn:aws:bedrock-agentcore:*:*:policy-engine/*"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "BedrockKnowledgeBaseReads",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock:GetKnowledgeBase"
+      ],
+      "Resource" : "arn:aws:bedrock:*:*:knowledge-base/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
       "Sid" : "BedrockFoundationModelDiscovery",
       "Effect" : "Allow",
       "Action" : [
         "bedrock:ListFoundationModels",
         "bedrock:ListInferenceProfiles"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "PriceListModelPrices",
+      "Effect" : "Allow",
+      "Action" : [
+        "pricing:GetProducts"
       ],
       "Resource" : "*"
     },
@@ -926,6 +1028,90 @@
       "Condition" : <span>{</span>
         "ForAnyValue:StringEquals" : <span>{</span>
           "aws:CalledVia" : "cloudwatch.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "SnsTopicReadForIntelligenceNotifications",
+      "Effect" : "Allow",
+      "Action" : "sns:GetTopicAttributes",
+      "Resource" : "arn:aws:sns:*:*:*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "cloudwatch.amazonaws.com"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "ObservabilityAdminTelemetryStatusReads",
+      "Effect" : "Allow",
+      "Action" : [
+        "observabilityadmin:GetTelemetryEvaluationStatus",
+        "observabilityadmin:ListTelemetryRules"
+      ],
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AwsEventsTelemetryRuleManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "observabilityadmin:GetTelemetryRule",
+        "observabilityadmin:CreateTelemetryRule",
+        "observabilityadmin:UpdateTelemetryRule",
+        "observabilityadmin:DeleteTelemetryRule"
+      ],
+      "Resource" : "arn:aws:observabilityadmin:*:*:telemetry-rule/CloudWatchOmniEvents",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AwsEventsTelemetryEvaluation",
+      "Effect" : "Allow",
+      "Action" : "observabilityadmin:StartTelemetryEvaluation",
+      "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "AwsEventsObservabilityAdminConfigRecorder",
+      "Effect" : "Allow",
+      "Action" : "config:PutServiceLinkedConfigurationRecorder",
+      "Resource" : "arn:aws:config:*:*:configuration-recorder/AWSConfigurationRecorderForObservabilityAdmin/*",
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "observabilityadmin.amazonaws.com"
+          ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "config:ConfigurationRecorderServicePrincipal" : "observabilityadmin.amazonaws.com"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "AwsEventsObservabilityAdminServiceLinkedRoles",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/observabilityadmin.amazonaws.com/AWSServiceRoleForObservabilityAdmin",
+        "arn:aws:iam::*:role/aws-service-role/telemetry-enablement.observabilityadmin.amazonaws.com/AWSServiceRoleForObservabilityAdmin_TelemetryEnablement"
+      ],
+      "Condition" : <span>{</span>
+        "ForAnyValue:StringEquals" : <span>{</span>
+          "aws:CalledVia" : [
+            "observabilityadmin.amazonaws.com"
+          ]
+        },
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "iam:AWSServiceName" : [
+            "observabilityadmin.amazonaws.com",
+            "telemetry-enablement.observabilityadmin.amazonaws.com"
+          ]
         }
       }
     }
