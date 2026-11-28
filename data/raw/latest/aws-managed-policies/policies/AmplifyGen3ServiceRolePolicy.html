@@ -56,14 +56,14 @@
                 <p><b>Creation time</b>: November 25, 2026, 18:57 UTC
                 </p>
             </li><li class="listitem">
-                <p><b>Edited time:</b>  November 25, 2026, 18:57 UTC</p>
+                <p><b>Edited time:</b>  November 27, 2026, 05:17 UTC</p>
             </li><li class="listitem">
                 <p><b>ARN</b>:
                     <code class="code">arn:aws:iam::aws:policy/service-role/AmplifyGen3ServiceRolePolicy</code></p>
             </li></ul></div>
      
         <h2 id="AmplifyGen3ServiceRolePolicy-version">Policy version</h2>
-        <p><b>Policy version:</b> v1 (default)</p>
+        <p><b>Policy version:</b> v2 (default)</p>
         <p>The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
             request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request. </p>
      
@@ -170,12 +170,111 @@
       "Resource" : "arn:aws:amplifygen3:*:*:app/*/environment/*"
     },
     <span>{</span>
-      "Sid" : "IdcInstanceDiscovery",
+      "Sid" : "IdcDiscovery",
       "Effect" : "Allow",
       "Action" : [
-        "sso:ListInstances"
+        "sso:ListInstances",
+        "sso:DescribeInstance"
       ],
       "Resource" : "*"
+    },
+    <span>{</span>
+      "Sid" : "IdcApplicationProvisioning",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso:CreateApplication"
+      ],
+      "Resource" : [
+        "arn:aws:sso::*:application/*",
+        "arn:aws:sso:::instance/*",
+        "arn:aws:sso::aws:applicationProvider/amplifygen3"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/ManagedByAmplifyGen3" : "true"
+        },
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws:TagKeys" : [
+            "ManagedByAmplifyGen3"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "IdcApplicationTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso:TagResource"
+      ],
+      "Resource" : [
+        "arn:aws:sso:::instance/*",
+        "arn:aws:sso::aws:applicationProvider/amplifygen3"
+      ],
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/ManagedByAmplifyGen3" : "true"
+        },
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws:TagKeys" : [
+            "ManagedByAmplifyGen3"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "IdcApplicationTagManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso:TagResource"
+      ],
+      "Resource" : "arn:aws:sso::*:application/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:RequestTag/ManagedByAmplifyGen3" : "true",
+          "aws:ResourceTag/ManagedByAmplifyGen3" : "true"
+        },
+        "ForAllValues:StringEquals" : <span>{</span>
+          "aws:TagKeys" : [
+            "ManagedByAmplifyGen3"
+          ]
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "IdcApplicationConfigurationSameAccount",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:CreateApplicationAssignment",
+        "sso:DeleteApplication"
+      ],
+      "Resource" : "arn:aws:sso::*:application/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceAccount" : "$<span>{</span>aws:PrincipalAccount}",
+          "aws:ResourceTag/ManagedByAmplifyGen3" : "true"
+        }
+      }
+    },
+    <span>{</span>
+      "Sid" : "IdcApplicationConfigurationSameOrganization",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:CreateApplicationAssignment",
+        "sso:DeleteApplication"
+      ],
+      "Resource" : "arn:aws:sso::*:application/*",
+      "Condition" : <span>{</span>
+        "StringEquals" : <span>{</span>
+          "aws:ResourceOrgID" : "$<span>{</span>aws:PrincipalOrgID}",
+          "aws:ResourceTag/ManagedByAmplifyGen3" : "true"
+        }
+      }
     },
     <span>{</span>
       "Sid" : "IdcAdminGroupResolution",
@@ -183,7 +282,10 @@
       "Action" : [
         "identitystore:GetGroupId"
       ],
-      "Resource" : "arn:aws:identitystore::*:identitystore/*"
+      "Resource" : [
+        "arn:aws:identitystore::*:identitystore/*",
+        "arn:aws:identitystore:::group/*"
+      ]
     },
     <span>{</span>
       "Sid" : "Route53HostedZoneDiscoveryAndCreation",

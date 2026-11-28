@@ -1,0 +1,143 @@
+{
+  "added_objects": [],
+  "atom_changes": {
+    "added": [
+      "aws:allow_action:sso:CreateApplication",
+      "aws:allow_action:sso:CreateApplicationAssignment",
+      "aws:allow_action:sso:DeleteApplication",
+      "aws:allow_action:sso:DescribeInstance",
+      "aws:allow_action:sso:PutApplicationAssignmentConfiguration",
+      "aws:allow_action:sso:PutApplicationAuthenticationMethod",
+      "aws:allow_action:sso:PutApplicationGrant",
+      "aws:allow_action:sso:TagResource"
+    ],
+    "by_facet": {
+      "added": {
+        "grant:allow_actions": [
+          "sso:CreateApplication",
+          "sso:CreateApplicationAssignment",
+          "sso:DeleteApplication",
+          "sso:DescribeInstance",
+          "sso:PutApplicationAssignmentConfiguration",
+          "sso:PutApplicationAuthenticationMethod",
+          "sso:PutApplicationGrant",
+          "sso:TagResource"
+        ]
+      },
+      "removed": {
+        "grant:allow_actions": [
+          "iam:AttachRolePolicy",
+          "iam:CreatePolicy",
+          "iam:CreateRole"
+        ]
+      }
+    },
+    "removed": [
+      "aws:allow_action:iam:AttachRolePolicy",
+      "aws:allow_action:iam:CreatePolicy",
+      "aws:allow_action:iam:CreateRole"
+    ]
+  },
+  "changed_objects": [
+    {
+      "display_name": "WellArchitectedConsoleFullAccess",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [],
+            "removed": [
+              "iam:AttachRolePolicy",
+              "iam:CreatePolicy",
+              "iam:CreateRole"
+            ]
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v5 (default)",
+          "before": "v4 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 26, 2026, 17:37 UTC",
+          "before": "November 13, 2026, 19:37 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 26, 2026, 17:37 UTC",
+          "before": "November 13, 2026, 19:37 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 9,
+          "before": 12,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedConsoleFullAccess.html",
+      "stable_id": "arn:aws:iam::aws:policy/WellArchitectedConsoleFullAccess"
+    },
+    {
+      "display_name": "AmplifyGen3ServiceRolePolicy",
+      "facet_changes": {
+        "grants": {
+          "allow_actions": {
+            "added": [
+              "sso:CreateApplication",
+              "sso:CreateApplicationAssignment",
+              "sso:DeleteApplication",
+              "sso:DescribeInstance",
+              "sso:PutApplicationAssignmentConfiguration",
+              "sso:PutApplicationAuthenticationMethod",
+              "sso:PutApplicationGrant",
+              "sso:TagResource"
+            ],
+            "removed": []
+          }
+        },
+        "restrictions": {}
+      },
+      "metadata_changes": [
+        {
+          "after": "v2 (default)",
+          "before": "v1 (default)",
+          "field": "source_version"
+        },
+        {
+          "after": "November 27, 2026, 05:17 UTC",
+          "before": "November 25, 2026, 18:57 UTC",
+          "field": "source_revision"
+        },
+        {
+          "after": "November 27, 2026, 05:17 UTC",
+          "before": "November 25, 2026, 18:57 UTC",
+          "field": "metadata.edited_time"
+        },
+        {
+          "after": 20,
+          "before": 15,
+          "field": "metadata.statement_count"
+        }
+      ],
+      "source_url": "https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmplifyGen3ServiceRolePolicy.html",
+      "stable_id": "arn:aws:iam::aws:policy/service-role/AmplifyGen3ServiceRolePolicy"
+    }
+  ],
+  "compared_at_utc": "2026-11-28T11:53:58Z",
+  "counts": {
+    "added_atoms": 8,
+    "added_objects": 0,
+    "changed_objects": 2,
+    "current_objects": 1651,
+    "previous_objects": 1651,
+    "removed_atoms": 3,
+    "removed_objects": 0
+  },
+  "current_snapshot_date": "2026-11-28",
+  "dataset": "aws-managed-policies",
+  "platform": "aws",
+  "previous_snapshot_date": "2026-11-27",
+  "removed_objects": []
+}
